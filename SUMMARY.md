@@ -43,16 +43,6 @@
     * [02-Java-Web框架](java-stack/ch3-java-web/02-java-webkuang-jia.md)
     * [02-Java-Web网站实例搭建](java-stack/ch3-java-web/02-java-webwang-zhan-shi-li-da-jian.md)
 * [【4】JS技术栈 ](ch3-JS-Algorithm.md)
-  * [ch1-JS基础](ch1-JS基础.md)
-    * [01-JS-基础](01-JS语法基础.md)
-    * [01-JS-基础2](01-JS-基础2.md)
-    * [01-JS-函数](05-JS函数.md)
-    * [01-JS-对象](04-JS对象.md)
-    * [01-JS-DOM与BOM](21-DOM-BOM.md)
-    * [\[01-JS高级程序设计-读后感1\]\(01-JS高级程序设计\(第3版\)-读后感.md\)](01-jsgao-ji-cheng-xu-she-8ba1-du-hou-gan-1-01-js-gao-ji-cheng-xu-she-8ba128-di-3-724829-du-hou-611f-md.md)
-    * [01-JS高级程序设计-读后感2](01-JS高级程序设计2-第3部分.md)
-    * [01-JS高级程序设计-读后感3](01-JS高级程序设计2-第2部分.md)
-    * [02-JS-编程规范](02-JS编程规范.md)
   * [ch2-JS进阶 ](ch2-JS进阶sa.md)
     * [03-正则表达式](19-正则表达式.md)
     * [03-JSON和Ajax](06-JSON和.md)
@@ -105,7 +95,12 @@
     * [02-JS高级程序设计2](js-stack/ch1-jsji-chu/02-jsgao-ji-cheng-xu-she-ji-2.md)
     * [02-JS高级程序设计3](js-stack/ch1-jsji-chu/02-jsgao-ji-cheng-xu-she-ji-3.md)
     * [01-JS-编程规范](js-stack/ch1-jsji-chu/01-jsbian-cheng-gui-fan.md)
-  * ch2-JS进阶
+  * [ch2-JS进阶](js-stack/ch2-jsjin-jie.md)
+    * [01-JS-正则表达式](js-stack/ch2-jsjin-jie/01-jszheng-ze-biao-da-shi.md)
+    * [01-JSON-AJAX](js-stack/ch2-jsjin-jie/01-json-ajax.md)
+    * [01-JS-数据结构](js-stack/ch2-jsjin-jie/01-jsshu-ju-jie-gou.md)
+    * [01-JS-设计模式](js-stack/ch2-jsjin-jie/01-jsshe-ji-mo-shi.md)
+    * [01-函数式编程](js-stack/ch2-jsjin-jie/01han-shu-shi-bian-cheng.md)
   * ch3-JS变种
   * ch4-jQuery
   * ch5-JavaScript框架篇
