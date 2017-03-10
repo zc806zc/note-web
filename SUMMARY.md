@@ -49,7 +49,7 @@
     * [01-JS-函数](05-JS函数.md)
     * [01-JS-对象](04-JS对象.md)
     * [01-JS-DOM与BOM](21-DOM-BOM.md)
-    * \[01-JS高级程序设计-读后感1\]\(01-JS高级程序设计\(第3版\)-读后感.md\)
+    * [\[01-JS高级程序设计-读后感1\]\(01-JS高级程序设计\(第3版\)-读后感.md\)](01-jsgao-ji-cheng-xu-she-8ba1-du-hou-gan-1-01-js-gao-ji-cheng-xu-she-8ba128-di-3-724829-du-hou-611f-md.md)
     * [01-JS高级程序设计-读后感2](01-JS高级程序设计2-第3部分.md)
     * [01-JS高级程序设计-读后感3](01-JS高级程序设计2-第2部分.md)
     * [02-JS-编程规范](02-JS编程规范.md)
@@ -94,6 +94,23 @@
     * [02-移动端框架概述](02-WebApp-资源帖.md)
     * [03-ionic基础](03-ionic基础.md)
     * [05-JS移动端](18-JS移动端.md)
+* [JS-stack](js-stack.md)
+  * [ch1-JS基础](js-stack/ch1-jsji-chu.md)
+    * [01-JS-基础1](js-stack/ch1-jsji-chu/01-jsji-chu-1.md)
+    * [01-JS-基础2](js-stack/ch1-jsji-chu/01-jsji-chu-2.md)
+    * [01-JS-函数](js-stack/ch1-jsji-chu/01-jshan-shu.md)
+    * [01-JS-对象](js-stack/ch1-jsji-chu/01-jsdui-xiang.md)
+    * [01-JS-BOM与DOM](js-stack/ch1-jsji-chu/01-js-bomyu-dom.md)
+    * [02-JS高级程序设计1](js-stack/ch1-jsji-chu/02-jsgao-ji-cheng-xu-she-ji-1.md)
+    * [02-JS高级程序设计2](js-stack/ch1-jsji-chu/02-jsgao-ji-cheng-xu-she-ji-2.md)
+    * [02-JS高级程序设计3](js-stack/ch1-jsji-chu/02-jsgao-ji-cheng-xu-she-ji-3.md)
+    * [01-JS-编程规范](js-stack/ch1-jsji-chu/01-jsbian-cheng-gui-fan.md)
+  * ch2-JS进阶
+  * ch3-JS变种
+  * ch4-jQuery
+  * ch5-JavaScript框架篇
+  * ch6-JS-Web
+  * ch7-WebApp
 * [【5】HTML5与CSS3](【5】HTML5与CSS3.md)
   * [ch1-HTML5基础](ch1-HTML5.md)
     * [01-HTML基础](01-HTML基础.md)
@@ -144,21 +161,4 @@
     * [09-全端Web开发使用JS和Java](09-全端Web开发使用JS和Java.md)
     * [09-Web全栈工程师的自我修养-读后感](02-Web全栈工程师的自我修养.md)
     * [05-Web程序设计-读后感](04-Web程序设计-读后感.md)
-* [JS-stack](js-stack.md)
-  * [ch1-JS基础](js-stack/ch1-jsji-chu.md)
-    * [01-JS-基础1](js-stack/ch1-jsji-chu/01-jsji-chu-1.md)
-    * [01-JS-基础2](js-stack/ch1-jsji-chu/01-jsji-chu-2.md)
-    * [01-JS-函数](js-stack/ch1-jsji-chu/01-jshan-shu.md)
-    * [01-JS-对象](js-stack/ch1-jsji-chu/01-jsdui-xiang.md)
-    * [01-JS-BOM与DOM](js-stack/ch1-jsji-chu/01-js-bomyu-dom.md)
-    * [02-JS高级程序设计1](js-stack/ch1-jsji-chu/02-jsgao-ji-cheng-xu-she-ji-1.md)
-    * 02-JS高级程序设计2
-    * 02-JS高级程序设计3
-    * 01-JS-编程规范
-  * ch2-JS进阶
-  * ch3-JS变种
-  * ch4-jQuery
-  * ch5-JavaScript框架篇
-  * ch6-JS-Web
-  * ch7-WebApp
 
