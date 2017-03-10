@@ -8,10 +8,14 @@
         "epub": "styles/epub.css"
      },   
      
-     "plugins": ["toggle-chapters"],
-    "pluginsConfig": {
-        "myPlugin": {
-            "message": "Hello World"
-        }
-     }
+
+  "plugins": [
+    "json"
+  ],
+  "pluginsConfig": {
+    "json": {
+      "output": "_book/book.json"
+    }
+  }
+
 }
