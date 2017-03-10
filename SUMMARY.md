@@ -1,6 +1,6 @@
 # Summary
 
-* [Introduction](README.md)
+* [简介](README.md)
 * [【1】工具篇](ch16-综合.md)
   * [ch1-笔记](ch18-专业课笔记.md)
     * [01-计算机导论](10-计算机导论.md)
@@ -13,6 +13,9 @@
     * [03-在线资源](03-在线图书资源.md)
   * [ch3-文档](ch3-文档.md)
     * [01-规划书](01-规格书.md)
+* [toolbox](toolbox.md)
+  * [ch1-note](toolbox/ch1-note.md)
+    * [01-计算机导论](toolbox/ch1-note/01ji-suan-ji-dao-lun.md)
 * [【2】C技术栈](ch1-CPP-Algorithm.md)
   * [ch1-C语言](ch1-C语言.md)
     * [04-编程语言](04-编程语言.md)
