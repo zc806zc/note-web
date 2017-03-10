@@ -11,7 +11,7 @@
     * [01-软件与工具](toolbox/ch2zi-yuan/01ruan-jian-yu-gong-ju.md)
     * [02-有意思的网站](toolbox/ch2zi-yuan/02you-yi-si-de-wang-zhan.md)
     * [03-在线资源](toolbox/ch2zi-yuan/03zai-xian-zi-yuan.md)
-    * 04-Windows常识
+    * [04-Windows常识](toolbox/ch2zi-yuan/04-windowschang-shi.md)
   * [ch3-文档](toolbox/ch3wen-dang.md)
     * [01-规划书](toolbox/ch3wen-dang/01gui-hua-shu.md)
 * [c-stack](c-stack.md)
