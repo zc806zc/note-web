@@ -11,6 +11,7 @@
     * [01-软件与工具](toolbox/ch2zi-yuan/01ruan-jian-yu-gong-ju.md)
     * [02-有意思的网站](toolbox/ch2zi-yuan/02you-yi-si-de-wang-zhan.md)
     * [03-在线资源](toolbox/ch2zi-yuan/03zai-xian-zi-yuan.md)
+    * 04-Windows常识
   * [ch3-文档](toolbox/ch3wen-dang.md)
     * [01-规划书](toolbox/ch3wen-dang/01gui-hua-shu.md)
 * [c-stack](c-stack.md)
@@ -94,7 +95,7 @@
     * [01-移动端框架概述](js-stack/ch7-webapp/01yi-dong-duan-kuang-jia-gai-shu.md)
     * [01-ionic开发](js-stack/ch7-webapp/01-ionickai-fa.md)
     * [01-JS移动端](js-stack/ch7-webapp/01-jsyi-dong-duan.md)
-* html-css3-stack
+* [html-css3-stack](html-css3-stack.md)
   * [ch1-html5](ch1-html5.md)
     * [01-HTML基础](ch1-html5/01-htmlji-chu.md)
     * [02-HTML5基础](ch1-html5/02-html5ji-chu.md)
@@ -112,7 +113,7 @@
   * [ch4-Canvas游戏开发](ch4-canvasyou-xi-kai-fa.md)
     * [01-Canvas基础1](ch4-canvasyou-xi-kai-fa/01-canvasji-chu-1.md)
     * [01-Canvas基础2](ch4-canvasyou-xi-kai-fa/01-canvasji-chu-2.md)
-* lamp-stack
+* [lamp-stack](lamp-stack.md)
   * [ch1-PHP基础](ch1-phpji-chu.md)
     * [01-PHP-IDE](ch1-phpji-chu/01-php-ide.md)
     * [01-PHP基础1](ch1-phpji-chu/01-phpji-chu-1.md)
@@ -129,6 +130,10 @@
   * [ch3-MySQL](ch3-mysql.md)
     * [01-MySQL基础](ch3-mysql/01-mysqlji-chu.md)
   * [ch4-Linux服务器](ch4-linuxfu-wu-qi.md)
+    * [01-操作系统基础](ch4-linuxfu-wu-qi/01cao-zuo-xi-tong-ji-chu.md)
+    * [01-建站指南](ch4-linuxfu-wu-qi/01jian-zhan-zhi-nan.md)
+    * [01-Linux基础](ch4-linuxfu-wu-qi/01-linuxji-chu.md)
+    * [01-图解HTTP-读后感](ch4-linuxfu-wu-qi/01tu-jie-http-du-hou-gan.md)
 * [【6】LAMP](10-PHP-.md)
   * [ch1-PHP](ch1-PHP.md)
     * [01-PHP基础](01-PHP基础.md)
