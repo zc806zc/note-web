@@ -155,10 +155,10 @@
     * [01-CSS-布局](ch2-css3/01-cssbu-ju.md)
     * 02-CSS3-动画
   * [ch3-响应式设计](ch3xiang-ying-shi-she-ji.md)
-    * 01-响应式基础
-    * 01-响应式框架概述
-    * 02-网站解构-landy
-    * 02-网站解构-sefolio
+    * [01-响应式基础](ch3xiang-ying-shi-she-ji/01xiang-ying-shi-ji-chu.md)
+    * [01-响应式框架概述](ch3xiang-ying-shi-she-ji/01xiang-ying-shi-kuang-jia-gai-shu.md)
+    * [02-网站解构-landy](ch3xiang-ying-shi-she-ji/02wang-zhanjie-6784-landy.md)
+    * [02-网站解构-sefolio](ch3xiang-ying-shi-she-ji/02wang-zhan-jie-6784-sefolio.md)
   * [ch4-Canvas游戏开发](ch4-canvasyou-xi-kai-fa.md)
     * 01-Canvas基础1
     * 01-Canvas基础2
