@@ -6,12 +6,12 @@
         "pdf": "styles/pdf.css",
         "mobi": "styles/mobi.css",
         "epub": "styles/epub.css"
-     },
-
-    "plugins": ["myplugin"],
+     },   
+     
+     "plugins": ["toggle-chapters"],
     "pluginsConfig": {
         "myPlugin": {
             "message": "Hello World"
         }
-     }    
+     }
 }
