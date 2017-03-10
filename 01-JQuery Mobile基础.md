@@ -1,7 +1,4 @@
 #### **ch1 jQuery MObile基础**
-* <del>小结自 《JQuery移动Web开发（第2版）》</del>
-	* API感觉的书，看官网比较好
-    * 有几个小应用可以参考一下
 * touch-friendly
 * [官网示例](http://demos.jquerymobile.com/1.4.5/)
 * [JQM Gallery](https://jqmgallery.com/)
