@@ -24,10 +24,10 @@
     * [02-CPP基础](c-stack/ch2-cpp/02-cppji-chu.md)
     * [02-CPP基础2](c-stack/ch2-cpp/02-cppji-chu-2.md)
     * [02-CPP基础3](c-stack/ch2-cpp/02-cppji-chu-3.md)
-    * 03-CPP标准库
-    * 04-CPP面向对象
+    * [03-CPP标准库](c-stack/ch2-cpp/03-cppbiao-zhun-ku.md)
+    * [04-CPP面向对象](c-stack/ch2-cpp/04-cppmian-xiang-dui-xiang.md)
   * [ch3-桌面软件开发](c-stack/ch3zhuo-mian-ruan-jian-kai-fa.md)
-    * 01-桌面软件开发基础
+    * [01-桌面软件开发基础](c-stack/ch3zhuo-mian-ruan-jian-kai-fa/01zhuo-mian-ruan-jian-kai-fa-ji-chu.md)
 * [【2】C技术栈](ch1-CPP-Algorithm.md)
   * [ch1-C语言](ch1-C语言.md)
     * [04-编程语言](04-编程语言.md)
