@@ -43,16 +43,6 @@
     * [02-Java-Web框架](java-stack/ch3-java-web/02-java-webkuang-jia.md)
     * [02-Java-Web网站实例搭建](java-stack/ch3-java-web/02-java-webwang-zhan-shi-li-da-jian.md)
 * [【4】JS技术栈 ](ch3-JS-Algorithm.md)
-  * [ch2-JS进阶 ](ch2-JS进阶sa.md)
-    * [03-正则表达式](19-正则表达式.md)
-    * [03-JSON和Ajax](06-JSON和.md)
-    * [04-JS-数据结构](08-JS数据结构.md)
-    * [05-JS-设计模式](09-JS设计模式.md)
-    * [06-函数式编程](06-函数式编程.md)
-  * [ch3-JS升级与变种](ch3-JS升级与变种.md)
-    * [01-coffee基础](01-coffee基础.md)
-    * [02-TypeScript基础](02-TypeScript基础.md)
-    * [03-ES6标准](03-ES6标准.md)
   * [ch4-JQuery](ch5-UI-JQuery.md)
     * [01-JQuery-基础](01-JQuery基础.md)
     * [01-jQuery基础2](01-jQuery基础2.md)
@@ -101,8 +91,16 @@
     * [01-JS-数据结构](js-stack/ch2-jsjin-jie/01-jsshu-ju-jie-gou.md)
     * [01-JS-设计模式](js-stack/ch2-jsjin-jie/01-jsshe-ji-mo-shi.md)
     * [01-函数式编程](js-stack/ch2-jsjin-jie/01han-shu-shi-bian-cheng.md)
-  * ch3-JS变种
-  * ch4-jQuery
+  * [ch3-JS变种](js-stack/ch3-jsbian-zhong.md)
+    * [01-Coffee基础](js-stack/ch3-jsbian-zhong/01-coffeeji-chu.md)
+    * [01-TypeScript基础](js-stack/ch3-jsbian-zhong/01-typescriptji-chu.md)
+    * [02-ES6标准](js-stack/ch3-jsbian-zhong/02-es6biao-zhun.md)
+  * [ch4-jQuery](js-stack/ch4-jquery.md)
+    * [01-jQuery-基础1](js-stack/ch4-jquery/01-jqueryji-chu-1.md)
+    * [01-jQuery-基础2](js-stack/ch4-jquery/01-jqueryji-chu-2.md)
+    * [02-jQuery-UI](js-stack/ch4-jquery/02-jquery-ui.md)
+    * [02-UI组件1](js-stack/ch4-jquery/02-uizu-jian-1.md)
+    * [02-UI组件2](js-stack/ch4-jquery/02-uizu-jian-2.md)
   * ch5-JavaScript框架篇
   * ch6-JS-Web
   * ch7-WebApp
