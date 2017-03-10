@@ -6,16 +6,6 @@
         "pdf": "styles/pdf.css",
         "mobi": "styles/mobi.css",
         "epub": "styles/epub.css"
-     },   
-     
-
-  "plugins": [
-    "json"
-  ],
-  "pluginsConfig": {
-    "json": {
-      "output": "_book/book.json"
-    }
-  }
+     }
 
 }
