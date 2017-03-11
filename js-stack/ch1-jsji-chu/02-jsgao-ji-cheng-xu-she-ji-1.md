@@ -39,12 +39,14 @@
         alert("<\/script>"); // 正确方式
     }
     ~~~
+    
     * <del>尽管不检查.js 扩展名，但要确保服务器能返回正确的 MIME 类型</del>
     	* php,jsp等
 * <del>文档模式</del>
 	* 混杂模式（quirks mode）
 	* 标准模式（standards mode）
 * <del>noscript 脚本不支持或禁用</del>
+
 ~~~
 <noscript>
 <p> 本页面需要浏览器支持（启用）JavaScript 。
@@ -56,8 +58,8 @@
 * <del>驼峰大小写格式</del>
 * 保留字
 
-![](image/screenshot_1484202024526.png)
 * **初始化变量**并不会把它标记为字符串类型，就是给变量赋一个值那么简单。因此，可以在修改变量值的同时修改值的类型
+
 ~~~
 var message = "hi";
 message = 100; // 有效但不推荐
@@ -77,6 +79,7 @@ alert(age); // 产生错误
         alert("Value is true"); // 将被执行
     }
     ~~~
+    
 * Number
 	* <del>八进制字面量在严格模式下是无效的</del>
     * <del>在进行算术计算时，所有以八进制和十六进制表示的数值最终都将被转换成十进制数值</del>
@@ -123,6 +126,7 @@ alert(age); // 产生错误
     var num5 = parseFloat("0908.5"); //908.5
     var num6 = parseFloat("3.125e7"); //31250000
     ~~~ 
+    
 * String
 	* <del>如果字符串中包含双字节字符，那么 length 属性可能不会精确地返回字符串中的字符数目</del>
     
@@ -134,6 +138,7 @@ alert(age); // 产生错误
     alert(num.toString(10)); // "10"
     alert(num.toString(16)); // "a"
     ~~~
+    
 * Object
 	* constructor
    * hasOwnProperty
@@ -144,6 +149,7 @@ alert(age); // 产生错误
 *  运算
 	* 负数同样以二进制码存储，但使用的格式是二进制补码
    *  <del>位运算符</del> P40
+   
 ~~~
 var s1 = "2";
 var s2 = "z";
@@ -180,11 +186,13 @@ true == 1  // true
 
 var num = (5, 1, 4, 8, 0); // num 的值为 0
 ~~~
+
 * 语句
 	* 使用 while 循环做不到的，使用 for 循环同样也做不到...
    *  label 语句
    *  <del>with语句</del>
    *  switch-case, 假如需要混合几种情形，不要忘了在代码中添加 **注释**，说明你是有意省略了 break 关键字
+   
 ~~~
 // continue语句
 var num = 0;
@@ -221,6 +229,7 @@ with(location) {
 	var url = href;
 }
 ~~~
+
 * 函数
 	* 没有重载，定义了两个名字相同的函数，则该名字只属于后定义的函数
    *  <del>ECMAScript 中也没有函数签名的概念，因为其函数参数是以一个包含零或多个值的 **数组**的形式传递的</del>
@@ -268,6 +277,7 @@ var person = new Object();
 setName(person);
 alert(person.name); //"Nicholas"
 ~~~
+
 * 垃圾收集
 	* 标记清除
    *  <del>引用计数</del> P79
@@ -297,6 +307,7 @@ var globalPerson = createPerson("Nicholas");
 // 手工解除 globalPerson 的引用
 globalPerson = null;
 ~~~
+
 *  引用类型
 	* 如果数组中的某一项的值是 null 或者 undefined ，那么该值在 join() 、
 toLocaleString() 、 toString() 和 valueOf() 方法返回的结果中以空字符串表示。
@@ -374,6 +385,7 @@ alert(sum); //15
     *  JavaScript 任务队列
     *  超时调用 ID 例clearTimeout(id);
     * 一般认为，使用 **超时调用** 来模拟间歇调用的是一种最佳模式。
+    
 ~~~
 // 全局变量不能通过 delete 操作符删除，
 // 而直接在 window 对象上的定义的属性可以
@@ -451,6 +463,7 @@ if (confirm("Are you sure?")) {
 	alert("I'm sorry to hear you're not sure. ");
 }
 ~~~
+
 * <del>迁就各方的“最小公分母”策略</del>
 * 最常见的客户端检测方法是 **能力检测**/特性检测
 	* [ JavaScript 中能力检测 文章](http://peter.michaux.ca/articles/feature-detection-state-of-the-art-browser-scripting)
@@ -475,6 +488,7 @@ if (confirm("Are you sure?")) {
     *   识别windows操作系统
     *   识别移动设备
     *   识别游戏系统
+    
 ~~~
 // 检测某个属性是否存在并不能确定对象是否支持排序。
 // 更好的方式是检测 sort 是不是一个函数。
@@ -565,7 +579,6 @@ return true;
 	* 针对XML **命名空间** 的变化
     * NodeIterator TreeWalker
     
-![](image/screenshot_1484458580701.png)
 ~~~
 // 为了确保跨浏览器兼容
 // 最好还是将 nodeType 属性与数字值进行比较
@@ -705,8 +718,6 @@ viewBox="0 0 100 100" style="width:100%; height:100%">
 </svg>
 </body>
 </html>
-
-
 ~~~
 
 #### **ch13 事件**
@@ -788,6 +799,7 @@ viewBox="0 0 100 100" style="width:100%; height:100%">
     * 模拟其他
     * 自定义DOM事件
     * ie中的事件模拟
+    
 ~~~
 //  DOM0 级,在元素的作用域执行
 var btn = document.getElementById("myBtn");
@@ -1096,6 +1108,7 @@ event.initCustomEvent("myevent", true, false, "Hello world!");
 div.dispatchEvent(event);
 }
 ~~~
+
 #### **ch14 表单脚本**
 * 事实上， **重置表单的需求是很少见的**。更常见的做法是提供一个取消按钮，让用户能够回到前一个页面，而不是不分青红皂白地重置表单中的所有值。
 * fieldset
@@ -1113,6 +1126,7 @@ div.dispatchEvent(event);
     * execCommand
 	* 富文本选区
 	* 富文本编辑器并不是一个表单字段
+	
 ~~~
 <!-- 通用提交按钮 -->
 <input type="submit" value="Submit Form">
