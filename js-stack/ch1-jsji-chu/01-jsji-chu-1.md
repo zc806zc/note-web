@@ -56,7 +56,8 @@ ECMA-262(真名)
 ```js
 // href操作
 href="#" // 当前页面
-href="javascript:void(0)"  // 比href=""留空要好href="javascript:void(alert('Warning!!!'))" // 会执行 
+href="javascript:void(0)"  // 比href=""留空要好
+href="javascript:void(alert('Warning!!!'))" // 会执行 
 href="javascript:test();" // 执行此全局函数
 
 function getValue(){
