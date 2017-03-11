@@ -52,20 +52,19 @@ script
 * 最好只包含一个延迟脚本
 * 只适用于外部脚本文件
 * 还是按照顺序来
+
 ```
 
+   
+* 示例
+```
 * <del>language type charset</del>
-* <del>不要在代码中的任何地方出现 "</script>"</del>
-    
-
-
-```
+* <del>不要在代码中的任何地方出现 "</script>"
 
 function sayScript(){
 // alert("</script>");
 alert("<\/script>"); // 正确方式
 }
-
 
 ```
 
