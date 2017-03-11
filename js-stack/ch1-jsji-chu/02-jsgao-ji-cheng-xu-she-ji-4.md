@@ -1,82 +1,132 @@
 #### **ch13 事件**
 * 事件流
-	* 冒泡
-    * 捕获
-* DOM2事件流
-	* 事件捕获阶段
-    	* 捕获阶段不会涉及事件目标
-    * 处于目标阶段
-    * 事件冒泡阶段
-* 事件处理程序
-	* [缺点 文章](www.jibbering.com/faq/names/event_handler.html)
-* 事件对象 Event e
-	* 只有在事件处理程序执行期间， event 对象才会存在；一旦事件处理程序执行完成， event 对象就会被销毁。
-    * IE中的事件对象
-* 事件类型
-	*   UI（User Interface，用户界面）事件
-	* 焦点事件，当元素获得或失去焦点时触发；
-	* 鼠标事件，当用户通过鼠标在页面上执行操作时触发；
-	* 滚轮事件，当使用鼠标滚轮（或类似设备）时触发；
-	* 文本事件，当在文档中输入文本时触发；
-	* 键盘事件，当用户通过键盘在页面上执行操作时触发；
-	* 合成事件，当为 IME（Input Method Editor，输入法编辑器）输入字符时触发；
-	* 变动（mutation）事件，当底层 DOM 结构发生变化时触发。
-* 鼠标事件顺序
-	* mousedown
-	* mouseup
-	* click
-	* mousedown
-	* mouseup
-	* click
-	* dblclick
-* 比较
-	* clientX clientY 
-	* pageX pageY
-	* scrollLeft 和 scrollTop
-    * screenX 和 screenY
-* 键盘事件
-	* 键码
-    * 字符编码
-* <del>复合事件</del>
-	* 处理 IME 的输入序列
+	* [事件处理程序的缺点 文章](www.jibbering.com/faq/names/event_handler.html)
+	
+```
+冒泡
+捕获
+
+// DOM2事件流
+事件捕获阶段
+捕获阶段不会涉及事件目标
+处于目标阶段
+事件冒泡阶段
+
+// 事件对象 Event e
+只有在事件处理程序执行期间， 
+event 对象才会存在；
+一旦事件处理程序执行完成， 
+event 对象就会被销毁。
+
+// IE中的事件对象
+
+
+// 事件类型
+UI（User Interface，用户界面）事件
+焦点事件，当元素获得或失去焦点时触发；
+鼠标事件，当用户通过鼠标在页面上执行操作时触发；
+滚轮事件，当使用鼠标滚轮（或类似设备）时触发；
+文本事件，当在文档中输入文本时触发；
+键盘事件，当用户通过键盘在页面上执行操作时触发；
+合成事件，当为 IME（Input Method Editor，输入法编辑器）输入字符时触发；
+变动（mutation）事件，当底层 DOM 结构发生变化时触发。
+
+
+// 鼠标事件顺序
+mousedown
+mouseup
+click
+mousedown
+mouseup
+click
+dblclick
+
+// 键盘事件
+键码
+字符编码
+
+// 复合事件
+处理 IME 的输入序列
+
+// 比较
+
+clientX clientY
+pageX pageY
+scrollLeft 和 scrollTop
+screenX 和 screenY
+
+// 设备事件
+
+orientationchange 屏幕纵横 事件
+所有 iOS 设备都支持 orientationchange 事件和 window.orientation 属性
+MozOrientation
+deviceorientation 告诉开发人员设备在空间中朝向哪儿，而不是如何移动
+devicemotion 告诉开发人员设备什么时候移动，而不仅仅是设备方向如何改变
+
+// 触摸事件
+touchstart  touchmove  touchend touchcancel
+顺序
+touchstart
+mouseover
+mousemove （一次）
+mousedown
+mouseup
+click
+touchend
+
+
+// 手势事件
+gesturestart ：当一个手指已经按在屏幕上而另一个手指又触摸屏幕时触发。
+gesturechange ：当触摸屏幕的任何一个手指的位置发生变化时触发。
+gestureend：当任何一个手指从屏幕上面移开时触发。
+
+```
+
+
 * HTML5事件
-	* contextmenu
-    * beforeunload
-    * DOMContentLoaded 不理会图像、JavaScript 文件、CSS 文件或其他资源是否下载完毕
-    *  readystatechange
-    *  pageshow 和 pagehide 事件
-    	* 往返缓存 p393
-    *  hashchange 事件
-* 设备事件
-	* orientationchange 屏幕纵横 事件
-    	* 所有 iOS 设备都支持 orientationchange 事件和 window.orientation 属性
-    	*  MozOrientation
-        *  **deviceorientation** 告诉开发人员设备在空间中朝向哪儿，而不是如何移动
-        *  devicemotion 告诉开发人员设备什么时候移动，而不仅仅是设备方向如何改变
-* 触摸事件
-	*  touchstart  touchmove  touchend touchcancel
-    * 顺序
-    	1. touchstart
-		1.  mouseover
-		1. mousemove （一次）
-		1. mousedown
-		1. mouseup
-		1. click
-		1. touchend
-* 手势事件
-	* gesturestart ：当一个手指已经按在屏幕上而另一个手指又触摸屏幕时触发。
-	* gesturechange ：当触摸屏幕的任何一个手指的位置发生变化时触发。
-	* gestureend：当任何一个手指从屏幕上面移开时触发。
+
+
+```
+contextmenu
+beforeunload
+
+DOMContentLoaded 不理会图像、JavaScript 文件、CSS 文件或其他资源是否下载完毕
+readystatechange
+
+pageshow 和 pagehide 事件
+往返缓存 p393
+
+hashchange 事件
+
+```
+	
+
+
 * 内存和性能
-	* 事件委托
-    * 移除事件处理程序
+
+
+```
+事件委托
+移除事件处理程序
+```
+
+
+
 * 模拟事件
-	* 使用 **JavaScript** 在任意时刻来 **触发**特定的事件
-    * 模拟鼠标事件
-    * 模拟键盘事件
-    * 模拟其他
-    * 自定义DOM事件
-    * ie中的事件模拟
+
+
+```
+使用 **JavaScript** 在任意时刻来 **触发**特定的事件
+模拟鼠标事件
+模拟键盘事件
+模拟其他
+自定义DOM事件
+ie中的事件模拟
+```
+
+
+
+* 示例
     
 ~~~
 //  DOM0 级,在元素的作用域执行
@@ -388,23 +438,31 @@ div.dispatchEvent(event);
 ~~~
 
 #### **ch14 表单脚本**
-* 事实上， **重置表单的需求是很少见的**。更常见的做法是提供一个取消按钮，让用户能够回到前一个页面，而不是不分青红皂白地重置表单中的所有值。
-* fieldset
-* textbox 选择部分文本 P422
-* 过滤输入
-	* 屏蔽字符
-    * 操作剪贴板
-    * 自动切换焦点
-* HTML5的验证性API
-* 禁止验证 novalidate
-* 表单序列化
-* 富文本编辑器
-	*  designMode
-    *  contenteditable
-    * execCommand
-	* 富文本选区
-	* 富文本编辑器并不是一个表单字段
-	
+
+
+
+```
+事实上， **重置表单的需求是很少见的**。
+更常见的做法是提供一个取消按钮，让用户能够回到前一个页面，而不是不分青红皂白地重置表单中的所有值。
+fieldset
+textbox 选择部分文本 P422
+过滤输入
+屏蔽字符
+操作剪贴板
+自动切换焦点
+HTML5的验证性API
+禁止验证 novalidate
+表单序列化
+富文本编辑器
+designMode
+contenteditable
+execCommand
+富文本选区
+富文本编辑器并不是一个表单字段
+```
+
+
+* 示例	
 ~~~
 <!-- 通用提交按钮 -->
 <input type="submit" value="Submit Form">
