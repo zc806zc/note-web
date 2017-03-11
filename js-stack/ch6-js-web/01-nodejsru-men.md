@@ -1,11 +1,12 @@
 #### **Node.js基础**
+
 * 基础
 
-```
+```js
 + <del>有关前身 Netscape Enterprise Server 为HTTP应用程序编码</del>
 + <del>用作网络工作环境</del>
-	* 加载http模块 
-	* AMD require()
+    * 加载http模块 
+    * AMD require()
 * [npm](http://npmjs.org)
 + 划分Node.js应用程序分布至多个文件
 + 用于网页应用程序的 **Node.js框架**
@@ -18,12 +19,9 @@
     + [Joyent](https://github.com/nodejs/node-v0.x-archive/wiki/node-hosting)
 ```
 
-
 * 示例
 
-```
-
-
+```js
 // 运行示例 
 node filename.js
 
@@ -126,39 +124,36 @@ node filename.js
         "yuidocjs": "~0.3.50"
     }
 }
-
-
 ```
-
-
 
 #### **构建工具及自动化**
+
 * 基础
 
-```
+```js
 + <del>日复一日的工作流程如下</del>
-	* 资源管理
-    	* 图像压缩
+    * 资源管理
+        * 图像压缩
     * 代码编写
-    	* JS静态代码分析
+        * JS静态代码分析
         + 单元测试
         + 代码缩编
         + 利用sass处理css
 + **Grunt与Gulp**
-	* JavaScript任务运行器
+    * JavaScript任务运行器
     * Grunt 
         + [简单实践教程](http://developer.51cto.com/art/201506/479127.htm)
         + [Grunt插件](http://www.gruntjs.net/plugins )
     * 更容易被人类阅读的语言格式 - [YAML](http://yaml.org)
-    	+ API中有对应的的file.readYAML() 
+        + API中有对应的的file.readYAML() 
     + 改进工作流，创建生产就绪的代码
-	+ [Gulp.js](http://gulpjs.com) - "流式"构建系统
-    	+ 相比Grunt的优势
+    + [Gulp.js](http://gulpjs.com) - "流式"构建系统
+        + 相比Grunt的优势
           + 利用Node.js的Stream, 使得一个任务的输出可以进行feed和pipe而成为另一个任务的输入，不需要一个在硬盘写入临时文件的中途步骤，更高效
           + 配置信息不再是一个独立的很大的配置对象，而是链式调用
           + 专门设计成细分化的任务
 + 第三方库和框架的管理 
-	* 保证安装准确的版本
+    * 保证安装准确的版本
     + [Bower](http://bower.io) 基于Node.js
         + [grunt-bowercopy](https://github.com/timmywil/grunt-bowercopy)
         + [gulp-bower](https://github.com/zont/gulp-bower)
@@ -168,12 +163,9 @@ node filename.js
     + **dist** 生产就绪的版本 - 构建处理,自动生成
 ```
 
-
 * 示例
 
-```
-
-
+```js
 // grunt使用示例
 npm install -g grunt-cli
 npm init
@@ -217,7 +209,7 @@ npm install gulp-uglify --save-dev
 npm install gulp-yuidoc --save-dev
 npm install gulp-rename --save-dev
 npm install gulp-header --save-dev // 没有watch, 已经在API里
-
-
 ```
+
+
 
