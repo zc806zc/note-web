@@ -1,26 +1,17 @@
 #### **JSON和Ajax**
+
 * 工具
 
-
-```
+```js
   + 校验工具 [JSONLint](http://www.jsonlint.com/)
   + 构建JSON逻辑模型 [JSON Editor Online](http://jsoneditoronline.org/)
   + [JSON→CSV](https://github.com/konklone/json)
   + [JSON格式化工具](http://www.runoob.com/jsontool)
 ```
 
-
-
-
 * 常识
 
-
-
-```
-
-
-
-
+```js
 // JSON
 JavaScript Object Notation 
 JavaScript 对象表示法
@@ -75,15 +66,9 @@ responseXM
 $.get() 
 $.post() 
 $.ajax()
-
-
-
 ```
 
-
 * **JSONP**
-
-
 
 ```js
 通过PHP跨域请求
@@ -92,10 +77,10 @@ $.ajax()
 // jQuery获取json
 $(".message").html(JSON.stringify(json));
 $.getJSON(‘http://example/service/addresses/home/1’,
-	function(data) {
-		var address = JSON.parse(data);
-		console.log(“Address Line 1 = “ + address.line1);
-	}
+    function(data) {
+        var address = JSON.parse(data);
+        console.log(“Address Line 1 = “ + address.line1);
+    }
 );
 
 // forEach()函数来循环
@@ -112,7 +97,7 @@ html += "</div><br>";
 
 // 过滤
 json = json.filter(function(val) {
-	return (val.id !== 1);
+    return (val.id !== 1);
 });
 
 // java实现
@@ -162,6 +147,7 @@ String addrJsonStr =
 “}”;
 
 Address addrIn = mapper.readValue(addrJsonStr, Address.class);
-
-
 ```
+
+
+
