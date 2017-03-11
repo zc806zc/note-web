@@ -2,23 +2,35 @@
 * 导航处的下拉菜单
 	* [zoom](https://zoom.us/)
     
-~~~
+
+
+```
+
 本来就应该默认设置为鼠标滑过显示。
 要勾引别人点击就先让人少点击几次。
 
 实现思路：CSS覆盖一下
 
 .nav > li:hover .dropdown-menu {display: block;}
-~~~
+
+
+```
+
+
 
 ![](http://img.blog.csdn.net/20160624142445478)
 
-* * * * *
+---------------
+
 
 #### **效果**
 * 悬停时
 	* [haobtc](https://haobtc.com/)
-~~~
+
+
+```
+
+
 别人可能在做选择，例如----“买不买”
 而有些人可能真有选择犹豫症，这时候，你就推他一把。。
 
@@ -48,53 +60,62 @@ box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.1);
 /*transition: transform 0.2s linear 0s; */
 transition: 0.15s ease-in-out;
 }
-~~~
+
+```
+
+
 
 ![](http://img.blog.csdn.net/20160624145302114)
 
-* * * * *
+-----------------
 
 * 导航处的普通标签双杠响应，而按钮要有被按得凹陷的感觉
 	* [photoshoot](https://photoshoot.io/)
-~~~
-// 实现思路
-~~~
+	
 
 ![](http://img.blog.csdn.net/20160624150523029)
 ![](http://img.blog.csdn.net/20160624150558076)
 
-* * * * *
+
+----------------------
+
 
 * 翻牌介绍
 	* [zarget](http://zarget.com/)
-~~~
-// 实现思路
 
-~~~
 
 ![](http://img.blog.csdn.net/20160624151017937)
 
-* * * * *
+
+------------------------
+
 
 * 点亮灰暗的图标
 	* [bootcdn](http://www.bootcdn.cn/) 
-~~~
-// 实现思路
-~~~
 
 ![](http://img.blog.csdn.net/20160624151525285)
 
-* * * * *
+
+----------------
+
 
 * 页面缩减
 	* [scala](http://www.scala-lang.org/) 
-~~~
+
+
+```
+
 可能一条消息很长，就让它只显示部分。
-~~~
+
+```
+
+
 
 ![](http://img.blog.csdn.net/20160624151746033)
 
-* * * * *
+
+-------------------
+
 
 **（7）等待动画与加载动画**
 跟进度条和加载圈一样，觉得鸡肋，但读过一点心理学就会知道这个炒鸡重要。。
@@ -103,7 +124,6 @@ transition: 0.15s ease-in-out;
 
 http://truthlabs.com/
 
-实现思路：
 
 ![这里写图片描述](http://img.blog.csdn.net/20160624152117988)
 
@@ -388,20 +408,16 @@ http://www.desk.com/
 * 侧边缩放的菜单
 	* [barackobama](https://connect.barackobama.com/#)
     * [togetherjs](https://togetherjs.com/)
-~~~
 
-~~~
 
 ![这里写图片描述](http://img.blog.csdn.net/20160624155626143)
 
 ![这里写图片描述](http://img.blog.csdn.net/20160624155637847)
 
-* * * * *
+-------------------------
 
 #### **页脚区**
 * [admaster](http://www.admaster.com.cn/)
-~~~
 
-~~~
 
 ![这里写图片描述](http://img.blog.csdn.net/20160624155612482)

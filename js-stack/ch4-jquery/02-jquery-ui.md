@@ -1,12 +1,11 @@
 #### **jQuery UI**
-+ [主题下载](http://jqueryui.com/themeroller/)
-+ [upgrade-guide](http://jqueryui.com/upgrade-guide/)
-+ [手册](http://www.runoob.com/jqueryui/jqueryui-api.html)
-
-* * * * *
 
 * 基础
-~~~
+  * [主题下载](http://jqueryui.com/themeroller/)
+  * [upgrade-guide](http://jqueryui.com/upgrade-guide/)
+  * [手册](http://www.runoob.com/jqueryui/jqueryui-api.html)
+
+```js
 一组用户界面交互、特效、小部件及主题
 组件间相对独立，可按需加载，避免浪费带宽拖慢网页打开速度
 20 种预设主题 + 60 项可配置样式 + 24 种背景纹理(约...)
@@ -15,12 +14,11 @@
 组件间 API 缺乏协调，缺乏配合使用帮助
 相对于 Dojo、YUI、Ext JS 等成熟产品，可用控件较少，无法满足复杂界面功能要求
 jQuery UI 的版本是配合特定的 jQuery 版本设计的
-~~~
-
-* * * * *
+```
 
 * API内容
-~~~
+
+```js
 特效 支持颜色动画和 Class 转换 提供了一些额外的 Easings
 特效核心 jquery.ui.effect.js 提供
 鼠标交互 拖拽...
@@ -31,21 +29,22 @@ jQuery UI 的版本是配合特定的 jQuery 版本设计的
 UI核心 jquery.ui.core.js
 实用工具 jQuery.widget.bridge() 中介...
 小部件 扩展和调用小部件
-~~~
+```
 
-* * * * *
 * 工作原理
-~~~
+
+```js
 生命周期
 只要是颜色、背景图像、图标等。
 所以这些是 "安全的" 样式，不会影响到插件的功能
 
 theme.css(观感) + 具体的样式表(尺寸、内边距、外边距、定位、浮动)
 为了易于维护，建议只更改 ui.theme.css 文件和图像
-~~~
+```
 
-+ 部件库： 一致的API 尽可能多的选项定义 defaults
-~~~
+* 部件库： 一致的API 尽可能多的选项定义 defaults
+
+```js
 $.widget( "ns.plugin", {
 // Default options.
 options: {
@@ -82,10 +81,11 @@ this._setOption( "value", 0 );
 
 _destroy() 移除实例引用 解除绑定所有使用_bind()添加的事件
 部件库（Widget Factory）只是创建有状态插件的一种方式
-~~~
+```
 
 #### **jQuery Easy UI的元素**
-~~~
+
+```js
 应用
 curd应用（数据网格 + 表单）
 RSS阅读器
@@ -120,4 +120,7 @@ HTML table 转换成数据网格
 异步提交
 验证
 下拉框（格式化,过滤）
-~~~
+```
+
+
+
