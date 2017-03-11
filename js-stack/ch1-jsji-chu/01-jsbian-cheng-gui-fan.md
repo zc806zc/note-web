@@ -1,14 +1,16 @@
 #### **JS编程规范**
-* 参考链接 
-  + [javascript-style-guide](https://github.com/adamlu/javascript-style-guide) 
+
+* 参考链接
+
+  * [javascript-style-guide](https://github.com/adamlu/javascript-style-guide) 
   * [JS风格指南 - 缪运泽](https://gold.xitu.io/post/587979148d6d810058bb3b32?utm_source=gold_browser_extension)
-  + [BootStrap中文网](http://codeguide.bootcss.com/) 已小结如下
-  + [TGuide](http://tguide.qq.com/main/index.htm)
-  + [CSS规范](ttp://cssguidelin.es/)
-    
+  * [BootStrap中文网](http://codeguide.bootcss.com/) 已小结如下
+  * [TGuide](http://tguide.qq.com/main/index.htm)
+  * [CSS规范](ttp://cssguidelin.es/)
+
 * 格式约定
 
-~~~
+```js
 // yahoo军规
 js放在body中，
 毕竟脚本放在head里感觉怪怪的...
@@ -30,11 +32,11 @@ document.write("你好 \
 
 在文件结尾添加一个空白行,
 保存文件时，用插件删除尾部空白符
-~~~
+```
 
 * **命名** 有关
 
-~~~
+```js
 // 开头统一声名全局变量
 全局变量统一大写??  不一定
 常量统一大写，避免幻数
@@ -68,7 +70,7 @@ class="js-active" 作为JS调用的钩子，带上前缀
 // 在 rgb()、rgba()、hsl()、hsla() 或 rect() 值的内部，值之间不加空格。
 用-.5px 代替 -0.5px，
 用margin: 0; 代替 margin: 0px;。
-    
+
 // 文件名统一小写
 
 // 引入 CSS 和 JS文件时一般不需要指定 type 属性
@@ -113,4 +115,7 @@ var content = '<span id="main_content">'
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
-~~~
+```
+
+
+
