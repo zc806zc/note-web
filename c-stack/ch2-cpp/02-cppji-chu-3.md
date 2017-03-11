@@ -1,8 +1,8 @@
-y#### **CPP基础3**
+#### **CPP基础3**
+
 * 动态内存
 
-
-```
+```cpp
 栈：在函数内部声明的所有变量都将占用栈内存。
 堆：这是程序中未使用的内存，在程序运行时可用于动态分配内存。
 
@@ -26,24 +26,18 @@ for(int i = 0; i < COL; i++) {
 delete [] pvalue; 
 
 // 对象的动态内存分配
-
-
 ```
 
 * 模板
 
-
 ```
 模板是泛型编程的基础，
 泛型编程即以一种独立于任何特定类型的方式编写代码。
-
-
 ```
 
 * 预处理器
 
-
-```
+```cpp
 函数宏
 
 // ##运算
@@ -54,7 +48,7 @@ using namespace std;
 int main()
 {
    int xy = 100;
-   
+
    cout << concat(x, y);
    return 0;
 }
@@ -64,42 +58,33 @@ int main()
  __FILE__  
  __DATE__
 __TIME__
-
-
 ```
 
 * 信号处理
 
-
 ```
-
-
 
 ```
 
 * 多线程
 
-
 ```
 向线程传递参数
 
 连接和分离线程
-
-
 ```
 
 * Web编程
-	* [CGI - web](http://www.cnblogs.com/gongxijun/p/4366284.html)
+  * [CGI - web](http://www.cnblogs.com/gongxijun/p/4366284.html)
 
-
-```
+```cpp
 <Directory "/var/www/cgi-bin">
    AllowOverride None
    Options ExecCGI
    Order allow,deny
    Allow from all
 </Directory>
- 
+
 <Directory "/var/www/cgi-bin">
 Options All
 </Directory>
@@ -107,6 +92,7 @@ Options All
 C:\Apache\cgi-bin 
 
 httpd.conf修改后 注意保存关闭再重启appache
-
-
 ```
+
+
+
