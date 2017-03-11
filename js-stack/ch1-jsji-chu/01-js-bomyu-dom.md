@@ -1,36 +1,37 @@
 #### **BOM基础**
+
 * 常识
 
-~~~
+```js
 尚无正式标准
 使 JavaScript有能力与浏览器对话
-~~~
+```
 
 * 窗口与尺寸
 
-~~~
+```js
 window.open()  close() 
 window.moveTo()  resizeTo() -调整尺寸
 
 弹窗
 alert confirm prompt("sometext","defaultvalue");
 window.print() find()
-    
+
 // 兼容示例
 var w=window.innerWidth
-	|| document.documentElement.clientWidth
-	|| document.body.clientWidth;
-~~~
+    || document.documentElement.clientWidth
+    || document.body.clientWidth;
+```
 
-*  Screen
+* Screen
 
-~~~
+```js
 可用宽度 screen.availWidth
-~~~
+```
 
-*   Location
+* Location
 
-~~~
+```js
 location.hostname 返回 web 主机的域名
 location.pathname 返回当前页面的路径和文件名
 location.port 返回 web 主机的端口 （80 或 443）
@@ -39,13 +40,13 @@ location.href 返回当前页面的 URL
 location.assign() 方法加载新的文档
 window.location.search()</del>
 reload replace
-    
+
 console.log(window.location === document.location); // true
 
 function getQueryStringArgs(){
-	//取得查询字符串并去掉开头的问号
-	var qs = (location.search.length > 0 ? location.search.substring(1) : ""),
-	//保存数据的对象
+    //取得查询字符串并去掉开头的问号
+    var qs = (location.search.length > 0 ? location.search.substring(1) : ""),
+    //保存数据的对象
     args = {},
     //取得每一项
     items = qs.length ? qs.split("&") : [],
@@ -84,21 +85,20 @@ location.port = 8080;
 // 位于 reload() 调用之后的代码可能会也可能不会执行，这要取决于网络延迟或系统资源等因素。为此，最好将 reload() 放在代码的最后一行。
 location.reload(); //重新加载（有可能从缓存中加载）
 location.reload(true); //重新加载（从服务器重新加载）
-~~~
+```
 
-*  History
+* History
 
-~~~
+```js
 history.back()  
 forward() 
 
 go(-1)
-~~~
+```
 
-*   Navigator
+* Navigator
 
-~~~
-
+```js
 navigator 对象的信息具有误导性，
 不应该被用于检测 浏览器版本，
 因为navigator 数据可被浏览器使用者更改
@@ -115,8 +115,8 @@ plugins 集合有一个名叫 refresh() 的方法
 Firefox 2为 navigator 对象新增了 
 registerContentHandler() 
 和 registerProtocolHandler() 方法
-    
-    
+
+
 txt = "<p>浏览器代号: " + navigator.appCodeName + "</p>"; 
 txt+= "<p>浏览器名称: " + navigator.appName + "</p>"; 
 txt+= "<p>浏览器版本: " + navigator.appVersion + "</p>"; 
@@ -130,9 +130,9 @@ document.getElementById("example").innerHTML=txt;
 function hasPlugin(name){
   name = name.toLowerCase();
   for (var i=0; i < navigator.plugins.length; i++){
-  	if (navigator. plugins [i].name.toLowerCase().indexOf(name) > -1){
-  		return true;
-  	}
+      if (navigator. plugins [i].name.toLowerCase().indexOf(name) > -1){
+          return true;
+      }
   }
   return false;
 }
@@ -145,10 +145,10 @@ alert(hasPlugin("QuickTime"));
 //检测 IE 中的插件
 function hasIEPlugin(name){
   try {
-  	new ActiveXObject(name);
-  	return true;
+      new ActiveXObject(name);
+      return true;
   } catch (ex){
-  	return false;
+      return false;
   }
 }
 
@@ -183,18 +183,18 @@ alert(hasQuickTime());
 
 navigator.registerProtocolHandler("mailto",
 "http://www.somemailclient.com?cmd=%s", "Some Mail Client");
-~~~
+```
 
-*   计时事件
+* 计时事件
 
-~~~
+```js
  setInterval() 
  setTimeout()
-~~~
-    
-*  Cookies
+```
 
-~~~
+* Cookies
+
+```js
 存储 web 页面的用户信息 
 存储在文本文件中
 
@@ -243,24 +243,24 @@ navigator.registerProtocolHandler("mailto",
         }
       }
     }
-~~~
+```
 
 #### **DOM基础**
 
-~~~
+```js
 三个坐标 id tag class
 
 DOM操作 
 删除子元素 
 声名与取值
-    
+
 // 定位演示
 var x=document.getElementById("intro");
 var y=x.getElementsByTagName("p");  // div里的p
 document.write(y[0].innerHTML);  // 注意0
 
 // x=document.getElementsByClassName("intro");
- 
+
 // 指定属性
 document.getElementById("p1").innerHTML="新文本!";
 document.getElementById("image").src="landscape.jpg";
@@ -279,11 +279,11 @@ child.parentNode.removeChild(child);
 var input_val = document.getElementById("input_val");  
 get_val_btn.addEventListener("click", myFunc);
 function myFunc() { alert(input_val.value); }
-~~~
+```
 
-*   事件
+* 事件
 
-~~~
+```js
 onload onunload 页面的加载与卸载
 
 鼠标事件
@@ -310,7 +310,7 @@ function changetext(id) {
 
 // 分离
 document.getElementById("myBtn").onclick = function(){
-	displayDate()
+    displayDate()
 };
 
 // 监听器
@@ -334,4 +334,7 @@ if (x.addEventListener) {
 
 element.attachEvent(event, function);
 element.detachEvent(event, function);
-~~~
+```
+
+
+
