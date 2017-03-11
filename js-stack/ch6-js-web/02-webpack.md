@@ -12,6 +12,7 @@
 	+ 支持 React 热插拔??
 	+ demo 自动加上自己的加载器 回调define...
     + 每个项目下都必须配置有一个 webpack.config.js
+    
 ```
 var someModule = require("someModule");
     var anotherModule = require("anotherModule");    
