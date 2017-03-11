@@ -1,6 +1,6 @@
 #### **JS对象基础**
-* JS是一门货真价实的面向对象的语言
 
+* JS是一门货真价实的面向对象的语言
 
 ```js
 传统的面向对象 C++ Java PHP Objective-C
@@ -26,13 +26,11 @@ eval() 方法 - 整个 ECMAScript语言中最强大的一个方法
 能力非常强大，但也非常危险, 例代码注入问题
 window 对象
 Math
-
 ```
-
 
 * 示例
 
-```
+```js
 var uri = "http://www.wrox.com/illegal value.htm#start";
 
 //"http://www.wrox.com/illegal%20value.htm#start"
@@ -53,14 +51,11 @@ alert(decodeURIComponent(uri));
 var global = function(){
 return this;
 }();
-
 ```
 
+* 创建对象
 
-+ 创建对象
-
-
-```
+```js
 // method 1
 var person=new Object(); // 少用new
 person.firstname="John";
@@ -70,13 +65,11 @@ person.eyecolor="blue"; // 自动添加属性
 
 // method 2
 person={firstname:"John",lastname:"Doe",age:50,eyecolor:"blue", run: function(){}};
-
 ```
 
+* 添加方法到对象
 
-+ 添加方法到对象
-
-```
+```js
 function person(firstname,lastname,age,eyecolor) {
   this.firstname=firstname;
   this.lastname=lastname;
@@ -88,24 +81,18 @@ function person(firstname,lastname,age,eyecolor) {
   function changeName(name) {
      this.lastname=name;
   }
-  
+
 }
 myFather = new person("John","Doe",50,"blue");
 // myFather.name = "Dick";
 myFather.changeName("Doe");
-
-
 ```
-
-
 
 #### **Number对象**
 
-
 * 基础
 
-
-```
+```js
 + 最大值±1.7976931348623157 x 10308，最小值为±5 x 10 -324
 + 整数（不使用小数点或指数计数法）最多为 15 位。
 + 小数的最大位数是 17，但是浮点运算并不总是准确
@@ -119,13 +106,12 @@ var myNumber=128;
 myNumber.toString(16); // 返回 80
 myNumber.toString(8); // 返回 200
 myNumber.toString(2); // 返回 10000000
-
 ```
 
-+ 无穷大Infinity
-+ NaN - 非数字值
+* 无穷大Infinity
+* NaN - 非数字值
 
-```
+```js
 var x = 1000 / "Apple"; // true
 var x = 100 / "1000"; // still Number, return true
 var x = 1000 / 0; // false
@@ -139,11 +125,10 @@ typeof(y) // return Object
 ```
 
 #### **String对象**
+
 * 基础
 
-
-
-```
+```js
 + charAt() charCodeAt() fromCharCode()
 + indexOf() lastIndexOf()
 + concat() match() replace() search()
@@ -151,18 +136,12 @@ typeof(y) // return Object
 + substr() substring()
 + toLowerCase() toUpperCase()
 + valueOf()
-* <del>localeCompare()</del> 
+* <del>localeCompare()</del>
 ```
-
-
-
 
 * 示例
 
-
-```
-
-
+```js
 // 3个s方法
 var stringValue = "hello world";
 alert(stringValue.slice(3)); //"lo world"
@@ -210,16 +189,13 @@ var number = Number(value); //转型函数
 alert(typeof number); //"number"
 var obj = new Number(value); //构造函数
 alert(typeof obj); //"object"
-
 ```
-
-
 
 #### **Date对象**
+
 * 基础
 
-
-```
+```js
 + getFullYear() 获取年份
 + getTime() 返回从 1970 年 1 月 1 日至今的毫秒数
 + setFullYear() 设置具体的日期
@@ -233,16 +209,11 @@ alert(typeof obj); //"object"
 * toLocaleDateString() ——以特定于地区的格式显示星期几、月、日和年；
 * toLocaleTimeString() ——以特定于实现的格式显示时、分、秒；
 * toUTCString() ——以特定于实现的格式完整的 UTC 日期。
-
-
 ```
-
-
-
 
 * 示例
 
-```
+```js
 new Date() // 当前日期和时间
 new Date(milliseconds) //返回从 1970 年 1 月 1 日至今的毫秒数
 new Date(dateString)
@@ -287,16 +258,16 @@ result = stop – start;
 ```
 
 #### **Array对象**
+
 * 创建新方法
 
-```
+```js
 Array.prototype.myUcase=function(){ coding... };
 ```
 
 * 方法
 
-
-```
+```js
   + 合并两个或三个数组 - concat()
   + 删除末尾 - pop()
   + 末尾新增 - push()
@@ -309,14 +280,11 @@ Array.prototype.myUcase=function(){ coding... };
   + 字符串 -> 数组 - join()
 ```
 
-
-
 #### **Boolean对象**
+
 * 示例
 
-
-
-```
+```js
 var b1=new Boolean(0);
 var b1=new Boolean(-0);
 var b3=new Boolean("");
@@ -338,9 +306,10 @@ alert(result); //false
 ```
 
 #### **Math算数对象**
+
 * 基础
 
-```
+```js
 + var y = Math.sqrt(16);
 + 常量
 + <del>Math.E</del> Math.PI
@@ -349,46 +318,38 @@ alert(result); //false
 + <del>Math.LOG2E Math.LOG10E</del>
 ```
 
-
 * 示例 
 
-
-
-```
+```js
 // random方法
 function selectFrom(lowerValue, upperValue) {
-	var choices = upperValue - lowerValue + 1;
-	return Math.floor(Math.random() * choices + lowerValue);
+    var choices = upperValue - lowerValue + 1;
+    return Math.floor(Math.random() * choices + lowerValue);
 }
 var num = selectFrom(2, 10);
 alert(num); // 介于 2 和 10 之间（包括 2 和 10）的一个数值
-
 ```
 
-
-#### **[RegExp](http://www.regular-expressions.info)对象**  高程P106
+#### [**RegExp**](http://www.regular-expressions.info)**对象**  高程P106
 
 * 基础
 
-
-```
-
+```js
 <del>模式的局限性</del>
-	* 匹配字符串开始和结尾的 \A 和 \Z 锚
-	* 向后查找（lookbehind）
+    * 匹配字符串开始和结尾的 \A 和 \Z 锚
+    * 向后查找（lookbehind）
     * 并集和交集类
-	* 原子组（atomic grouping）
-	* Unicode 支持（单个字符除外，如 \uFFFF ）
-	* 命名的捕获组
-	* s （single，单行）和 x （free-spacing，无间隔）匹配模式
-	* 条件匹配
-	* 正则表达式注释
+    * 原子组（atomic grouping）
+    * Unicode 支持（单个字符除外，如 \uFFFF ）
+    * 命名的捕获组
+    * s （single，单行）和 x （free-spacing，无间隔）匹配模式
+    * 条件匹配
+    * 正则表达式注释
 ```
-
 
 * 示例
-   
-```
+
+```js
 // 匹配第一个"bat"或"cat"，不区分大小写
 var pattern2 = /[bc]at/i;
 
@@ -449,3 +410,6 @@ alert(matches[2]); // " and baby"
 
 // RegExp 构造函数属性 参考上图
 ```
+
+
+
