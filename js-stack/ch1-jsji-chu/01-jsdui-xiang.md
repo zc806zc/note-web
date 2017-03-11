@@ -3,32 +3,33 @@
 
 
 ```
-+ 传统的面向对象 C++ Java PHP Objective-C
-* JavaScript是面向对象的，但基于prototype(原型), 而不是使用类
-+ 继承 → 原型继承 原型链
-+ 没有强加刻板的语法结构 更加灵活性
-+ 怎么处理封装 多态问题
-+ 外层函数 沙箱般的编程环境 闭包 避免变量名冲突
-+ prototype的强大
-* 在对象实例已经创建以后可以继续添加属性和方法
-+ 上下文环境
-* this
-+ 对象中的 **嵌套**函数context是window,而非包含它的对象
-+ 可以把this的值保存在一个变量里, 命名为 **that**
-+ prototype用来定义方法 this用来定义属性?
-* 两个内置对象/单体内置对象
-* Global
-* URI 编码方法
-* eval() 方法 - 整个 ECMAScript语言中最强大的一个方法
-* 在 eval() 中创建的任何变量或函数都不会被提升
-* 能力非常强大，但也非常危险, 例代码注入问题
-* window 对象
-* Math
+传统的面向对象 C++ Java PHP Objective-C
+JavaScript是面向对象的，但基于prototype(原型), 而不是使用类
+继承 → 原型继承 原型链
+没有强加刻板的语法结构 更加灵活性
+怎么处理封装 多态问题
+外层函数 沙箱般的编程环境 闭包 避免变量名冲突
+prototype的强大
+在对象实例已经创建以后可以继续添加属性和方法
+上下文环境
+
+this
+对象中的 **嵌套**函数context是window,而非包含它的对象
+可以把this的值保存在一个变量里, 命名为 **that**
+prototype用来定义方法 this用来定义属性?
+两个内置对象/单体内置对象
+
+Global
+URI 编码方法
+eval() 方法 - 整个 ECMAScript语言中最强大的一个方法
+在 eval() 中创建的任何变量或函数都不会被提升
+能力非常强大，但也非常危险, 例代码注入问题
+window 对象
+Math
 
 ```
 
 
-    
 * 示例
 
 ```
@@ -99,12 +100,17 @@ myFather.changeName("Doe");
 
 
 #### **Number对象**
+
+
+* 基础
+
+
+```
 + 最大值±1.7976931348623157 x 10308，最小值为±5 x 10 -324
 + 整数（不使用小数点或指数计数法）最多为 15 位。
 + 小数的最大位数是 17，但是浮点运算并不总是准确
 
 
-```
 var x = 0.2+0.1; // 输出结果为 0.30000000000000004
 var y = 0377; // 八进制
 var z = 0xFF; // 十六进制
@@ -133,6 +139,11 @@ typeof(y) // return Object
 ```
 
 #### **String对象**
+* 基础
+
+
+
+```
 + charAt() charCodeAt() fromCharCode()
 + indexOf() lastIndexOf()
 + concat() match() replace() search()
@@ -141,7 +152,12 @@ typeof(y) // return Object
 + toLowerCase() toUpperCase()
 + valueOf()
 * <del>localeCompare()</del> 
+```
 
+
+
+
+* 示例
 
 
 ```
@@ -271,13 +287,13 @@ result = stop – start;
 ```
 
 #### **Array对象**
-+ 创建新方法
+* 创建新方法
 
 ```
 Array.prototype.myUcase=function(){ coding... };
 ```
 
-+ 方法
+* 方法
 
 
 ```
@@ -296,7 +312,7 @@ Array.prototype.myUcase=function(){ coding... };
 
 
 #### **Boolean对象**
-
+* 示例
 ```
 var b1=new Boolean(0);
 var b1=new Boolean(-0);
@@ -333,7 +349,9 @@ alert(result); //false
 
 * 示例 
 
-~~~
+
+
+```
 // random方法
 function selectFrom(lowerValue, upperValue) {
 	var choices = upperValue - lowerValue + 1;
@@ -341,7 +359,9 @@ function selectFrom(lowerValue, upperValue) {
 }
 var num = selectFrom(2, 10);
 alert(num); // 介于 2 和 10 之间（包括 2 和 10）的一个数值
-~~~
+
+```
+
 
 #### **[RegExp](http://www.regular-expressions.info)对象**  高程P106
 
