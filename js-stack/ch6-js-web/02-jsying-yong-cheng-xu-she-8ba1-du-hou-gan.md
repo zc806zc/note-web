@@ -1,6 +1,7 @@
 #### **ch1 JS的革命时代**
 + [1. 源码下载](https://github.com/oreillymedia/programming_javascript_applications)
 * [2. 在线阅读](http://chimera.labs.oreilly.com/books/1234000000262/pr01.html)
+
 * 进入的新的领域
   + 在**操作系统**上用web技术来构建原生应用
     + <del>win8</del> / Gnome
