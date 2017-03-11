@@ -5,6 +5,7 @@
 ------------
 * 基础
 	* jsp是另一种形式的servlet
+	
 ```
 java server page
 
@@ -37,6 +38,7 @@ plugin fallback param
 codebase属性
 ```
 * 注释与脚本标识
+
 ```
 <!-- html注释 -->                  // 客户端可见
 在HTML注释中可嵌入JSP表达式
@@ -63,6 +65,7 @@ codebase属性
 <h2>  hello,<%=s %> </h2>
 ```
 * include 动作和include指令区别
+
 ```
 如果要在JSP页面中显示大量的文本文字，可以将文字写入txt
 再使用include指令或标识
@@ -70,6 +73,8 @@ codebase属性
 但是include指令包含jsp文件
 contentType要一直，否则报错
 ```
+
+
 
 | 描述 | include指令 | include 动作|
 | --- | --- | --- |
@@ -80,6 +85,7 @@ contentType要一直，否则报错
 | 编译时间 | 较慢 | 较快|
 | 执行时间 | 稍快 |较慢--每次资源必须被编译|
 * jsp生命周期
+
 ```
 jspService()是用来处理客户端请求的，
 对于每一个请求，服务器会创建一个新的线程来处理该请求。
@@ -88,6 +94,7 @@ jspService()是用来处理客户端请求的，
 
 servlet是常驻在服务器内存中。
 ```
+
 * javaben的使用
 	* 像普通的java类一样，创建javabean;
    * 在jsp使用动作标签来使用 javaben
@@ -96,6 +103,7 @@ servlet是常驻在服务器内存中。
     	* request ,通过httpRequest.getAttribute()获取jvabean对象
     	*  session  httpSession.getAttribute()
     	* application 只要没有关闭服务器就会一直存在
+    
 ```
 当程序执行<jsp:setProperty>标识时，
 会按照page request session application的顺序来查找Bean示例
@@ -148,7 +156,9 @@ getProperty
       %>
   </body>
 ```
+
 * cookie
+
 ```
 // 创建使用与读取
 Cookie cookie=new Cookie(String ,Object);
@@ -164,6 +174,7 @@ getMaxAge();
 ```
 
 * JSP内置对象
+
 ```
 // BS进行交互通信的控制
 request 获取客户端的请求
@@ -190,6 +201,7 @@ isAutoFlush()
 ```
 
 * 其他内置对象
+
 ```
 pageContext 获取会话范围 
 最大集成着，通过它访问其他所有对象

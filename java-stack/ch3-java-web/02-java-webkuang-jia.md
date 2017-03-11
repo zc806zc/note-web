@@ -1,5 +1,6 @@
 #### **JSP框架概况**
 * Spring框架
+
 ```
 降低开发企业应用程序的复杂性
 使用Spring代替EJB开发企业级应用
@@ -14,6 +15,7 @@ Web模块
 ```
 
 * Struts 2框架
+
 ```
 起源WebWork框架
 MVC框架
@@ -25,6 +27,7 @@ MVC框架
 ```
 
 * Hibernate技术
+
 ```
 对象-关系映射 ORM (Object Relational Mapping)
 

@@ -1,5 +1,6 @@
 #### **ch1 JSP概述**
 * [代码下载](http://download.csdn.net/detail/gaoyuyihao/9249135)
+
 ```
 Java里，类是最小单位，
 不允许在类外面定义变量和方法
@@ -36,6 +37,7 @@ MVC模式
 ```
 
 #### **ch2 JSP开发基础**
+
 ```
 析构方法 finalize()
 
@@ -141,6 +143,7 @@ GenericServlet接口 抽象类
 
 #### **ch7 JSP实用组件**
 * [Common-FileUpload](http://commons.apache.org/proper/commons-fileupload/)
+
 ```
 // JSP文件操作
 Common-FileUpload组件
@@ -158,6 +161,7 @@ enctype="multipart/form-data"
 
 #### **ch8 JSP数据库应用开发**
 * [菜鸟教程-JSP连接MySQL](http://www.runoob.com/jsp/jsp-database-access.html) JSTL
+
 ```
 SQL Server2008  Access 
 MySQL 
