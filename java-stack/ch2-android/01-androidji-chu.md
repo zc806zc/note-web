@@ -15,6 +15,7 @@
 + 前景色和背景色，Photoshop中的背景色,就是相当一张图片的底色,前景色就相当于在底色上作画的颜色.如在photoshop中把背景色设为黑色,前景色高为白色.我们去写一个字,那么效果就是,这个字呈白色显示,而其他的地方就是黑色的背景了
 + [android工程结构相关解析](http://www.runoob.com/w3cnote/android-tutorial-project-src-analysis.html)
 + MainActivity.java的感觉
+
 ```
 package jay.com.example.firstapp;
 import android.support.v7.app.AppCompatActivity;
@@ -29,6 +30,7 @@ setContentView(R.layout.activity_main);
 }
 ```
 + 布局文件activity_main的感觉
+
 ```
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:tools="http://schemas.android.com/tools"
@@ -44,6 +46,7 @@ android:text="@string/hello_world" />
 </RelativeLayout>
 ```
 + AndroidManifest.xml配置文件的感觉
+
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
@@ -67,6 +70,7 @@ android:label="@string/app_name" >
 
 </manifest>
 ```
+
 + Android程序 **签名打包**
 + View和ViewGroup
 	+ View：所有可视化控件的父类,提供组件描绘和时间处理方法

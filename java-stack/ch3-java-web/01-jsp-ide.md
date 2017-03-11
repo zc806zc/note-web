@@ -4,6 +4,7 @@
     * [工具云盘下载 提取密码：vipr](http://pan.baidu.com/s/1o7pUJOm)
     * [ECLIPSE - 新建jsp页面默认模板设置](http://blog.csdn.net/peixuh/article/details/12623547)
     * [使Eclipse下支持编写HTML/JS/CSS/JSP页面的自动提示。](http://www.cnblogs.com/zhuawang/p/5596455.html)
+    
 ```
 // 准备环境
 JDK
@@ -40,6 +41,7 @@ charset 与 pageEncoding建议都改成UTF-8
 ------------
 * Intellij IDEA
 	* [使用IntelliJ IDEA开发JavaWeb项目](http://youthlin.com/20151128.html)
+	
 ```
 选择Java Enterprise栏的Web Application
 ```
