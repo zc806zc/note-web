@@ -1,18 +1,18 @@
 #### **ch15 使用 Canvas 绘图**
-~~~
+
+```js
 总结在 canvas基础
-~~~
+```
 
 #### **ch19 E4X**
 
-
-~~~
+```js
 * E4X 本身不是一门语言，它只是 ECMAScript 语言的可选扩展
 * 几个新的全局类型
-	* XML ：XML 结构中的任何一个独立的部分。
-	* XMLList ：XML 对象的集合。
-	* Namespace ：命名空间前缀与命名空间 URI 之间的映射。
-	* QName ：由内部名称和命名空间 URI 组成的一个限定名
+    * XML ：XML 结构中的任何一个独立的部分。
+    * XMLList ：XML 对象的集合。
+    * Namespace ：命名空间前缀与命名空间 URI 之间的映射。
+    * QName ：由内部名称和命名空间 URI 组成的一个限定名
 * 其内部机制是将每一种类型（特别是XML 和 XMLList ）都映射为多个 DOM 类型
 * for-each-in 循环
 * 使用两个点（ .. ）表示要匹配所有后代元素，
@@ -23,31 +23,28 @@
 
 
 <script type="text/javascript;e4x=1" src="e4x_file.js"></script>
-~~~
-
+```
 
 #### **ch21 Ajax 与 Comet**
 
-    
-~~~js
-
+```js
 * 使用 XMLHttpRequest 对象
 * 使用 XMLHttpRequest 事件
 * 跨域 Ajax 通信的限制
 * 跨资源共享 CORS Cross-Origin Resource Sharing
 * 其他跨域技术
-	* 图像ping 单向
-    	* 只能发送 GET 请求，
+    * 图像ping 单向
+        * 只能发送 GET 请求，
         * 无法访问服务器的响应文本
     *  JSONP
-    	*  JSON with padding
-		* 回调函数和数据
+        *  JSON with padding
+        * 回调函数和数据
     * Comet 更高级的 Ajax 技术 服务器推送
-    	* 有两种实现 Comet 的方式：长轮询和流
+        * 有两种实现 Comet 的方式：长轮询和流
 * 服务器发送事件 SSE Server-Sent Events
-	* 组合 XHR 和 SSE 也是能实现双向通信的
+    * 组合 XHR 和 SSE 也是能实现双向通信的
 * Web Sockets 全双工、双向通信
-	* 非常适合移动应用
+    * 非常适合移动应用
 * ajax与comet的安全问题
 
 
@@ -97,4 +94,7 @@ alert("Connection error.");
 socket.onclose = function(){
 alert("Connection closed.");
 };
-~~~
+```
+
+
+
