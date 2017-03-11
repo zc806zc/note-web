@@ -34,6 +34,7 @@
   * 寄生组合继承 P618
 * 拖放 DragAndDropExample04.htm示例
 * 
+
 ```js
 // 判断数组
 function isArray(value){
