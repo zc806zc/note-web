@@ -3,7 +3,10 @@
 总结在 canvas基础
 ~~~
 
-#### <del>**ch19 E4X**</del>
+#### **ch19 E4X**
+
+
+~~~
 * E4X 本身不是一门语言，它只是 ECMAScript 语言的可选扩展
 * 几个新的全局类型
 	* XML ：XML 结构中的任何一个独立的部分。
@@ -17,12 +20,17 @@
 * 星号字符（ * ）是一个通配符，可以匹配任意类型的节点。
 * 所有这些查询都可以通过一组执行相同操作的方法来实现。
 
-~~~
+
+
 <script type="text/javascript;e4x=1" src="e4x_file.js"></script>
 ~~~
 
 
 #### **ch21 Ajax 与 Comet**
+
+    
+~~~js
+
 * 使用 XMLHttpRequest 对象
 * 使用 XMLHttpRequest 事件
 * 跨域 Ajax 通信的限制
@@ -41,8 +49,8 @@
 * Web Sockets 全双工、双向通信
 	* 非常适合移动应用
 * ajax与comet的安全问题
-    
-~~~js
+
+
 // JSONP示例
 function handleResponse(response){
 alert("You’re at IP address " + response.ip + ", which is in " +
