@@ -56,6 +56,7 @@
     * [01-JS-编程规范](js-stack/ch1-jsji-chu/01-jsbian-cheng-gui-fan.md)
     * [02-JS高级程序设计4](js-stack/ch1-jsji-chu/02-jsgao-ji-cheng-xu-she-ji-4.md)
     * [02-JS高级程序设计5](js-stack/ch1-jsji-chu/02-jsgao-ji-cheng-xu-she-ji5.md)
+    * [02-JS高级程序设计6](js-stack/ch1-jsji-chu/02-jsgao-ji-cheng-xu-she-ji-6.md)
   * [ch2-JS进阶](js-stack/ch2-jsjin-jie.md)
     * [01-JS-正则表达式](js-stack/ch2-jsjin-jie/01-jszheng-ze-biao-da-shi.md)
     * [01-JSON-AJAX](js-stack/ch2-jsjin-jie/01-json-ajax.md)

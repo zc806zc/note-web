@@ -1,47 +1,73 @@
 #### **ch1、2 在 HTML 中使用 JavaScript**
 * 资源下载
-	* [源码下载](http://www.wrox.com/WileyCDA/WroxTitle/Professional-JavaScript-for-Web-Developers-3rd-Edition.productCd-1118026691,descCd-DOWNLOAD.html)
-	* [github下载](https://github.com/zgdong/Professional-Javascript-for-Web-Developers/tree/master/Professional-Javascript-for-web-developers)
-* **宿主**语言
-	* Web 浏览器只是 ECMAScript 实现可能的宿主环境之一
-	* 其他宿主环境包括 Node <del>和 Adobe Flash</del>
-    * JS ≈ ECMA + DOM + BOM
-* **ECMA-262** 给出了 ECMAScript **兼容**的定义
-	* 支持 ECMA-262 描述的所有“类型、值、对象、属性、函数以及程序句法和语义”
-    *  <del>支持 Unicode 字符标准</del>
+  * [源码下载](http://www.wrox.com/WileyCDA/WroxTitle/Professional-JavaScript-for-Web-Developers-3rd-Edition.productCd-1118026691,descCd-DOWNLOAD.html)
+  * [github下载](https://github.com/zgdong/Professional-Javascript-for-Web-Developers/tree/master/Professional-Javascript-for-web-developers)
+
+---------------------------------------
+
+* 基础
+
+```
+// 宿主语言
+Web 浏览器只是 ECMAScript 实现可能的宿主环境之一
+其他宿主环境包括 
+Node 
+Adobe Flash
+
+Browser JS ≈ ECMA + DOM + BOM
+
+// ECMA-262
+给出了 ECMAScript 兼容的定义
+
+支持 ECMA-262 描述的
+所有类型、值、对象、属性、函数以及程序句法和语义
+支持 Unicode 字符标准
+
+```
+
 * **DOM** 文档对象模型 Document Object Model
-	* 针对 **XML** 但经过扩展用于 HTML 的应用程序编程接口
-	* <del>DOM 并不只是针对 JavaScript 的，很多别的语言也都实现了 DOM</del>
-	* **SVG**（Scalable Vector Graphic，可伸缩矢量图）
-	* MathML（Mathematical Markup Language，数学标记语言）
-	* SMIL（Synchronized Multimedia Integration Language，同步多媒体集成语言）
-* **BOM** 浏览器对象模型
-	* 弹出新浏览器窗口的功能；
-    * 移动、缩放和关闭浏览器窗口的功能；
-	* 提供浏览器详细信息的 **navigator** 对象；
-	* 提供浏览器所加载页面的详细信息的 **location** 对象；
-	* 提供用户显示器分辨率详细信息的 **screen** 对象；
-	* 对 **cookies** 的支持；
-	* 像 **XMLHttpRequest** 和 IE的 ActiveXObject 这样的 **自定义对象**
-* script
-	* **async** 立即下载脚本，但不应妨碍页面中的其他操作
-    	* **异步**脚本不要在加载期间修改 DOM
-    * **defer** 表示脚本可以**延迟**到文档 **完全被解析和显示**之后再执行
-    	* 最好只包含一个延迟脚本
-        * 只适用于外部脚本文件
-        * 还是按照顺序来
-    * <del>language type charset</del>
-    * <del>不要在代码中的任何地方出现 "</script>"</del>
+
+```
+针对 XML 但经过扩展用于 HTML 的应用程序编程接口
+
+DOM 并不只是针对 JavaScript 的，
+很多别的语言也都实现了 DOM
+
+SVG Scalable Vector Graphic，可伸缩矢量图
+
+MathML（Mathematical Markup Language，数学标记语言）
+SMIL（Synchronized Multimedia Integration Language，同步多媒体集成语言）
+
+// BOM 浏览器对象模型
+弹出新浏览器窗口的功能；
+移动、缩放和关闭浏览器窗口的功能；
+提供浏览器详细信息的 **navigator** 对象；
+提供浏览器所加载页面的详细信息的 **location** 对象；
+提供用户显示器分辨率详细信息的 **screen** 对象；
+对 **cookies** 的支持；
+像 **XMLHttpRequest** 和 IE的 ActiveXObject 这样的 **自定义对象**
+script
+* **async** 立即下载脚本，但不应妨碍页面中的其他操作
+* **异步**脚本不要在加载期间修改 DOM
+* **defer** 表示脚本可以**延迟**到文档 **完全被解析和显示**之后再执行
+* 最好只包含一个延迟脚本
+* 只适用于外部脚本文件
+* 还是按照顺序来
+```
+
+* <del>language type charset</del>
+
+* <del>不要在代码中的任何地方出现 "</script>"</del>
     
-    ~~~
-    function sayScript(){
-        // alert("</script>");
-        alert("<\/script>"); // 正确方式
-    }
-    ~~~
+~~~
+function sayScript(){
+// alert("</script>");
+alert("<\/script>"); // 正确方式
+}
+~~~
     
-    * <del>尽管不检查.js 扩展名，但要确保服务器能返回正确的 MIME 类型</del>
-    	* php,jsp等
+* <del>尽管不检查.js 扩展名，但要确保服务器能返回正确的 MIME 类型</del>
+* php,jsp等
 * <del>文档模式</del>
 	* 混杂模式（quirks mode）
 	* 标准模式（standards mode）
@@ -69,16 +95,17 @@ var message;
 alert(message); // "undefined"
 alert(age); // 产生错误
 ~~~
+
 * <del>从技术角度讲，**函数在 ECMAScript中是对象**，不是一种数据类型。然而，函数也确实有一些特殊的属性，因此通过 typeof 操作符来区分函数和其他对象是有必要的。</del>
 * Boolean
 	* True 和 False（以及其他的混合大小写形式）都不是 Boolean 值，只是标识符
     
-    ~~~
-    var message = "Hello world!";
-    if (message) { // 自动转化
-        alert("Value is true"); // 将被执行
-    }
-    ~~~
+~~~
+var message = "Hello world!";
+if (message) { // 自动转化
+alert("Value is true"); // 将被执行
+}
+~~~
     
 * Number
 	* <del>八进制字面量在严格模式下是无效的</del>
@@ -93,51 +120,49 @@ alert(age); // 产生错误
        *  parseInt()
        *  parseFloat()
     
-    ~~~
-    var floatNum1 = 1.; // 小数点后面没有数字——解析为 1
-    var floatNum2 = 10.0; // 整数——解析为 10
+~~~
+var floatNum1 = 1.; // 小数点后面没有数字——解析为 1
+var floatNum2 = 10.0; // 整数——解析为 10
 
-    // 判断这个数字是不是有穷
-    var result = Number.MAX_VALUE + Number.MAX_VALUE;
-    alert(isFinite(result)); //false
-    
-    alert(isNaN(NaN)); //true
-    alert(isNaN(10)); //false（10 是一个数值）
-    alert(isNaN("10")); //false（可以被转换成数值 10）
-    alert(isNaN("blue")); //true（不能转换成数值）
-    alert(isNaN(true)); //false（可以被转换成数值 1）
-    
-    // 数值转化
-    var num1 = parseInt("1234blue"); // 1234
-    var num2 = parseInt(""); // NaN
-    // var num3 = parseInt("0xA"); // 10（十六进制数）
-    var num1 = parseInt("AF", 16); //175 指定
-    var num2 = parseInt("AF"); //NaN
-    var num4 = parseInt(22.5); // 22
-    var num5 = parseInt("070"); // 56（八进制数）
-    // ECMAScript 5 JavaScript 引擎中， parseInt() 已经不具有解析八进制值的能力，因此前导的零会被认为无效
-    var num6 = parseInt("70"); // 70（十进制数）
-    var num7 = parseInt("0xf"); // 15（十六进制数
-    
-    var num1 = parseFloat("1234blue"); //1234 （整数）
-    var num2 = parseFloat("0xA"); //0
-    var num3 = parseFloat("22.5"); //22.5
-    var num4 = parseFloat("22.34.5"); //22.34
-    var num5 = parseFloat("0908.5"); //908.5
-    var num6 = parseFloat("3.125e7"); //31250000
-    ~~~ 
+// 判断这个数字是不是有穷
+var result = Number.MAX_VALUE + Number.MAX_VALUE;
+alert(isFinite(result)); //false
+alert(isNaN(NaN)); //true
+alert(isNaN(10)); //false（10 是一个数值）
+alert(isNaN("10")); //false（可以被转换成数值 10）
+alert(isNaN("blue")); //true（不能转换成数值）
+alert(isNaN(true)); //false（可以被转换成数值 1）
+// 数值转化
+var num1 = parseInt("1234blue"); // 1234
+var num2 = parseInt(""); // NaN
+// var num3 = parseInt("0xA"); // 10（十六进制数）
+var num1 = parseInt("AF", 16); //175 指定
+var num2 = parseInt("AF"); //NaN
+var num4 = parseInt(22.5); // 22
+var num5 = parseInt("070"); // 56（八进制数）
+// ECMAScript 5 JavaScript 引擎中， parseInt() 已经不具有解析八进制值的能力，因此前导的零会被认为无效
+var num6 = parseInt("70"); // 70（十进制数）
+var num7 = parseInt("0xf"); // 15（十六进制数
+var num1 = parseFloat("1234blue"); //1234 （整数）
+var num2 = parseFloat("0xA"); //0
+var num3 = parseFloat("22.5"); //22.5
+var num4 = parseFloat("22.34.5"); //22.34
+var num5 = parseFloat("0908.5"); //908.5
+var num6 = parseFloat("3.125e7"); //31250000
+~~~
     
 * String
-	* <del>如果字符串中包含双字节字符，那么 length 属性可能不会精确地返回字符串中的字符数目</del>
+   * <del>如果字符串中包含双字节字符，那么 length 属性可能不会精确地返回字符串中的字符数目</del>
     
-    ~~~
-    var num = 10;
-    alert(num.toString()); // "10"
-    alert(num.toString(2)); // "1010"
-    alert(num.toString(8)); // "12"
-    alert(num.toString(10)); // "10"
-    alert(num.toString(16)); // "a"
-    ~~~
+~~~
+var num = 10;
+alert(num.toString()); // "10"
+alert(num.toString(2)); // "1010"
+alert(num.toString(8)); // "12"
+alert(num.toString(10)); // "10"
+alert(num.toString(16)); // "a"
+~~~
+
     
 * Object
 	* constructor
@@ -369,167 +394,4 @@ var sum = values.reduce(function(prev, cur, index, array){
 });
 alert(sum); //15
 ~~~
-
-#### **ch8、9  BOM与客户端检测**
-* <del>BOM-浏览器提供商会按照各自的想法随意去扩展它</del>
-*  <del>window 对象有双重角色，它既是通过 JavaScript 访问浏览器窗口的一个接口，又是 ECMAScript 规定的 Global 对象</del> 
-* window parent top self p195
-	*  在使用框架时，每个框架都有自己的 window 对象以及所有原生构造函数及其他函数的副本。每个框架都保存在 frames 集合中，可以通过位置或通过名称来访问。
-* 窗口
-	*  innerWidth 、 innerHeight 、 outerWidth 和 outerHeight
-    *  clientWidth 和 clientHeight
-    * [关于viewport](http://quirksmode.org/mobile/viewports2.html)
-    * 弹出窗口屏蔽
-* <del>间歇调用与超时调用</del>
-	* JavaScript 是一个单线程序的解释器，因此一定时间内只能执行一段代码
-    *  JavaScript 任务队列
-    *  超时调用 ID 例clearTimeout(id);
-    * 一般认为，使用 **超时调用** 来模拟间歇调用的是一种最佳模式。
-    
-~~~
-// 全局变量不能通过 delete 操作符删除，
-// 而直接在 window 对象上的定义的属性可以
-var age = 29;
-window.color = "red";
-//在 IE < 9 时抛出错误，在其他所有浏览器中都返回 false
-delete window.age;
-//在 IE < 9 时抛出错误，在其他所有浏览器中都返回 true
-delete window.color; //returns true
-alert(window.age); //29
-alert(window.color); //undefined
-
-//这里会抛出错误，因为 oldValue 未定义
-var newValue = oldValue;
-//这里不会抛出错误，因为这是一次属性查询
-//newValue 的值是 undefined
-var newValue = window.oldValue;
-
-// 跨浏览器取得窗口左边和上边的位置
-var leftPos = (typeof window.screenLeft == "number") ?
-			window.screenLeft : window.screenX;
-var topPos = (typeof window.screenTop == "number") ?
-			window.screenTop : window.screenY;
-
-//将窗口移动到屏幕左上角
-window.moveTo(0,0);
-//将窗向下移动 100 像素
-window.moveBy(0,100);
-
-// 取得页面视口的大小
-var pageWidth = window.innerWidth,
-	pageHeight = window.innerHeight;
-if (typeof pageWidth != "number"){
-	if (document.compatMode == "CSS1Compat"){
-		pageWidth = document.documentElement.clientWidth;
-		pageHeight = document.documentElement.clientHeight;
-	} else {
-		pageWidth = document.body.clientWidth;
-		pageHeight = document.body.clientHeight;
-	}
-}
-
-// 在 Chrome中，将新创建的标签页的 opener 属性设置为 null
-// 即表示在单独的进程中运行新标签页
-var wroxWin = window.open("http://www.wrox.com/","wroxWindow",
-"height=400,width=400,top=10,left=10,resizable=yes");
-wroxWin.opener = null;
-
-// 弹出窗口是否被屏蔽
-var blocked = false;
-try {
-	var wroxWin = window.open("http://www.wrox.com", "_blank");
-	if (wroxWin == null){
-		blocked = true;
-	}
-} catch (ex){
-	blocked = true;
-}
-
-if (blocked){
-	alert("The popup was blocked!");
-}
-
-//不建议传递字符串！
-setTimeout("alert('Hello world!') ", 1000);
-
-//推荐的调用方式
-setTimeout(function() {
-alert("Hello world!");
-}, 1000);
-
-if (confirm("Are you sure?")) {
-	alert("I'm so glad you're sure! ");
-} else {
-	alert("I'm sorry to hear you're not sure. ");
-}
-~~~
-
-* <del>迁就各方的“最小公分母”策略</del>
-* 最常见的客户端检测方法是 **能力检测**/特性检测
-	* [ JavaScript 中能力检测 文章](http://peter.michaux.ca/articles/feature-detection-state-of-the-art-browser-scripting)
-    *  <del>能力检测，不是浏览器检测</del>
-*  怪癖检测
-	* 知道浏览器存在什么缺陷
-* 用户代理检测 P222
-	* 通过检测用户代理字符串来确定实际使用的浏览器
-    *  navigator.userAgent
-    *  电子欺骗：浏览器通过在自己的用户代理字符串加入一些错误或误导性信息，来达到欺骗服务器的目的
-    * Gecko 是 Firefox 的呈现引擎
-    * Safari 的呈现引擎叫 WebKit，是 Linux 平台中 Konqueror 浏览器的呈现引擎 KHTML 的一个分支
-    * <del>至今，基于 WebKit的所有浏览器都将自己标识为 Mozilla 5.0，与基于 Gecko 的浏览器完全一样</del>
-    * <del>确定浏览器是否基于 WebKit 要比确定它是不是 Safari 更有价值</del>
-    *  谷歌公司的 Chrome 浏览器以 WebKit 作为呈现引擎，但使用了不同的 JavaScript 引擎
-    *  <del>Opera 喜欢在不告知用户的情况下针对站点来设置用户代理字符串</del>
-    *  移动操作系统 iOS 和 Android 默认的浏览器都基于 WebKit
-*  用户代理字符串检测技术  P228
-	 *  识别呈现引擎
-    *   识别浏览器
-    *   识别平台
-    *   识别windows操作系统
-    *   识别移动设备
-    *   识别游戏系统
-    
-~~~
-// 检测某个属性是否存在并不能确定对象是否支持排序。
-// 更好的方式是检测 sort 是不是一个函数。
-function isSortable(object){
-    return !!object.sort; // 错误
-	return typeof object.sort == "function";
-}
-
-// 在浏览器环境下测试任何对象的某个特性是否存在，要使用下面这个函数。
-//作者：Peter Michaux
-function isHostMethod(object, property) {
-	var t = typeof object[property];
-	return t=='function' ||
-			(!!(t=='object' && object[property])) ||
-			t=='unknown';
-}
-
-result = isHostMethod(xhr, "open"); //true
-result = isHostMethod(xhr, "foo"); //false
-
-// 如果你知道自己的应用程序需要使用某些特定的浏览器特性，
-// 那么最好是一次性检测所有相关特性，而不要分别检测
-//确定浏览器是否支持 Netscape 风格的插件
-var hasNSPlugins = !!(navigator.plugins && navigator.plugins.length);
-//确定浏览器是否具有 DOM1 级规定的能力
-var hasDOM1 = !!(document.getElementById 
-	&& document.createElement 
-    && document.getElementsByTagName);
-    
-// 怪癖检测    
-var hasDontEnumQuirk = function(){
-var o = { toString : function(){} };
-for (var prop in o){
-if (prop == "toString"){
-return false;
-}
-}
-return true;
-}();
-~~~
-
-
-
 
