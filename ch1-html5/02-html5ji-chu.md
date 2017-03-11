@@ -379,6 +379,7 @@ url('xyz.svg') format('svg');
 + 推荐：Callographic,Novelty,Retro
 + Webfont Generator生成
 + [Google Fonts](http://www.google.com/fonts)
+
 ```
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Metrophobic" />
 ```
@@ -396,12 +397,14 @@ url('xyz.svg') format('svg');
 + [responsive-img](http://tinyurl.com/responsive-img)
 + 流式排版：em rem body100%;
 + 视口: 缩小显示网页的区域，不仅仅显示角落
+
 ```
 <meta content="initial-scale=1.0" name="viewport">
 ```
 + 媒体查询
 + max-width min-width
 + @media, not, 568px
+
 ```
 @media (max-width: 568px) {
 .NavSidebar {
@@ -416,10 +419,12 @@ width: 100%;
 }
 }
 ```
+
 + `<link rel="stylesheet" media="print and (min-width: 25cm)" href="" />`
 + Modernizr.mq() 更好
 + max-device-width(移动设备), orientation: landscape/portrait
 + 媒体查询与视频
+
 ```
 <source src="" type="" media="(max-device-width:480px)"></source>
 ```
