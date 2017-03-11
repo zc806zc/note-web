@@ -3,6 +3,7 @@
 	* Task Management
 	* Profiles - Heap Snapshot
 	* Timeline 内存时间轴
+	
 ```
 // 如何在浏览器查看代码
 1.pretty-printing 重排版代码
@@ -23,6 +24,7 @@ X-SourceMap: /scripts/scripts/js.map
     + Collect JavaScript CPU Profile
 * console.log()  可类型过滤
 	* 可在调试输出时，使用配色方案，css等
+	
 ```
 console.info()  一般信息
 console.bug()  辅助错误调试
@@ -30,6 +32,7 @@ console.warn() 指出 潜在问题 的具体情况
 console.error() 出现 错误 并指出错误的具体情况
 ```
 * 计时
+
 ```
 console.time()
 console.timeEnd()
@@ -47,6 +50,7 @@ console.timeEnd()
     	* 设计表单时，我们可以看到它发出的参数是否是正确的
     * 对移动设备进行调试：**先在浏览器进行响应式设计，随后在真机上进行测试**。
     * 对网站的性能进行调试
+    
 ```
 // 真机测试
 桌面 chrome://inspect/

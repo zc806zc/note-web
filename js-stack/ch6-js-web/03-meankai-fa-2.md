@@ -1,5 +1,6 @@
 #### **ch1 MEAN简介**
 * [源码下载](https://github.com/amoshaviv/mean-web-development)
+
 ```
 // 3层Web应用开发
 数据层 数据库
@@ -41,6 +42,7 @@ MVC
 #### **ch4 MongoDB入门**
 * [MongoDB](https://www.mongodb.com/download-center#community)
 	* <del>[系统服务方式运行](https://docs.mongodb.com/manual/reference/configuration-options/)</del>
+	
 ```
 // Mongo在win10环境下的安装
 下载msi,解压到C://mongo路径下
@@ -71,6 +73,7 @@ db.articles.find()
 ```
 
 * BSON 类JSON
+
 ```
 Binary JavaScript object Notation
 高吞吐率地读写
@@ -83,18 +86,21 @@ mongod服务生成
 ```
 
 * 即席查询
+
 ```
 SELECT * FROM Posts WHERE Title LIKE '%mongo%'
 db.posts.finds({title:/mongo/ });
 ```
 
-* 索引    
+* 索引   
+ 
 ```
 // 查询评论多于10条的博文的查询语句
 db.posts.find({ commentsCount ：{ $gt : 10 } } );
 ```
 
 * [副本集](https://docs.mongodb.com/manual/replication/)
+
 ```
 提供数据冗余和提升可用性
 应对硬件故障
@@ -105,6 +111,7 @@ db.posts.find({ commentsCount ：{ $gt : 10 } } );
 ```
 
 * 分片
+
 ```
 用于支持水平扩展
 通过查询路由服务进行
@@ -117,6 +124,7 @@ c:\mongodb\bin\mongo
 
     
 * MongoDB增删改查
+
 ```
 use mean // 新建或切换至数据库 db没有创建语句
 // 开启时带上参数 mongo mean
@@ -148,6 +156,7 @@ db.posts.update({"user": "alice"},{"title":"second post","user":"alice"},{ upser
   db.post.remove( {"user":"alice"} )
   db.post.remove({"user":"alice"},true) // 删除单个文档
 ```
+
 * 对象关系映射 	
 	* 存储设计模式
       * 键值存储

@@ -1,5 +1,6 @@
 #### **前端生存手册**
 * 学习路线
+
 ```
 lab1：div + css + 编程风格 -> 搭建一个简单静态网站
 lab2：html5(移动端)+canvas -> 学做一个小游戏
@@ -62,6 +63,7 @@ lab7：了解移动端框架：JQueryMobile JQueryUI+zepto pureUI YUI MUI miniUI
 ------------
 
 * [听说2017你想写前端](http://mp.weixin.qq.com/s/8vz1aIeVpRHmU2E2-7zzsQ)
+
 ```
 项目工程化
     jQuery 的语法被ES2015 甚至被新时代的浏览器吸收并内置原生支持了
@@ -94,6 +96,7 @@ apm install [packagename]
    即将大热的 hotfix  阿里热修复技术
 ```
 *  <del> [2017年前端初学者的生存指南](http://mp.weixin.qq.com/s/1sCU3WzRjiLcSPV0Soqi2A)</del>
+
 ```
 不管是校招还是社招，都没法避免两种问题，
 一是：数据结构与算法，
