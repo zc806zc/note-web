@@ -1,8 +1,9 @@
 #### **ch13 事件**
+
 * 事件流
-	* [事件处理程序的缺点 文章](www.jibbering.com/faq/names/event_handler.html)
-	
-```
+  * [事件处理程序的缺点 文章](www.jibbering.com/faq/names/event_handler.html)
+
+```js
 冒泡
 捕获
 
@@ -79,14 +80,11 @@ touchend
 gesturestart ：当一个手指已经按在屏幕上而另一个手指又触摸屏幕时触发。
 gesturechange ：当触摸屏幕的任何一个手指的位置发生变化时触发。
 gestureend：当任何一个手指从屏幕上面移开时触发。
-
 ```
-
 
 * HTML5事件
 
-
-```
+```js
 contextmenu
 beforeunload
 
@@ -97,25 +95,18 @@ pageshow 和 pagehide 事件
 往返缓存 p393
 
 hashchange 事件
-
 ```
-	
-
 
 * 内存和性能
 
-
-```
+```js
 事件委托
 移除事件处理程序
 ```
 
-
-
 * 模拟事件
 
-
-```
+```js
 使用 **JavaScript** 在任意时刻来 **触发**特定的事件
 模拟鼠标事件
 模拟键盘事件
@@ -124,15 +115,13 @@ hashchange 事件
 ie中的事件模拟
 ```
 
-
-
 * 示例
-    
-~~~
+
+```js
 //  DOM0 级,在元素的作用域执行
 var btn = document.getElementById("myBtn");
 btn.onclick = function(){
-	alert(this.id); //"myBtn"
+    alert(this.id); //"myBtn"
 };
 btn.onclick = null;  // 删除
 
@@ -141,7 +130,7 @@ btn.onclick = null;  // 删除
 // 通过 addEventListener() 添加的匿名函数将无法移除
 var btn = document.getElementById("myBtn");
 btn.addEventListener("click", function(){
-	alert(this.id);
+    alert(this.id);
 }, false);
 btn.addEventListener("click", function(){
 alert("Hello world!");
@@ -160,20 +149,20 @@ btn.removeEventListener("click", handler, false); // 有效
 var EventUtil = {
   addHandler: function(element, type, handler){
     if (element.addEventListener){
-    	element.addEventListener(type, handler, false);
+        element.addEventListener(type, handler, false);
     } else if (element.attachEvent){
-    	element.attachEvent("on" + type, handler);
+        element.attachEvent("on" + type, handler);
     } else {
-    	element["on" + type] = handler;
+        element["on" + type] = handler;
     }
   },
   removeHandler: function(element, type, handler){
     if (element.removeEventListener){
-    	element.removeEventListener(type, handler, false);
+        element.removeEventListener(type, handler, false);
     } else if (element.detachEvent){
-    	element.detachEvent("on" + type, handler);
+        element.detachEvent("on" + type, handler);
     } else {
-    	element["on" + type] = null;
+        element["on" + type] = null;
     }
     }
 };
@@ -210,45 +199,45 @@ btn.onmouseout = handler;
 // 阻止特定事件的默认行为，可以使用 preventDefault() 方法
 var link = document.getElementById("myLink");
 link.onclick = function(event){
-	event.preventDefault();
+    event.preventDefault();
 };
 
 // stopPropagation() 方法用于立即停止事件在 DOM 层次中的传播
 var btn = document.getElementById("myBtn");
 btn.onclick = function(event){
-	alert("Clicked");
-	event.stopPropagation();
+    alert("Clicked");
+    event.stopPropagation();
 };
 document.body.onclick = function(event){
-	alert("Body clicked");
+    alert("Body clicked");
 };
 
 // 事件对象的 eventPhase 属性
 var btn = document.getElementById("myBtn");
 btn.onclick = function(event){
-	alert(event.eventPhase); //2
+    alert(event.eventPhase); //2
 };
 document.body.addEventListener("click", function(event){
-	alert(event.eventPhase); //1
+    alert(event.eventPhase); //1
 }, true);
 document.body.onclick = function(event){
-	alert(event.eventPhase); //3
+    alert(event.eventPhase); //3
 };
 
 // ie中的事件对象
 var btn = document.getElementById("myBtn");
 btn.onclick = function(){
-	var event = window.event;
-	alert(event.type); //"click"
+    var event = window.event;
+    alert(event.type); //"click"
 };
 btn.attachEvent("onclick", function(event){
-	alert(event.type); //"click"
+    alert(event.type); //"click"
 });
 
 // returnValue 属性相当于 DOM中的 preventDefault() 方法
 var link = document.getElementById("myLink");
 link.onclick = function(){
-	window.event.returnValue = false;
+    window.event.returnValue = false;
     // window.event.cancelBubble = true; // ie取消事件冒泡
 };
 
@@ -256,44 +245,44 @@ link.onclick = function(){
 
 // 跨浏览器的事件对象
 var EventUtil = {
-	addHandler: function(element, type, handler){
-		//省略的代码
-	},
-	getEvent: function(event){
-		return event ? event : window.event;
-	},
-	getTarget: function(event){
-		return event.target || event.srcElement;
-	},
-	preventDefault: function(event){
-		if (event.preventDefault){
-			event.preventDefault();
-		} else {
-			event.returnValue = false;
-		}
-	},
-	removeHandler: function(element, type, handler){
-		//省略的代码
-	},
-	stopPropagation: function(event){
-    	if (event.stopPropagation){
-			event.stopPropagation();
-		} else {
-			event.cancelBubble = true;
-		}
-	}
+    addHandler: function(element, type, handler){
+        //省略的代码
+    },
+    getEvent: function(event){
+        return event ? event : window.event;
+    },
+    getTarget: function(event){
+        return event.target || event.srcElement;
+    },
+    preventDefault: function(event){
+        if (event.preventDefault){
+            event.preventDefault();
+        } else {
+            event.returnValue = false;
+        }
+    },
+    removeHandler: function(element, type, handler){
+        //省略的代码
+    },
+    stopPropagation: function(event){
+        if (event.stopPropagation){
+            event.stopPropagation();
+        } else {
+            event.cancelBubble = true;
+        }
+    }
 };
 
 btn.onclick = function(event){
-	event = EventUtil.getEvent(event);
+    event = EventUtil.getEvent(event);
     EventUtil.preventDefault(event);
 };
 
 // load事件
 var image = document.getElementById("myImage");
 EventUtil.addHandler(image, "load", function(event){
-	event = EventUtil.getEvent(event);
-	alert(EventUtil.getTarget(event).src);
+    event = EventUtil.getEvent(event);
+    alert(EventUtil.getTarget(event).src);
 });
 
 // 创建新的img
@@ -309,42 +298,42 @@ image.src = "smile.gif"; // 在事件之后
 
 var div = document.getElementById("myDiv");
 EventUtil.addHandler(div, "click", function(event){
-	event = EventUtil.getEvent(event);
-	var pageX = event.pageX,
-	pageY = event.pageY;
-	if (pageX === undefined){
-		pageX = event.clientX + (document.body.scrollLeft ||
-		document.documentElement.scrollLeft);
-	}
-	if (pageY === undefined){
-		pageY = event.clientY + (document.body.scrollTop ||
-		document.documentElement.scrollTop);
-	}
-	alert("Page coordinates: " + pageX + "," + pageY);
+    event = EventUtil.getEvent(event);
+    var pageX = event.pageX,
+    pageY = event.pageY;
+    if (pageX === undefined){
+        pageX = event.clientX + (document.body.scrollLeft ||
+        document.documentElement.scrollLeft);
+    }
+    if (pageY === undefined){
+        pageY = event.clientY + (document.body.scrollTop ||
+        document.documentElement.scrollTop);
+    }
+    alert("Page coordinates: " + pageX + "," + pageY);
 });
 
 // contextmenu事件
 EventUtil.addHandler(window, "load", function(event){
-	var div = document.getElementById("myDiv");
-	EventUtil.addHandler(div, "contextmenu", function(event){
-		event = EventUtil.getEvent(event);
-		EventUtil.preventDefault(event);
-		var menu = document.getElementById("myMenu");
-		menu.style.left = event.clientX + "px";
-		menu.style.top = event.clientY + "px";
-		menu.style.visibility = "visible";
-	});
-	EventUtil.addHandler(document, "click", function(event){
-		document.getElementById("myMenu").style.visibility = "hidden";
-	});
+    var div = document.getElementById("myDiv");
+    EventUtil.addHandler(div, "contextmenu", function(event){
+        event = EventUtil.getEvent(event);
+        EventUtil.preventDefault(event);
+        var menu = document.getElementById("myMenu");
+        menu.style.left = event.clientX + "px";
+        menu.style.top = event.clientY + "px";
+        menu.style.visibility = "visible";
+    });
+    EventUtil.addHandler(document, "click", function(event){
+        document.getElementById("myMenu").style.visibility = "hidden";
+    });
 });
 
 // beforeunload事件
 EventUtil.addHandler(window, "beforeunload", function(event){
-	event = EventUtil.getEvent(event);
-	var message = "I'm really going to miss you if you go.";
-	event.returnValue = message;
-	return message;
+    event = EventUtil.getEvent(event);
+    var message = "I'm really going to miss you if you go.";
+    event.returnValue = message;
+    return message;
 });
 
 // JS的readystatechange
@@ -364,15 +353,15 @@ document.body.appendChild(script);
 
 // pageshow事件演示
 (function(){
-	var showCount = 0;
-	EventUtil.addHandler(window, "load", function(){
-		alert("Load fired");
-	});
-	EventUtil.addHandler(window, "pageshow", function(){
-			showCount++;
-			alert("Show has been fired " + showCount +
-			" times. Persisted? " + event.persisted);
-	});
+    var showCount = 0;
+    EventUtil.addHandler(window, "load", function(){
+        alert("Load fired");
+    });
+    EventUtil.addHandler(window, "pageshow", function(){
+            showCount++;
+            alert("Show has been fired " + showCount +
+            " times. Persisted? " + event.persisted);
+    });
 })();
 
 // 跟踪用户对屏幕的触摸操作
@@ -435,13 +424,11 @@ event = document.createEvent("CustomEvent");
 event.initCustomEvent("myevent", true, false, "Hello world!");
 div.dispatchEvent(event);
 }
-~~~
+```
 
 #### **ch14 表单脚本**
 
-
-
-```
+```js
 事实上， **重置表单的需求是很少见的**。
 更常见的做法是提供一个取消按钮，让用户能够回到前一个页面，而不是不分青红皂白地重置表单中的所有值。
 fieldset
@@ -461,10 +448,9 @@ execCommand
 富文本编辑器并不是一个表单字段
 ```
 
+* 示例    
 
-* 示例	
-
-~~~
+```js
 <!-- 通用提交按钮 -->
 <input type="submit" value="Submit Form">
 
@@ -497,10 +483,10 @@ alert(firstColorField === firstFormField); //true
 
 //避免多次提交表单
 EventUtil.addHandler(form, "submit", function(event){
-	event = EventUtil.getEvent(event);
-	var target = EventUtil.getTarget(event);
-	var btn = target.elements["submit-btn"];
-	btn.disabled = true; //禁用它
+    event = EventUtil.getEvent(event);
+    var target = EventUtil.getTarget(event);
+    var btn = target.elements["submit-btn"];
+    btn.disabled = true; //禁用它
 });
 
 // 早期开发实现readonly
@@ -513,25 +499,28 @@ textbox.value = "Some new value";
 
 // 屏蔽字符
 EventUtil.addHandler(textbox, "keypress", function(event){
-	event = EventUtil.getEvent(event);
-	var target = EventUtil.getTarget(event);
-	var charCode = EventUtil.getCharCode(event);
-	if (!/\d/.test(String.fromCharCode(charCode)) 
-    	&& charCode > 9 
+    event = EventUtil.getEvent(event);
+    var target = EventUtil.getTarget(event);
+    var charCode = EventUtil.getCharCode(event);
+    if (!/\d/.test(String.fromCharCode(charCode)) 
+        && charCode > 9 
         && !event.ctrlKey){ // 考虑到ctrl + v等
-			EventUtil.preventDefault(event);
-	}
+            EventUtil.preventDefault(event);
+    }
 });
 
 // 富文本选取实现高亮
 var range = frames["richedit"].document.selection.createRange();
-range.pasteHTML("<span style=\"background-color:yellow\"> " + 			range.htmlText + "</span>");
+range.pasteHTML("<span style=\"background-color:yellow\"> " +             range.htmlText + "</span>");
 
 // 确保恰好在提交表单之前填充 "comments" 字段
 EventUtil.addHandler(form, "submit", function(event){
-	event = EventUtil.getEvent(event);
-	var target = EventUtil.getTarget(event);
-	target.elements["comments"].value =
-			document.getElementById("richedit").innerHTML;
+    event = EventUtil.getEvent(event);
+    var target = EventUtil.getTarget(event);
+    target.elements["comments"].value =
+            document.getElementById("richedit").innerHTML;
 });
-~~~
+```
+
+
+
