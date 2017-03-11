@@ -313,6 +313,9 @@ Array.prototype.myUcase=function(){ coding... };
 
 #### **Boolean对象**
 * 示例
+
+
+
 ```
 var b1=new Boolean(0);
 var b1=new Boolean(-0);
@@ -367,9 +370,10 @@ alert(num); // 介于 2 和 10 之间（包括 2 和 10）的一个数值
 
 * 基础
 
+
 ```
 
-* <del>模式的局限性</del>
+<del>模式的局限性</del>
 	* 匹配字符串开始和结尾的 \A 和 \Z 锚
 	* 向后查找（lookbehind）
     * 并集和交集类
