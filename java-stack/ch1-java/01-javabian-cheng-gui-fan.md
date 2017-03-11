@@ -3,7 +3,7 @@
 	* [阿里巴巴Java开发手册](https://yq.aliyun.com/articles/69327?utm_campaign=javac&utm_medium=images&utm_source=renyimen&utm_content=m_10068)
     * [博客 - yakov](http://www.cnblogs.com/yakov/archive/2011/12/19/the_elements_of_java_style.html)
 
-* * * * *
+------------
 
 * 格式
 ~~~

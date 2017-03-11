@@ -33,11 +33,11 @@ charset 与 pageEncoding建议都改成UTF-8
 还有在编辑器上的显示编码
 ~~~
 
-* * * * *
+------------
 * Atom（编辑） + Eclipse（IDE）
 	* Atom autocomplete-jsp插件
     
-* * * * *
+------------
 * Intellij IDEA
 	* [使用IntelliJ IDEA开发JavaWeb项目](http://youthlin.com/20151128.html)
 ~~~

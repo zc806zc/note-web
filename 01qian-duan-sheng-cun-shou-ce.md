@@ -54,12 +54,12 @@ lab7：了解移动端框架：JQueryMobile JQueryUI+zepto pureUI YUI MUI miniUI
 	codecademy上的git课程，把项目管理起来推到github
 ~~~
 
-* * * * *
+------------
 
 * 资源链接
 	+ [最全的前端资源汇总](https://github.com/helloqingfeng/Awsome-Front-End-learning-resource)
     
-* * * * *
+------------
 
 * [听说2017你想写前端](http://mp.weixin.qq.com/s/8vz1aIeVpRHmU2E2-7zzsQ)
 ~~~

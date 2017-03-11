@@ -7,7 +7,7 @@
 #### **开发工具**
 * 最强IDE： <del>Aptana Studio</del> / Web Storm(商业) /netbeans
 
-* * * * *
+------------
 
 * **优雅的编辑器**：Sublime / Atom / VS code
 	* sublime插件
@@ -32,7 +32,7 @@
 		*  pushed  folderPath 或 cd /d 进入文件夹
         *  js filename.js执行
         
-* * * * *
+------------
 
 + 偏设计类：<del>[Adobe Brackets](http://www.jackpu.com/qian-duan-shen-qi-adobe-brackets-shi-yong-xin-de/)</del> 
 

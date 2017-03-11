@@ -5,7 +5,7 @@
   + [JSON→CSV](https://github.com/konklone/json)
   + [JSON格式化工具](http://www.runoob.com/jsontool)
 
-* * * * *
+------------
 
 * 常识
 

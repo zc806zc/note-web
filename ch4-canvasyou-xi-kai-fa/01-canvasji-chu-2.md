@@ -33,7 +33,7 @@ window的devicePixelRatio属性
 
 ```
 
-* * * * *
+------------
 
 * 使用canvas绘图
 	* [Making Image Filters with Canvas](http://www.html5rocks.com/en/tutorials/canvas/imagefilters/)

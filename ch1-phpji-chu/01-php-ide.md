@@ -13,7 +13,7 @@ phpnow easyphp vertrigo
 
 ```
 
-* * * * *
+------------
 
 * 资源
   + [PHP资源](https://www.zhihu.com/question/20034403)
@@ -29,7 +29,7 @@ phpnow easyphp vertrigo
   + [segmentfault](https://segmentfault.com/t/php)
   + [开源后台模板](http://www.cnblogs.com/DiYuShe/archive/2012/08/21/2648563.html)
   
-* * * * *
+------------
 
 * IDE/编辑器
 	* [Sublime配置成PHP开发环境](http://jingyan.baidu.com/article/09ea3ede04ebe9c0aede390d.html?qq-pf-to=pcqq.group)

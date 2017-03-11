@@ -66,7 +66,7 @@ git进行了三方面的合并，
 	+ [基础](http://wowubuntu.com/markdown/#header)
 	*  [github版](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
-* * * * *
+------------
 
 * 基本语法
 	* markdown不支持的可以写html标签

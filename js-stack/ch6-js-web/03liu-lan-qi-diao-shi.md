@@ -35,7 +35,7 @@ console.time()
 console.timeEnd()
 ~~~
 
-* * * * *
+------------
 
 + 如何在发布时自动移除console对象
 	+ [grunt-strip](https://github.com/jsoverson/grunt-strip)
@@ -56,7 +56,7 @@ android-app chrome-dev
 	* postman API
    *  Google 的 Page Speed
     
-* * * * *
+------------
 
 + 学习链接
 	+ [Mastering The Developer Tools Console](http://blog.teamtreehouse.com/mastering-developer-tools-console)

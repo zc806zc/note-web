@@ -3,7 +3,7 @@
 + [upgrade-guide](http://jqueryui.com/upgrade-guide/)
 + [手册](http://www.runoob.com/jqueryui/jqueryui-api.html)
 
-* * * * *
+------------
 
 * 基础
 
@@ -21,7 +21,7 @@ jQuery UI 的版本是配合特定的 jQuery 版本设计的
 
 ```
 
-* * * * *
+------------
 
 * API内容
 
@@ -41,7 +41,7 @@ UI核心 jquery.ui.core.js
 
 ```
 
-* * * * *
+------------
 * 工作原理
 
 

@@ -2,7 +2,7 @@
 * 参考
 	* [当Java遇见了Html--JSP详解篇](http://www.jianshu.com/p/c7260f7588c5)
 
-* * * * *
+------------
 * 基础
 	* jsp是另一种形式的servlet
 ~~~

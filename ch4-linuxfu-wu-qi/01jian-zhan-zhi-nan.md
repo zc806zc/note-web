@@ -83,7 +83,7 @@ sudo mv /home/ubuntu/Desktop/imedia-test /phpstudy/www/
 
 ```
 
-* * * * *
+------------
 
 * JSP环境安装与配置
 

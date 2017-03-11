@@ -3,7 +3,7 @@
 	+  [missing manual网站](http://www.prosetech.com/html5)
 	+  [代码下载](http://www.oreilly.com/pub/missingmanuals/html5tmm2e)
 
-* * * * *
+------------
 
 * 废弃元素
 
@@ -59,7 +59,7 @@ script也可用于用户自定义的数据块 例type="application/xml"
 
 ```
 
-* * * * *
+------------
 
 + 浏览器与设备兼容
 	+ 平稳退化	
@@ -80,13 +80,13 @@ saved from url=(0014)about:internet
 + [浏览器市场占有情况](http://gs.statcounter.com)
 + [html标记争论的论坛](http://html5doctor.com)
 
-* * * * *
+------------
 
 * HTML校验
 	* w3c -> W3Validator
    * ff插件：HTML Validator（基于HTML Tidy,可以美化代码）
 
-* * * * *
+------------
 
 * 语义化
 

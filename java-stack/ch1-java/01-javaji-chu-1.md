@@ -33,14 +33,14 @@
 《算法设计与分析》王晓东
 
 ```
-* * * * *
+------------
 
 * 网站
     + [并发编程指南](http://ifeve.com/java-7-concurrency-cookbook/)
     + [100问](https://github.com/giantray/stackoverflow-java-top-qa)
     * [ConcretePage](http://www.concretepage.com/) Java 资源类网站，可以找到各种 Java 框架及相关教程
 
-* * * * *
+------------
 
 * 基础
 ```

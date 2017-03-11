@@ -3,7 +3,7 @@
   + [HTML5 Canvas核心技术-图形动画与游戏开发 - 源码下载](https://github.com/corehtml5canvas/code)
   + [Canvas作品集 - kevs3d](http://www.kevs3d.co.uk/dev/phoria/index.html)
 
-* * * * *
+------------
 
 #### **ch1 基础知识**
 
