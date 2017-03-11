@@ -43,7 +43,7 @@
 *   姿态传感器和方向传感器
     *   姿态传感器：摆放 类似 内部陀螺仪
     *   W3C Screen Orientation API
-~~~
+```
     <div class="comments-icon">
     <div class="marker">+</div>
     </div>
@@ -72,7 +72,7 @@
 
             // Execute the same function on page load to set the initial <body> class
             onOrientationChange();
-~~~
+```
 
     *   CSS Media Queries 关注点分离??
     *   W3C DeviceOrientation API
@@ -102,7 +102,7 @@
     *   `<html manifest="manifest.appcache">`
     *   更新的话就#注释写版本号
     *   引用manifest的html是默认缓存的
-~~~
+```
   CACHE MANIFEST
   # Version 1.0.1 - 2013-01-02
   /library/styles/main.css
@@ -110,7 +110,7 @@
   /library/scripts/main.js
   /images/background.jpg
   /images/logo.png
-~~~
+```
 
 #### **响应式网页设计的JavaScript**
 *   CSS3 Media Queries

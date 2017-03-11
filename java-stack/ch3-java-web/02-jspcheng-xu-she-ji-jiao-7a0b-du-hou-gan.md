@@ -1,6 +1,6 @@
 #### **ch1 JSP概述**
 * [代码下载](http://download.csdn.net/detail/gaoyuyihao/9249135)
-~~~
+```
 Java里，类是最小单位，
 不允许在类外面定义变量和方法
 没有 全局变量的 概念
@@ -33,10 +33,10 @@ PHP
 JSP + JavaBean编程
 JSP + Servlet + JavaBean编程
 MVC模式
-~~~
+```
 
 #### **ch2 JSP开发基础**
-~~~
+```
 析构方法 finalize()
 
 强制类型转换 高级数据类型赋值给低级类型变量
@@ -46,14 +46,14 @@ Vector类
 可以方便地对集合内的数据进行curd
 
 throw throws
-~~~
+```
 #### **ch3-4 JSP语法与内置对象**
-~~~
+```
 补充至 《JSP基础》
-~~~
+```
 
 #### **ch5 JavaBean技术**
-~~~
+```
 JavaBean 
 家具
 JavaBean组件与企业级JavaBean(EJB)
@@ -75,10 +75,10 @@ JSP中的JavaBean不用实现这个接口
 一 一赋予Bean中与参数具有相同名字的属性
 
 在JSP页面中应用 工具JavaBean
-~~~
+```
 
 #### **ch6 Servlet技术**
-~~~
+```
 在web.xml中进行描述
 在server 3.0中也可以通过注解进行配置
 
@@ -137,11 +137,11 @@ ServletConfig接口 配置对象，初始化时传递信息
 HttpServletRequest接口
 HttpServletResponse接口
 GenericServlet接口 抽象类
-~~~
+```
 
 #### **ch7 JSP实用组件**
 * [Common-FileUpload](http://commons.apache.org/proper/commons-fileupload/)
-~~~
+```
 // JSP文件操作
 Common-FileUpload组件
 需要commons-io包的支持
@@ -154,11 +154,11 @@ enctype="multipart/form-data"
 
 // JSP报表
 
-~~~
+```
 
 #### **ch8 JSP数据库应用开发**
 * [菜鸟教程-JSP连接MySQL](http://www.runoob.com/jsp/jsp-database-access.html) JSTL
-~~~
+```
 SQL Server2008  Access 
 MySQL 
 关系型数据库
@@ -222,10 +222,10 @@ Pure JDBC Driver
 sqljdbc等jar
 META-INF\context.xml
 JNDI Jav命名与目录接口
-~~~
+```
 
 #### **ch9 JSP高级程序设计**
-~~~
+```
 // JSP与Ajax
 注意问题
 中文乱码 utf-8
@@ -304,4 +304,4 @@ BodyTag接口
 // JSP文件中引用自定义标签
 <%@ taglib uri="/WEB-INF/showDate.tld" prefix="taglib.prefix"%>
 或者在web.xml中配置
-~~~
+```

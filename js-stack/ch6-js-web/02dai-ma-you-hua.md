@@ -67,7 +67,7 @@
 *   try-catch-finally
 *   检测错误类型
 *   自定义错误类型
-~~~
+```
 try {
   // Code that might throw an error to go here
 } catch (error) {
@@ -85,7 +85,7 @@ try {
       // A URI error was thrown
   }
 }
-~~~
+```
 
 #### **度量代码质量**
 *   代码覆盖率工具[Istanbul](https://github.com/gotwarlost/istanbul)
@@ -120,7 +120,7 @@ try {
 *   Google Closure Compiler 代码编译
     *   [在线](http://closure-compiler.appspot.com/home)
 *   使用匿名、自执行的函数闭包来减少全局变量的使用
-~~~
+```
     // Define a global variable
     var myGlobalVariable;
     // Create a self-executing, anonymous (unnamed) function to wrap around your code
@@ -158,7 +158,7 @@ try {
     });
     loadScript("my-script.js"); 
     // 加载完不需要执行额外的代码，不需要第二个参数
-~~~
+```
 
 #### **优化文档对象的操作**
 *   实现对页面元素的最小化访问
@@ -168,14 +168,14 @@ try {
     *   `nav.style.opacity = 0.5;` 不经济,引发重排
     *   `nav.className += "selected";` good
     *   利用dispaly
-~~~
+```
     var nav = document.getElementsByTagName("nav");
     nav.style.display = "none"; // Causes a browser reflow, hiding the element from display
     nav.style.backgroundColor = "#000"; // Causes no reflow since the element is hidden
     nav.style.color = "#fff"; // Causes no reflow
     nav.style.opacity = 0.5; // Causes no reflow
     nav.style.display = "block"; // Causes a browser reflow, bringing the element back on display
-~~~
+```
 
 #### **提升DOM事件性能**
 *   委托事件至父元素
@@ -190,12 +190,12 @@ try {
 
 #### **更快速地使用数组**
 *   保存array.length的值
-~~~
+```
  // The most common type of loop
     for (var index = 0; index < myArray.length; index++) {}
     // A similar but much faster version of the same loop
     for (var index = 0, length = myArray.length; index < length; index++) {}
-~~~
+```
 *   使用continue和break
 *   反向while循环 coding
 *   避免在循环中创建函数

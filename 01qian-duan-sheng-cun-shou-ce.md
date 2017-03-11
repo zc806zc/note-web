@@ -1,6 +1,6 @@
 #### **前端生存手册**
 * 学习路线
-~~~
+```
 lab1：div + css + 编程风格 -> 搭建一个简单静态网站
 lab2：html5(移动端)+canvas -> 学做一个小游戏
 lab3：css3 + less + scss: 建立一个小型的可重用css库
@@ -52,7 +52,7 @@ lab7：了解移动端框架：JQueryMobile JQueryUI+zepto pureUI YUI MUI miniUI
 工具的使用
 	编辑器（atom、vim），linux命令行
 	codecademy上的git课程，把项目管理起来推到github
-~~~
+```
 
 ------------
 
@@ -62,7 +62,7 @@ lab7：了解移动端框架：JQueryMobile JQueryUI+zepto pureUI YUI MUI miniUI
 ------------
 
 * [听说2017你想写前端](http://mp.weixin.qq.com/s/8vz1aIeVpRHmU2E2-7zzsQ)
-~~~
+```
 项目工程化
     jQuery 的语法被ES2015 甚至被新时代的浏览器吸收并内置原生支持了
     通过著名的  postCSS 插件，补全各种浏览器前缀
@@ -92,13 +92,13 @@ apm install [packagename]
    WebComponents (可选)
    Vue.js / React (反正掌握一款MV* 框架是必要的)
    即将大热的 hotfix  阿里热修复技术
-~~~
+```
 *  <del> [2017年前端初学者的生存指南](http://mp.weixin.qq.com/s/1sCU3WzRjiLcSPV0Soqi2A)</del>
-~~~
+```
 不管是校招还是社招，都没法避免两种问题，
 一是：数据结构与算法，
 二是横向扩展，（比如Hybrid开发，Node.js开发，桌面应用开发等）
 具备的职业经历越多，技术栈经验越丰富，才更能有机会脱颖而出。
 
 
-~~~
+```

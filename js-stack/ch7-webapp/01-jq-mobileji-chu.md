@@ -36,9 +36,9 @@
 	* mobileinit
     * jq的extend
     
-~~~
+```
 
-~~~
+```
 
 #### **ch10 使用事件**
 #### **ch11 jQuery Mobile的功能增强**
@@ -68,7 +68,7 @@
         * https://github.com/luo0412/jq-mobile-test.git
         * 读取联系人失败了。。。
 * Apache Cordova
-~~~
+```
   foundContacts = function(matches){
       //create results in our list
       var s = "";
@@ -78,7 +78,7 @@
       $("#results").html(s);
       $("#results").listview("refresh");
   }
-~~~
+```
 
 #### **ch13 一个RSS阅读器应用程序**
 * [可能的演示地址](http://qmen.space/jqm-rss-reader-app/index.html)

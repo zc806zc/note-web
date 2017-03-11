@@ -5,7 +5,7 @@
   * [知乎推荐资源](https://www.zhihu.com/question/19848946?rf=19752221)
 * 书单
 
-~~~
+```
   // 入门
   《Head First Java》
   《Java 核心技术》两卷
@@ -124,7 +124,7 @@ public class Car extends Vehicle {
       System.out.println\( result\);  
   }  
 }  
-~~~
+```
 
 * ch1-3 初始Java，Eclipse开发工具、Java语言基础
 * ch4 流程控制

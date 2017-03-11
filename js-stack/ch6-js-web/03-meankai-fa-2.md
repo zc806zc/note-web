@@ -1,6 +1,6 @@
 #### **ch1 MEAN简介**
 * [源码下载](https://github.com/amoshaviv/mean-web-development)
-~~~
+```
 // 3层Web应用开发
 数据层 数据库
 逻辑层 服务器
@@ -10,7 +10,7 @@
 只使用一种语言
 MVC
 对JSON对象进行数据封装
-~~~
+```
 
 
 
@@ -41,7 +41,7 @@ MVC
 #### **ch4 MongoDB入门**
 * [MongoDB](https://www.mongodb.com/download-center#community)
 	* <del>[系统服务方式运行](https://docs.mongodb.com/manual/reference/configuration-options/)</del>
-~~~
+```
 // Mongo在win10环境下的安装
 下载msi,解压到C://mongo路径下
 两个文件夹（mongo 、data）自己建，mongodb并没有系统依赖
@@ -68,10 +68,10 @@ db.articles.find()
 
 垂直扩展 给单台服务器增加CPU内存等资源
 水平扩展 增加服务器        
-~~~
+```
 
 * BSON 类JSON
-~~~
+```
 Binary JavaScript object Notation
 高吞吐率地读写
 还支持Date等数据类型
@@ -80,44 +80,44 @@ _id主键
 应用驱动生成
 mongod服务生成
 组成= ... + ... 
-~~~
+```
 
 * 即席查询
-~~~
+```
 SELECT * FROM Posts WHERE Title LIKE '%mongo%'
 db.posts.finds({title:/mongo/ });
-~~~
+```
 
 * 索引    
-~~~
+```
 // 查询评论多于10条的博文的查询语句
 db.posts.find({ commentsCount ：{ $gt : 10 } } );
-~~~
+```
 
 * [副本集](https://docs.mongodb.com/manual/replication/)
-~~~
+```
 提供数据冗余和提升可用性
 应对硬件故障
 提升数据库的读取性能
 活跃结点与备用结点
 自动恢复
 复制是MongoDB稳健的特性 -> 生产
-~~~
+```
 
 * 分片
-~~~
+```
 用于支持水平扩展
 通过查询路由服务进行
-~~~
+```
 
 * MongoDB命令行工具
-~~~
+```
 c:\mongodb\bin\mongo
-~~~
+```
 
     
 * MongoDB增删改查
-~~~
+```
 use mean // 新建或切换至数据库 db没有创建语句
 // 开启时带上参数 mongo mean
 show dbs
@@ -147,7 +147,7 @@ db.posts.update({"user": "alice"},{"title":"second post","user":"alice"},{ upser
   // drop与remove的区别
   db.post.remove( {"user":"alice"} )
   db.post.remove({"user":"alice"},true) // 删除单个文档
-~~~
+```
 * 对象关系映射 	
 	* 存储设计模式
       * 键值存储
