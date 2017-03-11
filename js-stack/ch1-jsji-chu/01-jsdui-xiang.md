@@ -1,28 +1,37 @@
 #### **JS对象基础**
-+ <del>JS是一门货真价实的面向对象的语言</del>
-    + 传统的面向对象 C++ Java PHP Objective-C
-    * JavaScript是面向对象的，但基于prototype(原型), 而不是使用类
-    + 继承 → 原型继承 原型链
-    + 没有强加刻板的语法结构 更加灵活性
-    + 怎么处理封装 多态问题
-    + 外层函数 沙箱般的编程环境 闭包 避免变量名冲突
-    + prototype的强大 
-	* 在对象实例已经创建以后可以继续添加属性和方法
-+ 上下文环境 
-	* this
-	+ 对象中的 **嵌套**函数context是window,而非包含它的对象
-	+ 可以把this的值保存在一个变量里, 命名为 **that**
-	+ prototype用来定义方法 this用来定义属性?
+* <del>JS是一门货真价实的面向对象的语言</del>
+
+
+```
++ 传统的面向对象 C++ Java PHP Objective-C
+* JavaScript是面向对象的，但基于prototype(原型), 而不是使用类
++ 继承 → 原型继承 原型链
++ 没有强加刻板的语法结构 更加灵活性
++ 怎么处理封装 多态问题
++ 外层函数 沙箱般的编程环境 闭包 避免变量名冲突
++ prototype的强大
+* 在对象实例已经创建以后可以继续添加属性和方法
++ 上下文环境
+* this
++ 对象中的 **嵌套**函数context是window,而非包含它的对象
++ 可以把this的值保存在一个变量里, 命名为 **that**
++ prototype用来定义方法 this用来定义属性?
 * 两个内置对象/单体内置对象
-	* Global
-    	* URI 编码方法
-        * eval() 方法 - 整个 ECMAScript语言中最强大的一个方法
-            * 在 eval() 中创建的任何变量或函数都不会被提升
-            * 能力非常强大，但也非常危险, 例代码注入问题
-        * window 对象
-        * Math
+* Global
+* URI 编码方法
+* eval() 方法 - 整个 ECMAScript语言中最强大的一个方法
+* 在 eval() 中创建的任何变量或函数都不会被提升
+* 能力非常强大，但也非常危险, 例代码注入问题
+* window 对象
+* Math
+
+```
+
+
     
-~~~
+* 示例
+
+```
 var uri = "http://www.wrox.com/illegal value.htm#start";
 
 //"http://www.wrox.com/illegal%20value.htm#start"
@@ -41,11 +50,14 @@ alert(decodeURIComponent(uri));
 
 // 取得Global对象的一种方法
 var global = function(){
-  return this;
+return this;
 }();
-~~~
+
+```
+
 
 + 创建对象
+
 
 ```
 // method 1
@@ -57,7 +69,9 @@ person.eyecolor="blue"; // 自动添加属性
 
 // method 2
 person={firstname:"John",lastname:"Doe",age:50,eyecolor:"blue", run: function(){}};
+
 ```
+
 
 + 添加方法到对象
 
@@ -78,12 +92,17 @@ function person(firstname,lastname,age,eyecolor) {
 myFather = new person("John","Doe",50,"blue");
 // myFather.name = "Dick";
 myFather.changeName("Doe");
+
+
 ```
+
+
 
 #### **Number对象**
 + 最大值±1.7976931348623157 x 10308，最小值为±5 x 10 -324
 + 整数（不使用小数点或指数计数法）最多为 15 位。
 + 小数的最大位数是 17，但是浮点运算并不总是准确
+
 
 ```
 var x = 0.2+0.1; // 输出结果为 0.30000000000000004
@@ -94,6 +113,7 @@ var myNumber=128;
 myNumber.toString(16); // 返回 80
 myNumber.toString(8); // 返回 200
 myNumber.toString(2); // 返回 10000000
+
 ```
 
 + 无穷大Infinity
@@ -122,7 +142,11 @@ typeof(y) // return Object
 + valueOf()
 * <del>localeCompare()</del> 
 
-~~~
+
+
+```
+
+
 // 3个s方法
 var stringValue = "hello world";
 alert(stringValue.slice(3)); //"lo world"
@@ -170,9 +194,16 @@ var number = Number(value); //转型函数
 alert(typeof number); //"number"
 var obj = new Number(value); //构造函数
 alert(typeof obj); //"object"
-~~~
+
+```
+
+
 
 #### **Date对象**
+* 基础
+
+
+```
 + getFullYear() 获取年份
 + getTime() 返回从 1970 年 1 月 1 日至今的毫秒数
 + setFullYear() 设置具体的日期
@@ -186,6 +217,14 @@ alert(typeof obj); //"object"
 * toLocaleDateString() ——以特定于地区的格式显示星期几、月、日和年；
 * toLocaleTimeString() ——以特定于实现的格式显示时、分、秒；
 * toUTCString() ——以特定于实现的格式完整的 UTC 日期。
+
+
+```
+
+
+
+
+* 示例
 
 ```
 new Date() // 当前日期和时间
@@ -239,6 +278,9 @@ Array.prototype.myUcase=function(){ coding... };
 ```
 
 + 方法
+
+
+```
   + 合并两个或三个数组 - concat()
   + 删除末尾 - pop()
   + 末尾新增 - push()
@@ -249,6 +291,9 @@ Array.prototype.myUcase=function(){ coding... };
   + sort() reverse()
   + 数组 -> 字符串 -toString()
   + 字符串 -> 数组 - join()
+```
+
+
 
 #### **Boolean对象**
 
@@ -274,12 +319,19 @@ alert(result); //false
 ```
 
 #### **Math算数对象**
+* 基础
+
+```
 + var y = Math.sqrt(16);
 + 常量
 + <del>Math.E</del> Math.PI
 + <del>Math.SQRT2 Math.SQRT1_2</del>
 + <del>Math.LN2 Math.LN10</del>
 + <del>Math.LOG2E Math.LOG10E</del>
+```
+
+
+* 示例 
 
 ~~~
 // random方法
@@ -292,6 +344,11 @@ alert(num); // 介于 2 和 10 之间（包括 2 和 10）的一个数值
 ~~~
 
 #### **[RegExp](http://www.regular-expressions.info)对象**  高程P106
+
+* 基础
+
+```
+
 * <del>模式的局限性</del>
 	* 匹配字符串开始和结尾的 \A 和 \Z 锚
 	* 向后查找（lookbehind）
@@ -302,7 +359,11 @@ alert(num); // 介于 2 和 10 之间（包括 2 和 10）的一个数值
 	* s （single，单行）和 x （free-spacing，无间隔）匹配模式
 	* 条件匹配
 	* 正则表达式注释
-    
+```
+
+
+* 示例
+   
 ```
 // 匹配第一个"bat"或"cat"，不区分大小写
 var pattern2 = /[bc]at/i;
