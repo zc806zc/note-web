@@ -43,6 +43,7 @@
 ------------
 
 * 基础
+
 ```
 
 Java程序的执行模式是 半编译半解释
@@ -60,6 +61,7 @@ java.lang包中的所有类是隐式导入的
 
 ```
 + 异常
+
 ```
 
 用户输入了非法数据
@@ -72,37 +74,40 @@ java.lang包中的所有类是隐式导入的
 
 ```
 + 输入输出
+
 ```
 
 long = int + float  赋值会出错
 
 控制double输出精度的方法  
-\(int\)\(26.3456\*100\)/100 --小数点后两位  
-System.out.print\("%.3f",item\);  
+(int)(26.3456*100)/100 --小数点后两位  
+System.out.print("%.3f",item);  
 format
 
-Scanner kb = new Scanner\(System.in\);  
-int i = kb.nextInt\(\) % 4;
+Scanner kb = new Scanner(System.in);  
+int i = kb.nextInt() % 4;
 
 import java.text.DecimalFormat;  
-DecimalFormat df = new DecimalFormat\( "0.00"\);  
-System.out.println\("Accumulated value is "+df.format\(futureInvestment\)\);
+DecimalFormat df = new DecimalFormat( "0.00");  
+System.out.println("Accumulated value is "+df.format(futureInvestment));
 
 // 输出结果 1.0  
 int a = 5, b = 4;  
 double d;  
 d = a / b;  
-System.out.println\(d\);
+System.out.println(d);
 
 ```
 + if(boolean) {} 里面只能是布尔值，与C语言有区别, 例if(3)不允许
+
 ```
 
-if\(3\) { printf\("hello wo"\); }  
-if\(3\) { System.out.println\("je"\); } //   required: boolean
+if(3) { printf("hello wo"); }  
+if(3) { System.out.println("je"); } //   required: boolean
 
 ```
 + else总是和最近的if匹配 -> 加括号的重要性
+
 ```
 
 int i = 1,  j = 1, k =1;  
@@ -114,6 +119,7 @@ else
 
 ```
 + instanceof判断对象类型
+
 ```
 
 class Vehicle {}  
@@ -147,6 +153,3 @@ public class Car extends Vehicle {
 * ch10 异常处理
 
 * ch11 输入/输出
-
-
-
