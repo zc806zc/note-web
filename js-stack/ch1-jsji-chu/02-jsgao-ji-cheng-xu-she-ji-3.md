@@ -42,7 +42,7 @@
 	* 非常适合移动应用
 * ajax与comet的安全问题
     
-~~~
+~~~js
 // JSONP示例
 function handleResponse(response){
 alert("You’re at IP address " + response.ip + ", which is in " +
@@ -90,5 +90,3 @@ socket.onclose = function(){
 alert("Connection closed.");
 };
 ~~~
-
-
