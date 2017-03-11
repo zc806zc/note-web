@@ -98,39 +98,41 @@ if \(confirm\("Are you sure?"\)\) {
     alert\("I'm sorry to hear you're not sure. "\);  
 }
 
-    * <del>迁就各方的“最小公分母”策略</del>
+* <del>迁就各方的“最小公分母”策略</del>
 
 
-    ```
-    * 最常见的客户端检测方法是 **能力检测**/特性检测
-        * [ JavaScript 中能力检测 文章](http://peter.michaux.ca/articles/feature-detection-state-of-the-art-browser-scripting)
-        *  <del>能力检测，不是浏览器检测</del>
-    *  怪癖检测
-        * 知道浏览器存在什么缺陷
-    * 用户代理检测 P222
-        * 通过检测用户代理字符串来确定实际使用的浏览器
-        *  navigator.userAgent
-        *  电子欺骗：浏览器通过在自己的用户代理字符串加入一些错误或误导性信息，来达到欺骗服务器的目的
-        * Gecko 是 Firefox 的呈现引擎
-        * Safari 的呈现引擎叫 WebKit，是 Linux 平台中 Konqueror 浏览器的呈现引擎 KHTML 的一个分支
-        * <del>至今，基于 WebKit的所有浏览器都将自己标识为 Mozilla 5.0，与基于 Gecko 的浏览器完全一样</del>
-        * <del>确定浏览器是否基于 WebKit 要比确定它是不是 Safari 更有价值</del>
-        *  谷歌公司的 Chrome 浏览器以 WebKit 作为呈现引擎，但使用了不同的 JavaScript 引擎
-        *  <del>Opera 喜欢在不告知用户的情况下针对站点来设置用户代理字符串</del>
-        *  移动操作系统 iOS 和 Android 默认的浏览器都基于 WebKit
-    *  用户代理字符串检测技术  P228
-         *  识别呈现引擎
-        *   识别浏览器
-        *   识别平台
-        *   识别windows操作系统
-        *   识别移动设备
-        *   识别游戏系统
+```
+* 最常见的客户端检测方法是 **能力检测**/特性检测
+* [ JavaScript 中能力检测 文章](http://peter.michaux.ca/articles/feature-detection-state-of-the-art-browser-scripting)
+* <del>能力检测，不是浏览器检测</del>
+* 怪癖检测
+* 知道浏览器存在什么缺陷
+* 用户代理检测 P222
+* 通过检测用户代理字符串来确定实际使用的浏览器
+* navigator.userAgent
+* 电子欺骗：浏览器通过在自己的用户代理字符串加入一些错误或误导性信息，来达到欺骗服务器的目的
+* Gecko 是 Firefox 的呈现引擎
+* Safari 的呈现引擎叫 WebKit，是 Linux 平台中 Konqueror 浏览器的呈现引擎 KHTML 的一个分支
+* <del>至今，基于 WebKit的所有浏览器都将自己标识为 Mozilla 5.0，与基于 Gecko 的浏览器完全一样</del>
+* <del>确定浏览器是否基于 WebKit 要比确定它是不是 Safari 更有价值</del>
+* 谷歌公司的 Chrome 浏览器以 WebKit 作为呈现引擎，但使用了不同的 JavaScript 引擎
+* <del>Opera 喜欢在不告知用户的情况下针对站点来设置用户代理字符串</del>
+* 移动操作系统 iOS 和 Android 默认的浏览器都基于 WebKit
+* 用户代理字符串检测技术 P228
+* 识别呈现引擎
+* 识别浏览器
+* 识别平台
+* 识别windows操作系统
+* 识别移动设备
+* 识别游戏系统
 
-    ```
+```
 
 
-    * 示例
+* 示例
 
+
+```
 // 检测某个属性是否存在并不能确定对象是否支持排序。  
 // 更好的方式是检测 sort 是不是一个函数。  
 function isSortable\(object\){  
