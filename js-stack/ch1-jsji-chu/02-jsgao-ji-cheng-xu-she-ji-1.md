@@ -1,8 +1,8 @@
 #### **ch1、2 在 HTML 中使用 JavaScript**
+
 * 资源下载
   * [源码下载](http://www.wrox.com/WileyCDA/WroxTitle/Professional-JavaScript-for-Web-Developers-3rd-Edition.productCd-1118026691,descCd-DOWNLOAD.html)
   * [github下载](https://github.com/zgdong/Professional-Javascript-for-Web-Developers/tree/master/Professional-Javascript-for-web-developers)
-
 
 * 基础
 
@@ -21,12 +21,11 @@ Browser JS ≈ ECMA + DOM + BOM
 支持 ECMA-262 描述的
 所有类型、值、对象、属性、函数以及程序句法和语义
 支持 Unicode 字符标准
-
 ```
 
 * **DOM** 文档对象模型 Document Object Model
 
-```
+```js
 针对 XML 但经过扩展用于 HTML 的应用程序编程接口
 
 DOM 并不只是针对 JavaScript 的，
@@ -52,14 +51,11 @@ script
 * 最好只包含一个延迟脚本
 * 只适用于外部脚本文件
 * 还是按照顺序来
-
 ```
 
-   
 * 示例
 
-
-```
+```js
 * <del>language type charset</del>
 * <del>不要在代码中的任何地方出现 "</script>"
 
@@ -67,20 +63,16 @@ function sayScript(){
 // alert("</script>");
 alert("<\/script>"); // 正确方式
 }
-
 ```
-
-
-    
 
 * 示例
 
-```
+```js
 * <del>尽管不检查.js 扩展名，但要确保服务器能返回正确的 MIME 类型</del>
 * php,jsp等
 * <del>文档模式</del>
-	* 混杂模式（quirks mode）
-	* 标准模式（standards mode）
+    * 混杂模式（quirks mode）
+    * 标准模式（standards mode）
 * <del>noscript 脚本不支持或禁用</del>
 
 
@@ -88,17 +80,13 @@ alert("<\/script>"); // 正确方式
 <noscript>
 <p> 本页面需要浏览器支持（启用）JavaScript 。
 </noscript>
-
-
 ```
-
-
 
 #### **ch3、4、5 基本概念、变量、作用域和内存问题, 引用类型**
 
 * 基础
 
-```
+```js
 * 大量借鉴了 C 及其他类 C 语言（如 Java 和 Perl）的语法
 * <del>驼峰大小写格式</del>
 * 保留字
@@ -116,20 +104,15 @@ message = 100; // 有效但不推荐
 var message; 
 alert(message); // "undefined"
 alert(age); // 产生错误
-
-
 ```
-
-
-
 
 * 基础2
 
-```
+```js
 * <del>从技术角度讲，**函数在 ECMAScript中是对象**，不是一种数据类型。然而，函数也确实有一些特殊的属性，因此通过 typeof 操作符来区分函数和其他对象是有必要的。</del>
 * Boolean
-	* True 和 False（以及其他的混合大小写形式）都不是 Boolean 值，只是标识符
-    
+    * True 和 False（以及其他的混合大小写形式）都不是 Boolean 值，只是标识符
+
 
 
 
@@ -138,16 +121,11 @@ var message = "Hello world!";
 if (message) { // 自动转化
 alert("Value is true"); // 将被执行
 }
-
-
 ```
 
-
-    
 * Number
 
-
-```
+```js
 * <del>八进制字面量在严格模式下是无效的</del>
 * <del>在进行算术计算时，所有以八进制和十六进制表示的数值最终都将被转换成十进制数值</del>
 * <del>保存浮点数值需要的内存空间是保存整数值的两倍，因此 ECMAScript会不失时机地将浮点数值转换为整数值</del>
@@ -189,18 +167,11 @@ var num3 = parseFloat("22.5"); //22.5
 var num4 = parseFloat("22.34.5"); //22.34
 var num5 = parseFloat("0908.5"); //908.5
 var num6 = parseFloat("3.125e7"); //31250000
-
-
 ```
 
-
-
-    
 * String
 
-    
-    
-```
+```js
 * 如果字符串中包含双字节字符，那么 length 属性可能不会精确地返回字符串中的字符数目
 
 var num = 10;
@@ -209,16 +180,11 @@ alert(num.toString(2)); // "1010"
 alert(num.toString(8)); // "12"
 alert(num.toString(10)); // "10"
 alert(num.toString(16)); // "a"
-
 ```
 
-
-
-    
 * Object
 
-
-```
+```js
 * constructor
 * hasOwnProperty
 * isPrototypeOf(object) ：用于检查传入的对象是否是传入对象的原型
@@ -264,16 +230,11 @@ true == 1  // true
 无符号右移/赋值（ >>>= ）
 
 var num = (5, 1, 4, 8, 0); // num 的值为 0
-
-
 ```
-
 
 * 语句
 
-
-
-```
+```js
 * 使用 while 循环做不到的，使用 for 循环同样也做不到...
 * label 语句
 * <del>with语句</del>
@@ -283,9 +244,9 @@ var num = (5, 1, 4, 8, 0); // num 的值为 0
 // continue语句
 var num = 0;
 for (var i=1; i < 10; i++) {
-	if (i % 5 == 0) {
-		continue;
-	}
+    if (i % 5 == 0) {
+        continue;
+    }
     num++;
 }
 alert(num); //8
@@ -293,15 +254,15 @@ alert(num); //8
 // 定义的 start 标签可以在将来由 break 或 continue 语句引用。
 // 加标签的语句一般都要与 for 语句等循环语句配合使用
 start: for (var i=0; i < count; i++) {
-	alert(i);
+    alert(i);
 }
 
 var num = 0;
 outermost:
 for (var i=0; i < 10; i++) {
   for (var j=0; j < 10; j++) {
-  	if (i == 5 && j == 5) {
-  	break outermost;
+      if (i == 5 && j == 5) {
+      break outermost;
   }
   num++;
   }
@@ -310,24 +271,19 @@ alert(num); //55， continue为95
 
 // with语句
 with(location) {
-	var qs = search.substring(1);
-	var hostName = hostname;
-	var url = href;
+    var qs = search.substring(1);
+    var hostName = hostname;
+    var url = href;
 }
-
-
 ```
-
-
 
 * 函数
 
-
-```
-	* 没有重载，定义了两个名字相同的函数，则该名字只属于后定义的函数
+```js
+    * 没有重载，定义了两个名字相同的函数，则该名字只属于后定义的函数
    *  <del>ECMAScript 中也没有函数签名的概念，因为其函数参数是以一个包含零或多个值的 **数组**的形式传递的</del>
 * 变量
-	* <del>基本类型值和引用类型值</del>
+    * <del>基本类型值和引用类型值</del>
    * <del>与其他语言不同，JavaScript 不允许直接访问内存中的位置，也就是说不能直接操作对象的内存空间</del>
    *  <del>在很多语言中，字符串以对象的形式来表示，因此被认为是引用类型,ECMAScript 放弃了这一传统</del>
    *  <del>当复制保存着对象的某个变量时，操作的是对象的引用。但在为对象添加属性时，操作的是实际的对象</del>
@@ -337,15 +293,9 @@ with(location) {
    *  变量查询也不是没有代价的。很明显，访问局部变量要比访问全局变量更快，因为不用向上搜索作用域链
 ```
 
-
-   
 * 示例
 
-
-
-```
-
-
+```js
 // 变量复制不会相互影响
 var num1 = 5;
 var num2 = num1;
@@ -363,7 +313,7 @@ alert(result); //30
 
 // 对象是按值传递的
 function setName(obj) {
-	obj.name = "Nicholas";
+    obj.name = "Nicholas";
 }
 var person = new Object();
 setName(person);
@@ -371,22 +321,18 @@ alert(person.name); //"Nicholas"
 
 // 在函数内部修改了参数的值，但原始的引用仍然保持未变
 function setName(obj) {
-	obj.name = "Nicholas";
-	obj = new Object();
-	obj.name = "Greg";
+    obj.name = "Nicholas";
+    obj = new Object();
+    obj.name = "Greg";
 }
 var person = new Object();
 setName(person);
 alert(person.name); //"Nicholas"
-
-
 ```
-
-
 
 * 垃圾收集
 
-```
+```js
 * 标记清除
 * <del>引用计数</del> P79
 * 循环引用问题
@@ -413,18 +359,11 @@ function createPerson(name){
 var globalPerson = createPerson("Nicholas");
 // 手工解除 globalPerson 的引用
 globalPerson = null;
-
-
 ```
 
+* 引用类型
 
-
-*  引用类型
-
-   
-
-
-```
+```js
 * 如数组中的某一项的值是 null 或者 undefined ，那么该值在 join()
 toLocaleString() 、 toString() 和 valueOf() 方法返回的结果中以空字符串表示。
 * 栈方法和队列方法
@@ -435,9 +374,9 @@ toLocaleString() 、 toString() 和 valueOf() 方法返回的结果中以空字�
 
 
 var person = {
-	"name" : "Nicholas",
-	age : 29,
-	5 : true // 自动转成字符串
+    "name" : "Nicholas",
+    age : 29,
+    5 : true // 自动转成字符串
 };
 
 person["first name"] = "Nicholas"; // 方括号的好处
@@ -445,18 +384,18 @@ person["first name"] = "Nicholas"; // 方括号的好处
 // toString toLocalString
 var person1 = {
   toLocaleString : function () {
-  	return "Nikolaos";
+      return "Nikolaos";
   },
   toString : function() {
-  	return "Nicholas";
+      return "Nicholas";
   }
 };
 var person2 = {
   toLocaleString : function () {
-  	return "Grigorios";
+      return "Grigorios";
   },
   toString : function() {
-  	return "Greg";
+      return "Greg";
   }
 };
 
@@ -480,8 +419,10 @@ alert(removed); // yellow，返回的数组中只包含一项
 
 var values = [1,2,3,4,5];
 var sum = values.reduce(function(prev, cur, index, array){
-	return prev + cur;
+    return prev + cur;
 });
 alert(sum); //15
-
 ```
+
+
+
