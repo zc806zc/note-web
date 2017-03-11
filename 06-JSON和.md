@@ -5,10 +5,12 @@
   + [JSON→CSV](https://github.com/konklone/json)
   + [JSON格式化工具](http://www.runoob.com/jsontool)
 
-* * * * *
+------------
 
 * 常识
-~~~
+
+
+```
 // JSON
 JavaScript Object Notation 
 JavaScript 对象表示法
@@ -63,10 +65,14 @@ responseXM
 $.get() 
 $.post() 
 $.ajax()
-~~~
+
+
+```
 
 * **JSONP**
-~~~
+
+
+```
 通过PHP跨域请求
 通过JSONP跨域请求
 
@@ -143,4 +149,6 @@ String addrJsonStr =
 “}”;
 
 Address addrIn = mapper.readValue(addrJsonStr, Address.class);
-~~~
+
+
+```

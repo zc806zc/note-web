@@ -5,7 +5,7 @@
   * [知乎推荐资源](https://www.zhihu.com/question/19848946?rf=19752221)
 * 书单
 
-~~~
+```
   // 入门
   《Head First Java》
   《Java 核心技术》两卷
@@ -33,14 +33,14 @@
 《算法设计与分析》王晓东
 
 ```
-* * * * *
+------------
 
 * 网站
     + [并发编程指南](http://ifeve.com/java-7-concurrency-cookbook/)
     + [100问](https://github.com/giantray/stackoverflow-java-top-qa)
     * [ConcretePage](http://www.concretepage.com/) Java 资源类网站，可以找到各种 Java 框架及相关教程
 
-* * * * *
+------------
 
 * 基础
 ```
@@ -124,7 +124,7 @@ public class Car extends Vehicle {
       System.out.println\( result\);  
   }  
 }  
-~~~
+```
 
 * ch1-3 初始Java，Eclipse开发工具、Java语言基础
 * ch4 流程控制

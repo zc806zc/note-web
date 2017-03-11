@@ -1,6 +1,8 @@
 #### **MySQL基础**
 * MySQL的常用命令
-~~~
+
+
+```
 mysql -h localhost -u root -p // 本地登录可以省略 -h localhost
 set names gbk; // 仅本次访问有效
 exit quit 都是退出db
@@ -38,6 +40,8 @@ update `student` set `name` = '赵六'， `gender` = '女' where `id` = 2;
 
 删除数据, 不会填补空缺的id
 delete from `student` where `id`=2;
-~~~
+
+
+```
 
 * 使用MySQL扩展

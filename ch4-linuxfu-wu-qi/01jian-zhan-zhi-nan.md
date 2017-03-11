@@ -1,6 +1,8 @@
 #### **建站基础**
 * 盈利
-~~~
+
+
+```
 // 成本
 供下载等流量高的 每年2-3万
 
@@ -15,10 +17,14 @@ xxx 是 xxx的唯一机会 -> 品牌好感
 控制内容的流失
 
 // 收购 合并 上市 
-~~~
+
+
+```
 
 * 基础
-~~~
+
+
+```
 wordpress
 
 ?? wap网站 mobi手机域名
@@ -46,13 +52,17 @@ MX类型 ??
 1. 模板
 2. 图片 + 动画 华丽丽的 卡卡的
 3. 我们要做的
-~~~
+
+
+```
 
 #### **腾讯云部署有关**
 * [phpstudy安装](https://bbs.aliyun.com/read/165947.html?spm=5176.bbsr165947.0.0.sl6Fe6&displayMode=1&page=1#527830)
 * [mysql 远程访问授权问题](https://zhidao.baidu.com/question/358796386.html)
 * [使用ueditor 无法创建目录问题](http://blog.csdn.net/chengyi_l/article/details/46377307)
-~~~
+
+
+```
 // 操作数据库
 /phpstudy/mysql/bin/mysql -h 127.0.0.1 -u root -p // 然后输入密码
 
@@ -69,11 +79,17 @@ sudo mv /home/ubuntu/Desktop/imedia-test /phpstudy/www/
 // 或者直接 chmod 777 www
 
 // 文件大小写命名问题
-~~~
 
-* * * * *
+
+```
+
+------------
 
 * JSP环境安装与配置
-~~~
 
-~~~
+
+```
+
+
+
+```

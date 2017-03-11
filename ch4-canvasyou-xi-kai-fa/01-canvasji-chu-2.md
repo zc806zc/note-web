@@ -4,7 +4,9 @@
 	* [HTML5 Rocks](https://www.html5rocks.com/en/tutorials/canvas/hidpi/)
     * [forgger代码](https://github.com/denodell/frogger)
     * [HTML5 Games](http://html5gamedevelopment.com/)
-~~~
+
+
+```
 可以通过WebGL规范在canvas中建立三维图形
 高清Canvas元素
 
@@ -27,13 +29,17 @@ window的devicePixelRatio属性
 
 更新分值，历史最高分，剩余生命和时间
 碰撞检测，损失的生命值计算，是否通关...
-~~~
 
-* * * * *
+
+```
+
+------------
 
 * 使用canvas绘图
 	* [Making Image Filters with Canvas](http://www.html5rocks.com/en/tutorials/canvas/imagefilters/)
-~~~
+
+
+```
 绘制上下文
 
 绘制路径
@@ -170,4 +176,6 @@ attribute vec2 aVertexPosition;
 void main() {
 gl_Position = vec4(aVertexPosition, 0.0, 1.0);
 }
-~~~
+
+
+```

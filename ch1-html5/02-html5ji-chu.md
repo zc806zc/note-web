@@ -3,14 +3,20 @@
 	+  [missing manual网站](http://www.prosetech.com/html5)
 	+  [代码下载](http://www.oreilly.com/pub/missingmanuals/html5tmm2e)
 
-* * * * *
+------------
 
 * 废弃元素
-~~~
+
+
+```
 <nobr>  使用css的white-space: nowrap代替 
-~~~
+
+
+```
 + 新生元素
-~~~
+
+
+```
 <nav>
 <section> <aside> 
 <time><object>
@@ -19,9 +25,13 @@
 <base>的target   _blank
 
 data-*  jq已经封装
-~~~
+
+
+```
 * 幸存者: 因其实用功能或者改弦易辙
-~~~
+
+
+```
 <iframe>   Youtube窗口, 广告和谷歌搜索框
 <small>  语义转化成 附属细则，页脚的法律条款
 <hr> 主题转换 
@@ -30,9 +40,13 @@ data-*  jq已经封装
 <s> <strike> --> <del> <ins>
 <embed>加入插件
 <wbr> 单词太长允许断行, 但是 <nobr> 挂了...
-~~~
+
+
+```
 * HTML5带来的小变动
-~~~
+
+
+```
 <a>里可以放置任何东西
 
 <ol>加了reversed属性
@@ -41,35 +55,43 @@ script也可用于用户自定义的数据块 例type="application/xml"
 
 可以给不同<div>指定不同的lang，方便屏幕阅读器 
 <html lang="en">
-~~~
 
-* * * * *
+
+```
+
+------------
 
 + 浏览器与设备兼容
 	+ 平稳退化	
 	+ 积极拥抱HTML5  [Can I use](http://caniuse.com) ,
     * Modernizer检测功能
     * html5shim，html5.js(让IE支持HTML5)，通过 createElement('header')的方式
-~~~
+
+
+```
 // 对付旧版本浏览器,使用腻子脚本
 <a href="https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills" target="_blank">腻子脚本</a>
 
 // 在IE上进行js测试 
 saved from url=(0014)about:internet 
-~~~
+
+
+```
 + [浏览器市场占有情况](http://gs.statcounter.com)
 + [html标记争论的论坛](http://html5doctor.com)
 
-* * * * *
+------------
 
 * HTML校验
 	* w3c -> W3Validator
    * ff插件：HTML Validator（基于HTML Tidy,可以美化代码）
 
-* * * * *
+------------
 
 * 语义化
-~~~
+
+
+```
 // <header>的用处
 作为网页页眉
 作为内容的标题(一般是附带概要日期等信息的那种)
@@ -109,7 +131,9 @@ H5规定footer不能放太多无关内容，但是可以无视啊。。。
 </div>
 
 <main>，一个页面只能有一个
-~~~
+
+
+```
 
 * HTML5纲要（为了合理结构）
 	+ [在线HTML纲要生成器](http://gsnedders.html5.org/outliner/)

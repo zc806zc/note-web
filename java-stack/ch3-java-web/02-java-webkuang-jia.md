@@ -1,6 +1,6 @@
 #### **JSP框架概况**
 * Spring框架
-~~~
+```
 降低开发企业应用程序的复杂性
 使用Spring代替EJB开发企业级应用
 
@@ -11,10 +11,10 @@
 AOP模块
 DAO模块
 Web模块
-~~~
+```
 
 * Struts 2框架
-~~~
+```
 起源WebWork框架
 MVC框架
 控制器
@@ -22,10 +22,10 @@ MVC框架
 视图
 
 其他MVC框架 JSF ,Tapestry , Spring MVC
-~~~
+```
 
 * Hibernate技术
-~~~
+```
 对象-关系映射 ORM (Object Relational Mapping)
 
 在MVC三层架构上
@@ -40,4 +40,4 @@ MVC框架
 更灵活
 
 运用面向对象的思想操纵数据库，无须考虑资源的问题
-~~~
+```

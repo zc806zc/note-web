@@ -1,7 +1,7 @@
 #### **css基础**
 +  [纯css制作各种图案](https://segmentfault.com/a/1190000002780453)
 
-* * * * *
+------------
 
 + 基于盒状模型，依赖 display属性 + position属性 + float属性
 + [flex](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool)
