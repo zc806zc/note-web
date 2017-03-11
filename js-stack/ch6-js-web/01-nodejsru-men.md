@@ -3,7 +3,10 @@
 * 基础
 
 ```js
-+ <del>有关前身 Netscape Enterprise Server 为HTTP应用程序编码</del>
+有关前身 Netscape Enterprise Server 
+为HTTP应用程序编码
+
+
 + <del>用作网络工作环境</del>
     * 加载http模块 
     * AMD require()

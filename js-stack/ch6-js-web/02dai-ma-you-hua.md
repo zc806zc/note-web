@@ -67,6 +67,7 @@
 *   try-catch-finally
 *   检测错误类型
 *   自定义错误类型
+
 ```
 try {
   // Code that might throw an error to go here
@@ -120,6 +121,7 @@ try {
 *   Google Closure Compiler 代码编译
     *   [在线](http://closure-compiler.appspot.com/home)
 *   使用匿名、自执行的函数闭包来减少全局变量的使用
+
 ```
     // Define a global variable
     var myGlobalVariable;
@@ -168,6 +170,7 @@ try {
     *   `nav.style.opacity = 0.5;` 不经济,引发重排
     *   `nav.className += "selected";` good
     *   利用dispaly
+    
 ```
     var nav = document.getElementsByTagName("nav");
     nav.style.display = "none"; // Causes a browser reflow, hiding the element from display
@@ -190,6 +193,7 @@ try {
 
 #### **更快速地使用数组**
 *   保存array.length的值
+
 ```
  // The most common type of loop
     for (var index = 0; index < myArray.length; index++) {}

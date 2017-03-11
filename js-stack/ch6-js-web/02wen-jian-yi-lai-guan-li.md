@@ -1,23 +1,25 @@
 #### **代码文件依赖管理**
-+ 异步模块定义AMD
-	+ Asynchronous Module Definition
-+ [RequireJS](http://requirejs.org/docs/download.html)
-  + RequireJS的优化工具 查看官网 
-  	+ UglifyJS压缩
-  + RequireJS的附加插件
-  	+ il8n 使文本实现本地化
-  	+ Text 让文本文件也作为加载依赖
-  	+ Font 通过Google的WebFont Loader API加载字体
-  	+ Handlebars 函数的处理结果是一个HTML字符串，可以注入页面中
-  	+ Cache 页面刷新从本地存储区加载，减少HTTP请求
-  + RequireJS的替代品 
-		* BDLoad
-      + Cajon
-      + CurlJS
-      + LoaderJS
-      + UMD
-      + Yabble
-```
+
+* 异步模块定义AMD
+  * Asynchronous Module Definition
+* [RequireJS](http://requirejs.org/docs/download.html)
+  * RequireJS的优化工具 查看官网 
+    * UglifyJS压缩
+  * RequireJS的附加插件
+    * il8n 使文本实现本地化
+    * Text 让文本文件也作为加载依赖
+    * Font 通过Google的WebFont Loader API加载字体
+    * Handlebars 函数的处理结果是一个HTML字符串，可以注入页面中
+    * Cache 页面刷新从本地存储区加载，减少HTTP请求
+  * RequireJS的替代品 
+    * BDLoad
+      * Cajon
+      * CurlJS
+      * LoaderJS
+      * UMD
+      * Yabble
+
+```js
 // 定义一个对jQuery有依赖的模块
 define(["lib/jquery-1.10.2"], function($) {
     // Module code to execute once jQuery is loaded goes here. The jQuery library
@@ -102,3 +104,6 @@ require(["jquery"], function($) {
     });
 });
 ```
+
+
+

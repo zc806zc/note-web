@@ -1,5 +1,6 @@
 #### **客户端模板引擎**
 * 基础
+
 ```
 // JS方法
 function myFunction()
@@ -25,6 +26,7 @@ jQuery 函数会返回新的 jQuery 对象，其中的 ready() 是一个方法�
 ```
 
 * Prototype
+
 ```
 与 jQuery 不同，Prototype 没有用以取代 window.onload() 的 ready() 方法。相反，Prototype 会向浏览器及 HTML DOM 添加扩展。
 
@@ -39,6 +41,7 @@ Event.observe(window,"load",myFunction);
 
 * MooTools
 * 其他框架
+
 ```
 YUI - Yahoo! User Interface Framework，
 涵盖大量函数的大型库，从简单的 JavaScript 功能到完整的 internet widget。
@@ -53,6 +56,7 @@ UIZE - Widget、AJAX、DOM、模板等等。
 ```
 
 * 客户端模板引擎的使用
+
 ```
 + 主要应用于那些单页Web应用程序
 + 动态更新页面内容 JS+HTML 但易混淆
