@@ -65,6 +65,7 @@
     * [01-JS-设计模式](js-stack/ch2-jsjin-jie/01-jsshe-ji-mo-shi.md)
     * [01-函数式编程](js-stack/ch2-jsjin-jie/01han-shu-shi-bian-cheng.md)
     * [02-JS高级技巧](js-stack/ch2-jsjin-jie/02-jsgao-ji-ji-qiao.md)
+    * [02-JS最佳实践](js-stack/ch2-jsjin-jie/02-jszui-jia-shi-jian.md)
   * [ch3-JS变种](js-stack/ch3-jsbian-zhong.md)
     * [01-Coffee基础](js-stack/ch3-jsbian-zhong/01-coffeeji-chu.md)
     * [01-TypeScript基础](js-stack/ch3-jsbian-zhong/01-typescriptji-chu.md)
