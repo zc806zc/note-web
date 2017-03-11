@@ -1,14 +1,26 @@
 #### **JSON和Ajax**
 * 工具
+
+
+```
   + 校验工具 [JSONLint](http://www.jsonlint.com/)
   + 构建JSON逻辑模型 [JSON Editor Online](http://jsoneditoronline.org/)
   + [JSON→CSV](https://github.com/konklone/json)
   + [JSON格式化工具](http://www.runoob.com/jsontool)
+```
 
-* * * * *
+
+
 
 * 常识
-~~~
+
+
+
+```
+
+
+
+
 // JSON
 JavaScript Object Notation 
 JavaScript 对象表示法
@@ -63,10 +75,17 @@ responseXM
 $.get() 
 $.post() 
 $.ajax()
-~~~
+
+
+
+```
+
 
 * **JSONP**
-~~~
+
+
+
+```js
 通过PHP跨域请求
 通过JSONP跨域请求
 
@@ -143,4 +162,6 @@ String addrJsonStr =
 “}”;
 
 Address addrIn = mapper.readValue(addrJsonStr, Address.class);
-~~~
+
+
+```
