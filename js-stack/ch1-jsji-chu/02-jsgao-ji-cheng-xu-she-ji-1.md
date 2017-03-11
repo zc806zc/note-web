@@ -57,6 +57,8 @@ script
 
    
 * 示例
+
+
 ```
 * <del>language type charset</del>
 * <del>不要在代码中的任何地方出现 "</script>"
@@ -409,7 +411,6 @@ toLocaleString() 、 toString() 和 valueOf() 方法返回的结果中以空字�
    *  every filter some map()
    * forEach() ：对数组中的每一项运行给定函数。这个方法没有返回值。
    *  reduce reduceRight
-   * 
    
 
 
