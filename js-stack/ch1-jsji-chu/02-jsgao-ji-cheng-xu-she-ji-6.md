@@ -1,5 +1,9 @@
 #### **ch8、9  BOM与客户端检测**
-* <del>BOM-浏览器提供商会按照各自的想法随意去扩展它</del>
+* 基础
+
+
+```
+* BOM-浏览器提供商会按照各自的想法随意去扩展它
 *  <del>window 对象有双重角色，它既是通过 JavaScript 访问浏览器窗口的一个接口，又是 ECMAScript 规定的 Global 对象</del> 
 * window parent top self p195
 	*  在使用框架时，每个框架都有自己的 window 对象以及所有原生构造函数及其他函数的副本。每个框架都保存在 frames 集合中，可以通过位置或通过名称来访问。
@@ -13,7 +17,12 @@
     *  JavaScript 任务队列
     *  超时调用 ID 例clearTimeout(id);
     * 一般认为，使用 **超时调用** 来模拟间歇调用的是一种最佳模式。
-    
+
+```
+
+
+
+* 示例   
 ~~~
 // 全局变量不能通过 delete 操作符删除，
 // 而直接在 window 对象上的定义的属性可以
@@ -92,7 +101,11 @@ if (confirm("Are you sure?")) {
 }
 ~~~
 
+
 * <del>迁就各方的“最小公分母”策略</del>
+
+
+```
 * 最常见的客户端检测方法是 **能力检测**/特性检测
 	* [ JavaScript 中能力检测 文章](http://peter.michaux.ca/articles/feature-detection-state-of-the-art-browser-scripting)
     *  <del>能力检测，不是浏览器检测</del>
@@ -116,7 +129,11 @@ if (confirm("Are you sure?")) {
     *   识别windows操作系统
     *   识别移动设备
     *   识别游戏系统
-    
+
+```
+
+
+* 示例 
 ~~~
 // 检测某个属性是否存在并不能确定对象是否支持排序。
 // 更好的方式是检测 sort 是不是一个函数。
