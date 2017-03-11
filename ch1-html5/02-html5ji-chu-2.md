@@ -1,4 +1,7 @@
 #### **HTML5基础2**
+
+
+```
 * Canvas绘图与交互动画
 + 把简化版的windows画图程序硬塞到网页
 + `var ctx = document.getElementById("myCanvas").getContext("2d");`
@@ -48,9 +51,15 @@
 + [维基知识地图](http://en.inforapid.org)
 + [3D Walker](http://www.benjoffe.com/code/demos/canvascape)
 + [国际象棋](http://htmlchess.sourceforge.net/demo/example.html)
+```
+
+
 
 
 ### 数据存储
+
+
+```
 + web存储
 + localStorage 本地存储 上限5M
 + sessionStorage 会话存储
@@ -69,7 +78,13 @@
 + 改进本地存储 简单快捷
 + `data-url` 自定义数据 浏览器可忽略
 
+```
+
+
 ### 离线应用
+
+
+```
 + manifest file 描述文件
 + CACHE MANIFEST
 +  NETWORK 总是从服务器获取不缓存 `*`
@@ -77,8 +92,14 @@
 + SETTING: prefer-online
 + 不要缓存有查询字符串的页面
 + 描述文件更新 加注释版本号
+```
+
+
 
 ### 与web服务器通信
+
+
+```
 + 通信的方式
 + 服务器发送事件
 + Web Socket框架
@@ -91,8 +112,14 @@
 + [Java](http://jwebsocket.org/)
 + [node.js](http://github.com/miksago/node-websocket-server)
 + [Kaazing](http://kaazing.com/products/html5-edition.html)
+```
+
+
 
 ### 地理定位、Web Worker和历史管理
+
+
+```
 + 地理定位
 + [Manual Geolocation 插件](http://tinyurl.com/manual-geo) 伪造位置
 + `getCurrentPosition()`
@@ -115,11 +142,14 @@
 + 以往解决方案 hashbang URL
  + 创建额外页面
 + 服务端包含技术 
+```
+
+
 
 
 ```
 <!-- #include file="footer.html" -->
 
-
 ```
+
 + Adobe Dreamweaver web模板功能
