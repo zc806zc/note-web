@@ -1,25 +1,26 @@
 #### **Webpack简介**
+
 * 链接
-  + [官网]( http://webpack.github.io/)
-  + [文档](http://webpack.github.io/docs/)
-  + [入门](http://www.w2bc.com/Article/50764)
+  * [官网](http://webpack.github.io/)
+  * [文档](http://webpack.github.io/docs/)
+  * [入门](http://www.w2bc.com/Article/50764)
 * 简介
-  + **模块加载器** 兼 **打包**工具
-  + 各种健全的 **加载器**
-  + Github 上各大主流的 **React**相关项目，所展示的示例是基于 webpack 来开发的
-+ commonJS AMD/CMD 代码迁移 
-	+ 替代部分 grunt/gulp 的工作，比如打包、压缩混淆、图片转base64等
-	+ 支持 React 热插拔??
-	+ demo 自动加上自己的加载器 回调define...
-    + 每个项目下都必须配置有一个 webpack.config.js
-    
-```
+  * **模块加载器** 兼 **打包**工具
+  * 各种健全的 **加载器**
+  * Github 上各大主流的 **React**相关项目，所展示的示例是基于 webpack 来开发的
+* commonJS AMD/CMD 代码迁移 
+  * 替代部分 grunt/gulp 的工作，比如打包、压缩混淆、图片转base64等
+  * 支持 React 热插拔??
+  * demo 自动加上自己的加载器 回调define...
+  * 每个项目下都必须配置有一个 webpack.config.js
+
+```js
 var someModule = require("someModule");
     var anotherModule = require("anotherModule");    
- 
+
     someModule.doTehAwesome();
     anotherModule.doMoarAwesome();
- 
+
     exports.asplode = function (){
         someModule.doTehAwesome();
         anotherModule.doMoarAwesome();
@@ -30,7 +31,7 @@ var webpack = require('webpack');
 var commonsPlugin = new webpack.optimize.CommonsChunkPlugin('common.js');
 // 提取多个入口文件的公共脚本部分
 // 然后生成一个 common.js 来方便多页面之间进行复用
- 
+
 module.exports = {
     //插件项
     plugins: [commonsPlugin],
@@ -86,9 +87,9 @@ var AppWrap = require('../component/AppWrap'); //加载组件
 var createRedux = require('redux').createRedux;
 var Provider = require('redux/react').Provider;
 var stores = require('AppStore');
- 
+
 var redux = createRedux(stores);
- 
+
 var App = React.createClass({
     render: function() {
         return (
@@ -98,7 +99,7 @@ var App = React.createClass({
         );
     }
 });
- 
+
 React.render(
     <App />, document.body
 );
@@ -148,3 +149,6 @@ gulp.task("webpack", function(callback) {
     });
 });
 ```
+
+
+
