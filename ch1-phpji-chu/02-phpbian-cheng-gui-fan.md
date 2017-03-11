@@ -1,8 +1,8 @@
 #### **PHP编程规范**
-+ [CodeIgniter参考](http://codeigniter.org.cn/user_guide/general/styleguide.html)
 
+* [CodeIgniter参考](http://codeigniter.org.cn/user_guide/general/styleguide.html)
 
-```
+```php
 所有的换行符应该使用 Unix 格式换行符（LF）
 
 所有的 PHP 文件将不使用结束标签，而是以一个空行代替
@@ -56,12 +56,9 @@ PHP 起始标签的前面和结束标签的后面都不要留空格，
 这样文件可以更紧凑一点，
 也就是本来是四个空格字符， 
 现在只要一个制表符就可以了。
-
-
 ```
 
 * 命名纠结
-
 
 ```
 // 倾向中划线 
@@ -73,7 +70,7 @@ class             first-name > FirstName
 
 // 倾向下划线   
 // 有其编程目的与语法限制，相对也是易于索引搜寻的
-id                 	first_name > firstName
+id                     first_name > firstName
 数据库           db_id
 html             first_name.html > first-name.html
 php文件       hello_world.php > helloWorld.php
@@ -81,10 +78,11 @@ php文件       hello_world.php > helloWorld.php
 // 倾向驼峰  
 // JS有关
 JS变量           firstName
-js文件    		firstName.js > first_name.js // 但我更喜欢用中划线 其次是点号
+js文件            firstName.js > first_name.js // 但我更喜欢用中划线 其次是点号
 
 // 注意windows与linux文件大小写问题
 我遇到win下的login_check.php -> ubuntu login_Check.php的闹鬼事件？？
-
-
 ```
+
+
+

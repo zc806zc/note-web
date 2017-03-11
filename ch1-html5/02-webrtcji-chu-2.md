@@ -6,6 +6,7 @@
 + 对媒体流进行解码
 + 音频回声抵消
 + getUserMadia
+
 ```
 // Expose the browser-specific versions of the getUserMedia() method through the standard
 // method name. If the standard name is already supported in the browser (as it is in Opera),
@@ -15,6 +16,7 @@ navigator.getUserMedia = navigator.getUserMedia || navigator.mozGetUserMedia ||
 navigator.webkitGetUserMedia || navigator.msGetUserMedia;
 ```
 + 访问网络摄像头和麦克风
+
 ```
 // Define a function to execute if we are successfully able to access the user's webcam and
 // microphone
@@ -47,6 +49,7 @@ throw new Error("Sorry, getUserMedia() is not supported in your browser");
 }
 ```
 + 把网络摄像头和麦克风的数据内容回拨给用户
+
 ```
 // Use the getUserMedia() polyfill from Listing 12-1 for best cross-browser support
 
@@ -87,6 +90,7 @@ audio: true
 throw new Error("Sorry, getUserMedia() is not supported in your browser");
 }
 ```
+
 + 一个简单的视频聊天网页应用程序
 + 连接与信令交互
 + 利用[Firebase](https://firebase.google.com/)服务实现简单信令交互
