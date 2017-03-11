@@ -13,7 +13,11 @@
         * 多浏览器独立分离 多用户连接的在线应用程序
 + Node.js的APP托管
     + [Joyent](https://github.com/nodejs/node-v0.x-archive/wiki/node-hosting)
-~~~
+
+
+```
+
+
 // 运行示例 
 node filename.js
 
@@ -116,7 +120,11 @@ node filename.js
         "yuidocjs": "~0.3.50"
     }
 }
-~~~
+
+
+```
+
+
 
 #### **构建工具及自动化**
 + <del>日复一日的工作流程如下</del>
@@ -149,7 +157,11 @@ node filename.js
 + 项目文件结构
     + src 用于开发
     + **dist** 生产就绪的版本 - 构建处理,自动生成
-~~~
+
+
+```
+
+
 // grunt使用示例
 npm install -g grunt-cli
 npm init
@@ -193,4 +205,7 @@ npm install gulp-uglify --save-dev
 npm install gulp-yuidoc --save-dev
 npm install gulp-rename --save-dev
 npm install gulp-header --save-dev // 没有watch, 已经在API里
-~~~
+
+
+```
+
