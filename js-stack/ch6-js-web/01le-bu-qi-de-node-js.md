@@ -1,4 +1,7 @@
 #### **ch1 安装**
+* 基础
+
+```
 * v8是Google为Chrome Web浏览器设计
 	* JavaScript解释器
     * 虚拟器
@@ -13,26 +16,47 @@
 *  执行文件 node + filename.js
 * npm
 	* 从源码编译安装 curl http://npmjs.org/install.sh | sh
+```
+
+
 * 安装模块
-	* 彩虹
+    * 彩虹
     
-    ~~~
-    require('colors');
-    console.log('smashing node'.rainbow);
-    ~~~
+
+
+```
+
+require('colors');
+console.log('smashing node'.rainbow);
+
+```
+
+
+
 * 自定义模块
-	* package.json -> 双引号
-    
-    ~~~
-        {
-        "name": "node-basic",
-        "version": "0.0.1",
-        "main": "./index",
-        "dependencies": {
-            "colors": "*"
-        }
-        }
-    ~~~
+    * package.json -> 双引号
+
+
+
+```
+
+{
+"name": "node-basic",
+"version": "0.0.1",
+"main": "./index",
+"dependencies": {
+"colors": "*"
+}
+}
+
+
+```
+
+
+
+* 基础
+
+```
     * npm install
     * npm publish
     	* "private": "true"  // 避免误发布
@@ -44,6 +68,9 @@
 * 浏览npm仓库
 	* npm search realtime
     * npm view socket.io
+```
+
+
 
 ####  **ch2 JavaScript概览**
 * V8中的JavaScript
@@ -51,15 +78,25 @@
 	* hasOwnProperty
     * 获取自有键
     
-    ~~~
+
+
+```
+
+
 	var a = {c : "j", d : "h"};
 	console.log( Object.keys(a) ); // [ 'c', 'd' ]
-    ~~~
+
+```
+
+
 * isArray
 * bind
 	* 允许改变对this的引用
     
-    ~~~
+
+
+```
+
     function a() {
       this.hello == 'world'; // true
       console.log(this.hello);
@@ -67,32 +104,52 @@
 
     var b = a.bind({ hello : 'hu' });
     b(); // hu
-    ~~~
+
+```
+
+
 * forEach filter map reduce ...
 * trim();
 * JSON
-	* JSON.stringify 解码
+    * JSON.stringify 解码
     * JSON.parse 编码
     
-    ~~~
+
+
+```
+
     var obj = JSON.parse('{"a":"b"}');
     console.log(obj); // { a: 'b' }
     console.log(obj.a); // b
-    ~~~
+
+```
+
+
 * 非标准的
 	* name
-    
-    ~~~
+
+
+```
+
+
+
     var a = function your () {};
     console.log(a.name); // your
     console.log(a.name == 'your'); // true
-    ~~~
+
+```
+
+
     * 始终对函数命名 便于调试
 * __PROTO__
 	* 不需要中间构造器
     * 也不需要第三方的OPP工具类库
     
-    ~~~
+
+
+```
+
+
     function Animal() {}
     function Cat() {}
 
@@ -100,9 +157,16 @@
 
     var cat = new  Cat();
     console.log(cat instanceof Animal); // true
-    ~~~
+
+```
+
+
 * 存取器
-~~~
+
+
+
+```
+
 // Based on prettyDate by John Resig (MIT license)
 Date.prototype.__defineGetter__('ago', function () {
   var diff = (((new Date()).getTime() - this.getTime()) / 1000)
@@ -121,7 +185,10 @@ Date.prototype.__defineGetter__('ago', function () {
 
 var a = new Date('12/25/1990');
 console.log(a.ago); // 1360 weeks ago
-~~~
+
+```
+
+
 
 ####  **ch3 阻塞与非阻塞IO**
 ####  **ch4 Node中的JavScript**
