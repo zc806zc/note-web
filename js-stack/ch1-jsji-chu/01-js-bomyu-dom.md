@@ -1,11 +1,13 @@
 #### **BOM基础**
 * 常识
+
 ~~~
 尚无正式标准
 使 JavaScript有能力与浏览器对话
 ~~~
 
 * 窗口与尺寸
+
 ~~~
 window.open()  close() 
 window.moveTo()  resizeTo() -调整尺寸
@@ -21,11 +23,13 @@ var w=window.innerWidth
 ~~~
 
 *  Screen
+
 ~~~
 可用宽度 screen.availWidth
 ~~~
 
 *   Location
+
 ~~~
 location.hostname 返回 web 主机的域名
 location.pathname 返回当前页面的路径和文件名
@@ -83,6 +87,7 @@ location.reload(true); //重新加载（从服务器重新加载）
 ~~~
 
 *  History
+
 ~~~
 history.back()  
 forward() 
@@ -91,6 +96,7 @@ go(-1)
 ~~~
 
 *   Navigator
+
 ~~~
 
 navigator 对象的信息具有误导性，
@@ -180,12 +186,14 @@ navigator.registerProtocolHandler("mailto",
 ~~~
 
 *   计时事件
+
 ~~~
  setInterval() 
  setTimeout()
 ~~~
     
 *  Cookies
+
 ~~~
 存储 web 页面的用户信息 
 存储在文本文件中
@@ -238,6 +246,7 @@ navigator.registerProtocolHandler("mailto",
 ~~~
 
 #### **DOM基础**
+
 ~~~
 三个坐标 id tag class
 
@@ -271,7 +280,9 @@ var input_val = document.getElementById("input_val");
 get_val_btn.addEventListener("click", myFunc);
 function myFunc() { alert(input_val.value); }
 ~~~
+
 *   事件
+
 ~~~
 onload onunload 页面的加载与卸载
 
