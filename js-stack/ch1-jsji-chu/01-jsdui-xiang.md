@@ -1,8 +1,8 @@
 #### **JS对象基础**
-* <del>JS是一门货真价实的面向对象的语言</del>
+* JS是一门货真价实的面向对象的语言
 
 
-```
+```js
 传统的面向对象 C++ Java PHP Objective-C
 JavaScript是面向对象的，但基于prototype(原型), 而不是使用类
 继承 → 原型继承 原型链
