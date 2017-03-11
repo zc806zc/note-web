@@ -21,9 +21,7 @@
 
 * 示例   
 
-
-```
-
+```js
   // 全局变量不能通过 delete 操作符删除，
   // 而直接在 window 对象上的定义的属性可以
   var age = 29;
@@ -99,15 +97,11 @@ if \(confirm\("Are you sure?"\)\) {
 } else {  
     alert\("I'm sorry to hear you're not sure. "\);  
 }
-
 ```
-
-
 
 * 迁就各方的“最小公分母”策略
 
-
-```
+```js
 * 最常见的客户端检测方法是 **能力检测**/特性检测
 * [ JavaScript 中能力检测 文章](http://peter.michaux.ca/articles/feature-detection-state-of-the-art-browser-scripting)
 * <del>能力检测，不是浏览器检测</del>
@@ -131,14 +125,11 @@ if \(confirm\("Are you sure?"\)\) {
 * 识别windows操作系统
 * 识别移动设备
 * 识别游戏系统
-
 ```
-
 
 * 示例
 
-
-```
+```js
 // 检测某个属性是否存在并不能确定对象是否支持排序。  
 // 更好的方式是检测 sort 是不是一个函数。  
 function isSortable\(object\){  
@@ -176,7 +167,8 @@ return false;
 }  
 }  
 return true;  
-}\(\);  
-
-
+}\(\);
 ```
+
+
+
