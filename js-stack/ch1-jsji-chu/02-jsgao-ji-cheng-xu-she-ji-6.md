@@ -21,7 +21,9 @@
 
 * 示例   
 
-  ~~~
+
+```
+
   // 全局变量不能通过 delete 操作符删除，
   // 而直接在 window 对象上的定义的属性可以
   var age = 29;
@@ -98,6 +100,10 @@ if \(confirm\("Are you sure?"\)\) {
     alert\("I'm sorry to hear you're not sure. "\);  
 }
 
+```
+
+
+
 * <del>迁就各方的“最小公分母”策略</del>
 
 
@@ -171,5 +177,6 @@ return false;
 }  
 return true;  
 }\(\);  
-~~~
 
+
+```
