@@ -13,6 +13,7 @@
 * 浏览器对 XSLT 的支持
 	* XSLT:利用 XPath 将文档从一种表现形式转换成另一种表现形式
     * XSLTProcessor 类型
+    
 ~~~
 var parser = new DOMParser();
 var xmldom = parser.parseFromString("<root><child/></root>", "text/xml");
@@ -69,6 +70,7 @@ xmldom.load("example.xml");
 * 使用 @ 字符表示应该返回一或多个特性。
 * 星号字符（ * ）是一个通配符，可以匹配任意类型的节点。
 * 所有这些查询都可以通过一组执行相同操作的方法来实现。
+
 ~~~
 <script type="text/javascript;e4x=1" src="e4x_file.js"></script>
 ~~~
@@ -172,6 +174,7 @@ alert("Connection closed.");
     	* 并发问题
         	* 只有当浏览器中仅有一个标签页使用数据库的情况下，调用 setVersion() 才能完成操作
         * 限制 ： 同源 磁盘占用
+        
 ~~~
 // cookie工具
 var CookieUtil = {
@@ -249,6 +252,7 @@ request.onsuccess = function(event) {
     }
 };
 ~~~
+
 #### **ch24 最佳实践**
 * **可维护** 的代码
 	* 可理解性
@@ -312,6 +316,7 @@ request.onsuccess = function(event) {
         * 使用 **事件代理**
         * 注意 **HTMLCollection**
         	* 保存变量，避免多次循环
+        
 ~~~
 //用于指定数据类型的匈牙利标记法
 var bFound; //布尔型
@@ -426,6 +431,7 @@ list.innerHTML = html;
 	* 核心  window.performance
     * 给出了页面加载和渲染过程的很多信息，对性能优化非常有价值
 * 使用 Web Workers在后台执行 JavaScript
+
 ~~~
 // 文件读取
 var filesList = document.getElementById("files-list");
