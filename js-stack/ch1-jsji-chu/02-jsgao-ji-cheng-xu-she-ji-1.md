@@ -191,13 +191,11 @@ var num6 = parseFloat("3.125e7"); //31250000
 
     
 * String
-   * <del>如果字符串中包含双字节字符，那么 length 属性可能不会精确地返回字符串中的字符数目</del>
+
     
-
-
+    
 ```
-
-
+* 如果字符串中包含双字节字符，那么 length 属性可能不会精确地返回字符串中的字符数目
 
 var num = 10;
 alert(num.toString()); // "10"
@@ -205,7 +203,6 @@ alert(num.toString(2)); // "1010"
 alert(num.toString(8)); // "12"
 alert(num.toString(10)); // "10"
 alert(num.toString(16)); // "a"
-
 
 ```
 
@@ -223,7 +220,6 @@ alert(num.toString(16)); // "a"
 	* 负数同样以二进制码存储，但使用的格式是二进制补码
    *  <del>位运算符</del> P40
    
-
 
 ```
 
