@@ -403,7 +403,7 @@ globalPerson = null;
 
 
 *  引用类型
-	* 如果数组中的某一项的值是 null 或者 undefined ，那么该值在 join() 、
+  * 如数组中的某一项的值是 null 或者 undefined ，那么该值在 join() 
 toLocaleString() 、 toString() 和 valueOf() 方法返回的结果中以空字符串表示。
 	* 栈方法和队列方法
    *  splice() 方法是最强大的数组方法
