@@ -110,6 +110,7 @@
     * [02-HTML5基础3](ch1-html5/02-html5ji-chu-3.md)
     * [02-WebRTC基础1](ch1-html5/02-webrtcji-chu-1.md)
     * [02-WebRTC基础2](ch1-html5/02-webrtcji-chu-2.md)
+    * [02-新兴API](ch1-html5/02xin-xing-api.md)
   * [ch2-css3](ch2-css3.md)
     * [01-CSS-布局](ch2-css3/01-cssbu-ju.md)
     * [02-CSS3-动画](ch2-css3/02-css3dong-hua.md)
