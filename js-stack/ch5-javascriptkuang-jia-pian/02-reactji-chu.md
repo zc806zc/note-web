@@ -1,63 +1,40 @@
 #### **react简介**
+
 * 基础
-	* [React 安装](http://www.runoob.com/react/react-install.html)
-    * [React 组件 API](http://www.runoob.com/react/react-component-api.html)
-    
+  * [React 安装](http://www.runoob.com/react/react-install.html)
+  * [React 组件 API](http://www.runoob.com/react/react-component-api.html)
 
-
-```
-
-
-
+```js
 一个用于构建用户界面的JS库
 起源于Instagram
 
 // 环境
 Node.js 及 NPM
 建议在 React 中使用 CommonJS 模块系统，比如 browserify 或 webpack
-
-
 ```
-
-
 
 * 特点
 
-
-```
-
-
-
+```js
 采用声明范式，可以轻松描述应用 
 DOM模拟，最大限度地减少与DOM的交互
 与已知的库或框架很好地配合
 JSX是JS语法的扩展
 React构建组件，代码更容易复用，适合于大项目开发
 单向响应的数据流 减少了重复代码, 比传统数据绑定更简单
-
-
 ```
-
-
 
 * 其js布局
 
-
-
-```
+```js
 react.min.js - React 的核心库
 react-dom.min.js - 提供与 DOM 相关的功能
 browser.min.js - 将JSX语法转为JS语法
-
 ```
-
-
 
 * React JSX
 
-
-```
-
+```js
 很像 XML 的 JavaScript 语法扩展
 执行更快 代码优化。
 类型安全，在编译过程中就能发现错误。
@@ -68,17 +45,11 @@ browser.min.js - 将JSX语法转为JS语法
 
 var myDivElement = <div className="foo" />;
 ReactDOM.render(myDivElement, document.getElementById('example'));
-
 ```
 
+* 渲染 React 组件
 
-
-+ 渲染 React 组件
-
-
-```
-
-
+```js
 var MyComponent = React.createClass({/*...*/});
 var myElement = <MyComponent someProperty={true} />;
 ReactDOM.render(myElement, document.getElementById('example'));
@@ -89,31 +60,19 @@ React 的 JSX 使用大、小写的约定来区分本地组件的类和 HTML 标
 
 // 组件
 组件类只能包含一个顶层标签，否则会报错
-
 ```
 
+* React State\(状态\)
 
-
-* React State(状态)
-
-
-```
-
-
+```js
 React 把组件看成是一个State Machines。通过与用户的交互，实现不同状态，然后渲染 UI，让用户界面和数据保持一致React 把组件看成是一个状态机。通过与用户的交互，实现不同状态，然后渲染 UI，让用户界面和数据保持一致
 
 React 里，只需更新组件的 state，然后根据新的 state 重新渲染用户界面（不要操作 DOM）
-
 ```
-
-
 
 * React Props
 
-
-
-```
-
+```js
 state 和 props 主要的区别在于 props 是不可变的，
 而 state 可以根据与用户交互来改变
 
@@ -176,52 +135,31 @@ return new Error('Validation failed!');
 },
 /* ... */
 });
-
-
 ```
-
-
 
 * 组件的生命周期
 
-
-```
-
-
+```js
 Mounting：已插入真实 DOM
 Updating：正在被重新渲染
 Unmounting：已移出真实 DOM
-
-
 ```
 
+* react ajax
 
-
-*  react ajax
-
-
-
-
-```
-
+```js
 当使用异步加载数据时，
 在组件卸载前使用 componentWillUnmount 来取消未完成的请求。
-
 ```
 
+* react refs
 
-
-*  react refs
-
-
-```
-
+```js
 React 支持一种非常特殊的属性 Ref ，
 你可以用来绑定到 render() 输出的任何组件上
 
 支撑实例（ backing instance ）
 任何时间总是拿到正确的实例
-
 ```
 
 

@@ -1,5 +1,8 @@
 #### **ch1 快速上手**
 * [源码下载](https://github.com/mgechev/switching-to-angular2)
+
+
+```
 * 升级是值得的
 * ES2015
 	* 模块化
@@ -23,6 +26,9 @@
 * 大规模应用
 * 模板
 * 脏值检测
+```
+
+
 
 #### **ch2 基础构件**
 #### **ch3 TypeScript**
