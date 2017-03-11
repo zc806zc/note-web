@@ -115,7 +115,11 @@
 + 以往解决方案 hashbang URL
  + 创建额外页面
 + 服务端包含技术 
-~~~
+
+
+```
 <!-- #include file="footer.html" -->
-~~~
+
+
+```
 + Adobe Dreamweaver web模板功能

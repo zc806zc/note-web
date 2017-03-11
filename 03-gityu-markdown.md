@@ -1,6 +1,8 @@
 #### **git常用命令**
 * 常用命令
-~~~
+
+
+```
 在git commit之前 git diff HEAD
 
 合并分支
@@ -36,10 +38,14 @@ git push -u origin gh-pages
 git stash
 do something
 git stash pop
-~~~
+
+
+```
 
 * [git合并、冲突 实例 - woai0231](https://github.com/woai30231/webDevDetails/tree/master/13)
-~~~
+
+
+```
 // 合并
 git进行了三方面的合并，
 一方面分别找到两个需要合并分支的的祖先，
@@ -51,7 +57,9 @@ git进行了三方面的合并，
 
 // 冲突
 需要手动修改后再提交
-~~~
+
+
+```
 
 #### **markdown语法**
 * 语法
@@ -62,7 +70,9 @@ git进行了三方面的合并，
 
 * 基本语法
 	* markdown不支持的可以写html标签
-~~~
+
+
+```
 二级标题可能自带下划线
 
 换行就是空行
@@ -103,4 +113,6 @@ git进行了三方面的合并，
 // 水平分割线  ---
 
 // 用反斜杠来插入保留字符 `\\`
-~~~
+
+
+```

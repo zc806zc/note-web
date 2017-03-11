@@ -2,12 +2,16 @@
 * 安装
 	* [php5.5下载](http://www.pc6.com/softview/SoftView_51016.html)
     * [phpstorm 的表单提交问题](http://blog.csdn.net/muzilinxi90/article/details/52458511)
-~~~
+
+
+```
 // 集成安装包
 XAMPP Wamp phpstudy
 AppServ
 phpnow easyphp vertrigo
-~~~
+
+
+```
 
 * * * * *
 
@@ -32,7 +36,9 @@ phpnow easyphp vertrigo
 	* [atom编辑器配置](http://haafiz.me/development/how-to-setup-atom-for-php-development)
     * [netbean换主题](http://netbeansthemes.com/darkcalm/)
     * [wamp的localhost进入后点击文件无效问题](https://zhidao.baidu.com/question/625842715884857684.html)
-~~~
+
+
+```
 phpEclipse, komodo edit, APtana Studio, PHPEdit
 
 komodo IDE, Zend studio
@@ -51,6 +57,8 @@ NetBeans/PHPStroms
 // netbean使用
 运行配置那里选PHP内置 -> 端口等运行的问题
 utf-8 -> 中文乱码的问题
-~~~
+
+
+```
 
 * Appache配置

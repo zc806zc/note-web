@@ -1,6 +1,8 @@
 #### **PHP基础**
 * 基础
-~~~
+
+
+```
 超文本预处理器 
 动态生成html  增强信息交互
 70%的网站
@@ -15,10 +17,14 @@ Zend Framework/Laravel/Symfony/Yii/CodeIgniter/ThinkPHP
 JSP效率最高 用于建设大型电子商务网站
 PHP 缺少规模支持 小型商业网站
 ASP.NET  .NET库的支持
-~~~
+
+
+```
 
 * 语法
-~~~
+
+
+```
 标识符采用下划线连接
 
 传值赋值与引用赋值
@@ -35,10 +41,14 @@ echo $num; // 100
 define函数与const
 
 if elseif else
-~~~
+
+
+```
 
 * 数据类型
-~~~
+
+
+```
 标量：布尔型 整型 浮点型 字符串型 
 有时 0 表示false 1表示true
 浮点数的有效位数 14
@@ -51,10 +61,14 @@ if elseif else
 复合 : 数组 对象
 
 特殊 : resource NULL
-~~~
+
+
+```
 
 * 输出
-~~~
+
+
+```
 // echo 
 // var_dump 打印变量或表达式相关信息
 
@@ -73,20 +87,28 @@ Array
   [1] => 4
   [2] => 5
 )
-~~~
+
+
+```
     
 * Date函数
-~~~
+
+
+```
 从1970-01-01 00:00:00 开始的总秒数
 time()获取时间戳
 
 echo time() ; // 1483346204
 echo date('Y-m-d H:i:s') ; // 2017-01-02 09:36:44
 echo date('Y-m-d', time()); // 2017-01-02
-~~~
+
+
+```
 
 * 运算
-~~~
+
+
+```
 // 运算结果正负
 echo (-8)%7 ; // -1
 echo (8)%7 ; // 1
@@ -101,10 +123,14 @@ xor 一个false一个true 才为true
 or与||类似，但是优先级低
 
 短路
-~~~
+
+
+```
 
 * 数据类型转化
-~~~
+
+
+```
 // 数据类型自动转化
 if("123abc" == 123) { echo "yes"; } // yes
 if("abc" == 0) { echo "yes"; } // yes
@@ -119,10 +145,14 @@ var_dump((object)2.34);
   // class stdClass#1 (1) { public $scalar => double(2.34) }
   
 三元运算
-~~~
+
+
+```
 
 * 数组
-~~~
+
+
+```
 // 赋值有关
 
 $arr = [];
@@ -178,10 +208,14 @@ foreach($fruit as $value) {
 // 1=>pear
 // apple
 // pear
-~~~
+
+
+```
 
 *  PHP内置函数
-~~~
+
+
+```
 // 字符串函数
 strlen
 strpos 指定字符串最后出现位置
@@ -237,10 +271,14 @@ function add($a, $b) {
   return $a + $b;
 }
 echo add(3, 4); // 7
-~~~
+
+
+```
 
 * 包含语句
-~~~
+
+
+```
 include include_once
 require require_once
 
@@ -249,16 +287,24 @@ require require_once
 
 // include "hi.php";
 include("hi.php");
-~~~
+
+
+```
 
 * 替代语句
-~~~
+
+
+```
 { -> :
 } ->endif endwhile endfor endforeach endswitch
-~~~
+
+
+```
 
 * GET传参
-~~~
+
+
+```
 URL实现
 $_GET
 
@@ -266,10 +312,14 @@ $name = isset($_GET['name']) ? $_GET['name'] : "";
 echo $name;
 $name = urlencode("A&B C");
 echo $name . "\n"; // A%26B+C
-~~~
+
+
+```
 
 * HTTP协议
-~~~
+
+
+```
 HyperText Transfer Protocol
 超文本传输协议
 
@@ -281,12 +331,18 @@ Post 表单提交
 
 // 超全局变量
 $_GET $_REQUEST
-~~~
+
+
+```
 
 * HTML特殊字符转义
-~~~
+
+
+```
 htmlspecialchars()函数
 
 $str = "hello \n world";
 nl2br($str);
-~~~
+
+
+```

@@ -2,7 +2,9 @@
 *  [图书源码下载](http://book.boxuegu.com/php_ajax/)
 *  [WeCenter社区](http://www.wecenter.com/)
 *  discuz
-~~~
+
+
+```
 // discuz与wecenter安装注意
 chmod -R 777  folder // 更改读写权力
 
@@ -10,7 +12,9 @@ wecenter要事先手动创建好数据库
 数据库密码指的是服务器的 初始的就是root root
 localhost改成127.0.0.1
 不要用已经配置过的discuz和wecenter文件夹
-~~~
+
+
+```
 
 #### **ch2 学生信息管理**
 #### **ch3 网站用户中心**

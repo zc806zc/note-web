@@ -1,6 +1,8 @@
 #### **PHP编程规范**
 + [CodeIgniter参考](http://codeigniter.org.cn/user_guide/general/styleguide.html)
-~~~
+
+
+```
 所有的换行符应该使用 Unix 格式换行符（LF）
 
 所有的 PHP 文件将不使用结束标签，而是以一个空行代替
@@ -54,10 +56,14 @@ PHP 起始标签的前面和结束标签的后面都不要留空格，
 这样文件可以更紧凑一点，
 也就是本来是四个空格字符， 
 现在只要一个制表符就可以了。
-~~~
+
+
+```
 
 * 命名纠结
-~~~
+
+
+```
 // 倾向中划线 
 // 与表现有关，与资源有关，碎片的形式易于搜寻
 css                ie-style.css
@@ -79,4 +85,6 @@ js文件    		firstName.js > first_name.js // 但我更喜欢用中划线 其次
 
 // 注意windows与linux文件大小写问题
 我遇到win下的login_check.php -> ubuntu login_Check.php的闹鬼事件？？
-~~~
+
+
+```
