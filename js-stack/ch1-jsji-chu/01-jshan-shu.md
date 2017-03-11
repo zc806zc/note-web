@@ -1,6 +1,8 @@
 #### **JS函数基础**
+
 * 常识
-~~~
+
+```js
 因为分号是用来分隔可执行的JavaScript语句的，
 函数并不是可执行语句，
 函数声明不以分号结束
@@ -17,7 +19,7 @@
 在 ECMAScript 5 中， 
 prototype 属性是不可枚举的，
 因此使用 for-in 无法发现
-    
+
 // 函数表达式可以存储在变量中
 var add = function (a, b) { return a * b };
 console.log(add(4, 3)); // 12
@@ -39,7 +41,7 @@ var x = "Hello!!"; // 我将调用自己
 
 // arguments.length 属性返回函数调用过程接收到的参数个数
 function argNum(a, b) {
-	return arguments.length;
+    return arguments.length;
 }
 console.log(argNum(1,2,3,4)); // 4
 console.log(typeof argNum); // function
@@ -47,21 +49,21 @@ console.log( argNum == Object); // false
 
 // toString() 方法将函数作为一个字符串返回
 function myFunc(a, b) {
-	return a * b;
+    return a * b;
 }
 console.log(myFunc.toString()); // function myFunc(a, b) { return a * b; }
 
 // 建议为函数参数设置一个默认值
 function myFunction(x, y) {
-	if (y === undefined) { y = 0; }
-	// y = y || 0; 
+    if (y === undefined) { y = 0; }
+    // y = y || 0; 
 }
 
 // 如果你打算直接传入 arguments 对象，
 // 或者包含函数中先接收到的也是一个数组，
 // 那么使用 apply()肯定更方便；否则可能call更合适。
 function sum(num1, num2){
-	return num1 + num2;
+    return num1 + num2;
 }
 alert(sum(10,10)); //20
 var anotherSum = sum;
@@ -104,11 +106,11 @@ alert(data[0].name); //Zachary
 
 // 消除阶乘的紧耦合
 function factorial(num){
-	if (num <=1) {
-		return 1;
-	} else {
-		return num * arguments.callee(num-1)
-	}
+    if (num <=1) {
+        return 1;
+    } else {
+        return num * arguments.callee(num-1)
+    }
 }
 
 var trueFactorial = factorial;
@@ -120,10 +122,10 @@ alert(factorial(5)); // 0
 
 // caller
 function outer(){
-	inner();
+    inner();
 }
 function inner(){
-	alert(arguments.callee.caller);
+    alert(arguments.callee.caller);
 }
 outer();
 
@@ -132,7 +134,7 @@ outer();
 window.color = "red";
 var o = { color: "blue" };
 function sayColor(){
-	alert(this.color);
+    alert(this.color);
 }
 
 sayColor(); //red
@@ -143,24 +145,26 @@ sayColor.call(o); //blue
 // bind方法
 window.color = "red";
 var o = { color: "blue" };
-	function sayColor(){
-	alert(this.color);
+    function sayColor(){
+    alert(this.color);
 }
 var objectSayColor = sayColor.bind(o);
 objectSayColor(); //blue
-~~~
+```
 
 #### **函数提升**
-~~~
+
+```js
 // 会报错
 console.log(sum(10,10));
 var sum = function(num1, num2){
-	return num1 + num2;
+    return num1 + num2;
 };
-~~~
+```
 
-####  **函数调用**
-~~~
+#### **函数调用**
+
+```js
 this 是保留关键字，不能修改 this 的值
 
 JS有4 种函数调用方式
@@ -176,7 +180,7 @@ function myFunction() {
     return this;
 }
 myFunction(); // 返回 window 对象
-    
+
 
 // 函数作为对象方法调用
   var myObject = {
@@ -188,7 +192,7 @@ myFunction(); // 返回 window 对象
       }
   }
   myObject.fullName(); //  "John Doe"
-  
+
 // 使用构造函数调用函数
   function myFunction(arg1, arg2) {
       this.firstName = arg1;
@@ -197,9 +201,9 @@ myFunction(); // 返回 window 对象
 
   var x = new myFunction("John","Doe");
   x.firstName;
-  
+
  // 作为函数方法调用函数 
- 
+
 // call 和 apply是预定义的函数方法
  两个方法的第一个参数必须是对象本身。
 通过 call() 或 apply() 方法你可以设置 this 的值, 
@@ -211,11 +215,11 @@ function mul(a, b) {
 myArr = [10, 2];
 console.log( mul.apply(Object, myArr) ); // 20
 console.log( mul.call(Object, 2, 3)); // 6
+```
 
-~~~
-    
 #### **函数闭包**
-~~~
+
+```js
 全局和局部变量即便名称相同，
 它们也是两个不同的变量。
 
@@ -223,8 +227,8 @@ console.log( mul.call(Object, 2, 3)); // 6
 
 var a = 3;
 function mul() {
-	var a = 4;
-	return a * a; // 16
+    var a = 4;
+    return a * a; // 16
 }
 console.log(mul; 
 console.log(mul()); // 16
@@ -233,10 +237,10 @@ console.log(mul()); // 16
 使用内嵌函数，怎么解决 计数器困境
 
 function add() {
-	var counter = 0;
-	function plus() { counter += 1; }
-	plus(); // 访问父元素
-	return counter;
+    var counter = 0;
+    function plus() { counter += 1; }
+    plus(); // 访问父元素
+    return counter;
 }  
 
 如何在外部访问 plus() 函数，确保 counter = 0 只执行一次。
@@ -251,5 +255,7 @@ var add = (function () {
 console.log(add()); // 1
 console.log(add()); // 2
 console.log(add()); // 3
-   
-~~~
+```
+
+
+
