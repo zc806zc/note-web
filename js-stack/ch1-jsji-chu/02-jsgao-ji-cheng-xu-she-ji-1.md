@@ -72,6 +72,10 @@ alert("<\/script>"); // 正确方式
 
 
     
+
+* 示例
+
+```
 * <del>尽管不检查.js 扩展名，但要确保服务器能返回正确的 MIME 类型</del>
 * php,jsp等
 * <del>文档模式</del>
@@ -79,9 +83,6 @@ alert("<\/script>"); // 正确方式
 	* 标准模式（standards mode）
 * <del>noscript 脚本不支持或禁用</del>
 
-
-
-```
 
 
 <noscript>
@@ -94,6 +95,10 @@ alert("<\/script>"); // 正确方式
 
 
 #### **ch3、4、5 基本概念、变量、作用域和内存问题, 引用类型**
+
+* 基础
+
+```
 * 大量借鉴了 C 及其他类 C 语言（如 Java 和 Perl）的语法
 * <del>驼峰大小写格式</del>
 * 保留字
@@ -102,7 +107,6 @@ alert("<\/script>"); // 正确方式
 
 
 
-```
 
 
 var message = "hi";
@@ -118,13 +122,16 @@ alert(age); // 产生错误
 
 
 
+
+* 基础2
+
+```
 * <del>从技术角度讲，**函数在 ECMAScript中是对象**，不是一种数据类型。然而，函数也确实有一些特殊的属性，因此通过 typeof 操作符来区分函数和其他对象是有必要的。</del>
 * Boolean
 	* True 和 False（以及其他的混合大小写形式）都不是 Boolean 值，只是标识符
     
 
 
-```
 
 
 var message = "Hello world!";
@@ -138,21 +145,20 @@ alert("Value is true"); // 将被执行
 
     
 * Number
-	* <del>八进制字面量在严格模式下是无效的</del>
-    * <del>在进行算术计算时，所有以八进制和十六进制表示的数值最终都将被转换成十进制数值</del>
-    * <del>保存浮点数值需要的内存空间是保存整数值的两倍，因此 ECMAScript会不失时机地将浮点数值转换为整数值</del>
-    *  <del>浮点数值的最高精度是 17 位小数，但在进行算术计算时其精确度远远不如整数, 这是使用基于IEEE754 数值的浮点计算的通病</del>
-    *  <del>在 ECMAScript中，<del>任何数值</del>除以 0会返回 NaN因此不会影响其他代码的执行</del>
-    	* 只有 0除以 0 才会返回 NaN，正数除以 0 返回 Infinity，负数除以 0返回-Infinity
-    *  <del>尽管有点儿不可思议，但 isNaN() 确实也适用于 **对象**。在基于对象调用 isNaN()函数时，会首先调用对象的 **valueOf()** 方法，然后确定该方法返回的值是否可以转换为数值。如果不能，则基于这个返回值再调用 **toString()** 方法，再测试返回值。</del>
-    *  **数值转化**
-    	* Number()
-       *  parseInt()
-       *  parseFloat()
-    
 
 
 ```
+* <del>八进制字面量在严格模式下是无效的</del>
+* <del>在进行算术计算时，所有以八进制和十六进制表示的数值最终都将被转换成十进制数值</del>
+* <del>保存浮点数值需要的内存空间是保存整数值的两倍，因此 ECMAScript会不失时机地将浮点数值转换为整数值</del>
+* <del>浮点数值的最高精度是 17 位小数，但在进行算术计算时其精确度远远不如整数, 这是使用基于IEEE754 数值的浮点计算的通病</del>
+* <del>在 ECMAScript中，<del>任何数值</del>除以 0会返回 NaN因此不会影响其他代码的执行</del>
+* 只有 0除以 0 才会返回 NaN，正数除以 0 返回 Infinity，负数除以 0返回-Infinity
+* <del>尽管有点儿不可思议，但 isNaN() 确实也适用于 **对象**。在基于对象调用 isNaN()函数时，会首先调用对象的 **valueOf()** 方法，然后确定该方法返回的值是否可以转换为数值。如果不能，则基于这个返回值再调用 **toString()** 方法，再测试返回值。</del>
+* **数值转化**
+* Number()
+* parseInt()
+* parseFloat()
 
 
 var floatNum1 = 1.; // 小数点后面没有数字——解析为 1
@@ -210,18 +216,18 @@ alert(num.toString(16)); // "a"
 
     
 * Object
-	* constructor
-   * hasOwnProperty
-   *  isPrototypeOf(object) ：用于检查传入的对象是否是传入对象的原型
-   * propertyIsEnumerable(propertyName) ：用于检查给定的属性是否能够使用 for-in 语句来枚举
-   *  toLocaleString() toString()  valueOf()
-   *  <del>BOM 和 DOM 中的对象，都属于宿主对象，因为它们是由宿主实现提供和定义的。ECMA-262 不负责定义宿主对象，因此宿主对象可能会也可能不会继承 Object</del>
-*  运算
-	* 负数同样以二进制码存储，但使用的格式是二进制补码
-   *  <del>位运算符</del> P40
-   
+
 
 ```
+* constructor
+* hasOwnProperty
+* isPrototypeOf(object) ：用于检查传入的对象是否是传入对象的原型
+* propertyIsEnumerable(propertyName) ：用于检查给定的属性是否能够使用 for-in 语句来枚举
+* toLocaleString() toString() valueOf()
+* <del>BOM 和 DOM 中的对象，都属于宿主对象，因为它们是由宿主实现提供和定义的。ECMA-262 不负责定义宿主对象，因此宿主对象可能会也可能不会继承 Object</del>
+* 运算
+* 负数同样以二进制码存储，但使用的格式是二进制补码
+* <del>位运算符</del> P40
 
 
 var s1 = "2";
@@ -264,15 +270,14 @@ var num = (5, 1, 4, 8, 0); // num 的值为 0
 
 
 * 语句
-	* 使用 while 循环做不到的，使用 for 循环同样也做不到...
-   *  label 语句
-   *  <del>with语句</del>
-   *  switch-case, 假如需要混合几种情形，不要忘了在代码中添加 **注释**，说明你是有意省略了 break 关键字
-   
+
 
 
 ```
-
+* 使用 while 循环做不到的，使用 for 循环同样也做不到...
+* label 语句
+* <del>with语句</del>
+* switch-case, 假如需要混合几种情形，不要忘了在代码中添加 **注释**，说明你是有意省略了 break 关键字
 
 
 // continue语句
@@ -316,6 +321,9 @@ with(location) {
 
 
 * 函数
+
+
+```
 	* 没有重载，定义了两个名字相同的函数，则该名字只属于后定义的函数
    *  <del>ECMAScript 中也没有函数签名的概念，因为其函数参数是以一个包含零或多个值的 **数组**的形式传递的</del>
 * 变量
@@ -327,7 +335,12 @@ with(location) {
    *  <del>typeof检测正则表达式 function或者object</del>
    *  <del>全局执行环境的变量对象始终都是作用域链中的最后一个对象</del>
    *  变量查询也不是没有代价的。很明显，访问局部变量要比访问全局变量更快，因为不用向上搜索作用域链
+```
+
+
    
+* 示例
+
 
 
 ```
@@ -372,18 +385,15 @@ alert(person.name); //"Nicholas"
 
 
 * 垃圾收集
-	* 标记清除
-   *  <del>引用计数</del> P79
-   		* 循环引用问题
-   *  垃圾收集器是 **周期性**运行的
-   		* window.CollectGarbage()
-   *  管理内存
-   		* 分配给 Web浏览器的可用内存数量通常要比分配给桌面应用程序的少，一旦数据不再有用，最好通过将其值设置为 null 来释放其引用——这个做法叫做解除引用
-   
-
 
 ```
-
+* 标记清除
+* <del>引用计数</del> P79
+* 循环引用问题
+* 垃圾收集器是 **周期性**运行的
+* window.CollectGarbage()
+* 管理内存
+* 分配给 Web浏览器的可用内存数量通常要比分配给桌面应用程序的少，一旦数据不再有用，最好通过将其值设置为 null 来释放其引用——这个做法叫做解除引用
 
 // 循环引用示例
 function problem(){
@@ -410,17 +420,18 @@ globalPerson = null;
 
 
 *  引用类型
-  * 如数组中的某一项的值是 null 或者 undefined ，那么该值在 join() 
-toLocaleString() 、 toString() 和 valueOf() 方法返回的结果中以空字符串表示。
-	* 栈方法和队列方法
-   *  splice() 方法是最强大的数组方法
-   *  every filter some map()
-   * forEach() ：对数组中的每一项运行给定函数。这个方法没有返回值。
-   *  reduce reduceRight
+
    
 
 
 ```
+* 如数组中的某一项的值是 null 或者 undefined ，那么该值在 join()
+toLocaleString() 、 toString() 和 valueOf() 方法返回的结果中以空字符串表示。
+* 栈方法和队列方法
+* splice() 方法是最强大的数组方法
+* every filter some map()
+* forEach() ：对数组中的每一项运行给定函数。这个方法没有返回值。
+* reduce reduceRight
 
 
 var person = {
@@ -473,9 +484,4 @@ var sum = values.reduce(function(prev, cur, index, array){
 });
 alert(sum); //15
 
-
-
 ```
-
-
-
