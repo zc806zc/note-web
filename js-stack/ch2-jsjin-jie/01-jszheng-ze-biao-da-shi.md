@@ -2,16 +2,22 @@
 *  常识
 
 
-```
+```js
     *   <del>Regular Expression(简写成regex RegExp)</del>
     *   用于 **文本搜索与替换**, 由一个字符序列形成的搜索模式
 ```
 
 
 * 链接
+
+
+```
     *  [MDN的regex手册](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expressions)
     * [常用正则表达式](http://www.cnblogs.com/zfc2201/archive/2012/12/18/2824107.html)
     *  <del>[菜鸟手册](http://www.runoob.com/jsref/jsref-obj-regexp.html)</del> 
+```
+
+
     
 *  **符号**
 
