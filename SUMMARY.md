@@ -77,7 +77,7 @@
     * [02-jQuery-UI](js-stack/ch4-jquery/02-jquery-ui.md)
     * [02-UI组件1](js-stack/ch4-jquery/02-uizu-jian-1.md)
     * [02-UI组件2](js-stack/ch4-jquery/02-uizu-jian-2.md)
-  * [ch5-JavaScript框架篇](js-stack/ch5-javascriptkuang-jia-pian.md)
+  * [ch5-JS框架篇](js-stack/ch5-javascriptkuang-jia-pian.md)
     * [01-JS框架概述](js-stack/ch5-javascriptkuang-jia-pian/01-jskuang-jia-gai-shu.md)
     * [01-七周七框架-读后感](js-stack/ch5-javascriptkuang-jia-pian/01qi-zhou-qi-kuang-67b6-du-hou-gan.md)
     * [02-React基础](js-stack/ch5-javascriptkuang-jia-pian/02-reactji-chu.md)

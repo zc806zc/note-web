@@ -53,6 +53,7 @@ Vue.js 也使用了 Virtual DOM、Reactive 及组件化的思想，
 ---
 
 * [2016 年的轻量级 JS 框架和库](https://zhuanlan.zhihu.com/p/24598210)
+* [2016崛起的前端框架 - 王仕军](https://juejin.im/post/58c5e39c8ac24707200a6cff?utm_source=gold_browser_extension)
 
 
 
