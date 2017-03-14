@@ -1,4 +1,4 @@
-#### **PHP基础**
+#### **PHP基础1 - 语法扫盲**
 
 * 资源
 
@@ -319,7 +319,7 @@ htmlspecialchars()函数
 $str = "hello \n world";
 nl2br($str);
 // hello <br />
-//  world 
+//  world
 ```
 
 
