@@ -14,14 +14,10 @@
 
 ```
 // 访问示例1
-// index.php普通模式进入后缀与忽略的路径
-http://localhost/luo-PHP-Web/05-thinkphp/index.php/Admin/Index
-
-// 访问示例2
-http://localhost/luo-PHP-Web/06-stuInfoManageApp/index.php/admin/Student/showList
-
-// 访问示例3
-http://localhost/luo-PHP-Web/06-stuInfoManageApp/index.php/Admin
+// index.php普通模式进入  后缀与忽略的路径
+http://localhost/luo-PHP-Web/index.php/Admin/Index
+http://localhost/luo-PHP-Web/index.php/admin/Student/showList
+http://localhost/luo-PHP-Web/index.php/Admin
 ```
 
 * 配置覆盖顺序：惯例配置\(convertion\) → 应用配置\(config.php\) → 调试配置\(debug.php\) → 模块配置\(模块/Conf/config.php\)
