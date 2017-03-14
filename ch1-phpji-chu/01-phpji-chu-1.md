@@ -15,6 +15,7 @@
   * [Laravel 5 中文文档](https://www.gitbook.com/book/lbp0200/laravel-5-doc/details)
 
   * [psysh](http://psysh.org/)
+
   * [segmentfault](https://segmentfault.com/t/php)
   * [开源后台模板](http://www.cnblogs.com/DiYuShe/archive/2012/08/21/2648563.html)
 
@@ -79,14 +80,18 @@ if elseif else
 // 字符串类型的特点
 双引号中的变量可以解析，同时可以处理转义字符
 单引号原样输出
+
+$str = 'hi ';
+$str .= 'world'; // hi world  点号连接
 ```
 
 * 输出函数
 
 ```php
-// echo prit
-// var_dump 打印变量或表达式相关信息
+// echo print
 
+// var_dump 
+// 打印变量或表达式相关信息
 array(2) {
   [0] =>
   int(1)
@@ -94,8 +99,8 @@ array(2) {
   int(4)
 }
 
-// print_r 打印易于理解的信息
-
+// print_r 
+// 打印易于理解的信息
 Array
 (
   [0] => 1
@@ -112,34 +117,33 @@ time()获取时间戳
 
 echo time() ; // 1483346204
 echo date('Y-m-d H:i:s') ; // 2017-01-02 09:36:44
-echo date('Y-m-d', time()); // 2017-01-02
+// echo date('Y-m-d', time()); // 2017-01-02
 ```
 
-* 运算
+* 运算符的注意点
 
 ```php
 // 运算结果正负
 echo (-8)%7 ; // -1
 echo (8)%7 ; // 1
 
-$str = 'hi ';
-$str .= 'world'; // hi world
 
+// 符号 
 === 与 ==
-<>不等于
+<> 不等于
 xor 一个false一个true 才为true
 
 or与||类似，但是优先级低
 
-短路
+短路运算
 ```
 
-* 数据类型转化
+* 数据类型
 
 ```php
 // 数据类型自动转化
-if("123abc" == 123) { echo "yes"; } // yes
-if("abc" == 0) { echo "yes"; } // yes
+if("123abc" == 123) // TRUE
+if("abc" == 0)  // TRUE
 
 // 数据类型强制转化
 var_dump((bool)-5.9); // bool(true)
@@ -150,7 +154,7 @@ var_dump((array)'php'); // array(1) {[0] => string(3) "php"}
 var_dump((object)2.34);
   // class stdClass#1 (1) { public $scalar => double(2.34) }
 
-三元运算
+// 三元运算
 ```
 
 * 数组
