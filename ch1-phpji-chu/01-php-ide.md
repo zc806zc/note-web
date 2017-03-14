@@ -26,25 +26,28 @@ httpd.conf
 
 ```js
 // Sublime的相关配置
+// 推荐
 编译系统 改成PHP
 utf-8 
 tab-4 
 高亮空格 // 可能影响到PHP解释 
 浏览器的快速打开
 
+Atom的script 插件 // 推荐
 
-// phpEclipse, komodo edit, APtana Studio, PHPEdit
+// NetBeans/PHPStrom // 推荐后者
+// Netbean使用时的运行问题
+运行配置那里选PHP内置 -> 端口等运行的问题
+utf-8 -> 中文乱码的问题
+
+
+// 其他的，几乎没用过
+// phpEclipse
+// komodo edit, APtana Studio, PHPEdit
 // komodo IDE, Zend studio // 更加没有听说过
 
 
 
-atom的script 插件
-
-NetBeans/PHPStroms
-
-// netbean使用
-运行配置那里选PHP内置 -> 端口等运行的问题
-utf-8 -> 中文乱码的问题
 ```
 
 * Appache配置
