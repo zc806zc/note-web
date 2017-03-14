@@ -35,7 +35,9 @@ LAMP = Linux + Apache + MySQL/MongoDB + PHP
 面向对象 
 
 // 框架多
-Zend Framework/Laravel/Symfony/Yii/CodeIgniter/ThinkPHP
+Laravel/CodeIgniter
+Symfony/Yii/Zend Framework
+ThinkPHP // 国内
 
 // 3P的比较
 PHP 缺少规模支持 小型商业网站
