@@ -1,15 +1,22 @@
 #### **正则表达式**
 
 * 资源
-* [htt](http://louiszhai.github.io/2016/06/13/regexp/)正则表达式前端使用手册[p://louiszhai.github.io/2016/06/13/regexp/](http://louiszhai.github.io/2016/06/13/regexp/)
+  * [正则表达式前端使用 - Louis](http://louiszhai.github.io/2016/06/13/regexp/)
+
+```
+
+```
 
 ---
 
 * 常识
 
 ```js
-    *   <del>Regular Expression(简写成regex RegExp)</del>
-    *   用于 **文本搜索与替换**, 由一个字符序列形成的搜索模式
+Regular Expression
+简写成regex RegExp
+
+用于 文本搜索与替换, 
+由一个字符序列形成的搜索模式
 ```
 
 * 链接
