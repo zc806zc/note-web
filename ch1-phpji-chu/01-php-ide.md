@@ -37,7 +37,8 @@ tab-4
 
 Atom的script 插件 // 推荐
 
-// NetBeans/PHPStrom // 推荐后者
+// NetBeans/PHPStrom(最强) // 推荐后者
+
 // Netbean使用时的运行问题
 运行配置那里选 PHP"内置"
 utf-8 -> 中文乱码的问题
@@ -47,8 +48,6 @@ utf-8 -> 中文乱码的问题
 // komodo edit, APtana Studio, PHPEdit
 // komodo IDE, Zend studio // 更加没有听说过
 ```
-
-
 
 
 
