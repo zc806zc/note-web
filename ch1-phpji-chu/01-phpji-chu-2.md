@@ -48,12 +48,15 @@ HTTP响应消息头
 // 学生信息管理为例
 // 思路1
 分页的样式由前端库生成，
-PHP查询数据后 <?php echo $page_size ?> 到JS 
+PHP查询数据后 <?php echo $page_size ?> 到JS
 ```
 
-* [php提示undefined index的几种解决方法](http://www.jb51.net/article/30328.htm)
+* 常见问题
+  * [php提示undefined index](http://www.jb51.net/article/30328.htm)
 
 ```php
+// 提示undefined index
+httpd.conf修改
 error_reporting = E_ALL & ~E_NOTICE
 ```
 
