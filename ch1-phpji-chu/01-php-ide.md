@@ -13,6 +13,8 @@ AppServ
 
 // 但自己也要会配置
 httpd.conf
+
+Appache配置
 ```
 
 ---
@@ -46,7 +48,7 @@ utf-8 -> 中文乱码的问题
 // komodo IDE, Zend studio // 更加没有听说过
 ```
 
-* Appache配置
+
 
 
 
