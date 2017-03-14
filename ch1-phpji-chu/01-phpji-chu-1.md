@@ -5,11 +5,13 @@
   * [PHP资源](https://www.zhihu.com/question/20034403) \| [Github资源](https://github.com/justjavac/free-programming-books-zh_CN#php)
 
   * [packagist](https://packagist.org/explore/popular)
+
   * [PHP: PHP 手册](http://php.net/manual/zh/) \| [MySQL 5.1参考手册](http://www.kancloud.cn/k12_develop/mysql51/77410)
 
   * [Apache 2.2 官方文档](http://www.kancloud.cn/wizardforcel/apache-doc/105614) \| [Nginx 官方文档](http://www.kancloud.cn/wizardforcel/nginx-doc/92403)
 
   * [鸟哥的 Linux 私房菜](http://www.kancloud.cn/thinkphp/linux_basic/43213)
+
   * [Laravel 5 中文文档](https://www.gitbook.com/book/lbp0200/laravel-5-doc/details)
   * [psysh](http://psysh.org/)
   * [segmentfault](https://segmentfault.com/t/php)
@@ -38,11 +40,13 @@ PHP 缺少规模支持 小型商业网站
 ASP.NET  .NET库的支持
 ```
 
-* 语法
+* 特殊点的语法
 
 ```php
 // 标识符采用"下划线"连接
 $user_pwd
+可以用 {} 界定变量
+
 
 // 传值赋值与引用赋值的区别
 // 传值赋值
@@ -55,8 +59,9 @@ echo $num; // 12
 $num = &$age;
 echo $num; // 100
 
-define函数与const
+// define函数与const 常量
 
+// 分支语句
 if elseif else
 ```
 
@@ -67,14 +72,15 @@ if elseif else
 有时 0 表示false 1表示true
 浮点数的有效位数 14
 
+复合 : 数组 对象
+特殊 : resource NULL
+
+// 字符串类型的特点
 双引号中的变量可以解析，同时可以处理转义字符
 单引号原样输出
 
-{}界定变量
 
-复合 : 数组 对象
 
-特殊 : resource NULL
 ```
 
 * 输出
