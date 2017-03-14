@@ -59,6 +59,7 @@ n? 不超过一个n
 ```
 
 * **函数**
+  * [replace()的第二个参数](http://www.w3school.com.cn/jsref/jsref_replace.asp)
 
 ```js
 test 返回true/false
@@ -68,7 +69,7 @@ match 返回数组
 search 返回下标
 
 replace
-        * [replace()的第二个参数](http://www.w3school.com.cn/jsref/jsref_replace.asp)
+        
 ```
 
 
