@@ -2,11 +2,11 @@
 
 * 资源
   * [正则表达式前端使用 - Louis](http://louiszhai.github.io/2016/06/13/regexp/)
-  *  [MDN的regex手册](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expressions)
+  * [MDN的regex手册](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expressions)
   * [常用正则表达式](http://www.cnblogs.com/zfc2201/archive/2012/12/18/2824107.html)
-  *  [菜鸟手册](http://www.runoob.com/jsref/jsref-obj-regexp.html)
+  * [菜鸟手册](http://www.runoob.com/jsref/jsref-obj-regexp.html)
 
-```
+```js
 
 ```
 
@@ -22,31 +22,32 @@ Regular Expression
 由一个字符序列形成的搜索模式
 ```
 
-* 链接
-
-```js
-    
-```
-
 * **符号**
 
 ```js
-    * igm , i 大小写不敏感 g全局匹配 m多行匹配
-    *   [abc] 
-    *  [0-9] 
-    *  (x|y) 
-    * ^abc 除了abc以外
-    *   \b  \B 单词边界
-    *   \d  \s 空白字符 
-    *   \uxxxx 以十六进制数xxxx规定的Unicode字符
-    *   \D \S \W 换大写就是相反的意思
-    *   ? 贪婪匹配和非贪婪匹配
-    *   分组组合符合反向引用符??
-      *   **分组组合** (pattern)
-      *   反向引用 \num
-      *   非捕获匹配 industry(?:ylies)
-      *   正向"预测先行"匹配 Windows(?=NT|2000)
-      *   反向"预测先行"匹配 Windows(?!NT|2000)
+// igm , 
+i 大小写不敏感 
+g全局匹配 
+m多行匹配
+
+[abc] 
+[0-9] 
+(x|y) 
+^abc 除了abc以外
+\b  \B 单词边界
+\d  \s 空白字符 
+
+\uxxxx 以十六进制数xxxx规定的Unicode字符
+\D \S \W 换大写就是相反的意思
+
+? 贪婪匹配和非贪婪匹配
+
+分组组合符合反向引用符??
+**分组组合** (pattern)
+      反向引用 \num
+      非捕获匹配 industry(?:ylies)
+      正向"预测先行"匹配 Windows(?=NT|2000)
+      反向"预测先行"匹配 Windows(?!NT|2000)
 ```
 
 * **量词**
