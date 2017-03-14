@@ -25,12 +25,12 @@ httpd.conf
   * [Wamp的localhost - 点击文件无法正确解析的问题](https://zhidao.baidu.com/question/625842715884857684.html)
 
 ```js
-// sublime配置
-编译系统 
+// Sublime的相关配置
+编译系统 改成PHP
 utf-8 
-tab4 
-高亮空格 
-浏览器快速打开
+tab-4 
+高亮空格 // 可能影响到PHP解释 
+浏览器的快速打开
 
 
 
