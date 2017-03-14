@@ -45,10 +45,33 @@
 
 // 文件处理
 
-// goto 最后的手段
+// goto 最后的手段 不常用但也是一种选择
+局部的goto 不跳出例程或者进入循环
+for($i=0,$j=50; $i<100; $i++) {
+  while($j--) {
+    if($j==17) {
+      goto end;
+    }
+  }
+}
+
+echo "hello";
+end:
+echo "hi";
+// 输出
+// hi
+
+
 
 // 利用phar扩展来节省空间
+类似Java的jar
+应用分发方式
+phar pack -f animals.phar -c gzwild.php domestic.php
+include('phar://animals.phar/wild.php');
+
 // 手册上的小瑕疵
+echo "用户信息".get_username()."密码".get_userpwd(); // 0.147s
+echo "用户信息",get_username(),"密码",get_userpwd(); // 0.106s 推荐
 ```
 
 #### **ch2 深入PHP面向对象**
@@ -60,7 +83,7 @@
 #### **ch3 PHP输出缓冲区**
 
 ```
- 
+
 ```
 
 #### **ch4 PHP缓存技术**
