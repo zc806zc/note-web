@@ -347,35 +347,42 @@ css/
 
 #### **ch09 JS - 高维护性**
 
-* 避免定义全局变量或函数
-  * 把变量和方法封装到对象里
-  * 封装在局部作用域里
-
 ```js
-    // 防止代码污染
-    var hi = (function() {
-      var length = 0;
-      function init() {
-        console.log("hello");
-      }
+// 避免定义全局变量或函数
+把变量和方法封装到对象里
+封装在局部作用域里   
 
-      function action() {
+// 防止代码污染
+var hi = (function() {
+var length = 0;
+function init() {
+console.log("hello");
+}
 
-      }
+function action() {
 
-      return {
-        init: init
-      }
-    }());
+}
 
-    hi.init();
+return {
+init: init
+}
+}());
+
+hi.init();
+
+// 使用简化的编码方式 
+// 不要用new
+// == ===
+
+避免使用with 多出单独的作用
+避免eval
+
+
 ```
 
-* 使用简化的编码方式 不要用new
-* === 和 ==
-* 避免使用with 多出单独的作用域
-* 避免eval
-* 不要编写检测浏览器的代码
+
+
+* * * 不要编写检测浏览器的代码
   * 取而代之的是检测浏览器是否支持某一特定功能 $.support
   * Modernizr
   * 兼容代码单独放在文件里
