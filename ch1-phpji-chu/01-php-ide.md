@@ -11,7 +11,8 @@ XAMPP Wamp phpstudy
 AppServ
 // phpnow easyphp vertrigo // 不知道
 
-// 也要会自己配置
+// 但自己也要会配置
+httpd.conf
 ```
 
 ---
