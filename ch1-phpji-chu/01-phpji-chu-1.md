@@ -2,13 +2,13 @@
 
 * 资源
 
-  * [PHP资源](https://www.zhihu.com/question/20034403)
-  * [github资源](https://github.com/justjavac/free-programming-books-zh_CN#php)
+  * [PHP资源](https://www.zhihu.com/question/20034403) \| [Github资源](https://github.com/justjavac/free-programming-books-zh_CN#php)
+
   * [packagist](https://packagist.org/explore/popular)
-  * [PHP: PHP 手册](http://php.net/manual/zh/)
-  * [MySQL 5.1参考手册](http://www.kancloud.cn/k12_develop/mysql51/77410)
-  * [Apache 2.2 中文官方文档](http://www.kancloud.cn/wizardforcel/apache-doc/105614)
-  * [Nginx 中文官方文档](http://www.kancloud.cn/wizardforcel/nginx-doc/92403)
+  * [PHP: PHP 手册](http://php.net/manual/zh/) \| [MySQL 5.1参考手册](http://www.kancloud.cn/k12_develop/mysql51/77410)
+
+  * [Apache 2.2 官方文档](http://www.kancloud.cn/wizardforcel/apache-doc/105614) \| [Nginx 官方文档](http://www.kancloud.cn/wizardforcel/nginx-doc/92403)
+
   * [鸟哥的 Linux 私房菜](http://www.kancloud.cn/thinkphp/linux_basic/43213)
   * [Laravel 5 中文文档](https://www.gitbook.com/book/lbp0200/laravel-5-doc/details)
   * [psysh](http://psysh.org/)
@@ -17,20 +17,22 @@
 
   ---
 
-* 基础
+* PHP基础
 
 ```php
-超文本预处理器 
-动态生成html  增强信息交互
-70%的网站
+超文本预处理器  // "动态"生成html  增强信息交互
+占70%的网站    // 仅是数量占比，不代表地位
 
 LAMP = Linux + Apache + MySQL/MongoDB + PHP 
+
+// 特点
 免费 跨平台  支持数据库多
 面向对象 
 
 // 框架多
 Zend Framework/Laravel/Symfony/Yii/CodeIgniter/ThinkPHP
 
+// 3P的比较
 JSP效率最高 用于建设大型电子商务网站
 PHP 缺少规模支持 小型商业网站
 ASP.NET  .NET库的支持
@@ -39,14 +41,15 @@ ASP.NET  .NET库的支持
 * 语法
 
 ```php
-标识符采用下划线连接
+// 标识符采用"下划线"连接
+$user_pwd
 
-传值赋值与引用赋值
+// 传值赋值与引用赋值的区别
 // 传值赋值
 $age = 12;
 $num = $age;
 $age = 100;
-echo $num . "\n"; // 12
+echo $num; // 12
 
 // 引用赋值
 $num = &$age;
