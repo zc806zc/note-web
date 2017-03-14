@@ -13,6 +13,7 @@
   * [鸟哥的 Linux 私房菜](http://www.kancloud.cn/thinkphp/linux_basic/43213)
 
   * [Laravel 5 中文文档](https://www.gitbook.com/book/lbp0200/laravel-5-doc/details)
+
   * [psysh](http://psysh.org/)
   * [segmentfault](https://segmentfault.com/t/php)
   * [开源后台模板](http://www.cnblogs.com/DiYuShe/archive/2012/08/21/2648563.html)
@@ -78,15 +79,12 @@ if elseif else
 // 字符串类型的特点
 双引号中的变量可以解析，同时可以处理转义字符
 单引号原样输出
-
-
-
 ```
 
-* 输出
+* 输出函数
 
 ```php
-// echo 
+// echo prit
 // var_dump 打印变量或表达式相关信息
 
 array(2) {
