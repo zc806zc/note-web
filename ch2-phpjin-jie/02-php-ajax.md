@@ -43,20 +43,27 @@ localhost改成127.0.0.1
 在线编辑器
 ```
 
-
-
 #### **ch8 电子商务网站**
 
-* 项目安全巩固
-  * $\_GET,$\_COOKIE等超全局变量都是不可信的，所以在framework下有function.php统一处理
-  * 表单验证
-  * 防止SQL注入 
-    * PDO的预处理机制把SQL和数据分离
-    * 不要采用SQL语句拼接 select _ from **ADMIN** where _`name`_ = "" \*or 1 = '1'_
-  * 防御XSS攻击
-    * htmlspecialchars\(\) 单引号不会被转义
-      * PHPSESSID cookie HttpOnly
-* 商务网站部署方式
+```
+// 项目安全巩固
+$_GET,$_COOKIE等超全局变量都是不可信的，
+所以在framework下有function.php统一处理
+
+表单验证
+
+// 防止SQL注入
+PDO的预处理机制把SQL和数据分离
+不要采用SQL语句拼接 select  from ADMIN where name = "" *or 1 = '1'
+
+// 防御XSS攻击
+htmlspecialchars() 单引号不会被转义
+PHPSESSID cookie HttpOnly
+
+// 商务网站部署方式
+```
+
+
 
 
 
