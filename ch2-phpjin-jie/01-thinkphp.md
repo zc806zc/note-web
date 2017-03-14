@@ -29,13 +29,6 @@ http://localhost/luo-PHP-Web/index.php/Admin
 Application/Common/Conf/config.php
 
 // URL访问模式
-
-```
-
-* URL访问模式
-
-```
-
 http://localhost/index.php?m=home&c=user&a=login     // 0 普通模式 
 http://localhost/index.php/home/user/login           // 1 PATHINFO模式 
 http://localhost/home/user/login                     // 2 REWRITE模式 
@@ -43,11 +36,12 @@ http://localhost/index.php?s=/home/user/login        // 3 兼容模式
 ```
 
 * think的方法
-  * U  - URL生成
-  * M
-  * D  - 实例化
 
 ```
+U  - URL生成
+M
+D  - 实例化
+
 // U方法
 U('User/add');
 U('Blog/read?id=1');
