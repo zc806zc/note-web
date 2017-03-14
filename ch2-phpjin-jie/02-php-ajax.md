@@ -4,7 +4,7 @@
 * [WeCenter社区](http://www.wecenter.com/)
 * discuz
 
-```
+```php
 // discuz与wecenter安装注意
 chmod -R 777  folder // 更改读写权力
 
@@ -24,9 +24,22 @@ localhost改成127.0.0.1
 
 #### **ch6 jQuery个人主页**
 
-* 记在01-jQuery-基础
+```php
+记在01-jQuery-基础
+```
 
 #### **ch7 Ajax商品发布**
+
+* 
+```php
+进度条文件上传
+收集表单数据
+获取Ajax传输进度
+
+下拉菜单三级联动
+
+在线编辑器
+```
 
 * 进度条文件上传
   * 收集表单数据
