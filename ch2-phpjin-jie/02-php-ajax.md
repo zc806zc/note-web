@@ -1,22 +1,40 @@
 #### **ch1 PHP网站搭建**
 
-* [图书源码下载](http://book.boxuegu.com/php_ajax/)
+* 使用模板‘快速建站
+  * [图书源码下载](http://book.boxuegu.com/php_ajax/)
+
 * [WeCenter社区](http://www.wecenter.com/)
+
 * discuz
 
 ```php
-// discuz与wecenter安装注意
-chmod -R 777  folder // 更改读写权力
+// 模板
+wordpress
+discuz
+wecenter
+
+// discuz与wecenter
+// 安装注意
+chmod -R 777/775  folder // 更改文件夹读写权力
 
 wecenter要事先手动创建好数据库
 数据库密码指的是服务器的 初始的就是root root
-localhost改成127.0.0.1
-不要用已经配置过的discuz和wecenter文件夹
+localhost改成127.0.0.1使更通用
+
+// 不要用已经配置过的discuz和wecenter文件夹
 ```
 
 #### **ch2 学生信息管理**
 
+```
+
+```
+
 #### **ch3 网站用户中心**
+
+```
+
+```
 
 #### **ch4 面向对象网站开发**
 
@@ -25,6 +43,10 @@ localhost改成127.0.0.1
 ```
 
 #### **ch5 新闻发布系统**
+
+```
+
+```
 
 #### **ch6 jQuery个人主页**
 
