@@ -1,5 +1,10 @@
 #### **正则表达式**
 
+* 资源
+* [htt](http://louiszhai.github.io/2016/06/13/regexp/)正则表达式前端使用手册[p://louiszhai.github.io/2016/06/13/regexp/](http://louiszhai.github.io/2016/06/13/regexp/)
+
+---
+
 * 常识
 
 ```js
