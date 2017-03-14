@@ -53,19 +53,21 @@ m多行匹配
 * **量词**
 
 ```js
-    *   n+ 至少一个
-    *   n* 零个或多个 n, 即 **可选**？？？
-    *   n? 不超过一个n
+n+ 至少一个
+n* 零个或多个 n, 即 **可选**？？？
+n? 不超过一个n
 ```
 
 * **函数**
 
 ```js
-    *   **test** 返回true/false
-    *   **exec** 返回具体内容
-    *  **match** 返回数组
-    *   **search** 返回 **下标**
-    *   replace
+test 返回true/false
+
+exec 返回具体内容
+match 返回数组
+search 返回下标
+
+replace
         * [replace()的第二个参数](http://www.w3school.com.cn/jsref/jsref_replace.asp)
 ```
 
