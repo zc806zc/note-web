@@ -30,7 +30,9 @@ localhost改成127.0.0.1
 
 #### **ch7 Ajax商品发布**
 
-* 
+* [UEditor](#)   
+* 富文本过滤 [HTMLPurifier](http://htmlpurifier.org/download)Standalone版
+
 ```php
 进度条文件上传
 收集表单数据
@@ -41,13 +43,7 @@ localhost改成127.0.0.1
 在线编辑器
 ```
 
-* 进度条文件上传
-  * 收集表单数据
-  * 获取Ajax传输进度
-* 下拉菜单三级联动
-* 在线编辑器
-  * [UEditor](http://ueditor.baidu.com/website/)
-  * 富文本过滤 [HTMLPurifier](http://htmlpurifier.org/download)Standalone版
+
 
 #### **ch8 电子商务网站**
 
