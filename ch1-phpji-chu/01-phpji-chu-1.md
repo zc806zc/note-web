@@ -218,7 +218,7 @@ foreach($fruit as $value) {
 // pear
 ```
 
-* PHP内置函数
+* 内置函数
 
 ```js
 // 字符串函数
@@ -276,11 +276,8 @@ function add($a, $b) {
   return $a + $b;
 }
 echo add(3, 4); // 7
-```
 
-* 包含语句
-
-```js
+// 包含语句
 include include_once
 require require_once
 
@@ -289,28 +286,13 @@ require require_once
 
 // include "hi.php";
 include("hi.php");
-```
 
-* 替代语句
-
-```js
+// 替代语句
 { -> :
 } ->endif endwhile endfor endforeach endswitch
 ```
 
-* GET传参
-
-```php
-URL实现
-$_GET
-
-$name = isset($_GET['name']) ? $_GET['name'] : "";
-echo $name;
-$name = urlencode("A&B C");
-echo $name . "\n"; // A%26B+C
-```
-
-* HTTP协议
+* URL/GET传参
 
 ```php
 HyperText Transfer Protocol
@@ -324,15 +306,20 @@ Post 表单提交
 
 // 超全局变量
 $_GET $_REQUEST
-```
 
-* HTML特殊字符转义
+URL实现 $_GET
 
-```php
+$name = isset($_GET['name']) ? $_GET['name'] : ""; // echo $name;
+$name = urlencode("A&B C");
+echo $name . "\n"; // A%26B+C
+
+// HTML特殊字符转义
 htmlspecialchars()函数
 
 $str = "hello \n world";
 nl2br($str);
+// hello <br />
+//  world 
 ```
 
 
