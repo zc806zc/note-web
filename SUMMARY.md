@@ -132,7 +132,7 @@
   * [ch2-PHP进阶篇](ch2-phpjin-jie.md)
     * [01-PHP-面向对象](ch1-phpji-chu/02-phpmian-xiang-dui-xiang.md)
     * [03-深入理解PHP-面向对象](ch2-phpjin-jie/03shen-ru-li-jie-php-mian-xiang-dui-xiang.md)
-    * [01-ThinkPHP](ch2-phpjin-jie/01-thinkphp.md)
+    * [01-PHP框架](ch2-phpjin-jie/01-thinkphp.md)
     * [02-PHP-AJAX](ch2-phpjin-jie/02-php-ajax.md)
     * [04-PHP高性能开发](ch2-phpjin-jie/04-phpgao-xing-neng-kai-fa.md)
   * [ch3-MySQL](ch3-mysql.md)
