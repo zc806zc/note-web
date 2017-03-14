@@ -45,7 +45,7 @@ localhost改成127.0.0.1
 
 #### **ch8 电子商务网站**
 
-```
+```php
 // 项目安全巩固
 $_GET,$_COOKIE等超全局变量都是不可信的，
 所以在framework下有function.php统一处理
@@ -62,8 +62,6 @@ PHPSESSID cookie HttpOnly
 
 // 商务网站部署方式
 ```
-
-
 
 
 
