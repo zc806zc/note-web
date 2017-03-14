@@ -17,6 +17,7 @@
   * [psysh](http://psysh.org/)
 
   * [segmentfault](https://segmentfault.com/t/php)
+
   * [开源后台模板](http://www.cnblogs.com/DiYuShe/archive/2012/08/21/2648563.html)
 
   ---
@@ -161,15 +162,13 @@ var_dump((object)2.34);
 
 ```js
 // 赋值有关
-
 $arr = [];
 $arr[] = 'hi';
 $arr[5] = '5';
 $arr[] = 'world';
 $arr['sub'] = 'sub';
 
-var_dump($arr);
-// 输出结果
+// var_dump($arr)输出结果
 // array(4) {
 //   [0] =>
 //   string(2) "hi"
@@ -181,13 +180,13 @@ var_dump($arr);
 //   string(3) "sub"
 // }
 
-数组声名
+// 数组声名
 下标只有整型和字符型
 相同的下标，赋值会覆盖
 
 $info = array('id'=>1,'help',3=>'msg');
 
-var_dump($info);
+// var_dump($info)输出结果
 // array(3) {
 //   'id' =>
 //   int(1)
@@ -199,9 +198,10 @@ var_dump($info);
 
 $info = array(1,2,3,4);
 
-访问 $info['name']
+// 访问 
+$info['name']
 
-unset
+// unset
 
 // 数组遍历   
 $fruit = ['apple', 'pear'];
@@ -211,6 +211,7 @@ foreach($fruit as $key => $value) {
 foreach($fruit as $value) {
   echo $value . "\n";
 }
+
 // 0=>apple
 // 1=>pear
 // apple
