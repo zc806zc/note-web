@@ -4,11 +4,14 @@
   * [php5.5下载](http://www.pc6.com/softview/SoftView_51016.html)
   * [phpstorm 的表单提交问题](http://blog.csdn.net/muzilinxi90/article/details/52458511)
 
-```js
+```php
 // 集成安装包
 XAMPP Wamp phpstudy
+
 AppServ
-phpnow easyphp vertrigo
+// phpnow easyphp vertrigo // 不知道
+
+// 也要会自己配置
 ```
 
 ---
