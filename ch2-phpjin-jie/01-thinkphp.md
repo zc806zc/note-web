@@ -37,7 +37,7 @@ http://localhost/index.php?s=/home/user/login        // 3 兼容模式
 
 * think的方法
 
-```
+```php
 U  - URL生成
 M
 D  - 实例化
