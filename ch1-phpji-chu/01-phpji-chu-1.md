@@ -38,9 +38,10 @@ LAMP = Linux + Apache + MySQL/MongoDB + PHP
 Zend Framework/Laravel/Symfony/Yii/CodeIgniter/ThinkPHP
 
 // 3P的比较
-JSP效率最高 用于建设大型电子商务网站
 PHP 缺少规模支持 小型商业网站
-ASP.NET  .NET库的支持
+
+JSP效率最高 用于建设大型电子商务网站
+ASP.NET  有.NET库的支持，不会弱到哪里
 ```
 
 * 特殊点的语法
