@@ -1,11 +1,7 @@
 {
     "language": "zh-hans",
     "plugins": [
-        "-lunr", 
-        "-search", 
-        "search-plus",
         "splitter",
-        "toggle-chapters",
         "disqus",
         "tbfed-pagefooter",
         "ace",
