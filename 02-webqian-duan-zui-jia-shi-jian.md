@@ -214,6 +214,9 @@ tab顺序 tabindex
 * css分为通用类和业务类，参考结构如下
 
 ```js
+// css分为通用类和业务类
+// 参考结构如下
+
 css/
     lib/
     reader/
@@ -224,29 +227,42 @@ css/
     common.css
     default.css
     ie-style.css // 单独写
+    
+// less sass
+
+// reset.css
+* {margin: 0; padding: 0;} // 不推荐
+
+Eric Meyer的reset
+YUI Reset CSS
+
+h5的新标签 display:block;
+padding margin border
+类似em，重置，只要语义
+其他元素 table ul li a:link的text-decoration
+
+// 给CSS排序
+分类 Andy Ford
+Display&Flow 
+Positioning
+Dimensions
+Margin padding borders outline
+Typographic Style
+Backgrounds
+Other:opacity ,cursors ,Generated Conetent
+// 写完后排序 CSScomb
+
+// CSS权重
+id > 类/伪类/属性选择 > 标签选择/伪对象 > 通配符
+
+// 使用建议
+不要用id选择器
+减少层级
+多组合少继承    
 ```
 
 * less sass 
-* reset.css
-  * 方案
-    * `* {margin: 0; padding: 0;}` // 不推荐
-    * Eric Meyer的reset
-    * YUI Reset CSS
-    * 思路
-    * h5的新标签 display:block;
-      * padding margin border
-  * 类似em，重置，只要语义
-  * 其他元素 table ul li a:link的text-decoration
-* 给CSS排序
-  * 分类 Andy Ford
-    * Display&Flow 
-    * Positioning
-    * Dimensions
-    * Margin padding borders outline
-    * Typographic Style
-    * Backgrounds
-    * Other:opacity ,cursors ,Generated Conetent
-  * 写完后排序 CSScomb
+
 * CSS权重
   * id &gt; 类/伪类/属性选择 &gt; 标签选择/伪对象 &gt; 通配符
   * 由此 计算权重。。。
