@@ -1,13 +1,21 @@
-#### **云笔记管理**
-*  看云， 在国内较gitbook稳定并方便使用些
-* [MkDocs](http://www.mkdocs.org/)，md -> html
-* [sphinx](http://www.sphinx-doc.org/en/stable/) ？？
-* <del>简书</del>
+#### 笔记/博客
+ * [sphinx](http://www.sphinx-doc.org/en/stable/)
+ * [MkDocs](http://www.mkdocs.org/) md -> html
+```
+// 看云
+较gitbook稳定并方便使用些
+但是长远起见还是用了gitbook
 
-#### **开发工具**
+// 简书
+
+
+```
+
+#### IDE
+
+
+```
 * 最强IDE： <del>Aptana Studio</del> / Web Storm(商业) /netbeans
-
-------------
 
 * **优雅的编辑器**：Sublime / Atom / VS code
 	* sublime插件
@@ -31,18 +39,35 @@
 		*  windows环境下设置环境变量
 		*  pushed  folderPath 或 cd /d 进入文件夹
         *  js filename.js执行
-        
-------------
+
 
 + 偏设计类：<del>[Adobe Brackets](http://www.jackpu.com/qian-duan-shen-qi-adobe-brackets-shi-yong-xin-de/)</del> 
 
+
+```
+
+
+        
+
     
-#### **Java工具**
+#### Java工具
+
+
+```
 + eclipse
 	+ 主题：[eclipse color theme](http://download.csdn.net/download/knockheart/6690825) (例sublime风)
 + itellj idea
-	* 文件编码问题的解决： 选择file encodings - utf-8 -> utf-16 -> utf-8
+* 文件编码问题的解决： 选择file encodings - utf-8 -> utf-16 -> utf-8
+```
+
+
     
-#### **线框图与原型设计**
+#### 线框图与原型设计
+
+
+```
 * Balsamiq
+```
+
+
     
