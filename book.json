@@ -1,14 +1,11 @@
 {
     "language": "zh-hans",
     "plugins": [
-       "tbfed-pagefooter",
        "splitter",
        "toggle-chapters",
        "advanced-emoji"
     ],
     "pluginsConfig": {
-        "tbfed-pagefooter": {
-            "modify_format": "YYYY-MM-DD HH:mm:ss"
-        }
+
     }
 }
