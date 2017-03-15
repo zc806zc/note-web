@@ -129,6 +129,7 @@
       * [04-PHP高性能开发-读后感](ch2-phpjin-jie/04-phpgao-xing-neng-kai-fa.md)
     * [ch3-PHP框架篇](ch3-phpkuang-jia-pian.md)
       * [01-PHP框架](ch3-phpkuang-jia-pian/01-phpkuang-jia.md)
+      * [02-Laravel框架](ch3-phpkuang-jia-pian/02-laravelkuang-jia.md)
       * [02-ThinkPHP框架\(国内\)](ch2-phpjin-jie/01-thinkphp.md)
 * [Java](java-stack.md)
   * [C-like](c-stack.md)
