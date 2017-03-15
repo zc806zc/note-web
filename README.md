@@ -2,15 +2,7 @@
 
 程序员入门笔记
 
-我是{% em %}单纯{% endem %}的xiaobai...
-
-```
-This text is {% em %}highlighted !{% endem %}
-```
-
-```
-
-```
+我是单纯的小{% em %}白{% endem %}...
 
 
 
