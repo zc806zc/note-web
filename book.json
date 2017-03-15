@@ -8,7 +8,6 @@
     "plugins": [
         "splitter",
         "tbfed-pagefooter",
-        "ace",
         "expandable-chapters-small"
     ],
     "pluginsConfig": {
