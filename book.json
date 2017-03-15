@@ -8,7 +8,8 @@
     "plugins": [
         "splitter",
         "tbfed-pagefooter",
-        "expandable-chapters-small"
+        "expandable-chapters-small",
+        "emphasize"
     ],
     "pluginsConfig": {
         "tbfed-pagefooter": {
