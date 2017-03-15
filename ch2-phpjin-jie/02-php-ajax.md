@@ -1,11 +1,9 @@
 #### **ch1 PHP网站搭建**
 
 * 使用模板‘快速建站
+
   * [图书源码下载](http://book.boxuegu.com/php_ajax/)
-
-* [WeCenter社区](http://www.wecenter.com/)
-
-* discuz
+  * [解决安装WordPress主题及插件需要输入FTP问题](http://jingyan.baidu.com/article/4f34706efc1237e387b56da4.html)
 
 ```php
 // 模板
