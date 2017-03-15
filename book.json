@@ -3,7 +3,6 @@
     "plugins": [
        "splitter",
        "toggle-chapters",
-       "advanced-emoji",
        "disqus"
     ],
     "pluginsConfig": {
