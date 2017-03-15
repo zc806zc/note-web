@@ -3,6 +3,7 @@
     "plugins": [
        "tbfed-pagefooter"
     ],
+    "plugins": ["splitter"],
     "pluginsConfig": {
     "tbfed-pagefooter": {
         "modify_format": "YYYY-MM-DD HH:mm:ss"
