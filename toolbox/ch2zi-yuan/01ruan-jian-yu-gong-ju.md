@@ -19,7 +19,7 @@ npm install gitbook-plugin-插件名
 // 简书
 ```
 
-#### IDE
+####  {% em %} IDE {% endem %}
 
 ```
 // IDE重器
