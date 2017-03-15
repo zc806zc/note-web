@@ -1,12 +1,15 @@
 {
     "language": "zh-hans",
     "plugins": [
-       "splitter",
-       "toggle-chapters",
-       "disqus",
-       "tbfed-pagefooter",
-       "-search",
-       "search-pro"
+        "-lunr", 
+        "-search", 
+        "search-plus",
+        "splitter",
+        "toggle-chapters",
+        "disqus",
+        "tbfed-pagefooter",
+        "ace",
+        "expandable-chapters-small"
     ],
     "pluginsConfig": {
         "disqus": {
@@ -15,10 +18,6 @@
         "tbfed-pagefooter": {
             "modify_label": "最后修改 : ",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
-        },
-        "search-pro": {
-            "cutWordLib": "nodejieba",
-            "defineWord" : ["Gitbook Use"]
         }
     }
 }
