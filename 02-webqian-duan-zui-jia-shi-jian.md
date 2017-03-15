@@ -269,64 +269,74 @@ id > 类/伪类/属性选择 > 标签选择/伪对象 > 通配符
 使用百分比设置尺寸
 ```
 
-
-
-#### **ch7 CSS - 高性能**
-
-* CSS选择器 **从右到左** 匹配
-  * 最右边的是关键选择器
-  * 避免使用标签选择器或单个选择器
-    * .ref p.list div 
-    * .ref p.list \[data-link="\#red"\]
-* 避免使用 \* { }
-* 避免id前加标签，因为id是唯一的
-  * div\#page\_index
-* 不要在选择符中定义太多层级
-* 测试CSS开销的网站 [CSS selectors Test](http://stevesouders.com/efws/css-selectors/tests.php)
-* id选择器最快但不易重用
-* css图片处理
-  * 针对原始图片独立做一台缩略图
-  * CSS Sprite（雪碧图） 合并成大图再定位
-    * 有利于网站风格变更，因为它们放在一起 
-    * 但性能 维护 与开发需要注意
-    * 开发后期
-    * 图片大小在`200kb`以内传输时间差不多
-    * 上下至少预留14px,左右16px的边距
-    * 背景图放在有关图最右侧
-    * 借助工具
-      * 合并上传的多图 -&gt; CSS Sprite Generator 
-      * 根据选中区域生成CSS -&gt; Sprite Cow
-      * 分析网站来生成CSS和雪碧图 -&gt; SpriteMe
-* 减少代码量
-  * 合并规则: font-size, font-style, font-family...
-  * 简介属性值
+* CSS-高性能
 
 ```js
-    p.reader-title {
-        color: #F3E;
-        font-size: .8em;
-        padding: 0;
-    }
+CSS选择器 从右到左 匹配
+最右边的是关键选择器
+
+id选择器最快但不易重用
+避免使用标签选择器或单个选择器
+.ref p.list div 
+.ref p.list [data-link="#red"]
+
+避免使用 * { }
+
+避免id前加标签，因为id是唯一的
+div#page_index
+
+不要在选择符中定义太多层级
+
+// 测试CSS开销的网站 
+CSS selectors Test
+
+
+// css图片处理
+针对原始图片独立做一台缩略图
+CSS Sprite（雪碧图） 合并成大图再定位
+有利于网站风格变更，因为它们放在一起 
+但性能 维护 与开发需要注意
+开发后期才做
+
+
+图片大小在200kb以内传输时间差不多
+上下至少预留14px,左右16px的边距
+背景图放在有关图最右侧
+
+// 借助工具
+合并上传的多图 -> CSS Sprite Generator 
+根据选中区域生成CSS -> Sprite Cow
+分析网站来生成CSS和雪碧图 -> SpriteMe
+
+// 减少代码量
+合并规则: font-size, font-style, font-family...
+
+// 简洁属性值
+p.reader-title {
+color: #F3E;
+font-size: .8em;
+padding: 0;
+}
+
+// 共同声名重复的，单独定义特殊的 
+继承，归并到父类
+
+a,
+b {
+}
+a {}
+b {}
+
+
+// chrome自带工具来查找无用样式
+内边距设为负值
+拼写错误
+但注意其他浏览器的兼容前缀等
+不使用@import -> 阻止并行下载
+避免使用IE浏览器的图片滤镜和CSS表达式
+
+// 用JS取代css工作
 ```
-
-* 共同声名重复的，单独定义特殊的 
-
-```js
-    a,
-    b {
-    }
-    a {}
-    b {}
-```
-
-* 继承，归并到父类
-* chrome自带工具来查找无用样式
-  * 内边距设为负值
-  * 拼写错误
-  * 但注意其他浏览器的兼容前缀等
-    * 不使用@import -&gt; 阻止并行下载
-    * 避免使用IE浏览器的图片滤镜和CSS表达式
-* 用JS取代
 
 #### **ch8 CSS3最佳实践**
 
@@ -380,7 +390,7 @@ hi.init();
 避免eval
 ```
 
-* * * 不要编写检测浏览器的代码
+* 不要编写检测浏览器的代码
   * 取而代之的是检测浏览器是否支持某一特定功能 $.support
   * Modernizr
   * 兼容代码单独放在文件里
