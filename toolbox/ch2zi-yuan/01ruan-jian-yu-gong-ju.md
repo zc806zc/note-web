@@ -12,6 +12,9 @@ npm install gitbook-plugin-插件名
 // 可能太理所当然了,就没人说
 // gitbook官网的话直接写book.json就行
 
+// 高亮插件示例
+This text is {% em %}highlighted with **markdown**!{% endem %}
+
 // 看云
 国内较gitbook稳定并方便使用些
 但是长远起见还是用了gitbook
