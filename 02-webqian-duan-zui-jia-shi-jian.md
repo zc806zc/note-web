@@ -1,4 +1,4 @@
-#### **ch1 前端概述**
+#### **ch1-2 前端开发概述**
 
 * 概述
 
@@ -9,6 +9,11 @@
 
 // 兼具艺术气息和逻辑思维    
 页面美感 + 操作体验 + 代码质量
+
+// 沟通能力
+ 与UI设计师 (效果实现和代价)
+ 与后端工程师(交互接口和传输的数据实体的结构)
+
 
 // 技能
 HTML 入门容易 重点在于语义与结构
@@ -23,10 +28,6 @@ IE7、8的兼容，H5的新特性兼容（优雅降级）
 
 HTML5 html5shim框架
 
-// 合理使用前端框架
-jQuery,YUI,Ext JS，prototype,...
-Modernizr.underscore.backbone,rapheal... // 注意框架的使用方法和编码方式
-
 // 调试工具
 JS的执行
 HTML结构变化
@@ -37,11 +38,12 @@ HTTP请求及返回数据
 
 可用插件：Fiddler(HTTP请求监控和模拟)等
 
-// 沟通能力
- 与UI设计师 (效果实现和代价)
- 与后端工程师(交互接口和传输的数据实体的结构)
- 
- // 国内浏览器
+
+// 合理使用前端框架
+jQuery,YUI,Ext JS，prototype,...
+Modernizr.underscore.backbone,rapheal... // 注意框架的使用方法和编码方式
+
+ // 国内浏览器市场
  搜狗浏览器
  360安全浏览器
 ```
@@ -58,7 +60,8 @@ HTTP请求及返回数据
 布局随意(例用<br>增距)
 HTML代码不符合标准(废弃元素 marquee 因为可以用JS实现)
 
-性能：没有缓存，动态加载，脚本压缩，图片压缩。。。
+性能上
+没有缓存，动态加载，脚本压缩，图片压缩
 
 // 措施
 删除无用代码：不断查看上下文
@@ -75,26 +78,16 @@ HTML代码不符合标准(废弃元素 marquee 因为可以用JS实现)
 提高加载性能
 CSS Sprite，合并首页背景图
 延长静态资源缓存时间
-```
 
-* W3C指定的标准
-
-```js
+// W3C指定的标准
 structure HTML4.01
 presentation CSS2
 behavior ECMA DOM
+
+// 合并代码文件
+YUI Compresser -> Java
+Web Optimization -> .NET
 ```
-
-* 安全性-&gt; 富客户端
-
-```js
-跨站点攻击
-Cookie劫持
-伪造恶意代码
-因此需要做必要的安全校验和编码
-```
-
-#### **ch2 高效开发**
 
 * 常用的文件组织结构
 
@@ -115,14 +108,9 @@ jquery-1.8.2.min.js
 bootstrap-responsive.css
 ```
 
-* 合并代码文件
+#### **ch3-4 HTML最佳实践**
 
-```js
-YUI Compresser -> Java
-Web Optimization -> .NET
-```
-
-#### **ch3 标准HTML**
+* 标准HTML
 
 ```js
 <noscript>不能用的提示信息</noscript>
@@ -136,13 +124,18 @@ http-equiv + content 设置特定的http指令
 自定义/注册meta
 ```
 
-#### **ch4 HTML - 高可读性**
+* 高可读性
+  * [清除浮动](http://www.cnblogs.com/dolphinX/p/3508869.html)
 
-* 分隔符不是网页内容的一部分，应该从html中分离，使用css实现 P54
-* [清除浮动](http://www.cnblogs.com/dolphinX/p/3508869.html)时不要有多余的div，也应该写在css P57
+```css
+// 分隔符
+不是网页内容的一部分，
+应该从html中分离，使用css实现 P54
 
-```js
- <style>
+// 清除浮动时
+不要有多余的div，也应该写在css P57
+
+  <style>
       .reader li {
           text-indent: -9999px; /* 隐藏说明文字 */
       }
@@ -180,36 +173,39 @@ http-equiv + content 设置特定的http指令
     <div>side bar</div>
     <div>content</div>
 </section>
-```
 
-* 不要用br,css实现
-* 背景图css实现, 语义内容img标签
-* text-indent: -999px; //用于说明性的空标签
-* 设置网页标题层级
-  * hgroup
-  * html编辑器可能会打乱层级
-  * 一个h1
-  * 不要跳级，必要时可以选择hide
-  * hx不为了样式
-* 设计表单
-  * table太臃肿
-  * fieldset legend 分组
-  * tab顺序 tabindex
-* 精简html代码
-  * 删除div span等无用的容器
-* 过时的块状元素和行内元素
-* html5元素分类
-  * 元数据 link meta base...
-  * 流式 span div 
-  * 章式 article nav aside
-  * 标题 h6 hgroup
-  * 段落 img span 
-  * 嵌入 iframe svg
-  * 交互  a button input select
+背景图css实现, 
+语义内容img标签
 
-#### **ch5 积极拥抱HTML5**
+text-indent: -999px; //用于说明性的空标签
 
-```js
+// 设置网页标题层级
+hgroup
+html编辑器可能会打乱层级
+一个h1
+不要跳级，必要时可以选择hide
+hx不为了样式
+
+// 设计表单
+table太臃肿
+fieldset legend 分组
+tab顺序 tabindex
+
+// 精简html代码
+删除div span等无用的容器
+
+过时的块状元素和行内元素
+
+// html5元素分类
+元数据 link meta base...
+流式 span div 
+章式 article nav aside
+标题 h6 hgroup
+段落 img span 
+嵌入 iframe svg
+交互  a button input select
+
+// 积极拥抱HTML5
 记在HTML5基础
 ```
 
