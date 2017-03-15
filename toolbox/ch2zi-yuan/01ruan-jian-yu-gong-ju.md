@@ -9,6 +9,7 @@
 npm install gitbook-plugin-插件名 
       // 坑哭我...
       // 可能太理所当然了,就没人说
+      // 官网的话就不用
       
 // 看云
 国内较gitbook稳定并方便使用些
