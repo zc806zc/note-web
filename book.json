@@ -9,7 +9,8 @@
         "splitter",
         "tbfed-pagefooter",
         "expandable-chapters-small",
-        "emphasize"
+        "emphasize",
+        "anchor-navigation-ex@0.1.8",
     ],
     "pluginsConfig": {
         "tbfed-pagefooter": {
