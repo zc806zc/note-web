@@ -1,15 +1,20 @@
 #### 笔记/博客
  * [sphinx](http://www.sphinx-doc.org/en/stable/)
  * [MkDocs](http://www.mkdocs.org/) md -> html
- 
+ * [Gitbook插件安装配置- 星夜雨年](http://www.tuicool.com/articles/JjQ3qm)
  
 ```
+// gitbook
+使用插件前一定要
+npm install gitbook-plugin-插件名 
+      // 坑哭我...
+      // 可能太理所当然了,就没人说
+      
 // 看云
-较gitbook稳定并方便使用些
+国内较gitbook稳定并方便使用些
 但是长远起见还是用了gitbook
 
 // 简书
-
 
 ```
 
