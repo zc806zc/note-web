@@ -1,16 +1,12 @@
 {
     "plugins": [
-       "tbfed-pagefooter"
+       "tbfed-pagefooter",
+       "splitter",
+       "toggle-chapters",
     ],
     "pluginsConfig": {
         "tbfed-pagefooter": {
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         }
     }
-}
-{
-    "plugins": ["splitter"]
-}
-{
-    "plugins": ["toggle-chapters"],
 }
