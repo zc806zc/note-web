@@ -3,9 +3,12 @@
     "plugins": [
        "splitter",
        "toggle-chapters",
-       "advanced-emoji"
+       "advanced-emoji",
+       "disqus"
     ],
     "pluginsConfig": {
-
+        "disqus": {
+            "shortName": "gitbookuse"
+        }
     }
 }
