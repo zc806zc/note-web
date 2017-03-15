@@ -3,7 +3,6 @@
     "description": "前端入门书",
     "author": "luo0412",
     "output.name": "xiaobaishu",
-    "language": "zh-hans",
     "gitbook": "3.2.2",
     "plugins": [
         "splitter",
