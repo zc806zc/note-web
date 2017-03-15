@@ -7,9 +7,9 @@
 // gitbook
 使用插件前一定要
 npm install gitbook-plugin-插件名 
-      // 坑哭我...
-      // 可能太理所当然了,就没人说
-      // 官网的话就不用
+// 坑哭我...
+// 可能太理所当然了,就没人说
+// gitbook官网的话直接写book.json就行
       
 // 看云
 国内较gitbook稳定并方便使用些
@@ -32,13 +32,13 @@ npm install gitbook-plugin-插件名
 		*  Tools --> Build System --> new Build System...
         *  复制文件内容
         
-        ```
+
         {
         "cmd": ["node", "$file"],
         "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
         "selector": "source.javascript"
         }
-        ```
+
 		*  文件保存为 JavaScript.sublime-build
 		*  重启，勾选Tools --> Build System --> JavaScript
 		*  Ctrl + b执行JavaScript 程序.

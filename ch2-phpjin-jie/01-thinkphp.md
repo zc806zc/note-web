@@ -1,8 +1,4 @@
-##### PHP框架概述
-
-```php
-// Laravel
-```
+##### 
 
 **ThinkPHP3使用**
 
