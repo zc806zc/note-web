@@ -209,9 +209,9 @@ tab顺序 tabindex
 记在HTML5基础
 ```
 
-#### **ch6 CSS - 高维护性**
+#### **ch6-8 CSS最佳实践**
 
-* css分为通用类和业务类，参考结构如下
+* CSS-高维护性
 
 ```js
 // css分为通用类和业务类
@@ -227,7 +227,7 @@ css/
     common.css
     default.css
     ie-style.css // 单独写
-    
+
 // less sass
 
 // reset.css
@@ -258,29 +258,18 @@ id > 类/伪类/属性选择 > 标签选择/伪对象 > 通配符
 // 使用建议
 不要用id选择器
 减少层级
-多组合少继承    
+多组合少继承
+
+// 兼容ie hack代码
+可以在根元素上
+<! --[if IE7]> <html class="ie7"><! [endif]-->
+
+// em px %
+使用em设置字体 -> gem
+使用百分比设置尺寸
 ```
 
-* less sass 
 
-* CSS权重
-  * id &gt; 类/伪类/属性选择 &gt; 标签选择/伪对象 &gt; 通配符
-  * 由此 计算权重。。。
-  * 使用建议
-    * 不要用id选择器
-    * 减少层级
-      * sass使用的时候小心
-    * 多组合少继承
-* 兼容ie hack代码
-  * 可以在根元素上
-
-```js
-    <! --[if IE7]> <html class="ie7"><! [endif]-->
-```
-
-* em px %
-  * 使用em设置字体 -&gt; gem
-  * 使用百分比设置尺寸
 
 #### **ch7 CSS - 高性能**
 
