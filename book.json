@@ -1,11 +1,11 @@
 {
     "plugins": ["toggle-chapters"],
     "plugins": [
-   "tbfed-pagefooter"
+       "tbfed-pagefooter"
     ],
     "pluginsConfig": {
     "tbfed-pagefooter": {
-        "copyright":"Copyright © zhangjikai.com 2015",
+        "copyright":"Copyright © ?_?",
         "modify_label": "该文件修订时间：",
         "modify_format": "YYYY-MM-DD HH:mm:ss"
     }
