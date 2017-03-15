@@ -13,7 +13,6 @@
 
 #### IDE
 
-
 ```
 * 最强IDE： <del>Aptana Studio</del> / Web Storm(商业) /netbeans
 
