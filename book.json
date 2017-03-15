@@ -1,16 +1,17 @@
 {
+    "title": "小白书",
+    "description": "前端入门书",
+    "author": "luo0412",
+    "output.name": "xiaobaishu",
     "language": "zh-hans",
+    "gitbook": "3.2.2",
     "plugins": [
         "splitter",
-        "disqus",
         "tbfed-pagefooter",
         "ace",
         "expandable-chapters-small"
     ],
     "pluginsConfig": {
-        "disqus": {
-            "shortName": "gitbookuse"
-        },
         "tbfed-pagefooter": {
             "modify_label": "最后修改 : ",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
