@@ -4,7 +4,9 @@
        "splitter",
        "toggle-chapters",
        "disqus",
-       "tbfed-pagefooter"
+       "tbfed-pagefooter",
+       "-search",
+       "search-pro"
     ],
     "pluginsConfig": {
         "disqus": {
@@ -13,6 +15,10 @@
         "tbfed-pagefooter": {
             "modify_label": "最后修改 : ",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "search-pro": {
+            "cutWordLib": "nodejieba",
+            "defineWord" : ["Gitbook Use"]
         }
     }
 }
