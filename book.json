@@ -1,8 +1,10 @@
 {
+    "language": "zh-hans",
     "plugins": [
        "tbfed-pagefooter",
        "splitter",
        "toggle-chapters",
+       "advanced-emoji"
     ],
     "pluginsConfig": {
         "tbfed-pagefooter": {
