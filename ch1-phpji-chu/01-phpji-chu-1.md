@@ -2,25 +2,15 @@
 
 * 资源
 
-  * [PHP资源](https://www.zhihu.com/question/20034403) \| [Github资源](https://github.com/justjavac/free-programming-books-zh_CN#php)
+  * [PHP 手册](http://php.net/manual/zh/) | [MySQL 5.1参考手册](http://www.kancloud.cn/k12_develop/mysql51/77410)| [Apache 2.2 官方文档](http://www.kancloud.cn/wizardforcel/apache-doc/105614) | [Nginx 官方文档](http://www.kancloud.cn/wizardforcel/nginx-doc/92403) |[鸟哥的 Linux 私房菜](http://www.kancloud.cn/thinkphp/linux_basic/43213) | [Laravel 5文档](https://www.gitbook.com/book/lbp0200/laravel-5-doc/details)
 
-  * [packagist](https://packagist.org/explore/popular)
+  * [PHP资源](https://www.zhihu.com/question/20034403) | [Github资源](https://github.com/justjavac/free-programming-books-zh_CN#php) | [开源后台模板](http://www.cnblogs.com/DiYuShe/archive/2012/08/21/2648563.html)
 
-  * [PHP: PHP 手册](http://php.net/manual/zh/) \| [MySQL 5.1参考手册](http://www.kancloud.cn/k12_develop/mysql51/77410)
-
-  * [Apache 2.2 官方文档](http://www.kancloud.cn/wizardforcel/apache-doc/105614) \| [Nginx 官方文档](http://www.kancloud.cn/wizardforcel/nginx-doc/92403)
-
-  * [鸟哥的 Linux 私房菜](http://www.kancloud.cn/thinkphp/linux_basic/43213)
-
-  * [Laravel 5 中文文档](https://www.gitbook.com/book/lbp0200/laravel-5-doc/details)
+  * [packagist](https://packagist.org/explore/popular)  | [segmentfault - PHP](https://segmentfault.com/t/php)
 
   * [psysh](http://psysh.org/)
 
-  * [segmentfault](https://segmentfault.com/t/php)
-
-  * [开源后台模板](http://www.cnblogs.com/DiYuShe/archive/2012/08/21/2648563.html)
-
-  ---
+---
 
 * PHP基础
 
@@ -58,10 +48,10 @@ $user_pwd
 可以用 {} 界定变量
 
 // PHP 有四种不同的变量作用域：
-local
+local // 局部
 global
 static
-parameter
+// parameter 参数作用域
 
 // 传值赋值与引用赋值的区别
 // 传值赋值
@@ -84,13 +74,13 @@ if elseif else
 
 ```php
 标量：布尔型 整型 浮点型 字符串型 
-有时 0 表示false 1表示true
-浮点数的有效位数 14
+有时 0 表示false 1表示true 
+// 浮点数的有效位数 14
 
 复合 : 数组 对象
 特殊 : resource NULL
 
-// 字符串类型的特点
+// 字符串
 双引号中的变量可以解析，同时可以处理转义字符
 单引号原样输出
 
@@ -102,9 +92,7 @@ $str .= 'world'; // hi world  点号连接
 
 ```php
 // echo print
-
-// var_dump 
-// 打印变量或表达式相关信息
+// var_dump 打印变量或表达式相关信息
 array(2) {
   [0] =>
   int(1)
@@ -112,8 +100,7 @@ array(2) {
   int(4)
 }
 
-// print_r 
-// 打印易于理解的信息
+// print_r 打印易于理解的信息
 Array
 (
   [0] => 1
@@ -125,10 +112,9 @@ Array
 * Date函数
 
 ```php
-从1970-01-01 00:00:00 开始的总秒数
-time()获取时间戳
+// 从1970-01-01 00:00:00 开始的总秒数
+echo time() ; // 获取时间戳 1483346204
 
-echo time() ; // 1483346204
 echo date('Y-m-d H:i:s') ; // 2017-01-02 09:36:44
 // echo date('Y-m-d', time()); // 2017-01-02
 ```
@@ -333,6 +319,3 @@ nl2br($str);
 // hello <br />
 //  world
 ```
-
-
-
