@@ -57,6 +57,11 @@ PHP框架是一个可以用来节省时间并强化自己代码的工具
 $user_pwd
 可以用 {} 界定变量
 
+// PHP 有四种不同的变量作用域：
+local
+global
+static
+parameter
 
 // 传值赋值与引用赋值的区别
 // 传值赋值
