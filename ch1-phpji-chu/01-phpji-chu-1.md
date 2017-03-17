@@ -68,6 +68,12 @@ echo $num; // 100
 
 // 分支语句
 if elseif else
+
+// 常量 常量是全局的 大小写敏感设置
+
+// 超级全局变量
+// $_REQUEST
+action="<?php echo $_SERVER['PHP_SELF'];
 ```
 
 * 数据类型
@@ -91,7 +97,7 @@ $str .= 'world'; // hi world  点号连接
 * 输出函数
 
 ```php
-// echo print
+// echo(语言结构,不是函数) print(返回值) printf
 // var_dump 打印变量或表达式相关信息
 array(2) {
   [0] =>
