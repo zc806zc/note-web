@@ -2,11 +2,11 @@
 
 * 资源
 
-  * [PHP 手册](http://php.net/manual/zh/) | [MySQL 5.1参考手册](http://www.kancloud.cn/k12_develop/mysql51/77410)| [Apache 2.2 官方文档](http://www.kancloud.cn/wizardforcel/apache-doc/105614) | [Nginx 官方文档](http://www.kancloud.cn/wizardforcel/nginx-doc/92403) |[鸟哥的 Linux 私房菜](http://www.kancloud.cn/thinkphp/linux_basic/43213) | [Laravel 5文档](https://www.gitbook.com/book/lbp0200/laravel-5-doc/details)
+  * [PHP 手册](http://php.net/manual/zh/) \| [MySQL 5.1参考手册](http://www.kancloud.cn/k12_develop/mysql51/77410)\| [Apache 2.2 官方文档](http://www.kancloud.cn/wizardforcel/apache-doc/105614) \| [Nginx 官方文档](http://www.kancloud.cn/wizardforcel/nginx-doc/92403) \|[鸟哥的 Linux 私房菜](http://www.kancloud.cn/thinkphp/linux_basic/43213) \| [Laravel 5文档](https://www.gitbook.com/book/lbp0200/laravel-5-doc/details)
 
-  * [PHP资源](https://www.zhihu.com/question/20034403) | [Github资源](https://github.com/justjavac/free-programming-books-zh_CN#php) | [开源后台模板](http://www.cnblogs.com/DiYuShe/archive/2012/08/21/2648563.html)
+  * [PHP资源](https://www.zhihu.com/question/20034403) \| [Github资源](https://github.com/justjavac/free-programming-books-zh_CN#php) \| [开源后台模板](http://www.cnblogs.com/DiYuShe/archive/2012/08/21/2648563.html)
 
-  * [packagist](https://packagist.org/explore/popular)  | [segmentfault - PHP](https://segmentfault.com/t/php)
+  * [packagist](https://packagist.org/explore/popular)  \| [segmentfault - PHP](https://segmentfault.com/t/php)
 
   * [psysh](http://psysh.org/)
 
@@ -328,8 +328,13 @@ nl2br($str);
 
 * 命名空间
 
+```php
+用户编写的代码与PHP内部的类/函数/常量或第三方类/函数/常量之间的名字冲突
+为很长的标识符名称(通常是为了缓解第一类问题而定义的)创建一个别名（或简短）的名称，提高源代码的可读性
 
+在声明命名空间之前唯一合法的代码是用于定义源文件编码方式的 declare 语句。
+所有非 PHP 代码包括空白符都不能出现在命名空间的声明之前。
 ```
 
-```
+
 
