@@ -2,14 +2,9 @@
 
 * 资源
 
-  * [PHP 手册](http://php.net/manual/zh/) \| [MySQL 5.1参考手册](http://www.kancloud.cn/k12_develop/mysql51/77410)\| [Apache 2.2 官方文档](http://www.kancloud.cn/wizardforcel/apache-doc/105614) \| 
-
-          [Nginx 官方文档](http://www.kancloud.cn/wizardforcel/nginx-doc/92403) \|[鸟哥的 Linux 私房菜](http://www.kancloud.cn/thinkphp/linux_basic/43213) \| [Laravel 5文档](https://www.gitbook.com/book/lbp0200/laravel-5-doc/details)
-
+  * [PHP 手册](http://php.net/manual/zh/) | [MySQL 5.1参考手册](http://www.kancloud.cn/k12_develop/mysql51/77410)| [Apache 2.2 官方文档](http://www.kancloud.cn/wizardforcel/apache-doc/105614) | [Nginx 官方文档](http://www.kancloud.cn/wizardforcel/nginx-doc/92403) \|[鸟哥的 Linux 私房菜](http://www.kancloud.cn/thinkphp/linux_basic/43213) \| [Laravel 5文档](https://www.gitbook.com/book/lbp0200/laravel-5-doc/details)
   * [PHP资源](https://www.zhihu.com/question/20034403) \| [Github资源](https://github.com/justjavac/free-programming-books-zh_CN#php) \| [开源后台模板](http://www.cnblogs.com/DiYuShe/archive/2012/08/21/2648563.html)
-
   * [packagist](https://packagist.org/explore/popular)  \| [segmentfault - PHP](https://segmentfault.com/t/php)
-
   * [psysh](http://psysh.org/)
 
 ---
