@@ -285,6 +285,9 @@ echo add(3, 4); // 7
 include include_once
 require require_once
 
+require 生成一个致命错误（E_COMPILE_ERROR），在错误发生后脚本会停止执行。
+include 生成一个警告（E_WARNING），在错误发生后脚本会继续执行。
+
 ./ 表示当前目录 
 ../
 
