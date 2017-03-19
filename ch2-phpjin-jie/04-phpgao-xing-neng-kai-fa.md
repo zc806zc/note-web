@@ -31,13 +31,18 @@
 使用对象
 
 // 匿名函数
-// exit return
-
+// exit() return;(结束函数运行 无返回值)
 // is_callable() method_exists()
 
 // 执行外部程序
 
 // 安全模式
+php.ini safe_mode = on
+限制/禁用函数的功能
+dl() // 动态加载扩库函数 被禁用
+safe_mode_exec_dir
+safe
+ 
 
 // 提前计算循环长度    
 
