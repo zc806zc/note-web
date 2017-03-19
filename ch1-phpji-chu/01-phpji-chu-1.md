@@ -2,7 +2,9 @@
 
 * 资源
 
-  * [PHP 手册](http://php.net/manual/zh/) \| [MySQL 5.1参考手册](http://www.kancloud.cn/k12_develop/mysql51/77410)\| [Apache 2.2 官方文档](http://www.kancloud.cn/wizardforcel/apache-doc/105614) \| [Nginx 官方文档](http://www.kancloud.cn/wizardforcel/nginx-doc/92403) \|[鸟哥的 Linux 私房菜](http://www.kancloud.cn/thinkphp/linux_basic/43213) \| [Laravel 5文档](https://www.gitbook.com/book/lbp0200/laravel-5-doc/details)
+  * [PHP 手册](http://php.net/manual/zh/) \| [MySQL 5.1参考手册](http://www.kancloud.cn/k12_develop/mysql51/77410)\| [Apache 2.2 官方文档](http://www.kancloud.cn/wizardforcel/apache-doc/105614) \| 
+
+          [Nginx 官方文档](http://www.kancloud.cn/wizardforcel/nginx-doc/92403) \|[鸟哥的 Linux 私房菜](http://www.kancloud.cn/thinkphp/linux_basic/43213) \| [Laravel 5文档](https://www.gitbook.com/book/lbp0200/laravel-5-doc/details)
 
   * [PHP资源](https://www.zhihu.com/question/20034403) \| [Github资源](https://github.com/justjavac/free-programming-books-zh_CN#php) \| [开源后台模板](http://www.cnblogs.com/DiYuShe/archive/2012/08/21/2648563.html)
 
@@ -72,8 +74,8 @@ if elseif else
 // 常量 常量是全局的 大小写敏感设置
 
 // 超级全局变量
-// $_REQUEST
-action="<?php echo $_SERVER['PHP_SELF'];
+// $_REQUEST等
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"> // xss
 ```
 
 * 数据类型
@@ -321,7 +323,12 @@ $name = urlencode("A&B C");
 echo $name . "\n"; // A%26B+C
 
 // HTML特殊字符转义
-htmlspecialchars()函数
+htmlspecialchars()函数 // 预定义的字符转换为 HTML 实体
+&  &amp;
+"  &quot;
+'  &#039;
+<  &lt;
+>  &gt;
 
 $str = "hello \n world";
 nl2br($str);
