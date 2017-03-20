@@ -45,8 +45,6 @@ php.ini safe_mode = on
 dl() // 动态加载扩库函数 被禁用
 safe_mode_exec_dir
 safe
-    
-// SQL组合优化
 
 // goto 最后的手段 不常用但也是一种选择
 局部的goto 不跳出例程或者进入循环
