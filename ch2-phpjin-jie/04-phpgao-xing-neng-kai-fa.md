@@ -1,27 +1,23 @@
 #### **ch1 PHP解惑**
 
 ```php
-// ?>结束标签
-
 // empty isset is_null
-
-// 布尔值
-
-// 变量作用域
+empty函数可以接受任意形式的表达式
 
 // 多维数组排序
+usort
 
 // 超级全局数组
-
 // global 关键字 数组
-
-// 活用静态变量
+$GLOBALS['var'] 是外部的全局变量本身
+global $var是外部$var的同名引用或指针
 
 // require require_once
 // include include_once
 // autoload
-
-// = == ===
+Apache提供了apache benchmark
+ab -c 10 -n 100000 localhost/index.php
+可以用来测试脚本性能 // 例 每秒支持的访问数量 响应时间
 
 // HereDoc NowDoc
 
@@ -31,10 +27,17 @@
 使用对象
 
 // 匿名函数
+
 // exit() return;(结束函数运行 无返回值)
 // is_callable() method_exists()
 
 // 执行外部程序
+$out = `dir e:`; // `ls -al`
+echo $out;
+
+// shell_exec()实现
+$out = shell_exec("dir");
+echo $out;
 
 // 安全模式
 php.ini safe_mode = on
@@ -42,13 +45,8 @@ php.ini safe_mode = on
 dl() // 动态加载扩库函数 被禁用
 safe_mode_exec_dir
 safe
- 
-
-// 提前计算循环长度    
-
+    
 // SQL组合优化
-
-// 文件处理
 
 // goto 最后的手段 不常用但也是一种选择
 局部的goto 不跳出例程或者进入循环
@@ -65,8 +63,6 @@ end:
 echo "hi";
 // 输出
 // hi
-
-
 
 // 利用phar扩展来节省空间
 类似Java的jar
