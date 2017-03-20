@@ -76,54 +76,74 @@ echo "用户信息",get_username(),"密码",get_userpwd(); // 0.106s 推荐
 #### **ch2 深入PHP面向对象**
 
 ```php
-
+记在深入理解面向对象
 ```
 
-#### **ch3 PHP输出缓冲区**
+#### **ch3-4 PHP输出缓冲区/缓存技术**
 
-```
-
-```
-
-#### **ch4 PHP缓存技术**
-
-```
+```php
 
 ```
 
 #### **ch5 PHP网络编程**
 
-```
+```php
 
 ```
 
 #### **ch6 PHP调试、测试和工具**
 
-```
+```php
 
 ```
 
 #### **ch7 用户验证策略**
 
-```
+```php
 
 ```
 
 #### **ch8 深度理解MySQL驱动与存储引擎**
 
-```
+```php
 
 ```
 
 #### **ch9 PHP命令行界面**
 
-```
+```php
+// Command Line Interface
+CLI是简洁的CGI
+没有GET和POST处理
+无MIME的头信息输出
+以及其他隐含的SAPI的版本
 
+// 参数覆盖
+html_errors false
+implicit_flush True      // 每个输出块之后自动刷新自身数据
+max_execution_time 0     // 没有超时限制
+register_argc_argv True  // 告诉PHP是否声名argv(value 实际的参数值)和argc(count 参数数量)变量
+
+// 使用
+chmod u+rx hello.php
+php filename.php
+php -v
+php -m // 安装的模块
+php -i // phpinfo()
+php -h
+
+// CLI开发实践
+
+// CLI实际应用    
+
+// 内置服务器
+测试用 不能代替Apache或Nginx
+php -S loocalhost:8078
 ```
 
 #### **ch10 代码重构实践**
 
-```
+```php
 
 ```
 
