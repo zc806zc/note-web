@@ -55,7 +55,7 @@
       * [01-JS-函数](js-stack/ch1-jsji-chu/01-jshan-shu.md)
       * [01-JS-对象](js-stack/ch1-jsji-chu/01-jsdui-xiang.md)
       * [01-JS-编程规范](js-stack/ch1-jsji-chu/01-jsbian-cheng-gui-fan.md)
-      * [01-JS-BOM与DOM](js-stack/ch1-jsji-chu/01-js-bomyu-dom.md)
+      * [01-JS-DOM编程艺术-读后感](js-stack/ch1-jsji-chu/01-js-bomyu-dom.md)
     * [ch2-JS-进阶篇](js-stack/ch2-jsjin-jie.md)
       * [01-JS-正则表达式](js-stack/ch2-jsjin-jie/01-jszheng-ze-biao-da-shi.md)
       * [01-JSON-AJAX](js-stack/ch2-jsjin-jie/01-json-ajax.md)

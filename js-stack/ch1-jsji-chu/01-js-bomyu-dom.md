@@ -1,15 +1,16 @@
-#### **BOM基础**
+#### **BOM**
 
-* 常识
+* 引子
 
 ```js
 尚无正式标准
-使 JavaScript有能力与浏览器对话
+使JavaScript有能力与浏览器 (B)对话
 ```
 
-* 窗口与尺寸
+* 基础
 
 ```js
+// 窗口与尺寸
 window.open()  close() 
 window.moveTo()  resizeTo() -调整尺寸
 
@@ -21,17 +22,11 @@ window.print() find()
 var w=window.innerWidth
     || document.documentElement.clientWidth
     || document.body.clientWidth;
-```
+    
+//  Screen
+可用宽度 screen.availWidth   
 
-* Screen
-
-```js
-可用宽度 screen.availWidth
-```
-
-* Location
-
-```js
+// Location
 location.hostname 返回 web 主机的域名
 location.pathname 返回当前页面的路径和文件名
 location.port 返回 web 主机的端口 （80 或 443）
@@ -82,23 +77,19 @@ location.hostname = "www.yahoo.com";
 location.pathname = "mydir";
 location.port = 8080;
 
-// 位于 reload() 调用之后的代码可能会也可能不会执行，这要取决于网络延迟或系统资源等因素。为此，最好将 reload() 放在代码的最后一行。
+// 位于 reload() 调用之后的代码可能会也可能不会执行，
+// 这要取决于网络延迟或系统资源等因素。
+// 为此，最好将 reload() 放在代码的最后一行。
 location.reload(); //重新加载（有可能从缓存中加载）
 location.reload(true); //重新加载（从服务器重新加载）
-```
 
-* History
-
-```js
+// History
 history.back()  
 forward() 
 
 go(-1)
-```
 
-* Navigator
-
-```js
+// Navigator
 navigator 对象的信息具有误导性，
 不应该被用于检测 浏览器版本，
 因为navigator 数据可被浏览器使用者更改
@@ -182,7 +173,7 @@ alert(hasFlash());
 alert(hasQuickTime());
 
 navigator.registerProtocolHandler("mailto",
-"http://www.somemailclient.com?cmd=%s", "Some Mail Client");
+"http://www.somemailclient.com?cmd=%s", "Some Mail Client")
 ```
 
 * 计时事件
@@ -245,12 +236,13 @@ navigator.registerProtocolHandler("mailto",
     }
 ```
 
-#### **DOM基础**
+#### **DOM**
 
 ```js
-三个坐标 id tag class
+// 三个坐标 
+id tag class
 
-DOM操作 
+// DOM操作 
 删除子元素 
 声名与取值
 
@@ -334,6 +326,13 @@ if (x.addEventListener) {
 
 element.attachEvent(event, function);
 element.detachEvent(event, function);
+```
+
+* 参考
+
+```js
+菜鸟教程
+JavaScript DOM编程艺术
 ```
 
 
