@@ -71,7 +71,8 @@
       * [01-TypeScript基础](js-stack/ch3-jsbian-zhong/01-typescriptji-chu.md)
       * [02-ES6标准](js-stack/ch3-jsbian-zhong/02-es6biao-zhun.md)
     * [ch4-JS-圣经](js-stack/ch4-jssheng-jing.md)
-      * 01-JS权威指南-读后感1
+      * [01-JS权威指南-读后感1](js-stack/ch1-jsji-chu/01-jsquan-wei-zhi-5357-du-hou-gan-1.md)
+      * [01-JS权威指南-读后感2](js-stack/ch1-jsji-chu/01-jsquan-wei-zhi-5357-du-hou-gan-2.md)
       * [02-JS高级程序设计1](js-stack/ch1-jsji-chu/02-jsgao-ji-cheng-xu-she-ji-1.md)
       * [02-JS高级程序设计2](js-stack/ch1-jsji-chu/02-jsgao-ji-cheng-xu-she-ji-2.md)
       * [02-JS高级程序设计3](js-stack/ch1-jsji-chu/02-jsgao-ji-cheng-xu-she-ji-3.md)

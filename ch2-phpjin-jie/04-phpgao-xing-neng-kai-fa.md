@@ -138,7 +138,9 @@ php -h
 
 // 内置服务器
 测试用 不能代替Apache或Nginx
-php -S loocalhost:8078
+php -S localhost:8078
+
+
 ```
 
 #### **ch10 代码重构实践**
