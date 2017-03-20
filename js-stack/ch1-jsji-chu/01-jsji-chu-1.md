@@ -14,13 +14,12 @@ JavaScript高级程序设计
 数据结构与算法JavaScript描述 / 全端Web开发:使用JavaScript与Java
 ```
 
-* 源码下载
-  * [精通JavaScript开发](https://github.com/denodell/pro-javascript-development)
-  * [JS数据结构与算法](https://github.com/oreillymedia/data_structures_and_algorithms_using_javascript)
+* 资源
+  * [精通JavaScript开发](https://github.com/denodell/pro-javascript-development) \| [JS数据结构与算法](https://github.com/oreillymedia/data_structures_and_algorithms_using_javascript)
 
 ---
 
-* 语言
+* 语言基础
   * [对文档进行编辑](https://luo0412.github.io/learn-HTML5-CSS3/03-html5-basis/h5-page-edting.html)
   * JS使用[Unicode](https://rainsoft.io/what-every-javascript-developer-should-know-about-unicode/)字符集&lt;/del&gt; 
   * [ECMA标准](http://www.ecma-international.org/publications/standards/Ecma-262.htm)
@@ -189,10 +188,10 @@ C 语言中的哈希表
 Java 中的哈希映射
 Ruby 和 Perl 中的哈希表
 
- // 数组的推荐声名方式 
- var arr = [40, 100, 1, 5, 25, 10];
+// 数组的推荐声名方式 
+var arr = [40, 100, 1, 5, 25, 10];
 
- // 数组
+// 数组
 var cars=new Array();
 cars[0]="Saab"; cars[1]="Volvo"; cars[2]="BMW";
 
