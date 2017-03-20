@@ -118,6 +118,9 @@ CLI是简洁的CGI
 无MIME的头信息输出
 以及其他隐含的SAPI的版本
 
+DOS时代的感觉
+后台 计划任务
+
 // 参数覆盖
 html_errors false
 implicit_flush True      // 每个输出块之后自动刷新自身数据
@@ -139,8 +142,6 @@ php -h
 // 内置服务器
 测试用 不能代替Apache或Nginx
 php -S localhost:8078
-
-
 ```
 
 #### **ch10 代码重构实践**
