@@ -107,7 +107,7 @@
       * [03-MEAN开发1](js-stack/ch6-js-web/03-meankai-fa-1.md)
       * [03-MEAN开发2](js-stack/ch6-js-web/03-meankai-fa-2.md)
     * [ch4-综合](js-stack/ch6-js-web/ch4zong-he.md)
-      * [02-代码优化](js-stack/ch6-js-web/02dai-ma-you-hua.md)
+      * [02-代码优化建议](js-stack/ch6-js-web/02dai-ma-you-hua.md)
       * [02-JS应用程序设计-读后感](js-stack/ch6-js-web/02-jsying-yong-cheng-xu-she-8ba1-du-hou-gan.md)
   * [WebApp](js-stack/ch7-webapp.md)
     * [01-jq-mobile基础](js-stack/ch7-webapp/01-jq-mobileji-chu.md)
