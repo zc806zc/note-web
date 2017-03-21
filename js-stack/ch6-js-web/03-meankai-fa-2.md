@@ -49,22 +49,27 @@ CommonJS模块
 
 #### **ch4 MongoDB入门**
 
-* [MongoDB-download](https://www.mongodb.com/download-center#community) \| [以系统服务方式运行](https://docs.mongodb.com/manual/reference/configuration-options/)
-* [副本集](https://docs.mongodb.com/manual/replication/)
+* 资源
+  * [MongoDB-download](https://www.mongodb.com/download-center#community) \| [文档-系统服务方式运行](https://docs.mongodb.com/manual/reference/configuration-options/)
+  * [副本集](https://docs.mongodb.com/manual/replication/)
+* 安装
 
 ```js
 // Mongo在win10环境下的安装
+在C盘自己创建mongo,data两个文件夹
+
 下载{% em %}msi{% endem %}
 解压到C://mongo路径下
-mongo,data两个文件夹自己建
 
-mongodb并没有系统依赖
+mongodb是没有系统依赖的
 
 md data\db 指定数据文件存储目录路径
 --dbpath
 
 // 运行服务
-c:\mongodb\bin\mongod.exe
+c:\mongodb\bin\mongod.exe //启动服务
+c:\mongodb\bin\mongo.exe  // MongoDB命令行工具
+
 
 // 测试安装是否成功
 db.articles.insert({ title:"hello mongo"} )
@@ -83,32 +88,30 @@ DisplayName= "MongoDB"
 start= "auto" 
 password= "" 
 // 注意等号之后有一个空格，要以管理员身份运行
+```
 
+* MongoDB基础
 
+```js
 // NoSQL迎合的趋势
 虚拟云计算
 取代垂直扩展的水平扩展
 
 垂直扩展 给单台服务器增加CPU内存等资源
 水平扩展 增加服务器
-```
 
-* MongoDB基础
-
-```js
 // BSON/JSON
 Binary JavaScript object Notation
 高吞吐率地读写
 还支持Date等数据类型
-_id主键
 
-应用驱动生成
-mongod服务生成
-组成= ... + ... 
+// _id主键
+要么由应用驱动生成
+要么由mongod服务生成
 
 // 即席查询
-SELECT * FROM Posts WHERE Title LIKE '%mongo%'
-db.posts.finds({title:/mongo/ });
+db.posts.finds({title:/mongo/ }); // SELECT * FROM Posts WHERE Title LIKE '%mongo%'
+
 
 // 索引   
 // 查询评论多于10条的博文的查询语句
@@ -126,40 +129,37 @@ db.posts.find({ commentsCount ：{ $gt : 10 } } );
 用于支持水平扩展
 通过查询路由服务进行
 
-// MongoDB命令行工具
-c:\mongodb\bin\mongo
+
 ```
 
 * MongoDB增删改查
 
 ```js
 use mean // 新建或切换至数据库 
-// db没有创建语句
+         // db没有创建语句
 
 // 开启时带上参数 
-mongo mean
+show dbs         // 显示所有数据库
 
-show dbs
+mongo mean
 show collections // 查看所有可用的集合
 db.query.drop() // 删除posts集合
 
 // 新增 3种方法
 db.posts.insert({ "title": "First Post", "user": "bob"})
-db.posts.update({"user": "alice"},{"title":"second post","user":"alice"},
-{ upsert:true })
- db.posts.save({"title":"second post", "user":"alice"})
+db.posts.update({"user": "alice"},{"title":"second post","user":"alice"}, { upsert:true })
+db.posts.save({"title":"second post", "user":"alice"})
 
 // 读取
 db.posts.find()
 db.posts.find({})
 db.posts.find({"user":"alice"})
 db.posts.find({ "user": { $in : [ "alice", "bob"] }})
-db.posts.find({ $or : [{ "user":"alice"}, 
-{ "user": "bob" }]})
+db.posts.find({ $or : [{ "user":"alice"}, { "user": "bob" }]})
 
 // 更新
-db.posts.update({ "user" : "alice"}, { $set:{ "title": "HELLO"}}, {multi:true})
 // 也可以用save
+db.posts.update({ "user" : "alice"}, { $set:{ "title": "HELLO"}}, {multi:true})
 
 // 删除
 // drop与remove的区别
@@ -173,7 +173,7 @@ db.post.remove({"user":"alice"},true)
 * 对象关系映射     
 
 ```js
-存储设计模式
+// 存储设计模式
 键值存储
 列存储
 对象存储
