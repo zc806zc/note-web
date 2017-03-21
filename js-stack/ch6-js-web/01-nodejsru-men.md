@@ -25,6 +25,8 @@
 * 示例
 
 ```js
+Installing nodejs-legacy // ubuntu wire error或许可以解决
+
 // 运行示例 
 node filename.js
 
