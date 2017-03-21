@@ -1,7 +1,8 @@
 #### **ch1 MEAN简介**
+
 * [Code-download](https://github.com/amoshaviv/mean-web-development)
 
-```
+```js
 // 3层Web应用开发
 数据层 数据库
 逻辑层 服务器
@@ -15,8 +16,7 @@ MVC
 
 #### **ch2 Node.js入门**
 
-
-```
+```js
 // JavaScript时间驱动编程
 // Node.js时间驱动编程
 
@@ -32,11 +32,9 @@ CommonJS模块
 // Node.jsWeb应用开发
 ```
 
-
 #### **ch3 使用Express开发Web应用**
 
-
-```
+```js
 // 应用、请求和响应对象
 // 外部的中间件
 // 实现MVC模式
@@ -50,11 +48,11 @@ CommonJS模块
 ```
 
 #### **ch4 MongoDB入门**
-* [MongoDB-download](https://www.mongodb.com/download-center#community) | [以系统服务方式运行](https://docs.mongodb.com/manual/reference/configuration-options/)
+
+* [MongoDB-download](https://www.mongodb.com/download-center#community) \| [以系统服务方式运行](https://docs.mongodb.com/manual/reference/configuration-options/)
 * [副本集](https://docs.mongodb.com/manual/replication/)
-	
-	
-```
+
+```js
 // Mongo在win10环境下的安装
 下载{% em %}msi{% endem %}
 解压到C://mongo路径下
@@ -86,18 +84,18 @@ start= "auto"
 password= "" 
 // 注意等号之后有一个空格，要以管理员身份运行
 
-                
+
 // NoSQL迎合的趋势
 虚拟云计算
 取代垂直扩展的水平扩展
 
 垂直扩展 给单台服务器增加CPU内存等资源
-水平扩展 增加服务器        
+水平扩展 增加服务器
 ```
 
 * MongoDB基础
 
-```
+```js
 // BSON/JSON
 Binary JavaScript object Notation
 高吞吐率地读写
@@ -130,14 +128,11 @@ db.posts.find({ commentsCount ：{ $gt : 10 } } );
 
 // MongoDB命令行工具
 c:\mongodb\bin\mongo
-
-
 ```
-    
+
 * MongoDB增删改查
 
-
-```
+```js
 use mean // 新建或切换至数据库 
 // db没有创建语句
 
@@ -153,7 +148,7 @@ db.posts.insert({ "title": "First Post", "user": "bob"})
 db.posts.update({"user": "alice"},{"title":"second post","user":"alice"},
 { upsert:true })
  db.posts.save({"title":"second post", "user":"alice"})
- 
+
 // 读取
 db.posts.find()
 db.posts.find({})
@@ -161,11 +156,11 @@ db.posts.find({"user":"alice"})
 db.posts.find({ "user": { $in : [ "alice", "bob"] }})
 db.posts.find({ $or : [{ "user":"alice"}, 
 { "user": "bob" }]})
-  
+
 // 更新
 db.posts.update({ "user" : "alice"}, { $set:{ "title": "HELLO"}}, {multi:true})
 // 也可以用save
-  
+
 // 删除
 // drop与remove的区别
 
@@ -175,10 +170,9 @@ db.post.remove({"user":"alice"},true)
 // 删除单个文档
 ```
 
-* 对象关系映射 	
+* 对象关系映射     
 
-
-```
+```js
 存储设计模式
 键值存储
 列存储
@@ -192,17 +186,15 @@ JSON / XML
 加快读取操作 不用重新构建对象
 无模式 自由度
     维护起来不麻烦 表结构不用改 反正无模式
-    
+
 // 无结构数据库的主要问题
 缓存
 规模
-  
 ```
-    
+
 #### **ch5 Mongoose入门**
 
-
-```
+```js
 // Mongoose模式
 // 扩展Mongoose模式
 // 模型方式自定义
@@ -214,19 +206,15 @@ JSON / XML
 
 #### **ch6 使用Passport模块管理用户权限**
 
-
-```
+```js
 // Passport
 // Passport策略
 //Passport的OAuth策略
 ```
 
-
-
 #### **ch7 AngualrJS入门**
 
-
-```
+```js
 // 核心概念
 核心模块
 模块
@@ -246,12 +234,11 @@ AngularJS引用的引导
 
 #### **ch8 创建MEAN的CURD模块**
 
-
-```
+```js
 // CURD模块简介
 // 配置Express组件
 // ngResource模块简介
-// 实现AngularJS的MVC模块	
+// 实现AngularJS的MVC模块    
 创建模块服务
 建立模块控制器
 实现模块视图
@@ -260,8 +247,7 @@ AngularJS引用的引导
 
 #### **ch9 基于Socket.io的实时通信**
 
-
-```
+```js
 // WebSockets
 
 // Socket.io
@@ -270,20 +256,17 @@ AngularJS引用的引导
 事件
 命名空间
 房间
-    
+
 // Socket.io配置
 服务器
 会话
-    
+
 // 创建聊天室
 ```
 
-
-
 #### **ch10 MEAN应用的测试**
 
-
-```
+```js
 // JS测试
 TDD BDD和单元测试
 测试框架
@@ -301,14 +284,15 @@ Jasmine
 E2E测试
 ```
 
-
 #### **ch11 MEAN应用的调试和自动化**
 
-
-```
+```js
 // Grunt
 
 // node-inspector调试Express
 
 // batarang调试AngularJS
 ```
+
+
+
