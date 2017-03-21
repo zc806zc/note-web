@@ -247,10 +247,22 @@ username unique:true
 email index:true // 作为辅助索引 提升查询效率
 
 // 模型方式自定义============
-自定义静态方法
+自定义静态方法 
+UserSchema.statics.findOneByUsername = function() {};
+User.findOneByUserName('username', function(err, user){});
+
 自定义实例方法
+UserSchema.methods.authenticate = function(pwd) {
+    return this.pwd === pwd;
+}
+user.authenticate('pwd');
 
 // 模型的校验================
+required:true
+enum:['Admin','User']
+match: /.+@..../ // 正则表达式
+
+validate // 支持自定义校验
 
 // Mongoose中间件===========
 
