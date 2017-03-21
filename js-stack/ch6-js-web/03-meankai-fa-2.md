@@ -229,11 +229,30 @@ localhost:3000/users/58d10ad8c04b494e73b14474
 // 删除 
 curl -X DELETE
 localhost:3000/users/[id]
-    
-// 扩展Mongoose模式
-// 模型方式自定义
-// 模型的校验
-// 中间件
+
+// 扩展Mongoose模式========
+定义默认值 default: Date.now
+
+// 使用模式修饰符 
+trim:true 去除两端多余的空格
+自定义setter getter(当文档在下级输出之前。对文档数据进行修改)修饰符  
+
+UserSchema.set('toJSON', {getters: true}); // 强制执行getter修饰符
+
+// 增加虚拟属性
+动态计算但不用真正保存到文档的数据 例如 fullname = firstname + lastname
+
+// 使用索引优化查询
+username unique:true
+email index:true // 作为辅助索引 提升查询效率
+
+// 模型方式自定义============
+自定义静态方法
+自定义实例方法
+
+// 模型的校验================
+
+// Mongoose中间件===========
 
 // Mongoose DBRef
 ```
