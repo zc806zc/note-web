@@ -102,6 +102,7 @@
       * [02-文件依赖管理](js-stack/ch6-js-web/02wen-jian-yi-lai-guan-li.md)
       * [02-客户端模板](js-stack/ch6-js-web/02ke-hu-duan-mo-ban.md)
       * [03-浏览器调试](js-stack/ch6-js-web/03liu-lan-qi-diao-shi.md)
+      * [06-浏览器扩展](js-stack/ch6-js-web/06liu-lan-qi-kuo-zhan.md)
     * [ch3-Mean](js-stack/ch6-js-web/ch3-mean.md)
       * [03-MEAN开发1](js-stack/ch6-js-web/03-meankai-fa-1.md)
       * [03-MEAN开发2](js-stack/ch6-js-web/03-meankai-fa-2.md)
