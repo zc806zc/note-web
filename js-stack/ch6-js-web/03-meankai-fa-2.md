@@ -284,7 +284,15 @@ ref
 
 ```js
 // Passport
+登录注册 身份验证
+鉴权模块  中间件
+
 // Passport策略
+passport-local 本地策略模块
+Connect-Flash  存储临时消息
+
+使用passport.authenticate() 会自动调用req.login()
+
 //Passport的OAuth策略
 ```
 
