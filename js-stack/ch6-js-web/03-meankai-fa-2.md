@@ -128,8 +128,6 @@ db.posts.find({ commentsCount ：{ $gt : 10 } } );
 // 分片
 用于支持水平扩展
 通过查询路由服务进行
-
-
 ```
 
 * MongoDB增删改查
