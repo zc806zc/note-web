@@ -152,7 +152,8 @@ node filename.js
     + 改进工作流，创建生产就绪的代码
     + [Gulp.js](http://gulpjs.com) - "流式"构建系统
         + 相比Grunt的优势
-          + 利用Node.js的Stream, 使得一个任务的输出可以进行feed和pipe而成为另一个任务的输入，不需要一个在硬盘写入临时文件的中途步骤，更高效
+          + 利用Node.js的Stream, 使得一个任务的输出可以进行feed和pipe而成为另一个任务的输入，
+              不需要一个在硬盘写入临时文件的中途步骤，更高效
           + 配置信息不再是一个独立的很大的配置对象，而是链式调用
           + 专门设计成细分化的任务
 + 第三方库和框架的管理 
@@ -212,6 +213,12 @@ npm install gulp-uglify --save-dev
 npm install gulp-yuidoc --save-dev
 npm install gulp-rename --save-dev
 npm install gulp-header --save-dev // 没有watch, 已经在API里
+```
+
+#### 参考
+
+```js
+精通JS开发
 ```
 
 
