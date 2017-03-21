@@ -265,8 +265,19 @@ match: /.+@..../ // 正则表达式
 validate // 支持自定义校验
 
 // Mongoose中间件===========
+预处理中间件 
+例pre-save中间件会在文档保存之前执行
+UserSchema.pre('save', function() {});
 
-// Mongoose DBRef
+后置处理中间件
+例post-save 日志功能 // isNew 判断是创建还是更新
+
+// Mongoose DBRef=======
+MongoDB不支持连续查询
+ref
+在不同文档之间建立引用关系
+
+还支持在查询时将子文档填充到父文档 populate
 ```
 
 #### **ch6 使用Passport模块管理用户权限**
