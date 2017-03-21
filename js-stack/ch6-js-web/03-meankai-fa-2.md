@@ -1,4 +1,4 @@
-#### **ch1 MEAN简介**
+#### **ch1 MEAN**
 
 * [Code-download](https://github.com/amoshaviv/mean-web-development)
 
@@ -14,7 +14,7 @@ MVC
 对JSON对象进行数据封装
 ```
 
-#### **ch2 Node.js入门**
+#### **ch2 Node.js**
 
 ```js
 // JavaScript时间驱动编程
@@ -47,7 +47,7 @@ CommonJS模块
 配置会话
 ```
 
-#### **ch4 MongoDB入门**
+#### **ch4 MongoDB**
 
 * 资源
   * [MongoDB-download](https://www.mongodb.com/download-center#community) \| [文档-系统服务方式运行](https://docs.mongodb.com/manual/reference/configuration-options/)
@@ -190,10 +190,46 @@ JSON / XML
 规模
 ```
 
-#### **ch5 Mongoose入门**
+#### **ch5 Mongoose**
+
+* [Curl-download](http://curl.haxx.se/download/curl-7.33.0-win64-ssl-sspi.zip)
 
 ```js
+// 简介
 // Mongoose模式
+ODM模块
+让Express支持MongoDB
+将MongoDB的无模式方法与实际应用结合
+
+对象模式化
+
+// curl
+// 安装注意 win64
+cd curl安装文件/src curl.exe
+或者加入环境变量
+
+// 注意配置
+mongodb localhost:27017端口号问题
+http://localhost:3000/users/ // 访问,直接显示json
+http://localhost:3000/users/58d10ad8c04b494e73b14474 // 某位id用户
+
+// 新增(存在错误)
+curl -X POST 
+-H "Content-Type: application/json" 
+-d '{"firstName":"luo", "lastName":"JS", "email":"1095847440@qq.com", 
+"username":"luo0412", "password":"pwd"}' 
+localhost:3000/users
+
+// 更新
+curl -X PUT
+-H "Content-Type: application/json" 
+-d {"lastname":"Updated"}
+localhost:3000/users/58d10ad8c04b494e73b14474
+
+// 删除 
+curl -X DELETE
+localhost:3000/users/[id]
+    
 // 扩展Mongoose模式
 // 模型方式自定义
 // 模型的校验
@@ -286,7 +322,6 @@ E2E测试
 
 ```js
 // Grunt
-
 // node-inspector调试Express
 
 // batarang调试AngularJS
