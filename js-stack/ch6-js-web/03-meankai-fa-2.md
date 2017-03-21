@@ -192,7 +192,7 @@ db.posts.update({"user": "alice"},{"title":"second post","user":"alice"},{ upser
 
 
 ```
-	* JSON / XML 
+* JSON / XML 
     * 博客文章会存储在单个文档中以供查询
     * 加快读取操作 不用重新构建对象
     * 无模式 自由度
@@ -204,7 +204,7 @@ db.posts.update({"user": "alice"},{"title":"second post","user":"alice"},{ upser
 
 
 ```
-	* 缓存
+* 缓存
     * 规模
 ```
 
