@@ -1,6 +1,7 @@
 #### **ch1 MEAN简介**
 * [源码下载](https://github.com/amoshaviv/mean-web-development)
 
+
 ```
 // 3层Web应用开发
 数据层 数据库
@@ -54,6 +55,7 @@ MVC
 #### **ch4 MongoDB入门**
 * [MongoDB](https://www.mongodb.com/download-center#community)
 	* <del>[系统服务方式运行](https://docs.mongodb.com/manual/reference/configuration-options/)</del>
+	
 	
 ```
 // Mongo在win10环境下的安装
@@ -141,7 +143,6 @@ c:\mongodb\bin\mongo
 * MongoDB增删改查
 
 
-
 ```
 use mean // 新建或切换至数据库 db没有创建语句
 // 开启时带上参数 mongo mean
@@ -175,22 +176,39 @@ db.posts.update({"user": "alice"},{"title":"second post","user":"alice"},{ upser
 ```
 
 * 对象关系映射 	
+
+
+```
 	* 存储设计模式
       * 键值存储
       * 列存储
       * 对象存储
 	* 主键 外键
     	* 获取数据 -> 层级方式组织数据
+```
+
+
 * 面向文档的数据库 （文档存储 NoSQL的主流）
+
+
+```
 	* JSON / XML 
     * 博客文章会存储在单个文档中以供查询
     * 加快读取操作 不用重新构建对象
     * 无模式 自由度
     	* 维护起来不麻烦 表结构不用改 反正无模式
+```
+
+
 * 关于无结构数据库主要问题
+
+
+```
 	* 缓存
     * 规模
 ```
+
+
 
 
     
