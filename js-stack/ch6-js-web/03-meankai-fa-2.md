@@ -294,6 +294,7 @@ Connect-Flash  存储临时消息
 使用passport.authenticate() 会自动调用req.login()
 
 //Passport的OAuth策略
+
 ```
 
 #### **ch7 AngualrJS入门**
