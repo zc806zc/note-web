@@ -16,6 +16,9 @@ MVC
 
 
 #### **ch2 Node.js入门**
+
+
+```
 * JavaScript时间驱动编程
 * Node.js时间驱动编程
 * JS闭包
@@ -26,8 +29,14 @@ MVC
     * 文件模块
     * 文件夹模块
 * Node.jsWeb应用开发
+```
+
+
 
 #### **ch3 使用Express开发Web应用**
+
+
+```
 * 应用、请求和响应对象
 * 外部的中间件
 * 实现MVC模式
@@ -38,6 +47,9 @@ MVC
 * 配置文件服务
 * 静态文件服务
 * 配置会话
+```
+
+
 
 #### **ch4 MongoDB入门**
 * [MongoDB](https://www.mongodb.com/download-center#community)
@@ -60,9 +72,11 @@ db.articles.find()
 { "_id" : ObjectId("5870f0ef40d2a61007a9e062"), "title" : "hello mongo" }
 
 // 配置
-    md C:\mongodb\log
-        echo logpath=c:\mongodb\log\mongo.log > c:\mongodb\mongod.cfg
-		sc.exe create MongoDB binPath= "\"C:\mongodb\bin\mongod.exe\" --service --config= \"C:\mongodb\mongod.cfg\""  DisplayName= "MongoDB" start= "auto" password= "" // 注意等号之后有一个空格，要以管理员身份运行
+md C:\mongodb\log
+echo logpath=c:\mongodb\log\mongo.log > c:\mongodb\mongod.cfg
+sc.exe create MongoDB 
+binPath= "\"C:\mongodb\bin\mongod.exe\" --service --config= \"C:\mongodb\mongod.cfg\""  
+DisplayName= "MongoDB" start= "auto" password= "" // 注意等号之后有一个空格，要以管理员身份运行
         
 // NoSQL迎合的趋势
 虚拟云计算
@@ -118,12 +132,15 @@ db.posts.find({ commentsCount ：{ $gt : 10 } } );
 ```
 
 * MongoDB命令行工具
+
 ```
 c:\mongodb\bin\mongo
 ```
 
     
 * MongoDB增删改查
+
+
 
 ```
 use mean // 新建或切换至数据库 db没有创建语句
@@ -173,21 +190,39 @@ db.posts.update({"user": "alice"},{"title":"second post","user":"alice"},{ upser
 * 关于无结构数据库主要问题
 	* 缓存
     * 规模
+```
+
+
     
 #### **ch5 Mongoose入门**
+
+
+```
 * Mongoose模式
 * 扩展Mongoose模式
 * 模型方式自定义
 * 模型的校验
 * 中间件
 * Mongoose DBRef
+```
+
+
 
 #### **ch6 使用Passport模块管理用户权限**
+
+
+```
 * Passport
 * Passport策略
 * Passport的OAuth策略
+```
+
+
 
 #### **ch7 AngualrJS入门**
+
+
+```
 * 核心概念
 	* 核心模块
     * 模块
@@ -202,8 +237,14 @@ db.posts.update({"user": "alice"},{"title":"second post","user":"alice"},{ upser
 * 路由
 * 服务
 * 身份验证
+```
+
+
 
 #### **ch8 创建MEAN的CURD模块**
+
+
+```
 * CURD模块简介
 * 配置Express组件
 * ngResource模块简介
@@ -212,8 +253,14 @@ db.posts.update({"user": "alice"},{"title":"second post","user":"alice"},{ upser
     * 建立模块控制器
     * 实现模块视图
     * 编写AngularJS路由
+```
+
+
 
 #### **ch9 基于Socket.io的实时通信**
+
+
+```
 * WebSockets
 * Socket.io
 	* 服务器端对象
@@ -225,8 +272,14 @@ db.posts.update({"user": "alice"},{"title":"second post","user":"alice"},{ upser
 	* 服务器
     * 会话
 * 创建聊天室
+```
+
+
 
 #### **ch10 MEAN应用的测试**
+
+
+```
 * JS测试
 	* TDD BDD和单元测试
     * 测试框架
@@ -240,8 +293,17 @@ db.posts.update({"user": "alice"},{"title":"second post","user":"alice"},{ upser
 	* Jasmine
     * 单元测试
     * E2E测试
+```
+
+
     
 #### **ch11 MEAN应用的调试和自动化**
+
+
+```
 * Grunt
 * node-inspector调试Express
 * batarang调试AngularJS
+```
+
+
