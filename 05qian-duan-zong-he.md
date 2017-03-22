@@ -1,4 +1,4 @@
-#### **前端-综合**
+#### **综合**
 
 * 图像处理库
   * [6 款 Javascript 的图像处理库 - Tine](https://juejin.im/post/58c0edac0ce4630054592a78?utm_source=gold_browser_extension)
@@ -19,9 +19,9 @@
 * varharrie/angular-mdeditor
   * 基于AngularJs，提交到后台解析和保存。
   * 可以使用pegdown作解析。
-* benhail/thinker-md，osc的md编辑器 ??
+* benhail/thinker-md osc的md编辑器 
 * [菜鸟工具](https://c.runoob.com/)
-* **JSbin**
+* JSbin
 
 #### 笔记/博客
 
@@ -47,18 +47,26 @@ This text is {% em %}highlighted with **markdown**!{% endem %}
 // 简书
 ```
 
-####  IDE
+#### IDE/编辑器
+* [Adobe Brackets](http://www.jackpu.com/qian-duan-shen-qi-adobe-brackets-shi-yong-xin-de/)
+* [Sublime插件推荐](http://www.jianshu.com/p/2f30ccd41165)  | [推荐2](https://www.zhihu.com/question/37342465)
+
 
 ```
-// IDE重器
-Aptana Studio 
+// 重器
 Web Storm(商业)
 netbeans
+// Aptana Studio
 
-* **优雅的编辑器**：Sublime / Atom / VS code
-    * sublime插件
-        * **CSScomb**（CSS属性排序插件）ctrl + shift + c
-        * [推荐1](http://www.jianshu.com/p/2f30ccd41165)  | [推荐2](https://www.zhihu.com/question/37342465)
+// 优雅的编辑器
+Sublime 
+Atom
+VS code
+
+// Sublime插件
+CSScomb CSS属性排序插件
+ctrl + shift + c
+        
     *  Sublime + node.js 来运行JS 
         *  Tools --> Build System --> new Build System...
         *  复制文件内容
@@ -79,28 +87,28 @@ netbeans
         *  js filename.js执行
 
 
-+ 偏设计类：[Adobe Brackets](http://www.jackpu.com/qian-duan-shen-qi-adobe-brackets-shi-yong-xin-de/)
-```
-
-#### Java工具
-
-```
-+ eclipse
-    + 主题：[eclipse color theme](http://download.csdn.net/download/knockheart/6690825) (例sublime风)
-+ itellj idea
-* 文件编码问题的解决： 选择file encodings - utf-8 -> utf-16 -> utf-8
++ 偏设计类：
 
 ```
 
-#### 线框图与原型设计
+#### Java-工具
+
+* [eclipse color theme](http://download.csdn.net/download/knockheart/6690825)
 
 ```
-* Balsamiq
+// eclipse
+
+// itellj idea
+文件编码问题的解决
+选择file encodings 
+utf-8 -> utf-16 -> utf-8
 ```
 
+#### 线框图与原型设计-工具
 
-
-
+```
+// Balsamiq
+```
 
 
 
