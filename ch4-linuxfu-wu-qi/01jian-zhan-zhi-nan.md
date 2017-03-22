@@ -85,18 +85,22 @@ sudo mv /home/ubuntu/Desktop/imedia-test /phpstudy/www/
 
 * HTTPS升级
   * [AMH实现\(还没试过,突然成功了,好开心\)](https://bbs.aliyun.com/read/303413.html?spm=5176.100241.0.0.T6qT5U)
-  * [阿里云证书配置](https://yundun.console.aliyun.com/?spm=5176.2020520163.1001.87.ZMNtx7&p=cas#/cas/download/214052692260308) \| 
+  * [阿里云证书配置](https://yundun.console.aliyun.com/?spm=5176.2020520163.1001.87.ZMNtx7&p=cas#/cas/download/214052692260308) \| [HTTPS升级指南-ruanrf](http://www.ruanyifeng.com/blog/2016/08/migrate-from-http-to-https.html)
 
-```
+```js
 // 阿里云服务器配置
+// 稀里糊涂就突然好了
 oneinstack // ngnix
 按照他的证书服务来 
 审核通过下载配置 
 
 sudo /usr/local/nginx/sbin/nginx -s reload // 重启重启重启ngnix
 
-listen 80;
-listen 443 ssl; // ssl on; 400 报错的话，改成这样
+// 一共有两处
+// /usr/local/nginx/conf/
+// /root/oneinstack/config/
+
+listen 443 ssl; // ssl on 是 400 报错的话，改成这样
 server_name hellou.space;
 access_log /data/wwwlogs/access_nginx.log combined;
 root /data/wwwroot/default;
@@ -107,6 +111,17 @@ ssl_session_timeout 5m;
 ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE:ECDH:AES:HIGH:!NULL:!aNULL:!MD5:!ADH:!RC4;
 ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
 ssl_prefer_server_ciphers on;
+
+// 强制HTTPS访问
+貌似设置好以后自带了
+
+// 重启nginx后丢失nginx.pid的解决方法
+/usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf // 搜索即可，可能的解决方法
+
+// qmen.space 无法自动跳转到首页
+
+// 腾讯云
+
 ```
 
 ![](/assets/https-aliyun-1.jpg)
