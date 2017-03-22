@@ -11,7 +11,7 @@
   * [ch2-全栈](ch2quan-zhan.md)
     * [01-Web-基础](ch2quan-zhan/03-webcheng-xu-she-ji.md)
     * [02-全栈工程师的自我修养-读后感](ch2quan-zhan/02-webquan-zhan-gong-cheng-shi-de-zi-wo-xiu-517b-du-hou-gan.md)
-    * [03-双J\(Java,JS\)全端开发-为例](ch2quan-zhan/01-jsyu-java-quan-duan-kai-fa.md)
+    * [03-DJ全端开发-为例](ch2quan-zhan/01-jsyu-java-quan-duan-kai-fa.md)
   * [ch3-测试](ch3ce-shi.md)
     * [01-测试基础](ch3ce-shi/01ce-shi-ji-chu.md)
   * [ch4-文档书](toolbox/ch3wen-dang.md)

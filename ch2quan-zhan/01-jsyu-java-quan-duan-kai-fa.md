@@ -1,7 +1,7 @@
 #### **ch1-2 因变而变/JS工具**
 
 ```java
-
+DJ (double J) = Java + JS
 ```
 
 #### **ch3 REST和JSON**
@@ -79,7 +79,7 @@
 #### **参考**
 
 ```js
-Java与JS全端开发 
+Java与JS全端开发
 ```
 
 
