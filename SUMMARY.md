@@ -86,11 +86,13 @@
     * [02-UI组件1](js-stack/ch4-jquery/02-uizu-jian-1.md)
     * [02-UI组件2](js-stack/ch4-jquery/02-uizu-jian-2.md)
   * [JS疲劳-框架篇](js-stack/ch5-javascriptkuang-jia-pian.md)
-    * [01-JS框架概述](js-stack/ch5-javascriptkuang-jia-pian/01-jskuang-jia-gai-shu.md)
-    * [01-七周七框架-读后感](js-stack/ch5-javascriptkuang-jia-pian/01qi-zhou-qi-kuang-67b6-du-hou-gan.md)
-    * [02-React基础](js-stack/ch5-javascriptkuang-jia-pian/02-reactji-chu.md)
-    * [02-迈向Angular2](js-stack/ch5-javascriptkuang-jia-pian/02mai-xiang-angular2.md)
-    * [02-Vue.js基础](js-stack/ch5-javascriptkuang-jia-pian/02-vuejsji-chu.md)
+    * [ch1-JS-framework-sum.md](js-stack/ch5-javascriptkuang-jia-pian/ch1-js-framework-summd.md)
+      * [01-七周七框架-读后感](js-stack/ch5-javascriptkuang-jia-pian/01qi-zhou-qi-kuang-67b6-du-hou-gan.md)
+      * [01-JS框架概述](js-stack/ch5-javascriptkuang-jia-pian/01-jskuang-jia-gai-shu.md)
+    * [ch2-三足鼎立](js-stack/ch5-javascriptkuang-jia-pian/ch2san-zu-ding-li.md)
+      * [02-React基础](js-stack/ch5-javascriptkuang-jia-pian/02-reactji-chu.md)
+      * [02-迈向Angular2](js-stack/ch5-javascriptkuang-jia-pian/02mai-xiang-angular2.md)
+      * [02-Vue.js基础](js-stack/ch5-javascriptkuang-jia-pian/02-vuejsji-chu.md)
   * [JS-Web](js-stack/ch6-js-web.md)
     * [ch1-Node.js](js-stack/ch6-js-web/ch1-nodejs.md)
       * [01-Node.js基础](js-stack/ch6-js-web/01-nodejsru-men.md)
@@ -103,6 +105,9 @@
       * [02-客户端模板](js-stack/ch6-js-web/02ke-hu-duan-mo-ban.md)
       * [03-浏览器调试](js-stack/ch6-js-web/03liu-lan-qi-diao-shi.md)
     * [ch3-Mean](js-stack/ch6-js-web/ch3-mean.md)
+      * 01-MongoDB-basic
+      * 02-express-basic
+      * 03-angular-basic
       * [03-MEAN开发1](js-stack/ch6-js-web/03-meankai-fa-1.md)
       * [03-MEAN开发2](js-stack/ch6-js-web/03-meankai-fa-2.md)
     * [ch4-综合](js-stack/ch6-js-web/ch4zong-he.md)

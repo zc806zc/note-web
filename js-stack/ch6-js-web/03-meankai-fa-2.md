@@ -110,7 +110,7 @@ Binary JavaScript object Notation
 要么由mongod服务生成
 
 // 即席查询
-db.posts.finds({title:/mongo/ }); // SELECT * FROM Posts WHERE Title LIKE '%mongo%'
+db.posts.find({title:/mongo/ }); // SELECT * FROM Posts WHERE Title LIKE '%mongo%'
 
 
 // 索引   
@@ -294,7 +294,6 @@ Connect-Flash  存储临时消息
 使用passport.authenticate() 会自动调用req.login()
 
 //Passport的OAuth策略
-
 ```
 
 #### **ch7 AngualrJS入门**
