@@ -16,7 +16,7 @@
 #### **在线编辑器**
 
 * [http://dillinger.io/](http://dillinger.io/)
-* varharrie/angular-mdeditor ？？
+* varharrie/angular-mdeditor
   * 基于AngularJs，提交到后台解析和保存。
   * 可以使用pegdown作解析。
 * benhail/thinker-md，osc的md编辑器 ??
@@ -47,7 +47,7 @@ This text is {% em %}highlighted with **markdown**!{% endem %}
 // 简书
 ```
 
-####  {% em %} IDE {% endem %}
+####  IDE
 
 ```
 // IDE重器
@@ -89,6 +89,7 @@ netbeans
     + 主题：[eclipse color theme](http://download.csdn.net/download/knockheart/6690825) (例sublime风)
 + itellj idea
 * 文件编码问题的解决： 选择file encodings - utf-8 -> utf-16 -> utf-8
+
 ```
 
 #### 线框图与原型设计
