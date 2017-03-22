@@ -112,16 +112,15 @@ ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE:ECDH:AES:HIGH:!NULL:!aNULL:!MD5:!A
 ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
 ssl_prefer_server_ciphers on;
 
-// 强制HTTPS访问
-貌似设置好以后自带了
+// 强制HTTPS访问  貌似设置好以后自带了
 
 // 重启nginx后丢失nginx.pid的解决方法
 /usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf // 搜索即可，可能的解决方法
 
-// qmen.space 无法自动跳转到首页
+// qmen.space index跳转到首页 貌似被弄坏了
+// http://hellou.space/hello/index.html 照样可以不https
 
 // 腾讯云
-
 ```
 
 ![](/assets/https-aliyun-1.jpg)
