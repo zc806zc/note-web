@@ -771,5 +771,13 @@ str = strArr.join("");
   * 只有Android Chrome在浏览器转后台是任然执行JS
   * Timer完成准确控制时间任务不太靠谱
 
+##### **参考**
+
+```js
+web前端最佳实践 党建
+```
+
+
+
 
 
