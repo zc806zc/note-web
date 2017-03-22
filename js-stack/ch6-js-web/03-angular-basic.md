@@ -19,16 +19,13 @@ MVC
 
 开发大型应用
 
-
-```
-
-* 核心概念
-
-```js
 // angular全局变量
 DOM操作 -angular对象包含了一个精简版的jQuery-jqLite
+```
 
-/* 模块 */
+* 模块
+
+```js
 至少要1个模块才运行
 
 // 核心模块
@@ -41,7 +38,7 @@ DOM操作 -angular对象包含了一个精简版的jQuery-jqLite
 
 
 
-双向数据绑定
+
 依赖注入
 AngularJS指令
 AngularJS引用的引导
@@ -55,5 +52,13 @@ AngularJS引用的引导
 // 身份验证
 ```
 
+* 双向数据绑定
+
+```js
+// 
+Model View
+```
+
+* 
 
 
