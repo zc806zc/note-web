@@ -140,12 +140,15 @@ TransferLog "/phpstudy/server/httpd/logs/access_log"
 sudo /phpstudy/server/httpd/bin/apachectl restart
 
 // 其他
+// 文件夹权限
 <Directory />
 AllowOverride none
 Require all denied
 </Directory>
 
 <Directory "/phpstudy/www">
+
+// 即使https://访问，照样显示不安全
 ```
 
 ![](/assets/https-aliyun-1.jpg)
