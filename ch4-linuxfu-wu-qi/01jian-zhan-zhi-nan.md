@@ -138,6 +138,14 @@ TransferLog "/phpstudy/server/httpd/logs/access_log"
 
 // phpstudy重启apache 
 sudo /phpstudy/server/httpd/bin/apachectl restart
+
+// 其他
+<Directory />
+AllowOverride none
+Require all denied
+</Directory>
+
+<Directory "/phpstudy/www">
 ```
 
 ![](/assets/https-aliyun-1.jpg)
