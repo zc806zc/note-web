@@ -1,6 +1,6 @@
 * 盈利
 
-```
+```js
 // 成本
 供下载等流量高的 每年2-3万
 
@@ -19,7 +19,7 @@ xxx 是 xxx的唯一机会 -> 品牌好感
 
 * 基础
 
-```
+```js
 wordpress
 
 ?? wap网站 mobi手机域名
@@ -55,7 +55,7 @@ MX类型 ??
 * [mysql 远程访问授权问题](https://zhidao.baidu.com/question/358796386.html)
 * [使用ueditor 无法创建目录问题](http://blog.csdn.net/chengyi_l/article/details/46377307)
 
-```
+```js
 // 操作数据库
 /phpstudy/mysql/bin/mysql -h 127.0.0.1 -u root -p // 然后输入密码
 
@@ -79,7 +79,7 @@ sudo mv /home/ubuntu/Desktop/imedia-test /phpstudy/www/
 * JSP环境安装与配置
   * [阿里云教程](https://help.aliyun.com/document_detail/50774.html?spm=5176.doc50775.6.630.uJaGYl)
 
-```
+```js
 
 ```
 
@@ -113,21 +113,22 @@ ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
 ssl_prefer_server_ciphers on;
 
 
-// 重启nginx后丢失nginx.pid的解决方法
-/usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf // 搜索即可，可能的解决方法
-
 // 配置带来的问题
+
 // qmen.space/ 不是自动加载index.php/html 而是damain.com
 // 强制HTTPS访问  貌似设置好以后自带了
 // http://hellou.space/hello/index.html 子文件照样可以https
 // 翻不翻墙貌似也会有影响
+// 重启nginx后丢失nginx.pid的解决方法
+/usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf // 可能的解决方法
 
-// 腾讯云
+
+
+// 腾讯云配置
 照样用阿里云的教程
-我的情况阿里云买的域名 + 腾讯的ECS
+我的情况是 阿里云买的域名 + 腾讯云的ECS
 // phpstudy重启apache 
 sudo /phpstudy/server/httpd/bin/apachectl restart
-//
 ```
 
 ![](/assets/https-aliyun-1.jpg)
