@@ -123,10 +123,19 @@ ssl_prefer_server_ciphers on;
 /usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf // 可能的解决方法
 
 
-
 // 腾讯云配置
-照样用阿里云的教程
-我的情况是 阿里云买的域名 + 腾讯云的ECS
+照样用阿里云的教程 配置完httpd.conf
+我的情况是 阿里云买的域名(证书服务) + 腾讯云的ECS
+注意不要忘记配置
+/phpstudy/server/httpd/conf/extra/httpd-ssl.conf 下的
+
+DocumentRoot "/phpstudy/www"
+ServerName qmen.space:443
+ServerAdmin 1095847440@qq.com
+ErrorLog "/phpstudy/server/httpd/logs/error_log"
+TransferLog "/phpstudy/server/httpd/logs/access_log"
+
+
 // phpstudy重启apache 
 sudo /phpstudy/server/httpd/bin/apachectl restart
 ```
