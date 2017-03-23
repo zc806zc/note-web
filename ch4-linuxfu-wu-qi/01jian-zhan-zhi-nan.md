@@ -112,15 +112,22 @@ ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE:ECDH:AES:HIGH:!NULL:!aNULL:!MD5:!A
 ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
 ssl_prefer_server_ciphers on;
 
-// 强制HTTPS访问  貌似设置好以后自带了
 
 // 重启nginx后丢失nginx.pid的解决方法
 /usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf // 搜索即可，可能的解决方法
 
-// qmen.space index跳转到首页 貌似被弄坏了
-// http://hellou.space/hello/index.html 照样可以不https
+// 配置带来的问题
+// qmen.space/ 不是自动加载index.php/html 而是damain.com
+// 强制HTTPS访问  貌似设置好以后自带了
+// http://hellou.space/hello/index.html 子文件照样可以https
+// 翻不翻墙貌似也会有影响
 
 // 腾讯云
+照样用阿里云的教程
+我的情况阿里云买的域名 + 腾讯的ECS
+// phpstudy重启apache 
+sudo /phpstudy/server/httpd/bin/apachectl restart
+//
 ```
 
 ![](/assets/https-aliyun-1.jpg)
