@@ -3,7 +3,7 @@
 * [Code-download](https://github.com/mgechev/switching-to-angular2)
 
 ```js
-// 升级是值得的 // 扯淡 Angular4了...不玩了
+// 升级是值得的 // 扯淡 Angular4了...
 
 // ES2015
 模块化
@@ -82,7 +82,7 @@ Scope
 
 // TemplateRef定义通用视图
 
-// 理解并优化脏值检测机制                                                            
+// 理解并优化脏值检测机制
 ```
 
 #### **ch5 依赖注入**
@@ -95,7 +95,7 @@ DI的优点
 
 // 定义实例化服务的工厂
 
-// 子注射器及其可见性        
+// 子注射器及其可见性
 ```
 
 #### **ch6 路由和表单**
@@ -140,6 +140,13 @@ DI的优点
 // 使用angular-cli初始化项目
 
 // 入门项目
+```
+
+* 参考
+
+```js
+迈向Angular2 Minko Gechev
+菜鸟教程
 ```
 
 
