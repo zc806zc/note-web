@@ -1,4 +1,4 @@
-#### **CPP基础2**
+#### **CPP基础**
 
 * 资源
   * [Free Country](https://www.thefreecountry.com/sourcecode/cpp.shtml) \| [C and C++ Users Group](http://www.hal9k.com/cug/) 
