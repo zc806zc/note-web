@@ -70,8 +70,11 @@ Connect-Flash  存储临时消息
 
 ```js
 // CURD模块简介
+
 // 配置Express组件
+
 // ngResource模块简介
+
 // 实现AngularJS的MVC模块    
 创建模块服务
 建立模块控制器
