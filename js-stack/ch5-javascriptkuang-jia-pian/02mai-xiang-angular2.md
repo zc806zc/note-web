@@ -5,9 +5,76 @@
 
 ```
 npm install -g cnpm --registry=https://registry.npm.taobao.org
-cnpm install
+cnpm install // 工程文件夹路径改变或重命名需要再次install
+
+// 配置文件
+package.json 
+tsconfig.json     // 定义TS编译器如何从项目源文件生成 JS代码
+typings.json      // 为TS编译器无法识别的库提供额外的定义文件
+systemjs.config.js 
+// 为模块加载器提供了该到哪里查找应用模块的信息
+// 并注册了所有必备的依赖包
+// 它还包括文档中后面的例子需要用到的包
+```
+
+* 架构
+
+```js
+// 1、模块 (Modules)
+import { NgModule }      from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+@NgModule({
+  imports:      [ BrowserModule ],
+  providers:    [ Logger ],
+  declarations: [ AppComponent ],
+  exports:      [ AppComponent ],
+  bootstrap:    [ AppComponent ]
+})
+export class AppModule { }
+
+// 2、组件 (Components)
 
 
+// 3、模板 (Templates)
+<div>
+网站地址 : {{site}}
+</div>
+
+
+// 4、元数据 (Metadata)
+@Component({
+   selector : 'mylist',
+   template : '<h2>菜鸟教程</h2>'
+   directives : [ComponentDetails]
+})
+export class ListComponent{...}
+
+// 5、数据绑定 (Data Binding)
+<input [value]="currentUser.firstName"
+       (input)="currentUser.firstName=$event.target.value" >
+
+// 6、指令 (Directives)
+<li *ngFor="let site of sites"></li>
+<site-detail *ngIf="selectedSite"></site-detail>
+
+// 7、服务 (Services)
+// eg. 日志服务
+export class Logger {
+  log(msg: any)   { console.log(msg); }
+  error(msg: any) { console.error(msg); }
+  warn(msg: any)  { console.warn(msg); }
+}
+
+// 8、依赖注入 (Dependency Injection)
+在传统的开发模式中，
+调用者负责管理所有对象的依赖，
+循环依赖一直是梦魇，
+而在依赖注入模式中，
+这个管理权交给了注入器(Injector)，
+它在软件运行时负责依赖对象的替换，
+而不是在编译时。
+这种控制反转Ioc，
+运行注入的特点即是依赖注入的精华所在。
 ```
 
 * 基础
@@ -167,7 +234,7 @@ DI的优点
 
 ```js
 迈向Angular2 Minko Gechev
-菜鸟教程
+菜鸟教程 // 有几张很不错的示意图
 ```
 
 

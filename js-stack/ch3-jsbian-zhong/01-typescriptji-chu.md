@@ -4,12 +4,17 @@
 
 ```
 // npm
+npm install -g typescript
+
+tsc filename.ts
 ```
 
 * 基础
+  * [TypeScript-中文手册](http://www.runoob.com/manual/gitbook/TypeScript/_book/)
 
 ```js
 // 简介
+微软 开发的自由和开源的编程语言
 
 // 从ES2015和ES2016中引入的语法和特性
 ES2015中的箭头函数
