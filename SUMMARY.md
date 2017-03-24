@@ -143,7 +143,7 @@
   * [母语C](c-stack.md)
     * [ch1-C语言](c-stack/ch1-cyu-yan.md)
       * [01-编程语言](c-stack/ch1-cyu-yan/01bian-cheng-yu-yan.md)
-      * [02-C语言基础](c-stack/ch1-cyu-yan/02-cyu-yan-ji-chu.md)
+      * [02-C语言-语法扫盲](c-stack/ch1-cyu-yan/02-cyu-yan-ji-chu.md)
       * [02-C语言点滴-读后感](c-stack/ch1-cyu-yan/02-cyu-yan-dian-6ef4-du-hou-gan.md)
       * [03-C语言-数据结构](c-stack/ch1-cyu-yan/03-cyu-8a00-shu-ju-jie-gou.md)
     * [ch2-CPP](c-stack/ch2-cpp.md)
