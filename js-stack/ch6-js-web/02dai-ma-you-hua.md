@@ -22,18 +22,18 @@
 富文本
 语法高亮 coding
 
+// 使用YUIDoc创建一个文档网站
+
 ```
 
-* 
-* 使用YUIDoc创建一个文档网站
-  * node.js
-  * npm -g install yuidocjs
-  * cd /d , pushd dir
-  * yui \(-n\) .
-  * [github](http://yui.github.io/yuidoc/)
-  * [Dana主题](https://github.com/carlo/yuidoc-theme-dana)
-  * [more主题](http://yui.github.io/yuidoc/themes/)
-  * [官方语法指南](http://yui.github.io/yuidoc/syntax/)
+* node.js
+* npm -g install yuidocjs
+* cd /d , pushd dir
+* yui \(-n\) .
+* [github](http://yui.github.io/yuidoc/)
+* [Dana主题](https://github.com/carlo/yuidoc-theme-dana)
+* [more主题](http://yui.github.io/yuidoc/themes/)
+* [官方语法指南](http://yui.github.io/yuidoc/syntax/)
 
 #### **静态代码分析工具**
 
