@@ -21,7 +21,6 @@ bower.json // package.json结构几乎一致
 每个模块都对用各自的子文件夹对不同的实体进行组织
 但是出现了不同文件夹下的“重复”
 所以注意文件命名 eg. main.client.service.js
-
 ```
 
 * 基础
@@ -149,25 +148,84 @@ AngularJS 自成一体的框架
 
 * AngularJS 路由
 
-```
+```js
+ng-Route
+定义不同URL路径及对应模板的模块
+根据用户请求的路径来实现不同的页面填充
 
+AngularJS 的路由并不是从服务器获取相应的Web页面
+而是加载相应的模板对其进行编译
+并将得到的结果放在特定的DOM元素之中
+
+服务器只是将模板以静态文件的形式发送给浏览器
+不会响应ngRoute控制下的URL路径变化
+Express便成为了专门提供API服务的后端
+
+// 支持两种URL模式
+传统模式 #
+HTML5的路由模式 历史记录
+
+angular-route
+bower update
+
+单页应用有个致命缺陷
+SEO 爬虫无法对单页应用进行索引
+所以
+开发者可以做标记 // Hashbangs
+爬虫抓住标记会等ajax执行完毕，填充好各路径之后才离开
+
+<section ng-view></section>
 ```
 
 * AngularJS 服务
 
-```
+```js
+Angular服务都是独立的实体
+实现不同实体之间的数据共享
+eg.
+从服务器端获取数据
+共享缓存数据
+向AngularJS组件中注入全局变量
+
+可以在AngularJS-app 
+任何两个没有关联的实体之间
+实现双向数据绑定
+
+// 预置服务
+$http // ajax
+$resource // REST风格的API
+$location // URL操作
+$q        // promise操作
+$rootScope 
+$window
+
+
+// 自定义服务
 
 ```
 
 * 管理AngularJS 的身份验证
 
-```
+```js
+作为客户端的AngularJS应用如何知晓和保存相关的状态
 
+$http服务来查询用户的身份验证状态
+但这样整个应用的所有组件都得等待请求的返回
+
+所以
+直接由Express应用在EJS视图中直接填充user对象
+然后以Angular服务的方式进行封装
+
+user对象存储在JSON字符串放到主视图
+window.user = <%- user || 'null' %>;
+
+// Facebook身份验证后的跳转bug
+if(window.location.hash === '#_=_') window.location.hash = ''#!;
 ```
 
 * 参考
 
-```
+```js
 MEAN Web开发 Amos Q. Haviv
 菜鸟教程
 ```

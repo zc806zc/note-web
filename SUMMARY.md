@@ -96,6 +96,7 @@
       * [01-MongoDB-基础](js-stack/ch6-js-web/01-mongodb-basic.md)
       * [02-Express-基础](js-stack/ch6-js-web/02-express-basic.md)
       * [03-Angular1-基础](js-stack/ch6-js-web/03-angular-basic.md)
+      * [03-Angular1-实例](js-stack/ch6-js-web/03-angular1shi-li.md)
       * [03-MEAN开发-基础](js-stack/ch6-js-web/03-meankai-fa-2.md)
       * [03-MEAN开发-补充](js-stack/ch6-js-web/03-meankai-fa-1.md)
     * [ch3-发布前夕](js-stack/ch6-js-web/ch2bu-shu-fa-bu.md)
