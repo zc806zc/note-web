@@ -69,7 +69,11 @@ Connect-Flash  存储临时消息
 #### **ch8 创建MEAN的CURD模块**
 
 ```js
-// CURD模块简介
+// CURD模块简介 
+增删改查模块
+既包括服务器端的Express组件
+又包括浏览器端的AngularJS 客户端模块
+
 
 // 配置Express组件
 
