@@ -1,8 +1,7 @@
 #### **react简介**
 
 * 基础
-  * [React 安装](http://www.runoob.com/react/react-install.html)
-  * [React 组件 API](http://www.runoob.com/react/react-component-api.html)
+  * [React 安装](http://www.runoob.com/react/react-install.html) \| [React 组件 API](http://www.runoob.com/react/react-component-api.html)
 
 ```js
 一个用于构建用户界面的JS库
@@ -10,53 +9,68 @@
 
 // 环境
 Node.js 及 NPM
-建议在 React 中使用 CommonJS 模块系统，比如 browserify 或 webpack
+建议在 React 中使用 CommonJS 模块系统
+比如 browserify 或 webpack
+
+// 引入的JS文件
+react.min.js      // React 的核心库
+react-dom.min.js  // 提供与 DOM 相关的功能
+browser.min.js    // 将JSX语法转为JS语法
 ```
 
 * 特点
 
 ```js
-采用声明范式，可以轻松描述应用 
-DOM模拟，最大限度地减少与DOM的交互
+采用声明范式 // 可以轻松描述应用 
+
+DOM模拟 // 最大限度地减少与DOM的交互
+
 与已知的库或框架很好地配合
+
 JSX是JS语法的扩展
-React构建组件，代码更容易复用，适合于大项目开发
-单向响应的数据流 减少了重复代码, 比传统数据绑定更简单
-```
 
-* 其js布局
+React构建组件
+代码更容易复用
+适合于大项目开发
 
-```js
-react.min.js - React 的核心库
-react-dom.min.js - 提供与 DOM 相关的功能
-browser.min.js - 将JSX语法转为JS语法
+// 单向响应的数据流 
+减少了重复代码
+比传统数据绑定更简单
 ```
 
 * React JSX
 
 ```js
 很像 XML 的 JavaScript 语法扩展
-执行更快 代码优化。
-类型安全，在编译过程中就能发现错误。
-使用 JSX 编写模板更加简单快速。
-在 JSX 中不能使用 if else 语句，用 conditional (三元运算) 表达式替代
-推荐使用内联样式
-渲染 HTML 标签
+执行更快 // 代码优化
+类型安全 // 在编译过程中就能发现错误
+编写模板更加简单快速
 
+// 在 JSX 中不能使用 if else 语句
+用 conditional (三元运算) 表达式替代
+
+// 推荐使用内联样式渲染 HTML 标签
 var myDivElement = <div className="foo" />;
 ReactDOM.render(myDivElement, document.getElementById('example'));
-```
 
-* 渲染 React 组件
-
-```js
+// 渲染 React 组件
 var MyComponent = React.createClass({/*...*/});
 var myElement = <MyComponent someProperty={true} />;
 ReactDOM.render(myElement, document.getElementById('example'));
 
-React 的 JSX 使用大、小写的约定来区分本地组件的类和 HTML 标签。
-由于 JSX 就是 JavaScript，一些标识符像 class 和 for 不建议作为 XML 属性名。作为替代，React DOM 使用 className 和 htmlFor 来做对应的属性。
-注释 render里的标签注释要花括号？？
+
+```
+
+
+
+```js
+
+
+React 的 JSX 使用大、小写的约定来区分本地组件的类和 HTML 标签
+由于 JSX 就是 JavaScript
+一些标识符像 class 和 for 不建议作为 XML 属性名。
+作为替代，React DOM 使用 className 和 htmlFor 来做对应的属性。
+注释 render里的标签注释要花括号
 
 // 组件
 组件类只能包含一个顶层标签，否则会报错
@@ -160,6 +174,13 @@ React 支持一种非常特殊的属性 Ref ，
 
 支撑实例（ backing instance ）
 任何时间总是拿到正确的实例
+```
+
+* 参考
+
+```
+菜鸟教程
+
 ```
 
 
