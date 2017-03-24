@@ -1,13 +1,34 @@
-#### **ch1 简介**
+#### **ch1 Angular2-简介**
 
-* [Code-download](https://github.com/mgechev/switching-to-angular2)
+* [Code-download](https://github.com/mgechev/switching-to-angular2) \| [angular2文档](https://angular.io/docs/ts/latest/quickstart.html)
+* 安装
+
+```
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+cnpm install
+
+
+```
+
+* 基础
 
 ```js
-// 升级是值得的 // 扯淡 Angular4了...
+// AngularJS2 
+发布于2016年9月份
+性能上得到显著的提高 // 升级是值得的 但已经Angular4了...
 
-// ES2015
+// 立足于ES2015(即ES6)
 模块化
 块级作用域增加了语言级的内置支持
+
+需要一些 shim 和 polyfill(IE)
+让ES6写的代码能够转化为ES5形式
+并可以正常运行在浏览器中
+
+// ES5浏览器处理
+systemjs  // 通用模块加载器，支持AMD、CommonJS、ES6等各种格式的JS模块加载
+es6-module-loader // ES6模块加载器，systemjs会自动加载这个模块
+traceur // ES6转码器，将ES6代码转换为当前浏览器支持的ES5代码，systemjs会自动加载 这个模块
 
 // 语法糖
 支持class
