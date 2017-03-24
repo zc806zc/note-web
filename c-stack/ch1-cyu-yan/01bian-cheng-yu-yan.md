@@ -1,6 +1,6 @@
 #### **编程语言**
 
-* [盘点10大开发者推荐的最佳编程语言](http://gcdn.gcpowertools.com.cn/showtopic-35812-1-3.html?utm_source=gold.xitu.io&utm_medium=referral&utm_campaign=20170220)  
+* [10大最佳编程语言](http://gcdn.gcpowertools.com.cn/showtopic-35812-1-3.html?utm_source=gold.xitu.io&utm_medium=referral&utm_campaign=20170220)  
 
 ```js
   JavaScript-多用途编程语言
@@ -12,9 +12,7 @@
   Rust Language
 ```
 
-#### **自制编程语言**
-
-* 步骤
+#### **自制编程语言-读后感**
 
 ```
 
