@@ -1,6 +1,5 @@
 #### **JS文档**
 
-* 
 ```
 // 文档定义
 从源代码中提取特殊格式的文档
@@ -16,9 +15,9 @@
 
 ```
 
-*  * [JSDoc](http://usejsdoc.org/)
-  * [dox](https://github.com/tj/dox)
-  * [YUIDoc](http://yui.github.io/yuidoc/) 业内倾向
+* [JSDoc](http://usejsdoc.org/)
+* [dox](https://github.com/tj/dox)
+* [YUIDoc](http://yui.github.io/yuidoc/) 业内倾向
 
 * Markdown 更具表达性的文档格式
   * → HTML easy!
