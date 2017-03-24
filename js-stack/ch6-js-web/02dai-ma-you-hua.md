@@ -1,6 +1,9 @@
 #### **JS文档**
 
-```
+* 资源
+  * [JSDoc](http://usejsdoc.org/) \| [dox](https://github.com/tj/dox) \| [YUIDoc](http://yui.github.io/yuidoc/)\(业内倾向\)
+
+```js
 // 文档定义
 从源代码中提取特殊格式的文档
 
@@ -13,16 +16,15 @@
 
 让文档处理器只能理解我告诉它的东西 // 不要太智能
 
+// Markdown 
+更具表达性的文档格式
+转化成HTML更容易!
+富文本
+语法高亮 coding
+
 ```
 
-* [JSDoc](http://usejsdoc.org/)
-* [dox](https://github.com/tj/dox)
-* [YUIDoc](http://yui.github.io/yuidoc/) 业内倾向
-
-* Markdown 更具表达性的文档格式
-  * → HTML easy!
-  * 富文本
-  * 语法 coding
+* 
 * 使用YUIDoc创建一个文档网站
   * node.js
   * npm -g install yuidocjs
