@@ -1,4 +1,4 @@
-#### **react简介**
+#### R**eact**
 
 * 基础
   * [React 安装](http://www.runoob.com/react/react-install.html) \| [React 组件 API](http://www.runoob.com/react/react-component-api.html)
@@ -58,39 +58,41 @@ var MyComponent = React.createClass({/*...*/});
 var myElement = <MyComponent someProperty={true} />;
 ReactDOM.render(myElement, document.getElementById('example'));
 
+// 语法
+使用大、小写的约定
+来区分本地组件的类和 HTML 标签
 
-```
+一些标识符像 class 和 for 不建议作为 XML 属性名 // 由于 JSX 就是 JavaScript
 
+作为替代，React DOM 
+使用 className 和 htmlFor 来做对应的属性
 
-
-```js
-
-
-React 的 JSX 使用大、小写的约定来区分本地组件的类和 HTML 标签
-由于 JSX 就是 JavaScript
-一些标识符像 class 和 for 不建议作为 XML 属性名。
-作为替代，React DOM 使用 className 和 htmlFor 来做对应的属性。
 注释 render里的标签注释要花括号
 
-// 组件
 组件类只能包含一个顶层标签，否则会报错
 ```
 
 * React State\(状态\)
 
 ```js
-React 把组件看成是一个State Machines。通过与用户的交互，实现不同状态，然后渲染 UI，让用户界面和数据保持一致React 把组件看成是一个状态机。通过与用户的交互，实现不同状态，然后渲染 UI，让用户界面和数据保持一致
+React 把组件看成是一个State Machines
+通过与用户的交互实现不同状态
+然后渲染 UI
+让用户界面和数据保持一致
 
-React 里，只需更新组件的 state，然后根据新的 state 重新渲染用户界面（不要操作 DOM）
+只需更新组件的 state
+然后根据新的 state 重新渲染用户界面 // 不要操作 DOM
 ```
 
 * React Props
 
 ```js
-state 和 props 主要的区别在于 props 是不可变的，
+// state 和 props 主要的区别
+在于 props 是不可变的，
 而 state 可以根据与用户交互来改变
 
 子组件只能通过 props 来传递数据
+
 更多验证器
 
 React.createClass({
@@ -140,7 +142,9 @@ requiredFunc: React.PropTypes.func.isRequired,
 // 不可空的任意类型
 requiredAny: React.PropTypes.any.isRequired,
 
-// 自定义验证器。如果验证失败需要返回一个 Error 对象。不要直接使用 `console.warn` 或抛异常，因为这样 `oneOfType` 会失效。
+// 自定义验证器。如果验证失败需要返回一个 Error 对象
+// 不要直接使用 console.warn 或抛异常
+// 因为这样 oneOfType 会失效。
 customProp: function(props, propName, componentName) {
 if (!/matchme/.test(props[propName])) {
 return new Error('Validation failed!');
@@ -159,17 +163,18 @@ Updating：正在被重新渲染
 Unmounting：已移出真实 DOM
 ```
 
-* react ajax
+* React Ajax
 
 ```js
-当使用异步加载数据时，
-在组件卸载前使用 componentWillUnmount 来取消未完成的请求。
+当使用异步加载数据时
+在组件卸载前使用 componentWillUnmount 
+来取消未完成的请求
 ```
 
-* react refs
+* React refs
 
 ```js
-React 支持一种非常特殊的属性 Ref ，
+React 支持一种非常特殊的属性 Ref 
 你可以用来绑定到 render() 输出的任何组件上
 
 支撑实例（ backing instance ）
@@ -180,7 +185,6 @@ React 支持一种非常特殊的属性 Ref ，
 
 ```
 菜鸟教程
-
 ```
 
 
