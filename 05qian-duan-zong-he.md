@@ -8,7 +8,7 @@
 
 #### **在线资源**
 
-* [free-programming-books](https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md) \| [frontenddevhandbook](https://www.gitbook.com/book/dwqs/frontenddevhandbook/details) \| [史上最全FE资源](http://www.jianshu.com/p/6cb49271cd2a#)
+* [free-programming-books](https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md) \| [frontenddevhandbook](https://www.gitbook.com/book/dwqs/frontenddevhandbook/details) \| [史上最全FE资源](http://www.jianshu.com/p/6cb49271cd2a#)\| [最全的前端资源汇总](https://github.com/helloqingfeng/Awsome-Front-End-learning-resource)
 
 ```js
 
@@ -51,7 +51,7 @@ This text is {% em %}highlighted with **markdown**!{% endem %}
 基于AngularJs，提交到后台解析和保存。
 可以使用pegdown作解析。
 
-// benhail/thinker-md osc的md编辑器 
+// benhail/thinker-md osc的md编辑器
 ```
 
 #### IDE/编辑器

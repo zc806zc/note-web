@@ -340,6 +340,9 @@ b {}
 
 #### **ch8 CSS3最佳实践**
 
+* 资源
+  * 
+
 * 查看CSS3兼容情况
   * caniuse.com
   * CSS3 Click Chart （推荐）
@@ -776,8 +779,6 @@ str = strArr.join("");
 ```js
 web前端最佳实践 党建
 ```
-
-
 
 
 
