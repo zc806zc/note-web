@@ -56,20 +56,45 @@ This text is {% em %}highlighted with **markdown**!{% endem %}
 
 #### IDE/编辑器
 
-* VS code
+* [vs-code插件-](http://blog.csdn.net/u011127019/article/details/53158660)[天马3798](http://blog.csdn.net/u011127019)
 * [Sublime插件推荐](http://www.jianshu.com/p/2f30ccd41165)  \| [推荐2](https://www.zhihu.com/question/37342465)
 * [Adobe Brackets](#)
 
 ```
-// 重器
+// 1. 重器
 Web Storm(商业)
 netbeans
-// Aptana Studio
+// Aptana Studio // 没用过
 
-// 优雅的编辑器
+// 2. 优雅的编辑器
 1.Sublime 
 2.Atom
 3.VS code
+
+// vscode插件
+vscode-icons （文件图标）
+One Dark Theme (主题)
+
+HTML Snippets
+HTML CSS Support (HTML中提示可用的class)
+Auto Close Tag （自动关闭HTML标签）
+Auto Rename Tag (HTML标签自动改名)
+Beautify css/sass/scss/less
+Complete JSDoc Tags (js文档注释提示)
+
+Babel ES6/ES7 
+npm Intellisense (提示可以require的模块名称)
+Path Intellisense (路径补全)
+Reactjs code snippets (reactjs代码提示)
+Sass
+SCSS IntelliSense
+Sublime Babel
+
+// Brackets Light (主题)
+// VSCode Great Icons (文件图标)
+// Git History (查看git提交记录)
+
+
 
 // Sublime插件及配置
 CSScomb CSS属性排序插件
@@ -91,13 +116,13 @@ Ctrl + b执行JavaScript 程序
 
 
 
-// 《JS数据结构与算法》一书中提到的js shell的配置方法
+// 3. 《JS数据结构与算法》一书中提到的js shell的配置方法
 先在windows环境下设置环境变量
 pushed  folderPath 或 cd /d 进入文件夹
 js filename.js执行
 
 
-// 偏设计类编辑器
+// 4. 偏设计类编辑器
 // Adobe Brackets // 没怎么用过
 ```
 

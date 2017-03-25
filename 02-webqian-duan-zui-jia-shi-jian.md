@@ -341,12 +341,15 @@ b {}
 #### **ch8 CSS3最佳实践**
 
 * 资源
+
   * 
 
 * 查看CSS3兼容情况
+
   * caniuse.com
   * CSS3 Click Chart （推荐）
   * [CSS contents and browser compatibility](http://www.quirksmode.org/css/contents.html)
+
 * 添加浏览器前缀
   * 在线： Prefixr
   * 灵活度更高 -&gt; Autoprefixer 有sublime插件
