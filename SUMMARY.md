@@ -83,7 +83,7 @@
       * [01-jQuery-基础1](js-stack/ch4-jquery/01-jqueryji-chu-1.md)
       * [01-jQuery-基础2](js-stack/ch4-jquery/01-jqueryji-chu-2.md)
       * [02-jQuery-UI](js-stack/ch4-jquery/02-jquery-ui.md)
-    * [ch3-JS界的三足鼎立](js-stack/ch5-javascriptkuang-jia-pian/ch2san-zu-ding-li.md)
+    * [ch3-三足鼎立](js-stack/ch5-javascriptkuang-jia-pian/ch2san-zu-ding-li.md)
       * [01-React-基础](js-stack/ch5-javascriptkuang-jia-pian/02-reactji-chu.md)
       * [02-迈向Angular2-读后感](js-stack/ch5-javascriptkuang-jia-pian/02mai-xiang-angular2.md)
       * [02-Angular2-语法补充](js-stack/ch5-javascriptkuang-jia-pian/02-angular2-basic2.md)
