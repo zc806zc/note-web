@@ -63,11 +63,15 @@ restrict 默认值为 EA, 即可以通过元素名和属性名来调用指令
 
 // 过滤器
 <p>姓名为 {{ lastName | uppercase }}</p>
-currency	格式化数字为货币格式
-filter	        从数组项中选择一个子集
-lowercase	格式化字符串为小写
-orderBy	        根据某个表达式排列数组
-uppercase	格式化字符串为大写
+currency    格式化数字为货币格式
+filter            从数组项中选择一个子集
+lowercase    格式化字符串为小写
+orderBy            根据某个表达式排列数组
+uppercase    格式化字符串为大写
+
+// 下拉列表实现
+<select ng-model="selectedSite" ng-options="x for (x, y) in sites"></select>
+<select ng-model="selectedCar" ng-options="y.brand for (x, y) in cars"></select>
 ```
 
 * 模块
