@@ -62,7 +62,12 @@ M 注释 <!-- directive: runoob-directive -->
 restrict 默认值为 EA, 即可以通过元素名和属性名来调用指令
 
 // 过滤器
-
+<p>姓名为 {{ lastName | uppercase }}</p>
+currency	格式化数字为货币格式
+filter	        从数组项中选择一个子集
+lowercase	格式化字符串为小写
+orderBy	        根据某个表达式排列数组
+uppercase	格式化字符串为大写
 ```
 
 * 模块
@@ -76,7 +81,7 @@ restrict 默认值为 EA, 即可以通过元素名和属性名来调用指令
 由核心框架的开发团队开发
 但是不会在核心模块
 
-// 第三方模块  
+// 第三方模块
 ```
 
 * 双向数据绑定

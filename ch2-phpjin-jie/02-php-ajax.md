@@ -22,6 +22,14 @@ localhost改成127.0.0.1使更通用
 // 不要用已经配置过的discuz和wecenter文件夹
 ```
 
+* Ajax
+
+  * [PHP AJAX 跨域问题](http://www.runoob.com/w3cnote/php-ajax-cross-border.html)
+
+```js
+
+```
+
 #### **面向对象网站开发**
 
 ```
