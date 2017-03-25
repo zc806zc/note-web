@@ -37,7 +37,7 @@ bower.json // package.json结构几乎一致
 可通过 <script> 标签添加到 HTML 页面
 
 MVC
-单页面
+单页面SPAs
 浏览器模板 
 双向数据绑定 M和V之间data的无缝同步
 简化DOM操作
