@@ -26,14 +26,12 @@ bower.json // package.json结构几乎一致
 * 基础
 
 ```js
-// angular1 
-至少还会流行一段时间 // 虽然已经在边缘
+// Angular1 
+至少还会流行一段时间 // 虽然已经被挤到边缘
 
-始于2009
-发布于2012
-使用JSON来提供服务的平台
-结构化框架
-连接JS和HTML
+始于2009 发布于2012
+使用 JSON 来提供服务的平台
+结构化框架 连接JS和HTML
 可通过 <script> 标签添加到 HTML 页面
 
 MVC
@@ -42,10 +40,11 @@ MVC
 双向数据绑定 M和V之间data的无缝同步
 简化DOM操作
 
-开发大型应用
-AngularJS 支持输入验证
+开发大型应用 
+// AngularJS 支持输入验证
+// 完美支持数据库的 CRUD
 
-AngularJS 属性以 ng- 开头，
+// AngularJS 属性以 ng- 开头，
 但是您可以使用 data-ng- 来让网页对 HTML5 有效
 
 // Angular全局变量
