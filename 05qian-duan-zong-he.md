@@ -1,7 +1,6 @@
-#### **综合**
+#### 图像处理
 
-* 图像处理库
-  * [6 款 Javascript 的图像处理库 - Tine](https://juejin.im/post/58c0edac0ce4630054592a78?utm_source=gold_browser_extension)
+* [6 款 Javascript 的图像处理库 - Tine](https://juejin.im/post/58c0edac0ce4630054592a78?utm_source=gold_browser_extension)
 
 ```js
 
@@ -9,48 +8,57 @@
 
 #### **在线资源**
 
-* [语言大全 free-programming-books](https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md)
-* [前端大全书 frontenddevhandbook](https://www.gitbook.com/book/dwqs/frontenddevhandbook/details)
-* [史上最全的前端资源大汇总](http://www.jianshu.com/p/6cb49271cd2a#)
+* [free-programming-books](https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md) \| [frontenddevhandbook](https://www.gitbook.com/book/dwqs/frontenddevhandbook/details) \| [史上最全FE资源](http://www.jianshu.com/p/6cb49271cd2a#)
+
+```js
+
+```
 
 #### **在线编辑器**
 
-* [http://dillinger.io/](http://dillinger.io/)
-* varharrie/angular-mdeditor
-  * 基于AngularJs，提交到后台解析和保存。
-  * 可以使用pegdown作解析。
-* benhail/thinker-md osc的md编辑器 
-* [菜鸟工具](https://c.runoob.com/)
-* JSbin
+* [dillinger.io](http://dillinger.io/) \| JSbin \| [菜鸟工具](https://c.runoob.com/)
+
+```js
+
+```
 
 #### 笔记/博客
 
-* [sphinx](http://www.sphinx-doc.org/en/stable/)
-* [MkDocs](http://www.mkdocs.org/) md -&gt; html
+* [sphinx](http://www.sphinx-doc.org/en/stable/)\(还没试过\) \| [MkDocs](http://www.mkdocs.org/) \(md -&gt; html,没试\)
+
 * [Gitbook插件安装配置- 星夜雨年](http://www.tuicool.com/articles/JjQ3qm)
 
-```
-// gitbook
+```js
+// gitbook与看云
 使用插件前一定要
-npm install gitbook-plugin-插件名 
-// 坑哭我...
-// 可能太理所当然了,就没人说
-// gitbook官网的话直接写book.json就行
+npm install gitbook-plugin-插件名 // 坑哭... 可能太理所当然了,就没人说
 
-// 高亮插件示例
+gitbook官网的话直接写book.json就会提供支持
+
+// gitbook高亮插件示例
 This text is {% em %}highlighted with **markdown**!{% endem %}
 
 // 看云
-国内较gitbook稳定并方便使用些
-但是长远起见还是用了gitbook
+在国内较gitbook稳定并方便使用 (插件什么都配置好了)
+可惜有空间限制
+所以
+长远起见还是用了gitbook...
 
 // 简书
+
+// 其他(都没试过)
+// varharrie/angular-mdeditor
+基于AngularJs，提交到后台解析和保存。
+可以使用pegdown作解析。
+
+// benhail/thinker-md osc的md编辑器 
 ```
 
 #### IDE/编辑器
-* [Adobe Brackets](http://www.jackpu.com/qian-duan-shen-qi-adobe-brackets-shi-yong-xin-de/)
-* [Sublime插件推荐](http://www.jianshu.com/p/2f30ccd41165)  | [推荐2](https://www.zhihu.com/question/37342465)
 
+* VS code
+* [Sublime插件推荐](http://www.jianshu.com/p/2f30ccd41165)  \| [推荐2](https://www.zhihu.com/question/37342465)
+* [Adobe Brackets](#)
 
 ```
 // 重器
@@ -59,36 +67,38 @@ netbeans
 // Aptana Studio
 
 // 优雅的编辑器
-Sublime 
-Atom
-VS code
+1.Sublime 
+2.Atom
+3.VS code
 
-// Sublime插件
+// Sublime插件及配置
 CSScomb CSS属性排序插件
 ctrl + shift + c
-        
-    *  Sublime + node.js 来运行JS 
-        *  Tools --> Build System --> new Build System...
-        *  复制文件内容
+
+// Sublime + node.js 来运行JS 
+Tools --> Build System --> new Build System...
+复制以下文件内容
+
+{
+"cmd": ["node", "$file"],
+"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+"selector": "source.javascript"
+}
+
+文件保存为 JavaScript.sublime-build
+重启，勾选Tools --> Build System --> JavaScript
+Ctrl + b执行JavaScript 程序
 
 
-        {
-        "cmd": ["node", "$file"],
-        "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
-        "selector": "source.javascript"
-        }
 
-        *  文件保存为 JavaScript.sublime-build
-        *  重启，勾选Tools --> Build System --> JavaScript
-        *  Ctrl + b执行JavaScript 程序.
-    *  《JavaScript数据结构与算法》一书中提到的js shell的配置方法
-        *  windows环境下设置环境变量
-        *  pushed  folderPath 或 cd /d 进入文件夹
-        *  js filename.js执行
+// 《JS数据结构与算法》一书中提到的js shell的配置方法
+先在windows环境下设置环境变量
+pushed  folderPath 或 cd /d 进入文件夹
+js filename.js执行
 
 
-+ 偏设计类：
-
+// 偏设计类编辑器
+// Adobe Brackets // 没怎么用过
 ```
 
 #### Java-工具
