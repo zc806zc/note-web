@@ -1,4 +1,4 @@
-#### **ch1-2 前端开发概述**
+#### **ch1-2 前端概述**
 
 * 概述
 
@@ -342,28 +342,28 @@ b {}
 
 * 资源
 
-  * 
+  * CSS3兼容查看: caniuse.com \| CSS3 Click Chart \|  [CSS contents and browser compatibility](http://www.quirksmode.org/css/contents.html)
+  * 添加浏览器前缀
+    * 在线： Prefixr
+    * Autoprefixer \(灵活度更高 -&gt; sublime插件\)
+    * cssFx, CSS Agent, -prefix-tree
+    * sass, less 的模板功能
 
-* 查看CSS3兼容情况
+```
+// 不要过度添加前缀，例-ms-border-radius
 
-  * caniuse.com
-  * CSS3 Click Chart （推荐）
-  * [CSS contents and browser compatibility](http://www.quirksmode.org/css/contents.html)
+标准定义放在最后，反正会覆盖到
 
-* 添加浏览器前缀
-  * 在线： Prefixr
-  * 灵活度更高 -&gt; Autoprefixer 有sublime插件
-  * cssFx, CSS Agent, -prefix-tree
-  * sass, less 的模板功能
-  * 但不要过度添加前缀，例-ms-border-radius
-  * 标准定义放在最后，反正会覆盖到
-* 优雅降级或兼容处理
-  * 渐变背景色 -&gt; 单一背景色
-  * IE的filter样式
-  * JS实现，例框架Modernizr
-* HTML5建议网站 -&gt; html5please
+// 优雅降级或兼容处理
+渐变背景色 -> 单一背景色
+IE的filter样式
+JS实现，例框架Modernizr
+HTML5建议网站: html5please
+```
 
 #### **ch09 JS - 高维护性**
+
+* 基础
 
 ```js
 // 避免定义全局变量或函数
@@ -394,66 +394,84 @@ hi.init();
 
 避免使用with 多出单独的作用
 避免eval
+
+// 不要编写检测浏览器的代码
+取而代之的是检测浏览器是否支持某一特定功能 $.support
+或者Modernizr
+
+兼容代码单独放在文件里
+<! -- [if it ie 9]>
+<script src="xx.js"></script>
+<! [endif]-->
 ```
 
-* 不要编写检测浏览器的代码
-  * 取而代之的是检测浏览器是否支持某一特定功能 $.support
-  * Modernizr
-  * 兼容代码单独放在文件里
+* 其他
 
 ```js
-    <! -- [if it ie 9]>
-      <script src="xx.js"></script>
-    <! [endif]-->
-```
+// use strict 
+不要全局启用
+放函数里或放在自执行函数里
 
-* use strict 
-  * 不要全局启用，放函数里或放在自执行函数里
-  * 在已有代码中谨慎启用严格模式 - 重构
-* JSHint JSLint
-* 事件处理与业务逻辑分离
-* 配置数据与代码逻辑分离
-* 逻辑与结构样式分离
-  * 从JS中分离CSS
-    * style.borderColor -&gt; style.cssText
-    * style.cssText -&gt; className += “empty”
-      * h5 list\[i\].classList.add\('empty'\);
-  * 从JS中分离HTML
-    * 从服务器端获取html
-      * Jq $\(''\).load\(\);
-    * 从客户端动态生成页面结构
-      * h5 template标签
+在已有代码中谨慎启用严格模式 - 重构
 
-```js
-        <script id="main_info" type="text/x-tmpl">
-          <li><b>${name}<b> (${class})</li>
-        </script>  
+// JSHint JSLint
 
-        var infoTmpl = document.getElementById('main_info').innerHTML();
+//  分离
+事件处理与业务逻辑分离
+配置数据与代码逻辑分离
+逻辑与结构样式分离
+
+// 从JS中分离CSS
+style.borderColor -> style.cssText
+style.cssText -> className += “empty”
+h5 list[i].classList.add('empty');
+
+// 从JS中分离HTML
+从服务器端获取html
+Jq $('').load();
+从客户端动态生成页面结构
+h5 template标签
+
+<script id="main_info" type="text/x-tmpl">
+<li><b>${name}<b> (${class})</li>
+</script>
+
+var infoTmpl = document.getElementById('main_info').innerHTML();
 ```
 
 * JS模板的使用
-  * Mustache Logic-less 易被集成
-  * Handlebars 支持预编译
-  * underscore
-  * 其他： Jade EJS Micro-Templating
-  * 网站 Template-engine-chooser
-  * 不要在模板中滥用逻辑块
-  * 不要构建太复杂的模板
-  * 使用预编译模板
-    * Grunt预先把Handlebars
+
+```
+Mustache Logic-less 易被集成
+Handlebars 支持预编译
+underscore
+其他： Jade EJS Micro-Templating
+网站 Template-engine-chooser
+不要在模板中滥用逻辑块
+不要构建太复杂的模板
+使用预编译模板
+Grunt预先把Handlebars
+```
+
 * 使用MVC模式
-  * Angular Meteor Ember Knockout Backbone
-  * 双向绑定 模板 路由 可观察对象
-  * TodoMVC项目
-* JS模块化开发
-  * CommonJS 同步 node.js 服务器端
-  * **AMD** 异步 有网络延迟的浏览器
-    * requireJS 管理前端代码模块
-    * curl 
-    * jquery也可支持
 
 ```js
+Angular Meteor Ember Knockout Backbone
+双向绑定 模板 路由 可观察对象
+TodoMVC项目
+
+```
+
+* JS模块化开发
+
+```js
+        
+CommonJS 同步 node.js 服务器端
+AMD 异步 有网络延迟的浏览器
+requireJS 管理前端代码模块
+curl
+jquery也可支持
+
         // 防污染
         var module = (function($, mudule2) {
           // code
@@ -473,17 +491,20 @@ hi.init();
 ```
 
 * 合理使用AJAX技术
-  * 明确ajax的使用场景
-    * 有些跳转页面即可
-    * ajax会破坏浏览器回退按钮 - jquery-hashchange
-  * 借助成熟的ajax框架，但不要忘记原生方法
-    * jQuery, Dojo， YUI， ExtJS
-  * 做好用户交互
-    * 进行ajax时给用户反馈
-    * 防止用户重复操作 禁用按钮
-    * 时间限制，超时终止
-  * 使用JSON
-  * 使用合适的方案，弥补ajax的不足
+
+```
+明确ajax的使用场景
+有些跳转页面即可
+ajax会破坏浏览器回退按钮 - jquery-hashchange
+借助成熟的ajax框架，但不要忘记原生方法
+jQuery, Dojo， YUI， ExtJS
+做好用户交互
+进行ajax时给用户反馈
+防止用户重复操作 禁用按钮
+时间限制，超时终止
+使用JSON
+使用合适的方案，弥补ajax的不足
+```
 
 #### **ch10 JS - 高性能**
 
@@ -668,11 +689,18 @@ str = strArr.join("");
 
 #### **ch12 移动Web前端**
 
-* 以webkit为核心的浏览器占主导
-  * 兼容 - 就放心了
-  * 浏览器是移动Web网页的载体
-* 移动与PC的差异
-  * 显示
+```
+市场以webkit为核心的浏览器占主导 // 易于兼容工作
+// 浏览器是移动Web网页的载体
+ 
+// 移动与PC的差异
+// 显示 
+viewport
+虚拟 
+// 操作 
+```
+
+*  * 显示
     * viewport
     * 虚拟键盘遮挡
   * 操作
