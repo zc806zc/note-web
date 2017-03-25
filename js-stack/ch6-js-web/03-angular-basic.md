@@ -34,6 +34,7 @@ bower.json // package.json结构几乎一致
 使用JSON来提供服务的平台
 结构化框架
 连接JS和HTML
+可通过 <script> 标签添加到 HTML 页面
 
 MVC
 单页面
@@ -42,9 +43,17 @@ MVC
 简化DOM操作
 
 开发大型应用
+AngularJS 支持输入验证
 
-// angular全局变量
+AngularJS 属性以 ng- 开头，
+但是您可以使用 data-ng- 来让网页对 HTML5 有效
+
+// Angular全局变量
 DOM操作 -angular对象包含了一个精简版的jQuery-jqLite
+
+// Angular表达式与JS表达式的区别
+AngularJS 表达式不支持条件判断，循环及异常
+AngularJS 表达式支持过滤器
 ```
 
 * 模块
