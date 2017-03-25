@@ -53,6 +53,14 @@ DOM操作 -angular对象包含了一个精简版的jQuery-jqLite
 // Angular表达式与JS表达式的区别
 AngularJS 表达式不支持条件判断，循环及异常
 AngularJS 表达式支持过滤器
+
+// Angular指令
+restrict 值可以是以下几种:
+E 作为元素名使用
+A 作为属性使用
+C 作为类名使用
+M 作为注释使用
+restrict 默认值为 EA, 即可以通过元素名和属性名来调用指令。
 ```
 
 * 模块
