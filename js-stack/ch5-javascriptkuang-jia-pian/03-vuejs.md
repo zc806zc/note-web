@@ -48,10 +48,8 @@ Vue.js 不支持 IE8 及其以下 IE 版本 // 干得好！！
 * 语法
 
 ```js
-<a v-on:click="doSomething">
-
 // 修饰符
-<form v-on:submit.prevent="onSubmit"></form>
+<form v-on:submit.prevent="onSubmit"></form> // 阻止浏览器默认行为
 
 // 缩写
 <a v-bind:href="url"></a>
@@ -60,6 +58,22 @@ Vue.js 不支持 IE8 及其以下 IE 版本 // 干得好！！
 <a v-on:click="doSomething"></a>
 <a @click="doSomething"></a> <!-- 缩写 -->
 
+// 暴露
+var data = { a: 1 }
+var vm = new Vue({
+  el: '#example',
+  data: data
+})
+vm.$data === data // true
+vm.$el === document.getElementById('example') // true
+vm.$watch('a', function (newVal, oldVal) {
+  // 这个回调将在 `vm.a`  改变后调用
+})
+
+// Handlebars 模板
+{{#if ok}}
+  <h1>Yes</h1>
+{{/if}}
 ```
 
 * 组件
