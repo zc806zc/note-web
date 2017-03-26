@@ -9,6 +9,7 @@
 // 创建大型应用时
 cnpm install vue
 cnpm install --global vue-cli // 命令行
+vue init webpack my-project   // 基于webpack创建vue项目
 ```
 
 * 基础
