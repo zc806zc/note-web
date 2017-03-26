@@ -25,8 +25,7 @@
     * [02-HTML5基础](ch1-html5/02-html5ji-chu.md)
     * [02-HTML5基础2](ch1-html5/02-html5ji-chu-2.md)
     * [02-HTML5基础3](ch1-html5/02-html5ji-chu-3.md)
-    * [02-WebRTC基础1](ch1-html5/02-webrtcji-chu-1.md)
-    * [02-WebRTC基础2](ch1-html5/02-webrtcji-chu-2.md)
+    * [02-WebRTC-基础](ch1-html5/02-webrtcji-chu-2.md)
     * [02-新兴API](ch1-html5/02xin-xing-api.md)
   * [CSS3](ch2-css3.md)
     * ch1-CSS-basic

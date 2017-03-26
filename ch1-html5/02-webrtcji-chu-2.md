@@ -1,11 +1,12 @@
 #### **使用WebRTC实现视频聊天**
-+ 在互联网上的两个浏览器之间将多媒体数据以流的方式进行传输
-+ WebRTC 网络实时通信
-+ 依赖于交互式连接建立ICE框架 -- RTCPeerConnection
-+ 在浏览器之间建立点对点连接，自动处理与防火墙或网络地址转化相关的复杂性内容
-+ 对媒体流进行解码
-+ 音频回声抵消
-+ getUserMadia
+
+* 在互联网上的两个浏览器之间将多媒体数据以流的方式进行传输
+* WebRTC 网络实时通信
+* 依赖于交互式连接建立ICE框架 -- RTCPeerConnection
+* 在浏览器之间建立点对点连接，自动处理与防火墙或网络地址转化相关的复杂性内容
+* 对媒体流进行解码
+* 音频回声抵消
+* getUserMadia
 
 ```
 // Expose the browser-specific versions of the getUserMedia() method through the standard
@@ -15,7 +16,8 @@
 navigator.getUserMedia = navigator.getUserMedia || navigator.mozGetUserMedia ||
 navigator.webkitGetUserMedia || navigator.msGetUserMedia;
 ```
-+ 访问网络摄像头和麦克风
+
+* 访问网络摄像头和麦克风
 
 ```
 // Define a function to execute if we are successfully able to access the user's webcam and
@@ -48,7 +50,8 @@ audio: true
 throw new Error("Sorry, getUserMedia() is not supported in your browser");
 }
 ```
-+ 把网络摄像头和麦克风的数据内容回拨给用户
+
+* 把网络摄像头和麦克风的数据内容回拨给用户
 
 ```
 // Use the getUserMedia() polyfill from Listing 12-1 for best cross-browser support
@@ -91,15 +94,22 @@ throw new Error("Sorry, getUserMedia() is not supported in your browser");
 }
 ```
 
-+ 一个简单的视频聊天网页应用程序
-+ 连接与信令交互
-+ 利用[Firebase](https://firebase.google.com/)服务实现简单信令交互
-+ NAT会话传输应用程序 STUN
-+ 通过Relay方式穿越NAT TURN 中继工作方式 数据带宽减少
-+ [搭建自己的STUN/TURN服务器](http://numb.viagenie.ca/)
-+ 公共STUN服务器
-+ Mozilla stun:23.21.150.121
-+ Google stun:stun.l.google.com:19302
-+ 更好的解决方案
-+ EventSource API
-+ WebSocket
+* 一个简单的视频聊天网页应用程序
+* 连接与信令交互
+* 利用[Firebase](https://firebase.google.com/)服务实现简单信令交互
+* NAT会话传输应用程序 STUN
+* 通过Relay方式穿越NAT TURN 中继工作方式 数据带宽减少
+* [搭建自己的STUN/TURN服务器](http://numb.viagenie.ca/)
+* 公共STUN服务器
+* Mozilla stun:23.21.150.121
+* Google stun:stun.l.google.com:19302
+* 更好的解决方案
+* EventSource API
+* WebSocket
+
+#### **WebRTC基础**
+
+* [WebRTC 点对点直播](https://segmentfault.com/a/1190000008416360)
+
+
+
