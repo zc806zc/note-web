@@ -1,20 +1,20 @@
 #### R**eact**
 
-* 基础
+* 资源
   * [React 安装](http://www.runoob.com/react/react-install.html) \| [React 组件 API](http://www.runoob.com/react/react-component-api.html)
+* 基础
 
 ```js
-一个用于构建用户界面的JS库
-起源于Instagram
+一个用于构建 用户界面 的JS库
+// 起源于Instagram
 
 // 环境
 Node.js 及 NPM
-建议在 React 中使用 CommonJS 模块系统
-比如 browserify 或 webpack
+建议使用 CommonJS 模块系统 // browserify 或 webpack
 
 // 引入的JS文件
-react.min.js      // React 的核心库
-react-dom.min.js  // 提供与 DOM 相关的功能
+react.min.js      // 核心库
+react-dom.min.js  // DOM 相关
 browser.min.js    // 将JSX语法转为JS语法
 ```
 
