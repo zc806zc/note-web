@@ -16,20 +16,16 @@ Node.js 及 NPM
 react.min.js      // 核心库
 react-dom.min.js  // DOM 相关
 browser.min.js    // 将JSX语法转为JS语法
-```
 
-* 特点
-
-```js
+// 特点
 采用声明范式 // 可以轻松描述应用 
-
-DOM模拟 // 最大限度地减少与DOM的交互
-
+DOM模拟 virtual-Dom // 最大限度地减少与DOM的交互
 与已知的库或框架很好地配合
 
-JSX是JS语法的扩展
+// JSX
+JS语法的扩展
 
-React构建组件
+// 组件
 代码更容易复用
 适合于大项目开发
 
@@ -38,26 +34,9 @@ React构建组件
 比传统数据绑定更简单
 ```
 
-* React JSX
+* 语法
 
 ```js
-很像 XML 的 JavaScript 语法扩展
-执行更快 // 代码优化
-类型安全 // 在编译过程中就能发现错误
-编写模板更加简单快速
-
-// 在 JSX 中不能使用 if else 语句
-用 conditional (三元运算) 表达式替代
-
-// 推荐使用内联样式渲染 HTML 标签
-var myDivElement = <div className="foo" />;
-ReactDOM.render(myDivElement, document.getElementById('example'));
-
-// 渲染 React 组件
-var MyComponent = React.createClass({/*...*/});
-var myElement = <MyComponent someProperty={true} />;
-ReactDOM.render(myElement, document.getElementById('example'));
-
 // 语法
 使用大、小写的约定
 来区分本地组件的类和 HTML 标签
@@ -70,6 +49,27 @@ ReactDOM.render(myElement, document.getElementById('example'));
 注释 render里的标签注释要花括号
 
 组件类只能包含一个顶层标签，否则会报错
+```
+
+* React JSX
+
+```js
+很像 XML 的 JS语法扩展
+执行更快 
+类型安全 // 在编译过程中就能发现错误
+// 编写模板更加简单快速
+
+在 JSX 中不能使用 if else 语句
+用 conditional (三元运算) 表达式替代
+
+// 推荐使用 内联样式 渲染 HTML 标签
+var myDivElement = <div className="foo" />;
+ReactDOM.render(myDivElement, document.getElementById('example'));
+
+// 渲染 React 组件
+var MyComponent = React.createClass({/*...*/});
+var myElement = <MyComponent someProperty={true} />;
+ReactDOM.render(myElement, document.getElementById('example'));
 ```
 
 * React State\(状态\)
