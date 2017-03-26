@@ -34,6 +34,9 @@ README.md
 
 // ESlint 
 newline 末尾要有空白行
+
+// IDE
+atom
 ```
 
 * 基础
@@ -45,6 +48,17 @@ Vue.js 不支持 IE8 及其以下 IE 版本 // 干得好！！
 * 语法
 
 ```js
+<a v-on:click="doSomething">
+
+// 修饰符
+<form v-on:submit.prevent="onSubmit"></form>
+
+// 缩写
+<a v-bind:href="url"></a>
+<a :href="url"></a> <!-- 缩写 -->
+
+<a v-on:click="doSomething"></a>
+<a @click="doSomething"></a> <!-- 缩写 -->
 
 ```
 
