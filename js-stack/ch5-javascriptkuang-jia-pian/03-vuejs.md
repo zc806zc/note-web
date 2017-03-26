@@ -31,14 +31,15 @@ test            // 初始测试目录，可删除
 index.html    // 首页入口文件 可以添加一些 meta 信息或统计代码
 package.json    
 README.md
+
+// ESlint 
+newline 末尾要有空白行
 ```
 
 * 基础
 
 ```js
 Vue.js 不支持 IE8 及其以下 IE 版本 // 干得好！！
-
-
 ```
 
 * 语法
