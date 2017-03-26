@@ -1,12 +1,27 @@
 #### R**eact**
 
 * 资源
-  * [React 安装](http://www.runoob.com/react/react-install.html) \| [React 组件 API](http://www.runoob.com/react/react-component-api.html)
+  * [React 组件 API](http://www.runoob.com/react/react-component-api.html)
+
+```
+// 安装
+使用 create-react-app
+
+// npm install -g cnpm --registry=https://registry.npm.taobao.org
+// npm config set registry https://registry.npm.taobao.org
+
+cnpm install -g create-react-app
+create-react-app my-app
+cd my-app/
+npm start
+```
+
 * 基础
 
 ```js
-一个用于构建 用户界面 的JS库
-// 起源于Instagram
+一个用于构建 用户界面 的JS库 // 起源于Instagram
+主要用于构建UI
+
 
 // 环境
 Node.js 及 NPM
@@ -41,12 +56,15 @@ JS语法的扩展
 使用大、小写的约定
 来区分本地组件的类和 HTML 标签
 
-一些标识符像 class 和 for 不建议作为 XML 属性名 // 由于 JSX 就是 JavaScript
+// 由于 
+JSX 就是 JavaScript
+class 和 for 不建议作为 XML 属性名 
+作为替代
+使用 className 和 htmlFor
 
-作为替代，React DOM 
-使用 className 和 htmlFor 来做对应的属性
-
-注释 render里的标签注释要花括号
+// 注释 
+render里的标签注释要花括号
+{/*注释...*/}
 
 组件类只能包含一个顶层标签，否则会报错
 ```
@@ -63,8 +81,6 @@ JS语法的扩展
 用 conditional (三元运算) 表达式替代
 
 // 推荐使用 内联样式 渲染 HTML 标签
-var myDivElement = <div className="foo" />;
-ReactDOM.render(myDivElement, document.getElementById('example'));
 
 // 渲染 React 组件
 var MyComponent = React.createClass({/*...*/});
@@ -75,7 +91,8 @@ ReactDOM.render(myElement, document.getElementById('example'));
 * React State\(状态\)
 
 ```js
-React 把组件看成是一个State Machines
+React 把组件看成
+一个State Machines
 通过与用户的交互实现不同状态
 然后渲染 UI
 让用户界面和数据保持一致
@@ -88,71 +105,22 @@ React 把组件看成是一个State Machines
 
 ```js
 // state 和 props 主要的区别
-在于 props 是不可变的，
+props 是不可变的， // 子组件只能通过 props 来传递数据
 而 state 可以根据与用户交互来改变
 
-子组件只能通过 props 来传递数据
+// 更多验证器
 
-更多验证器
+// replaceProps()方法
+与setProps类似
+但它会删除原有props
 
-React.createClass({
-propTypes: {
-// 可以声明 prop 为指定的 JS 基本数据类型，默认情况，这些数据是可选的
-optionalArray: React.PropTypes.array,
-optionalBool: React.PropTypes.bool,
-optionalFunc: React.PropTypes.func,
-optionalNumber: React.PropTypes.number,
-optionalObject: React.PropTypes.object,
-optionalString: React.PropTypes.string,
+// 强制更新：forceUpdate
 
-// 可以被渲染的对象 numbers, strings, elements 或 array
-optionalNode: React.PropTypes.node,
+// 获取DOM节点：findDOMNode
 
-// React 元素
-optionalElement: React.PropTypes.element,
+// 判断组件挂载状态：isMounted
 
-// 用 JS 的 instanceof 操作符声明 prop 为类的实例。
-optionalMessage: React.PropTypes.instanceOf(Message),
-
-// 用 enum 来限制 prop 只接受指定的值。
-optionalEnum: React.PropTypes.oneOf(['News', 'Photos']),
-
-// 可以是多个对象类型中的一个
-optionalUnion: React.PropTypes.oneOfType([
-React.PropTypes.string,
-React.PropTypes.number,
-React.PropTypes.instanceOf(Message)
-]),
-
-// 指定类型组成的数组
-optionalArrayOf: React.PropTypes.arrayOf(React.PropTypes.number),
-
-// 指定类型的属性构成的对象
-optionalObjectOf: React.PropTypes.objectOf(React.PropTypes.number),
-
-// 特定 shape 参数的对象
-optionalObjectWithShape: React.PropTypes.shape({
-color: React.PropTypes.string,
-fontSize: React.PropTypes.number
-}),
-
-// 任意类型加上 `isRequired` 来使 prop 不可空。
-requiredFunc: React.PropTypes.func.isRequired,
-
-// 不可空的任意类型
-requiredAny: React.PropTypes.any.isRequired,
-
-// 自定义验证器。如果验证失败需要返回一个 Error 对象
-// 不要直接使用 console.warn 或抛异常
-// 因为这样 oneOfType 会失效。
-customProp: function(props, propName, componentName) {
-if (!/matchme/.test(props[propName])) {
-return new Error('Validation failed!');
-}
-}
-},
-/* ... */
-});
+// 
 ```
 
 * 组件的生命周期
