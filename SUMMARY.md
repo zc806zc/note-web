@@ -38,7 +38,7 @@
     * [ch3-响应式设计](ch3xiang-ying-shi-she-ji.md)
       * [01-响应式基础](ch3xiang-ying-shi-she-ji/01xiang-ying-shi-ji-chu.md)
       * [02-网站解构](ch3xiang-ying-shi-she-ji/02wang-zhanjie-6784-landy.md)
-  * [ch4-Canvas游戏](ch4-canvasyou-xi-kai-fa.md)
+  * [Canvas游戏](ch4-canvasyou-xi-kai-fa.md)
     * [01-Canvas基础1](ch4-canvasyou-xi-kai-fa/01-canvasji-chu-1.md)
     * [01-Canvas基础2](ch4-canvasyou-xi-kai-fa/01-canvasji-chu-2.md)
 * [JS](js-stack.md)
