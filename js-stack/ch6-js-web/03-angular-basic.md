@@ -44,6 +44,9 @@ MVC
 // AngularJS 支持输入验证
 // 完美支持数据库的 CRUD
 
+在 HTML 中，目前还不支持包含 HTML 文件的功能
+但是angular可以
+
 // AngularJS 属性以 ng- 开头，
 但是您可以使用 data-ng- 来让网页对 HTML5 有效
 
