@@ -22,7 +22,7 @@
         },
         "prism": {
             "css": [
-                "assets/prism-coy.css"
+                "prismjs/themes/prism-coy.css"
             ]
         },
         "atoc": {
