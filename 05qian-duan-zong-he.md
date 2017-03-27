@@ -13,7 +13,7 @@
 * 开始记笔记/博客
 
   * [sphinx](http://www.sphinx-doc.org/en/stable/)\(还没试过\) \| [MkDocs](http://www.mkdocs.org/) \(md -&gt; html,没试\)
-  * [Gitbook插件安装配置- 星夜雨年](http://www.tuicool.com/articles/JjQ3qm) \| 
+  * [Gitbook插件安装配置- 星夜雨年](http://www.tuicool.com/articles/JjQ3qm) \| [插件2](http://www.tuicool.com/articles/zee2ui)
 
 ```js
 // gitbook与看云
@@ -24,6 +24,7 @@ gitbook官网的话直接写book.json就会提供支持
 
 // gitbook高亮插件示例
 This text is {% em %}highlighted with **markdown**!{% endem %}
+prism // 代码主题插件 
 
 // 看云
 在国内较gitbook稳定并方便使用 (插件什么都配置好了)
