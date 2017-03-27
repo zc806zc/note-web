@@ -9,12 +9,19 @@
         "splitter",
         "tbfed-pagefooter",
         "expandable-chapters-small",
-        "emphasize"
+        "emphasize",
+        "prism", 
+        "-highlight"
     ],
     "pluginsConfig": {
         "tbfed-pagefooter": {
             "modify_label": "最后修改 : ",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+       "prism": {
+            "css": [
+                "prismjs/themes/prism-solarizedlight.css"
+            ]
         }
     }
 }
