@@ -43,6 +43,18 @@ atom
 
 ```js
 Vue.js 不支持 IE8 及其以下 IE 版本 // 干得好！！
+
+// computed vs methods
+我们可以使用 methods 来替代 computed，
+效果上两个都是一样的
+但是 computed 是基于它的依赖缓存，
+只有相关依赖发生改变时才会重新取值。
+
+而使用 methods 
+在重新渲染的时候
+函数总会重新调用执行
+
+
 ```
 
 * 语法
@@ -50,6 +62,12 @@ Vue.js 不支持 IE8 及其以下 IE 版本 // 干得好！！
 ```js
 // 修饰符
 <form v-on:submit.prevent="onSubmit"></form> // 阻止浏览器默认行为
+<a v-on:click.stop.prevent="doThat"></a>
+.stop
+.prevent
+.capture
+.self
+.once
 
 // 缩写
 <a v-bind:href="url"></a>
