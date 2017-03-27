@@ -1,20 +1,30 @@
 #### **前端生存手册**
 
-* 学习路线
+* 草拟路线
 
-```
-// 入门任务
-lab1：div + css + 编程风格 -> 搭建一个简单静态网站
-lab2：html5(移动端)+canvas -> 学做一个小游戏
-lab3：css3 + less + scss: 建立一个小型的可重用css库
-lab5：jQuery + Widget UI特效框架 
-lab4：原生JS学习，面向对象，算法刷题
-lab6：Bootstrap + 响应式设计: 模仿 一个此类网站
-lab7：了解移动端框架：
-JQueryMobile JQueryUI+zepto 
+```js
+// 学习任务
+lab1 搭建一个静态网站 // div + css / 编程风格 
+lab2 html5/canvas   // 学做一个小游戏 
+lab3 建立一个小型的可重用css库  // css3 + less/scss/...:
+lab4 UI特效框架 // jQuery组件
+
+lab5 原生JS学习 // 面向对象，算法刷题
+《Head First HTML and CSS》
+codecademy
+《JavaScript DOM编程艺术》
+《JavaScript高级程序设计》
+可汗学院算法课
+coursera的算法
+刷Leetcode
+
+
+lab6 模仿一个Bootstrap 网站 // 响应式设计:
+lab7 了解移动端框架
+JQueryMobile JQueryUI zepto 
 pureUI YUI MUI miniUI等
 
-// 理论准备
+// 理论准备/别被这些词吓到
 w3c/web标准, HTTP协议, SEO
 AJAX+JSON+XML+XHTML+DOM+BOM...
 CMD/AMD
@@ -25,42 +35,23 @@ PS切图 + FW
 CDR + DW + AI
 Visio + Axure + UIDesigner
 抓包工具(Fiddler Charles) 
+编辑器（atom、vim）
+linux命令行
+codecademy上的git课程
 
 // 调试与优化
 Firebug
 浏览器兼容
 页面加载速度优化
 
-// 文档编写能力 
-需求分析与设计
-
 // 组建学习小组，合作分享
-// 职业规划
-
-// 前端工程化 
-webpack
+文档编写能力 // 需求分析与设计 职业规划
+前端工程化概念 // webpack
 大型网站建站经验
-
-// 图书与学习资源
-HTML/CSS/JavaScript
-《Head First HTML and CSS》
-codecademy
-《JavaScript DOM编程艺术》
-try.jquery.com
-《JavaScript高级程序设计》
-
-// 算法与数据结构
-可汗学院算法课
-coursera的算法
-刷Leetcode
-
-// 工具的使用
-编辑器（atom、vim）
-linux命令行
-codecademy上的git课程
 ```
 
-* [听说2017你想写前端](http://mp.weixin.qq.com/s/8vz1aIeVpRHmU2E2-7zzsQ)
+* 心理准备
+  * [听说2017你想写前端](http://mp.weixin.qq.com/s/8vz1aIeVpRHmU2E2-7zzsQ) \| [2017年前端初学者的生存指南](http://mp.weixin.qq.com/s/1sCU3WzRjiLcSPV0Soqi2A)
 
 ```js
 // 项目工程化
@@ -98,27 +89,16 @@ Javascript: ES6, ES7
 WebComponents (可选)
 Vue.js / React (反正掌握一款MV* 框架是必要的)
 即将大热的 hotfix 阿里热修复技术
-```
 
-* [2017年前端初学者的生存指南](http://mp.weixin.qq.com/s/1sCU3WzRjiLcSPV0Soqi2A)
+// 不管是校招还是社招
+都没法避免
 
-```js
-不管是校招还是社招，都没法避免两种问题，
-一是
 数据结构与算法，
-二是
-横向扩展
-比如Hybrid开发，Node.js开发，桌面应用开发等
+横向扩展 // 比如Hybrid开发，Node.js，桌面应用开发
 
-具备的职业经历越多，
-技术栈经验越丰富，
-才更能有机会脱颖而出。
-```
-
-* 参考
-
-```js
-
+具备的职业经历越多
+技术栈经验越丰富
+才更能有机会脱颖而出
 ```
 
 
