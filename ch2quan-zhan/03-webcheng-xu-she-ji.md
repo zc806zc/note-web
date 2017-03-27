@@ -36,7 +36,7 @@ GET HEAD POST PUT DELETE
 // 为什么
 W3C会放弃
 强制开发人使用XHTML更严格的语法规则
-来编写出不已出错的文档 
+来编写出不已出错的文档
 ```
 
 #### **ch3 CSS**
@@ -93,25 +93,48 @@ screen.Y
 #### **ch7、10 XML/AJAX**
 
 ```js
+// XML 文档结构
+// XML架构
+// XSLT样式表
+// XML处理器 
+SAX
+DOM
 
+// AJAX
+跨浏览器支持
+
+// AJAX工具包
 ```
 
 #### ch8 FLash
 
 ```js
+// 忽略，了解程度，做下后备
 
+// 用途
+// 环境
+// 绘图工具
+// 静态图片
+// 动画和声音
+
+// 用户交互
 ```
 
 #### **ch9 PHP**
 
 ```php
+// 模式匹配 POSIX | Perl(忽略)
+preg_match // preg = perl regular
 
+记在PHP基础
 ```
 
 #### **ch11 Java Web**
 
 ```java
-
+// Servlet
+// JavaBean
+// JSF
 ```
 
 #### **ch12 ASP.NET**
@@ -123,19 +146,30 @@ screen.Y
 #### **ch13 基于Web的数据库访问**
 
 ```php
+// 关系数据库
+// 结构化查询语言
 
+// 特殊字符的潜在问题
+// JDBC 元数据
 ```
 
 #### **ch14 Android**
 
 ```java
-
+// 记在Android基础
 ```
 
 #### **ch15-16 Ruby/Rails**
 
 ```ruby
+// 散列
+// 类
 
+// 块和迭代器
+
+// 模式匹配
+
+// Rails
 ```
 
 #### **参考**

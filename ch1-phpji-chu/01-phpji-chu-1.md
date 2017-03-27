@@ -2,7 +2,9 @@
 
 * 资源
 
-  * [PHP 手册](http://php.net/manual/zh/) | [MySQL 5.1参考手册](http://www.kancloud.cn/k12_develop/mysql51/77410)| [Apache 2.2 官方文档](http://www.kancloud.cn/wizardforcel/apache-doc/105614) | [Nginx 官方文档](http://www.kancloud.cn/wizardforcel/nginx-doc/92403) \|[鸟哥的 Linux 私房菜](http://www.kancloud.cn/thinkphp/linux_basic/43213) \| [Laravel 5文档](https://www.gitbook.com/book/lbp0200/laravel-5-doc/details)
+  * [PHP 手册](http://php.net/manual/zh/) \| [MySQL 5.1参考手册](http://www.kancloud.cn/k12_develop/mysql51/77410)
+  * [Apache 2.2 官方文档](http://www.kancloud.cn/wizardforcel/apache-doc/105614) \| [Nginx 官方文档](http://www.kancloud.cn/wizardforcel/nginx-doc/92403) \|[鸟哥的 Linux 私房菜](http://www.kancloud.cn/thinkphp/linux_basic/43213)
+  * [Laravel 5文档](https://www.gitbook.com/book/lbp0200/laravel-5-doc/details)
   * [PHP资源](https://www.zhihu.com/question/20034403) \| [Github资源](https://github.com/justjavac/free-programming-books-zh_CN#php) \| [开源后台模板](http://www.cnblogs.com/DiYuShe/archive/2012/08/21/2648563.html)
   * [packagist](https://packagist.org/explore/popular)  \| [segmentfault - PHP](https://segmentfault.com/t/php)
   * [psysh](http://psysh.org/)
@@ -237,22 +239,27 @@ count
 array_merge
 array_chunk
 range
-sort
-asort 保持索引
-rsort 逆向排序
-arsort 逆向排序并保持索引
-ksort 键名排序
-shuffle 洗牌
+
+// 数组排序 
+sort   // 用数字键替换
+asort  // 根据元素值排序保持索引
+ksort  // 键名排序
+rsort  // 逆向排序
+arsort // 逆向排序并保持索引
 krsort
+
+
+shuffle 洗牌
+
 array_reverse 返回的是数组
 array_search
 array_rand 从数组中随机取出一个或多个单元
 array_unique 移除重复的值
 key 从关联数组中取出键名
-array_column
+// array_column
 in_array 检查数组中是否存在某个值,第3个参数设为true 相当于===
-array_keys 返回数组中的键名
-array_values
+// array_keys 返回数组中的键名
+// array_values
 
 // 数学函数
 abs
