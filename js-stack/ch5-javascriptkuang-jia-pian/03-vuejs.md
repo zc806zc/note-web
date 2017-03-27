@@ -116,6 +116,26 @@ vm.$watch('a', function (newVal, oldVal) {
 将传导给子组件，但是不会反过来
 
 // 可以为 props 指定验证要求
+propC: {
+      type: Number,
+      required: true
+      // default: 100
+}
+
+// 数组／对象的默认值应当由一个工厂函数返回
+propE: {
+      type: Object,
+      default: function () {
+            return { message: 'hello' }
+      }
+},
+
+// 自定义验证函数
+propF: {
+      validator: function (value) {
+            return value > 10
+      }
+}
 ```
 
 * 参考
