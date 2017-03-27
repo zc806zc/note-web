@@ -1,6 +1,7 @@
 #### **Git/Github/SVN...**
 
 * Git常用命令
+  * [猴子都懂的Git教程](http://backlogtool.com/git-guide/cn/stepup/stepup1_1.html)
   * [Git冲突合并 - woai0231](https://github.com/woai30231/webDevDetails/tree/master/13)
 
 ```markdown
@@ -85,8 +86,17 @@ Markdown不支持的可以写html标签
 
 // 链接
 [百度](https://www.baidu.com/)
-[Qmen](q)
-[Google](2)
+// [Qmen](q)
+
+
+// 隐式链接
+I get 10 times more traffic from 
+[Google] [1] than from [Yahoo] [2] or [MSN] [3].
+
+[1]: http://google.com/ "Google"
+[2]: http://search.yahoo.com/ "Yahoo Search"
+[3]: http://search.msn.com/ "MSN Search"
+
 
 // 图片 
 ![hi](/path/s/logo.png) 
@@ -97,6 +107,3 @@ Markdown不支持的可以写html标签
 // 用反斜杠来插入保留字符 
 \\
 ```
-
-
-
