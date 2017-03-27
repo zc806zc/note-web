@@ -21,7 +21,7 @@
         },
        "prism": {
             "css": [
-                "prismjs/themes/prism-xonokai.css"
+                "prismjs/themes/prism-coy.css"
             ]
         }
     }
