@@ -75,6 +75,7 @@ Vue.js 不支持 IE8 及其以下 IE 版本 // 干得好！！
 <input v-model.lazy="msg" > // 在change更新值
 <input v-model.number="age" type="number">
 <input v-model.trim="msg">
+<my-component v-on:click.native="doTheThing"></my-component> // 在某个组件的根元素上监听一个原生事件
 
 // 按键
 <input v-on:keyup.13="submit">
@@ -116,6 +117,8 @@ vm.$watch('a', function (newVal, oldVal) {
 将传导给子组件，但是不会反过来
 
 // 可以为 props 指定验证要求
+propA: Number,
+propB: [String, Number], // 多种类型 
 propC: {
       type: Number,
       required: true
@@ -136,6 +139,11 @@ propF: {
             return value > 10
       }
 }
+
+
+// 自定义事件
+$on(eventName)   监听事件
+$emit(eventName) 触发事件
 ```
 
 * 参考
