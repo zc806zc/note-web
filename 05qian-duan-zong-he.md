@@ -11,8 +11,9 @@
   * [菜鸟工具](https://c.runoob.com/)
 
 * 开始记笔记/博客
+
   * [sphinx](http://www.sphinx-doc.org/en/stable/)\(还没试过\) \| [MkDocs](http://www.mkdocs.org/) \(md -&gt; html,没试\)
-  * [Gitbook插件安装配置- 星夜雨年](http://www.tuicool.com/articles/JjQ3qm)
+  * [Gitbook插件安装配置- 星夜雨年](http://www.tuicool.com/articles/JjQ3qm) \| 
 
 ```js
 // gitbook与看云

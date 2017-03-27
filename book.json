@@ -12,17 +12,22 @@
         "emphasize",
         "prism", 
         "-highlight",
-        "jsbin"
+        "jsbin",
+        "atoc"
     ],
     "pluginsConfig": {
         "tbfed-pagefooter": {
             "modify_label": "全书最后修改 ",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
-       "prism": {
+        "prism": {
             "css": [
                 "prismjs/themes/prism-coy.css"
             ]
+        },
+        "atoc": {
+            "addClass": true,
+            "className": "atoc"
         }
     }
 }
