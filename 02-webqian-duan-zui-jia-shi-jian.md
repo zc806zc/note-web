@@ -459,13 +459,11 @@ Grunt预先把Handlebars
 Angular Meteor Ember Knockout Backbone
 双向绑定 模板 路由 可观察对象
 TodoMVC项目
-
 ```
 
 * JS模块化开发
 
 ```js
-        
 CommonJS 同步 node.js 服务器端
 AMD 异步 有网络延迟的浏览器
 requireJS 管理前端代码模块
@@ -692,15 +690,15 @@ str = strArr.join("");
 ```
 市场以webkit为核心的浏览器占主导 // 易于兼容工作
 // 浏览器是移动Web网页的载体
- 
+
 // 移动与PC的差异
 // 显示 
 viewport
 虚拟 
-// 操作 
+// 操作
 ```
 
-*  * 显示
+* * 显示
     * viewport
     * 虚拟键盘遮挡
   * 操作
@@ -805,7 +803,7 @@ viewport
   * 只有Android Chrome在浏览器转后台是任然执行JS
   * Timer完成准确控制时间任务不太靠谱
 
-##### **参考**
+* ##### **参考**
 
 ```js
 web前端最佳实践 党建
