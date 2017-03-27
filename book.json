@@ -15,7 +15,7 @@
     ],
     "pluginsConfig": {
         "tbfed-pagefooter": {
-            "modify_label": "最后修改 : ",
+            "modify_label": "全书最后修改 ",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
        "prism": {
