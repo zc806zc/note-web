@@ -67,9 +67,10 @@ Vue.js 不支持 IE8 及其以下 IE 版本 // 干得好！！
 .self
 .once
 
-<!-- 同上 -->
+// 按键
+<input v-on:keyup.13="submit">
+<input @keyup.alt.67="clear">
 <input v-on:keyup.enter="submit">
-<!-- 缩写语法 -->
 <input @keyup.enter="submit">
 
 // 缩写
