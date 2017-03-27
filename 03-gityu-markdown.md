@@ -1,14 +1,16 @@
-#### **Git常用命令**
+#### **Git/Github/SVN...**
 
-* 常用命令
+* Git常用命令
+  * [git合并、冲突 实例 - woai0231](#)
 
 ```markdown
-在git commit之前 git diff HEAD
+// 在git commit之前 
+git diff HEAD
 
-合并分支
-将A分支合并到master
-先checkout到master
-再git merge --no-ff feature-A ??
+
+// 将 branch-A分支合并到 master
+git checkout master // 先切换到master
+git merge --no-ff branch-A  // A分支可能修复了某个bug
 
 常用命令
 git clone -b master https://github.com/luo0412/luo-android.git
