@@ -5,7 +5,7 @@
   * [ch1-前端](ch1qian-duan.md)
     * [01-改变思维第一步-Git](03-gityu-markdown.md)
     * [01-前端生存手册](01qian-duan-sheng-cun-shou-ce.md)
-    * [01-前端综合书](05qian-duan-zong-he.md)
+    * [01-资源整合](05qian-duan-zong-he.md)
     * [02-前端最佳实践](02-webqian-duan-zui-jia-shi-jian.md)
     * [03-前端安全书](04qian-duan-an-quan.md)
   * [ch2-全栈](ch2quan-zhan.md)

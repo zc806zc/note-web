@@ -1,32 +1,14 @@
-#### 图像处理
+#### **资源**
 
-* [6 款 Javascript 的图像处理库 - Tine](https://juejin.im/post/58c0edac0ce4630054592a78?utm_source=gold_browser_extension)
+* 在线书籍
+  * [free-programming-books](https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md) \| [frontenddevhandbook](https://www.gitbook.com/book/dwqs/frontenddevhandbook/details) \| [史上最全FE资源](http://www.jianshu.com/p/6cb49271cd2a#)\| [最全的前端资源汇总](https://github.com/helloqingfeng/Awsome-Front-End-learning-resource)
 
-```js
-
-```
-
-#### **在线资源**
-
-* [free-programming-books](https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md) \| [frontenddevhandbook](https://www.gitbook.com/book/dwqs/frontenddevhandbook/details) \| [史上最全FE资源](http://www.jianshu.com/p/6cb49271cd2a#)\| [最全的前端资源汇总](https://github.com/helloqingfeng/Awsome-Front-End-learning-resource)
-
-```js
-
-```
-
-#### **在线编辑器**
-
-* [dillinger.io](http://dillinger.io/) \| JSbin \| [菜鸟工具](https://c.runoob.com/)
-
-```js
-
-```
-
-#### 笔记/博客
-
-* [sphinx](http://www.sphinx-doc.org/en/stable/)\(还没试过\) \| [MkDocs](http://www.mkdocs.org/) \(md -&gt; html,没试\)
-
-* [Gitbook插件安装配置- 星夜雨年](http://www.tuicool.com/articles/JjQ3qm)
+* 在线编辑
+  * [dillinger.io](http://dillinger.io/) \| JSbin \| jsfiddle
+  * [菜鸟工具](https://c.runoob.com/)
+* 开始记笔记/博客
+  * [sphinx](http://www.sphinx-doc.org/en/stable/)\(还没试过\) \| [MkDocs](http://www.mkdocs.org/) \(md -&gt; html,没试\)
+  * [Gitbook插件安装配置- 星夜雨年](http://www.tuicool.com/articles/JjQ3qm)
 
 ```js
 // gitbook与看云
@@ -54,17 +36,21 @@ This text is {% em %}highlighted with **markdown**!{% endem %}
 // benhail/thinker-md osc的md编辑器
 ```
 
-#### IDE/编辑器
+* IDE/编辑器
 
-* [vs-code插件-](http://blog.csdn.net/u011127019/article/details/53158660)[天马3798](http://blog.csdn.net/u011127019)
-* [Sublime插件推荐](http://www.jianshu.com/p/2f30ccd41165)  \| [推荐2](https://www.zhihu.com/question/37342465)
-* [Adobe Brackets](#)
+  * [vs-code插件-](http://blog.csdn.net/u011127019/article/details/53158660)[天马3798](http://blog.csdn.net/u011127019)
+
+  * [Sublime插件推荐](http://www.jianshu.com/p/2f30ccd41165)  \| [推荐2](https://www.zhihu.com/question/37342465)
 
 ```
 // 1. 重器
 Web Storm(商业)
 netbeans
 // Aptana Studio // 没用过
+
+// itellj idea 文件编码问题的解决
+选择file encodings 
+utf-8 -> utf-16 -> utf-8
 
 // 2. 优雅的编辑器
 1.Sublime 
@@ -126,24 +112,19 @@ js filename.js执行
 // Adobe Brackets // 没怎么用过
 ```
 
-#### Java-工具
-
-* [eclipse color theme](http://download.csdn.net/download/knockheart/6690825)
+* 其他工具
+  * [eclipse color theme](http://download.csdn.net/download/knockheart/6690825)
 
 ```
 // eclipse
 
-// itellj idea
-文件编码问题的解决
-选择file encodings 
-utf-8 -> utf-16 -> utf-8
+// 线框图与原型设计-工具
+Balsamiq
 ```
+* 图像处理
+  * [6 款 Javascript 的图像处理库 - Tine](https://juejin.im/post/58c0edac0ce4630054592a78?utm_source=gold_browser_extension)
 
-#### 线框图与原型设计-工具
 
-```
-// Balsamiq
-```
 
 
 
