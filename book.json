@@ -11,7 +11,8 @@
         "expandable-chapters-small",
         "emphasize",
         "prism", 
-        "-highlight"
+        "-highlight",
+        "jsbin"
     ],
     "pluginsConfig": {
         "tbfed-pagefooter": {
@@ -20,7 +21,7 @@
         },
        "prism": {
             "css": [
-                "prismjs/themes/prism-coy.css"
+                "prismjs/themes/prism-xonokai.css"
             ]
         }
     }
