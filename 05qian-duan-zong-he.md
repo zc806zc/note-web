@@ -1,11 +1,15 @@
 #### **资源**
 
 * 在线书籍
-  * [free-programming-books](https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md) \| [frontenddevhandbook](https://www.gitbook.com/book/dwqs/frontenddevhandbook/details) \| [史上最全FE资源](http://www.jianshu.com/p/6cb49271cd2a#)\| [最全的前端资源汇总](https://github.com/helloqingfeng/Awsome-Front-End-learning-resource)
+
+  * [free-programming-books](https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md) \| [frontenddevhandbook](https://www.gitbook.com/book/dwqs/frontenddevhandbook/details) 
+  * [史上最全FE资源](http://www.jianshu.com/p/6cb49271cd2a#)\| [最全的前端资源汇总](https://github.com/helloqingfeng/Awsome-Front-End-learning-resource)
 
 * 在线编辑
+
   * [dillinger.io](http://dillinger.io/) \| JSbin \| jsfiddle
   * [菜鸟工具](https://c.runoob.com/)
+
 * 开始记笔记/博客
   * [sphinx](http://www.sphinx-doc.org/en/stable/)\(还没试过\) \| [MkDocs](http://www.mkdocs.org/) \(md -&gt; html,没试\)
   * [Gitbook插件安装配置- 星夜雨年](http://www.tuicool.com/articles/JjQ3qm)
@@ -121,10 +125,9 @@ js filename.js执行
 // 线框图与原型设计-工具
 Balsamiq
 ```
+
 * 图像处理
   * [6 款 Javascript 的图像处理库 - Tine](https://juejin.im/post/58c0edac0ce4630054592a78?utm_source=gold_browser_extension)
-
-
 
 
 
