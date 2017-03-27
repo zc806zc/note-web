@@ -53,8 +53,6 @@ Vue.js 不支持 IE8 及其以下 IE 版本 // 干得好！！
 而使用 methods 
 在重新渲染的时候
 函数总会重新调用执行
-
-
 ```
 
 * 语法
@@ -62,12 +60,17 @@ Vue.js 不支持 IE8 及其以下 IE 版本 // 干得好！！
 ```js
 // 修饰符
 <form v-on:submit.prevent="onSubmit"></form> // 阻止浏览器默认行为
-<a v-on:click.stop.prevent="doThat"></a>
+<a v-on:click.stop.prevent="doThat"></a>     // 可串联
 .stop
 .prevent
 .capture
 .self
 .once
+
+<!-- 同上 -->
+<input v-on:keyup.enter="submit">
+<!-- 缩写语法 -->
+<input @keyup.enter="submit">
 
 // 缩写
 <a v-bind:href="url"></a>
