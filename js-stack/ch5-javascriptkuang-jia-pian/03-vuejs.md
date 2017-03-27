@@ -53,6 +53,11 @@ Vue.js 不支持 IE8 及其以下 IE 版本 // 干得好！！
 而使用 methods 
 在重新渲染的时候
 函数总会重新调用执行
+
+
+// 复选框
+如果是一个为逻辑值，
+如果是多个则绑定到同一个数组
 ```
 
 * 语法
@@ -66,6 +71,10 @@ Vue.js 不支持 IE8 及其以下 IE 版本 // 干得好！！
 .capture
 .self
 .once
+
+<input v-model.lazy="msg" > // 在change更新值
+<input v-model.number="age" type="number">
+<input v-model.trim="msg">
 
 // 按键
 <input v-on:keyup.13="submit">
@@ -101,7 +110,12 @@ vm.$watch('a', function (newVal, oldVal) {
 * 组件
 
 ```js
+// prop 
+是单向绑定的
+当父组件的属性变化时，
+将传导给子组件，但是不会反过来
 
+// 可以为 props 指定验证要求
 ```
 
 * 参考
