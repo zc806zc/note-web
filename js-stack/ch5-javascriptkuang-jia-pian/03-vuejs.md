@@ -146,6 +146,26 @@ $on(eventName)   监听事件
 $emit(eventName) 触发事件
 ```
 
+* 指令
+
+```js
+// 钩子函数
+bind       // 只调用一次，指令第一次绑定到元素时调用
+unbind: 只调用一次， 指令与元素解绑时调用。
+inserted  
+update
+componentUpdated // 被绑定元素所在模板完成一次更新周期时调用
+
+// 钩子函数的参数
+```
+
+* 路由
+  * [路由演示](https://github.com/chrisvfritz/vue-2.0-simple-routing-example)
+
+```
+https://unpkg.com/vue-router/dist/vue-router.js
+```
+
 * 参考
 
 ```js
