@@ -6,7 +6,7 @@
 ```markdown
 touch .gitignore/README.md
 // git add README.md
- 
+
 
 // 在git commit之前 
 git diff HEAD
@@ -83,16 +83,19 @@ Markdown不支持的可以写html标签
 >
 > 杜甫
 
-// 链接使用
+// 链接
 [百度](https://www.baidu.com/)
 [Qmen](q)
 [Google](2)
 
-// 图片 ![hi](/path/s/logo.png) 
+// 图片 
+![hi](/path/s/logo.png) 
 
-// 水平分割线  ---
+// 水平分割线  
+---
 
-// 用反斜杠来插入保留字符 `\\`
+// 用反斜杠来插入保留字符 
+\\
 ```
 
 
