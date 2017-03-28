@@ -80,7 +80,24 @@ sudo mv /home/ubuntu/Desktop/imedia-test /phpstudy/www/
   * [阿里云教程](https://help.aliyun.com/document_detail/50774.html?spm=5176.doc50775.6.630.uJaGYl)
 
 ```js
+// oneinstack 一揽子方案
+里面已经默认安装好了jdk
+java -version // 验证安装版本
 
+// 安装tomcat
+tar -xvf /usr/java/apache-tomcat-8.5.12.tar.gz -C /usr/java/tomcat/
+cd /usr/java/tomcat/apache-tomcat-8.5.12/
+cd bin/
+./startup.sh // 启动tomcat
+
+// setclasspath.sh
+export JAVA_HOME=/usr/java/jdk/jdk1.8.0_121
+export JRE_HOME=/usr/java/jdk/jdk1.8.0_121/jre
+
+
+
+// 改端口
+// 虚拟路径
 ```
 
 * HTTPS升级
