@@ -116,7 +116,7 @@
 * [LAMP](lamp-stack.md)
   * [Linux](ch4-linuxfu-wu-qi.md)
     * [01-操作系统基础](ch4-linuxfu-wu-qi/01cao-zuo-xi-tong-ji-chu.md)
-    * [01-VPS部署](ch4-linuxfu-wu-qi/01jian-zhan-zhi-nan.md)
+    * [01-VPS-远程控制欲](ch4-linuxfu-wu-qi/01jian-zhan-zhi-nan.md)
     * [01-Linux基础](ch4-linuxfu-wu-qi/01-linuxji-chu.md)
     * [01-图解HTTP-读后感](ch4-linuxfu-wu-qi/01tu-jie-http-du-hou-gan.md)
     * [04-Win常识](toolbox/ch2zi-yuan/04-windowschang-shi.md)
