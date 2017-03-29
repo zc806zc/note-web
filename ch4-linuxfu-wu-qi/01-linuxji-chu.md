@@ -86,12 +86,14 @@ putty的ssh登录 // ...
 * 常用命令
 
 ```js
-ls -l
+
 ```
 
 * 文件
 
 ```js
+ls -l
+
 // 文件权限
 dr-xr-xr-x   2 root root 4096 Dec 14  2012 bin // d开头表示目录 (- | b c)
 
@@ -103,7 +105,7 @@ chown root:root install.log
 owner = rwx = 4+2+1 = 7
 group = rwx = 4+2+1 = 7
 others= --- = 0+0+0 = 0
- 
+
 chmod [-R] xyz 文件或目录 // -R recursive 连同次目录下的所有文件都会变更
 
 chmod  a-x  .bashrc // 拿掉全部人的可执行权限
