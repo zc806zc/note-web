@@ -2,6 +2,7 @@
 
 * 基础
   * 鸟哥的linux私房菜
+  * [中科大-yum](https://lug.ustc.edu.cn/wiki/mirrors/help/centos)
 
 ```js
 Linus Torvalds
@@ -28,6 +29,22 @@ sync > shutdown > reboot > halt
 // 远程登录
 SecureCRT, Putty, SSH Secure Shell
 putty的ssh登录 // ...
+
+// yum  Yellow dog Updater, Modified
+一个在Fedora和RedHat以及SUSE中的Shell前端软件包管理器
+yum check-update
+yum update # 更新所有的软件
+yum install <package_name>
+yum update <package_name>
+yum list # 列出所有可安裝的软件清单命令
+yum list pam*
+yum remove <package_name>
+yum search <keyword>
+
+mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup // 备份
+
+// vi/vim
+
 ```
 
 * 安装
@@ -95,6 +112,10 @@ putty的ssh登录 // ...
 
 ```js
 ls -l # 列出目录
+-a ：全部的文件，连同隐藏档( 开头为 . 的文件) 一起列出来
+-d ：仅列出目录
+-l ：长数据串列出，包含文件的属性与权限等等数据
+eg. ls -al ~
 
 // 文件权限
 dr-xr-xr-x   2 root root 4096 Dec 14  2012 bin // d开头表示目录 (- | b c)
@@ -114,11 +135,34 @@ chmod  a-x  .bashrc // 拿掉全部人的可执行权限
 
 pwd 显示目前的目录
 mkdir
+mkdir -m 711 test2
 rmdir 删除一个空的目录
 cp
 rm
+
+man cp
+
+cd ..
+
+// 文件内容查看
+cat  
+tac  从最后一行开始显示 tac是cat倒着写
+nl   显示的时候，顺道输出行号
+more 一页一页的显示文件内容
+less 与 more 类似，但是比 more 更好的是，他可以往前翻页
+head 只看头几行
+tail 只看尾巴几行
 ```
 
+* 用户和用户组管理
+
+```py
+
+```
+
+* 磁盘管理
+
+* 
 #### Windows
 
 * 常用命令
@@ -252,7 +296,6 @@ ctrl + H
 #### 参考
 
 ```js
-鸟哥的linux私房菜
 菜鸟教程
 ```
 
