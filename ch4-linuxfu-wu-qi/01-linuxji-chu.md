@@ -165,7 +165,33 @@ tail 只看尾巴几行
 * 用户和用户组管理
 
 ```py
+useradd –d /usr/sam -m sam
+useradd -s /bin/sh -g group –G adm,root gem
+userdel sam
 
+usermod -s /bin/ksh -d /home/z –g developer sam
+
+passwd sam 
+passwd -l sam # 锁定某一用户，使其不能登录
+
+groupadd group1
+groupadd -g 101 group2
+groupdel group1
+groupmod -g 102 group2
+groupmod –g 10000 -n group3 group2
+
+newgrp root # 切换到其他用户组
+
+/etc/passwd文件是用户管理工作涉及的最重要的一个文件
+/etc/shadow 
+
+// 标准的伪用户
+eg. audit, cron, mail, usenet等
+它们都各自为相关的进程和文件所需要
+
+// 批量操作
+eg. 批量增加新用户
+newusers < user.txt
 ```
 
 * 磁盘管理
@@ -200,7 +226,7 @@ alt + enter 打开选中对象的属性
 ctrl + tab 切换浏览器
 win + tab
 win + r
-ctrl + shift + left 选中文本
+ctrl + shift + left // 选中文本
 ```
 
 * 浏览器快捷键

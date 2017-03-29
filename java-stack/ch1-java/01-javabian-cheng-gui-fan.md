@@ -1,13 +1,11 @@
-####  **Java编程风格**
-* 参考
-	* [阿里巴巴Java开发手册](https://yq.aliyun.com/articles/69327?utm_campaign=javac&utm_medium=images&utm_source=renyimen&utm_content=m_10068)
-    * [博客 - yakov](http://www.cnblogs.com/yakov/archive/2011/12/19/the_elements_of_java_style.html)
+#### **Java编程规范**
 
-------------
+* 资源
+  * [阿里巴巴Java开发手册](https://yq.aliyun.com/articles/69327?utm_campaign=javac&utm_medium=images&utm_source=renyimen&utm_content=m_10068)
 
 * 格式
 
-```
+```java
 统一采用utf-8编码
 
 断开很长的句子,例在逗号的地方另起一行
@@ -15,10 +13,10 @@
 不要使用Tab
 ```
 
-+ 命名规则
-	* [关于 Java 数组的 12 个最佳方法](http://www.iteye.com/news/28296)
-	
-```
+* 命名规则
+  * [关于 Java 数组的 12 个最佳方法](http://www.iteye.com/news/28296)
+
+```java
 缩写词的第一个字母大写
 类和接口名中的每个单词的第一个字母大写
 
@@ -27,7 +25,7 @@
 // 类型/属性（noun）命名
 具有成组相关属性，
 静态服务或者常量的类名字使用复数形式
-  
+
 // 方法（verb）命名
 驼峰命名
 set，get，is开头的默认
@@ -49,10 +47,9 @@ set，get，is开头的默认
 
 if(isClosed){ code; }
 
-        
-数组声名 int[] arr = new int[10];        
+
+数组声名 int[] arr = new int[10];
 ```
 
 
-    
 
