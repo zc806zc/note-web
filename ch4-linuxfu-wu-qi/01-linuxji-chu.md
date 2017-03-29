@@ -3,6 +3,7 @@
 * 基础
   * 鸟哥的linux私房菜
   * [中科大-yum](https://lug.ustc.edu.cn/wiki/mirrors/help/centos)
+  * [史上最全vim快捷键](http://www.runoob.com/w3cnote/all-vim-cheatsheat.html)
 
 ```js
 Linus Torvalds
@@ -17,7 +18,7 @@ Linus Torvalds
 Ubuntu、RedHat、CentOS、Debain、Fedora、SuSE、OpenSUSE
 // TurboLinux、BluePoint、RedFlag、Xterm、SlackWare
 
-目前国内Linux更多的是应用于服务器上 // 
+目前国内Linux更多的是应用于服务器上 
 而桌面操作系统更多使用的是Window // 图形化界面 系统构造复杂、变化频繁，且知识、技能淘汰快，深入学习困难
 
 
@@ -44,7 +45,14 @@ yum search <keyword>
 mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup // 备份
 
 // vi/vim
+快捷键
 
+命令模式（Command mode）
+插入模式（Insert mode）
+底线命令模式（Last line mode） // esc q 退出程序 w 保存文件
+i 切换到插入模式，以输入字符
+x 删除当前光标所在处的字符
+: 切换到底线命令模式，以在最底一行输入命令
 ```
 
 * 安装
@@ -162,7 +170,21 @@ tail 只看尾巴几行
 
 * 磁盘管理
 
-* 
+```
+df -h // 列出文件系统的整体磁盘使用量
+df -h /etc
+du // 检查磁盘空间使用量
+du -sm /*
+
+fdisk // 用于磁盘分区
+
+// 磁盘格式化
+mkfs -t ext3 /dev/hdc6
+
+// 磁盘检验
+// 磁盘挂载与卸除
+```
+
 #### Windows
 
 * 常用命令

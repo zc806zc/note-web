@@ -1,8 +1,9 @@
 #### **Java基础**
 
-* 参考
-  * [推荐资源](http://droidyue.com/blog/2014/11/30/java-programmer-must-read-these-9-books/)
-  * [知乎推荐资源](https://www.zhihu.com/question/19848946?rf=19752221)
+* 资源
+  * [资源1](http://droidyue.com/blog/2014/11/30/java-programmer-must-read-these-9-books/) | [资源-知乎](https://www.zhihu.com/question/19848946?rf=19752221)
+  * [eclipse color theme](http://download.csdn.net/download/knockheart/6690825)
+  
 * 书单
 
 ```

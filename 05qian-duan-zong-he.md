@@ -12,7 +12,7 @@
 
 * 开始记笔记/博客
 
-  * [sphinx](http://www.sphinx-doc.org/en/stable/)\(没试) \| [MkDocs](http://www.mkdocs.org/) (没试) | [docute](https://docute.js.org/#/home)
+  * [sphinx](http://www.sphinx-doc.org/en/stable/)\(没试\) \| [MkDocs](http://www.mkdocs.org/) \(没试\) \| [docute](https://docute.js.org/#/home)
   * [Gitbook插件安装配置- 星夜雨年](http://www.tuicool.com/articles/JjQ3qm) \| [插件2](http://www.tuicool.com/articles/zee2ui)
 
 ```js
@@ -119,11 +119,9 @@ js filename.js执行
 ```
 
 * 其他工具
-  * [eclipse color theme](http://download.csdn.net/download/knockheart/6690825)
+
 
 ```
-// eclipse
-
 // 线框图与原型设计-工具
 Balsamiq
 ```

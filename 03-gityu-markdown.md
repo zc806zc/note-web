@@ -2,36 +2,30 @@
 
 * Git常用命令
   * [猴子都懂的Git教程](http://backlogtool.com/git-guide/cn/stepup/stepup1_1.html)
-  * [Git冲突合并 - woai0231](https://github.com/woai30231/webDevDetails/tree/master/13)
 
 ```js
-// 基本示例
-// 1. clone版
-git clone -b master https://github.com/luo0412/luo-android.git // -b master可省略
+git clone (-b master) https://github.com/luo0412/luo-android.git
 git add . / git add -A
-git status // 查看状态
+git status 
 git commit -m "helloWorld"
 git push origin master
 
-// 2.remote版
-git init // 初始化仓库
+git init
 git remote add origin https://github.com/luo0412/tmp.git
 add sth.
 git commit -m "first commit"
 git push -u origin master // -u
 // git push -f origin master // 强制更新
 
-// 新增文件
 touch .gitignore/README.md
 // git add README.md
 
-// 查看区别
 git diff HEAD // HEAD指向的是现在使用中的分支的最后一次更新 
 
 
-// 四种分支 master/feature/hotfix/release 
-// 将 feature-A分支合并到 master
-// A分支可能是开发新功能或修复Bug
+// 四种分支 
+master/feature/hotfix/release
+
 git checkout master // 先切换到master
 git merge --no-ff feature-A  
 // git branch -d feature-A // 删除分支
@@ -39,8 +33,6 @@ git merge --no-ff feature-A
 
 // 建立演示分支
 // git checkout --orphan gh-pages
-// rm -rf *
-// git push -u origin gh-pages
 
 // rebase/简化历史记录 加强理解
 git reset --hard HEAD~ // 现在暂时取消刚才的合并
@@ -48,24 +40,21 @@ git reset --hard HEAD~ // 现在暂时取消刚才的合并
 ```
 
 * Git重点
+  * [Git冲突合并 - woai0231](https://github.com/woai30231/webDevDetails/tree/master/13)
 
 ```
 // stash/切换分支 
-还未提交的修改内容
-以及新添加的文件
-留在索引区域或工作树的情况下
-切换到其他的分支时
+还未提交修改内容以及新增文件
+切换到其他分支时
 修改内容会从原来的分支移动到目标分支
-
-但是如果在checkout的目标分支中
-相同的文件也有修改
-checkout会失败的。
+但是
+如果目标分支中相同的文件也有修改
+checkout会失败
 
 git stash // 暂时保存
-do sth
 git stash pop
 
-// 冲突合并
+// 冲突合并的理解
 出现冲突 是需要手动修改后确认再提交的
 
 git进行了三方面的合并，
