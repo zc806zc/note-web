@@ -1,6 +1,7 @@
 #### **Linux**
 
 * 基础
+  * 鸟哥的linux私房菜
 
 ```js
 Linus Torvalds
@@ -84,7 +85,7 @@ putty的ssh登录 // ...
 ```
 
 * 常用命令
-  * [linux命令大全](http://www.runoob.com/linux/linux-command-manual.html) \| 
+  * [linux命令大全](http://www.runoob.com/linux/linux-command-manual.html) 
 
 ```js
 
@@ -93,7 +94,7 @@ putty的ssh登录 // ...
 * 文件
 
 ```js
-ls -l
+ls -l # 列出目录
 
 // 文件权限
 dr-xr-xr-x   2 root root 4096 Dec 14  2012 bin // d开头表示目录 (- | b c)
@@ -110,6 +111,12 @@ others= --- = 0+0+0 = 0
 chmod [-R] xyz 文件或目录 // -R recursive 连同次目录下的所有文件都会变更
 
 chmod  a-x  .bashrc // 拿掉全部人的可执行权限
+
+pwd 显示目前的目录
+mkdir
+rmdir 删除一个空的目录
+cp
+rm
 ```
 
 #### Windows
