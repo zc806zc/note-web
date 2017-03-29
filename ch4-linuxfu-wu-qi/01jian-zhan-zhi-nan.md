@@ -3,8 +3,7 @@
 * 腾讯云下PHP环境为例
 
   * [phpstudy安装](https://bbs.aliyun.com/read/165947.html?spm=5176.bbsr165947.0.0.sl6Fe6&displayMode=1&page=1#527830)
-  * [mysql 远程访问授权](https://zhidao.baidu.com/question/358796386.html)
-| [使用ueditor无法创建目录问题](http://blog.csdn.net/chengyi_l/article/details/46377307)
+  * [mysql 远程访问授权](https://zhidao.baidu.com/question/358796386.html) \| [使用ueditor无法创建目录问题](http://blog.csdn.net/chengyi_l/article/details/46377307)
 
 ```js
 // 操作数据库
@@ -27,7 +26,6 @@ sudo mv /home/ubuntu/Desktop/tmp /phpstudy/www/
 
 // win和linux文件大小写 // 注意统一命名风格
 ```
-
 
 * 阿里云
   * [阿里云官方教程](https://help.aliyun.com/document_detail/50774.html?spm=5176.doc50775.6.630.uJaGYl)
@@ -55,17 +53,16 @@ cd /root/oneinstack
 3. 服务的启停
 service nginx reload/restart
 service tomcat start/stop
-    
+
 // 改端口
 // 虚拟路径设置
 ```
 
 * HTTPS升级
-  * [AMH实现\(还没试过)](https://bbs.aliyun.com/read/303413.html?spm=5176.100241.0.0.T6qT5U)
+  * [AMH实现\(还没试过\)](https://bbs.aliyun.com/read/303413.html?spm=5176.100241.0.0.T6qT5U)
   * [阿里云证书配置](https://yundun.console.aliyun.com/?spm=5176.2020520163.1001.87.ZMNtx7&p=cas#/cas/download/214052692260308) \| [HTTPS升级指南-ruanrf](http://www.ruanyifeng.com/blog/2016/08/migrate-from-http-to-https.html)
 
 ```js
-
 JAVA WEB 只用配ngnix,不用配tomcat
 按照证书服务教程来就能成功
 
