@@ -6,7 +6,7 @@
   * [mysql 远程访问授权](https://zhidao.baidu.com/question/358796386.html) \| [使用ueditor无法创建目录问题](http://blog.csdn.net/chengyi_l/article/details/46377307)
 
 ```js
-/phpstudy/mysql/bin/mysql -h 127.0.0.1 -u root -p // 进入数据库, 然后输入密码
+/phpstudy/mysql/bin/mysql -h 127.0.0.1 -u root -p // 进入数据库, 然后回车输入密码
 sudo ln -s /phpstudy/mysql/bin/mysql /usr/local/bin/mysql // 快链接
 
 GRANT ALL PRIVILEGES ON *.* TO 'myuser'@'%' IDENTIFIED BY 'mypassword' WITH GRANT OPTION; // 远程权限
