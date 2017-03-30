@@ -2,7 +2,7 @@
 
 * 腾讯云下PHP环境为例
 
-  * [phpstudy安装](https://bbs.aliyun.com/read/165947.html?spm=5176.bbsr165947.0.0.sl6Fe6&displayMode=1&page=1#527830)
+  * [phpstudy安装](https://bbs.aliyun.com/read/165947.html?spm=5176.bbsr165947.0.0.sl6Fe6&displayMode=1&page=1#527830)\| [oneinstack-install](https://oneinstack.com/install/)
   * [mysql 远程访问授权](https://zhidao.baidu.com/question/358796386.html) \| [使用ueditor无法创建目录问题](http://blog.csdn.net/chengyi_l/article/details/46377307)
 
 ```js
@@ -20,6 +20,8 @@ chmod -R 777 /phpstudy/www // 或者直接修改权限
 
 // win和linux文件大小写 
 // 注意统一命名风格
+
+// iptables 防火墙问题 kernel update
 ```
 
 * 阿里云

@@ -80,6 +80,7 @@
     * [ch1-JS-框架](js-stack/ch5-javascriptkuang-jia-pian/ch1-js-framework-summd.md)
       * [01-七周七框架-读后感](js-stack/ch5-javascriptkuang-jia-pian/01qi-zhou-qi-kuang-67b6-du-hou-gan.md)
       * [01-JS框架概述](js-stack/ch5-javascriptkuang-jia-pian/01-jskuang-jia-gai-shu.md)
+      * [02-怎么防止被累死](js-stack/ch5-javascriptkuang-jia-pian/02zen-yao-fang-zhi-bei-lei-si.md)
     * [ch2-jQuery生态](js-stack/ch4-jquery.md)
       * [01-jQuery-基础1](js-stack/ch4-jquery/01-jqueryji-chu-1.md)
       * [01-jQuery-基础2](js-stack/ch4-jquery/01-jqueryji-chu-2.md)
