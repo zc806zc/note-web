@@ -4,7 +4,7 @@
 
   * [phpstudy安装](https://bbs.aliyun.com/read/165947.html?spm=5176.bbsr165947.0.0.sl6Fe6&displayMode=1&page=1#527830)\| [oneinstack-install](https://oneinstack.com/install/)
   * [mysql 远程访问授权](https://zhidao.baidu.com/question/358796386.html) \| [使用ueditor无法创建目录问题](http://blog.csdn.net/chengyi_l/article/details/46377307)
-  * [开放端口](http://www.server110.com/linux/201308/740.html)\| [公网ip无法访问问题](http://bbs.qcloud.com/forum.php?mod=viewthread&tid=12878&highlight=%E5%85%AC%E7%BD%91ip)
+  * [开放端口](http://www.server110.com/linux/201308/740.html)\| [公网ip无法访问问题](http://bbs.qcloud.com/forum.php?mod=viewthread&tid=12878&highlight=公网ip)
 
 ```js
 /phpstudy/mysql/bin/mysql -h 127.0.0.1 -u root -p // 进入数据库, 然后回车输入密码
@@ -23,6 +23,11 @@ chmod -R 777 /phpstudy/www // 或者直接修改权限
 // 注意统一命名风格
 
 // iptables 防火墙问题 kernel update
+iptables -I INPUT 4 -p tcp -m state --state NEW -m tcp --dport 3000 -j ACCEPT
+service iptables save
+iptables -nvlptables -nvl // 查看规则
+
+
 // 安全组导致的公网ip无法访问问题特别坑，我郁闷到两次重装系统。知道真相的我眼泪掉下来...
 ```
 
