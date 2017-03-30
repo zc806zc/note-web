@@ -6,25 +6,20 @@
   * [mysql 远程访问授权](https://zhidao.baidu.com/question/358796386.html) \| [使用ueditor无法创建目录问题](http://blog.csdn.net/chengyi_l/article/details/46377307)
 
 ```js
-// 操作数据库
-/phpstudy/mysql/bin/mysql -h 127.0.0.1 -u root -p // 然后输入密码
+/phpstudy/mysql/bin/mysql -h 127.0.0.1 -u root -p // 进入数据库, 然后输入密码
+sudo ln -s /phpstudy/mysql/bin/mysql /usr/local/bin/mysql // 快链接
 
-// 授予访问权限
-GRANT ALL PRIVILEGES ON *.* TO 'myuser'@'%' IDENTIFIED BY 'mypassword' WITH GRANT OPTION; 
+GRANT ALL PRIVILEGES ON *.* TO 'myuser'@'%' IDENTIFIED BY 'mypassword' WITH GRANT OPTION; // 远程权限
 
-// 删除文件夹
-sudo rm -rf /phpstudy/www/tmp/
+sudo rm -rf /phpstudy/www/tmp/ // 删除文件夹
 
 // 腾讯云
-权限原因
-ftp只能上传到Desktop
+权限原因, ftp只能上传到Desktop
+sudo mv /home/ubuntu/Desktop/tmp /phpstudy/www/ // 可以以此作中转站再移动内容
+chmod -R 777 /phpstudy/www // 或者直接修改权限 
 
-// 可以以此作中转站再移动内容
-sudo mv /home/ubuntu/Desktop/tmp /phpstudy/www/
-
-或者直接修改权限 chmod 777 www
-
-// win和linux文件大小写 // 注意统一命名风格
+// win和linux文件大小写 
+// 注意统一命名风格
 ```
 
 * 阿里云
