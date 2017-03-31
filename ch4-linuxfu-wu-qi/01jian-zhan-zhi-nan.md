@@ -90,6 +90,77 @@ ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE:ECDH:AES:HIGH:!NULL:!aNULL:!MD5:!A
 ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
 ssl_prefer_server_ciphers on;
 
+// phpstudy nginx.conf配置
+server {
+listen 80;
+server_name lcoalhost;
+index index.html index.htm index.php;
+return 301 https://qmen.space$request_uri;
+
+root /phpstudy/www;
+location / {
+index index.html index.htm index.php;
+}
+
+
+error_page 500 502 503 504 /50x.html;
+location = /50x.html {
+root html;
+}
+
+
+location ~ \.php(.*)$ {
+fastcgi_pass 127.0.0.1:9000;
+fastcgi_index index.php;
+fastcgi_split_path_info ^((?U).+\.php)(/?.+)$;
+fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+fastcgi_param PATH_INFO $fastcgi_path_info;
+fastcgi_param PATH_TRANSLATED $document_root$fastcgi_path_info;
+include fastcgi_params;
+}
+
+}
+
+server {
+listen 443;
+server_name qmen.space www.qmen.space;
+index index.html index.htm index.php;
+
+ssl on;
+ssl_certificate cert/214052607290308.pem;
+ssl_certificate_key cert/214052607290308.key;
+ssl_session_timeout 5m;
+ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE:ECDH:AES:HIGH:!NULL:!aNULL:!MD5:!ADH:!RC4;
+ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+ssl_prefer_server_ciphers on;
+
+root /phpstudy/www;
+location / {
+index index.html index.htm index.php;
+}
+
+error_page 500 502 503 504 /50x.html;
+location = /50x.html {
+root html;
+}
+
+location ~ \.php(.*)$ {
+fastcgi_pass 127.0.0.1:9000;
+fastcgi_index index.php;
+fastcgi_split_path_info ^((?U).+\.php)(/?.+)$;
+fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+fastcgi_param PATH_INFO $fastcgi_path_info;
+fastcgi_param PATH_TRANSLATED $document_root$fastcgi_path_info;
+include fastcgi_params;
+}
+
+
+}
+
+
+
+
+
 // 腾讯云还要配置
 phpstudy/server/httpd/conf/extra/httpd-ssl.conf文件下
 
