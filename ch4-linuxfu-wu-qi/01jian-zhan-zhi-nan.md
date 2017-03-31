@@ -147,10 +147,10 @@ TransferLog "/phpstudy/server/httpd/logs/access_log"
 // 即使显示https访问，照样显示图片可能被劫持不安全
 // 强制HTTPS访问，但子文件照样可以http直接
 // 翻不翻墙貌似会有影响
-// 浏览器貌似也有影响
+// 浏览器不用貌似也有影响
 注意及时清理缓存
 必要时重新开启浏览器
-适当时候再换个浏览器 ff // 我突然成功，无法解释这个灵异现象
+适当时候再换个浏览器 ff // 我突然成功，无法解释这个灵异现象，chrome有点怪
 
 // 重启nginx后丢失nginx.pid的解决方法
 /usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf // 可能的解决方法
