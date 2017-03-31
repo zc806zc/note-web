@@ -95,30 +95,16 @@ server {
 listen 80;
 server_name lcoalhost;
 index index.html index.htm index.php;
-return 301 https://qmen.space$request_uri;
+return 301 https://qmen.space$request_uri; // 重定向
 
 root /phpstudy/www;
 location / {
-index index.html index.htm index.php;
 }
-
-
 error_page 500 502 503 504 /50x.html;
 location = /50x.html {
-root html;
 }
-
-
-location ~ \.php(.*)$ {
-fastcgi_pass 127.0.0.1:9000;
-fastcgi_index index.php;
-fastcgi_split_path_info ^((?U).+\.php)(/?.+)$;
-fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-fastcgi_param PATH_INFO $fastcgi_path_info;
-fastcgi_param PATH_TRANSLATED $document_root$fastcgi_path_info;
-include fastcgi_params;
+location ~ \.php(.*)$ { 
 }
-
 }
 
 server {
@@ -136,30 +122,14 @@ ssl_prefer_server_ciphers on;
 
 root /phpstudy/www;
 location / {
-index index.html index.htm index.php;
 }
-
 error_page 500 502 503 504 /50x.html;
 location = /50x.html {
-root html;
 }
-
 location ~ \.php(.*)$ {
-fastcgi_pass 127.0.0.1:9000;
-fastcgi_index index.php;
-fastcgi_split_path_info ^((?U).+\.php)(/?.+)$;
-fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-fastcgi_param PATH_INFO $fastcgi_path_info;
-fastcgi_param PATH_TRANSLATED $document_root$fastcgi_path_info;
-include fastcgi_params;
 }
 
-
 }
-
-
-
-
 
 // 腾讯云还要配置
 phpstudy/server/httpd/conf/extra/httpd-ssl.conf文件下
