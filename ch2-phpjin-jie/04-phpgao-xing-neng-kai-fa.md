@@ -82,13 +82,38 @@ echo "用户信息",get_username(),"密码",get_userpwd(); // 0.106s 推荐
 #### **ch3-4 PHP输出缓冲区/缓存技术**
 
 ```php
+// 系统缓冲区
+// PHP输出缓冲区
 
+// 内容压缩输出
+
+// 页面静态化
+
+// 数据级别缓存
+
+// OpCod缓存
+// APC eAccelerator 与XCache三者的比较
+
+// 使用deflate压缩页面
+
+// 内存数据库
+pecl:memcached扩展
+
+// 缓存的陷阱  
 ```
 
 #### **ch5 PHP网络编程**
 
 ```php
+// Socket
+操作系统提供的通信层的一组API
+位于TCP/IP的传输控制层
+异步通信
 
+stream socket
+datagram stream
+
+psockopen() 持久化连接/长连接
 ```
 
 #### **ch6 PHP调试、测试和工具**
