@@ -9,8 +9,6 @@
   * [ch6 网络爬虫与数据操作 ](https://github.com/leizongmin/book-crawler-mysql-cron) 
   * [ch7-9  Node.js的进程与线程，发布一个Package, Web安全实战](https://github.com/DoubleSpout/threadAndPackage)
 
-  [ ](https://github.com/DoubleSpout/threadAndPackage)
-
 * 通过Docker快速发布Node.js应用
 
   * [源码-nodeInAction](https://github.com/DoubleSpout/nodeInAction)
@@ -105,41 +103,64 @@ XMLRPC -> RESTful
 // RabbitMQ的RPC远程过程调用
 
 // RabbitMQ与HTTP的对比
-HTTP不错，但有个缺陷 - 无法控制请求的频率 // 抢购活动前100名 类似于DDos 
+HTTP不错，但有个缺陷 - 无法控制请求的频率 // 抢购活动前100名 类似于DDos
 ```
 
 * 编写命令行工具 - 打造一个静态博客系统
+  * [code-static-blog](https://github.com/leizongmin/book-nodejs-in-action-season-2/tree/master/static-blog)
 
 ```js
-// 
+Node.js除了可以编写服务器端程序
+也可以用来编写一些 命令行工具
+gulb.js ??
+
+// 使用到的第三方模块
+commander : 解析命令行参数
+Express
+serve-static : 静态文件服务中间件
+markdown-it ： 渲染Markdown格式的文档
+swig ： 语法模板引擎
+rd ： 遍历目录下的所有文件，包括子目录
+fs-extra ： 扩展fs模块的一些方法
+open ： 使用系统程序打开指定文件或网址
+moment ： 解析 格式化日期时间
 
 // 编写命令行工具
 // 实时预览
 
 // 评论组件
+多说
+Disqus
+
 // 分享组件
+加网 http://www.jiathis.com/ 提供的组件
 ```
 
 * 基于Koa快速开发Web应用
+  * [es6.ruanyifeng.com](http://es6.ruanyifeng.com/)
+  * [nswbmw-N-club](https://github.com/nswbmw/N-club)
 
 ```js
 // ES6
 function function*
 yield yield*
-co和Koa
+co // 回调金字塔
+Koa // Express原班人马打造的更小更健壮更富有表现力的Web框架
+
 
 // 模板系统
 ejs和co-ejs
 过滤器
 
 // 路由
-
 // 参数验证和错误处理
-
 // 缓存和配置
 
 // 测试
-单元测试
+// 单元测试
+TDD 测试驱动开发 
+BDD 行为驱动开发 // 系统最终的实现与用户期望和设计目标是否一致
+
 co-mocha和co-supertest
 
 // 开发一个论坛系统
@@ -149,8 +170,17 @@ co-mocha和co-supertest
 
 ```js
 // pixbi
+连接时尚杂志与电子商品的互联网创业团队
+Adobe InDesign插件
 
-// 搭建后端测试服务
+// 搭建后端测试服务的技术栈
+MochaJS
+SinonJS
+Node.js
+jscoverage
+
+
+// 
 单元测试
 功能测试
 可扩展测试
