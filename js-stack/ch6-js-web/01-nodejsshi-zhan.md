@@ -175,30 +175,36 @@ Adobe InDesign插件
 
 // 搭建后端测试服务的技术栈
 MochaJS
-SinonJS
+SinonJS // 截断额外的请求
 Node.js
-jscoverage
+jscoverage // 覆盖率测试
 
 
-// 
-单元测试
-功能测试
+ 
+单元测试 // 代码
+功能测试 // 产品功能 业务流程 服务器接口...
 可扩展测试
 
 // 搭建前端测试服务
-PhantomJS
-BrowserStack
+PhantomJS // headless浏览器，没有实际的用户界面
+BrowserStack // 集成了700个浏览器的测试环境
 Adobe CEP
 
 // 加入持续集成工作流
+CircleCI
 ```
 
 * 使用Node.js绑定C语言库-51Degrees.node
+  * [51degrees.node](https://github.com/51Degrees/51degrees.node)
 
 ```js
+// 远程工作
+将一个已有的C/C++代码库扩展到Node.js平台上使用
+
 // 51Degrees-C
 // C/C++中的Node.js API
 // nan及其升级
+用于兼容v8.h与node.h的版本问题
 
 // v8胶水层接口
 
