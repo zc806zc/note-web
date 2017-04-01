@@ -50,6 +50,7 @@ mongo // JS Shell 可以进行简单的运算
 
 mongod --dbpath=/data/db --rest
 http://localhost:28017
+// It looks like you are trying to access MongoDB over HTTP on the native drive
 ```
 
 * MongoDB基础
