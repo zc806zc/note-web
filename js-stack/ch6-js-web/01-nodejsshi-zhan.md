@@ -70,7 +70,22 @@ DELETE /api/articles/#{id}.json
 * 基于RabbitMQ搭建消息队列
 
 ```js
+XMLRPC -> RESTful
+使用RabbitMQ也能灵活处理这些事情
+
 // 消息队列
+应用解耦 // 只要遵循相同的接口约定
+冗余存储
+可扩展性
+灵活性和峰值处理能力
+可恢复性
+送达保证
+排序保证
+缓冲
+理解数据流
+异步通信
+
+
 // RabbitMQ
 
 // RabbitMQ的队列路由
@@ -132,7 +147,7 @@ PhantomJS
 BrowserStack
 Adobe CEP
 
-// 加入持续集成工作流    
+// 加入持续集成工作流
 ```
 
 * 使用Node.js绑定C语言库-51Degrees.node
