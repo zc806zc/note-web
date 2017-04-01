@@ -1,6 +1,6 @@
 #### VPS
 
-* 腾讯云下PHP环境为例
+* 腾讯云下\(PHP环境为例, phpstudy\)
 
   * [phpstudy安装](https://bbs.aliyun.com/read/165947.html?spm=5176.bbsr165947.0.0.sl6Fe6&displayMode=1&page=1#527830)\| [oneinstack-install](https://oneinstack.com/install/)
   * [mysql 远程访问授权](https://zhidao.baidu.com/question/358796386.html) \| [使用ueditor无法创建目录问题](http://blog.csdn.net/chengyi_l/article/details/46377307)
@@ -19,12 +19,15 @@ sudo rm -rf /phpstudy/www/tmp/ // 删除文件夹
 sudo mv /home/ubuntu/Desktop/tmp /phpstudy/www/ // 可以以此作中转站再移动内容
 chmod -R 777 /phpstudy/www // 或者直接修改权限 
 
-// win和linux文件大小写 
-// 注意统一命名风格
+// win和linux文件大小写 注意统一命名风格
 
 // iptables 防火墙问题 kernel update
 iptables -I INPUT 4 -p tcp -m state --state NEW -m tcp --dport 3000 -j ACCEPT
 service iptables save
+// 或者
+// sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+// sudo iptables-save
+
 iptables -nvlptables -nvl // 查看规则
 
 
