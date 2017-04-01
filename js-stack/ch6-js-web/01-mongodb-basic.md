@@ -40,8 +40,16 @@ password= ""
 官网下载 / curl -O https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-3.0.6.tgz    
 tar -zxvf mongodb-linux-x86_64-3.0.6.tgz                                   
 mv  mongodb-linux-x86_64-3.0.6/ /usr/local/mongodb
-export PATH=/usr/local/mongodb/bin:$PATH // 添加至路径
+export PATH=/usr/local/mongodb/bin:$PATH // 添加至路径??
+// sudo ln -s /usr/local/mongodb/bin/mongod /usr/local/bin/mongod
 
+mkdir -p /data/db // 设置db路径
+
+mongod // mongdb服务
+mongo // JS Shell 可以进行简单的运算
+
+mongod --dbpath=/data/db --rest
+http://localhost:28017
 ```
 
 * MongoDB基础
@@ -236,6 +244,7 @@ ref
 
 ```js
 MEAN Web开发
+菜鸟教程
 ```
 
 
