@@ -96,7 +96,6 @@
   * [JS-Web](js-stack/ch6-js-web.md)
     * [ch1-Node.js](js-stack/ch6-js-web/ch1-nodejs.md)
       * [01-Node.js基础](js-stack/ch6-js-web/01-nodejsru-men.md)
-      * [01-了不起的Node.js-读后感](js-stack/ch6-js-web/01le-bu-qi-de-node-js.md)
       * [01-Node.js实战\(第2季\)-读后感](js-stack/ch6-js-web/01-nodejsshi-zhan.md)
     * [ch2-MEAN为例](js-stack/ch6-js-web/ch3-mean.md)
       * [01-MongoDB-基础](js-stack/ch6-js-web/01-mongodb-basic.md)
