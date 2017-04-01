@@ -1,33 +1,29 @@
 #### **MongoDB**
 
-* 资源
-  * [MongoDB-download](https://www.mongodb.com/download-center#community) \| [文档-系统服务方式运行](https://docs.mongodb.com/manual/reference/configuration-options/)
-  * [副本集](https://docs.mongodb.com/manual/replication/)
 * 安装
+  * [MongoDB-dl](https://www.mongodb.com/download-center#community) \| [文档-系统服务方式运行](https://docs.mongodb.com/manual/reference/configuration-options/)
 
 ```js
 // Mongo在win10环境下的安装
 在C盘自己创建mongo,data两个文件夹
+下载msi版本 解压到C://mongo路径下
 
-下载{% em %}msi{% endem %}
-解压到C://mongo路径下
-
-mongodb是没有系统依赖的
-
-md data\db 指定数据文件存储目录路径
+md data\db // 指定数据文件存储目录路径
 --dbpath
 
-// 运行服务
+// mongodb是没有系统依赖的
+
 c:\mongodb\bin\mongod.exe //启动服务
 c:\mongodb\bin\mongo.exe  // MongoDB命令行工具
-
 
 // 测试安装是否成功
 db.articles.insert({ title:"hello mongo"} )
 db.articles.find()
 { "_id" : ObjectId("5870f0ef40d2a61007a9e062"), "title" : "hello mongo" }
 
-// 配置
+// win配置成服务
+// 实现失败，还需解决
+// 注意等号之后有一个空格，要以管理员身份运行
 md C:\mongodb\log
 echo logpath=c:\mongodb\log\mongo.log > c:\mongodb\mongod.cfg
 
@@ -37,11 +33,19 @@ binPath= "\"C:\mongodb\bin\mongod.exe\"
 --config= \"C:\mongodb\mongod.cfg\""  
 DisplayName= "MongoDB" 
 start= "auto" 
-password= "" 
-// 注意等号之后有一个空格，要以管理员身份运行
+password= ""
+
+
+// ubuntu-install
+官网下载 / curl -O https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-3.0.6.tgz    
+tar -zxvf mongodb-linux-x86_64-3.0.6.tgz                                   
+mv  mongodb-linux-x86_64-3.0.6/ /usr/local/mongodb
+export PATH=/usr/local/mongodb/bin:$PATH // 添加至路径
+
 ```
 
 * MongoDB基础
+  * [副本集](https://docs.mongodb.com/manual/replication/)
 
 ```js
 // NoSQL迎合的趋势
@@ -84,12 +88,9 @@ db.posts.find({ commentsCount ：{ $gt : 10 } } );
 * MongoDB增删改查
 
 ```js
-use mean // 新建或切换至数据库 
-         // db没有创建语句
+use mean // 新建或切换至数据库 db没有创建语句
 
-// 开启时带上参数 
 show dbs         // 显示所有数据库
-
 mongo mean
 show collections // 查看所有可用的集合
 db.query.drop() // 删除posts集合
