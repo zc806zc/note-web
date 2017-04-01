@@ -73,6 +73,8 @@ DELETE /api/articles/#{id}.json
 XMLRPC -> RESTful
 使用RabbitMQ也能灵活处理这些事情
 
+而thrift 性能更好
+
 // 消息队列
 应用解耦 // 只要遵循相同的接口约定
 冗余存储
@@ -87,12 +89,23 @@ XMLRPC -> RESTful
 
 
 // RabbitMQ
+虽然现在性能并不是最好的
+但是可靠
+
+// RabbitMQ的工作队列
+一个生产者配合多个消费者的队列
+将一个复杂的任务负载均衡到各个节点
+
+// RabbitMQ的PUB/SU队列
+一个消息有对个消费者订阅
 
 // RabbitMQ的队列路由
+消费者是各种各样的
 
 // RabbitMQ的RPC远程过程调用
 
 // RabbitMQ与HTTP的对比
+HTTP不错，但有个缺陷 - 无法控制请求的频率 // 抢购活动前100名 类似于DDos 
 ```
 
 * 编写命令行工具 - 打造一个静态博客系统
