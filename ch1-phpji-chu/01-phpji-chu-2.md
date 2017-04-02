@@ -3,23 +3,18 @@
 * 表单
 
 ```php
-// 在服务器验证表单的一种好的方式是，
-把表单传给它自己，
-而不是跳转到不同的页面
+把表单传给它自己，而不是跳转到不同的页面 // 更好的方式
+// 用户在同一表单页面得到错误信息，更容易发现
 
-这样用户就可以在同一张表单页面得到错误信息
-用户也就更容易发现错误了
-
-// 必需
-HTML5 required
-
+// 表单必需的JS 实现 
+// HTML5 required
 if (empty($_POST["gender"])) {
     $genderErr = "性别是必需的。";
 } else {
     $gender = test_input($_POST["gender"]);
 }
 
-<span class="error">* <?php echo $genderErr;?></span>
+<span class="error"> * <?php echo $genderErr;?></span>
 ```
 
 * 文件
@@ -49,7 +44,7 @@ x+
 // zip file函数
 ```
 
-* 浏览历史
+* Cookie/Session/浏览历史
 
 ```php
 // Cookie
@@ -58,6 +53,8 @@ x+
 // Session
 HTTP响应消息头
 输出缓冲
+
+unset() 或 session_destroy()
 ```
 
 * 图像生成/验证码生成
@@ -86,22 +83,21 @@ var_dump(gd_info());
 PHP查询数据后 <?php echo $page_size ?> 到JS
 ```
 
-* 常见问题
-  * [php提示undefined index](http://www.jb51.net/article/30328.htm)
-
-```php
-// 提示undefined index
-httpd.conf修改
-error_reporting = E_ALL & ~E_NOTICE
-```
-
-* PDO
+* PDO/Mysqli/ODBC
 
 ```php
 PHP Data Object 
 抽象层
 
 统一操作各种数据库
+```
+
+* 常见问题
+
+```php
+// 提示undefined index
+httpd.conf修改
+error_reporting = E_ALL & ~E_NOTICE
 ```
 
 
