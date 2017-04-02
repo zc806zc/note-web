@@ -321,7 +321,26 @@ throw new Exception('Uncaught Exception occurred');
 * 过滤器
 
 ```php
+filter_var() 
+filter_var_array() 
+filter_input 
+filter_input_array - 获取多个输入变量，并通过相同的或不同的过滤器对它们进行过滤
 
+// Validating 和 Sanitizing
+用于验证用户输入
+如果成功则返回预期的类型，如果失败则返回 FALSE
+
+用于允许或禁止字符串中指定的字符
+无数据格式规则
+始终返回字符串
+
+// 使用 Filter Callback
+
+// 高级过滤器
+检测一个数字是否在一个范围内
+检测 IPv6 地址
+检测 URL - 必须包含QUERY_STRING（查询字符串）
+...
 ```
 
 ---

@@ -24,8 +24,19 @@ localhost改成127.0.0.1使更通用
   * [PHP AJAX 跨域问题](http://www.runoob.com/w3cnote/php-ajax-cross-border.html)
 
 ```js
+// 谷歌搜索建议
+AJAX =
+XMLHttpRequest 对象（与服务器异步交互数据）
++ JavaScript/DOM（显示/取回信息）
++ CSS（设置数据的样式）
++ XML（常用作数据传输的格式）
+// AJAX 应用程序与浏览器和平台无关的
+
 // XML
 Expat XML 解析器
+
+PHP SimpleXML 处理最普通的 XML 任务，
+其余的任务则交由其它扩展处理
 
 // JSON
 ```

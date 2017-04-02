@@ -86,10 +86,18 @@ PHP查询数据后 <?php echo $page_size ?> 到JS
 * PDO/Mysqli/ODBC
 
 ```php
-PHP Data Object 
+// PHP Data Object 
 抽象层
-
 统一操作各种数据库
+
+// MySQLi extension // "i" 意为 improved
+PDO 应用在 12 种不同数据库中
+MySQLi 只针对 MySQL 数据库
+
+习惯用哪个用哪个
+两者都支持预处理语句。 
+预处理语句可以防止 SQL 注入，
+对于 web 项目的安全性是非常重要的。
 ```
 
 * 邮件
