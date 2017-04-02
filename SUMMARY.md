@@ -12,6 +12,7 @@
     * [01-Web-最基础的一篇](ch2quan-zhan/03-webcheng-xu-she-ji.md)
     * [02-全栈工程师的自我修养-读后感](ch2quan-zhan/02-webquan-zhan-gong-cheng-shi-de-zi-wo-xiu-517b-du-hou-gan.md)
     * [03-Java和JS全端开发-为例](ch2quan-zhan/01-jsyu-java-quan-duan-kai-fa.md)
+    * [02-RESTful连接](ch2quan-zhan/02-restfullian-jie.md)
   * [ch3-计算机综合](ch5zong-he.md)
     * [01-导论](toolbox/ch1-note/01ji-suan-ji-dao-lun.md)
     * [01-规划书](toolbox/ch3wen-dang/01gui-hua-shu.md)
