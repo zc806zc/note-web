@@ -20,7 +20,6 @@ if (empty($_POST["gender"])) {
 }
 
 <span class="error">* <?php echo $genderErr;?></span>
-
 ```
 
 * 文件
@@ -91,6 +90,23 @@ PHP查询数据后 <?php echo $page_size ?> 到JS
 // 提示undefined index
 httpd.conf修改
 error_reporting = E_ALL & ~E_NOTICE
+```
+
+#### **PHP基础3**
+
+* PHP7
+
+```
+
+```
+
+* PDO
+
+```php
+PHP Data Object 
+抽象层
+
+统一操作各种数据库
 ```
 
 
