@@ -27,7 +27,10 @@ localhost改成127.0.0.1使更通用
   * [PHP AJAX 跨域问题](http://www.runoob.com/w3cnote/php-ajax-cross-border.html)
 
 ```js
+// XML
+Expat XML 解析器
 
+// JSON
 ```
 
 * 面向对象网站开发
