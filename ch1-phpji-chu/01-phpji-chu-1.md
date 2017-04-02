@@ -304,6 +304,8 @@ include("hi.php");
 } ->endif endwhile endfor endforeach endswitch
 ```
 
+---
+
 * URL/GET传参
 
 ```php
