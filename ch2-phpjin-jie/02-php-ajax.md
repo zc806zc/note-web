@@ -1,24 +1,21 @@
 #### **PHP-Ajax网站**
 
-* 使用模板快速建站
+* 模板快速建站
 
   * [code-dl](http://book.boxuegu.com/php_ajax/)
-  * [解决安装WordPress主题及插件需要输入FTP问题](http://jingyan.baidu.com/article/4f34706efc1237e387b56da4.html)
+  * [WordPress-主题插件权限-FTP输入问题](http://jingyan.baidu.com/article/4f34706efc1237e387b56da4.html)
 
 ```php
 // 模板
 wordpress
-discuz
-wecenter
+wecenter // discuz
 
-// discuz与wecenter
-// 安装注意
-chmod -R 777/775  folder // 更改文件夹读写权力
+// discuz与wecenter安装注意
 
-wecenter要事先手动创建好数据库
-数据库密码指的是服务器的 初始的就是root root
+chmod -R 777/775  folder // 读写权力
+wecenter要手动建数据库
+// 数据库密码 指的是初始 root root // 之后记得删除install文件
 localhost改成127.0.0.1使更通用
-
 // 不要用已经配置过的discuz和wecenter文件夹
 ```
 

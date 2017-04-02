@@ -47,7 +47,6 @@
 * [LAMP](lamp-stack.md)
   * [Linux](ch4-linuxfu-wu-qi.md)
     * [01-Linux基础](ch4-linuxfu-wu-qi/01-linuxji-chu.md)
-    * [01-鸟哥的Linux私房菜-读后感](ch4-linuxfu-wu-qi/01niao-ge-de-linux-si-fang-83dc-du-hou-gan.md)
     * [02-Web服务器](ch4-linuxfu-wu-qi/02fu-wu-qi.md)
     * [02-VPS-远程控制欲](ch4-linuxfu-wu-qi/01jian-zhan-zhi-nan.md)
     * [03-图解HTTP-读后感](ch4-linuxfu-wu-qi/01tu-jie-http-du-hou-gan.md)
