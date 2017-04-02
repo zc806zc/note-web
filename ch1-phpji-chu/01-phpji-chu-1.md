@@ -1,27 +1,20 @@
-#### **PHP基础1 - 语法扫盲**
+#### **PHP - 语法**
 
 * 安装
   * [php5.5下载](http://www.pc6.com/softview/SoftView_51016.html)
+  * [Sublime - 配置](http://jingyan.baidu.com/article/09ea3ede04ebe9c0aede390d.html?qq-pf-to=pcqq.group) \| [Atom - 配置](http://haafiz.me/development/how-to-setup-atom-for-php-development) \| [Netbean - 换主题](http://netbeansthemes.com/darkcalm/)
+  * [Wamp的localhost - 文件解析](https://zhidao.baidu.com/question/625842715884857684.html) \| [phpstorm表单提交问题](http://blog.csdn.net/muzilinxi90/article/details/52458511)
 
 ```php
 // 集成安装包
 XAMPP Wamp phpstudy
-AppServ
-// phpnow easyphp vertrigo // 不知道
+// AppServ phpnow easyphp vertrigo
 
-// Appache等的配置
-httpd.conf
-```
+// Appache等的配置 httpd.conf
 
-* IDE/编辑器
-
-  * [Sublime - 配置](http://jingyan.baidu.com/article/09ea3ede04ebe9c0aede390d.html?qq-pf-to=pcqq.group) \| [Atom - 配置](http://haafiz.me/development/how-to-setup-atom-for-php-development)
-
-  * [Netbean - 换主题](http://netbeansthemes.com/darkcalm/)
-  * [Wamp的localhost - 文件解析](https://zhidao.baidu.com/question/625842715884857684.html) \| [phpstorm表单提交问题](http://blog.csdn.net/muzilinxi90/article/details/52458511)
-
-```js
-Atom + script 插件 // 推荐
+// IDE/编辑器
+sublime
+Atom + script 插件 
 
 // Sublime的相关配置
 编译系统 改成PHP
@@ -30,29 +23,25 @@ tab-4
 高亮空格 // 可能影响到PHP解释 
 浏览器的快速打开
 
-// NetBeans/PHPStrom(最强) // 推荐后者
-
 // Netbean使用时的运行问题
 运行配置那里选 PHP"内置"
-utf-8 -> 中文乱码的问题
+utf-8 // 中文乱码
 
+// NetBeans/PHPStrom(最强) // 推荐后者
 // phpEclipse
 // komodo edit, APtana Studio, PHPEdit
-// komodo IDE, Zend studio // 更加没有听说过
+// komodo IDE, Zend studio
 ```
-
-* 资源
-
-  * [PHP 手册](http://php.net/manual/zh/) \| [MySQL 5.1参考手册](http://www.kancloud.cn/k12_develop/mysql51/77410)
-  * [Apache 2.2 官方文档](http://www.kancloud.cn/wizardforcel/apache-doc/105614) \| [Nginx 官方文档](http://www.kancloud.cn/wizardforcel/nginx-doc/92403) \|[鸟哥的 Linux 私房菜](http://www.kancloud.cn/thinkphp/linux_basic/43213)
-  * [Laravel 5文档](https://www.gitbook.com/book/lbp0200/laravel-5-doc/details)
-  * [PHP资源](https://www.zhihu.com/question/20034403) \| [Github资源](https://github.com/justjavac/free-programming-books-zh_CN#php) \| [开源后台模板](http://www.cnblogs.com/DiYuShe/archive/2012/08/21/2648563.html)
-  * [packagist](https://packagist.org/explore/popular)  \| [segmentfault - PHP](https://segmentfault.com/t/php)
-  * [psysh](http://psysh.org/)
 
 ---
 
 * PHP基础
+  * [PHP 手册](http://php.net/manual/zh/) \| [MySQL 5.1参考手册](http://www.kancloud.cn/k12_develop/mysql51/77410)
+  * [Apache 2.2 官方文档](http://www.kancloud.cn/wizardforcel/apache-doc/105614) \| [Nginx 官方文档](http://www.kancloud.cn/wizardforcel/nginx-doc/92403) \|[鸟哥的 Linux 私房菜](http://www.kancloud.cn/thinkphp/linux_basic/43213)
+  * [Laravel 5文档](https://www.gitbook.com/book/lbp0200/laravel-5-doc/details)
+  * [PHP资源](https://www.zhihu.com/question/20034403) \| [Github资源](https://github.com/justjavac/free-programming-books-zh_CN#php) \| [开源后台模板](http://www.cnblogs.com/DiYuShe/archive/2012/08/21/2648563.html)
+  * [packagist](https://packagist.org/explore/popular) \| [segmentfault - PHP](https://segmentfault.com/t/php)
+  * [psysh](http://psysh.org/)
 
 ```php
 超文本预处理器  // "动态"生成html  增强信息交互
@@ -80,63 +69,32 @@ PHP框架是一个可以用来节省时间并强化自己代码的工具
 了解了面向对象和框架后，你应该接触一下XML了
 ```
 
-* 特殊点的语法
+* 特殊语法
 
 ```php
-// 标识符采用"下划线"连接
-$user_pwd
-可以用 {} 界定变量
+$user_pwd // 可以用 {} 界定变量
+// 分支语句的elseif
 
-// PHP 有四种不同的变量作用域：
+// 四种不同的变量作用域
 local // 局部
 global
 static
 // parameter 参数作用域
 
-// 传值赋值与引用赋值的区别
-// 传值赋值
+// 传值赋值与引用赋值 
 $age = 12;
-$num = $age;
+$num = $age; // 结果将是100 引用赋值
 $age = 100;
-echo $num; // 12
-
-// 引用赋值
-$num = &$age;
-echo $num; // 100
+echo $num; // 12 传值赋值
 
 // define函数与const 常量
-
-// 分支语句
-if elseif else
-
-// 常量 常量是全局的 大小写敏感设置
+常量 常量是全局的 大小写敏感设置
 
 // 超级全局变量
 // $_REQUEST等
-<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"> // xss
-```
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"> // xss攻击
 
-* 数据类型
-
-```php
-标量：布尔型 整型 浮点型 字符串型 
-有时 0 表示false 1表示true 
-// 浮点数的有效位数 14
-
-复合 : 数组 对象
-特殊 : resource NULL
-
-// 字符串
-双引号中的变量可以解析，同时可以处理转义字符
-单引号原样输出
-
-$str = 'hi ';
-$str .= 'world'; // hi world  点号连接
-```
-
-* 输出函数
-
-```php
+// 输出
 // echo(语言结构,不是函数) print(返回值) printf
 // var_dump 打印变量或表达式相关信息
 array(2) {
@@ -153,39 +111,41 @@ Array
   [1] => 4
   [2] => 5
 )
-```
 
-* Date函数
 
-```php
-// 从1970-01-01 00:00:00 开始的总秒数
-echo time() ; // 获取时间戳 1483346204
-
+// Date函数
+echo time() ; // 获取时间戳 1483346204 从1970-01-01 00:00:00 开始的总秒数
 echo date('Y-m-d H:i:s') ; // 2017-01-02 09:36:44
 // echo date('Y-m-d', time()); // 2017-01-02
-```
 
-* 运算符
 
-```php
-// 运算结果正负
+// 运算符 
 echo (-8)%7 ; // -1
 echo (8)%7 ; // 1
 
-
-// 符号 
 === 与 ==
 <> 不等于
 xor 一个false一个true 才为true
 
 or与||类似，但是优先级低
-
 短路运算
 ```
 
 * 数据类型
 
 ```php
+标量：布尔型 整型 浮点型 字符串型 
+有时 0 表示false 1表示true 
+// 浮点数的有效位数 14
+
+复合 : 数组 对象
+特殊 : resource NULL
+
+// 字符串 
+双引号中的变量可以解析，同时可以处理转义字符 
+单引号原样输出
+$str .= 'world'; // 点号连接
+
 // 数据类型自动转化
 if("123abc" == 123) // TRUE
 if("abc" == 0)  // TRUE
