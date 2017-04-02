@@ -1,8 +1,8 @@
-#### **PHP网站搭建**
+#### **PHP-Ajax网站**
 
 * 使用模板快速建站
 
-  * [图书源码下载](http://book.boxuegu.com/php_ajax/)
+  * [code-dl](http://book.boxuegu.com/php_ajax/)
   * [解决安装WordPress主题及插件需要输入FTP问题](http://jingyan.baidu.com/article/4f34706efc1237e387b56da4.html)
 
 ```php
@@ -30,28 +30,26 @@ localhost改成127.0.0.1使更通用
 
 ```
 
-#### **面向对象网站开发**
+* 面向对象网站开发
 
 ```
 
 ```
 
-#### **Ajax商品发布**
-
-* [UEditor](#)   
-* 富文本过滤 [HTMLPurifier](http://htmlpurifier.org/download)Standalone版
+* Ajax商品发布   
+  * 富文本过滤 [HTMLPurifier](http://htmlpurifier.org/download) \(Standalone版\)
 
 ```php
+// UEditor在线编辑器
+
 进度条文件上传
 收集表单数据
 获取Ajax传输进度
 
 下拉菜单三级联动
-
-在线编辑器
 ```
 
-#### **电子商务网站**
+* 电子商务网站
 
 ```php
 // 项目安全巩固
