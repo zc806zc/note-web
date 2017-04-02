@@ -122,7 +122,6 @@
     * [01-MySQL基础](ch3-mysql/01-mysqlji-chu.md)
   * [PHP](php.md)
     * [ch1-PHP-基础](ch1-phpji-chu.md)
-      * [01-PHP-IDE配置](ch1-phpji-chu/01-php-ide.md)
       * [01-PHP编程规范](ch1-phpji-chu/02-phpbian-cheng-gui-fan.md)
       * [01-PHP-语法扫盲](ch1-phpji-chu/01-phpji-chu-1.md)
       * [01-PHP-应用实例](ch1-phpji-chu/01-phpji-chu-2.md)

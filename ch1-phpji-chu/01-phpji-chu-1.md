@@ -1,5 +1,51 @@
 #### **PHP基础1 - 语法扫盲**
 
+* 安装
+  * [php5.5下载](http://www.pc6.com/softview/SoftView_51016.html)
+
+
+```php
+// 集成安装包
+XAMPP Wamp phpstudy
+AppServ
+// phpnow easyphp vertrigo // 不知道
+
+
+
+// Appache等的配置
+httpd.conf
+```
+* IDE/编辑器
+
+  * [Sublime - 配置PHP开发环境](http://jingyan.baidu.com/article/09ea3ede04ebe9c0aede390d.html?qq-pf-to=pcqq.group)
+  * [Atom - 配置PHP开发环境](http://haafiz.me/development/how-to-setup-atom-for-php-development)
+  * [Netbean - 换主题](http://netbeansthemes.com/darkcalm/)
+  * [Wamp的localhost - 点击文件无法正确解析的问题](https://zhidao.baidu.com/question/625842715884857684.html)
+  * [phpstorm表单提交问题](http://blog.csdn.net/muzilinxi90/article/details/52458511)
+
+```js
+// Sublime的相关配置
+// 推荐
+编译系统 改成PHP
+utf-8 
+tab-4 
+高亮空格 // 可能影响到PHP解释 
+浏览器的快速打开
+
+Atom的script 插件 // 推荐
+
+// NetBeans/PHPStrom(最强) // 推荐后者
+
+// Netbean使用时的运行问题
+运行配置那里选 PHP"内置"
+utf-8 -> 中文乱码的问题
+
+// 其他的，几乎没用过
+// phpEclipse
+// komodo edit, APtana Studio, PHPEdit
+// komodo IDE, Zend studio // 更加没有听说过
+```
+
 * 资源
 
   * [PHP 手册](http://php.net/manual/zh/) \| [MySQL 5.1参考手册](http://www.kancloud.cn/k12_develop/mysql51/77410)
