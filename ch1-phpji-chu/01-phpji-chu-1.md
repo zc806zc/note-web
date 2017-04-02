@@ -305,6 +305,25 @@ include("hi.php");
 } ->endif endwhile endfor endforeach endswitch
 ```
 
+* 异常
+
+```php
+// 设置顶层异常处理器
+处理所有未捕获异常的用户定义函数
+
+function myException($exception) {
+    echo "<b>Exception:</b> " , $exception->getMessage();
+}
+set_exception_handler('myException');
+throw new Exception('Uncaught Exception occurred');
+```
+
+* 过滤器
+
+```php
+
+```
+
 ---
 
 * URL/GET传参

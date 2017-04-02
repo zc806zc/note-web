@@ -52,7 +52,7 @@
     * [03-图解HTTP-读后感](ch4-linuxfu-wu-qi/01tu-jie-http-du-hou-gan.md)
   * [PHP](php.md)
     * [ch1-PHP-基础](ch1-phpji-chu.md)
-      * [01-PHP编程规范](ch1-phpji-chu/02-phpbian-cheng-gui-fan.md)
+      * [01-PHP-编程规范](ch1-phpji-chu/02-phpbian-cheng-gui-fan.md)
       * [01-PHP-语法扫盲](ch1-phpji-chu/01-phpji-chu-1.md)
       * [01-MySQL基础](ch3-mysql/01-mysqlji-chu.md)
       * [01-PHP-应用实例\(数据库...\)](ch1-phpji-chu/01-phpji-chu-2.md)
