@@ -70,6 +70,7 @@ PHP框架是一个可以用来节省时间并强化自己代码的工具
 ```
 
 * 特殊语法
+  * [php-手册-string](http://www.runoob.com/php/php-ref-string.html)
 
 ```php
 $user_pwd // 可以用 {} 界定变量
