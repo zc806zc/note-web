@@ -83,10 +83,67 @@ DONE IS BETTER THAN PERFECT
 人脉
 心态
 
+应聘者应聘者
+浏览器兼容
+html css js语法与原理
+编辑器及插件
+调试工具
+版本管理软件
+前端库/框架
+规范与标准
+中级工程师
+对代码质量、代码规范的理解
+JS单元测试
+性能优化
+SEO的应用与理解
+代码部署
+移动Web
+高级程序员
+代码架构
+安全
+自动化测试的理解
+应聘者
+浏览器兼容
+html css js语法与原理
+编辑器及插件
+调试工具
+版本管理软件
+前端库/框架
+规范与标准
+中级工程师
+对代码质量、代码规范的理解
+JS单元测试
+性能优化
+SEO的应用与理解
+代码部署
+移动Web
+高级程序员
+代码架构
+安全
+自动化测试的理解
+
+浏览器兼容
+html css js语法与原理
+编辑器及插件
+调试工具
+版本管理软件
+前端库/框架
+规范与标准
+中级工程师
+对代码质量、代码规范的理解
+JS单元测试
+性能优化
+SEO的应用与理解
+代码部署
+移动Web
+高级程序员
+代码架构
+安全
+自动化测试的理解
 
 ```
 
-* 服务器/后台/HTTP
+* 服务器/后台/VPS/HTTP
 
 ```
 HttpWatcher之类的扩展
@@ -190,9 +247,7 @@ DNS攻击
 * BigPie
 
 ```
-前后端的交集
 
-非阻塞模型
 ```
 
 * * 将HTML分成很多部分
@@ -212,124 +267,115 @@ DNS攻击
         query_cache_type = OPTION // 0, 1, 2
 ```
 
-* 扩展数据库缓存：memcached
-  * 高性能分布式内存对象缓存系统
-  * 按时间来国旗的设计
-  * 有效利用多台机器的内存，提高命中率
-  * 如果只要一台服务器。。。
-* 再加一层文件缓存 ： 内存缓存 -&gt; 文件缓存 -&gt; 数据库
+* 技术
 
-  * CodeIgniter  允许把查询结果保存在文本文件中
-    * 特定时段删除缓存 
-      * 静态化
-  * 类似wordpress 读取db -&gt; 生成静态页
-    * 抵御DDoS攻击
-      * 直接抛弃数据库的方式
-    * jekyll
-      * Disqus 第三方评论插件 
-      * 从URL无法判断后台是否真正静态化
-      * 浏览器缓存
-      * Expires
-      * Last-Modified
-      * 保持304/200的合理比例
-      * Restful Web API\(表征性状态传输\)
-      * 合理地利用HTTP操作的语义
-      * HTTP1.1 Cache-Control
-      * Query String修改 -&gt; 新文件
-      * 由此
-      * 动态生成的HTML -&gt; Cache-Control: no-cache
-      * 静态HTML -&gt; Last-Modified
-      * 其他所有文件类型都设置Expires头，并且在文件内容有所修改的时候修改Query String，可能还要修改文件名
-      * 文件有可能被运营商服务器劫持
-      * 带宽运营商为了提高速度，可能会在某个节点直接缓存文件，自己直接给出
-      * 即使Query String更新也。。。
-      * 使用自动化的方式来生成新文件名并修改HTML中的引用
-      * 修改文件名比加后缀可靠
-      * 应聘者
-      * 浏览器兼容
-      * html css js语法与原理
-      * 编辑器及插件
-      * 调试工具
-      * 版本管理软件
-      * 前端库/框架
-      * 规范与标准
-      * 中级工程师
-      * 对代码质量、代码规范的理解
-      * JS单元测试
-      * 性能优化
-      * SEO的应用与理解
-      * 代码部署
-      * 移动Web
-      * 高级程序员
-      * 代码架构
-      * 安全
-      * 自动化测试的理解
-      * 不要因为一部分功能引入一个框架
-      * GASP重点优化了Jq的动画部分
-      * Angular不是更好的Jq -&gt; 解决了一个新问题
-      * 让市场认可您的能力，而不是让老板认可
-      * 移动端方向
-      * IOS原生APP
-      * Android
-      * Windows Phone
-      * Web App/微信公众号
-      * 混合模式APP
-  * 把WebView部分或者所有资源打包
-  * 资源预加载
-  * H5 manifest缓存
-  * 不要整个APP都WebView
-    * 原生的优势是 页面切换 动画 大数据界面（滚动图片流）
-    * webview: 简单 可以从服务器更新 易于多平台分享
-  * APP而不是网页
-    * 虽然APP中带点网页很自然。。。
-      * 原生APP与WebView之间的通信
-      * JS调用原生代码window.对象名.方法名
-      * 混合模式APP开发框架
-      * PhoneGap
-      * 跨平台
-      * APP包更大
-      * 交互风格既不是IOS也不是Android
-      * 动画不佳
-      * 持续集成
-      * 软件工程流程
-      * Bower
-      * Yeoman三剑客之一
-      * 管理各种前端资源
-      * 前端的依赖模式与后端有所不同
-      * Bowerfile.js
-      * 依赖树是扁平的
-      * 相较于npm, 不是架设服务器来托管而是直接运行在git上
-      * Bower install jQuery
-      * Bower install desandro/masonry
-      * 其他软件包管理器
-      * Composer -&gt; PHP
-      * Ruby -&gt; gem Gemfile
-      * CocoaPods -&gt; Objective-C Podfile
-      * 版本号
-      * semver规范
-  * ~1.2 === 1.2.x
-  * ~1.2.3 合理接近
-    * 良好架构/设计原则
-    * 架构是项目变复杂以后考虑的问题
-    * 合适的分离颗粒
-  * eg 提取出几乎每一个组件
-    * 最小知道原则
-  * 松耦合
-  * 每一个软件单元尽可能少地和其他单元发生反应
-  * 只需要保持API不变，这样就不会影响整个系统的运行
-    * KISS原则 keep it simple, stupid
-    * 惯例优于设置
-  * 仅需规定不符合约定的部分
-    * DRY Don't repeat yourself \(rule of three\)
-    * 最小化预先设计，只设计必需的内容
-    * 通过良好的层级，让文件易于找到
-    * 代码层面有一致的命名规则
-  * 前缀后缀版本号
-    * Make
-    * 把大量的脚本命令组合起来放在一个Makefile文件中
-    * 依赖关系既属于包管理也属于构建工具
+```
+// BigPie
+前后端的交集
+非阻塞模型
 
-* 
+// 扩展数据库缓存：memcached
+有效利用多台机器的内存，提高命中率
+如果只要一台服务器
+再加一层文件缓存 ： 内存缓存 -> 文件缓存 -> 数据库
+
+CodeIgniter  允许把查询结果保存在文本文件中
+特定时段删除缓存
+ 
+// 静态化
+类似wordpress 读取db -> 生成静态页
+抵御DDoS攻击
+直接抛弃数据库的方式
+
+// jekyll
+Disqus 第三方评论插件 
+从URL无法判断后台是否真正静态化
+
+// 浏览器缓存
+Expires
+Last-Modified
+保持304/200的合理比例
+
+Restful Web API(表征性状态传输)
+合理地利用HTTP操作的语义
+HTTP1.1 Cache-Control
+Query String修改 -> 新文件
+由此
+动态生成的HTML -> Cache-Control: no-cache
+静态HTML -> Last-Modified
+其他所有文件类型都设置Expires头，并且在文件内容有所修改的时候修改Query String，可能还要修改文件名
+文件有可能被运营商服务器劫持
+带宽运营商为了提高速度，可能会在某个节点直接缓存文件，自己直接给出
+即使Query String更新也。。。
+使用自动化的方式来生成新文件名并修改HTML中的引用
+修改文件名比加后缀可靠
+
+不要因为一部分功能引入一个框架
+GASP重点优化了Jq的动画部分
+Angular不是更好的Jq -> 解决了一个新问题
+让市场认可您的能力，而不是让老板认可
+移动端方向
+IOS原生APP
+Android
+Windows Phone
+Web App/微信公众号
+混合模式APP
+把WebView部分或者所有资源打包
+资源预加载
+H5 manifest缓存
+不要整个APP都WebView
+原生的优势是 页面切换 动画 大数据界面（滚动图片流）
+webview: 简单 可以从服务器更新 易于多平台分享
+APP而不是网页
+虽然APP中带点网页很自然。。。
+原生APP与WebView之间的通信
+JS调用原生代码window.对象名.方法名
+混合模式APP开发框架
+PhoneGap
+跨平台
+APP包更大
+交互风格既不是IOS也不是Android
+动画不佳
+持续集成
+软件工程流程
+Bower
+Yeoman三剑客之一
+管理各种前端资源
+前端的依赖模式与后端有所不同
+Bowerfile.js
+依赖树是扁平的
+相较于npm, 不是架设服务器来托管而是直接运行在git上
+Bower install jQuery
+Bower install desandro/masonry
+其他软件包管理器
+Composer -> PHP
+Ruby -> gem Gemfile
+CocoaPods -> Objective-C Podfile
+版本号
+semver规范
+~1.2 === 1.2.x
+~1.2.3 合理接近
+良好架构/设计原则
+架构是项目变复杂以后考虑的问题
+合适的分离颗粒
+eg 提取出几乎每一个组件
+最小知道原则
+松耦合
+每一个软件单元尽可能少地和其他单元发生反应
+只需要保持API不变，这样就不会影响整个系统的运行
+KISS原则 keep it simple, stupid
+惯例优于设置
+仅需规定不符合约定的部分
+DRY Don't repeat yourself (rule of three)
+最小化预先设计，只设计必需的内容
+通过良好的层级，让文件易于找到
+代码层面有一致的命名规则
+前缀后缀版本号
+Make
+把大量的脚本命令组合起来放在一个Makefile文件中
+依赖关系既属于包管理也属于构建工具
+```
+
 * 架构模式
 
 ```js
@@ -377,8 +423,6 @@ Move fast, with Stable infra(快速行动，稳定架构)
 这还是体力劳动时代打工者的心态在作祟
 ```
 
-* 让工程师学习一些设计理念和设计原则，反过来让设计师确认
-
 * 设计
 
 ```js
@@ -397,6 +441,9 @@ Sketch 基于之前的线框图来增强设计感（具象）
 Quartz Composer
 图形化编程工具，专注细腻的动态效果
 所以并非设计师的方式，而是工程师的
+
+
+让工程师学习一些设计理念和设计原则，反过来让设计师确认,而不是反之
 ```
 
 * 有效管理者的五个思维习惯
@@ -469,7 +516,8 @@ Quartz Composer
 * **参考**
 
 ```js
-Web全栈工程师的自我修养  余果
+Web全栈工程师的自我修养 2015-9  余果
+http://web.jobbole.com/84613/
 ```
 
 
