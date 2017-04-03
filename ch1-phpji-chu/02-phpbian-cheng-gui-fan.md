@@ -1,41 +1,30 @@
-#### **PHP编程规范**
+#### **PHP-编程规范**
 
 * [CodeIgniter参考](http://codeigniter.org.cn/user_guide/general/styleguide.html)
 
 ```php
-所有的换行符应该使用 Unix 格式换行符（LF）
+所有纯PHP文件不使用结束标签 ?> , 并以一个空行代替
+// 所有的换行符使用 Unix 格式换行符 LF
 
-所有的 PHP 文件将不使用结束标签，而是以一个空行代替
-
-类文件的命名必须以大写字母开头，
-其他文件（配置文件，视图，一般的脚本文件等）的命名是全小写
-
-TRUE  FALSE 和 NULL 这几个关键字全部使用大写
-
-// 在 ! 操作符的前后都应该加一个空格
-if ($foo OR $bar) // 不用 || 
-if ($foo && $bar) // recommended
+TRUE  FALSE 和 NULL // 这几个关键字全部大写
+// if ($foo OR $bar) // 建议不用 || 
+// if ($foo && $bar) 
 if ( ! $foo)
-if ( ! is_array($foo))
+if ( ! is_array($foo)) // 在 ! 操作符的前后都应该加一个空格
+$arr[$foo] = 'foo'; // 使用中括号和小括号的时候不应该使用多余的空格
+
 
 // 类命名
-Somelibrary.php
-Some_library.php
-
-applicationconfig.php
-application_config.php
-
+类文件的命名必须以大写字母开头，
+// 其他文件（配置文件，视图，一般的脚本文件等）的命名是全小写
+Somelibrary.php 或 Some_library.php
+applicationconfig.php 或 application_config.php
 function xml_encode($str)
 
-使用中括号和小括号的时候不应该使用多余的空格
-$arr[$foo] = 'foo';
 
-字符串使用单引号引起来，当字符串中有变量时使用双引号，
-并且使用大括号将变量包起来。 
-另外，当字符串中有单引号时，也应该使用双引号，这样就不用使用转义符。
-'My String'
-"My string {$foo}"
-"SELECT foo FROM bar WHERE baz = 'bag'"
+'My String' // 字符串使用单引号
+"My string {$foo}" // 有变量时使用双引号， 并且使用大括号
+"SELECT foo FROM bar WHERE baz = 'bag'" // 当字符串中有单引号时
 
 
 检查返回值和变量时, 必要时使用 === 和 !==
