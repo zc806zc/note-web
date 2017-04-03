@@ -47,29 +47,28 @@ utf-8 // 中文乱码
 超文本预处理器  // "动态"生成html  增强信息交互
 占70%的网站    // 仅是数量占比，不代表地位
 
-LAMP = Linux + Apache + MySQL/MongoDB + PHP 
-
 // 特点
-免费 跨平台  支持数据库多
-面向对象 
+免费 跨平台  
+支持数据库多 
+面向对象等 
 
 // 框架多
-Laravel/CodeIgniter
-Symfony/Yii/Zend Framework
+Laravel/CodeIgniter/Symfony/Yii/Zend Framework
 ThinkPHP // 国内
 
-// 3P的比较
+// 3P
 PHP 缺少规模支持 小型商业网站
-
 JSP效率最高 用于建设大型电子商务网站
 ASP.NET  有.NET库的支持，不会弱到哪里
 
 // 学习路径
-PHP框架是一个可以用来节省时间并强化自己代码的工具
-了解了面向对象和框架后，你应该接触一下XML了
+PHP框架是可以用来
+节省时间
+并强化自己代码的工具 // 安全 功能
+// 了解了面向对象和框架后，你应该接触一下XML了 really ??
 ```
 
-* 特殊语法
+* 语法
   * [php-手册-string](http://www.runoob.com/php/php-ref-string.html)
 
 ```php
@@ -99,7 +98,7 @@ echo $num; // 12 传值赋值
 // echo(语言结构,不是函数) print(返回值) printf
 
 // var_dump 打印变量或表达式相关信息
-
+// print_r 打印易于理解的信息
 array(2) {
   [0] =>
   int(1)
@@ -107,7 +106,6 @@ array(2) {
   int(4)
 }
 
-// print_r 打印易于理解的信息
 Array
 (
   [0] => 1
@@ -126,12 +124,12 @@ echo date('Y-m-d H:i:s') ; // 2017-01-02 09:36:44
 echo (-8)%7 ; // -1
 echo (8)%7 ; // 1
 
-=== 与 ==
 <> 不等于
 xor 一个false一个true 才为true
 
 or与||类似，但是优先级低
-短路运算
+
+// 短路运算
 ```
 
 * 数据类型
@@ -169,31 +167,21 @@ var_dump((object)2.34);
 
 ```js
 // 赋值有关
+// 并不会补位 sparse array
 $arr = [];
 $arr[] = 'hi';
 $arr[5] = '5';
 $arr[] = 'world';
 $arr['sub'] = 'sub';
 
-// var_dump($arr)输出结果
-// array(4) {
-//   [0] =>
-//   string(2) "hi"
-//   [5] =>
-//   string(1) "5"
-//   [6] =>
-//   string(5) "world"
-//   'sub' =>
-//   string(3) "sub"
-// }
-
 // 数组声名
-下标只有整型和字符型
+下标只有 整型 和 字符型
 相同的下标，赋值会覆盖
 
+// $info = array(1,2,3,4); // 不带key
+// $info['name'] // 访问方法
 $info = array('id'=>1,'help',3=>'msg');
 
-// var_dump($info)输出结果
 // array(3) {
 //   'id' =>
 //   int(1)
@@ -203,26 +191,16 @@ $info = array('id'=>1,'help',3=>'msg');
 //   string(3) "msg"
 // }
 
-$info = array(1,2,3,4);
-
-// 访问 
-$info['name']
-
-// unset
+// unset method
 
 // 数组遍历   
 $fruit = ['apple', 'pear'];
-foreach($fruit as $key => $value) {
-  echo $key . "=>" . $value . "\n";
-}
 foreach($fruit as $value) {
   echo $value . "\n";
 }
-
-// 0=>apple
-// 1=>pear
-// apple
-// pear
+foreach($fruit as $key => $value) {
+  echo $key . "=>" . $value . "\n";
+}
 ```
 
 * 内置函数
