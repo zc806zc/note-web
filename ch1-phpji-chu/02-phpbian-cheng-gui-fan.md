@@ -1,10 +1,14 @@
 #### **PHP-编程规范**
 
-* [CodeIgniter参考](http://codeigniter.org.cn/user_guide/general/styleguide.html)
+* [CodeIgniter-编程规范](http://codeigniter.org.cn/user_guide/general/styleguide.html)
 
 ```php
-所有纯PHP文件不使用结束标签 ?> , 并以一个空行代替
+所有纯PHP文件不使用结束标签 ?> , 并以一个空行代替 // CodeIgniter可能出错
 // 所有的换行符使用 Unix 格式换行符 LF
+// PHP 起始标签的前面和结束标签的后面都不要留空格，
+// 输出是被缓存的 ??
+
+使用制表符代替空格  // 可自定义缩进 2/4
 
 TRUE  FALSE 和 NULL // 这几个关键字全部大写
 // if ($foo OR $bar) // 建议不用 || 
@@ -21,29 +25,14 @@ Somelibrary.php 或 Some_library.php
 applicationconfig.php 或 application_config.php
 function xml_encode($str)
 
+一个类一个文件
+
 
 'My String' // 字符串使用单引号
 "My string {$foo}" // 有变量时使用双引号， 并且使用大括号
 "SELECT foo FROM bar WHERE baz = 'bag'" // 当字符串中有单引号时
 
 检查返回值和变量时, 必要时使用 === 和 !==
-
-PHP 起始标签的前面和结束标签的后面都不要留空格，
-输出是被缓存的，
-所以如果你的文件中有空格的话， 
-这些空格会在 CodeIgniter 输出它的内容之前被输出，
-从而会导致错误，
-而且也会导致 CodeIgniter 无法发送正确的头信息。
-
-一个类一个文件 
-
-使用制表符代替空格， 
-可以让开发者阅读你代码的时候，
-可以根据他们的喜好在他们的程序中自定义缩进。 
-此外还有一个好处是，
-这样文件可以更紧凑一点，
-也就是本来是四个空格字符， 
-现在只要一个制表符就可以了。
 ```
 
 * 命名纠结
