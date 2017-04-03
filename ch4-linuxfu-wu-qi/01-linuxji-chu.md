@@ -2,8 +2,7 @@
 
 * 基础
   * 鸟哥的linux私房菜
-  * [中科大-yum](https://lug.ustc.edu.cn/wiki/mirrors/help/centos)
-  * [史上最全vim快捷键](http://www.runoob.com/w3cnote/all-vim-cheatsheat.html)
+  * [中科大-yum](https://lug.ustc.edu.cn/wiki/mirrors/help/centos) \| [史上最全vim快捷键](http://www.runoob.com/w3cnote/all-vim-cheatsheat.html)
 
 ```js
 Linus Torvalds
