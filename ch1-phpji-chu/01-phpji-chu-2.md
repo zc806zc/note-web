@@ -3,10 +3,33 @@
 * 表单
 
 ```php
-把表单传给它自己，而不是跳转到不同的页面 // 更好的方式
-// 用户在同一表单页面得到错误信息，更容易发现
+// HyperText Transfer Protocol
+// HTTP请求方式
+Get 数据就在URL地址的参数里
+Post 表单提交 传输数据可以更多 更安全
 
-// 表单必需的JS 实现 
+// 超全局变量 $_GET $_REQUEST...
+
+$name = isset($_GET['name']) ? $_GET['name'] : ""; // echo $name;
+$name = urlencode("A&B C");
+echo $name . "\n"; // A%26B+C
+
+// HTML特殊字符转义
+htmlspecialchars()函数 // 预定义的字符转换为 HTML 实体
+&  &amp;
+"  &quot;
+'  &#039;
+<  &lt;
+>  &gt;
+
+$str = "hello \n world";
+nl2br($str);
+// hello <br />
+//  world
+
+表单传给它自己，而不是跳转 // 用户在同一表单页面得到错误信息，更容易发现
+
+// "必需" 的JS 实现 
 // HTML5 required
 if (empty($_POST["gender"])) {
     $genderErr = "性别是必需的。";

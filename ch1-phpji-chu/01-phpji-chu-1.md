@@ -68,6 +68,8 @@ PHP框架是可以用来
 // 了解了面向对象和框架后，你应该接触一下XML了 really ??
 ```
 
+---
+
 * 语法
   * [php-手册-string](http://www.runoob.com/php/php-ref-string.html)
 
@@ -130,6 +132,12 @@ xor 一个false一个true 才为true
 or与||类似，但是优先级低
 
 // 短路运算
+
+// ./ 表示当前目录  ../
+
+// 替代语句
+{ -> :
+} ->endif endwhile endfor endforeach endswitch
 ```
 
 * 数据类型
@@ -209,85 +217,53 @@ foreach($fruit as $key => $value) {
 // 字符串函数
 strlen
 strpos 指定字符串最后出现位置
+
 explode 使用一个字符串分割另一个字符串
 implode 用指定的连接符连接
-str_replace
-trim
-substr
-str_repeat
+// str_replace trim substr str_repeat...
 
 // 数组函数
-count
-array_merge
-array_chunk
-range
+count range
+// array_merge array_chunk
+
 
 // 数组排序 
 sort   // 用数字键替换
 asort  // 根据元素值排序保持索引
-ksort  // 键名排序
-rsort  // 逆向排序
+ksort rsort krsort 
 arsort // 逆向排序并保持索引
-krsort
 
-
-shuffle 洗牌
-
+// shuffle 洗牌
 array_reverse 返回的是数组
-array_search
-array_rand 从数组中随机取出一个或多个单元
-array_unique 移除重复的值
-key 从关联数组中取出键名
-// array_column
-in_array 检查数组中是否存在某个值,第3个参数设为true 相当于===
-// array_keys 返回数组中的键名
-// array_values
+// array_search
+// array_rand 从数组中随机取出一个或多个单元
+// array_unique 移除重复的值
+// in_array 检查数组中是否存在某个值,第3个参数设为true 相当于===
 
 // 数学函数
-abs
-min
-max
-ceil 天花板
-floor
-pi()
-pow()
-sqrt
-fmod 返回除法的浮点数余数
-is_nan 判断是否为合法数值
+abs min max
+floor ceil 天花板
+pi() pow() sqrt
 round 对浮点数四舍五入
 rand 返回随机整数
+// fmod 返回除法的浮点数余数
+// is_nan 判断是否为合法数值
 
-多维数组
 
 break n; // 指定跳出几重循环
 
-// 自定义函数
-function add($a, $b) {
-  return $a + $b;
-}
-echo add(3, 4); // 7
 
 // 包含语句
-include include_once
-require require_once
-
-require 生成一个致命错误（E_COMPILE_ERROR），在错误发生后脚本会停止执行。
-include 生成一个警告（E_WARNING），在错误发生后脚本会继续执行。
-
-./ 表示当前目录 
-../
-
-// include "hi.php";
-include("hi.php");
-
-// 替代语句
-{ -> :
-} ->endif endwhile endfor endforeach endswitch
+include include_once // include 生成一个警告（E_WARNING）会继续执行
+require require_once // require 生成一个致命错误（E_COMPILE_ERROR） 会停止执行
 ```
+
+---
 
 * 异常
 
 ```php
+// try catch throw
 // 设置顶层异常处理器
 处理所有未捕获异常的用户定义函数
 
@@ -304,15 +280,11 @@ throw new Exception('Uncaught Exception occurred');
 filter_var() 
 filter_var_array() 
 filter_input 
-filter_input_array - 获取多个输入变量，并通过相同的或不同的过滤器对它们进行过滤
+filter_input_array // 获取多个输入变量，并通过相同的或不同的过滤器对它们进行过滤
 
 // Validating 和 Sanitizing
-用于验证用户输入
-如果成功则返回预期的类型，如果失败则返回 FALSE
-
-用于允许或禁止字符串中指定的字符
-无数据格式规则
-始终返回字符串
+Validating 用于验证用户输入 如果成功则返回预期的类型，如果失败则返回 FALSE
+Sanitizing 用于允许或禁止字符串中指定的字符 无数据格式规则 始终返回字符串
 
 // 使用 Filter Callback
 
@@ -328,39 +300,8 @@ filter_input_array - 获取多个输入变量，并通过相同的或不同的�
 * URL/GET传参
 
 ```php
-HyperText Transfer Protocol
-超文本传输协议
 
-// HTTP请求方式
-Get 数据就在URL地址的参数里
-
-Post 表单提交
-传输数据可以更多 更安全
-
-// 超全局变量
-$_GET $_REQUEST
-
-URL实现 $_GET
-
-$name = isset($_GET['name']) ? $_GET['name'] : ""; // echo $name;
-$name = urlencode("A&B C");
-echo $name . "\n"; // A%26B+C
-
-// HTML特殊字符转义
-htmlspecialchars()函数 // 预定义的字符转换为 HTML 实体
-&  &amp;
-"  &quot;
-'  &#039;
-<  &lt;
->  &gt;
-
-$str = "hello \n world";
-nl2br($str);
-// hello <br />
-//  world
 ```
-
----
 
 * 命名空间
 
