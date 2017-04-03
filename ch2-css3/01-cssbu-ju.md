@@ -3,6 +3,7 @@
 * 基础
   * [ruanyf-flex-grammar](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool) \| [ruanyf-flex-examples](http://www.ruanyifeng.com/blog/2015/07/flex-examples.html)
   * [负值之美](http://www.cnblogs.com/jscode/archive/2012/08/28/2660078.html)
+  * [常用CSS-asd0102433](https://github.com/asd0102433/blog/blob/master/%E5%89%8D%E7%AB%AF/css%E6%9C%89%E7%94%A8%E7%9A%84%E6%94%B6%E9%9B%86.md)
 
 ```js
 // 基于盒状模型，
@@ -105,7 +106,7 @@ $(".target:odd").addClass("animated shake");
 
 // 打字动画
 
-// 状态平滑的动画 
+// 状态平滑的动画
 ```
 
 * 参考
