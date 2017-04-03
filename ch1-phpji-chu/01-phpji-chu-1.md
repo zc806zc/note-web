@@ -97,7 +97,9 @@ echo $num; // 12 传值赋值
 
 // 输出
 // echo(语言结构,不是函数) print(返回值) printf
+
 // var_dump 打印变量或表达式相关信息
+
 array(2) {
   [0] =>
   int(1)
