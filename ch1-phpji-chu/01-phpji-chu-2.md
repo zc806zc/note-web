@@ -53,16 +53,12 @@ x    // 只写。创建新文件。如果文件已存在，则返回 FALSE 和�
 x+   
 
 // 文件上传
-处理上传表单 
-获取文件信息(文件类型 文件属性) 
-文件的保存
-
-生成缩略图
-
 // 文件基本操作
 解析
 遍历
 创建目录
+
+// 生成缩略图
 
 // zip file函数
 ```
@@ -71,7 +67,6 @@ x+
 
 ```php
 // Cookie
-创建 读取 查看
 
 // Session
 HTTP响应消息头
@@ -83,14 +78,11 @@ unset() 或 session_destroy()
 * 图像生成/验证码生成
 
 ```php
-// GD库
-处理图像的扩展库
-
+// GD库 处理图像的扩展库
 查看支持的图片格式
 创建图像资源
 填充颜色
 图像输出
-
 绘制文本
 绘制基本图形
 
@@ -98,28 +90,27 @@ var_dump(gd_info());
 ```
 
 * 分页
+  * [AmazeUI-page](https://github.com/lscho/am-page) \| [bootstrap-twbs-pagination](https://github.com/esimakin/twbs-pagination)
 
 ```php
-// 学生信息管理为例
-// 思路1
-分页的样式由前端库生成，
-PHP查询数据后 <?php echo $page_size ?> 到JS
+// 前端库实现分页
+PHP查询数据后传参给JS
+
+// PHP库实现分页
 ```
 
-* MySQL的常用命令
+* MySQL常用命令
 
 ```js
+// 访问数据库
 mysql (-h localhost) -u root -p
 // set names gbk; // 仅本次访问有效
-exit quit // 都是退出db
+exit quit // 退出db
 
-show databases;
+// 创建
 create database `hello`; // 反引号包裹数据库名/字段名/表名
 user `hello`;
-drop database `itcast`;
-show tables;
 
-// 创建新闻表
 create table `news` (
   `id` int unsigned auto_increment primary key comment '新闻编号',
   `title` varchar(60) not null comment '新闻标题',
@@ -127,9 +118,13 @@ create table `news` (
   `addtime` timestamp default current_timestamp not null comment '发布时间'
 )charset=utf8;
 
+// 查询
+show databases;
+show tables;
 desc `student`; // 查看已经创建的表结构
+select * from `news` \G
 show create table `student`\G // 查看建表的sql
-drop table `student`;
+
 
 // 插入
 insert into `news` (`title`, `content`, `addtime`) values
@@ -137,17 +132,14 @@ insert into `news` (`title`, `content`, `addtime`) values
 ('新闻标题2', '新闻内容2', '2015-10-11 12:06:56'),
 ('新闻标题3', '新闻内容3', '2015-11-11 10:05:08');
 
-// 查看
-select * from `news` \G
-
-高级查询 order by ...
-
-// 修改
+// 删改
 update `student` set `name` = '赵六'， `gender` = '女' where `id` = 2; 
+delete from `student` where `id`=2; // 注意不会填补空缺的id
+drop table `student`;
+drop database `itcast`;
 
-// 删除数据 
-// 注意不会填补空缺的id
-delete from `student` where `id`=2;
+// 高级查询 
+order by ...
 ```
 
 * 使用MySQL扩展
@@ -208,6 +200,8 @@ $stmt->bind_param("sss", $firstname, $lastname, $email);
 // 提示undefined index
 httpd.conf修改
 error_reporting = E_ALL & ~E_NOTICE
+
+
 ```
 
 
