@@ -1,8 +1,9 @@
 #### **Linux**
 
 * 基础
-  * 鸟哥的linux私房菜
+  * 鸟哥的linux私房菜 
   * [中科大-yum](https://lug.ustc.edu.cn/wiki/mirrors/help/centos) \| [史上最全vim快捷键](http://www.runoob.com/w3cnote/all-vim-cheatsheat.html)
+  * [Linux探索之旅-谢恩铭](https://juejin.im/post/58de122244d904006d050466)
 
 ```js
 Linus Torvalds
