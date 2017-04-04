@@ -1,51 +1,43 @@
-#### **资源**
+#### **资源整合**
 
-* 在线书籍
+* 在线书籍/学习资源
 
   * [free-programming-books](https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md) \| [frontenddevhandbook](https://www.gitbook.com/book/dwqs/frontenddevhandbook/details) 
   * [史上最全FE资源](http://www.jianshu.com/p/6cb49271cd2a#)\| [最全的前端资源汇总](https://github.com/helloqingfeng/Awsome-Front-End-learning-resource)
 
-* 在线编辑
+* 在线编辑器
 
   * [dillinger.io](http://dillinger.io/) \| JSbin \| jsfiddle
   * [菜鸟工具](https://c.runoob.com/)
 
-* 开始记笔记/博客
+* 开始记笔记/写博客
 
-  * [sphinx](http://www.sphinx-doc.org/en/stable/)\(没试\) \| [MkDocs](http://www.mkdocs.org/) \(没试\) \| [docute](https://docute.js.org/#/home)
+  * [sphinx](http://www.sphinx-doc.org/en/stable/)\(没试\) \| [MkDocs](http://www.mkdocs.org/) \(没试\) 
+  * 文档型 [docute](https://docute.js.org/#/home)
   * [Gitbook插件安装配置- 星夜雨年](http://www.tuicool.com/articles/JjQ3qm) \| [插件2](http://www.tuicool.com/articles/zee2ui)
   * [ruanyifeng-jekyll](http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html) \| [jekyll-Sites](https://github.com/jekyll/jekyll/wiki/Sites)
 
 ```js
-// gitbook与看云
-使用插件前一定要
-npm install gitbook-plugin-插件名 // 坑哭... 可能太理所当然了,就没人说
+// gitbook
+npm install gitbook-plugin-插件名 // 坑哭... 太理所当然反而没人说
+gitbook官网只要写好book.json就会提供支持
 
-gitbook官网的话直接写book.json就会提供支持
-
-// gitbook高亮插件示例
-This text is {% em %}highlighted with **markdown**!{% endem %}
-prism // 代码主题插件 
+This text is {% em %}highlighted with **markdown**!{% endem %} // 高亮
+prism主题插件 
 
 // 看云
-在国内较gitbook稳定并方便使用 (插件什么都配置好了)
+国内较gitbook稳定
+并方便易用插件齐全
 可惜有空间限制
-所以
 长远起见还是用了gitbook...
-
-// 简书
-
-// 其他(都没试过)
-// varharrie/angular-mdeditor
-基于AngularJs，提交到后台解析和保存。
-可以使用pegdown作解析。
-
-// benhail/thinker-md osc的md编辑器
 
 // jekyll
 部分记在ruby/jekyll下
 
-
+// 简书
+// benhail/thinker-md osc的md编辑器
+// varharrie/angular-mdeditor
+基于AngularJs 使用pegdown作解析
 ```
 
 * IDE/编辑器
@@ -133,6 +125,10 @@ Balsamiq
 
 * 图像处理
   * [6 款 Javascript 的图像处理库 - Tine](https://juejin.im/post/58c0edac0ce4630054592a78?utm_source=gold_browser_extension)
+
+```js
+
+```
 
 
 
