@@ -25,6 +25,7 @@
     * [02-开发者手册](ch4-ruanyflao-shi-de-bo-ke/02kai-fa-zhe-shou-ce.md)
     * [03-理解计算机](ch4-ruanyflao-shi-de-bo-ke/03li-jie-ji-suan-ji.md)
     * [04-JavaScript](ch4-ruanyflao-shi-de-bo-ke/04-javascript.md)
+    * [05-杂类综合](ch4-ruanyflao-shi-de-bo-ke/05za-lei.md)
 * [HTML5](html-css3-stack.md)
   * [HTML5](ch1-html5.md)
     * [ch1-HTML5-基础](ch1-html5/ch1-html-basic.md)
