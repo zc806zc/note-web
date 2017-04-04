@@ -46,9 +46,12 @@ R.map(square, [4, 8]) // [16, 64]
 ```
 
 * Flux 架构
+  * https://github.com/ruanyf/extremely-simple-flux-demo
+  * http://blog.andrewray.me/flux-for-stupid-people/
+  * http://www.ruanyifeng.com/blog/2016/01/flux.html
 
-```
-
+```js
+Flux 的最大特点，就是数据的"单向流动"
 ```
 
 
