@@ -14,6 +14,7 @@
 
   * [sphinx](http://www.sphinx-doc.org/en/stable/)\(没试\) \| [MkDocs](http://www.mkdocs.org/) \(没试\) \| [docute](https://docute.js.org/#/home)
   * [Gitbook插件安装配置- 星夜雨年](http://www.tuicool.com/articles/JjQ3qm) \| [插件2](http://www.tuicool.com/articles/zee2ui)
+  * [ruanyifeng-jekyll](http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html) \| [jekyll-Sites](https://github.com/jekyll/jekyll/wiki/Sites)
 
 ```js
 // gitbook与看云
@@ -40,6 +41,11 @@ prism // 代码主题插件
 可以使用pegdown作解析。
 
 // benhail/thinker-md osc的md编辑器
+
+// jekyll
+部分记在ruby/jekyll下
+
+
 ```
 
 * IDE/编辑器
@@ -119,7 +125,6 @@ js filename.js执行
 ```
 
 * 其他工具
-
 
 ```
 // 线框图与原型设计-工具
