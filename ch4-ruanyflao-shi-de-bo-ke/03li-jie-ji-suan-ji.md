@@ -6,5 +6,5 @@
 
 ```
 
-
+![](/assets/monad.png)
 

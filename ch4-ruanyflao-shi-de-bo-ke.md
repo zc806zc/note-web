@@ -1,4 +1,4 @@
-#### 阮一峰[https://imququ.com/](https://imququ.com/)
+#### 阮一峰
 
 * 我偶像...
 * [**http://www.ruanyifeng.com/blog/archives.html**](http://www.ruanyifeng.com/blog/archives.html)
@@ -20,8 +20,6 @@
 #### 当耐特
 
 * [**http://www.cnblogs.com/iamzhanglei/**](http://www.cnblogs.com/iamzhanglei/)
-
-
 
 
 
