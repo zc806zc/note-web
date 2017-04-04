@@ -23,6 +23,7 @@
   * [ch4-博客源\(前端为主\)](ch4-ruanyflao-shi-de-bo-ke.md)
     * [01-算法和数学](ch4-ruanyflao-shi-de-bo-ke/01suan-fa-he-shu-xue.md)
     * [02-开发者手册](ch4-ruanyflao-shi-de-bo-ke/02kai-fa-zhe-shou-ce.md)
+    * [02-开发者手册2](ch4-ruanyflao-shi-de-bo-ke/02kai-fa-zhe-shou-ce-2.md)
     * [03-理解计算机](ch4-ruanyflao-shi-de-bo-ke/03li-jie-ji-suan-ji.md)
     * [04-JavaScript](ch4-ruanyflao-shi-de-bo-ke/04-javascript.md)
     * [05-杂类综合](ch4-ruanyflao-shi-de-bo-ke/05za-lei.md)

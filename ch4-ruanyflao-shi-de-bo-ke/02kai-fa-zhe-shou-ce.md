@@ -63,9 +63,9 @@ Functional programming
 
 * 软件架构
 
-  * http://www.oreilly.com/programming/free/files/software-architecture-patterns.pdf
+  * [http://www.oreilly.com/programming/free/files/software-architecture-patterns.pdf](http://www.oreilly.com/programming/free/files/software-architecture-patterns.pdf)
 
-  * http://www.ruanyifeng.com/blog/2016/09/software-architecture.html
+  * [http://www.ruanyifeng.com/blog/2016/09/software-architecture.html](http://www.ruanyifeng.com/blog/2016/09/software-architecture.html)
 
 ```js
 architect 只有资深程序员才可以担任
@@ -119,9 +119,9 @@ RESTful 应用模式 // 背后通常是一个多功能的应用程序，常见�
 
 * HTTP
 
-  * https://certbot.eff.org/
+  * [https://certbot.eff.org/](https://certbot.eff.org/)
 
-  * http://www.ruanyifeng.com/blog/2016/08/http.html HTTP协议入门
+  * [http://www.ruanyifeng.com/blog/2016/08/http.html](http://www.ruanyifeng.com/blog/2016/08/http.html) HTTP协议入门
 
 ```
 // HTTPS 升级指南
@@ -134,10 +134,10 @@ TCP/IP 协议的应用层协议
 ```
 
 * YAML
-  * http://www.ruanyifeng.com/blog/2016/07/yaml.html
-  * https://github.com/nodeca/js-yaml  \([JS-YAML](https://github.com/nodeca/js-yaml)库 把函数和正则表达式转为字符串\)
+  * [http://www.ruanyifeng.com/blog/2016/07/yaml.html](http://www.ruanyifeng.com/blog/2016/07/yaml.html)
+  * [https://github.com/nodeca/js-yaml](https://github.com/nodeca/js-yaml)  \([JS-YAML](https://github.com/nodeca/js-yaml)库 把函数和正则表达式转为字符串\)
 
-```
+```js
 YAML 是专门用来写配置文件的语言，非常简洁和强大
 远比 JSON 格式方便
 
