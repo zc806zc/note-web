@@ -5,7 +5,7 @@
   * [工具云盘下载 提取密码：vipr](http://pan.baidu.com/s/1o7pUJOm)
   * [ECLIPSE - 新建jsp页面默认模板设置](http://blog.csdn.net/peixuh/article/details/12623547)
   * [使Eclipse下支持编写HTML/JS/CSS/JSP页面的自动提示](http://www.cnblogs.com/zhuawang/p/5596455.html)
-  * http://blog.csdn.net/thehide/article/details/52042487 Idea导出war
+  * [http://blog.csdn.net/thehide/article/details/52042487](http://blog.csdn.net/thehide/article/details/52042487) Idea导出war
 
 ```
 // 准备环境
@@ -36,10 +36,12 @@ charset 与 pageEncoding建议都改成UTF-8
 还有在编辑器上的显示编码
 ```
 
----
-
 * Atom（编辑） + Eclipse（IDE）
   * Atom autocomplete-jsp插件
+
+```
+
+```
 
 ---
 
