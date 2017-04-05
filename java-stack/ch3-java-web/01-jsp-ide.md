@@ -48,5 +48,5 @@ charset 与 pageEncoding建议都改成UTF-8
 Atom的autocomplete-jsp插件
 ```
 
-![](/assets/idea-refresh978.png) ![](/assets/webroot-add899.png)![](/assets/classes-path785.png)
+![](/assets/idea-refresh978.png)  ![](/assets/auto453.png)![](/assets/webroot-add899.png)![](/assets/classes-path785.png)
 
