@@ -66,7 +66,7 @@ JAVA WEB 只用配ngnix,不用配tomcat
 // 可能能用到的命令
 sudo /usr/local/nginx/sbin/nginx -s reload
 sudo /phpstudy/server/httpd/bin/apachectl restart
-sudo ./../tomcat/bin/startup.sh // 开启tomcat服务
+sudo ./../tomcat/bin/startup.sh // 开启tomcat服务 失败的话先cd 再 ./startup.sh
 
 
 // 腾讯云Apache证书配置
