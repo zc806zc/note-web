@@ -10,7 +10,7 @@
 /phpstudy/mysql/bin/mysql -h 127.0.0.1 -u root -p // 进入数据库, 然后回车输入密码
 sudo ln -s /phpstudy/mysql/bin/mysql /usr/local/bin/mysql // 快链接
 
-GRANT ALL PRIVILEGES ON *.* TO 'myuser'@'%' IDENTIFIED BY 'mypassword' WITH GRANT OPTION; // 远程权限
+GRANT ALL PRIVILEGES ON *.* TO 'username'@'%' IDENTIFIED BY 'password' WITH GRANT OPTION; // 远程权限
 // sudo rm -rf /phpstudy/www/tmp/ // 删除文件夹
 
 // 权限原因, ftp只能上传到Desktop
