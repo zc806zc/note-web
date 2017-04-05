@@ -1,15 +1,12 @@
 #### **JSP基础**
-* 参考
-	* [当Java遇见了Html--JSP详解篇](http://www.jianshu.com/p/c7260f7588c5)
 
-------------
 * 基础
-	* jsp是另一种形式的servlet
-	
-```
-java server page
 
-指令
+```java
+// java server page
+jsp是另一种形式的servlet
+
+// 指令
 page指令： 通常位于jsp页面的顶端，同一个页面可以有多个page指令。
 include指令：将一个外部文件嵌入到jsp文件中。
 taglib指令 ：使用标签定义新的自定义标签。
@@ -17,7 +14,7 @@ taglib指令 ：使用标签定义新的自定义标签。
 <%@ page 属性=“属性值”>
 <%@ include file="url" %>
 
-include动作
+// include动作
 <jsp:include page="url" flush="true"/>
 
 // 动作标识与指令标识
@@ -37,9 +34,10 @@ include动作
 plugin fallback param
 codebase属性
 ```
+
 * 注释与脚本标识
 
-```
+```java
 <!-- html注释 -->                  // 客户端可见
 在HTML注释中可嵌入JSP表达式
 
@@ -64,9 +62,10 @@ codebase属性
 %>
 <h2>  hello,<%=s %> </h2>
 ```
+
 * include 动作和include指令区别
 
-```
+```java
 如果要在JSP页面中显示大量的文本文字，可以将文字写入txt
 再使用include指令或标识
 
@@ -74,16 +73,15 @@ codebase属性
 contentType要一直，否则报错
 ```
 
-
-
-| 描述 | include指令 | include 动作|
+| 描述 | include指令 | include 动作 |
 | --- | --- | --- |
-| 语法 | < % @ include file=""/> | < jsp:include page="url" flush="true"/>|
-| 发生时间 | 页面转换期间 | 请求期间|
-| 包含内容 | 文件实际内容 | 页面的输出|
-| 转化servlet | 一个servlet | 2个servlet|
-| 编译时间 | 较慢 | 较快|
-| 执行时间 | 稍快 |较慢--每次资源必须被编译|
+| 语法 | &lt; % @ include file=""/&gt; | &lt; jsp:include page="url" flush="true"/&gt; |
+| 发生时间 | 页面转换期间 | 请求期间 |
+| 包含内容 | 文件实际内容 | 页面的输出 |
+| 转化servlet | 一个servlet | 2个servlet |
+| 编译时间 | 较慢 | 较快 |
+| 执行时间 | 稍快 | 较慢--每次资源必须被编译 |
+
 * jsp生命周期
 
 ```
@@ -96,15 +94,15 @@ servlet是常驻在服务器内存中。
 ```
 
 * javaben的使用
-	* 像普通的java类一样，创建javabean;
-   * 在jsp使用动作标签来使用 javaben
-   *  四大作用域
-    	* page ，仅当前页面有效
-    	* request ,通过httpRequest.getAttribute()获取jvabean对象
-    	*  session  httpSession.getAttribute()
-    	* application 只要没有关闭服务器就会一直存在
-    
-```
+  * 像普通的java类一样，创建javabean;
+    * 在jsp使用动作标签来使用 javaben
+    * 四大作用域
+      * page ，仅当前页面有效
+      * request ,通过httpRequest.getAttribute\(\)获取jvabean对象
+      * session  httpSession.getAttribute\(\)
+      * application 只要没有关闭服务器就会一直存在
+
+```java
 当程序执行<jsp:setProperty>标识时，
 会按照page request session application的顺序来查找Bean示例
 
@@ -116,7 +114,8 @@ getProperty
 <jsp:setProperty name="javabean 是例"  property="*"/>(跟表单关联)
 <jsp:setProperty name="javabean 是例"  property="javaben 属性名"/>(跟表单关联)
 <jsp:setProperty name="javabean 是例"  property="javaben 属性名"  value=""/>(手动设置)
-<jsp:setProperty name="javabean 是例"  property="javaben 属性名"  param="request对象参数"/>(跟request参数关联)
+<jsp:setProperty name="javabean 是例"  property="javaben 属性名"  param="request对象参数"/>
+// (跟request参数关联)
 <jsp:getProperty name="" property=""/>
 
 
@@ -159,7 +158,7 @@ getProperty
 
 * cookie
 
-```
+```java
 // 创建使用与读取
 Cookie cookie=new Cookie(String ,Object);
 response.addCookie(cookie);
@@ -175,7 +174,7 @@ getMaxAge();
 
 * JSP内置对象
 
-```
+```java
 // BS进行交互通信的控制
 request 获取客户端的请求
 response 对客户端进行响应
@@ -202,7 +201,7 @@ isAutoFlush()
 
 * 其他内置对象
 
-```
+```java
 pageContext 获取会话范围 
 最大集成着，通过它访问其他所有对象
 
@@ -211,3 +210,9 @@ page 应答或请求
 exception 获取异常信息
 exception.getMessage();
 ```
+
+* 参考
+  * [当Java遇见HTML](http://www.jianshu.com/p/c7260f7588c5)
+
+
+
