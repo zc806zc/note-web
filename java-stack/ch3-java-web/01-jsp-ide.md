@@ -1,6 +1,7 @@
 #### **JSP开发环境搭建**
 
 * [JSP环境搭建](http://www.jianshu.com/p/5b022371de26)
+
   * [JDK环境变量配置](http://jingyan.baidu.com/article/6dad5075d1dc40a123e36ea3.html) \|  [云盘下载 密码vipr](http://pan.baidu.com/s/1o7pUJOm)
 
   * [ECLIPSE - 新建jsp模板](http://blog.csdn.net/peixuh/article/details/12623547) \| [Eclipse支持HTML自动提示](http://www.cnblogs.com/zhuawang/p/5596455.html)
@@ -36,8 +37,8 @@ charset 与 pageEncoding建议都改成UTF-8
 还有在编辑器上的显示编码
 ```
 
-* Atom（编辑） + Eclipse（IDE）
-  * Atom autocomplete-jsp插件
+* Atom（编辑） + Eclipse
+  * Atom的autocomplete-jsp插件
 
 ```
 
