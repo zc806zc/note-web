@@ -4,11 +4,9 @@
 
   * [JDK环境变量配置](http://jingyan.baidu.com/article/6dad5075d1dc40a123e36ea3.html) \|  [云盘下载 密码vipr](http://pan.baidu.com/s/1o7pUJOm)
 
-  * [ECLIPSE - 新建jsp模板](http://blog.csdn.net/peixuh/article/details/12623547) \| [Eclipse支持HTML自动提示](http://www.cnblogs.com/zhuawang/p/5596455.html)
+  * [ECLIPSE - 新建JSP模板](http://blog.csdn.net/peixuh/article/details/12623547) \| [Eclipse支持HTML自动提示](http://www.cnblogs.com/zhuawang/p/5596455.html)
 
-  * [http://blog.csdn.net/thehide/article/details/52042487](http://blog.csdn.net/thehide/article/details/52042487) Idea导出war
-
-  * [http://www.cnblogs.com/zhuiyi/p/5900092.html](http://www.cnblogs.com/zhuiyi/p/5900092.html) Tomcat虚拟目录
+  * [Idea导出war](http://blog.csdn.net/thehide/article/details/52042487) \| [Tomcat-IDEA虚拟目录](http://www.cnblogs.com/zhuiyi/p/5900092.html)
 
 ```
 // 准备环境
