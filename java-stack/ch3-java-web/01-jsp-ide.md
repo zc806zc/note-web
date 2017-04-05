@@ -8,6 +8,8 @@
 
   * [http://blog.csdn.net/thehide/article/details/52042487](http://blog.csdn.net/thehide/article/details/52042487) Idea导出war
 
+  * http://www.cnblogs.com/zhuiyi/p/5900092.html Tomcat虚拟路径
+
 ```
 // 准备环境
 JDK
