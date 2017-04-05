@@ -1,4 +1,4 @@
-#### **JSP开发环境搭建**
+#### **JSP-开发环境搭建**
 
 * [JSP环境搭建](http://www.jianshu.com/p/5b022371de26)
 
@@ -37,6 +37,8 @@ charset 与 pageEncoding建议都改成UTF-8
 还有在编辑器上的显示编码
 ```
 
+---
+
 * Atom（编辑） + Eclipse
   * Atom的autocomplete-jsp插件
 
@@ -44,14 +46,14 @@ charset 与 pageEncoding建议都改成UTF-8
 
 ```
 
----
-
 * Intellij IDEA
   * [使用IntelliJ IDEA开发JavaWeb项目](http://youthlin.com/20151128.html)
 
 ```
 选择Java Enterprise栏的Web Application
+
+// 记得及时刷新 因为Java不是解释型的... 别被这个给坑到
 ```
 
-
+![](/assets/idea-refresh978.png)
 
