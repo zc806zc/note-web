@@ -1,10 +1,10 @@
 #### **JSP开发环境搭建**
 
-* [JSP开发的工具下载与环境搭建](http://www.jianshu.com/p/5b022371de26)
-  * [JDK环境变量配置](http://jingyan.baidu.com/article/6dad5075d1dc40a123e36ea3.html)
-  * [工具云盘下载 提取密码：vipr](http://pan.baidu.com/s/1o7pUJOm)
-  * [ECLIPSE - 新建jsp页面默认模板设置](http://blog.csdn.net/peixuh/article/details/12623547)
-  * [使Eclipse下支持编写HTML/JS/CSS/JSP页面的自动提示](http://www.cnblogs.com/zhuawang/p/5596455.html)
+* [JSP环境搭建](http://www.jianshu.com/p/5b022371de26)
+  * [JDK环境变量配置](http://jingyan.baidu.com/article/6dad5075d1dc40a123e36ea3.html) \|  [云盘下载 密码vipr](http://pan.baidu.com/s/1o7pUJOm)
+
+  * [ECLIPSE - 新建jsp模板](http://blog.csdn.net/peixuh/article/details/12623547) \| [Eclipse支持HTML自动提示](http://www.cnblogs.com/zhuawang/p/5596455.html)
+
   * [http://blog.csdn.net/thehide/article/details/52042487](http://blog.csdn.net/thehide/article/details/52042487) Idea导出war
 
 ```
