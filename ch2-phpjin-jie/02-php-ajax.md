@@ -85,8 +85,8 @@ PHPSESSID cookie HttpOnly
 ---
 
 * 基于MariaDB数据库的网站
-  * http://mariadb.org/
-  * [MariaDB网站实例](https://github.com/luo0412/hello-php/tree/master/book-code)
+  * [http://mariadb.org/](http://mariadb.org/)
+  * [MariaDB网站实例](https://github.com/luo0412/hello-php/tree/master/book-code) \| 
 
 ```php
 // 1. MariaDB
@@ -107,7 +107,7 @@ MYSQL分支 // 开源社区维护
 
 支持多线程
 
-
+// 升级还是共存? // 还没尝试
 ```
 
 ---
