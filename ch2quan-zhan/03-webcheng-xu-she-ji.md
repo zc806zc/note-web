@@ -1,4 +1,4 @@
-#### **ch1 基础知识**
+#### Web**基础**
 
 ```js
 // Web服务器
@@ -22,7 +22,7 @@ GET HEAD POST PUT DELETE
 2. 对连接到Internet的计算机上的数据进行有意或恶意的破坏 // eg. 拒绝服务攻击
 ```
 
-#### **ch2 HTML\(XHTML\)**
+#### **HTML\(XHTML\)**
 
 ```js
 // XHTML
@@ -39,7 +39,7 @@ W3C会放弃
 来编写出不已出错的文档
 ```
 
-#### **ch3 CSS**
+#### **CSS**
 
 ```js
 // 盒模型
@@ -49,7 +49,7 @@ W3C会放弃
 不同来源 优先级 // !important id选择器
 ```
 
-#### **ch4-6 JavaScript**
+#### **JavaScript**
 
 ```js
 // JS与Java
@@ -90,7 +90,7 @@ screen.Y
 // 拖放元素 用DOM2事件来写
 ```
 
-#### **ch7、10 XML/AJAX**
+#### **XML/AJAX**
 
 ```js
 // XML 文档结构
@@ -106,7 +106,7 @@ DOM
 // AJAX工具包
 ```
 
-#### ch8 FLash
+#### ~~ch8 FLash~~
 
 ```js
 // 忽略，了解程度，做下后备
@@ -120,48 +120,20 @@ DOM
 // 用户交互
 ```
 
-#### **ch9 PHP**
+#### **PHP/Java Web/ASP.NET/Ruby/Rails**
 
 ```php
 // 模式匹配 POSIX | Perl(忽略)
 preg_match // preg = perl regular
 
 记在PHP基础
-```
 
-#### **ch11 Java Web**
-
-```java
 // Servlet
 // JavaBean
 // JSF
-```
 
-#### **ch12 ASP.NET**
 
-```js
-// 忽略
-```
-
-#### **ch13 基于Web的数据库访问**
-
-```php
-// 关系数据库
-// 结构化查询语言
-
-// 特殊字符的潜在问题
-// JDBC 元数据
-```
-
-#### **ch14 Android**
-
-```java
-// 记在Android基础
-```
-
-#### **ch15-16 Ruby/Rails**
-
-```ruby
+// Ruby
 // 散列
 // 类
 
@@ -172,11 +144,27 @@ preg_match // preg = perl regular
 // Rails
 ```
 
+#### **基于Web的数据库访问**
+
+```php
+// 关系数据库
+// 结构化查询语言
+
+// 特殊字符的潜在问题
+// JDBC 元数据
+```
+
+#### **Android**
+
+```java
+// 记在Android基础
+```
+
 #### **参考**
 
 ```js
-Web程序设计基础 Robert W.Sebesta // 个人感觉已经不太适合我们阅读了 适合跳读部分章节 用来梳理下思路 
-W3c
+W3school
+// Web程序设计基础 Robert W.Sebesta // 确实是经典，但至少已经不适合入门了...
 ```
 
 
