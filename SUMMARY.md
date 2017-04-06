@@ -40,6 +40,7 @@
       * [01-新兴API](ch1-html5/02xin-xing-api.md)
       * [02-WebRTC-基础](ch1-html5/02-webrtcji-chu-2.md)
       * [03-微信小程序开发](ch1-html5/03wei-xin-xiao-cheng-xu-kai-fa.md)
+      * [04-H5移动端](ch1-html5/04yi-dong-duan.md)
   * [CSS3](ch2-css3.md)
     * [ch1-CSS3](ch1-css-basic.md)
       * [01-CSS-布局](ch2-css3/01-cssbu-ju.md)
