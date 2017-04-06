@@ -105,6 +105,22 @@ PHP查询数据后传参给JS
 
 ```
 
+* XML/JSON
+
+```php
+// 定义XML架构
+
+// XML解析/PHP操作XML
+Expat
+SimpleXML
+DOMDocument
+XMLReader
+
+// 创建RSS源
+
+// PHP操作JSON
+```
+
 * 邮件
 
 ```php

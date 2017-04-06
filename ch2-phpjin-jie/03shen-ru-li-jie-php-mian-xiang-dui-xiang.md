@@ -268,18 +268,6 @@ php -S localhost:8078
 
 ---
 
-#### **XML和PHP**
-
-```php
-// 定义XML架构
-
-// XML解析
-Expat
-SimpleXML
-
-// 创建RSS源
-```
-
 #### **用户验证策略**
 
 ```php
