@@ -1,8 +1,6 @@
-#### **PHP-Ajax网站**
+#### **PHP/Ajax-快速建站**
 
-* 使用模板快速建站
-
-  * [code-dl](http://book.boxuegu.com/php_ajax/)
+* 模板-快速建站
   * [WordPress-主题插件权限-FTP输入问题](http://jingyan.baidu.com/article/4f34706efc1237e387b56da4.html)
 
 ```php
@@ -20,8 +18,10 @@ localhost改成127.0.0.1使更通用
 // 不要用已经配置过的discuz和wecenter文件夹
 ```
 
-* Ajax
+---
 
+* Ajax
+  * [boxuegu-code-dl](http://book.boxuegu.com/php_ajax/)
   * [PHP AJAX 跨域问题](http://www.runoob.com/w3cnote/php-ajax-cross-border.html)
 
 ```js
@@ -40,14 +40,7 @@ PHP SimpleXML 处理最普通的 XML 任务，其余的任务则交由其它扩�
 // JSON
 ```
 
-* 面向对象网站开发
-
-```
-
-```
-
-* Ajax商品发布   
-  * 富文本过滤 [HTMLPurifier](http://htmlpurifier.org/download) \(Standalone版\)
+* Ajax\(商品\)发布网站   
 
 ```php
 // UEditor在线编辑器
@@ -58,6 +51,16 @@ PHP SimpleXML 处理最普通的 XML 任务，其余的任务则交由其它扩�
 
 下拉菜单三级联动
 ```
+
+---
+
+* 面向对象网站开发
+
+```
+
+```
+
+---
 
 * 电子商务网站
 
@@ -77,6 +80,22 @@ htmlspecialchars() 单引号不会被转义
 PHPSESSID cookie HttpOnly
 
 // 商务网站部署方式
+```
+
+---
+
+* MariaDB网站
+
+```php
+
+```
+
+---
+
+* 参考
+
+```php
+PHP + mariaDB Web开发 李世川
 ```
 
 

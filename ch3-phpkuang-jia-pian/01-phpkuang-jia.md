@@ -75,7 +75,7 @@ Zend Framework倒是一个不错的基础
 
 * 其他
 
-```js
+```php
 // Phalcon
 released in 2012
 Phalcon not only boosts execution speeds, 
@@ -90,7 +90,7 @@ caching, and many others
 
 * 小结
 
-```js
+```php
 如果是个人项目，旨在研究，推荐Laravel
 如果是外包或者公司项目，推荐Codeigniter或者ThinkPHP。
 ```
@@ -99,8 +99,8 @@ caching, and many others
   * [2016最热门的PHP框架](http://www.phpchina.com/portal.php?mod=view&aid=40113) \| [php各大主流框架比较](http://blog.csdn.net/resilient/article/details/52594267)
   * [best-php-frameworks](http://www.hongkiat.com/blog/best-php-frameworks/) \| [which-php-framework-right-you](https://opensource.com/business/16/6/which-php-framework-right-you)
 
-```js
-
+```php
+PHP + MariaDB Web开发 李世川
 ```
 
 
