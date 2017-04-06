@@ -13,7 +13,7 @@
     * [02-全栈工程师的自我修养-读后感](ch2quan-zhan/02-webquan-zhan-gong-cheng-shi-de-zi-wo-xiu-517b-du-hou-gan.md)
     * [03-Java和JS全端开发-为例](ch2quan-zhan/01-jsyu-java-quan-duan-kai-fa.md)
     * [02-RESTful-后台实现](ch2quan-zhan/02-restfullian-jie.md)
-    * [02-怎么防止被累死](js-stack/ch5-javascriptkuang-jia-pian/02zen-yao-fang-zhi-bei-lei-si.md)
+    * [02-如何防止被累死](js-stack/ch5-javascriptkuang-jia-pian/02zen-yao-fang-zhi-bei-lei-si.md)
   * [ch3-第一次集合](ch5zong-he.md)
     * [01-计算机导论](toolbox/ch1-note/01ji-suan-ji-dao-lun.md)
     * [01-程序员的数学](toolbox/ch1-note/01ji-suan-ji-de-shu-xue-ji-chu.md)
