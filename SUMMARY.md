@@ -13,7 +13,7 @@
     * [03-Java和JS全端开发-为例](ch2quan-zhan/01-jsyu-java-quan-duan-kai-fa.md)
     * [02-RESTful-交接前后端](ch2quan-zhan/02-restfullian-jie.md)
     * [02-如何防止被累死](js-stack/ch5-javascriptkuang-jia-pian/02zen-yao-fang-zhi-bei-lei-si.md)
-  * [ch3-第一次降速回顾](ch5zong-he.md)
+  * [ch3-第一次减速](ch5zong-he.md)
     * [01-计算机导论](toolbox/ch1-note/01ji-suan-ji-dao-lun.md)
     * [01-程序员的数学](toolbox/ch1-note/01ji-suan-ji-de-shu-xue-ji-chu.md)
     * [02-规格书/计划书](toolbox/ch3wen-dang/01gui-hua-shu.md)

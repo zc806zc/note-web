@@ -109,6 +109,11 @@ PHP查询数据后传参给JS
 
 ```php
 // 定义XML架构
+// DTD
+PCDATA // 字符数据 数据块...
+CDATA 
+Entities // 实体 避免文档的重复输入...
+
 
 // XML解析/PHP操作XML
 Expat
@@ -119,6 +124,11 @@ XMLReader
 // 创建RSS源
 
 // PHP操作JSON
+json_encode()
+json_decode()
+
+// 中文编码问题 JSON_UNESCAPED_UBICODE
+// urlEncode
 ```
 
 * 邮件
