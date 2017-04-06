@@ -128,7 +128,7 @@ json_encode()
 json_decode()
 
 // 中文编码问题 JSON_UNESCAPED_UBICODE
-// urlEncode
+// urlEncode 低版本
 ```
 
 * 邮件
