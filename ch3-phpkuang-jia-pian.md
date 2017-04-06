@@ -89,7 +89,7 @@ caching, and many others
 ```
 
 * Smarty
-  * https://github.com/smarty-php/smarty/releases/tag/v3.1.30
+  * [smarty-releases](https://github.com/smarty-php/smarty/releases/tag/v3.1.30)
 
 ```php
 模板引擎
