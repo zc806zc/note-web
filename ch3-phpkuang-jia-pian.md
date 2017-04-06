@@ -1,4 +1,4 @@
-#### PHP框架概述
+#### PHP-框架/模板
 
 * 概述
 
@@ -86,6 +86,24 @@ asset management,
 security, 
 translation, 
 caching, and many others
+```
+
+* Smarty
+  * https://github.com/smarty-php/smarty/releases/tag/v3.1.30
+
+```php
+模板引擎
+分离逻辑代码和数据代码
+把模板编译成PHP脚本，然后执行
+
+采用了缓存技术 // 相当于调用了静态HTML
+采用了插件技术 支持自定义插件 
+
+后台开发人员可以静心地调整代码
+前端工程师更用心地关注页面美化等
+
+// 其他模板引擎
+PHPLIB // 用模板代替变量实现有限格式化
 ```
 
 * 小结
