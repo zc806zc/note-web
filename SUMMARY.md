@@ -63,7 +63,7 @@
       * [02-PHP与AJAX网站](ch2-phpjin-jie/02-php-ajax.md)
     * [ch2-PHP-进阶](ch2-phpjin-jie.md)
       * [01-PHP-面向对象](ch1-phpji-chu/02-phpmian-xiang-dui-xiang.md)
-      * [02-PHP-高性能实战](ch2-phpjin-jie/03shen-ru-li-jie-php-mian-xiang-dui-xiang.md)
+      * [02-PHP-最佳实践/高性能开发](ch2-phpjin-jie/03shen-ru-li-jie-php-mian-xiang-dui-xiang.md)
     * [ch3-PHP-框架](ch3-phpkuang-jia-pian.md)
       * [01-PHP框架概述](ch3-phpkuang-jia-pian/01-phpkuang-jia.md)
       * [02-Laravel-最好的框架](ch3-phpkuang-jia-pian/02-laravelkuang-jia.md)
