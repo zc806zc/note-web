@@ -194,14 +194,10 @@ $stmt->bind_param("sss", $firstname, $lastname, $email);
 
 ```
 
-* 常见问题
+* 参考
 
 ```php
-// 提示undefined index
-httpd.conf修改
-error_reporting = E_ALL & ~E_NOTICE
-
-
+PHP + MariaDB Web开发 李世川
 ```
 
 

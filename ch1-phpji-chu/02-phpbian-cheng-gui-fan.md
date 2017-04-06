@@ -63,5 +63,42 @@ js文件            firstName.js > first_name.js // 但我更喜欢用中划线 
 我遇到win下的login_check.php -> ubuntu login_Check.php的闹鬼事件？？
 ```
 
+* 编程规范异议
+
+```php
+// 1. 变量命名可不可以用驼峰命名法
+$scopeArray = array();
+static $fileArrayStatic = '';
+
+// 2. 个人实在不习惯AllMAN块风格 
+// 这种风格可能在多嵌套或逻辑复杂的时候易于对应查找
+但是IDE是可以高亮实现
+
+// 所以小团队编程时, 妥协如下
+之所以让 { 独立成行 
+是 “语义” 而不是 “风格” 所致
+例如 class func lambda 可以
+控制语句if,while 就不可以
+
+function hello($i)
+{
+    if($i === 1) {
+        break;
+    }
+}
+
+// 3. tab键，想用就用，而且用了会更灵活
+原因是一样的
+现代IDE/编辑器 可以帮我们处理这件事 
+
+
+```
+
+*  参考
+
+```php
+
+```
+
 
 
