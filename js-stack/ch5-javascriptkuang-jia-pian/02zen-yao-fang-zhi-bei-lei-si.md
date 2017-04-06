@@ -1,4 +1,4 @@
-#### JS 疲劳-怎么防止被累死
+#### JS 疲劳-如何防止被累死
 
 * 引论
 
@@ -17,7 +17,7 @@
 ```
 
 * [作为开发者我是如何跟上时代脚步-胡子大哈译](https://juejin.im/post/58e59a0aa0bb9f006906aea1?utm_source=gold_browser_extension)
-  * 播客 https://www.dotnetrocks.com/
+  * 播客 [https://www.dotnetrocks.com/](https://www.dotnetrocks.com/)
 
 ```
 
