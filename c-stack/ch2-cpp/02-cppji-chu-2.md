@@ -1,5 +1,19 @@
 #### **CPP基础**
 
+* IDE使用
+
+```cpp
+// 属性里配置 包含路径等
+
+一个工程只能有一个main函数
+学习阶段用单文件编程
+
+// VS2010
+
+// Dev C++
+修改成 c++ 11标准
+```
+
 * 资源
   * [Free Country](https://www.thefreecountry.com/sourcecode/cpp.shtml) \| [C and C++ Users Group](http://www.hal9k.com/cug/) 
 
@@ -11,11 +25,8 @@
 // C and C++ Users Group 提供了
 AI、动画、编译器、数据库、调试、加密、
 游戏、图形、GUI、语言工具、系统编程等。
-```
 
-* 书单
-
-```cpp
+// 书单
 好像前辈就没什么推荐过
 至于经典书就像 现代汉语词典一样 难啃...
 ```
@@ -245,7 +256,7 @@ C++ 提供了各种不同类型的容器，
 
 #### 参考
 
-```
+```cpp
 菜鸟教程
 ```
 
