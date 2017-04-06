@@ -6,8 +6,8 @@
 ```php
 // 可用模板
 wordpress
-wecenter discuz // discuz较丑但比较成熟
-drupal // 较难
+wecenter // discuz较丑但比较成熟
+drupal   // 相对较难
 
 // discuz与wecenter安装注意事项
 
@@ -84,9 +84,29 @@ PHPSESSID cookie HttpOnly
 
 ---
 
-* MariaDB网站
+* 基于MariaDB数据库的网站
+  * http://mariadb.org/
+  * [MariaDB网站实例](https://github.com/luo0412/hello-php/tree/master/book-code)
 
 ```php
+// 1. MariaDB
+MySQL之父Widenius
+MYSQL分支 // 开源社区维护
+
+// 2. 相较于MySQL
+更多的存储引擎 // Maria PBXT XtraDB FederatedX
+更多的扩展 // 索引 新启动选项 
+// 慢查询日志的扩展统计
+// 对Unicode
+
+更少的警告和Bug
+更好的功能测试
+
+更快的复制查询处理 运行速度更快
+数据表消除
+
+支持多线程
+
 
 ```
 
@@ -95,7 +115,7 @@ PHPSESSID cookie HttpOnly
 * 参考
 
 ```php
-PHP + mariaDB Web开发 李世川
+PHP + mariaDB Web开发 李世川 2016
 ```
 
 
