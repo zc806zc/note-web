@@ -3,7 +3,8 @@
 * 概述
 
 ```js
-
+// MVC
+用户url请求 -> controller(router) -> model -> view // 当然没这么简单
 ```
 
 * Laravel
@@ -51,6 +52,8 @@ MVC体系
 
 // 搜索引擎友好的URL 灵活的URI路由
 ```
+
+![](/assets/codeIgniter-structure89213.png)
 
 * Yii 2
 
