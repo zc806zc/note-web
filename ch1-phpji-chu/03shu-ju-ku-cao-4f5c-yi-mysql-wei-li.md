@@ -29,8 +29,6 @@ show create table `student`\G // 查看建表的sql
 // 3. 插入
 insert into `news` (`title`, `content`, `addtime`) values
 ('新闻标题1', '新闻内容1', '2015-10-09 17:07:58'),
-('新闻标题2', '新闻内容2', '2015-10-11 12:06:56'),
-('新闻标题3', '新闻内容3', '2015-11-11 10:05:08');
 
 // 4. 删改
 update `student` set `name` = '赵六'， `gender` = '女' where `id` = 2; 
@@ -45,7 +43,7 @@ order by ...
 * 索引和视图
 
 ```php
-
+索引不在SQL标准中,但是确是一种事实标准
 ```
 
 * 函数和存储过程
