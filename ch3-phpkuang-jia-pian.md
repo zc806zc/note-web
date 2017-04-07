@@ -31,11 +31,28 @@ Laravel是最好的框架
 ```
 
 * CodeIgniter
+  * https://codeigniter.org.cn/user\_guide/installation/downloads.html
 
 ```php
+MVC体系
 轻量级 // 简单而精致
-但没有提供足够的
-安全防护
+
+// 特点/优势
+Active Record支持
+邮件发送类
+图形处理库(剪裁、缩放、旋转) // 支持GD ImageMagick BetPBM
+文件上传类 FTP类 Zip编码类
+日历类
+
+User-Agent类
+安全性和XSS过滤 // 但没有提供足够的 安全防护 ??
+
+单元测试类
+支持钩子和类的扩展
+大量的辅助函数
+
+搜索引擎友好的URL
+灵活的URI路由
 ```
 
 * Yii 2
@@ -112,7 +129,7 @@ PHPLIB // 用模板代替变量实现有限格式化
 
 ```php
 如果是个人项目，旨在研究，推荐Laravel
-如果是外包或者公司项目，推荐Codeigniter或者ThinkPHP。
+如果是外包或者公司项目，推荐Codeigniter或者ThinkPHP
 ```
 
 * 参考
