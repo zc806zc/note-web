@@ -13,19 +13,17 @@
 PHP是最好的语言
 Laravel是最好的框架
 一个年轻的框架，
-优雅的语法
-它拥有大多数常见的功能，
-如：路由，身份验证，会话，队列和缓存
+优雅 的语法
+它拥有大多数常见的功能 // 如：路由，身份验证，会话，队列和缓存
 
-// 上手容易，文档也完整
+// 上手容易，文档完整
 ```
 
 * Symfony2
 
 ```php
 一直是PHP开发者稳定使用的框架之一
-它非常灵活并且
-功能强大
+它非常灵活并且 功能强大
 
 // 而原来Symfony的结构非常复杂，难以理解和学习
 ```
@@ -38,9 +36,7 @@ MVC体系
 轻量级 // 简单而精致
 
 // 特点/优势
-Active Record支持
-// 图形处理库(剪裁、缩放、旋转) // 支持GD ImageMagick BetPBM
-//  邮件发送类 文件上传类 FTP类 Zip编码类 日历类
+代码产生器 脚手架
 
 // User-Agent类
 // 安全性和XSS过滤 // 但没有提供足够的 安全防护 ??
@@ -48,6 +44,10 @@ Active Record支持
 // 单元测试类
 // 支持钩子和类的扩展
 大量的辅助函数
+
+// Active Record支持
+// 图形处理库(剪裁、缩放、旋转) // 支持GD ImageMagick BetPBM
+//  邮件发送类 文件上传类 FTP类 Zip编码类 日历类
 
 // 搜索引擎友好的URL 灵活的URI路由
 ```
@@ -63,6 +63,7 @@ Don’t Repeat Yourself
 ```
 
 * CakePHP
+  * https://book.cakephp.org/3.0/en/installation.html
 
 ```php
 模板简单易用 // 视图支持Ajax 视图缓存 模板机制和各种组件
@@ -71,7 +72,7 @@ Don’t Repeat Yourself
 面向对象 // 没有支持面向对象?
 
 // 数据清理
-// 支持ACL访问控制 
+// 支持ACL访问控制
 ```
 
 * Zend Framework
