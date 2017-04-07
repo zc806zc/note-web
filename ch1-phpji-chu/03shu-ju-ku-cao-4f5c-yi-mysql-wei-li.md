@@ -25,7 +25,6 @@ desc `student`; // 查看已经创建的表结构
 select * from `news` \G
 show create table `student`\G // 查看建表的sql
 
-
 // 3. 插入
 insert into `news` (`title`, `content`, `addtime`) values
 ('新闻标题1', '新闻内容1', '2015-10-09 17:07:58'),
@@ -44,11 +43,10 @@ order by ...
 
 ```php
 // 索引
-不在SQL标准中,却是一种事实标准
+不在SQL标准中, 却是一种事实标准
 可以加快数据库记录的查询速度
 
 用空间换时间 // 还是值得的
-
 先对数据进行维护 延迟对索引的维护 // 实时性要求高的环境
 
 // 索引类型
@@ -65,7 +63,6 @@ drop index i_name on students;
 
 create unique index ui_name on student(name);
 // 或者在建表的时候 UNIQUE KEY `iu_name` (`name`)
-
 alter table students add k_id PRIMARY KEY (id);
 ```
 
@@ -88,11 +85,13 @@ alter table students add k_id PRIMARY KEY (id);
 ```
 
 * 图形化管理
+  * https://www.heidisql.com/download.php
 
 ```php
 // phpMyAdmin
 
-// HeidiSQL
+// HeidiSQL(Windows)
+Linux不太方便 要先装Wine
 
 
 // navicat

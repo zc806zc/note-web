@@ -1,6 +1,6 @@
 #### **PHP-应用实例**
 
-* 表单
+* 表单提交
 
 ```php
 // HyperText Transfer Protocol
