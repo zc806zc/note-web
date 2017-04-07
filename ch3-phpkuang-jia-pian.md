@@ -63,7 +63,7 @@ Don’t Repeat Yourself
 ```
 
 * CakePHP
-  * https://book.cakephp.org/3.0/en/installation.html
+  * [cakephp-installation](https://book.cakephp.org/3.0/en/installation.html)
 
 ```php
 模板简单易用 // 视图支持Ajax 视图缓存 模板机制和各种组件
