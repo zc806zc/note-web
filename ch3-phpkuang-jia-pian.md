@@ -75,9 +75,14 @@ Don’t Repeat Yourself
 // 数据清理
 // 支持ACL访问控制
 
+// intl扩展
+
 // composer,并不限于cakephp 只是顺道
+// 翻墙 代理
 composer -v
 
+cd /d C:\wamp\www\hello-php\jump
+composer self-update && composer create-project --prefer-dist cakephp/app cakephp
 ```
 
 * Zend Framework
