@@ -16,8 +16,8 @@
 有生之年你也看不完“史上最全资源”... // 颜值和你赌
 ```
 
-* [作为开发者我是如何跟上时代脚步-胡子大哈译](https://juejin.im/post/58e59a0aa0bb9f006906aea1?utm_source=gold_browser_extension)
-  * 播客 [https://www.dotnetrocks.com/](https://www.dotnetrocks.com/)
+* [如何跟上时代脚步-胡子大哈译](https://juejin.im/post/58e59a0aa0bb9f006906aea1?utm_source=gold_browser_extension)
+  * 播客 [dotnetrocks.com](https://www.dotnetrocks.com/)
 
 ```
 
