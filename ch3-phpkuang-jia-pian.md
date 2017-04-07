@@ -31,7 +31,7 @@ Laravel是最好的框架
 ```
 
 * CodeIgniter
-  * https://codeigniter.org.cn/user\_guide/installation/downloads.html
+  * [codeigniter-install](https://codeigniter.org.cn/user_guide/installation/downloads.html)
 
 ```php
 MVC体系
