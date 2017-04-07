@@ -62,7 +62,7 @@
       * [02-PHP-组件](ch1-phpji-chu/01-phpji-chu-2.md)
       * [03-数据库操作-以MySQL为例](ch1-phpji-chu/03shu-ju-ku-cao-4f5c-yi-mysql-wei-li.md)
     * [ch2-PHP-进阶](ch2-phpjin-jie.md)
-      * [02-PHP/AJAX-快速建站](ch2-phpjin-jie/02-php-ajax.md)
+      * [01-PHP/AJAX-快速建站](ch2-phpjin-jie/02-php-ajax.md)
       * [01-PHP-面向对象](ch1-phpji-chu/02-phpmian-xiang-dui-xiang.md)
       * [02-PHP-最佳实践/高性能开发](ch2-phpjin-jie/03shen-ru-li-jie-php-mian-xiang-dui-xiang.md)
     * [ch3-PHP-框架](ch3-phpkuang-jia-pian.md)

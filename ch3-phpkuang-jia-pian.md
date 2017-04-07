@@ -88,7 +88,7 @@ translation,
 caching, and many others
 ```
 
-* Smarty
+* 模板引擎Smarty
   * [smarty-releases](https://github.com/smarty-php/smarty/releases/tag/v3.1.30)
 
 ```php
@@ -105,6 +105,8 @@ caching, and many others
 // 其他模板引擎
 PHPLIB // 用模板代替变量实现有限格式化
 ```
+
+![](/assets/smarty-structure3442.png)
 
 * 小结
 
