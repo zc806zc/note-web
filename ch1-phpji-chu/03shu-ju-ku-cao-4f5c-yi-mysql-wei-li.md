@@ -52,12 +52,23 @@ order by ...
 先对数据进行维护 延迟对索引的维护 // 实时性要求高的环境
 
 // 索引类型
-单列索引
-组合索引
-主键索引 // 最常见 一个表只能创建一个主键索引 联合主键? alter创建主键
+单列索引 组合索引 一般索引
+主键索引 // 最常见 一个表只能创建一个主键索引 联合主键? 
 唯一索引 // 是多列的组合是唯一
-一般索引
 全文索引 // 查询文本
+
+create index i_name on student(name(5));
+alter table student add index(name); // 索引名不可指定
+show index from students;
+drop index i_name on students;
+// alter table students drop PRIMARY KEY
+
+create unique index ui_name on student(name);
+// 或者在建表的时候 UNIQUE KEY `iu_name` (`name`)
+
+alter table students add k_id PRIMARY KEY (id);
+
+
 ```
 
 * 函数和存储过程

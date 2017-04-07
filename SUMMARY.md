@@ -60,7 +60,7 @@
       * [01-PHP-编程规范](ch1-phpji-chu/02-phpbian-cheng-gui-fan.md)
       * [01-PHP-语法](ch1-phpji-chu/01-phpji-chu-1.md)
       * [02-PHP-组件](ch1-phpji-chu/01-phpji-chu-2.md)
-      * [03-数据库操作-MySQL为例](ch1-phpji-chu/03shu-ju-ku-cao-4f5c-yi-mysql-wei-li.md)
+      * [03-PHP-数据库\(MySQL为例\)](ch1-phpji-chu/03shu-ju-ku-cao-4f5c-yi-mysql-wei-li.md)
     * [ch2-PHP-进阶](ch2-phpjin-jie.md)
       * [01-PHP/AJAX-快速建站](ch2-phpjin-jie/02-php-ajax.md)
       * [01-PHP-面向对象](ch1-phpji-chu/02-phpmian-xiang-dui-xiang.md)
