@@ -63,7 +63,7 @@ Don’t Repeat Yourself
 ```
 
 * CakePHP
-  * [cakephp-installation](https://book.cakephp.org/3.0/en/installation.html) \| http://blog.csdn.net/u011781521/article/details/56965774
+  * [cakephp-org](https://book.cakephp.org/3.0/en/installation.html) \| [cakephp-安装](http://blog.csdn.net/u011781521/article/details/56965774)
   * [get-composer](https://getcomposer.org/)
 
 ```php
@@ -77,6 +77,7 @@ Don’t Repeat Yourself
 
 // composer,并不限于cakephp 只是顺道
 composer -v
+
 ```
 
 * Zend Framework
