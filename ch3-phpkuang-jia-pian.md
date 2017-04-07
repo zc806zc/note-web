@@ -83,7 +83,16 @@ composer -v
 
 cd /d C:\wamp\www\hello-php\jump
 composer self-update && composer create-project --prefer-dist cakephp/app cakephp
+
+// 文件夹结构
+bin // 控制台可执行文件
+config // 数据库/核心配置
+src // 存放用户应用
+webroot // 用户应用的根目录
+vender // 应用依赖
 ```
+
+![](/assets/cakephp-structure782.png)  ![](/assets/cakephp-webroot2357.png) ![](/assets/cakephp-src9632.png)
 
 * Zend Framework
 
