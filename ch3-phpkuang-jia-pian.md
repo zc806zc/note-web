@@ -39,28 +39,24 @@ MVC体系
 
 // 特点/优势
 Active Record支持
-邮件发送类
-图形处理库(剪裁、缩放、旋转) // 支持GD ImageMagick BetPBM
-文件上传类 FTP类 Zip编码类
-日历类
+// 图形处理库(剪裁、缩放、旋转) // 支持GD ImageMagick BetPBM
+//  邮件发送类 文件上传类 FTP类 Zip编码类 日历类
 
-User-Agent类
-安全性和XSS过滤 // 但没有提供足够的 安全防护 ??
+// User-Agent类
+// 安全性和XSS过滤 // 但没有提供足够的 安全防护 ??
 
-单元测试类
-支持钩子和类的扩展
+// 单元测试类
+// 支持钩子和类的扩展
 大量的辅助函数
 
-搜索引擎友好的URL
-灵活的URI路由
+// 搜索引擎友好的URL 灵活的URI路由
 ```
 
 * Yii 2
 
 ```js
 Don’t Repeat Yourself
-整合了jQuery
-有一套完整的AJAX机制
+整合了jQuery 有一套完整的AJAX机制
 // 可扩展皮肤和主题
 
 对前端转后端的开发者来说很友好
@@ -69,10 +65,13 @@ Don’t Repeat Yourself
 * CakePHP
 
 ```php
-模板简单易用
-基于“CRUD”，这是在数据库交互最方便以及最流行的功能方式
+模板简单易用 // 视图支持Ajax 视图缓存 模板机制和各种组件
+基于"CRUD"，这是在数据库交互最方便以及最流行的功能方式
 
-没有支持面向对象
+面向对象 // 没有支持面向对象?
+
+// 数据清理
+// 支持ACL访问控制 
 ```
 
 * Zend Framework
