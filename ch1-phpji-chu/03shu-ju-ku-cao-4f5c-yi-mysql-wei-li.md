@@ -2,7 +2,7 @@
 
 * MySQL/MariaDB常用命令
 
-```js
+```php
 mysql (-h localhost) -u root -p // 访问数据库,回车输命令
 
 // set names gbk; // 仅本次访问有效
@@ -67,37 +67,40 @@ create unique index ui_name on student(name);
 // 或者在建表的时候 UNIQUE KEY `iu_name` (`name`)
 
 alter table students add k_id PRIMARY KEY (id);
-
-
 ```
 
 * 函数和存储过程
 
-```
+```php
 
 ```
 
 * 用户和权限
 
-```
+```php
 
 ```
 
 * 备份和恢复
 
-```
+```php
 
 ```
 
 * 图形化管理
 
-```
+```php
+// phpMyAdmin
 
+// HeidiSQL
+
+
+// navicat
 ```
 
 * 使用MySQL扩展
 
-```js
+```php
 
 ```
 
