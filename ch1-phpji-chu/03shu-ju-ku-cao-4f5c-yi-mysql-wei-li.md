@@ -1,4 +1,19 @@
-#### 数据库操作
+#### PHP-数据库操作
+
+* 安装
+  * [heidiSQL-dl](https://www.heidisql.com/download.php)
+
+```
+// MYSQL安装
+
+// 数据库管理/图形化工具
+// 1.navicat($)
+// 2.phpMyAdmin PHP开发
+// 3.HeidiSQL(Windows)
+Linux不太方便 要先装Wine
+
+HeidiSQL 访问速度略快，但界面一般
+```
 
 * MySQL/MariaDB常用命令
 
@@ -81,20 +96,17 @@ alter table students add k_id PRIMARY KEY (id);
 * 备份和恢复
 
 ```php
+灾难发生时...
 
-```
+在线/离线备份
+完全/部分(增量)备份
 
-* 图形化管理
-  * https://www.heidisql.com/download.php
+// mysqldump 重要的逻辑备份工具
+cd /d C:\wamp\bin\mysql\mysql5.6.17\bin
+mysqldump -uroot -p --database cakephp_test > e:\cakephp_test_backup.sql // 回车输密码
 
-```php
-// phpMyAdmin
-
-// HeidiSQL(Windows)
-Linux不太方便 要先装Wine
-
-
-// navicat
+// mysql还原
+// source还原
 ```
 
 * 使用MySQL扩展
