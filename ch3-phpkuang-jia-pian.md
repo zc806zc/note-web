@@ -63,8 +63,8 @@ Don’t Repeat Yourself
 ```
 
 * CakePHP
-  * [cakephp-installation](https://book.cakephp.org/3.0/en/installation.html)
-  * https://getcomposer.org/
+  * [cakephp-installation](https://book.cakephp.org/3.0/en/installation.html) \| http://blog.csdn.net/u011781521/article/details/56965774
+  * [get-composer](https://getcomposer.org/)
 
 ```php
 模板简单易用 // 视图支持Ajax 视图缓存 模板机制和各种组件
@@ -74,6 +74,9 @@ Don’t Repeat Yourself
 
 // 数据清理
 // 支持ACL访问控制
+
+// composer,并不限于cakephp 只是顺道
+composer -v
 ```
 
 * Zend Framework
