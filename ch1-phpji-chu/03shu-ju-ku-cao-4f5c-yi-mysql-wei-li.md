@@ -80,7 +80,22 @@ create unique index ui_name on student(name);
 // 或者在建表的时候 UNIQUE KEY `iu_name` (`name`)
 alter table students add k_id PRIMARY KEY (id);
 
-// 全文
+// 全文索引
+SELECT WHERE LIKE %...% // 低效
+my.conf 
+
+FULLTEXT KEY // 只支持MyISAM
+
+// 如果一个关键词在50%的搜索数据中出现, 那么这个词就会被当做无效词
+所以
+select * from `student` where match(`favorite`) against ('play*' in BOOLEAN MODE);
+
+// 视图
+虚拟表, 它的内容有查询定义
+行列来自定义视图时查询所引用的表
+在引用视图时动态生成
+// 安全性 隐藏了连接关系
+// 使不同的用户看到不同的数据
 ```
 
 * 函数和存储过程
@@ -155,7 +170,7 @@ mysql -uroot -p -e "d:\log\log.txt" // 多次执行合并
 
 主服务器出现问题时,快速切换至服务器工作的方式
 
-my。cnf
+my.conf
 
 // 备份策略
 定期完整备份
