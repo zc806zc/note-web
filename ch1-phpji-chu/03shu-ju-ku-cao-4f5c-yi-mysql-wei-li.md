@@ -58,11 +58,11 @@ order by ...
 
 ```php
 // 索引
-不在SQL标准中, 却是一种事实标准
-可以加快数据库记录的查询速度
+// 不在SQL标准中, 却是一种事实标准
+用空间换时间,可以加快数据库记录的查询速度 // 还是值得的
 
-用空间换时间 // 还是值得的
-先对数据进行维护 延迟对索引的维护 // 实时性要求高的环境
+// 实时性要求高的环境
+先对数据进行维护 延迟对索引的维护 
 
 // 索引类型
 单列索引 组合索引 一般索引
@@ -79,18 +79,41 @@ drop index i_name on students;
 create unique index ui_name on student(name);
 // 或者在建表的时候 UNIQUE KEY `iu_name` (`name`)
 alter table students add k_id PRIMARY KEY (id);
+
+// 全文
 ```
 
 * 函数和存储过程
 
 ```php
+// 字符串处理函数
+// 数值处理函数
+// 日期处理函数
+// 流程处理函数
+// 其他函数
+database()
+version()
+user()
+password()
+md5()
 
+// 自定义函数
+
+// 存储过程
+经编译后存储在数据库中
+DELIMITER $$
 ```
 
 * 用户和权限
 
 ```php
-
+create user kitty@'192.168.0.50' identified by '123456';
+rename user kitty@'192.168.0.50' to kit@'192.168.0.50'; // update实现也行
+set password for user@'192.168.0.50' = password('pwd'); // update也行
+grant select,update on school.* to kit@'192.168.0.50'
+grant...
+revoke select on school.student from bear@'localhost'
+dropp user kitty;
 ```
 
 * 备份和恢复
