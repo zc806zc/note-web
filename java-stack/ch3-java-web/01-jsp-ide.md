@@ -40,6 +40,7 @@ charset 与 pageEncoding建议都改成UTF-8
 // 编辑器/IDE
 // (首选) Intellij IDEA
 注意选择Java Enterprise栏的 Web Application
+JSP模板设置 http://www.phperz.com/article/15/0923/159051.html
 
 // 记得及时刷新 
 因为Java不是解释型的 千万别被这个反复坑到...
