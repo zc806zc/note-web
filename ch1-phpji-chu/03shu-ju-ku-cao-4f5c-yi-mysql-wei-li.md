@@ -94,6 +94,7 @@ alter table students add k_id PRIMARY KEY (id);
 ```
 
 * 备份和恢复
+  * http://www.cnblogs.com/superfat/p/5267449.html
 
 ```php
 灾难发生时...
@@ -106,7 +107,38 @@ cd /d C:\wamp\bin\mysql\mysql5.6.17\bin
 mysqldump -uroot -p --database cakephp_test > e:\cakephp_test_backup.sql // 回车输密码
 
 // mysql还原
+mysql -uroot -p <e:\test.sql
+mysql -uroot -p cakephp_test <e:\test.sql
+
 // source还原
+source d:\test.sql // 可以先选择数据库
+
+// 二进制日志文件的备份与还原
+my.ini
+log-bin = E:/mysql-log/logbin.log
+重启mysql 
+flush logs
+
+mysqlbinlog d:/mysql-log/logbin.000001
+mysqlbinlog d:/mysql-log/logbin.000001 | mysql -uroot -p // 恢复数据操作
+mysql -uroot -p -e "d:\log\log.txt" // 多次执行合并
+
+// 物理备份
+要先关闭db
+
+// 主从复制
+主服务器完成写入记录
+从服务器只进行读
+
+主服务器出现问题时,快速切换至服务器工作的方式
+
+my。cnf
+
+// 备份策略
+定期完整备份
+开启二进制日志备份 // 默认关闭
+采用主从复制 
+定时备份数据 // 每天夜间或每周的某个时间
 ```
 
 * 使用MySQL扩展
