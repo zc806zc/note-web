@@ -94,7 +94,7 @@ alter table students add k_id PRIMARY KEY (id);
 ```
 
 * 备份和恢复
-  * http://www.cnblogs.com/superfat/p/5267449.html
+  * [mysql-主从复制](http://www.cnblogs.com/superfat/p/5267449.html)
 
 ```php
 灾难发生时...
