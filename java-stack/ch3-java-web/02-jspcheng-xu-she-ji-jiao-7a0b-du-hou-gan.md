@@ -1,5 +1,6 @@
 #### **ch1 JSP概述**
-* [代码下载](http://download.csdn.net/detail/gaoyuyihao/9249135)
+
+* [JSP程序设计-code-dl](http://download.csdn.net/detail/gaoyuyihao/9249135)
 
 ```
 Java里，类是最小单位，
@@ -49,12 +50,15 @@ Vector类
 
 throw throws
 ```
+
 #### **ch3-4 JSP语法与内置对象**
+
 ```
 补充至 《JSP基础》
 ```
 
 #### **ch5 JavaBean技术**
+
 ```
 JavaBean 
 家具
@@ -80,6 +84,7 @@ JSP中的JavaBean不用实现这个接口
 ```
 
 #### **ch6 Servlet技术**
+
 ```
 在web.xml中进行描述
 在server 3.0中也可以通过注解进行配置
@@ -142,6 +147,7 @@ GenericServlet接口 抽象类
 ```
 
 #### **ch7 JSP实用组件**
+
 * [Common-FileUpload](http://commons.apache.org/proper/commons-fileupload/)
 
 ```
@@ -156,24 +162,23 @@ enctype="multipart/form-data"
 // JSP动态图表
 
 // JSP报表
-
 ```
 
 #### **ch8 JSP数据库应用开发**
-* [菜鸟教程-JSP连接MySQL](http://www.runoob.com/jsp/jsp-database-access.html) JSTL
 
-```
-SQL Server2008  Access 
-MySQL 
-关系型数据库
+* [JSP连接JSTL-MySQL](http://www.runoob.com/jsp/jsp-database-access.html)
 
-Oracle
+```java
+// SQL Server2008  Access 
+// MySQL  关系型数据库
+
+// Oracle
 以RDBMS为核心的一批软件产品
 分布式结构
 支持大数据库、多用户的高性能的事务处理
 系统维具有很高的性能
 
-Sybase PostgreSQL DB2
+// 其他 Sybase PostgreSQL DB2
 
 // JDBC
 驱动程序接口Driver
@@ -229,7 +234,8 @@ JNDI Jav命名与目录接口
 ```
 
 #### **ch9 JSP高级程序设计**
-```
+
+```java
 // JSP与Ajax
 注意问题
 中文乱码 utf-8
@@ -309,3 +315,12 @@ BodyTag接口
 <%@ taglib uri="/WEB-INF/showDate.tld" prefix="taglib.prefix"%>
 或者在web.xml中配置
 ```
+
+#### 参考
+
+```java
+JSP程序设计 第2版 郭珍 王国辉
+```
+
+
+
