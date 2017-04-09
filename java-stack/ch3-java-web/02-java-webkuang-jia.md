@@ -1,4 +1,4 @@
-#### **JSP框架概况**
+#### **JSP-框架**
 
 * Spring Boot
 
@@ -23,6 +23,7 @@ Web模块
 ```
 
 * Struts 2框架
+  * http://struts.apache.org/download.cgi\#struts25101
 
 ```java
 // 起源于WebWork框架
@@ -47,23 +48,20 @@ JSF ,Tapestry , Spring MVC
 
 doFilter() -> execute()
 
-// 动态Action
-// 针对不同的用户请求调用不同的方法
-// 不指定method 
+// 动态Action 针对不同的用户请求调用不同的方法
+// 可以指定method, 配置struts.xml
+// 也可以不指定method 
 <s:form action="ActionName!MethodName">
 <action name="ActionName" class="PackageName.Action类名">
     <result>URL</result>
 </action>
-// 也可以指定method, 配置struts.xml
 
 // Struts2的配置文件
 
 // Struts2开发模式
 
-// Struts2标签库      
+// Struts2标签库
 ```
-
-
 
 * Hibernate技术
 
@@ -82,6 +80,12 @@ doFilter() -> execute()
 更灵活
 
 运用面向对象的思想操纵数据库，无须考虑资源的问题
+```
+
+* MyBatis
+
+```java
+
 ```
 
 

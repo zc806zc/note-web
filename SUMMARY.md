@@ -147,7 +147,7 @@
   * [Java-Web](java-stack/ch3-java-web.md)
     * [01-JSP-IDE](java-stack/ch3-java-web/01-jsp-ide.md)
     * [02-JSP-基础](java-stack/ch3-java-web/02-jspji-chu.md)
-    * [02-JSP程序设计教程-读后感](java-stack/ch3-java-web/02-jspcheng-xu-she-ji-jiao-7a0b-du-hou-gan.md)
+    * [02-JSP-基础2](java-stack/ch3-java-web/02-jspcheng-xu-she-ji-jiao-7a0b-du-hou-gan.md)
     * [02-Java-Web框架](java-stack/ch3-java-web/02-java-webkuang-jia.md)
-    * [02-Java-Web网站实例搭建](java-stack/ch3-java-web/02-java-webwang-zhan-shi-li-da-jian.md)
+    * [02-Java-Web网站搭建](java-stack/ch3-java-web/02-java-webwang-zhan-shi-li-da-jian.md)
 
