@@ -24,9 +24,11 @@ Web模块
 
 * Struts 2框架
   * [struts-dl](http://struts.apache.org/download.cgi#struts25101)
+  * http://blog.csdn.net/wwwgeyang777/article/details/19078545
 
 ```java
 // 一般只用到 lib下的
+// 考虑到版本冲突，可以将apps下的war解压再拷贝
 struts2-core-x.x.jar
 xwork-x.x.jar // webwork的核心库
 commons-fileupload-x.jar // 文件上传组件
