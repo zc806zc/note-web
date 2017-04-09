@@ -57,7 +57,7 @@ JSF ,Tapestry , Spring MVC
 使得业务控制逻辑和Servlet API完全脱离开
 
 // Struts2拦截器
-
+AOP的一种实现方式
 
 // Action对象
 框架的核心类 业务逻辑控制层
@@ -89,14 +89,15 @@ web.xml
 开发模式与产品模式
 
 // 实现与Servlet API的交互
-间接访问
-直接访问
+间接访问 // ActionContext
+直接访问 // 分为Ioc和非Ioc
 
 // 域模型DomainModel
-
 // 驱动模型ModelDriven 
 
 // Struts2标签库
+完全可以代替JSTL
+应用数据/控制/表单标签
 ```
 
 ![](/assets/structs-structure3453.png)  ![](/assets/struts2-lib23784.png)
