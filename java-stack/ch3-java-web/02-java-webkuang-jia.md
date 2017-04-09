@@ -102,23 +102,39 @@ web.xml
 
 ![](/assets/structs-structure3453.png)  ![](/assets/struts2-lib23784.png)
 
-* Hibernate技术
+* Hibernate
+  * http://hibernate.org/orm/
 
 ```java
-对象-关系映射 ORM (Object Relational Mapping)
+// 开发者不需要遵循太多的规则和设计模式 // 更灵活
 
-在MVC三层架构上
-从业务逻辑层又分离出一个持久层
-专门负责数据的持久化操作
+对象-关系映射 ORM (Object Relational Mapping)
+// 对于大型程序, JDBC无法满足
+// JDBC在批量操作 多表联接 表单级联当面并不优秀
+
+面向对象是从软件工程的基本原则发展而来的
+关系数据库确是基于数学理论
+// 使用Hibernate,可以运用面向对象的思想操纵数据库，无须考虑资源的问题
+
+持久化类 .java
+映射文件 .hbm.xml
+配置文件 .cfg.xml // 如数据库的连接信息
+
+Hibernate可以在应用EJB的J2EE架构中取代CMP
+完成数据持久化的重任
+
+// Hibernate在MVC三层架构上
+// 表示层 + 业务逻辑层 + 数据库层
+从业务逻辑层又分离出一个持久层,专门负责数据的持久化操作
 使业务逻辑层可以真正地专注于业务逻辑的开发
 不再需要编写复杂的SQL语句
 
-表示层 业务逻辑层 数据库曾
+// 3个重要的类
+配置类
+会话工厂类 // 生成session的工厂
+会话类 // 不是线程安全的 不要多个线程共享一个Session
 
-开发者不需要遵循太多的规则和设计模式
-更灵活
 
-运用面向对象的思想操纵数据库，无须考虑资源的问题
 ```
 
 * MyBatis
