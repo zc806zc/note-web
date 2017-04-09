@@ -23,8 +23,7 @@ Web模块
 ```
 
 * Struts 2框架
-  * [struts-dl](http://struts.apache.org/download.cgi#struts25101)
-  * http://blog.csdn.net/wwwgeyang777/article/details/19078545
+  * [struts-dl](http://struts.apache.org/download.cgi#struts25101) \| [struts2-startdemo](http://blog.csdn.net/wwwgeyang777/article/details/19078545)
 
 ```java
 // 一般只用到 lib下的
