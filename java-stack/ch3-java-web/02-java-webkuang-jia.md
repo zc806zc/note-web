@@ -30,7 +30,7 @@ DAO模块
 Web模块
 ```
 
-#### Struts 2框架
+#### Struts 2
 
 * 基础
   * [struts-dl](http://struts.apache.org/download.cgi#struts25101) \| [struts2-startdemo](http://blog.csdn.net/wwwgeyang777/article/details/19078545)
@@ -166,14 +166,29 @@ class-class-VARCHAR
 托管状态
 
 // Hibernate缓存
-一级缓存
-二级缓存
+首先在缓存里查询，查不到再用SQL查
+
+一级缓存 // session的缓存
+二级缓存 
+// SessionFactory的缓存 可在多个session间共享
+// ehcache.xml用于设置缓存策略 位于project/etc
+ 
 延迟加载策略
 
 // Hibernate实体关联关系映射 
+多对一单向 关联映射 
+多对一双向 关联映射
+一对一主键 关联映射 
+一对一外键 关联映射
+多对多    关联映射
+继承映射
 
+// Hibernate查询语句
+// HQL // 支持但请避免DML语句操作 可能导致脏数据
+select * from User user where user.id > 10 order by user.id desc
 
-// Hibernate查询语句  
+动态赋值 // ? 与 :infoId
+分页查询
 ```
 
 #### MyBatis
