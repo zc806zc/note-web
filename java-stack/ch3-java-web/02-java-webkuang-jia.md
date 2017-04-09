@@ -138,7 +138,7 @@ Hibernate可以在应用EJB的J2EE架构中取代CMP
 会话工厂类 // 生成session的工厂
 会话类 // 不是线程安全的 不要多个线程共享一个Session
 
-POJO // Plain Old java Object
+// POJO // Plain Old java Object
 ```
 
 * 使用
@@ -161,6 +161,19 @@ class-class-VARCHAR
 // Hibernate自动建表
 
 // 持久化对象
+瞬间状态
+持久状态
+托管状态
+
+// Hibernate缓存
+一级缓存
+二级缓存
+延迟加载策略
+
+// Hibernate实体关联关系映射 
+
+
+// Hibernate查询语句  
 ```
 
 #### MyBatis
