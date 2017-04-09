@@ -172,16 +172,16 @@ class-class-VARCHAR
 二级缓存 
 // SessionFactory的缓存 可在多个session间共享
 // ehcache.xml用于设置缓存策略 位于project/etc
- 
+
 延迟加载策略
 
 // Hibernate实体关联关系映射 
 多对一单向 关联映射 
 多对一双向 关联映射
-一对一主键 关联映射 
+一对一主键 关联映射  
 一对一外键 关联映射
-多对多    关联映射
-继承映射
+多对多    关联映射 // 学生选修课程
+继承映射 // Hibernate
 
 // Hibernate查询语句
 // HQL // 支持但请避免DML语句操作 可能导致脏数据
