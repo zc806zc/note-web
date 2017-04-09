@@ -23,9 +23,21 @@ Web模块
 ```
 
 * Struts 2框架
-  * http://struts.apache.org/download.cgi\#struts25101
+  * [struts-dl](http://struts.apache.org/download.cgi#struts25101)
 
 ```java
+// 一般只用到 lib下的
+struts2-core-x.x.jar
+xwork-x.x.jar // webwork的核心库
+commons-fileupload-x.jar // 文件上传组件
+commons-io-x.x.jar // java.io的扩展
+commons-langx.x.jar // 数据类型工具 lang
+commons-logging-x.x.jar // 日志管理
+ognl-x.x.jar // EL
+freemarker-x.x.jar // 表现层框架,定义了Struts2的可视化组件主题
+javassist-x.x.GA.jar // Javassist字节码解释器
+
+
 // 起源于WebWork框架
 MVC // 简单讲就是 把输入处理输出分开的软件架构
 
