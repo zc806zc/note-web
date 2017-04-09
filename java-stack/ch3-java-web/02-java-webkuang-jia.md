@@ -82,6 +82,8 @@ doFilter() -> execute()
 // Struts2标签库
 ```
 
+![](/assets/structs-structure3453.png)  ![](/assets/struts2-lib23784.png)
+
 * Hibernate技术
 
 ```java
