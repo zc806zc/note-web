@@ -1,18 +1,20 @@
 #### **JSP-框架**
 
-* 概述
+```java
+
+```
+
+#### Spring Boot
+
+* 基础
 
 ```java
 
 ```
 
-* Spring Boot
+#### Spring
 
-```java
-
-```
-
-* Spring框架
+* 基础
 
 ```java
 降低开发企业应用程序的复杂性
@@ -28,7 +30,9 @@ DAO模块
 Web模块
 ```
 
-* Struts 2框架
+#### Struts 2框架
+
+* 基础
   * [struts-dl](http://struts.apache.org/download.cgi#struts25101) \| [struts2-startdemo](http://blog.csdn.net/wwwgeyang777/article/details/19078545)
 
 ```java
@@ -102,10 +106,14 @@ web.xml
 
 ![](/assets/structs-structure3453.png)  ![](/assets/struts2-lib23784.png)
 
-* Hibernate
-  * http://hibernate.org/orm/
+#### Hibernate
+
+* 基础
+  * [hibernate.org](http://hibernate.org/orm/)
 
 ```java
+使用lib/required下面的jar包即可
+
 // 开发者不需要遵循太多的规则和设计模式 // 更灵活
 
 对象-关系映射 ORM (Object Relational Mapping)
@@ -115,10 +123,6 @@ web.xml
 面向对象是从软件工程的基本原则发展而来的
 关系数据库确是基于数学理论
 // 使用Hibernate,可以运用面向对象的思想操纵数据库，无须考虑资源的问题
-
-持久化类 .java
-映射文件 .hbm.xml
-配置文件 .cfg.xml // 如数据库的连接信息
 
 Hibernate可以在应用EJB的J2EE架构中取代CMP
 完成数据持久化的重任
@@ -134,10 +138,32 @@ Hibernate可以在应用EJB的J2EE架构中取代CMP
 会话工厂类 // 生成session的工厂
 会话类 // 不是线程安全的 不要多个线程共享一个Session
 
-
+POJO // Plain Old java Object
 ```
 
-* MyBatis
+* 使用
+
+```java
+// 数据类型映射
+long-Long-BIGINT
+// short-Short-SMALLINT
+character-String-Char(1)
+string-String-varchar
+text-String-CLOB
+calender-Calender-TIMESTAMP
+class-class-VARCHAR
+
+// 重要文件
+持久化类 .java
+映射文件 .hbm.xml
+配置文件 .cfg.xml // 如数据库的连接信息
+
+// Hibernate自动建表
+
+// 持久化对象
+```
+
+#### MyBatis
 
 ```java
 
