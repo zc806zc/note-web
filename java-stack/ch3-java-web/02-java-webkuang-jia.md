@@ -76,8 +76,25 @@ doFilter() -> execute()
 </action>
 
 // Struts2的配置文件
+struts-default.xml
+struts.xml
+struts-plugin.xml 
+struts.properties // struts框架属性配置
+web.xml
+
+配置包和命名空间 // 已经配置好的包可以被其他包继承
+使用通配符简化配置
 
 // Struts2开发模式
+开发模式与产品模式
+
+// 实现与Servlet API的交互
+间接访问
+直接访问
+
+// 域模型DomainModel
+
+// 驱动模型ModelDriven 
 
 // Struts2标签库
 ```
