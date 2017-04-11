@@ -49,36 +49,34 @@ ASP.NET Web Form 强大的窗体
 
 #### ![](/assets/j2ee-structure77283.png)
 
-#### **JSP语法与内置对象**
+#### **JSP语法/内置对象**
 
-```
-补充至 《JSP基础》
+```java
+// request/response
+获取客户端信息
+获取HTTP Headers // setHeader
+重定向
+
+// session
+在线考试系统
 ```
 
 #### **JavaBean**
 
 ```
-JavaBean 
-家具
+// JavaBean 
 JavaBean组件与企业级JavaBean(EJB)
 
-工具JavaBean
-可以实现业务逻辑与页面显示的分离
-转化 < >
+实现java.io.Serializable接口 序列化 // 考虑到不同的操作系统
+// JSP中的JavaBean不用实现这个接口
 
-实现java.io.Serializable接口
-不同的操作系统
-序列化
-JSP中的JavaBean不用实现这个接口
+// 类中必须存在一个无参数的构造函数
+// 索引属性 通过索引访问属性
 
-类中必须存在一个无参数的构造函数
+toolbean // 可以实现业务逻辑与页面显示的分离 eg . 转化 < >
+valuebean
 
-索引属性 通过索引访问属性
-
-<jsp:setProperty>的property取值为 *
-一 一赋予Bean中与参数具有相同名字的属性
-
-在JSP页面中应用 工具JavaBean
+<jsp:setProperty>的property取值为 * // 一 一赋予Bean中与参数具有相同名字的属性
 ```
 
 #### **Servlet**
