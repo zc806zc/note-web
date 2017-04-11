@@ -41,9 +41,13 @@ ASP.NET Web Form 强大的窗体
 
 // JSP程序开发模式
 纯JSP ->  JSP + JavaBean(可重用) -> JSP + Servlet(类似分发器,逻辑更好) + JavaBean
--> Struts等代表的框架模式
--> J2EE // 
+-> Struts等代表的框架模式 // MVC +  准备好的实用程序
+-> J2EE // 大型网站 业务逻辑更复杂 EJB 难测试
+
+// EJB
 ```
+
+#### ![](/assets/j2ee-structure77283.png)
 
 #### **JSP语法与内置对象**
 
