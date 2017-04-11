@@ -1,10 +1,8 @@
 #### **JSP基础**
 
-* 基础
-
 ```java
 // java server page
-jsp是另一种形式的servlet
+jsp 是另一种形式的servlet
 
 // 指令
 page指令： 通常位于jsp页面的顶端，同一个页面可以有多个page指令。
@@ -35,7 +33,7 @@ plugin fallback param
 codebase属性
 ```
 
-* 注释与脚本标识
+#### 注释与脚本标识
 
 ```java
 <!-- html注释 -->                  // 客户端可见
@@ -63,7 +61,7 @@ codebase属性
 <h2>  hello,<%=s %> </h2>
 ```
 
-* include 动作和include指令区别
+#### include 动作和include指令区别
 
 ```java
 如果要在JSP页面中显示大量的文本文字，可以将文字写入txt
@@ -82,7 +80,7 @@ contentType要一直，否则报错
 | 编译时间 | 较慢 | 较快 |
 | 执行时间 | 稍快 | 较慢--每次资源必须被编译 |
 
-* jsp生命周期
+#### JSP生命周期
 
 ```
 jspService()是用来处理客户端请求的，
@@ -93,14 +91,15 @@ jspService()是用来处理客户端请求的，
 servlet是常驻在服务器内存中。
 ```
 
-* javaben的使用
-  * 像普通的java类一样，创建javabean;
-    * 在jsp使用动作标签来使用 javaben
-    * 四大作用域
-      * page ，仅当前页面有效
-      * request ,通过httpRequest.getAttribute\(\)获取jvabean对象
-      * session  httpSession.getAttribute\(\)
-      * application 只要没有关闭服务器就会一直存在
+#### Javaben的使用
+
+* 像普通的java类一样，创建javabean;
+  * 在jsp使用动作标签来使用 javaben
+  * 四大作用域
+    * page ，仅当前页面有效
+    * request ,通过httpRequest.getAttribute\(\)获取jvabean对象
+    * session  httpSession.getAttribute\(\)
+    * application 只要没有关闭服务器就会一直存在
 
 ```java
 当程序执行<jsp:setProperty>标识时，
@@ -156,7 +155,7 @@ getProperty
   </body>
 ```
 
-* cookie
+#### cookie
 
 ```java
 // 创建使用与读取
@@ -172,47 +171,45 @@ getValue();
 getMaxAge();
 ```
 
-* JSP内置对象
+#### JSP内置对象
 
 ```java
 // BS进行交互通信的控制
 request 获取客户端的请求
 response 对客户端进行响应
-session 一直保存着会话期间所需要传递的数据信息
+session 
+// HTTP是一种无状态协议
+// session对象是BS的连接一直保持下去
+// 销毁session invalidate()
+// 会话超时管理
 
 // 设置HTTP头可实现禁用缓存功能
 要在没有任何输出发送到客户端前使用
 <%response.setHeader("Cache-Control","no-store");
 response.setDateHeader("Expires",0); %>
 
-HTTP是一种无状态协议
-session对象是BS的连接一直保持下去
+// application
+WEB-INF/web.xml
 
-销毁session invalidate();
-会话超时管理
+// out
+// flush() 刷新流
+// isAutoFlush()
 
-application
-WEB-INF web.xml
+pageContext 获取会话范围  // 集大成者，通过它可以访问其他所有对象
 
-out
-flush() 刷新流
-isAutoFlush()
+// config 读取web.xml配置信息
+// page 应答或请求
+
+exception exception.getMessage()
 ```
 
-* 其他内置对象
+#### 参考
 
-```java
-pageContext 获取会话范围 
-最大集成着，通过它访问其他所有对象
+* [当Java遇见HTML](http://www.jianshu.com/p/c7260f7588c5)
 
-config 读取web.xml配置信息
-page 应答或请求
-exception 获取异常信息
-exception.getMessage();
 ```
 
-* 参考
-  * [当Java遇见HTML](http://www.jianshu.com/p/c7260f7588c5)
+```
 
 
 
