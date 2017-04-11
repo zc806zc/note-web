@@ -149,7 +149,7 @@
     * [ch3-Java-Web](java-stack/ch3-java-web.md)
       * [01-JSP-IDE的坑](java-stack/ch3-java-web/01-jsp-ide.md)
       * [02-JSP-基础篇](java-stack/ch3-java-web/02-jspji-chu.md)
-      * [02-JSP-查漏补缺](java-stack/ch3-java-web/02-jspcheng-xu-she-ji-jiao-7a0b-du-hou-gan.md)
+      * [02-JSP-逆天补坑](java-stack/ch3-java-web/02-jspcheng-xu-she-ji-jiao-7a0b-du-hou-gan.md)
       * [02-Java-Web框架](java-stack/ch3-java-web/02-java-webkuang-jia.md)
       * [02-Java-Web网站搭建](java-stack/ch3-java-web/02-java-webwang-zhan-shi-li-da-jian.md)
 

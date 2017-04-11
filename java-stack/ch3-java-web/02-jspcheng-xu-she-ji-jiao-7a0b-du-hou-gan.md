@@ -63,7 +63,7 @@ ASP.NET Web Form 强大的窗体
 
 #### **JavaBean**
 
-```
+```java
 // JavaBean 
 JavaBean组件与企业级JavaBean(EJB)
 
@@ -73,48 +73,28 @@ JavaBean组件与企业级JavaBean(EJB)
 // 类中必须存在一个无参数的构造函数
 // 索引属性 通过索引访问属性
 
+// 分为2类
 toolbean // 可以实现业务逻辑与页面显示的分离 eg . 转化 < >
 valuebean
 
 <jsp:setProperty>的property取值为 * // 一 一赋予Bean中与参数具有相同名字的属性
+
+// Bound/Constrained 监听器
+主要是图形编程的JavaBean中 JSP较少用
+
+// javabean实现邮箱验证
+// Javabean统计登录次数
 ```
 
 #### **Servlet**
 
-```
-在web.xml中进行描述
+```java
+主要用于B/S结构,用来充当一个请求控制处理的角色
+
+// Servlet使用
+// 在web.xml中进行描述
 在server 3.0中也可以通过注解进行配置
 
-// Servlet作用特点
-Servlet不仅可以生成HTML脚本
-也可以生成二进制表单进行输出
-
-Servlet可以是多参与者的游戏服务器
-
-当允许单连接方式下进行数据传输时
-applet
-
-当允许客户机和服务器简单、高效地执行会话的情况下
-通过定制协议进行通信
-
-将定制的处理提供给所有服务器的标准程序
-
-在各个程序之间共享数据
-
-// Servlet的生命周期
-Servlet部署在容器里
-它的生命周期由容器管理
-
-init()
-HttpServletRequest HttpServletResponse -> sercive()
-destory
-
-// Servlet与JSP的区别
-Servlet是服务端的Applet
-Servlet必须编译后才能运行
-JSP基于Servlet
-
-// Servlet简单演示
 <servlet>
     <servlet-name>MyServlet</servlet-name>
     <servlet-class>com.MyServlet</servlet-class>
@@ -126,9 +106,34 @@ JSP基于Servlet
 
 <load-on-startup> 启动装入优先权
 
-// Servlet 3.0利用注释来配置Servlet
 @WebServlet("/textServlet");
 访问链接 http://localhost:8686/LearnServlet/textServlet
+
+// Servlet作用特点
+
+// Servlet不仅可以生成HTML脚本
+// 也可以生成二进制表单进行输出
+Servlet可以是多参与者的游戏服务器
+// 当允许单连接方式下进行数据传输时
+// applet
+
+// 当允许客户机和服务器简单、高效地执行会话的情况下
+通过定制协议进行通信
+
+将定制的处理提供给所有服务器的标准程序
+在各个程序之间共享数据
+
+// Servlet的生命周期
+Servlet部署在容器里, 它的生命周期由容器管理
+
+init()
+HttpServletRequest HttpServletResponse -> sercive()
+destory
+
+// Servlet与JSP的区别
+Servlet是服务端的Applet
+Servlet必须编译后才能运行
+JSP基于Servlet
 
 // servlet实现请求的转发，还可以通过
 javax.servlet.RequestDispatcher类的forward方法
@@ -136,31 +141,39 @@ javax.servlet.RequestDispatcher类的forward方法
 // Servlet API编程常用接口和类
 Servlet接口
 HttpServlet接口 针对Web服务器的Servlet
-ServletConfig接口 配置对象，初始化时传递信息
+// ServletConfig接口 配置对象，初始化时传递信息
 HttpServletRequest接口
 HttpServletResponse接口
-GenericServlet接口 抽象类
+// GenericServlet接口 抽象类
+
+// 用Servlet处理表单
+// Servlet过滤器 // 身份验证
+// Servlet监听器 // 实现同一用户只能有一个在线 
 ```
 
 #### **JSP实用组件**
 
 * [Common-FileUpload](http://commons.apache.org/proper/commons-fileupload/)
 
-```
+```java
 // JSP文件操作
-Common-FileUpload组件
-需要commons-io包的支持
+Common-FileUpload // 需要commons-io包的支持
+// enctype="multipart/form-data"
+1. 实现限制上传文件的类型
+2. 不使用组件实现 上传下载
 
-enctype="multipart/form-data"
-
-// 发送E-mail
-
-// JSP动态图表
-
+// Java Mail发送E-mail
+// JSP动态图表 JFreeChat
 // JSP报表
+
+// XML操作
+DOM解析器
+SAX解析器
+DOM4J
+JDOM
 ```
 
-#### **JSP数据库应用开发**
+#### **JSP数据库**
 
 * [JSP连接JSTL-MySQL](http://www.runoob.com/jsp/jsp-database-access.html)
 
@@ -229,22 +242,46 @@ META-INF\context.xml
 JNDI Jav命名与目录接口
 ```
 
-#### **JSP高级程序设计**
+#### **JSP与AJAX**
 
 ```java
-// JSP与Ajax
-注意问题
-中文乱码 utf-8
-String name = request.getParameter("name");
-out.println("姓名" + new String(name.getBytes("iso-8859-1"),"utf-8"));
+// 中文乱码 utf-8
+// String name = request.getParameter("name");
+// out.println("姓名" + new String(name.getBytes("iso-8859-1"),"utf-8"));
 
-浏览器兼容
-AJAX框架 对象封装 避免大量重写
-客户端更多的压力 性能问题
+// 浏览器兼容
+使用AJAX框架 // 对象封装 避免大量重写
 
+// 客户端更多的压力 // 性能问题
 优化for循环
 将DOM结点附加到文档上
 减少 . 操作符的使用
+
+// AJAX实现注册时用户名的查重
+// AJAX级联
+```
+
+#### JSTL/EL
+
+```java
+\ ${user[user-name]}
+
+// ignore的 2种方式
+page 
+web.xml
+
+// EL输出数组
+// EL获取表单 session JavaBean属性...
+
+// EL函数
+
+// JSTL
+<c:catch> // 捕获异常
+<c:import>
+<c:url>
+<c:redirect>
+
+// JSTL实现用户登录(表单)
 
 // EL表达式及标签
 Expression Language 表达式语言
@@ -266,11 +303,10 @@ ${user.name}  ${user[name]}
 ${ para,.pwd1 == param.pwd2 }
 
 // 字符串连接
-${"a" + "b"} // 错误
-${"a"}${"b"} // 正确
+${"a"} ${"b"} // ${"a" + "b"} // 错误
 
-EL的条件运算符功能比较弱
-一般用JSTL替代
+
+// EL的条件运算符功能比较弱, 用JSTL替代
 
 // EL表达式中的隐含对象
 pageContext隐含对象
@@ -294,7 +330,6 @@ XML标签库
 
 // 自定义标签库的开发
 就是一个扩展的Java类
-运行一个或两个接口的JavaBean
 
 描述性的配置文件
 
@@ -312,10 +347,15 @@ BodyTag接口
 或者在web.xml中配置
 ```
 
-#### 参考
+#### **日志/参考**
 
 ```java
-JSP程序设计 第2版 郭珍 王国辉
+之所以做这篇笔记 
+就是感觉上课理论水太多咬的不够深,
+所以自己找资料重新啃了一遍，算是对JSP理论部分的一个了断
+
+// JSP程序设计 第2版 郭珍 王国辉 // 我们的教材，略有错漏，但相对还好
+Java Web开发实践教程 王占中 崔志刚 // 感觉不错, 略厚
 ```
 
 
