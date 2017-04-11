@@ -1,63 +1,57 @@
-#### **ch1 JSP概述**
+#### **JSP开发基础**
 
 * [JSP程序设计-code-dl](http://download.csdn.net/detail/gaoyuyihao/9249135)
+* Java
 
-```
-Java里，类是最小单位，
-不允许在类外面定义变量和方法
-没有 全局变量的 概念
-权限修饰
+```java
+// Java里，类是最小单位，
+// 不允许在类外面定义变量和方法
+// 没有 全局变量 的概念 方法属性的权限修饰特点
+// 析构方法 finalize()
+// 强制类型转换 高级数据类型赋值给低级类型变量
 
-Serlet是一种服务端Java技术
-继承自javax.servlet.http.HttpServlet类
-
-JavaBean技术
-独立的组件
-分可视化与不可视化
-
-JSP 安全性高，跨平台
-将静态HTML代码和动态数据区分开来
-预编译，JSP页面在被服务器执行前,都是已经编译好的，
-并且通常只进行一次编译
-若没修改过，直接调用编译好的
-
-JSP的处理过程...
-
-与其他语言的比较
-CGI 
-ASP COM组件 平台限制 IIS
-ASP.NET Web Form 强大的窗体
-PHP 
-
-// JSP程序开发模式
-单纯的JSP页面编程
-
-JSP + JavaBean编程
-JSP + Servlet + JavaBean编程
-MVC模式
-```
-
-#### **ch2 JSP开发基础**
-
-```
-析构方法 finalize()
-
-强制类型转换 高级数据类型赋值给低级类型变量
-
-Vector类
+// Vector类
 一元集合，可以加入重复数据，
 可以方便地对集合内的数据进行curd
 
-throw throws
+// throw throws
 ```
 
-#### **ch3-4 JSP语法与内置对象**
+* JSP
+
+```java
+// Serlet
+是服务端Java // 继承自javax.servlet.http.HttpServlet类
+
+// JavaBean 
+独立的组件 // 分可视化与不可视化
+
+// 为什么使用JSP 2点 
+1. JSP 安全性相对更高 // 跨平台... 那谁不跨平台的?扯淡
+
+2. 预编译, JSP页面在被服务器执行前, 都是已经编译好的，
+并且通常只进行一次编译,所以相对执行速度也快? // 若没修改过，直接调用编译好的
+
+// JSP的处理过程...
+
+// 与其他语言的比较
+// CGI PHP 
+// ASP COM组件 但有平台限制 // IIS
+ASP.NET Web Form 强大的窗体 
+
+// JSP程序开发模式
+纯JSP ->  JSP + JavaBean(可重用) -> JSP + Servlet(类似分发器,逻辑更好) + JavaBean
+-> Struts等代表的框架模式
+-> J2EE // 
+```
+
+#### **JSP语法与内置对象**
 
 ```
 补充至 《JSP基础》
 ```
 
-#### **ch5 JavaBean技术**
+#### **JavaBean**
 
 ```
 JavaBean 
@@ -83,7 +77,7 @@ JSP中的JavaBean不用实现这个接口
 在JSP页面中应用 工具JavaBean
 ```
 
-#### **ch6 Servlet技术**
+#### **Servlet**
 
 ```
 在web.xml中进行描述
@@ -146,7 +140,7 @@ HttpServletResponse接口
 GenericServlet接口 抽象类
 ```
 
-#### **ch7 JSP实用组件**
+#### **JSP实用组件**
 
 * [Common-FileUpload](http://commons.apache.org/proper/commons-fileupload/)
 
@@ -164,7 +158,7 @@ enctype="multipart/form-data"
 // JSP报表
 ```
 
-#### **ch8 JSP数据库应用开发**
+#### **JSP数据库应用开发**
 
 * [JSP连接JSTL-MySQL](http://www.runoob.com/jsp/jsp-database-access.html)
 
@@ -233,7 +227,7 @@ META-INF\context.xml
 JNDI Jav命名与目录接口
 ```
 
-#### **ch9 JSP高级程序设计**
+#### **JSP高级程序设计**
 
 ```java
 // JSP与Ajax
