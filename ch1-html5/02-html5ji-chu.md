@@ -115,7 +115,8 @@ HTML5规定footer不能放太多无关内容，但你可以无视啊 ORZ
 * HTML5纲要（为了合理结构）
   * [在线HTML纲要生成器](http://gsnedders.html5.org/outliner/) | [Chrome扩展 h5o](http://code.google.com/p/h5o)
 
-```js
+
+```
 // 层级 h1 到 h6
 
 // 区块根：body,blockquote,td,fieldset,figure,details 产生自己的纲要，抓取来的文章放到 article 中就会类推下去，不会有问题
@@ -219,14 +220,13 @@ Structured Data Testing Tools // https://search.google.com/structured-data/testi
 * 日期和时间 也支持min和max="2014-12-31"
 * color
 * 更新的元素
-* datalist 下拉建议列表 `<input id="" list="animal">`
+* datalist 下拉建议列表 <input id="" list="animal">
 * progress和meter
-* `<menu><command></command><menu>`创建工具条和菜单
+* <menu><command></command><menu>创建工具条和菜单
 * 网页中的HTML编辑器（放在可编辑区内的按钮不能触发事件）
 * contenteditable编辑元素
 * designMode编辑页面
 ```
-
 
 
 * H5音频和视频
@@ -238,7 +238,7 @@ Structured Data Testing Tools // https://search.google.com/structured-data/testi
 * 根据带宽提供不同解析度， 高清标清
 * 低延迟，高性能音频，虚拟合成器
 * 动态创建和编辑视频
-* `<audio>`和`<vedio>`属性
+* <audio> 和 <vedio>属性
 * preload: auto\(下载整个\) metadata\(开头数据\) none
 * controls
 * autoplay loop
@@ -255,12 +255,11 @@ Structured Data Testing Tools // https://search.google.com/structured-data/testi
 * Firefox插件[Firefogg](http://firefogg.org/)
 * [HandBrake](http://handbrake.fr)
 * 后备措施
-* `<audio><source>`
+* <audio><source>
 * 上传youtube
 * Flash, Flowplayer Flash,参考manual-VideoWithFlashFallback.html
 * Flash都没装的，提供下载链接
 * 翻转方案：优先使用Flash,H5为后备
-  ```
   <object id="flowplayer" width="704" height="400"
   data="flowplayer/flowplayer-3.2.16.swf"
   type="application/x-shockwave-flash">
@@ -271,7 +270,7 @@ Structured Data Testing Tools // https://search.google.com/structured-data/testi
   <source src="beach.webm" type="video/webm">
   </video>
   </object>
-  ```
+
 * 项目
 * JS控制播放器
 * currentTime play\(\) pause\(\)
@@ -286,14 +285,13 @@ Structured Data Testing Tools // https://search.google.com/structured-data/testi
 * 视频字幕
 * WebVTT（一致支持） 和 TTML（成熟但复杂）
 * [微软字幕生成器](http://tinyurl.com/capmarker)
-* `<track>`,kind属性：subtitles\(外语片\)和 captains\(静音\)
+* <track>,kind属性：subtitles\(外语片\)和 captains\(静音\)
 * Captionator.js 适时抓取文本
 
 ```
 
 
-### 整容-CSS，不止是装扮
-
+### 整容-CSS3，厉害起来不是装扮是整容
 
 
 ```
@@ -303,12 +301,12 @@ Structured Data Testing Tools // https://search.google.com/structured-data/testi
 * 用能用的 所有浏览器的支持
 * 作为增强留条退路
 * Modernizr
-  ```
+
   <html class="no-js">
   检测支持情况
   .borderradius header {}
   .no-borderradius header {}
-  ```
+
 * 必不可少的最好js实现
 * 开发商前缀，还在试验和反馈的循环中
 * [支持情况can i use](http://caniuse.com)
@@ -321,48 +319,47 @@ Structured Data Testing Tools // https://search.google.com/structured-data/testi
 * border-radius: 25px 50px 25px 85px;
 * 椭圆 border-top-left-radius: 150px 30px;
 * 背景
-  ```
+
   background-image: url('a.png'), url('b.png');
   background-position: left top, right bottom;
   background-repeat: no-repeat, no-repeat;
-  ```
+
 * 阴影
 * box-shadow
-  ```
+
   box-shadow: 5px 5px 10px 5px(伸展范围) gray;
   box-shadow: 0px 0px 20px lime inset;
-  ```
+ 
 * text-shadow
-  ```
+ 
   text-shadow: gray 10px 10px 7px;
-  ```
 * 渐变
 * 线性渐变
-  ```
+  
   liner-gradient(from top, white, blue);
   liner-gradient(to top left, white 0%, blue20%, yellow 100%);
-  ```
+  
 
   两次的background-image，先pic后渐变，遇上聪明的browser可不下载pic
 * 放射性渐变
-  ```
+ 
   radial-gradient(circle at 90% 5%, white, lightblue);
-  ```
+  
 * 循环渐变\(注意头咬尾\)
-  ```
+ 
   repeating-linear-gradient(circle, yellow, green 10%);
   repeating-radial-gradient(to top, red, orange, white, yellow 30px);
-  ```
+ 
 * 渐变生成工具
 * [Ultimate CSS Gradient Generator](http://www.colorzilla.com/gradient-editor)
 * [微软的](http://tinyurl.com/ms-gradient)
 * 过渡
 * 伪类hover + transition
-  ```
+
   transition: background 0.5s, color 0.5s;
   transition: all 0.5s;
   transition: opacity 10s ease-in-out 0.1s(delay);
-  ```
+
 * padding margin font-size不值得过渡，最好变形实现
 * js实现过渡 日夜景图
 * 变换
@@ -374,7 +371,7 @@ Structured Data Testing Tools // https://search.google.com/structured-data/testi
 * Web字体
 * 优化问题\(print\) + 版权问题
 * @font-face \(EOT + TTF/OTF\)
-  ```
+ 
   @font-face {
   font-family: 'xyz';
   src: url('xyz.eot');
@@ -383,15 +380,14 @@ Structured Data Testing Tools // https://search.google.com/structured-data/testi
   url('xyz.ttf') format('truetype'),
   url('xyz.svg') format('svg');
   }
-  ```
+
 * [Font Squirrel](http://www.fontsquirrel.com)
 * 推荐：Callographic,Novelty,Retro
 * Webfont Generator生成
 * [Google Fonts](http://www.google.com/fonts)
 
-```
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Metrophobic" />
-```
+
 
 * 多栏文本
 * column-count: 3;
@@ -416,16 +412,17 @@ Structured Data Testing Tools // https://search.google.com/structured-data/testi
 * 流式排版：em rem body100%;
 * 视口: 缩小显示网页的区域，不仅仅显示角落
 
-```
 <meta content="initial-scale=1.0" name="viewport">
+
 ```
 
 * 媒体查询
 
+```
 * max-width min-width
 * @media, not, 568px
 
-```
+
 @media (max-width: 568px) {
 .NavSidebar {
 float: none;
@@ -438,20 +435,15 @@ float: none;
 width: 100%;
 }
 }
-```
 
-* `<link rel="stylesheet" media="print and (min-width: 25cm)" href="" />`
+<link rel="stylesheet" media="print and (min-width: 25cm)" href="" />
 * Modernizr.mq\(\) 更好
 * max-device-width\(移动设备\), orientation: landscape/portrait
 
 * 媒体查询与视频
 
-```
+
 <source src="" type="" media="(max-device-width:480px)"></source>
-```
-
-
-
 
 ```
 
