@@ -19,7 +19,7 @@
     * [02-规格书/计划书](toolbox/ch3wen-dang/01gui-hua-shu.md)
     * [03-前端安全书](04qian-duan-an-quan.md)
     * [03-测试基础](ch3ce-shi/01ce-shi-ji-chu.md)
-  * [ch4-博客源\(前端为主\)](ch4-ruanyflao-shi-de-bo-ke.md)
+  * [ch4-优质博客源](ch4-ruanyflao-shi-de-bo-ke.md)
     * [01-算法和数学](ch4-ruanyflao-shi-de-bo-ke/01suan-fa-he-shu-xue.md)
     * [02-开发者手册](ch4-ruanyflao-shi-de-bo-ke/02kai-fa-zhe-shou-ce.md)
     * [02-开发者手册2](ch4-ruanyflao-shi-de-bo-ke/02kai-fa-zhe-shou-ce-2.md)
