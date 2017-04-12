@@ -29,7 +29,6 @@
 * [\[2\] HTML5](html-css3-stack.md)
   * [HTML5](ch1-html5.md)
     * [ch1-HTML5-基础](ch1-html5/ch1-html-basic.md)
-      * [01-HTML基础](ch1-html5/01-htmlji-chu.md)
       * [02-HTML5基础](ch1-html5/02-html5ji-chu.md)
       * [02-HTML5基础2](ch1-html5/02-html5ji-chu-2.md)
       * [02-HTML5基础3](ch1-html5/02-html5ji-chu-3.md)
@@ -139,7 +138,7 @@
       * [04-CPP-面向对象](c-stack/ch2-cpp/04-cppmian-xiang-dui-xiang.md)
       * [01-桌面软件开发基础](c-stack/ch3zhuo-mian-ruan-jian-kai-fa/01zhuo-mian-ruan-jian-kai-fa-ji-chu.md)
   * [Java](java-stack/ch1-java.md)
-    * ch1-Java基础
+    * [ch1-Java基础](java-stack/ch2-android/ch1-javaji-chu.md)
       * [01-Java-编程规范](java-stack/ch1-java/01-javabian-cheng-gui-fan.md)
       * [01-Java-基础1](java-stack/ch1-java/01-javaji-chu-1.md)
       * [01-Java-基础2](java-stack/ch1-java/01-javaji-chu-2.md)
