@@ -125,6 +125,7 @@ HTML5规定footer不能放太多无关内容，但你可以无视啊 ORZ
 
 * SEO
 
+```
     // 文本级的语义元素
     <time>表示纽约东五区，下午4点半
     pubdate表示article发布时间
