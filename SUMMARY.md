@@ -45,7 +45,6 @@
       * [02-UI组件-草稿](js-stack/ch4-jquery/02-uizu-jian-2.md)
       * [02-UI组件-基础实现方案](js-stack/ch4-jquery/02-uizu-jian-1.md)
     * [ch2-响应式设计](ch3xiang-ying-shi-she-ji.md)
-      * [01-响应式基础](ch3xiang-ying-shi-she-ji/01xiang-ying-shi-ji-chu.md)
       * [02-网站解构](ch3xiang-ying-shi-she-ji/02wang-zhanjie-6784-landy.md)
 * [\[3\] LAMP](lamp-stack.md)
   * [Linux](ch4-linuxfu-wu-qi.md)
