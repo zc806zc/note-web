@@ -3,6 +3,8 @@
 * [HTML面试题-sandisen](http://www.jianshu.com/p/872f8fb425ce)
 
 ```js
+浏览器会思考，而且经常会取笑我们
+
 // 浏览器内核
 
 // 对语义化的理解
@@ -24,7 +26,7 @@ eg. 设置全屏 不希望缩放
 
 // 移动厂商特有的值
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="format-detection" content="telephone=no">                 
+<meta name="format-detection" content="telephone=no">
 ```
 
 #### HTML5-工具
