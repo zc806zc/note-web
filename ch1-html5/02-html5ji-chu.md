@@ -21,16 +21,19 @@ tabindex = 0  // 给一个链接或表单元素之外的元素提供键盘访问
 <time><object>
 <abbr title>
 // <base>的target _blank
+// <embed> // 规范来说是新的 加入插件
 
 // 3. 幸存者
-// 实用功能强势生存下来 // <iframe>   Youtube窗口, 广告和谷歌搜索框
+// 实用功能强势生存下来 
+<iframe>   Youtube窗口, 广告和谷歌搜索框 // srcdoc sandbox seamless
 // 或者面目全非地活下来 // 即语义的变化 
 <small>  // 附属细则，页脚的法律条款
 <hr>     // 主题转换 
 <s>      // 不准确或不相关的内容
-<b><i> go die --> <strong> 重要的文本内容  <em> 
-<s><strike> --> <del> <ins>
-// <embed> // 加入插件
+// <b>      // eg.摘要的关键字
+<strong> <em> 重要与强调的文本内容   
+<del> <ins> // 原来的<s><strike>
+
 <wbr> 单词太长允许断行 // 其实是一个换行机会 阅读目的
 //  类似,但<nobr>却挂了...
 
