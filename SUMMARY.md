@@ -29,7 +29,7 @@
 * [\[2\] Web](html-css3-stack.md)
   * [HTML5](ch1-html5.md)
     * [ch1-HTML5](ch1-html5/ch1-html-basic.md)
-      * [02-HTML5动骨-基础篇](ch1-html5/02-html5ji-chu.md)
+      * [02-HTML5动骨换血\(基础篇\)](ch1-html5/02-html5ji-chu.md)
       * [02-HTML5三剑客](ch1-html5/02-html5ji-chu-2.md)
       * [02-HTML5-补充](ch1-html5/02-html5ji-chu-3.md)
       * [01-Canvas-基础](ch4-canvasyou-xi-kai-fa/01-canvasji-chu-1.md)

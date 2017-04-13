@@ -1,7 +1,7 @@
 ### **HTML5概述**
 
-* [missing-manual-website](http://www.prosetech.com/html5) \| [missing-manual-code-dl](http://www.oreilly.com/pub/missingmanuals/html5tmm2e) \| [http://www.standardista.com/mobile/](http://www.standardista.com/mobile/)
-
+* [missing-manual-website](http://www.prosetech.com/html5) \| [missing-manual-code-dl](http://www.oreilly.com/pub/missingmanuals/html5tmm2e) 
+* [www.standardista.com/mobile/](http://www.standardista.com/mobile/)
 
 * 元素更迭
 
@@ -116,23 +116,25 @@ HTML5规定footer不能放太多无关内容，但你可以无视啊 ORZ
 * HTML5纲要（为了合理结构）
   * [在线HTML纲要生成器](http://gsnedders.html5.org/outliner/) \| [Chrome扩展 h5o](http://code.google.com/p/h5o)
 
-```
+```js
 // 层级 h1 到 h6
 
-// 区块根：body,blockquote,td,fieldset,figure,details 产生自己的纲要，抓取来的文章放到 article 中就会类推下去，不会有问题
+// 区块根：body,blockquote,td,fieldset,
+figure,details 产生自己的纲要，抓取来的文章放到 article 中就会类推下去，不会有问题
 
 // 遇到aside 意外关闭的情况，自己写 section 或者 用 div 代替 aside
 ```
 
 * SEO
 
-```
+```js
 // 文本级的语义元素
 <time>表示纽约东五区，下午4点半
 pubdate表示article发布时间
 
 <article>
-Published on <time datetime="2014-03-21 16:30-05:00" pubdate>March 21<sup>st<sup>, 2014, at 4:30 p.m.</time>
+Published on 
+<time datetime="2014-03-21 16:30-05:00" pubdate>March 21<sup>st<sup>, 2014, at 4:30 p.m.</time>
 </article>
 
 // <output>占位符
@@ -145,7 +147,8 @@ Published on <time datetime="2014-03-21 16:30-05:00" pubdate>March 21<sup>st<sup
 <label for="pounds">Weight:</label>
 <input name="pounds"> pounds<br><br>
 <input type="button" name="calc" value="Calculate"
-onclick="CalculateBMI(this.form.feet.value, this.form.inches.value, this.form.pounds.value, 'result')" />
+onclick="CalculateBMI(this.form.feet.value, 
+this.form.inches.value, this.form.pounds.value, 'result')" />
 </form>
 <p>Your BMI: <output id="result" form="bmiCalculator" for="feet inches pounds"></output></p>
 
@@ -185,7 +188,7 @@ Structured Data Testing Tools // https://search.google.com/structured-data/testi
 
 * web表单
 
-```
+```js
 // 与服务器通信的方式：
 表单
 XMLHTTPRequest对象
@@ -250,9 +253,9 @@ contenteditable编辑元素
 designMode编辑页面
 ```
 
-* H5音频和视频
+* HTML5音频和视频
 
-```
+```js
 // HTML5不行还用成熟的Flash
 
 版权问题 // HTML5视频可以右键下载
@@ -326,7 +329,7 @@ onTimeUpdate
 <div class="video-js-box"><video class="video-js"></video></div>
 
 // [jPlayer](http://www.jplayer.org/)
- 
+
 // 视频字幕
 WebVTT（一致支持） 和 TTML（成熟但复杂）
 [微软字幕生成器](http://tinyurl.com/capmarker)
@@ -336,11 +339,11 @@ subtitles(外语片)和 captains(静音)
 Captionator.js // 适时抓取文本
 ```
 
-### 装扮-CSS3，厉害起来那叫整容
+### 装扮-CSS3，厉害起来叫整容
 
 * css3
 
-```
+```js
 // 把下一代CSS拆分成一组独立的标准 // 模块 试验性
 [查看兼容现状](http://tinyurl.com/css3-stages)
 
@@ -349,140 +352,132 @@ Captionator.js // 适时抓取文本
 // 为增强留条退路
 // Modernizr // 检测支持情况
 <html class="no-js">
-  
+
 .borderradius header {}
 .no-borderradius header {}
 
-* 必不可少的最好js实现
-* 开发商前缀，还在试验和反馈的循环中
-* [支持情况can i use](http://caniuse.com)
-* 自动添加前缀 [-prefix-free](http://leaverou.github.io/prefixfree)
-* 多变的盒子 特效
-* 透明
-* rgba\(\)覆盖rgb\(\)
-* opacity\(图片半透明，动画淡入淡出\)
-* 圆角
-* border-radius: 25px 50px 25px 85px;
-* 椭圆 border-top-left-radius: 150px 30px;
-* 背景
-
-  background-image: url('a.png'), url('b.png');
-  background-position: left top, right bottom;
-  background-repeat: no-repeat, no-repeat;
-
-* 阴影
-* box-shadow
-
-  box-shadow: 5px 5px 10px 5px(伸展范围) gray;
-  box-shadow: 0px 0px 20px lime inset;
-
-* text-shadow
-
-  text-shadow: gray 10px 10px 7px;
-* 渐变
-* 线性渐变
-
-  liner-gradient(from top, white, blue);
-  liner-gradient(to top left, white 0%, blue20%, yellow 100%);
+// 实在不行js实现
+开发商前缀 // ∵ 还在试验和反馈的循环中
+can i use
+-prefix-free // http://leaverou.github.io/prefixfree 自动添加前缀
 
 
-  两次的background-image，先pic后渐变，遇上聪明的browser可不下载pic
-* 放射性渐变
+// 多变的盒子特效
+透明 // rgba 覆盖rgb
+opacity // 图片半透明，动画淡入淡出
 
-  radial-gradient(circle at 90% 5%, white, lightblue);
+// 圆角 border-radius: 25px 50px 25px 85px;
+// 椭圆 border-top-left-radius: 150px 30px;
 
-* 循环渐变\(注意头咬尾\)
+// 背景
+background-image: url('a.png'), url('b.png');
+background-position: left top, right bottom;
+background-repeat: no-repeat, no-repeat;
 
-  repeating-linear-gradient(circle, yellow, green 10%);
-  repeating-radial-gradient(to top, red, orange, white, yellow 30px);
+// 阴影
+box-shadow: 5px 5px 10px 5px(伸展范围) gray;
+box-shadow: 0px 0px 20px lime inset;
+text-shadow: gray 10px 10px 7px;
 
-* 渐变生成工具
-* [Ultimate CSS Gradient Generator](http://www.colorzilla.com/gradient-editor)
-* [微软的](http://tinyurl.com/ms-gradient)
-* 过渡
-* 伪类hover + transition
+// 渐变
+// 线性渐变
+liner-gradient(from top, white, blue);
+liner-gradient(to top left, white 0%, blue20%, yellow 100%);
+两次的background-image，先pic后渐变，遇上聪明的browser可不下载pic
 
-  transition: background 0.5s, color 0.5s;
-  transition: all 0.5s;
-  transition: opacity 10s ease-in-out 0.1s(delay);
+// 放射性渐变
+radial-gradient(circle at 90% 5%, white, lightblue);
 
-* padding margin font-size不值得过渡，最好变形实现
-* js实现过渡 日夜景图
-* 变换
-* scale scaleX scaleY
-* skew\(10deg\)
-* rotate\(10deg\)
-* tansform-origin: 0% 0%; 参照点
-* [3D变换](http://tinyurl.com/3d-transitions)
-* Web字体
-* 优化问题\(print\) + 版权问题
-* @font-face \(EOT + TTF/OTF\)
+// 循环渐变 // 注意咬尾
+repeating-linear-gradient(circle, yellow, green 10%);
+repeating-radial-gradient(to top, red, orange, white, yellow 30px);
 
-  @font-face {
+// 渐变生成工具
+[Ultimate CSS Gradient Generator](http://www.colorzilla.com/gradient-editor)
+http://tinyurl.com/ms-gradient
+
+// 过渡
+伪类hover + transition
+
+transition: background 0.5s, color 0.5s;
+transition: all 0.5s;
+transition: opacity 10s ease-in-out 0.1s(delay);
+
+// padding margin font-size不值得过渡，最好变形实现
+// eg. js实现过渡 日夜景图
+
+// 变换
+scale scaleX scaleY
+skew(10deg)
+rotate(10deg)
+tansform-origin: 0% 0%; // 参照点
+[3D变换](http://tinyurl.com/3d-transitions)
+
+// Web字体
+优化问题(print) + 版权问题
+@font-face (EOT + TTF/OTF)
+
+@font-face {
   font-family: 'xyz';
   src: url('xyz.eot');
   src: local('xyz'),
   url('xyz.woff') format('woff'),
   url('xyz.ttf') format('truetype'),
   url('xyz.svg') format('svg');
-  }
+}
 
-* [Font Squirrel](http://www.fontsquirrel.com)
-* 推荐：Callographic,Novelty,Retro
-* Webfont Generator生成
-* [Google Fonts](http://www.google.com/fonts)
+[Font Squirrel](http://www.fontsquirrel.com)
+Callographic,Novelty,Retro
+Webfont Generator
+[Google Fonts](http://www.google.com/fonts)
 
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Metrophobic" />
 
 
-* 多栏文本
-* column-count: 3;
-* column-width: 10em;
-* column-rule: 1px solid red;
-* column-span: all;
+// 多栏文本
+column-count: 3;
+column-width: 10em;
+column-rule: 1px solid red;
+column-span: all;
 ```
 
 * 响应式设计
 
-```
-* 流式布局 等比例缩放 + 百分比
-* 内外边距问题
-* box-sizing: border-box;
-* width: calc\(67% - 5px\);
-* 流式图片：max-width: 100px;
-* [responsive-img](http://tinyurl.com/responsive-img)
-* 流式排版：em rem body100%;
-* 视口: 缩小显示网页的区域，不仅仅显示角落
+```js
+// 流式布局 
+等比例缩放 + 百分比
 
+// 内外边距问题
+box-sizing: border-box;
+// width: calc(67% - 5px);
+
+流式图片 // max-width: 100px;
+responsive-img // http://tinyurl.com/responsive-img)
+流式排版 // em rem body100%;
+
+// 视口 // 缩小显示网页的区域，不仅仅显示角落(某一区域)?
 <meta content="initial-scale=1.0" name="viewport">
 
-
 // 媒体查询
-* max-width min-width
-* @media, not, 568px
+max-width min-width
 
-
+@media, not, 568px
 @media (max-width: 568px) {
-.NavSidebar {
-float: none;
-width: 100%;
-min-height: 0em;
-}
+    .NavSidebar {
+        float: none;
+        width: 100%;
+        min-height: 0em;
+    }
 
-.Content {
-float: none;
-width: 100%;
-}
 }
 
 <link rel="stylesheet" media="print and (min-width: 25cm)" href="" />
-* Modernizr.mq\(\) 更好
-* max-device-width\(移动设备\), orientation: landscape/portrait
+<source src="" type="" media="(max-device-width:480px)"></source> // 媒体查询与视频
 
-* 媒体查询与视频
+// Modernizr.mq //  更好?
 
-
-<source src="" type="" media="(max-device-width:480px)"></source
+// max-device-width移动设备
+orientation: landscape/portrait
 ```
 
 
