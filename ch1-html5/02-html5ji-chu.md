@@ -33,6 +33,9 @@ https://www.w3.org/TR/html5-diff/ // 查看变动
 <wbr> 单词太长允许断行, 但是 <nobr> 挂了...
 
 // HTML5没有内联元素 块元素...的概念了 // 因为这是基于外观的定义
+// 语义上 <a>里可以放置任何东西了
+
+// 分为 
 区段元素 // 虽然宽泛了，但即使语义限制也不能位于短语元素中
 heading元素
 短语元素
@@ -47,19 +50,20 @@ contextmenu
 spellcheck
 draggable
 dropzone
-```
 
-* 新的变动
 
-```js
-语义上 <a>里可以放置任何东西了
-
+// 其他
 <ol>加了reversed属性
-
 input和textarea的autofocus required placeholder
 // script也可用于用户自定义的数据块 例type="application/xml"
-
 可以给不同<div>指定不同的lang，方便屏幕阅读器  // <html lang="en">
+
+// 可访问性的失败者
+tabindex = -1 // 不起作用 可编程聚焦
+tabindex = 0  // 给一个链接或表单元素之外的元素提供键盘访问的同时又不改变的页面顺序
+// accesskey 
+
+
 ```
 
 * 浏览器与设备兼容
@@ -172,8 +176,7 @@ this.form.inches.value, this.form.pounds.value, 'result')" />
 // <mark>
 
 // 其他语义标准
-ARIA: 屏幕阅读器，通过属性 例`<header role="banner">`
-
+ARIA: 屏幕阅读器，通过属性 例 <header role="banner">
 RDFa: 属性，笨重
 
 微格式 Microformats, class="vCard"
