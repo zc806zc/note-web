@@ -83,7 +83,7 @@ ff插件：HTML Validator // 基于HTML Tidy,可以美化代码
 
 ![](/assets/h5-grammar755.png)
 
-\(pic from [http://www.cnblogs.com/polk6/p/5320428.html\](http://www.cnblogs.com/polk6/p/5320428.html\)\)
+\(pic from [http://www.cnblogs.com/polk6/p/5320428.html\](http://www.cnblogs.com/polk6/p/5320428.html%29\) \)
 
 ---
 
