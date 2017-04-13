@@ -9,7 +9,7 @@
 https://www.w3.org/TR/html5-diff/ // 查看变动
 
 // 1. 废弃
-<nobr>  使用css的white-space: nowrap代替
+<nobr>  // 使用css的white-space: nowrap代替
 
 // 可访问性的失败尝试
 tabindex = -1 // 不起作用 可编程聚焦
@@ -17,36 +17,33 @@ tabindex = 0  // 给一个链接或表单元素之外的元素提供键盘访问
 // accesskey
 
 // 2. 新生
-<nav><footer><article><section><aside> 
-<time><object>
+<nav><footer><time><object>...
 <abbr title>
 // <base>的target _blank
 // <embed> // 规范来说是新的 加入插件
 
 // 3. 幸存者
-// 实用功能强势生存下来 
+// 强势生存下来 
 <iframe>   Youtube窗口, 广告和谷歌搜索框 // srcdoc sandbox seamless
-// 或者面目全非地活下来 // 即语义的变化 
+// 或者语义发生变化 
 <small>  // 附属细则，页脚的法律条款
 <hr>     // 主题转换 
 <s>      // 不准确或不相关的内容
 // <b>      // eg.摘要的关键字
-<strong> <em> 重要与强调的文本内容   
+<strong> <em> // 重要与强调的文本内容   
 <del> <ins> // 原来的<s><strike>
 
-<wbr> 单词太长允许断行 // 其实是一个换行机会 阅读目的
-//  类似,但<nobr>却挂了...
+<wbr> // 换行机会 阅读目的 但<nobr>却挂了...
 
-// HTML5没有内联元素 块元素...的概念了 
+// HTML5 没有内联元素块元素的概念了... 
 // 因为那是基于外观的定义
+
 eg. 语义上 <a>里可以放置任何东西了
 // 且<a href="tel:16505551212">xxx</a>
 
 // 现分为 
-短语元素
-区段元素 // 但即使语义限制也不能位于短语元素中
-heading元素
-metadata
+短语元素 区段元素 // 但即使语义限制也不能位于短语元素中
+heading元素 metadata
 flow流元素
 嵌入式embedd元素
 交互式interactive元素
@@ -65,8 +62,8 @@ draggable dropzone
 ```
 
 * 浏览器与设备兼容
-  * 平稳退化    
-  * 积极拥抱HTML5 ,
+  * 平稳退化, 积极拥抱HTML5 ,
+
   * Modernizer \| html5shim/html5.js
   * [浏览器市场占有率](http://gs.statcounter.com) \| [html标记争论的论坛](http://html5doctor.com) \| [Can I use](http://caniuse.com) 
 
@@ -97,38 +94,36 @@ pic from [http://www.cnblogs.com/polk6/p/5320428.html\](http://www.cnblogs.com/p
 * 语义化
 
 ```js
-// <header>的用处
-作为网页页眉
-作为内容的标题(一般是附带概要日期等信息的那种)
-
-在页眉中添加看不见的标题<h1>  display:none
+// 1.<header>
+作网页页眉
+作为内容的标题 // 一般是附带概要日期等信息的那种
+// 在页眉中添加看不见的标题<h1> // display:none
 // 屏幕阅读器，最好每个页面只有一个<h1>
 
-// <figure><figcaption>添加插画,
-不要让alt为空字符串，可以删除<img>的alt
+// 2.<main> 一个页面只能有一个
+// 3.<aside> 添加附注
 
-<figure class="FloatLeftFigure">
-<img src="human_skull.jpg" alt="Human skull" />
-<figcaption>Will you be the last person standing if one of these apocalyptic
-scenarios plays out?</figcaption>
+
+// 4.<figure><figcaption>
+// 添加插画 // 插画地意思就是 即使缺失内容也是完整地，不同于一般的img
+
+<figure class="FloatLeftFigure" alt="Human skull"> // figure的alt不要为空(/字符串)
+    <img src="human_skull.jpg" /> // <img>的alt可以删除?
+    <figcaption>Will you be the last person standing if one of these apocalyptic
+    scenarios plays out?</figcaption>
 </figure>
 
-// <main> 一个页面只能有一个
-// <aside> 添加附注
-
-// <section> 略带语义的块  
-// 比<div>稍具体些，适合任何以标题开头的区块
-// 类似bootstrap的样式嵌套还是用div 因为并没有语义
-About US
+// 5. <section> 略带语义的块 适合任何以标题开头的区块
+// 类似bootstrap的样式嵌套还是用div // 因为并没有语义
+eg. About US
 购物记录和产品清单
-分组内容, 新闻站点中的一组文章，长文档的一部分
+分组内容, // 新闻站点中的一组文章 长文档的一部分
 
-// <details><summary></summary></details>折叠框, 还不成熟
+// 6. 胖<footer>
+HTML5规定footer不能放太多无关内容
+但你可以无视啊 ORZ...
 
-// 胖footer
-HTML5规定footer不能放太多无关内容，但你可以无视啊 ORZ
 或者将多余部分提取出来如下
-
 <div id="FatFooter">
     <aside>
         <img onclick="CloseBox()" src="images/manual/close_icon.png" class="CloseButton">
@@ -136,18 +131,25 @@ HTML5规定footer不能放太多无关内容，但你可以无视啊 ORZ
     <footer>
     </footer>
 </div>
+
+// 其他
+// <details><summary></summary></details>折叠框, 还不成熟
 ```
 
-* HTML5纲要（为了合理结构）
+* HTML5纲要
   * [在线HTML纲要生成器](http://gsnedders.html5.org/outliner/) \| [Chrome扩展 h5o](http://code.google.com/p/h5o)
 
 ```js
-// 层级 h1 到 h6
+为了合理结构
 
-// 区块根：body,blockquote,td,fieldset,
-figure,details 产生自己的纲要，抓取来的文章放到 article 中就会类推下去，不会有问题
+// h1~h6 层级 
+// 区块根 body,blockquote,td,fieldset
+figure,details 会产生自己的纲要
+抓取来的文章放到 article 中就会类推下去
+不会有问题
 
-// 遇到aside 意外关闭的情况，自己写 section 或者 用 div 代替 aside
+// 遇到aside 意外关闭的情况
+// 自己写 section / div 代替 aside
 ```
 
 * SEO
@@ -159,15 +161,13 @@ figure,details 产生自己的纲要，抓取来的文章放到 article 中就�
 与微数据等有关
 
 // 文本级的语义元素
-<time>表示纽约东五区，下午4点半
-pubdate表示article发布时间
-
+// <mark>
 <article>
-Published on 
-<time datetime="2014-03-21 16:30-05:00" pubdate>March 21<sup>st<sup>, 2014, at 4:30 p.m.</time>
+    Published on 
+    <time datetime="2014-03-21 16:30-05:00" pubdate> // pubdate表示article发布时间
+    March 21<sup>st<sup>, 2014, at 4:30 p.m.
+    </time> // <time>表示纽约东五区，下午4点半
 </article>
-
-// <output>占位符
 
 <form action="#" id="bmiCalculator">
 <label for="feet inches">Height:</label>
@@ -182,12 +182,10 @@ this.form.inches.value, this.form.pounds.value, 'result')" />
 </form>
 <p>Your BMI: <output id="result" form="bmiCalculator" for="feet inches pounds"></output></p>
 
-// <mark>
 
 // 其他语义标准
-ARIA: 屏幕阅读器，通过属性 例 <header role="banner">
-RDFa: 属性，笨重
-
+ARIA 屏幕阅读器，通过属性 // eg. <header role="banner">
+RDFa 属性，笨重
 微格式 Microformats, class="vCard"
 微数据
 
@@ -201,17 +199,17 @@ RDFa: 属性，笨重
 </div>
 
 
-// 元数据有关工具：
+// 元数据有关工具
 Semantic inspector扩展 // 提取页面元数据
-
-Rich Snippets工具和
+Rich Snippets工具
 Structured Data Testing Tools // https://search.google.com/structured-data/testing-tool
 
-// 如何防止谷歌对语义化数据视而不见
-语义数据不是主要内容
-谷歌不使用css隐藏的语义数据
-网站只包含很少的语义数据
+// 谷歌对什么数据视而不见?
+语义数据不是主要内容 网站只包含很少的语义数据
+// 谷歌不使用css隐藏的语义数据
 ```
+
+---
 
 ### 换血-web组件进化
 
@@ -368,6 +366,8 @@ subtitles(外语片)和 captains(静音)
 Captionator.js // 适时抓取文本
 ```
 
+---
+
 ### 装扮-CSS3，厉害起来叫整容
 
 * css3
@@ -516,6 +516,13 @@ max-width min-width
 
 // max-device-width移动设备
 orientation: landscape/portrait
+```
+
+#### 参考
+
+```js
+HTML5秘籍
+HTML5移动开发 Estelle Weyl
 ```
 
 
