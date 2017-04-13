@@ -1,6 +1,7 @@
 ### **HTML5概述**
 
-* [missing-manual-website](http://www.prosetech.com/html5) \| [missing-manual-code-dl](http://www.oreilly.com/pub/missingmanuals/html5tmm2e) \| http://www.standardista.com/mobile/
+* [missing-manual-website](http://www.prosetech.com/html5) \| [missing-manual-code-dl](http://www.oreilly.com/pub/missingmanuals/html5tmm2e) \| [http://www.standardista.com/mobile/](http://www.standardista.com/mobile/)
+
 
 * 元素更迭
 
@@ -125,179 +126,232 @@ HTML5规定footer不能放太多无关内容，但你可以无视啊 ORZ
 
 * SEO
 
-    // 文本级的语义元素
-    <time>表示纽约东五区，下午4点半
-    pubdate表示article发布时间
+```
+// 文本级的语义元素
+<time>表示纽约东五区，下午4点半
+pubdate表示article发布时间
 
-    <article>
-    Published on <time datetime="2014-03-21 16:30-05:00" pubdate>March 21<sup>st<sup>, 2014, at 4:30 p.m.</time>
-    </article>
+<article>
+Published on <time datetime="2014-03-21 16:30-05:00" pubdate>March 21<sup>st<sup>, 2014, at 4:30 p.m.</time>
+</article>
 
-    // <output>占位符
+// <output>占位符
 
-    <form action="#" id="bmiCalculator">
-    <label for="feet inches">Height:</label>
-    <input name="feet"> feet<br>
-    <label></label>
-    <input name="inches"> inches<br>
-    <label for="pounds">Weight:</label>
-    <input name="pounds"> pounds<br><br>
-    <input type="button" name="calc" value="Calculate"
-    onclick="CalculateBMI(this.form.feet.value, this.form.inches.value, this.form.pounds.value, 'result')" />
-    </form>
-    <p>Your BMI: <output id="result" form="bmiCalculator" for="feet inches pounds"></output></p>
+<form action="#" id="bmiCalculator">
+<label for="feet inches">Height:</label>
+<input name="feet"> feet<br>
+<label></label>
+<input name="inches"> inches<br>
+<label for="pounds">Weight:</label>
+<input name="pounds"> pounds<br><br>
+<input type="button" name="calc" value="Calculate"
+onclick="CalculateBMI(this.form.feet.value, this.form.inches.value, this.form.pounds.value, 'result')" />
+</form>
+<p>Your BMI: <output id="result" form="bmiCalculator" for="feet inches pounds"></output></p>
 
-    // <mark>
+// <mark>
 
-    // 其他语义标准
-    ARIA: 屏幕阅读器，通过属性 例`<header role="banner">`
+// 其他语义标准
+ARIA: 屏幕阅读器，通过属性 例`<header role="banner">`
 
-    RDFa: 属性，笨重
+RDFa: 属性，笨重
 
-    微格式 Microformats, class="vCard"
-    微数据
+微格式 Microformats, class="vCard"
+微数据
 
-    <div itemscope itemtype="http://data-vocabulary.org/Review">
-    <h1 itemprop="itemreviewed">Jan's Pizza House</h1>
-    <p>Reviewed by <span itemprop="reviewer">Jared Elberadi</span> on
-    <time itemprop="dtreviewed" datetime="2011-01-26">January 26</time>.<p>
-    <p itemprop="summary">Pretty bad, and then the Health Department showed up.</p>
-    <p itemprop="description">...</p>
-    <p>Rating: <span itemprop="rating">0.5</span></p>
-    </div>
+<div itemscope itemtype="http://data-vocabulary.org/Review">
+<h1 itemprop="itemreviewed">Jan's Pizza House</h1>
+<p>Reviewed by <span itemprop="reviewer">Jared Elberadi</span> on
+<time itemprop="dtreviewed" datetime="2011-01-26">January 26</time>.<p>
+<p itemprop="summary">Pretty bad, and then the Health Department showed up.</p>
+<p itemprop="description">...</p>
+<p>Rating: <span itemprop="rating">0.5</span></p>
+</div>
 
 
-    // 元数据有关工具：
-    Semantic inspector扩展 // 提取页面元数据
+// 元数据有关工具：
+Semantic inspector扩展 // 提取页面元数据
 
-    Rich Snippets工具和
-    Structured Data Testing Tools // https://search.google.com/structured-data/testing-tool
+Rich Snippets工具和
+Structured Data Testing Tools // https://search.google.com/structured-data/testing-tool
 
-    // 如何防止谷歌对语义化数据视而不见
-    语义数据不是主要内容
-    谷歌不使用css隐藏的语义数据
-    网站只包含很少的语义数据
+// 如何防止谷歌对语义化数据视而不见
+语义数据不是主要内容
+谷歌不使用css隐藏的语义数据
+网站只包含很少的语义数据
+```
 
 ### 换血-web组件进化
 
 * web表单
 
 ```
-* 与服务器通信的方式：
-* 表单
-* XMLHTTPRequest对象
-* 表单验证（H5不能指定验证的时机，仅submit的时候）
-* 限制：不能修改浏览器呈现控件的方式 \(解决：jQuery UI之类的JS工具包\)
-* input的title，autofocus属性
-* 验证方式
-* 客户端验证：减少填表人的麻烦
-* 服务端验证：真正确保数据正确性
-* 关闭验证，测试的时候：可以再form或input添加属性novalidate
-* 验证样式\(例 input:required:invalid 伪类\)
-* required和optional
-* valid和invalid
-* in-range和out-of-range
-* 使用[正则表达式](http://regexlib.com/) pattern="\[A-Z\]{3}-\[0-9\]{3}"
-* 自定义验证 input.setCustomValidity\(""\)
-* form里添加onsubmit="return validateForm\(\)"，在提交表单时自己检测
-* [HTML5Forms库](https://github.com/zoltan-dulac/html5Forms.js)
-* 几个特殊的输入属性
-* multiple 选择多个列表项
-* spellcheck
-* autocomplete
-* autocorrect和autocapitalize 移动设备
-* 新的输入控件
-* email 注意控制也可以通过验证（required）
-* url 验证粗略
-* search 无障碍阅读 引导
-* tel 至少不能接受字母
-* number\(min max step value\)
-* range
-* 日期和时间 也支持min和max="2014-12-31"
-* color
-* 更新的元素
-* datalist 下拉建议列表 <input id="" list="animal">
-* progress和meter
-* <menu><command></command><menu>创建工具条和菜单
-* 网页中的HTML编辑器（放在可编辑区内的按钮不能触发事件）
-* contenteditable编辑元素
-* designMode编辑页面
+// 与服务器通信的方式：
+表单
+XMLHTTPRequest对象
+
+// 表单验证
+HTML5不能指定验证的时机 // 仅submit的时候
+// 不能修改浏览器呈现控件的方式 
+// 可以用jQuery UI之类的JS工具包
+
+// input的title，autofocus
+
+// 验证方式
+客户端验证：减少填表人的麻烦
+服务端验证：真正确保数据正确性
+
+// 关闭验证
+测试的时候：可以再form或input添加属性novalidate
+
+// 验证样式 input:required:invalid 伪类
+required和optional
+valid和invalid
+in-range和out-of-range
+
+// 使用正则表达式
+http://regexlib.com
+
+pattern="\[A-Z\]{3}-\[0-9\]{3}"
+
+// 自定义验证 input.setCustomValidity\(""\)
+// form里添加onsubmit="return validateForm\(\)"在提交表单时自己检测
+
+// HTML5Forms库
+https://github.com/zoltan-dulac/html5Forms.js
+
+// 几个特殊的输入属性
+multiple 选择多个列表项
+spellcheck
+// autocomplete
+// autocorrect和autocapitalize 移动设备
+
+// 新的输入控件
+email range color
+url // 验证很粗略
+// search // 无障碍阅读 引导
+tel 至少不能接受字母
+number// min max step value
+
+// 日期和时间 也支持min和max="2014-12-31"
+
+
+// 更新的元素
+datalist 下拉建议列表 
+<input id="" list="animal">
+
+// progress和meter
+
+// <menu><command></command><menu>创建工具条和菜单
+
+// 网页中的HTML编辑器
+// 放在可编辑区内的按钮不能触发事件
+contenteditable编辑元素
+designMode编辑页面
 ```
 
 * H5音频和视频
 
-    * 不行还用Flash
-    * 版权问题，H5视频可右键下载
-    * 录制视频和音频， 在线聊天的视频音频“流”
-    * 根据带宽提供不同解析度， 高清标清
-    * 低延迟，高性能音频，虚拟合成器
-    * 动态创建和编辑视频
-    * <audio> 和 <vedio>属性
-    * preload: auto\(下载整个\) metadata\(开头数据\) none
-    * controls
-    * autoplay loop
-    * muted poster height weight
-    * 不同媒体相同的mediagroup，不同角度拍摄的体育赛事
-    * 格式
-    * 最流行：MP3音频 H.264视频
-    * 编解码器 和 容器格式
-    * 容器：视频 + 音频 + 描述性信息 + 静态图片 + 字幕...
-    * 格式转换
-    * 音频[Audacity](http://audacity.sourceforge.net/)
-    * GoldWave
-    * [Miro Video Converter](http://www.mirovideoconverter.com)
-    * Firefox插件[Firefogg](http://firefogg.org/)
-    * [HandBrake](http://handbrake.fr)
-    * 后备措施
-    * <audio><source>
-    * 上传youtube
-    * Flash, Flowplayer Flash,参考manual-VideoWithFlashFallback.html
-    * Flash都没装的，提供下载链接
-    * 翻转方案：优先使用Flash,H5为后备
-    <object id="flowplayer" width="704" height="400"
-    data="flowplayer/flowplayer-3.2.16.swf"
-    type="application/x-shockwave-flash">
-    <param name="movie" value="flowplayer/flowplayer-3.2.16.swf" />
-    <param name="flashvars" value='config={"clip":"beach.mp4"}' />
-    <video controls width="704" height="400">
-    <source src="beach.mp4" type="video/mp4">
-    <source src="beach.webm" type="video/webm">
-    </video>
-    </object>
+```
+// HTML5不行还用成熟的Flash
 
-    * 项目
-    * JS控制播放器
-    * currentTime play\(\) pause\(\)
-    * 加载问题：使用一组audio
-    * canPlayType\("audio/ogg"\)
-    * 自定义视频播放器
-    * 播放进度条，两个嵌套的div
-    * onTimeUpdate
-    * JS媒体播放器\(支持换肤\)
-    * [VideoJS](http://videojs.com/) `<div class="video-js-box"><video class="video-js"></video></div>`
-    * [jPlayer](http://www.jplayer.org/)
-    * 视频字幕
-    * WebVTT（一致支持） 和 TTML（成熟但复杂）
-    * [微软字幕生成器](http://tinyurl.com/capmarker)
-    * <track>,kind属性：subtitles\(外语片\)和 captains\(静音\)
-    * Captionator.js 适时抓取文本
+版权问题 // HTML5视频可以右键下载
+录制视频和音频
+在线聊天的视频音频“流”
+
+高清标清 // 根据带宽提供不同解析度
+低延迟，高性能音频，虚拟合成器
+动态创建和编辑视频
+
+// <audio> 和 <vedio>属性
+preload: auto | metadata | none
+controls autoplay(loop)
+muted poster height weight
+
+// 不同媒体相同的mediagroup
+不同角度拍摄的体育赛事
+
+// 格式
+最流行：MP3音频 H.264视频
+
+// 编解码器 和 容器格式
+// 容器
+视频 + 音频 + 描述性信息 + 静态图片 + 字幕...
+
+// 格式转换
+音频
+// [Audacity](http://audacity.sourceforge.net/)
+// GoldWave 
+// [Miro Video Converter](http://www.mirovideoconverter.com)
+
+// Firefox插件[Firefogg](http://firefogg.org/)
+// [HandBrake](http://handbrake.fr)
+
+// 后备措施
+<audio><source>
+1. 上传youtube
+
+2. Flash, Flowplayer Flash
+// manual-VideoWithFlashFallback.html
+
+3. 若Flash都没装的，提供下载链接
+
+// 翻转方案
+优先使用Flash,H5为后备
+
+<object id="flowplayer" width="704" height="400"
+data="flowplayer/flowplayer-3.2.16.swf"
+type="application/x-shockwave-flash">
+<param name="movie" value="flowplayer/flowplayer-3.2.16.swf" />
+<param name="flashvars" value='config={"clip":"beach.mp4"}' />
+<video controls width="704" height="400">
+<source src="beach.mp4" type="video/mp4">
+<source src="beach.webm" type="video/webm">
+</video>
+</object>
+
+// 项目
+JS控制播放器
+currentTime play|pause
+
+// 加载问题 使用一组audio
+canPlayType("audio/ogg")
+
+// 自定义视频播放器
+播放进度条// 两个嵌套的div
+onTimeUpdate
+
+// JS媒体播放器(支持换肤)
+[VideoJS](http://videojs.com/) 
+<div class="video-js-box"><video class="video-js"></video></div>
+
+// [jPlayer](http://www.jplayer.org/)
+ 
+// 视频字幕
+WebVTT（一致支持） 和 TTML（成熟但复杂）
+[微软字幕生成器](http://tinyurl.com/capmarker)
+<track>,kind属性
+subtitles(外语片)和 captains(静音)
+
+Captionator.js // 适时抓取文本
+```
 
 ### 装扮-CSS3，厉害起来那叫整容
 
 * css3
 
 ```
-* 把下一代CSS拆分成一组独立的标准，模块，试验性
-* [查看兼容现状](http://tinyurl.com/css3-stages)
-* CSS3使用原则
-* 用能用的 所有浏览器的支持
-* 作为增强留条退路
-* Modernizr
+// 把下一代CSS拆分成一组独立的标准 // 模块 试验性
+[查看兼容现状](http://tinyurl.com/css3-stages)
 
-  <html class="no-js">
-  检测支持情况
-  .borderradius header {}
-  .no-borderradius header {}
+// CSS3使用原则
+用浏览器支持的交集
+// 为增强留条退路
+// Modernizr // 检测支持情况
+<html class="no-js">
+  
+.borderradius header {}
+.no-borderradius header {}
 
 * 必不可少的最好js实现
 * 开发商前缀，还在试验和反馈的循环中
