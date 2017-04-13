@@ -1,4 +1,4 @@
-### **HTML5概述**
+#### **HTML5概述**
 
 * [missing-manual-website](http://www.prosetech.com/html5) \| [missing-manual-code-dl](http://www.oreilly.com/pub/missingmanuals/html5tmm2e) 
 * [www.standardista.com/mobile/](http://www.standardista.com/mobile/)
@@ -6,6 +6,8 @@
 * 元素更迭
 
 ```js
+https://www.w3.org/TR/html5-diff/ // 查看变动
+
 // 1. 废弃元素
 <nobr>  使用css的white-space: nowrap代替
 
@@ -15,7 +17,10 @@
 <abbr>
 <base>的target  _blank
 
-data-*  // jq已经封装
+// data-*  
+// jq已经封装
+不至于与未来的属性相冲突
+与微数据等有关
 
 // 3. 幸存者: 因其实用功能或者改弦易辙 
 <iframe>   Youtube窗口, 广告和谷歌搜索框
@@ -26,6 +31,22 @@ data-*  // jq已经封装
 <s> <strike> --> <del> <ins>
 <embed>加入插件
 <wbr> 单词太长允许断行, 但是 <nobr> 挂了...
+
+// HTML5没有内联元素 块元素...的概念了 // 因为这是基于外观的定义
+区段元素 // 虽然宽泛了，但即使语义限制也不能位于短语元素中
+heading元素
+短语元素
+嵌入式embedd元素
+flow流元素
+metadata
+交互式interactive元素
+
+// 交互式属性
+contenteditable
+contextmenu
+spellcheck
+draggable
+dropzone
 ```
 
 * 新的变动
@@ -40,10 +61,6 @@ input和textarea的autofocus required placeholder
 
 可以给不同<div>指定不同的lang，方便屏幕阅读器  // <html lang="en">
 ```
-
----
-
-#### Are you ready?
 
 * 浏览器与设备兼容
   * 平稳退化    
@@ -61,11 +78,11 @@ saved from url=(0014)about:internet
 
 // 腻子脚本 让IE支持HTML5 
 通过 createElement('header')的方式
-```
 
-* HTML校验
-  * w3c的W3Validator
-  * ff插件：HTML Validator // 基于HTML Tidy,可以美化代码
+// HTML校验
+w3c的W3Validator
+ff插件：HTML Validator // 基于HTML Tidy,可以美化代码
+```
 
 ---
 
@@ -344,6 +361,10 @@ Captionator.js // 适时抓取文本
 * css3
 
 ```js
+// class
+class中的顺序不重要
+但表的顺序重要
+
 // 把下一代CSS拆分成一组独立的标准 // 模块 试验性
 [查看兼容现状](http://tinyurl.com/css3-stages)
 
