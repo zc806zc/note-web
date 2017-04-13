@@ -31,11 +31,13 @@ tabindex = 0  // 给一个链接或表单元素之外的元素提供键盘访问
 <b><i> go die --> <strong> 重要的文本内容  <em> 
 <s><strike> --> <del> <ins>
 // <embed> // 加入插件
-<wbr> 单词太长允许断行 //  类似,但<nobr>却挂了...
+<wbr> 单词太长允许断行 // 其实是一个换行机会 阅读目的
+//  类似,但<nobr>却挂了...
 
 // HTML5没有内联元素 块元素...的概念了 
 // 因为那是基于外观的定义
 eg. 语义上 <a>里可以放置任何东西了
+// 且<a href="tel:16505551212">xxx</a>
 
 // 现分为 
 短语元素
@@ -83,7 +85,7 @@ ff插件：HTML Validator // 基于HTML Tidy,可以美化代码
 
 ![](/assets/h5-grammar755.png)
 
-\(pic from [http://www.cnblogs.com/polk6/p/5320428.html\](http://www.cnblogs.com/polk6/p/5320428.html%29\) \)
+pic from [http://www.cnblogs.com/polk6/p/5320428.html\](http://www.cnblogs.com/polk6/p/5320428.html%29%29 \)
 
 ---
 
