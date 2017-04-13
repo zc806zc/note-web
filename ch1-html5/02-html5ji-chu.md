@@ -83,7 +83,7 @@ ff插件：HTML Validator // 基于HTML Tidy,可以美化代码
 
 ![](/assets/h5-grammar755.png)
 
-\(pic from http://www.cnblogs.com/polk6/p/5320428.html\)
+\(pic from [http://www.cnblogs.com/polk6/p/5320428.html\](http://www.cnblogs.com/polk6/p/5320428.html\)\)
 
 ---
 
@@ -111,7 +111,9 @@ scenarios plays out?</figcaption>
 // <main> 一个页面只能有一个
 // <aside> 添加附注
 
-// <section>  比  <div>稍具体些，适合任何以标题开头的区块
+// <section> 略带语义的块  
+// 比<div>稍具体些，适合任何以标题开头的区块
+// 类似bootstrap的样式嵌套还是用div 因为并没有语义
 About US
 购物记录和产品清单
 分组内容, 新闻站点中的一组文章，长文档的一部分
