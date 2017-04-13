@@ -13,6 +13,18 @@
 搜索引擎的爬虫也依赖于HTML标记来确定上下文和各个关键字的权重，有利于SEO
 
 // cookies，sessionStorage 和 localStorage 的区别
+
+// head
+Apache .htaccess AddDefaultCharset UTF-8
+http://www.standardista.com/html5/http-equiv-the-meta-attribute-explained
+
+// 移动meta标记
+eg. 设置全屏 不希望缩放
+// 但是网站应该允许用户无限制缩放
+
+// 移动厂商特有的值
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">                 
 ```
 
 #### HTML5-工具
