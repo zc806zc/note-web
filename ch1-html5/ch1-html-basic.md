@@ -1,4 +1,4 @@
-#### **HTML基础**
+#### **HTML-快速回顾**
 
 * [HTML面试题-sandisen](http://www.jianshu.com/p/872f8fb425ce)
 
@@ -15,7 +15,7 @@
 // cookies，sessionStorage 和 localStorage 的区别
 ```
 
-#### HTML5
+#### HTML5-工具
 
 ```js
 // 开发工具
@@ -26,8 +26,44 @@ Gecko Presto Blink Bada...
 Bada // 三星自行开发的移动操作系统，现被整合进Tizen
 
 //移动视口
-  
+SceenQueri.es网站
+touch-event
+thumbs.js // 作为触控事件的腻子脚本
 
+// 远程调试
+web inspector // http://www.cnblogs.com/jingwei/p/4739618.html
+
+weinre 
+// npm install -g weinre
+// web inspector remote PhoneGap的一部分
+// 利用 Node.js + Socket
+
+Adobe Edge  Inspector和Ghostlab ($)
+
+Aardwolf // 调试JS
+// 同步XHR实现断点
+
+// BlackBerry10 调试器
+
+// 仿真器与模拟器
+仿真器 // 非常类似
+模拟器 // 不太精确的复制设备硬件
+
+// 在线工具
+https://www.quirksmode.org/m/tests/widthtest.html // 查看影响媒体查询的重要统计数据
+W3C mobileOK Checker // 检查网站是否符合最佳实践  
+mobileReady // 基于上者的友好工具
+Firefox Modify Headers附加组件 
+
+// 买一部ios
+// android 新/旧(2.3)两款
+// Nokia Symbian OS
+
+// 自动化测试
+Jasmine // BDD
+PhantonmJS/CasperJS  // 自动的前端测试
+Sinon.JS // 伪造AJAX请求
+// SauceLabs
 ```
 
 
