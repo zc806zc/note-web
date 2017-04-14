@@ -122,7 +122,7 @@
       * [01-ionic开发](js-stack/ch7-webapp/01-ionickai-fa.md)
       * [02-JS应用程序设计](js-stack/ch6-js-web/02-jsying-yong-cheng-xu-she-8ba1-du-hou-gan.md)
 * [\[5\] Java](java-stack.md)
-  * [CPP](c-stack.md)
+  * [C-LIKE](c-stack.md)
     * [ch1-C语言](c-stack/ch1-cyu-yan.md)
       * [01-编程语言](c-stack/ch1-cyu-yan/01bian-cheng-yu-yan.md)
       * [02-C语言-语法扫盲](c-stack/ch1-cyu-yan/02-cyu-yan-ji-chu.md)
