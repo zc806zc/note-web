@@ -223,8 +223,9 @@ Structured Data Testing Tools // https://search.google.com/structured-data/testi
   * [http://regexlib.com](http://regexlib.com) 使用正则表达式验证
 
 ```js
-// 与服务器通信的方式
-表单 + XMLHTTPRequest
+// 与服务器通信的方式 // 表单 + XMLHTTPRequest
+
+表单可以不在form里 // <input form="form1"> 
 
 // 表单验证
 HTML5不能指定验证的时机 // 仅submit时
@@ -237,10 +238,16 @@ HTML5不能指定验证的时机 // 仅submit时
 服务端验证 // 真正确保数据正确性
 
 // 验证样式 
-// input:required:invalid 伪类使用
 required和optional // aria-required="true" 增强可访问性
 valid和invalid
 in-range和out-of-range
+// readonly与disabled // 能否随form提交
+
+element.validity // 8/10种表单控件属性
+
+// 伪类使用
+input:required:invalid
+input:placeholder-shown {}
 
 // 输入属性
 multiple 
@@ -248,15 +255,15 @@ multiple
 // autocorrect和autocapitalize 移动设备
 
 // 新的输入控件
-email range color
-url // 验证很粗略
+email color progress和meter url // url验证很粗略 IOS的键盘显示
+range // input[type=range] {-webkit-apperance: slider-vertical;}
 // search // 无障碍阅读 引导
 tel // 至少不能接受字母
 number// min max step value
 // 日期和时间 也支持min和max="2014-12-31"
-datalist 下拉建议列表 
-<input id="" list="animal">
-// progress和meter
+datalist 
+// <input id="" list="animal">
+// datalist优雅降级 内嵌select
 // <menu><command></command><menu>创建工具条和菜单?
 
 // HTML编辑器 
