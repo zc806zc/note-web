@@ -1,6 +1,6 @@
 #### 积极拥抱**HTML5**
 
-* [missing-manual-website](http://www.prosetech.com/html5) \| [missing-manual-code-dl](http://www.oreilly.com/pub/missingmanuals/html5tmm2e) 
+* [missing-manual-website](http://www.prosetech.com/html5) \| [code-dl](http://www.oreilly.com/pub/missingmanuals/html5tmm2e) 
 * [www.standardista.com/mobile/](http://www.standardista.com/mobile/)
 
 * 元素更迭史
@@ -33,12 +33,9 @@ tabindex = 0  // 给一个链接或表单元素之外的元素提供键盘访问
 <strong> // 重要
 <em>     // 强调  
 <del> <ins> // 原来<s><strike>
-
 <wbr> // 换行机会 阅读目的 但<nobr>却挂了...
 
-// HTML5 没有内联元素块元素的概念了... 
-// 因为那是基于外观的定义
-
+// HTML5 没有内联元素块元素的概念 // 因为那是基于外观的定义
 eg. 语义上 <a>里可以放置任何东西了
 // 且<a href="tel:16505551212">xxx</a>
 // href也不是必需的
@@ -69,7 +66,7 @@ draggable dropzone
 
   * Modernizer \| html5shim/html5.js
 
-  * [浏览器市场占有率](http://gs.statcounter.com) \| [html标记争论的论坛](http://html5doctor.com) \| [Can I use](http://caniuse.com) 
+  * [浏览器市场占有率](http://gs.statcounter.com) \| [html标记争论的论坛](http://html5doctor.com) \| [Can I use](http://caniuse.com)
 
 ```js
 // 对付旧版本浏览器,使用腻子脚本
@@ -141,7 +138,7 @@ HTML5规定footer不能放太多无关内容
 details * {display:none; }
 details summary {display: auto; }
 details[open] * {display: auto; }
-// <menu><menuitem> // 类似右键菜单 支持不好 
+// <menu><menuitem> // 类似右键菜单 支持不好
 ```
 
 * HTML5纲要
@@ -241,7 +238,7 @@ HTML5不能指定验证的时机 // 仅submit时
 
 // 验证样式 
 // input:required:invalid 伪类使用
-required和optional
+required和optional // aria-required="true" 增强可访问性
 valid和invalid
 in-range和out-of-range
 
