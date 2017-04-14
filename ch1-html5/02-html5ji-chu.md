@@ -30,8 +30,9 @@ tabindex = 0  // 给一个链接或表单元素之外的元素提供键盘访问
 <hr>     // 主题转换 
 <s>      // 不准确或不相关的内容
 // <b>      // eg.摘要的关键字
-<strong> <em> // 重要与强调的文本内容   
-<del> <ins> // 原来的<s><strike>
+<strong> // 重要
+<em>     // 强调  
+<del> <ins> // 原来<s><strike>
 
 <wbr> // 换行机会 阅读目的 但<nobr>却挂了...
 
@@ -40,6 +41,7 @@ tabindex = 0  // 给一个链接或表单元素之外的元素提供键盘访问
 
 eg. 语义上 <a>里可以放置任何东西了
 // 且<a href="tel:16505551212">xxx</a>
+// href也不是必需的
 
 // 现分为 
 短语元素 区段元素 // 但即使语义限制也不能位于短语元素中
@@ -62,9 +64,11 @@ draggable dropzone
 ```
 
 * 浏览器与设备兼容
+
   * 平稳退化, 积极拥抱HTML5 ,
 
   * Modernizer \| html5shim/html5.js
+
   * [浏览器市场占有率](http://gs.statcounter.com) \| [html标记争论的论坛](http://html5doctor.com) \| [Can I use](http://caniuse.com) 
 
 ```js
@@ -134,6 +138,10 @@ HTML5规定footer不能放太多无关内容
 
 // 其他
 // <details><summary></summary></details>折叠框, 还不成熟
+details * {display:none; }
+details summary {display: auto; }
+details[open] * {display: auto; }
+// <menu><menuitem> // 类似右键菜单 支持不好 
 ```
 
 * HTML5纲要
@@ -214,70 +222,50 @@ Structured Data Testing Tools // https://search.google.com/structured-data/testi
 ### 换血-web组件进化
 
 * web表单
+  * [html5Forms.js](https://github.com/zoltan-dulac/html5Forms.js)
+  * [http://regexlib.com](http://regexlib.com) 使用正则表达式验证
 
 ```js
-// 与服务器通信的方式：
-表单
-XMLHTTPRequest对象
+// 与服务器通信的方式
+表单 + XMLHTTPRequest
 
 // 表单验证
-HTML5不能指定验证的时机 // 仅submit的时候
-// 不能修改浏览器呈现控件的方式 
-// 可以用jQuery UI之类的JS工具包
-
-// input的title，autofocus
+HTML5不能指定验证的时机 // 仅submit时
+// form或input添加属性novalidate // 测试时关闭验证
+// 自定义验证 input.setCustomValidity("")
+// form里添加onsubmit="return validateForm()"
 
 // 验证方式
-客户端验证：减少填表人的麻烦
-服务端验证：真正确保数据正确性
+客户端验证 // 减少填表人的麻烦
+服务端验证 // 真正确保数据正确性
 
-// 关闭验证
-测试的时候：可以再form或input添加属性novalidate
-
-// 验证样式 input:required:invalid 伪类
+// 验证样式 
+// input:required:invalid 伪类使用
 required和optional
 valid和invalid
 in-range和out-of-range
 
-// 使用正则表达式
-http://regexlib.com
-
-pattern="\[A-Z\]{3}-\[0-9\]{3}"
-
-// 自定义验证 input.setCustomValidity\(""\)
-// form里添加onsubmit="return validateForm\(\)"在提交表单时自己检测
-
-// HTML5Forms库
-https://github.com/zoltan-dulac/html5Forms.js
-
-// 几个特殊的输入属性
-multiple 选择多个列表项
-spellcheck
-// autocomplete
+// 输入属性
+multiple 
+// autocomplete spellcheck
 // autocorrect和autocapitalize 移动设备
 
 // 新的输入控件
 email range color
 url // 验证很粗略
 // search // 无障碍阅读 引导
-tel 至少不能接受字母
+tel // 至少不能接受字母
 number// min max step value
-
 // 日期和时间 也支持min和max="2014-12-31"
-
-
-// 更新的元素
 datalist 下拉建议列表 
 <input id="" list="animal">
-
 // progress和meter
+// <menu><command></command><menu>创建工具条和菜单?
 
-// <menu><command></command><menu>创建工具条和菜单
-
-// 网页中的HTML编辑器
+// HTML编辑器 
 // 放在可编辑区内的按钮不能触发事件
-contenteditable编辑元素
-designMode编辑页面
+contenteditable // 编辑元素
+designMode // 编辑页面
 ```
 
 * HTML5音频和视频
