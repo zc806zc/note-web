@@ -1,21 +1,18 @@
 #### **CSS布局**
 
-* 基础
-  * [ruanyf-flex-grammar](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool) \| [ruanyf-flex-examples](http://www.ruanyifeng.com/blog/2015/07/flex-examples.html)
-  * [负值之美](http://www.cnblogs.com/jscode/archive/2012/08/28/2660078.html)
-  * [常用CSS-asd0102433](https://github.com/asd0102433/blog/blob/master/%E5%89%8D%E7%AB%AF/css%E6%9C%89%E7%94%A8%E7%9A%84%E6%94%B6%E9%9B%86.md)
+* [负值之美](http://www.cnblogs.com/jscode/archive/2012/08/28/2660078.html) \| 将一个元素的margin设置为负值，元素将会变大
+* [常用CSS集](https://github.com/asd0102433/blog/blob/master/前端/css有用的收集.md)
+* 盒模型  display + position + float
+* 权重
+  * id 声明会覆盖class
+
+---
+
+### flex
+
+* [ruanyf-flex-grammar](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool) \| [ruanyf-flex-examples](http://www.ruanyifeng.com/blog/2015/07/flex-examples.html)
 
 ```js
-// 基于盒状模型，
-display + position + float
-
-
-// 基础知识
-// i 斜体(italic) → 指代图标
-// border-radius - 50%; 圆边, 可能是椭圆
-// 将一个元素的margin设置为负值，元素将会变大
-// id 声明会覆盖class
-
 // BootStrap有关
 bootstrap btn-block // 使其成为块级元素
 不要忘记加class="row"
@@ -29,10 +26,11 @@ $("#target5").clone().appendTo("#left-well");
 $("#target1").parent().css("background-color", "red");
 $("#right-well").children().css("color", "red");
 $(".target:nth-child(3)").addClass("animated bounce");
-$(".target:odd").addClass("animated shake");
 ```
 
-* 背景与边框
+---
+
+### 背景与边框
 
 ```js
 // Web标准
@@ -43,7 +41,9 @@ $(".target:odd").addClass("animated shake");
 // 灵活的背景定位/条纹背景/复杂的背景图案/伪随机背景
 ```
 
-* 形状/视觉效果
+---
+
+### 形状/视觉效果
 
 ```js
 // 自适应的椭圆/平行四边形/菱形图片
@@ -57,7 +57,9 @@ $(".target:odd").addClass("animated shake");
 // 染色效果/毛玻璃/折角效果
 ```
 
-* 字体排版
+---
+
+### 字体排版
 
 ```js
 // 连字符断行/插入换行/调整tab的宽度
@@ -69,7 +71,9 @@ $(".target:odd").addClass("animated shake");
 // 现实中的文字效果/环形文字
 ```
 
-* 用户体验
+---
+
+### 用户体验
 
 ```js
 // 适合的鼠标光标
@@ -83,7 +87,9 @@ $(".target:odd").addClass("animated shake");
 // 交互式的图片对比控件
 ```
 
-* 结构与布局
+---
+
+#### 结构与布局
 
 ```js
 // 自适应内部元素
@@ -99,7 +105,9 @@ $(".target:odd").addClass("animated shake");
 // 紧贴底部的页脚
 ```
 
-* 过渡与动画
+---
+
+#### 过渡与动画
 
 ```js
 // 缓动效果/逐帧动画/闪烁动画
@@ -109,7 +117,9 @@ $(".target:odd").addClass("animated shake");
 // 状态平滑的动画
 ```
 
-* 参考
+---
+
+#### 参考
 
 ```js
 CSS揭秘

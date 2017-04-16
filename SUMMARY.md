@@ -34,7 +34,7 @@
       * [03-UI组件有哪些-草稿](js-stack/ch4-jquery/02-uizu-jian-2.md)
       * [03-UI组件-基础实现草案](js-stack/ch4-jquery/02-uizu-jian-1.md)
     * [ch2-响应式设计](ch3xiang-ying-shi-she-ji.md)
-      * [01-响应式网站-解剖笔记](ch3xiang-ying-shi-she-ji/02wang-zhanjie-6784-landy.md)
+      * [01-响应式网站-解剖笔记1\(然后没有然后了\)](ch3xiang-ying-shi-she-ji/02wang-zhanjie-6784-landy.md)
     * [ch3-Canvas](ch3-canvas-anim.md)
       * [01-Canvas-基础篇](ch4-canvasyou-xi-kai-fa/01-canvasji-chu-1.md)
       * [01-Canvas-游戏开发](ch4-canvasyou-xi-kai-fa/01-canvasji-chu-2.md)

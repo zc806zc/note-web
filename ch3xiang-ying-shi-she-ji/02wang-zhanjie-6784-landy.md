@@ -18,7 +18,7 @@
 ```
 
 * 字体格式 [css3-font-face](http://www.w3cplus.com/content/css3-font-face)
-  * e    ot // 嵌入式字体，微软家的
+  * eot // 嵌入式字体，微软家的
   * svg // W3C制定的开放标准的图形格式
   * ttf
   * woff // Web开发字体格式
@@ -37,17 +37,12 @@ rel='stylesheet' type='text/css'>
     [font-weight: <weight>];
     [font-style: <style>];
 }
-
-// 
-
 ```
 
 * 放手机里的滚屏实现
-  * !    important是CSS1就定义的语法，作用是提高指定样式规则的应用优先权
-    但最好不要用
-  * b    ackground-size: cover;
-    把背景图像扩展至足够大，
-    以使背景图像完全覆盖背景区域。
+
+  * !important是CSS1就定义的语法，作用是提高指定样式规则的应用优先权 但最好不要用
+  * background-size: cover; 把背景图像扩展至足够大，以使背景图像完全覆盖背景区域。
 
 * [device-pixel-ratio](http://www.zhangxinxu.com/wordpress/2012/08/window-devicepixelratio/) 视网膜类似设备 \| [retina.js](https://www.gitbook.com/book/luo0412/white/edit#)
 
@@ -56,6 +51,7 @@ rel='stylesheet' type='text/css'>
 #### **sefolio学习**
 
 * [Normalize.css ](https://github.com/necolas/normalize.css/blob/master/normalize.css)
+
   * 保留有用的默认值，不同于许多 CSS 的重置
   * 标准化的样式，适用范围广的元素
   * 纠正错误和常见的浏览器的不一致性
@@ -65,13 +61,18 @@ rel='stylesheet' type='text/css'>
 * bootstrap的图标字体 [font-awesome.css](http://www.bootcss.com/p/font-awesome/#icons-web-app)
 
 * [hover.css](https://github.com/IanLunn/Hover)
-  * A     collection of CSS3     powered hover effects to be applied to links,     buttons, logos, SVG, featured images and so on.     Easily apply to your own elements,     modify or just use for inspiration.    Available in CSS, Sass, and LESS.
+
+  * A collection of CSS3 powered hover effects to be applied to links, buttons, logos, SVG, featured images and so on. Easily apply to your own elements, modify or just use for inspiration.
+
+    Available in CSS, Sass, and LESS.
 
 * [owl-carousel.css](https://github.com/OwlFonk/OwlCarousel) \| [demo](http://owlgraphic.com/owlcarousel/) \| [full-slider.css](https://www.gitbook.com/book/luo0412/white/edit#)
-  * T    ouch enabled jQuery plugin that     lets you create beautiful responsive carousel slider.
 
-* wow.js \| [演示](http://www.dowebok.com/demo/131/)
-  * 当    你滚动页面的时候会看到各式各样的元素动画效果
+  * Touch enabled jQuery plugin that lets you create beautiful responsive carousel slider.
+
+* wo.js \| [演示](http://www.dowebok.com/demo/131/)
+
+  * 当你滚动页面的时候会看到各式各样的元素动画效果
   * 依赖animate.css
 
 * 基础知识 [table-cell](http://www.w3school.com.cn/jsref/prop_style_display.asp) \| [媒体查询](http://www.runoob.com/cssref/css3-pr-mediaquery.html)
@@ -80,11 +81,6 @@ rel='stylesheet' type='text/css'>
 diaplay:table table-cell;
 
 text-align, vertical-align
-
-// 媒体查询
-@media mediatype and|not|only (media feature) {
-
-}
 ```
 
 
