@@ -84,15 +84,20 @@ w3c的W3Validator
 ff插件：HTML Validator // 基于HTML Tidy,可以美化代码
 ```
 
-![](/assets/h5-grammar755.png)
-
-pic from [http://www.cnblogs.com/polk6/p/5320428.html\](http://www.cnblogs.com/polk6/p/5320428.html%29%29 \)
-
 ---
 
 #### 动骨-HTML的语义化
 
 * 语义化
+  * header \| main\(一个页面只有一个\) \| aside\(附注\) \| section \| footer
+
+  * figure 插画 不同于一般的img 即使缺失文章内容也是完整的
+
+
+![](/assets/h5-grammar755.png)
+
+
+from [http://www.cnblogs.com/polk6/p/5320428.html\](#)
 
 ```js
 // 1.<header>
@@ -101,12 +106,6 @@ pic from [http://www.cnblogs.com/polk6/p/5320428.html\](http://www.cnblogs.com/p
 // 在页眉中添加看不见的标题<h1> // display:none
 // 屏幕阅读器，最好每个页面只有一个<h1>
 
-// 2.<main> 一个页面只能有一个
-// 3.<aside> 添加附注
-
-
-// 4.<figure><figcaption>
-// 添加插画 // 插画地意思就是 即使缺失内容也是完整地，不同于一般的img
 
 <figure class="FloatLeftFigure" alt="Human skull"> // figure的alt不要为空(/字符串)
     <img src="human_skull.jpg" /> // <img>的alt可以删除?
@@ -120,11 +119,7 @@ eg. About US
 购物记录和产品清单
 分组内容, // 新闻站点中的一组文章 长文档的一部分
 
-// 6. 胖<footer>
-HTML5规定footer不能放太多无关内容
-但你可以无视啊 ORZ...
-
-或者将多余部分提取出来如下
+// HTML5规定footer不能放太多无关内容, 但你可以无视啊 ORZ...
 <div id="FatFooter">
     <aside>
         <img onclick="CloseBox()" src="images/manual/close_icon.png" class="CloseButton">
@@ -474,23 +469,20 @@ column-span: all;
 * 响应式设计
 
 ```js
-// 流式布局 
-等比例缩放 + 百分比
+流式布局 = 等比例缩放 + 百分比
 
 // 内外边距问题
 box-sizing: border-box;
 // width: calc(67% - 5px);
-
 流式图片 // max-width: 100px;
-responsive-img // http://tinyurl.com/responsive-img)
-流式排版 // em rem body100%;
+responsive-img // http://tinyurl.com/responsive-img
+流式排版 // em rem body 100%;
 
-// 视口 // 缩小显示网页的区域，不仅仅显示角落(某一区域)?
+// 视口 
 <meta content="initial-scale=1.0" name="viewport">
 
 // 媒体查询
 max-width min-width
-
 @media, not, 568px
 @media (max-width: 568px) {
     .NavSidebar {
@@ -498,11 +490,9 @@ max-width min-width
         width: 100%;
         min-height: 0em;
     }
-
 }
-
 <link rel="stylesheet" media="print and (min-width: 25cm)" href="" />
-<source src="" type="" media="(max-device-width:480px)"></source> // 媒体查询与视频
+<source src="" type="" media="(max-device-width:480px)"></source> 
 
 // Modernizr.mq //  更好?
 
