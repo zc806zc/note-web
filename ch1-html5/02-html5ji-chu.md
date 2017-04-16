@@ -1,13 +1,12 @@
 #### 积极拥抱**HTML5**
-* 基础
-    * HTML5秘籍 [website](http://www.prosetech.com/html5) \| [code-dl](http://www.oreilly.com/pub/missingmanuals/html5tmm2e) 
-    * HTML5移动开发 [www.standardista.com/mobile/](http://www.standardista.com/mobile/)
-    * 元素更迭史 https://www.w3.org/TR/html5-diff/
-        * 废弃
-        * 新生
-        * 幸存
-    *  HTML5 再没有内联元素块元素的概念了，因为那是基于外观的定义
- 
+
+* HTML5秘籍 [website](http://www.prosetech.com/html5) \| [code-dl](http://www.oreilly.com/pub/missingmanuals/html5tmm2e) 
+* HTML5移动开发 [www.standardista.com/mobile/](http://www.standardista.com/mobile/)
+* 元素更迭史 [https://www.w3.org/TR/html5-diff/](https://www.w3.org/TR/html5-diff/)
+  * 废弃
+
+  * 新生
+  * 幸存
 
 ```js
 <nobr>  // 被css white-space: nowrap 代替
@@ -23,7 +22,7 @@ accesskey // 按键紊乱
 
 <iframe>   Youtube窗口, 广告和谷歌搜索框 
 // 新增srcdoc sandbox seamless等属性
- 
+
 <small>  // 附属细则，页脚的法律条款
 <hr>     // 主题转换 
 <s>      // 不准确或不相关的内容
@@ -31,8 +30,18 @@ accesskey // 按键紊乱
 <strong> // 重要
 <em>     // 强调  
 <del> <ins> // 原来<s><strike>
-<wbr> // 换行机会 阅读目的 但<nobr>却挂了... 
+<wbr> // 换行机会 阅读目的 但<nobr>却挂了...
 
+// 其他
+<ol> 的 reversed
+input和textarea 的autofocus required placeholder
+<script> type="application/xml"
+<html lang="en"> // 方便屏幕阅读器 
+```
+
+* HTML5 再没有内联元素块元素的概念了，因为那是基于外观的定义
+
+```js
 <a>里可以放置任何东西了
 <a href="tel:16505551212">xxx</a>
 // href也不是必需的了
@@ -49,17 +58,9 @@ flow流元素
 contenteditable spellcheck
 contextmenu
 draggable dropzone
-
-// 其他
-<ol> 的 reversed
-input和textarea 的autofocus required placeholder
-<script> type="application/xml"
-<html lang="en"> // 方便屏幕阅读器
 ```
 
-* 浏览器与设备兼容
-
-  * 平稳退化, 积极拥抱HTML5 ,
+* 浏览器与设备兼容 - {% em %} 平稳退化, 积极拥抱HTML5 { % endem %} 
 
   * Modernizer \| html5shim/html5.js
 
