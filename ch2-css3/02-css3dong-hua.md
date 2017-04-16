@@ -2,39 +2,27 @@
 
 * [10个优秀的CSS和JS Logo动画示例](https://zhuanlan.zhihu.com/p/26155443) \| [纯CSS制作各种图案](https://segmentfault.com/a/1190000002780453)
 
-* css3
+* [小丑汽车技术](https://github.com/estelle/clowncar) 把多张大图片装进一个svg
+
+* CSS3 - 把下一代CSS试验性地拆分成一组独立的标准模块
+
+  * 而且是还在试验和反馈的循环中。。
+
+  * 查看兼容现状  http://tinyurl.com/css3-stages
+
+  * Modernizr 检测支持情况
+
+  * -prefix-free自动添加前缀 http://leaverou.github.io/prefixfree 
 
 ```js
-// class
-class中的顺序不重要
-但表的顺序重要
-
 // <style>的scoped // 避免影响宿主网站 但没得到支持
-移动性能： 标准反模式
-style block被JS提取作为localStorage保存起来
-并把keyd的值保存在cookie字符串
-
-// 把下一代CSS拆分成一组独立的标准 // 模块 试验性
-[查看兼容现状](http://tinyurl.com/css3-stages)
 
 // CSS3使用原则
 用浏览器支持的交集
-// 为增强留条退路
-// Modernizr // 检测支持情况
-<html class="no-js">
 
+<html class="no-js">
 .borderradius header {}
 .no-borderradius header {}
-
-// 实在不行js实现
-开发商前缀 // ∵ 还在试验和反馈的循环中
-can i use
--prefix-free // http://leaverou.github.io/prefixfree 自动添加前缀
-
-
-// 多变的盒子特效
-透明 // rgba 覆盖rgb
-opacity // 图片半透明，动画淡入淡出
 
 // 圆角 border-radius: 25px 50px 25px 85px;
 // 椭圆 border-top-left-radius: 150px 30px;
@@ -65,7 +53,11 @@ repeating-radial-gradient(to top, red, orange, white, yellow 30px);
 // 渐变生成工具
 [Ultimate CSS Gradient Generator](http://www.colorzilla.com/gradient-editor)
 http://tinyurl.com/ms-gradient
+```
 
+* 动画
+
+```js
 // 过渡
 伪类hover + transition
 
@@ -82,11 +74,31 @@ skew(10deg)
 rotate(10deg)
 tansform-origin: 0% 0%; // 参照点
 [3D变换](http://tinyurl.com/3d-transitions)
+```
 
-// Web字体
-优化问题(print) + 版权问题
+* 移动性能 - 标准反模式 , s  tyle block被JS提取作为localStorage保存起来  , 并把keyd的值保存在cookie字符串
+
+* 多栏文本
+
+```js
+column-count: 3;
+column-width: 10em;
+column-rule: 1px solid red;
+column-span: all;
+```
+
+* web字体
+
+  * Font Squirrel http://www.fontsquirrel.com（推荐Callographic,Novelty,Retro    字体）
+
+  * Webfont Generator
+
+  * Google Fonts http://www.google.com/fonts
+
+```js
+// 还面临的问题
+打印优化问题 + 版权问题
 @font-face (EOT + TTF/OTF)
-
 @font-face {
   font-family: 'xyz';
   src: url('xyz.eot');
@@ -96,37 +108,40 @@ tansform-origin: 0% 0%; // 参照点
   url('xyz.svg') format('svg');
 }
 
-[Font Squirrel](http://www.fontsquirrel.com)
-Callographic,Novelty,Retro
-Webfont Generator
-[Google Fonts](http://www.google.com/fonts)
-
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Metrophobic" />
-
-
-// 多栏文本
-column-count: 3;
-column-width: 10em;
-column-rule: 1px solid red;
-column-span: all;
 ```
 
-* 响应式设计
+---
 
-```js
-流式布局 = 等比例缩放 + 百分比
+#### 响应式布局
 
-// 内外边距问题
+* 流式布局 = 等比例缩放 + 百分比
+  * 流式图片
+
+```
 box-sizing: border-box;
 // width: calc(67% - 5px);
+
 流式图片 // max-width: 100px;
 responsive-img // http://tinyurl.com/responsive-img
 流式排版 // em rem body 100%;
+```
 
-// 视口 
+* 内外边距问题视口等等？
+
+```js
+// 视口
 <meta content="initial-scale=1.0" name="viewport">
 
-// 媒体查询
+// Modernizr.mq
+
+// max-device-width移动设备
+orientation: landscape/portrait
+```
+
+* 媒体查询
+
+```js
 max-width min-width
 @media, not, 568px
 @media (max-width: 568px) {
@@ -137,15 +152,8 @@ max-width min-width
     }
 }
 <link rel="stylesheet" media="print and (min-width: 25cm)" href="" />
-<source src="" type="" media="(max-device-width:480px)"></source> 
-
-// Modernizr.mq //  更好?
-
-// max-device-width移动设备
-orientation: landscape/portrait
+<source src="" type="" media="(max-device-width:480px)"></source>
 ```
-
-
 
 
 

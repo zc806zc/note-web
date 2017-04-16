@@ -5,6 +5,7 @@
 * 盒模型  display + position + float
 * 权重
   * id 声明会覆盖class
+  * c    lass中的排序不重要    ，但在表中的顺序很重要
 
 ---
 

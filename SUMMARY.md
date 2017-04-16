@@ -30,7 +30,7 @@
   * [表现](ch2-css3.md)
     * [ch1-CSS3](ch1-css-basic.md)
       * [01-CSS的布局](ch2-css3/01-cssbu-ju.md)
-      * [02-CSS3的动画](ch2-css3/02-css3dong-hua.md)
+      * [02-CSS3动画与响应式布局](ch2-css3/02-css3dong-hua.md)
       * [03-UI组件有哪些-草稿](js-stack/ch4-jquery/02-uizu-jian-2.md)
       * [03-UI组件-基础实现草案](js-stack/ch4-jquery/02-uizu-jian-1.md)
     * [ch2-响应式设计](ch3xiang-ying-shi-she-ji.md)
