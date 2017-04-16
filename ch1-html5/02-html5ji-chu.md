@@ -264,7 +264,11 @@ designMode // 编辑页面
 ```
 
 * HTML5音频和视频
-
+  * 工具 Amaya | Inkspace
+  * videojs.com 换肤定制 | Handbrake 转码
+  * 视频完全方案 HTML5 + Flash + link
+  * 视频自适应 https://alistapart.com/article/creating-intrinsic-ratios-for-video
+  
 ```js
 // HTML5不行还用成熟的Flash
 
