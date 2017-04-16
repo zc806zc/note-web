@@ -8,14 +8,109 @@
 
 ![](http://img.blog.csdn.net/20160624142445478)
 
-* 导航处的双杠响应，而按钮要有被按得凹陷的感觉  \| photoshoot网站
+---
+
+* 一种可以考虑的方式： 导航处的双杠响应，而按钮要有被按得凹陷的感觉  \| photoshoot网站
 
 ![](http://img.blog.csdn.net/20160624150523029)  
 ![](http://img.blog.csdn.net/20160624150558076)
 
 ---
 
+* **局部变换的标签页搜索**
+  * ** **[http://www.51jingying.com/](http://www.51jingying.com/)
+  *  [http://www.shanghai.gov.cn/](http://www.shanghai.gov.cn/)
+
+![这里写图片描述](http://img.blog.csdn.net/20160624152302108)![这里写图片描述](http://img.blog.csdn.net/20160624152340562)
+
+* **变形的导航 **[http://www.mahindra.com/](https://www.gitbook.com/book/luo0412/white/edit#)
+
+![这里写图片描述](http://img.blog.csdn.net/20160624152458692)![这里写图片描述](http://img.blog.csdn.net/20160624152509423)
+
+---
+
+* **双侧的导航 **[http://echarts.baidu.com/examples.html](https://www.gitbook.com/book/luo0412/white/edit#)
+
+![这里写图片描述](http://img.blog.csdn.net/20160624152637269)
+
+---
+
+* **巨幕导航**
+  * [http://www.desk.com/](https://www.gitbook.com/book/luo0412/white/edit#)
+
+  * [https://www.daocloud.io/](https://www.gitbook.com/book/luo0412/white/edit#)
+
+  * [http://www.oneapm.com/](https://www.gitbook.com/book/luo0412/white/edit#)
+
+![这里写图片描述](http://img.blog.csdn.net/20160624152733021)
+
+---
+
 #### **效果**
+
+* **局部视频  http://www.ottoradio.com/**
+
+![这里写图片描述](http://img.blog.csdn.net/20160624154346497)  
+
+
+---
+
+* **超大的东西能引起人的冲动**
+
+![这里写图片描述](http://img.blog.csdn.net/20160624154641219)
+
+页面中央的大搜索框和注册框  
+[https://botlist.co/](https://botlist.co/)
+
+---
+
+![这里写图片描述](http://img.blog.csdn.net/20160624154656266)  
+还有大播放按钮，可以引起冲动  
+[https://asciinema.org/](https://asciinema.org/)
+
+---
+
+* **宣传的话用打字效果 **[https://www.wpcom.cn/](https://www.gitbook.com/book/luo0412/white/edit#)
+
+![这里写图片描述](http://img.blog.csdn.net/20160624154959099)
+
+---
+
+* **视频背景**
+  * [https://wiffinity.com](https://wiffinity.com/)
+
+  * [http://www.diobox.com](http://www.diobox.com/#)
+
+![这里写图片描述](http://img.blog.csdn.net/20160624155047365)
+
+---
+
+* **长图背景 **[http://www.desk.com/](http://www.desk.com/)
+
+![这里写图片描述](http://img.blog.csdn.net/20160624155146593)  
+
+
+---
+
+* **分支日记 **[http://www.sydjs.com/meetups](http://www.sydjs.com/meetups)
+
+![这里写图片描述](http://img.blog.csdn.net/20160624155217312)  
+
+
+---
+
+* **围观吃瓜的群众 **[http://www.oneapm.com/](http://www.oneapm.com/)
+
+![这里写图片描述](http://img.blog.csdn.net/20160624155304657)
+
+---
+
+* **传送带 + 滚屏 **[http://www.desk.com/](http://www.desk.com/)
+
+![这里写图片描述](http://img.blog.csdn.net/20160624155403048)  
+
+
+---
 
 * 悬停时 [haobtc](https://haobtc.com/) 鼓动别人做出选择 例如卡片的弹起
 
@@ -46,22 +141,78 @@ transition: 0.15s ease-in-out;
 
 ---
 
-* 
-*  * 
-
----
-
-* 翻牌介绍
-  * [zarget](http://zarget.com/)
+* 翻牌介绍 [zarget](http://zarget.com/)
 
 ![](http://img.blog.csdn.net/20160624151017937)
 
 ---
 
-* 点亮灰暗的图标
-  * [bootcdn](http://www.bootcdn.cn/) 
+* 点亮灰暗的图标 [bootcdn](http://www.bootcdn.cn/) 
 
 ![](http://img.blog.csdn.net/20160624151525285)
+
+---
+
+* **斑马条里的滚屏 **[~~https://wakatime.com/~~](https://www.gitbook.com/book/luo0412/white/edit#)
+
+![这里写图片描述](http://img.blog.csdn.net/20160624153124710)
+
+---
+
+* **数字跳动 **[https://haobtc.com/](https://www.gitbook.com/book/luo0412/white/edit#)
+
+![这里写图片描述](http://img.blog.csdn.net/20160624153323805)
+
+---
+
+### 实用
+
+* 侧边缩放的菜单
+  * [barackobama](https://connect.barackobama.com/#)
+  * [togetherjs](https://togetherjs.com/)
+
+![这里写图片描述](http://img.blog.csdn.net/20160624155626143)
+
+![这里写图片描述](http://img.blog.csdn.net/20160624155637847)
+
+---
+
+* **页脚区 **[admaster](http://www.admaster.com.cn/)
+
+![这里写图片描述](http://img.blog.csdn.net/20160624155612482)
+
+
+
+* **三种喜欢的分页方式**
+
+![这里写图片描述](http://img.blog.csdn.net/20160624154003214)  
+有大小两种箭头的分页  
+[http://wenda.ghostchina.com/](http://wenda.ghostchina.com/)
+
+---
+
+![这里写图片描述](http://img.blog.csdn.net/20160624154018542)  
+做长点，把当前页放在正中间  
+[http://www.howzhi.com/channel/photography?page=20](http://www.howzhi.com/channel/photography?page=20)  
+
+
+---
+
+![这里写图片描述](http://img.blog.csdn.net/20160624154027476)  
+做成滚屏，反正用户也不在乎到底是第几页  
+[http://www.agoda.com/city/hong-kong-hk.html](http://www.agoda.com/city/hong-kong-hk.html)
+
+---
+
+* **右下角组件（返回顶部+咨询+本地目录）https://elementor.com/**
+
+![这里写图片描述](http://img.blog.csdn.net/20160624154208699)
+
+---
+
+* **页脚动画 **[http://www.ottoradio.com/](http://www.ottoradio.com/)
+
+![这里写图片描述](http://img.blog.csdn.net/20160624154431215)
 
 ---
 
@@ -76,265 +227,46 @@ transition: 0.15s ease-in-out;
 
 ---
 
-**（7）等待动画与加载动画**  
-跟进度条和加载圈一样，觉得鸡肋，但读过一点心理学就会知道这个炒鸡重要。。
+* **等待动画与加载动画 **[http://truthlabs.com/](https://www.gitbook.com/book/luo0412/white/edit#)
 
 ![这里写图片描述](http://img.blog.csdn.net/20160624152030917)
 
-[http://truthlabs.com/](http://truthlabs.com/)
+---
+
+* 顶部加载条显示网页的加载进度。 [https://ingworld.ing.com/en/2015-1Q](https://ingworld.ing.com/en/2015-1Q)
 
 ![这里写图片描述](http://img.blog.csdn.net/20160624152117988)
 
-顶部加载条显示网页的加载进度。  
-[https://ingworld.ing.com/en/2015-1Q](https://ingworld.ing.com/en/2015-1Q)  
-实现思路：
-
 ---
 
-**（8）用于局部变换的标签页**
-
-![这里写图片描述](http://img.blog.csdn.net/20160624152302108)
-
-这里变了搜索方式  
-[http://www.51jingying.com/](http://www.51jingying.com/)
-
-实现思路：
-
-![这里写图片描述](http://img.blog.csdn.net/20160624152340562)
-
-超级赞  
-[http://www.shanghai.gov.cn/](http://www.shanghai.gov.cn/)
-
-实现思路：
-
----
-
-**（9）变形的导航**
-
-![这里写图片描述](http://img.blog.csdn.net/20160624152458692)
-
-![这里写图片描述](http://img.blog.csdn.net/20160624152509423)
-
-[http://www.mahindra.com/](http://www.mahindra.com/)
-
-实现思路:
-
----
-
-**（10）双向的导航**
-
-![这里写图片描述](http://img.blog.csdn.net/20160624152637269)
-
-[http://echarts.baidu.com/examples.html](http://echarts.baidu.com/examples.html)
-
-实现思路：
-
----
-
-**（11）巨幕导航**
-
-![这里写图片描述](http://img.blog.csdn.net/20160624152733021)
-
-[http://www.desk.com/](http://www.desk.com/)  
-[https://www.daocloud.io/](https://www.daocloud.io/)  
-[http://www.oneapm.com/](http://www.oneapm.com/)
-
-实现思路：
-
----
-
-**（12）斑马条和卡片式的布局**
-
-![这里写图片描述](http://img.blog.csdn.net/20160624152857803)
-
-[http://destinesia.io/](http://destinesia.io/)
-
-实现思路：
-
-![这里写图片描述](http://img.blog.csdn.net/20160624152937022)
-
-[http://www.ghostchina.com/](http://www.ghostchina.com/)  
-[http://www.yuehetong.com/](http://www.yuehetong.com/)  
-[http://micourse.net/](http://micourse.net/)
-
-实现思路：
-
----
-
-**（13）斑马条里的滚屏**
-
-![这里写图片描述](http://img.blog.csdn.net/20160624153124710)
-
-[https://wakatime.com/](https://wakatime.com/)
-
-实现思路：
-
----
-
-**（14）数字跳动**
-
-![这里写图片描述](http://img.blog.csdn.net/20160624153323805)
-
-[https://haobtc.com/](https://haobtc.com/)
-
-实现思路：
-
----
-
-**（15）用于定位的标签**  
-这张页面做的比较长，导航处的标签选项只是用于定位。
+* **用于定位的标签 **这张页面做的比较长，导航处的标签选项只是用于定位。[https://swite.com/en/](https://www.gitbook.com/book/luo0412/white/edit#)
 
 ![这里写图片描述](http://img.blog.csdn.net/20160624153506874)
 
-[https://swite.com/en/](https://swite.com/en/)  
-实现思路：
+---
+
+### 布局
+
+* **斑马条和卡片式的布局 **[http://destinesia.io/](https://www.gitbook.com/book/luo0412/white/edit#)
+
+![这里写图片描述](http://img.blog.csdn.net/20160624152857803)
 
 ---
 
-**（16）到目前为止最喜欢的一个网站**
+* 卡片式
+  * [http://www.ghostchina.com/](https://www.gitbook.com/book/luo0412/white/edit#)
 
-![这里写图片描述](http://img.blog.csdn.net/20160624153645587)  
-[https://zoom.us/](https://zoom.us/)  
-实现思路：
+  * [http://www.yuehetong.com/](https://www.gitbook.com/book/luo0412/white/edit#)
 
----
+  * [http://micourse.net/](https://www.gitbook.com/book/luo0412/white/edit#)
 
-**（17）三种喜欢的分页方式**
+![这里写图片描述](http://img.blog.csdn.net/20160624152937022)
 
-![这里写图片描述](http://img.blog.csdn.net/20160624154003214)  
-有大小两种箭头的分页  
-[http://wenda.ghostchina.com/](http://wenda.ghostchina.com/)
 
-实现思路：
-
-![这里写图片描述](http://img.blog.csdn.net/20160624154018542)  
-做长点，把当前页放在正中间  
-[http://www.howzhi.com/channel/photography?page=20](http://www.howzhi.com/channel/photography?page=20)
-
-实现思路：
-
-![这里写图片描述](http://img.blog.csdn.net/20160624154027476)  
-做成滚屏，反正用户也不在乎到底是第几页  
-[http://www.agoda.com/city/hong-kong-hk.html](http://www.agoda.com/city/hong-kong-hk.html)
-
-实现思路：
 
 ---
 
-**（18）右下角组件（返回顶部+咨询+本地目录）**
+#### **到目前为止最喜欢的一个网站布局 **[https://zoom.us/](https://zoom.us/)
 
-![这里写图片描述](http://img.blog.csdn.net/20160624154208699)
-
-[https://elementor.com/](https://elementor.com/)  
-实现思路：
-
----
-
-**（20）局部视频**
-
-![这里写图片描述](http://img.blog.csdn.net/20160624154346497)  
-局限在这个手机里的视频播放，点击手机视频暂停，  
-再次点击接着播放视频，总之不喜欢突然跳出一个框来的感觉。  
-[http://www.ottoradio.com/](http://www.ottoradio.com/)
-
-实现思路：
-
----
-
-**（21）页脚动画**
-
-![这里写图片描述](http://img.blog.csdn.net/20160624154431215)  
-[http://www.ottoradio.com/](http://www.ottoradio.com/)
-
-实现思路：
-
----
-
-**（22）超大的东西能引起人的冲动。**
-
-![这里写图片描述](http://img.blog.csdn.net/20160624154641219)
-
-页面中央的大搜索框和注册框  
-[https://botlist.co/](https://botlist.co/)
-
-实现思路：
-
-![这里写图片描述](http://img.blog.csdn.net/20160624154656266)  
-还有大播放按钮，可以引起冲动  
-[https://asciinema.org/](https://asciinema.org/)
-
-实现思路：
-
----
-
-**（23）宣传的话用打字效果**
-
-![这里写图片描述](http://img.blog.csdn.net/20160624154959099)
-
-[https://www.wpcom.cn/](https://www.wpcom.cn/)  
-实现思路：
-
----
-
-**（24）视频背景**
-
-![这里写图片描述](http://img.blog.csdn.net/20160624155047365)  
-[https://wiffinity.com/](https://wiffinity.com/)  
-[http://www.diobox.com/\#](http://www.diobox.com/#)
-
-实现思路：
-
----
-
-**（25）长图背景**
-
-![这里写图片描述](http://img.blog.csdn.net/20160624155146593)  
-[http://www.desk.com/](http://www.desk.com/)
-
-实现思路：
-
----
-
-**（26）分支日记**
-
-![这里写图片描述](http://img.blog.csdn.net/20160624155217312)  
-[http://www.sydjs.com/meetups](http://www.sydjs.com/meetups)
-
-实现思路:
-
----
-
-**（27）围观吃瓜的群众**
-
-![这里写图片描述](http://img.blog.csdn.net/20160624155304657)  
-[http://www.oneapm.com/](http://www.oneapm.com/)  
-实现思路：
-
----
-
-**（28）传送带 + 滚屏**
-
-![这里写图片描述](http://img.blog.csdn.net/20160624155403048)  
-[http://www.desk.com/](http://www.desk.com/)  
-实现思路：
-
----
-
-#### **菜单**
-
-* 侧边缩放的菜单
-  * [barackobama](https://connect.barackobama.com/#)
-  * [togetherjs](https://togetherjs.com/)
-
-![这里写图片描述](http://img.blog.csdn.net/20160624155626143)
-
-![这里写图片描述](http://img.blog.csdn.net/20160624155637847)
-
----
-
-#### **页脚区**
-
-* [admaster](http://www.admaster.com.cn/)
-
-![这里写图片描述](http://img.blog.csdn.net/20160624155612482)
+![这里写图片描述](http://img.blog.csdn.net/20160624153645587)
 
