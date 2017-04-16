@@ -499,8 +499,8 @@ orientation: landscape/portrait
 #### 参考
 
 ```js
-HTML5秘籍
-HTML5移动开发 Estelle Weyl
+HTML5秘籍 // good!
+HTML5移动开发 Estelle Weyl // 略水,最后一章很有价值
 ```
 
 

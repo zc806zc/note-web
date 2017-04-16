@@ -38,7 +38,7 @@
   * [结构与行为](ch1-html5.md)
     * [ch1-HTML5](ch1-html5/ch1-html-basic.md)
       * [01-HTML5-动骨换血的基础工程](ch1-html5/02-html5ji-chu.md)
-      * [01-HTML5-三剑客简述\(深入我也深入不了啊\)](ch1-html5/02-html5ji-chu-2.md)
+      * [01-HTML5-三剑客简述\(关键是，要深入我也深入不了啊\)](ch1-html5/02-html5ji-chu-2.md)
       * [02-HTML5-补充](ch1-html5/02-html5ji-chu-3.md)
       * [01-Canvas-基础](ch4-canvasyou-xi-kai-fa/01-canvasji-chu-1.md)
       * [01-Canvas-游戏开发](ch4-canvasyou-xi-kai-fa/01-canvasji-chu-2.md)
