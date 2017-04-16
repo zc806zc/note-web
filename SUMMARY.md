@@ -36,7 +36,7 @@
     * [ch2-响应式设计](ch3xiang-ying-shi-she-ji.md)
       * [02-网站解构](ch3xiang-ying-shi-she-ji/02wang-zhanjie-6784-landy.md)
     * [ch3-Canvas-Anim](ch3-canvas-anim.md)
-      * [01-Canvas-基础](ch4-canvasyou-xi-kai-fa/01-canvasji-chu-1.md)
+      * [01-Canvas-基础篇](ch4-canvasyou-xi-kai-fa/01-canvasji-chu-1.md)
       * [01-Canvas-游戏开发](ch4-canvasyou-xi-kai-fa/01-canvasji-chu-2.md)
   * [结构与行为](ch1-html5.md)
     * [ch1-HTML5](ch1-html5/ch1-html-basic.md)
