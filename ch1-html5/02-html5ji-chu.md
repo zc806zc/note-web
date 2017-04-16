@@ -1,31 +1,29 @@
 #### 积极拥抱**HTML5**
-
-* [missing-manual-website](http://www.prosetech.com/html5) \| [code-dl](http://www.oreilly.com/pub/missingmanuals/html5tmm2e) 
-* [www.standardista.com/mobile/](http://www.standardista.com/mobile/)
-
-* 元素更迭史
+* 基础
+    * HTML5秘籍 [website](http://www.prosetech.com/html5) \| [code-dl](http://www.oreilly.com/pub/missingmanuals/html5tmm2e) 
+    * HTML5移动开发 [www.standardista.com/mobile/](http://www.standardista.com/mobile/)
+    * 元素更迭史 https://www.w3.org/TR/html5-diff/
+        * 废弃
+        * 新生
+        * 幸存
+    *  HTML5 再没有内联元素块元素的概念了，因为那是基于外观的定义
+ 
 
 ```js
-https://www.w3.org/TR/html5-diff/ // 查看变动
-
-// 1. 废弃
-<nobr>  // 使用css的white-space: nowrap代替
+<nobr>  // 被css white-space: nowrap 代替
 
 // 可访问性的失败尝试
-tabindex = -1 // 不起作用 可编程聚焦
-tabindex = 0  // 给一个链接或表单元素之外的元素提供键盘访问的同时又不改变的页面顺序
-// accesskey
+tabindex = -1|0  
+accesskey // 按键紊乱
 
-// 2. 新生
 <nav><footer><time><object>...
 <abbr title>
-// <base>的target _blank
-// <embed> // 规范来说是新的 加入插件
+<base>的target _blank
+<embed> // 对规范来说是新的 加入插件
 
-// 3. 幸存者
-// 强势生存下来 
-<iframe>   Youtube窗口, 广告和谷歌搜索框 // srcdoc sandbox seamless
-// 或者语义发生变化 
+<iframe>   Youtube窗口, 广告和谷歌搜索框 
+// 新增srcdoc sandbox seamless等属性
+ 
 <small>  // 附属细则，页脚的法律条款
 <hr>     // 主题转换 
 <s>      // 不准确或不相关的内容
@@ -33,16 +31,16 @@ tabindex = 0  // 给一个链接或表单元素之外的元素提供键盘访问
 <strong> // 重要
 <em>     // 强调  
 <del> <ins> // 原来<s><strike>
-<wbr> // 换行机会 阅读目的 但<nobr>却挂了...
+<wbr> // 换行机会 阅读目的 但<nobr>却挂了... 
 
-// HTML5 没有内联元素块元素的概念 // 因为那是基于外观的定义
-eg. 语义上 <a>里可以放置任何东西了
-// 且<a href="tel:16505551212">xxx</a>
-// href也不是必需的
+<a>里可以放置任何东西了
+<a href="tel:16505551212">xxx</a>
+// href也不是必需的了
 
-// 现分为 
-短语元素 区段元素 // 但即使语义限制也不能位于短语元素中
-heading元素 metadata
+短语元素 
+区段元素 // 但语义限制也不能位于短语元素中
+heading 
+metadata
 flow流元素
 嵌入式embedd元素
 交互式interactive元素
@@ -52,12 +50,11 @@ contenteditable spellcheck
 contextmenu
 draggable dropzone
 
-
 // 其他
-// <ol> 的 reversed
-// input和textarea 的autofocus required placeholder
-// <script> type="application/xml"
-// <html lang="en"> // 给不同<div>指定不同的lang，方便屏幕阅读器
+<ol> 的 reversed
+input和textarea 的autofocus required placeholder
+<script> type="application/xml"
+<html lang="en"> // 方便屏幕阅读器
 ```
 
 * 浏览器与设备兼容
@@ -89,13 +86,12 @@ ff插件：HTML Validator // 基于HTML Tidy,可以美化代码
 #### 动骨-HTML的语义化
 
 * 语义化
+
   * header \| main\(一个页面只有一个\) \| aside\(附注\) \| section \| footer
 
   * figure 插画 不同于一般的img 即使缺失文章内容也是完整的
 
-
 ![](/assets/h5-grammar755.png)
-
 
 from [http://www.cnblogs.com/polk6/p/5320428.html\](#)
 
