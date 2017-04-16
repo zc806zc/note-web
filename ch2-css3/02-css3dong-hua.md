@@ -4,15 +4,15 @@
 
 * [小丑汽车技术](https://github.com/estelle/clowncar) 把多张大图片装进一个svg
 
-* CSS3 - 把下一代CSS试验性地拆分成一组独立的标准模块
+* CSS3 - 把下一代CSS试验性地拆分成一组组独立的标准模块
 
   * 而且是还在试验和反馈的循环中。。
 
-  * 查看兼容现状  http://tinyurl.com/css3-stages
+  * 查看兼容现状  [http://tinyurl.com/css3-stages](http://tinyurl.com/css3-stages)
 
   * Modernizr 检测支持情况
 
-  * -prefix-free自动添加前缀 http://leaverou.github.io/prefixfree 
+  * -prefix-free自动添加前缀 [http://leaverou.github.io/prefixfree](http://leaverou.github.io/prefixfree)
 
 ```js
 // <style>的scoped // 避免影响宿主网站 但没得到支持
@@ -76,7 +76,9 @@ tansform-origin: 0% 0%; // 参照点
 [3D变换](http://tinyurl.com/3d-transitions)
 ```
 
-* 移动性能 - 标准反模式 , s  tyle block被JS提取作为localStorage保存起来  , 并把keyd的值保存在cookie字符串
+* 移动性能 - 标准反模式 , s  
+  tyle block被JS提取作为localStorage保存起来  
+  , 并把keyd的值保存在cookie字符串
 
 * 多栏文本
 
@@ -89,11 +91,12 @@ column-span: all;
 
 * web字体
 
-  * Font Squirrel http://www.fontsquirrel.com（推荐Callographic,Novelty,Retro    字体）
+  * Font Squirrel [http://www.fontsquirrel.com（推荐Callographic,Novelty,Retro](http://www.fontsquirrel.com（推荐Callographic,Novelty,Retro)  
+    字体）
 
   * Webfont Generator
 
-  * Google Fonts http://www.google.com/fonts
+  * Google Fonts [http://www.google.com/fonts](http://www.google.com/fonts)
 
 ```js
 // 还面临的问题

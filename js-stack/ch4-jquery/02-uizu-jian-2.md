@@ -1,36 +1,25 @@
 #### **导航**
 
-* 导航处的下拉菜单
-  * [zoom](https://zoom.us/)
+* 导航处的下拉菜单 [zoom](https://zoom.us/) 应该默认设置为鼠标滑过显示
 
 ```js
-本来就应该默认设置为鼠标滑过显示。
-要勾引别人点击就先让人少点击几次。
-
-实现思路：CSS覆盖一下
-
 .nav > li:hover .dropdown-menu {display: block;}
 ```
 
 ![](http://img.blog.csdn.net/20160624142445478)
 
+* 导航处的双杠响应，而按钮要有被按得凹陷的感觉  \| photoshoot网站
+
+![](http://img.blog.csdn.net/20160624150523029)  
+![](http://img.blog.csdn.net/20160624150558076)
+
 ---
 
 #### **效果**
 
-* 悬停时
-  * [haobtc](https://haobtc.com/)
+* 悬停时 [haobtc](https://haobtc.com/) 鼓动别人做出选择 例如卡片的弹起
 
-```
-别人可能在做选择，例如----“买不买”
-而有些人可能真有选择犹豫症，这时候，你就推他一把。。
-
-
-悬停在这个卡片上，卡片会往上弹起来。
-
-实现思路：纯纯CSS的动画？？
-但做出来效果很简单粗暴，没有示例网站那么流畅。
-
+```js
 body {
 background-color: #F5F5F5;
 }
@@ -57,11 +46,8 @@ transition: 0.15s ease-in-out;
 
 ---
 
-* 导航处的普通标签双杠响应，而按钮要有被按得凹陷的感觉
-  * [photoshoot](https://photoshoot.io/)
-
-![](http://img.blog.csdn.net/20160624150523029)  
-![](http://img.blog.csdn.net/20160624150558076)
+* 
+*  * 
 
 ---
 
