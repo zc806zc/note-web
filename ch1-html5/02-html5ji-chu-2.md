@@ -1,6 +1,6 @@
 ### Web Storage-数据/离线存储（做离线小游戏）
 
-* 原理：（apache）从浏览器的缓存中分出来的一块缓存区，与传统的客户端应用同场竞技
+* 原理：（AppCache）从浏览器的缓存中分出来的一块缓存区，与传统的客户端应用同场竞技
 * 存储类型 
   * localStorage 本地存储 上限5M
   * sessionStorage 
@@ -100,10 +100,13 @@ request.onsuccess = function(event) {
 * [迷宫游戏](https://www.gitbook.com/book/luo0412/white/edit#) 来自HTML5秘籍
 
 * File API
+
   * Blob 一大块数据 逐块处理
   * readAsDataURL\(\)
+
 * IndexDB
   * 代替已经废弃但还健在的Web SQL Database
+  * [IndexedDBShim](https://github.com/axemclion/IndexedDBShim)
 
 ```js
 // IndexDB
@@ -118,11 +121,13 @@ request.onsuccess = function(event) {
 ```
 
 * 离线存储的优点
+
   * 创建离线应用 离线访问
   * 超级定制缓存 性能优化
   * 改进本地存储 简单快捷
 
 * 离线存储
+
   * manifest file 描述文件
   * CACHE \| NETWORK（总是服务器获取） \| FALLBACK 是否在线而互换 \| SETTING:（prefer-online）
   * 不要缓存有查询（字符串）的页面
@@ -138,15 +143,15 @@ navigator.onLine // online| offline
 ### Web Socket-服务器通信（主要精力学习这个）
 
 * 通信方式 \| 服务器放送事件
-* 简单试验 http://www.websocket.org/echo.html
+* 简单试验 [http://www.websocket.org/echo.html](http://www.websocket.org/echo.html)
 * 各种语言实现
-  * PHP \| http://code.google.com/p/phpwebsocket
-  * Ruby \| http://github.com/igrigorik/em-websocket
-  * Python \| http://code.google.com/p/pywebsocket
-  * .NET \| http://superwebsocket.codeplex.com
-  * Java \| http://jwebsocket.org/
-  * Node.js http://github.com/miksago/node-websocket-server
-  * Kaazing http://kaazing.com/products/html5-edition.html
+  * PHP \| [http://code.google.com/p/phpwebsocket](http://code.google.com/p/phpwebsocket)
+  * Ruby \| [http://github.com/igrigorik/em-websocket](http://github.com/igrigorik/em-websocket)
+  * Python \| [http://code.google.com/p/pywebsocket](http://code.google.com/p/pywebsocket)
+  * .NET \| [http://superwebsocket.codeplex.com](http://superwebsocket.codeplex.com)
+  * Java \| [http://jwebsocket.org/](http://jwebsocket.org/)
+  * Node.js [http://github.com/miksago/node-websocket-server](http://github.com/miksago/node-websocket-server)
+  * Kaazing [http://kaazing.com/products/html5-edition.html](http://kaazing.com/products/html5-edition.html)
 
 ---
 
@@ -171,9 +176,11 @@ clearPosition()
 * 不同的线程不能同时占用相同的内存区域，所以把费时的任务放到后台
 
 * 花样
+
   * 在多个任务中重用Web Worker
   * 创建多个Web Worker
   * 在一个Web worker中创建另一个web worker
+
 * 用处
   * 通过下载数据
   * 利用WW执行周期性任务
@@ -182,15 +189,18 @@ clearPosition()
 
 ### 历史管理
 
-* history.back\(\) \| forward\(\) \| go\(\) 
+* history.back\(\) \| forward\(\) \| go\(\)
 
 * 新功能核心 - 改变URL但不刷新
+
   * pushState\(\)    存入新状态
   * onPopState\(\) 返回那种状态
 
 * 出现过的解决方案 - hashbang URL
+
   * 创建额外页面
   * 事实证明失败了
+
 * 相关技术
   * 服务端包含技术
   * Adobe Dreamweaver web模板功能
@@ -209,6 +219,7 @@ clearPosition()
 * Page Visibility API - 让开发人员知道用户什么时候正在看着页面，而什么时候页面是隐藏的
 
 * File API - 操作文件
+
   * FileReader - 异步文件读取机制 
   * 能读取拖放上来的文件 实现拖放上传功能
   * 使用XHR上传文件
