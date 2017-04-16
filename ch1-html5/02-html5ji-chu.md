@@ -4,7 +4,6 @@
 * HTML5移动开发 [www.standardista.com/mobile/](http://www.standardista.com/mobile/)
 * 元素更迭史 [https://www.w3.org/TR/html5-diff/](https://www.w3.org/TR/html5-diff/)
   * 废弃
-
   * 新生
   * 幸存
 
@@ -60,7 +59,7 @@ contextmenu
 draggable dropzone
 ```
 
-* 浏览器与设备兼容 - {% em %} 平稳退化, 积极拥抱HTML5 { % endem %} 
+* 浏览器与设备兼容 - {% em %} 平稳退化, 积极拥抱HTML5 {% endem %} 
 
   * Modernizer \| html5shim/html5.js
 
