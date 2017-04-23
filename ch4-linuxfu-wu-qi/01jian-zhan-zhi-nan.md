@@ -5,6 +5,7 @@
   * [phpstudy安装](https://bbs.aliyun.com/read/165947.html?spm=5176.bbsr165947.0.0.sl6Fe6&displayMode=1&page=1#527830) \| [oneinstack-install](https://oneinstack.com/install/)
   * [mysql -远程访问授权](https://zhidao.baidu.com/question/358796386.html) \| [ueditor-无法创建目录](http://blog.csdn.net/chengyi_l/article/details/46377307)
   * [开放端口](http://www.server110.com/linux/201308/740.html) \|  [腾讯云-公网ip无法访问](http://bbs.qcloud.com/forum.php?mod=viewthread&tid=12878&highlight=公网ip)
+  * mysql-ubuntu 远程访问 http://blog.csdn.net/guguant/article/details/53066280
 
 ```js
 /phpstudy/mysql/bin/mysql -h 127.0.0.1 -u root -p // 进入数据库, 然后回车输入密码
