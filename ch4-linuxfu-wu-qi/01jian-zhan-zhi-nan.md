@@ -1,11 +1,11 @@
 #### VPS
 
 * Virtual Private Server 虚拟专用服务器
-* 购买时  要考量一下它的扩展技术
+* 购买时要考量一下它的扩展技术
   * FrontPage
   * 多媒体
   * FSO组件
-  * 邮件发送     \| 文件上传
+  * 邮件发送 \| 文件上传
 * 域名解析 DNS
   * A类型 优先解析
   * CNAME 别名指向
@@ -50,17 +50,20 @@ sudo iptables-save
 ```
 
 * HTTPS升级
+
   * [HTTPS升级指南-ruanrf](http://www.ruanyifeng.com/blog/2016/08/migrate-from-http-to-https.html)
 
   * [阿里云证书配置](https://yundun.console.aliyun.com/?spm=5176.2020520163.1001.87.ZMNtx7&p=cas#/cas/download/214052692260308) \| [AMH实现\(还没试过\)](https://www.gitbook.com/book/luo0412/white/edit#)
+
   * 证书可能只用配ngnix,不用配tomcat
   * 可能问题
     * 不能自动加载index.php/html 而是跳到damain.com
     * 文件夹权限问题
     * 即使显示https访问，照样显示图片可能被劫持不安全
     * 强制HTTPS访问，但子文件照样可以http直接访问
-    * 翻墙貌和浏览器貌似也有影响，注意及时清理缓存      ，必要时重新开启浏览器或换个浏览器
-    * 重启nginx后丢失nginx.pid的解决方法       /usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf 
+    * 翻墙貌和浏览器貌似也有影响，注意及时清理缓存，必要时重新开启浏览器或换个浏览器
+    * 重启nginx后丢失nginx.pid的解决方法
+       /usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf 
   * Apache证书配置 phpstudy/server/httpd/conf/extra/httpd-ssl.conf
 
 ```js
@@ -160,10 +163,10 @@ sudo ./../tomcat/bin/startup.sh // 先cd进去 再 ./startup.sh
 * 收购 合并 上市
 * 建站能力
   * 了解客户需求 + 美工 + 技术协调 + 发布推广 + 营销 + 维护 + ...
-* 市  场调查找切入点 考量受众
+* 市场调查找切入点 考量受众
 * 网站规模与类型
 * 网站风格与框架
-  * 没有个性    地套用模板 
+  * 没有个性地套用模板 
   * 设计师的网站（图片 + 动画，高流量卡顿） 
   * 工程师的网站
 
