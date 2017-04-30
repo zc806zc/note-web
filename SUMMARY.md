@@ -143,6 +143,7 @@
     * [ch2-Android](java-stack/ch2-android/ch2-android.md)
       * [01-Android-基础](java-stack/ch2-android/01-androidji-chu.md)
       * [01-Android-布局](java-stack/ch2-android/01-androidbu-ju.md)
+      * [02-App后台架构](java-stack/ch2-android/02-apphou-tai-jia-gou.md)
     * [ch3-Java-Web](java-stack/ch3-java-web.md)
       * [01-JSP-IDE的坑](java-stack/ch3-java-web/01-jsp-ide.md)
       * [02-JSP-基础篇](java-stack/ch3-java-web/02-jspji-chu.md)
