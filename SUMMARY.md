@@ -93,7 +93,7 @@
       * [02-JS高级程序设计6](js-stack/ch1-jsji-chu/02-jsgao-ji-cheng-xu-she-ji-6.md)
   * [JS疲劳](js-stack/ch5-javascriptkuang-jia-pian.md)
     * [ch1-三足鼎立](js-stack/ch5-javascriptkuang-jia-pian/ch2san-zu-ding-li.md)
-      * [01-React入门](js-stack/ch5-javascriptkuang-jia-pian/02-reactji-chu.md)
+      * [01-React技术栈-小结](js-stack/ch5-javascriptkuang-jia-pian/02-reactji-chu.md)
       * [02-Angular1](js-stack/ch6-js-web/03-angular-basic.md)
       * [02-迈向Angular2](js-stack/ch5-javascriptkuang-jia-pian/02mai-xiang-angular2.md)
       * [02-Angular2-语法补充](js-stack/ch5-javascriptkuang-jia-pian/02-angular2-basic2.md)
