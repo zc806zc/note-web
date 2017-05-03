@@ -13,7 +13,7 @@
 
 * 笔记/博客
 
-  * [~~sphinx~~](http://www.sphinx-doc.org/en/stable/) \| [~~http://www.mkdocs.org~~](http://www.mkdocs.org/~~]%28http://www.mkdocs.org/%29~~)~~ ~~\(没试\)
+  * [~~sphinx~~](http://www.sphinx-doc.org/en/stable/) \| [~~http://www.mkdocs.org~~](http://www.mkdocs.org/~~]%28http://www.mkdocs.org/%29~~) \(没试\)
   * 自建文档 [Docute](https://docute.js.org/#/home) \| JSDOCS
   * Gitbook\|看云：[Gitbook插件安装配置- 星夜雨年](http://www.tuicool.com/articles/JjQ3qm) \| [Gitbook插件件2](http://www.tuicool.com/articles/zee2ui)
   * Jekyll \| HEXO : [ruanyifeng-jekyll](http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html) \| [jekyll-Sites](https://github.com/jekyll/jekyll/wiki/Sites)
@@ -101,9 +101,11 @@ js filename.js执行
 ```
 
 * 线框图与原型设计-工具
+
   * Balsamiq
 
 * 图像处理
+
   * [6 款 Javascript 的图像处理库 - Tine](https://juejin.im/post/58c0edac0ce4630054592a78?utm_source=gold_browser_extension)
 
 
