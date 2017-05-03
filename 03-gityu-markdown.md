@@ -1,38 +1,37 @@
 #### **Git/Github/SVN...**
 
-* Git常用命令
-  * [猴子都懂的Git教程](http://backlogtool.com/git-guide/cn/stepup/stepup1_1.html)
+* [猴子都懂的Git教程](http://backlogtool.com/git-guide/cn/stepup/stepup1_1.html)
+* Clone版常用命令（就是仓库是已经存在的）
+  * git clone \(-b master\) https://github.com/luo0412/luo-android.git
+  * git add -A
+  * git status
+  *  git commit -m "helloWorld"
+  * git push origin master
+* 自创版常用命令
+  * git init
+  * git remote add origin https://github.com/luo0412/tmp.git
+  * add sth.
+  * git commit -m "first commit"
+  * git push -u origin master // -u
+* 四种分支
+  * master
+  * feature
+  * hotfix
+  * release
 
 ```js
-git clone (-b master) https://github.com/luo0412/luo-android.git
-git add . / git add -A
-git status 
-git commit -m "helloWorld"
-git push origin master
-
-git init
-git remote add origin https://github.com/luo0412/tmp.git
-add sth.
-git commit -m "first commit"
-git push -u origin master // -u
-// git push -f origin master // 强制更新
+git push -f origin master
 
 touch .gitignore/README.md
-// git add README.md
+git add README.md
 
 git diff HEAD // HEAD指向的是现在使用中的分支的最后一次更新 
 
-
-// 四种分支 
-master/feature/hotfix/release
-
-git checkout master // 先切换到master
+git checkout master 
 git merge --no-ff feature-A  
-// git branch -d feature-A // 删除分支
+git branch -d feature-A // 删除分支
 
-
-// 建立演示分支
-// git checkout --orphan gh-pages
+git checkout --orphan gh-pages
 
 // rebase/简化历史记录 加强理解
 git reset --hard HEAD~ // 现在暂时取消刚才的合并
@@ -64,17 +63,15 @@ git进行了三方面的合并，
 最后生成一个分支 // 也就是最终合并得到的master分支
 ```
 
-* Markdown/Gitbook/...
-  * [Git基础语法](http://wowubuntu.com/markdown/#header) \| [Github版](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+* Markdown/Gitbook
+  * [Git基础语法](http://wowubuntu.com/markdown/#header) \| [Github官方语法](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+  * Markdown不支持的可以写html标签
+  * 空行就是换行 
 
 ```js
-Markdown不支持的可以写html标签
-
 // 二级标题可能自带下划线
 
-// 换行
-空行就是换行 
-// 用了换行符<br>,要在此之前加两个以上的空格
+用了换行符<br>,要在此之前加两个以上的空格
 
 // 列表嵌入 
 四个空格或一个tab  // 同时注意换行符的效果
@@ -98,7 +95,6 @@ Markdown不支持的可以写html标签
 // 链接
 [百度](https://www.baidu.com/)
 // [Qmen](q)
-
 
 // 隐式链接
 I get 10 times more traffic from 
