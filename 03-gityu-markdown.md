@@ -1,16 +1,32 @@
 #### **Git/Github/SVN...**
 
 * [猴子都懂的Git教程](http://backlogtool.com/git-guide/cn/stepup/stepup1_1.html)
-* Clone版常用命令（就是仓库是已经存在的）
-  * git clone \(-b master\) https://github.com/luo0412/luo-android.git
+* 我认为, 另外两个同等级别地，一样改变了思维的事情是
+  * 使用Linux\(一切皆资源\)
+  * 弃用百度，拥抱Google（翻墙看一下真实的世界）
+
+```js
+翻墙以后，用自己蹩脚的英语看了那些国家对于我们国家的“批评”
+挺好笑的
+不是评论好笑
+而是我想了一个问题
+如果有一样东西你觉得不好，是彻底避开隔绝在外
+还是充分认识以后，再用理性否定或重新认识它们呢
+
+有一本书很好，但是我读晚了，那就是《常识》
+```
+
+* 仓库已经存在
+  * git clone \(-b master\) [https://github.com/luo0412/luo-android.git](https://github.com/luo0412/luo-android.git)
   * git add -A
   * git status
-  *  git commit -m "helloWorld"
+  * git commit -m "helloWorld"
   * git push origin master
-* 自创版常用命令
+* 本地自建仓库
   * git init
-  * git remote add origin https://github.com/luo0412/tmp.git
-  * add sth.
+  * git remote add origin [https://github.com/luo0412/tmp.git](https://github.com/luo0412/tmp.git)
+  * 做点什么
+  * git add .
   * git commit -m "first commit"
   * git push -u origin master // -u
 * 四种分支

@@ -2,7 +2,7 @@
 
 * [简介](README.md)
 * [\[1\] 全栈](73011-quan-zhan.md)
-  * [ch1-全栈启蒙](ch2quan-zhan.md)
+  * [ch1-入手全栈](ch2quan-zhan.md)
     * [01-改变思维第一步-使用Git](03-gityu-markdown.md)
     * [01-前端生存手册](01qian-duan-sheng-cun-shou-ce.md)
     * [01-Web基础开篇](ch2quan-zhan/03-webcheng-xu-she-ji.md)
@@ -10,7 +10,7 @@
     * [03-Java和JS全端开发](ch2quan-zhan/01-jsyu-java-quan-duan-kai-fa.md)
     * [03-RESTful-交接前后端](ch2quan-zhan/02-restfullian-jie.md)
     * [04-如何防止被累死](js-stack/ch5-javascriptkuang-jia-pian/02zen-yao-fang-zhi-bei-lei-si.md)
-  * [ch2-第一次减速](ch5zong-he.md)
+  * [ch2-学会减速](ch5zong-he.md)
     * [01-计算机导论](toolbox/ch1-note/01ji-suan-ji-dao-lun.md)
     * [01-程序员的数学](toolbox/ch1-note/01ji-suan-ji-de-shu-xue-ji-chu.md)
     * [02-规格书/计划书](toolbox/ch3wen-dang/01gui-hua-shu.md)
