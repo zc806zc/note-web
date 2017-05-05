@@ -2,16 +2,19 @@
 
 * [源码下载](https://github.com/oreillymedia/programming_javascript_applications) \| [在线阅读](http://chimera.labs.oreilly.com/books/1234000000262/pr01.html)
 * 进入的新的领域
+
   * 在操作系统上用web技术来构建原生应用
   * ~~firefox / Chrome操作系统~~ -- Node-Webkit
   * 移动端
   * 服务器端 Node.js/IO.js
 
   * 硬件方面/嵌入系统/机器人
+
     * Arduino
     * tessel
     * espruino
     * nodebots
+
 * 阿特伍德定律： 任何可以用JS实现的应用，最终都会被JS改写
 * 性能
   * 代码执行可以提升的方面 垃圾回收 和 动态绑定
@@ -28,6 +31,7 @@
 * 减少隐式副作用 -- 作用域，共享变量或属性
 
 * 传入函数之前先复制，不要将原始值直接传入
+
 * 纯函数：调用时不改变任何外部变量
 * 函数的正确打开方式
   * 不能在条件语句中声名
@@ -37,9 +41,7 @@
   * var bar = { f: func hello\(\) {} }  具有名称的特殊匿名函数
   * 尽量不要用构造函数进行函数声明
 
-#### JS**对象**
-
-#### JS**模块**
+#### JS**对象与模块**
 
 #### **关注点分离**
 
@@ -51,9 +53,15 @@
 * Node检查器 ： node-inspector
 * 性能分析 
 
+---
+
 #### **构建RESTful API**
 
+---
+
 #### **特性开关**
+
+---
 
 #### **应用工程国际化**
 
