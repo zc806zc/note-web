@@ -2,7 +2,7 @@
 
 * Angular + Ionic
 * Vue + Vux 
-* ~~jQuery/Zepto + Framework7\(iOS 和 Android 双皮肤\) ~~
+* jQuery/Zepto + Framework7\(iOS 和 Android 双皮肤\)
 * React \(Onsen UI/TouchstoneJS/Reapp + ...\)
 * Sencha Touch 
 
@@ -37,6 +37,7 @@
 * SUI - 基于bootstrap，同时她也是一套设计规范
 
 * [uiKit](https://github.com/uikit/uikit) - 一款轻量级、模块化的前端框架，可快速构建强大的web前端界面
+
 * H-ui 
   * 轻量级前端框架，简单免费，兼容性好
   * 适用于中国网站
@@ -49,6 +50,7 @@
 * html5-boilerplate
 
 * Meteor -新一代的开发即时web应用的开源框架，它能帮助你在最少的时间内完成开发。
+
 * Foundation  全球最精妙的前端响应框架
 * Materialize  基于 **材料设计**的一个现代化的响应式前端框架
 * Pure.css
@@ -62,6 +64,7 @@
 * DHTMLX Touch 一个完整的框架
 
 * Siimpler
+
 * LimeJS  **在线游戏** 开发
 * Enyo 很多流行的 **手机公司**开发的重要应用都是采用该框架实现的。
 * Fries 是一款 **稳定**的HTML-CSS-JS框架
