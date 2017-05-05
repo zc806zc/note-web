@@ -9,25 +9,12 @@
         "splitter",
         "tbfed-pagefooter",
         "expandable-chapters-small",
-        "emphasize",
-        "prism", 
-        "-highlight",
-        "jsbin",
-        "atoc"
+        "emphasize"
     ],
     "pluginsConfig": {
         "tbfed-pagefooter": {
             "modify_label": "全书最后修改 ",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
-        },
-        "prism": {
-            "css": [
-                "prismjs/themes/prism-coy.css"
-            ]
-        },
-        "atoc": {
-            "addClass": true,
-            "className": "atoc"
         }
     }
 }
