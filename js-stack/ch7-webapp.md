@@ -1,9 +1,9 @@
 #### WebApp阵营
 
-* **Angular + Ionic**
-* **Vue + Vux **~~**\(基于 WeUI\)**~~
-* ~~**jQuery** + Framework7\(iOS 和 Android 双皮肤\) ？？~~
-* React + Onsen UI/TouchstoneJS/Reapp
+* Angular + Ionic
+* Vue + Vux 
+* ~~jQuery/Zepto + Framework7\(iOS 和 Android 双皮肤\) ~~
+* React \(Onsen UI/TouchstoneJS/Reapp + ...\)
 * Sencha Touch 
 
 ---
@@ -21,19 +21,21 @@
 
 * 腾讯
   * WeUI -- 为微信 Web 服务量身设计
-  * J    X     腾讯前端 构建和组织大规模、工业级的Web App。
+  * JX 腾讯前端 构建和组织大规模、工业级的Web App。
 * 阿里巴巴
   * SUI MobileUI库   -阿里巴巴国际UED前端团队出品的移动端
-  *  Arale 支付宝前端
+  * Arale 支付宝前端
 * 百度
   * Clouda -- 基于node.js的Webapp开发框架
-  * G    MU     百度前端
-* Z  UI   蝉道 简单易用、轻量级、易于定制
+  * GMU 百度前端
+* ZUI 蝉道 简单易用、轻量级、易于定制
 
 * MUI -- 最接近原生App体验的前端框架
+
 * Frozen UI \| Jingle \| [AUI](http://www.auicss.com/) \| [AliceUI](https://github.com/aliceui/aliceui.github.io)
 
 * SUI - 基于bootstrap，同时她也是一套设计规范
+
 * [uiKit](https://github.com/uikit/uikit) - 一款轻量级、模块化的前端框架，可快速构建强大的web前端界面
 * H-ui 
   * 轻量级前端框架，简单免费，兼容性好
@@ -41,9 +43,11 @@
 * jQTouch  -- 基于WebKit的浏览器
 
 * [AndroidUIX](http://androiduix.com/) -- Make a high-performance mobile Web App with Android UI
+
 * Semantic UI -- 基于自然语言有效原则的UI组件框架
 
 * html5-boilerplate
+
 * Meteor -新一代的开发即时web应用的开源框架，它能帮助你在最少的时间内完成开发。
 * Foundation  全球最精妙的前端响应框架
 * Materialize  基于 **材料设计**的一个现代化的响应式前端框架
@@ -56,6 +60,7 @@
 * kissy-- 是一款跨终端、模块化、高性能、使用简单的 JavaScript 框架。
 
 * DHTMLX Touch 一个完整的框架
+
 * Siimpler
 * LimeJS  **在线游戏** 开发
 * Enyo 很多流行的 **手机公司**开发的重要应用都是采用该框架实现的。
