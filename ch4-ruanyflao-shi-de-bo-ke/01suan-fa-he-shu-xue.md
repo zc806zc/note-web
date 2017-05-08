@@ -1,8 +1,7 @@
 #### 算法与数学
 
 * 识别图像边缘
-  * http://www.ruanyifeng.com/blog/2016/07/edge-recognition.html
-  * 
+  * [http://www.ruanyifeng.com/blog/2016/07/edge-recognition.html](http://www.ruanyifeng.com/blog/2016/07/edge-recognition.html)
 
 ```js
 乘积越大就说明越匹配，
