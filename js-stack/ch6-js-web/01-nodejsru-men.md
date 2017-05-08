@@ -1,13 +1,18 @@
-#### **Node.js**
+#### **Node.js**安装与基础
 
-* 安装
-  * [npmjs.org](http://npmjs.org)
+* npm
+* package.json
+* express \| socket.io [expressjs.com](https://www.gitbook.com/book/luo0412/white/details#) \| [http://socket.io/docs/](https://www.gitbook.com/book/luo0412/white/details#)
+* [Node-App的托管](https://github.com/nodejs/node-v0.x-archive/wiki/node-hosting) Joyent
+* ~~Netscape Enterprise Server \(早期类似产品\)~~
+  * 为HTTP应用程序编码
 
 ```js
+// node.js安装
 Installing nodejs-legacy // ubuntu wire error或许可以解决
 node filename.js
 
-// npm
+// 常见命令
 npm init
 npm install -g express
 npm install yuidocjs --save // 将自动保存到package.json
@@ -16,50 +21,10 @@ npm publish
 npm update
 npm uninstall
 
-// express
-npm install express --save
-npm install connect --save
-
-// socket.io
-npm install express --save
-npm install socket.io --save
-
-// 项目文件结构
-src 用于开发
-dist 生产就绪的版本 // 构建处理,自动生成
-```
-
-* 基础
-  * [expressjs.com](http://expressjs.com/en/4x/api.html) \| [http://socket.io/docs/](http://socket.io/docs/)
-  * [Node-App的托管](https://github.com/nodejs/node-v0.x-archive/wiki/node-hosting)
-
-```js
-Netscape Enterprise Server // 类似前身  
-为HTTP应用程序编码
-
-
-// 当用作网络工作环境
-加载http模块 
-AMD require()
-
-// 划分Node.js应用程序分布至多个文件
-
-// 框架
-
-// Express
-// Sencha Lab的Connect中间件
-
-// Socket.IO
-BS之间的双向通信
-多浏览器独立分离 
-多用户连接的在线应用程序
-
+// socket.io演示如下
 socket.emit()
 io.emit("new-data-on-server","Message Text")
 socket.broadcast.emit("new-data-on-server","Message Text")
-
-// Node.js的APP托管
-Joyent
 ```
 
 * 基础
@@ -70,110 +35,45 @@ var index = 2, length = process.argv.length;
 for (; index < length; index++) {
     console.log(process.argv[index]);
 }
-
-
-// package.json示例
-{
-    "name": "my-test-project",
-    "version": "0.0.1",
-    "description": "This is my test project",
-    "homepage": "https://github.com/denodell/my-test-project",
-
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/denodell/my-test-project.git"
-    },
-    "author": {
-        "name": "Den Odell",
-        "email": "denodell@me.com"
-    },
-
-    "dependencies": {
-        "async": "0.9.0",
-        "request": ">=2.36.0",
-        "underscore": "~1.6.0",
-        "promise-the-earth": "git+ssh://github.com/denodell/promise-the-earth.git" // cdn?
-    },
-
-    "devDependencies": {
-        "yuidocjs": "~0.3.50"
-    }
-}
 ```
+
+---
 
 #### **构建工具及自动化**
 
-* 基础
-  * [gulpjs](http://gulpjs.com) \| [grunt使用示例](http://developer.51cto.com/art/201506/479127.htm) \| [grunt插件](http://www.gruntjs.net/plugins)
-  * [yaml.org](http://yaml.org)
-
-```js
-// 日复一日的工作流程
-1.资源管理 : 图像压缩
-2.代码编写
-    JS静态代码分析
-    单元测试
-    代码缩编
-    利用sass处理css
-3.改进工作流，创建生产就绪的代码
-
-    
-// Gulp(Grunt)/webpack/bower??
-JavaScript任务运行器
-"流式"构建系统
-
-// 相比Grunt的优势
-利用Node.js的Stream, 
-使得一个任务的输出可以进行feed和pipe
-而成为另一个任务的输入，
-不需要一个在硬盘写入临时文件的中途步骤，
-更高效
-
-配置信息不再是一个独立的很大的配置对象，
-而是链式调用
-
-专门设计成细分化的任务
-
-// YAML
-更容易被人类阅读的语言格式 
-file.readYAML() 
-
-
-// 第三方库和框架的管理 
-保证安装准确的版本
-[Bower](http://bower.io)
-[grunt-bowercopy](https://github.com/timmywil/grunt-bowercopy)
-[gulp-bower](https://github.com/zont/gulp-bower)
-
-// 其他 
-spm 
-component 
-Jam
-```
+* 自动化构建解决日复一日的工作流程
+  * 资源管理 : 图像压缩
+  * 代码编写（JS静态代码分析，单元测试，代码缩编， 利用sass处理css）
+  * 改进工作流，创建生产就绪的代码
+  * 确保版本号
+* [gulpjs](http://gulpjs.com) \| [grunt使用示例](http://developer.51cto.com/art/201506/479127.htm) \| [grunt插件](http://www.gruntjs.net/plugins)
+* gulp较grunt的优势
+  * 利    用Node.js的Stream,    使得一个任务的输出可以进行feed和pipe    ，而成为另一个任务的输入不    需要一个在硬盘写入临时文件的中途步骤，    更高效
+  * 配    置信息不再是一个独立的很大的配置对象，    而是链式调用
+  * 专门设计成细分化的任务
+* [yaml.org](http://yaml.org)
+  * 更容易被人类阅读的语言格式 
+  * file.readYAML\(\)
+* webpack \| prepack
+* bower http://bower.io
+  * https://github.com/timmywil/grunt-bowercopy
+  * https://github.com/zont/gulp-bower
+* ~~其他~~
+  * spm
+  * component
+  * Jam
+* gulp/webpack/bower等工具的差别
 
 * 使用示例
 
 ```js
-// grunt
-npm install -g grunt-cli
-npm init
-npm install grunt --save-dev
-npm install grunt-contrib-jshint --save-dev
-grunt
-
 // gulp
 npm install -g gulp
 npm install gulp --save-dev
 npm install gulp-jshint --save-dev
 gulp
 
-// bower
-npm install -g bower
-bower.json
-bower install jquery --save
-bower install
-
-// 改进grunt工作流
+// grunt工作流
 npm install grunt --save-dev
 npm install grunt-contrib-jshint --save-dev // 校验
 npm install grunt-contrib-connect --save-dev 
@@ -186,7 +86,7 @@ npm install grunt-contrib-concat --save-dev
 npm install grunt-contrib-uglify --save-dev // 代码缩编
 npm install grunt-contrib-yuidoc --save-dev // 生成API
 
-// 改进Gulp工作流
+// Gulp工作流
 npm install gulp --save-dev
 npm install gulp-jshint --save-dev
 npm install gulp-connect --save-dev
