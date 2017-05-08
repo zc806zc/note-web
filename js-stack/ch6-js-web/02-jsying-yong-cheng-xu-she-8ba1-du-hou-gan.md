@@ -1,9 +1,11 @@
 #### **JS的革命时代**
 
-* [源码下载](https://github.com/oreillymedia/programming_javascript_applications) \| [在线阅读](http://chimera.labs.oreilly.com/books/1234000000262/pr01.html)
-* 进入的新的领域
+* 资源
+  * [JS应用程序设计-code-dl](https://github.com/oreillymedia/programming_javascript_applications) 
+  * [图书在线阅读](http://chimera.labs.oreilly.com/books/1234000000262/pr01.html)
+* JS的新的领域
 
-  * 在操作系统上用web技术来构建原生应用
+  * 在操作系统上用web技术来构建 原生应用
   * ~~firefox / Chrome操作系统~~ -- Node-Webkit
   * 移动端
   * 服务器端 Node.js/IO.js
@@ -16,6 +18,7 @@
     * nodebots
 
 * 阿特伍德定律： 任何可以用JS实现的应用，最终都会被JS改写
+
 * 性能
   * 代码执行可以提升的方面 垃圾回收 和 动态绑定
   * 但是 因为Node.js\(v8\)驱动无阻塞和并发处理，可以不用再为代码执行速度拼命了
@@ -33,6 +36,7 @@
 * 传入函数之前先复制，不要将原始值直接传入
 
 * 纯函数：调用时不改变任何外部变量
+
 * 函数的正确打开方式
   * 不能在条件语句中声名
   * 但 var bar = func\(\) {} 这样可以在条件语句中声名
