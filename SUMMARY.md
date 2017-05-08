@@ -104,7 +104,7 @@
   * [JS-Web\(服务端方向\)](js-stack/ch6-js-web.md)
     * [ch1-Node.js](js-stack/ch6-js-web/ch2bu-shu-fa-bu.md)
       * [01-Node.js基础](js-stack/ch6-js-web/01-nodejsru-men.md)
-      * [02-Node.js实战\(第2季\)-读后感](js-stack/ch6-js-web/01-nodejsshi-zhan.md)
+      * [02-Node.js实战\(第2季\)](js-stack/ch6-js-web/01-nodejsshi-zhan.md)
       * [03-压缩合并部署管理](js-stack/ch6-js-web/02ya-suo-he-bing-bu-shu.md)
       * [04-MongoDB-入门基础](js-stack/ch6-js-web/01-mongodb-basic.md)
       * [05-Express-基础](js-stack/ch6-js-web/02-express-basic.md)
