@@ -1,4 +1,4 @@
-#### **ch10、11、12 DOM及其扩展与DOM2、3**
+#### **DOM及其扩展与DOM2、3**
 
 * DOM 针对 HTML 和 XML 文档的一个 API（应用程序编程接口）
   * 一个层次化的节点树
@@ -14,7 +14,7 @@
   * 不让表单字段的 name 特性与其他元素的 ID 相同
 * 特殊集合
   * document.anchors ，包含文档中所有带 name 特性的a元素
-  *  document.forms
+  * document.forms
   * document.images
   * document.links
 * DOM 一致性检测 P259
@@ -47,10 +47,6 @@
     * 针对XML **命名空间** 的变化
     * NodeIterator TreeWalker
 ```
-
-
-
-
 
 
 
