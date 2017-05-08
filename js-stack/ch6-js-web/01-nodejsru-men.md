@@ -6,11 +6,29 @@
 * [Node-App的托管](https://github.com/nodejs/node-v0.x-archive/wiki/node-hosting) Joyent
 * ~~Netscape Enterprise Server \(早期类似产品\)~~
   * 为HTTP应用程序编码
+* v8
+  * Google为Chrome Web浏览器设计
+  * JavaScript解释器
+  * 虚拟器
+* 学习资源
+  * ~~https://groups.google.com/forum/\#!forum/nodejs~~
+  * http://stackoverflow.com/questions/tagged/node.js
+  * 了不起的Node.js  https://github.com/kdchang/smashing-nodejs-examples
 
 ```js
 // node.js安装
 Installing nodejs-legacy // ubuntu wire error或许可以解决
 node filename.js
+
+从源码编译安装 curl http://npmjs.org/install.sh | sh
+
+// 安装彩虹模块 - demo
+require('colors');
+console.log('smashing node'.rainbow);
+
+npm help json // 查看属性文档
+npm search realtime
+npm view socket.io
 
 // 常见命令
 npm init
@@ -25,6 +43,10 @@ npm uninstall
 socket.emit()
 io.emit("new-data-on-server","Message Text")
 socket.broadcast.emit("new-data-on-server","Message Text")
+
+// Node REPL
+node
+Object.keys(global) // 忘记某个API的用法 可以用来验证
 ```
 
 * 基础
@@ -48,16 +70,17 @@ for (; index < length; index++) {
   * 确保版本号
 * [gulpjs](http://gulpjs.com) \| [grunt使用示例](http://developer.51cto.com/art/201506/479127.htm) \| [grunt插件](http://www.gruntjs.net/plugins)
 * gulp较grunt的优势
-  * 利    用Node.js的Stream,    使得一个任务的输出可以进行feed和pipe    ，而成为另一个任务的输入不    需要一个在硬盘写入临时文件的中途步骤，    更高效
-  * 配    置信息不再是一个独立的很大的配置对象，    而是链式调用
+  * 利用Node.js的Stream,使得一个任务的输出可以进行feed和pipe，而成为另一个任务的输入不
+    需要一个在硬盘写入临时文件的中途步骤，更高效
+  * 配置信息不再是一个独立的很大的配置对象，而是链式调用
   * 专门设计成细分化的任务
 * [yaml.org](http://yaml.org)
   * 更容易被人类阅读的语言格式 
   * file.readYAML\(\)
 * webpack \| prepack
-* bower http://bower.io
-  * https://github.com/timmywil/grunt-bowercopy
-  * https://github.com/zont/gulp-bower
+* bower [http://bower.io](http://bower.io)
+  * [https://github.com/timmywil/grunt-bowercopy](https://github.com/timmywil/grunt-bowercopy)
+  * [https://github.com/zont/gulp-bower](https://github.com/zont/gulp-bower)
 * ~~其他~~
   * spm
   * component
@@ -100,110 +123,46 @@ npm install gulp-rename --save-dev
 npm install gulp-header --save-dev // 没有watch, 已经在API里
 ```
 
-#### **ch1 安装**
+---
 
-* 基础
+#### **JavaScript概览**
 
-```js
-* v8是Google为Chrome Web浏览器设计
-    * JavaScript解释器
-    * 虚拟器
-* 获取Web服务的完全控制权 -> 实时Web应用
-* [Node.js邮件列表](https://groups.google.com/forum/#!forum/nodejs)
-* [Stack Overflow](http://stackoverflow.com/questions/tagged/node.js)
-* [源码下载](https://github.com/kdchang/smashing-nodejs-examples)
-* Node REPL
-    * node
-    * >Object.keys(global)
-    * 忘记某个API的用法 可以用来验证
-*  执行文件 node + filename.js
-* npm
-    * 从源码编译安装 curl http://npmjs.org/install.sh | sh
-```
-
-* 安装模块
-  * 彩虹
-
-```
-require('colors');
-console.log('smashing node'.rainbow);
-```
-
-* 自定义模块
-  * package.json -&gt; 双引号
-
-```
-{
-"name": "node-basic",
-"version": "0.0.1",
-"main": "./index",
-"dependencies": {
-"colors": "*"
-}
-}
-```
-
-* 基础
-
-```
-    * npm install
-    * npm publish
-        * "private": "true"  // 避免误发布
-    * npm help json // 查看属性文档
-* 安装二进制工具包
-    * express 可执行工具
-    * 有些项目发布的是Node编写的命令行工具  加上-g
-    * 发布时在package.json中添加 "bin" 指向可执行文件
-* 浏览npm仓库
-    * npm search realtime
-    * npm view socket.io
-```
-
-#### **ch2 JavaScript概览**
-
-* V8中的JavaScript
 * Object - key
   * hasOwnProperty
   * 获取自有键
-
-```
-    var a = {c : "j", d : "h"};
-    console.log( Object.keys(a) ); // [ 'c', 'd' ]
-```
 
 * isArray
 * bind
   * 允许改变对this的引用
 
-```
-    function a() {
-      this.hello == 'world'; // true
-      console.log(this.hello);
-    }
+```js
+var a = {c : "j", d : "h"};
+console.log( Object.keys(a) ); // [ 'c', 'd' ]
 
-    var b = a.bind({ hello : 'hu' });
-    b(); // hu
+function a() {
+this.hello == 'world'; // true
+console.log(this.hello);
+}
+
+var b = a.bind({ hello : 'hu' });
+b(); // hu
+
+
+var obj = JSON.parse('{"a":"b"}');
+console.log(obj); // { a: 'b' }
+console.log(obj.a); // b
 ```
 
-* forEach filter map reduce ...
-* trim\(\);
 * JSON
   * JSON.stringify 解码
   * JSON.parse 编码
 
-```
-    var obj = JSON.parse('{"a":"b"}');
-    console.log(obj); // { a: 'b' }
-    console.log(obj.a); // b
-```
-
 * 非标准的
-  * name
 
-```
-    var a = function your () {};
-    console.log(a.name); // your
-    console.log(a.name == 'your'); // true
+```js
+var a = function your () {};
+console.log(a.name); // your
+console.log(a.name == 'your'); // true
 ```
 
 * 始终对函数命名 便于调试
@@ -211,19 +170,19 @@ console.log('smashing node'.rainbow);
 * 不需要中间构造器
 * 也不需要第三方的OPP工具类库
 
-```
-    function Animal() {}
-    function Cat() {}
+```js
+function Animal() {}
+function Cat() {}
 
-    Cat.prototype.__proto__ = Animal.prototype;
+Cat.prototype.__proto__ = Animal.prototype;
 
-    var cat = new  Cat();
-    console.log(cat instanceof Animal); // true
+var cat = new Cat();
+console.log(cat instanceof Animal); // true
 ```
 
 * 存取器
 
-```
+```js
 // Based on prettyDate by John Resig (MIT license)
 Date.prototype.__defineGetter__('ago', function () {
   var diff = (((new Date()).getTime() - this.getTime()) / 1000)
@@ -244,71 +203,35 @@ var a = new Date('12/25/1990');
 console.log(a.ago); // 1360 weeks ago
 ```
 
-#### **ch3 阻塞与非阻塞IO**
+#### **阻塞与非阻塞IO**
 
-```
+#### **Node中的JavScript**
 
-```
+#### **命令行工具以及FS API**
 
-#### **ch4 Node中的JavScript**
+---
 
-```
+#### **TCP/HTTP/Connect**
 
-```
+#### **Express**
 
-#### **ch5 命令行工具以及FS API**
+#### **WebSocket**
 
-```
+#### **Socket.IO**
 
-```
+---
 
-#### **ch6-7 TCP/HTTP/Connect**
+#### **MongoDB/MySQL**
 
-```
+#### **Redis**
 
-```
+#### **代码共享**
 
-#### **ch9 Express**
+---
 
-```
+#### **测试**
 
-```
-
-#### **ch10 WebSocket**
-
-```
-
-```
-
-#### **ch11 Socket.IO**
-
-```
-
-```
-
-#### **ch12-13 MongoDB/MySQL**
-
-```
-
-```
-
-#### **ch14 Redis**
-
-```
-
-```
-
-#### **ch15 代码共享**
-
-```
-
-```
-
-#### **ch16 测试**
-
-```
-
-```
+---
 
 #### 参考
 
