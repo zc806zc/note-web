@@ -2,15 +2,18 @@
 
 * [猴子都懂的Git教程](http://backlogtool.com/git-guide/cn/stepup/stepup1_1.html)
 * 我认为, 另外两个同等级别地，一样改变了思维的事情是
-  * 使用Linux\(一切皆资源\)
-  * 弃用百度，拥抱Google（翻墙看一下真实的世界）
+
+  * 使用Linux\(文件即资源\)
+  * 弃用百度，拥抱Google（看一下真实的世界）
 
 * 仓库已经存在
+
   * git clone \(-b master\) [https://github.com/luo0412/luo-android.git](https://github.com/luo0412/luo-android.git)
   * git add -A
   * git status
   * git commit -m "helloWorld"
   * git push origin master
+
 * 本地自建仓库
   * git init
   * git remote add origin [https://github.com/luo0412/tmp.git](https://github.com/luo0412/tmp.git)
@@ -72,47 +75,16 @@ git进行了三方面的合并，
   * [Git基础语法](http://wowubuntu.com/markdown/#header) \| [Github官方语法](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
   * Markdown不支持的可以写html标签
   * 空行就是换行 
+  * 隐式链接
+  * 列表嵌入
+  * 图片图标
 
 ```js
-// 二级标题可能自带下划线
-
-用了换行符<br>,要在此之前加两个以上的空格
-
-// 列表嵌入 
-四个空格或一个tab  // 同时注意换行符的效果
-
-// 强调文本 
-*hello* __hi__
-
-// 代码显示 <pre><code>
-
-  sdfsdg
-  printf("hello world");
-
-  fsdhgfkfd`hej`sfgbf
-
-
-// 引用
-> 李白
->
-> 杜甫
-
-// 链接
 [百度](https://www.baidu.com/)
-// [Qmen](q)
+[Qmen](q)
 
-// 隐式链接
 I get 10 times more traffic from 
 [Google] [1] than from [Yahoo] [2] or [MSN] [3].
-
-// 图片 
-![hi](/path/s/logo.png) 
-
-// 水平分割线  
----
-
-// 用反斜杠来插入保留字符 
-\\
 ```
 
 
