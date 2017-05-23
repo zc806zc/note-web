@@ -5,14 +5,17 @@
 * 预处理语言（less \| sass）建立一个小型的可重用css库
 
 * JS学习，重点是算法刷题
+
   * codecademy
   * Leetcode
   * 可汗学院算法课
   * coursera
 
 * 移动端框架Clone一个github项目不停地写注释（一般是响应式的）
-  * ~~JQueryMobile/zepto ~~
+
+  * JQueryMobile/zepto （不可以忽略jQuery的地位）
   * React native/Ionic/Weex/...
+
 * 不要一条线, 可以跳跃和超前
 * 自己坚持执行是关键
 
@@ -23,6 +26,7 @@
 * 看基础书，刷w3c网站，做好理论储备
 
 * 看招聘要求，不停地关注那些陌生的词汇
+
   * 但不一定真的要去学
   * B2B + B2C + J2EE + UED + AMP + ...
   * Paas Saas
@@ -54,8 +58,6 @@
 
 前端也是分前后的
 ```
-
-
 
 
 
