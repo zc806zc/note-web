@@ -13,11 +13,12 @@
 
 * 移动端框架Clone一个github项目不停地写注释（一般是响应式的）
 
-  * JQueryMobile/zepto （不可以忽略jQuery的地位）
+  * JQueryMobile/zepto （不要忽略jQuery的地位）
   * React native/Ionic/Weex/...
 
-* 不要一条线, 可以跳跃和超前
-* 自己坚持执行是关键
+* 可以跳跃和超前学习，不要盲目遵循任何人制定的顺序
+
+* 最后就会发现，自己坚持执行才是关键
 
 ---
 
