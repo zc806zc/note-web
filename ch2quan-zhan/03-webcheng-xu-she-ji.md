@@ -23,19 +23,29 @@
 
 ---
 
-#### **HTML/XHTML**
+#### **HTML/XHTML/CSS**
 
 * XHTML
   * 早期的XHTML1.0 标准其实是用XML重新定义了HTML4.01
-  * 严格性 Strict \|  过渡性 Transition \| 框架集 Frameset
-  * 但还是被放弃了 why?
+  * 特点
+    * 严格性 Strict 
+    * 过渡性 Transition 
+    * 框架集 Frameset
+  * 但W3C为什么还是放弃这个严格的版本 ？
 
-#### **CSS**
+```
+1. 与浏览器厂商的利益相违背
+2. 自由
+```
 
 * 盒模型
 * CSS冲突解决方案
   * 继承覆盖
-  * 不同来源的优先级 例 id选择器和 ！important
+  * 关注不同来源的优先级
+    *  id选择器
+    * ！important
+
+---
 
 #### **JavaScript**
 
@@ -78,13 +88,13 @@ doucument.body.style.color = newColor; // style.fontSize
 
 #### ~~FLash~~
 
-* 成熟的视频方案
-* 动画前景
-  * 移动端至少挂了
+* 至少一套成熟的视频解决方案还得靠它
+
+* 移动端表现挂了，所以要死
 
 ---
 
-#### **PHP/Java Web/ASP.NET/Ruby/Rails新旧阵营**
+#### **PHP/Java Web/ASP.NET/Ruby/Rails新旧阵营/基于Web的数据库访问**
 
 * PHP
   * 模式匹配 POSIX \| Perl\(忽略\)
@@ -99,8 +109,6 @@ doucument.body.style.color = newColor; // style.fontSize
   * 模式匹配
   * Rails
 
-#### **基于Web的数据库访问**
-
 * 关系数据库
 * 结构化查询语言
 * 特殊字符的潜在问题
@@ -108,18 +116,9 @@ doucument.body.style.color = newColor; // style.fontSize
 
 ---
 
-#### **Android**
+#### **Android/**WebAPP
 
-#### WebAPP
-
----
-
-#### **参考**
-
-```js
-W3school
-// Web程序设计基础 Robert W.Sebesta // 经典,但不适合入门
-```
+* 原生/webapp/混合等等
 
 
 

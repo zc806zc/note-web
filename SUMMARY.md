@@ -5,7 +5,7 @@
   * [ch1-入手全栈](ch2quan-zhan.md)
     * [01-Git-改变思维第一步](03-gityu-markdown.md)
     * [02-前端生存手册](01qian-duan-sheng-cun-shou-ce.md)
-    * [03-Web基础笔记](ch2quan-zhan/03-webcheng-xu-she-ji.md)
+    * [03-把脑残知识都塞一个地方（Web基础）](ch2quan-zhan/03-webcheng-xu-she-ji.md)
     * [04-全栈工程师的自我修养](ch2quan-zhan/02-webquan-zhan-gong-cheng-shi-de-zi-wo-xiu-517b-du-hou-gan.md)
     * [05-Java和JS全端开发](ch2quan-zhan/01-jsyu-java-quan-duan-kai-fa.md)
     * [06-RESTful-交接前后端](ch2quan-zhan/02-restfullian-jie.md)
