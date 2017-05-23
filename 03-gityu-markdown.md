@@ -1,26 +1,33 @@
-#### **Git/Github/SVN...**
+#### **Git/Github/SVN/Gitlab...**
 
 * [猴子都懂的Git教程](http://backlogtool.com/git-guide/cn/stepup/stepup1_1.html)
-* 我认为, 另外两个同等级别地，一样改变了思维的事情是
+* 另外两个同等级别的改变了思维的事情是
 
-  * 使用Linux\(文件即资源\)
-  * 弃用百度，拥抱Google（看一下真实的世界）
+  * 使用Linux
+  * 使用Google（并且弃用百度）
 
-* 仓库已经存在
+* 常用命令
 
-  * git clone \(-b master\) [https://github.com/luo0412/luo-android.git](https://github.com/luo0412/luo-android.git)
-  * git add -A
-  * git status
-  * git commit -m "helloWorld"
-  * git push origin master
+```
+// list-1
+git clone (-b master) 
+https://github.com/luo0412/luo-tmp.git
 
-* 本地自建仓库
-  * git init
-  * git remote add origin [https://github.com/luo0412/tmp.git](https://github.com/luo0412/tmp.git)
-  * 做点什么
-  * git add .
-  * git commit -m "first commit"
-  * git push -u origin master // -u
+git add -A
+git status
+git commit -m "helloWorld"
+git push origin master
+
+// list-2
+git init
+git remote add origin 
+https://github.com/luo0412/tmp.git
+
+git add .
+git commit -m "first commit"
+git push -u origin master // -u 设定上游
+```
+
 * 四种分支
   * master
   * feature
@@ -46,8 +53,11 @@ git reset --hard HEAD~ // 现在暂时取消刚才的合并
 // 使用rebase合并 加强理解
 ```
 
-* Git重点
-  * [Git冲突合并 - woai0231](https://github.com/woai30231/webDevDetails/tree/master/13)
+---
+
+#### Git重点
+
+* [Git冲突合并 - woai0231](https://github.com/woai30231/webDevDetails/tree/master/13)
 
 ```
 // stash/切换分支 
@@ -71,13 +81,16 @@ git进行了三方面的合并，
 最后生成一个分支 // 也就是最终合并得到的master分支
 ```
 
-* Markdown/Gitbook
-  * [Git基础语法](http://wowubuntu.com/markdown/#header) \| [Github官方语法](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
-  * Markdown不支持的可以写html标签
-  * 空行就是换行 
-  * 隐式链接
-  * 列表嵌入
-  * 图片图标
+---
+
+#### Markdown/Gitbook
+
+* [Git基础语法](http://wowubuntu.com/markdown/#header) \| [Github官方语法](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+* Markdown不支持的可以写html标签
+* 空行就是换行 
+* 隐式链接
+* 列表嵌入
+* 图片图标
 
 ```js
 [百度](https://www.baidu.com/)
