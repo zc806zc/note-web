@@ -1,18 +1,18 @@
 #### 学习路线
 
-* lab1 : DIV + CSS搭建一个静态网站
-* lab2 : Canvas小游戏
-* lab3 : 建立一个小型的可重用css库\(预处理语言写\)
-* lab4 : 了解jQuery的特效组件库
-* lab5 : 原生JS学习\(算法刷题为主\)
+* （DIV + CSS）模仿一个苏宁级别的静态网站
+
+* 预处理语言（less \| sass）建立一个小型的可重用css库
+
+* JS学习，重点是算法刷题
   * codecademy
   * Leetcode
   * 可汗学院算法课
   * coursera
-* lab6 : 模仿一个Bootstrap/Foundation响应式 网站
-* lab7：了解移动端框架
-  * JQueryMobile/zepto 
-  * React native/Ionic/Weex
+
+* 移动端框架Clone一个github项目不停地写注释（一般是响应式的）
+  * ~~JQueryMobile/zepto ~~
+  * React native/Ionic/Weex/...
 * 不要一条线, 可以跳跃和超前
 * 自己坚持执行是关键
 
@@ -20,24 +20,21 @@
 
 #### 生存手册
 
-* Head First HTML and CSS
+* 看基础书，刷w3c网站，做好理论储备
 
-* 理论储备
-
-  * w3c/web标准
-  * HTTP协议
-  * CMD/AMD
+* 看招聘要求，不停地关注那些陌生的词汇
+  * 但不一定真的要去学
   * B2B + B2C + J2EE + UED + AMP + ...
+  * Paas Saas
+  * Agile 敏捷开发
 
-* 工具使用
+  * Web3.0 [https://www.zhihu.com/question/19911163](https://www.zhihu.com/question/19911163)
 
-  * PS切图 
-  * CDR + DW + AI
-  * Visio + Axure + UIDesigner
-  * 抓包工具\(Fiddler Charles\)  ???
-  * atom、vim、Sublime、vscode等
+* 掌握常用工具的基本使用
 
-* 调试与优化
+  * PS切图 + CDR + DW + AI等素材处理的工具
+  * Visio + Axure + UIDesigner原型方向的工具
+
 * 组建学习小组
 
   * 需求文档编写
@@ -46,31 +43,19 @@
 * 心理准备
 
   * [听说2017你想写前端](http://mp.weixin.qq.com/s/8vz1aIeVpRHmU2E2-7zzsQ) \| [2017年前端初学者的生存指南](http://mp.weixin.qq.com/s/1sCU3WzRjiLcSPV0Soqi2A)
-  * 项目工程化:大型项目无法避免 MV\* 工程
+  * 大型项目都无法避免 MV\* 工程
   * 不管是校招还是社招, 都没法避免数据结构与算法
   * 注重横向扩展，具备的职业经历越多，技术栈经验越丰富，才更能有机会脱颖而出
 
-* 发展方向
+```
+发展方向有两个
+1. 交互向 VR (WebGL | Three.js Mozilla 的A-frame | unity3D)
+2. 数据向 D3.js | 微信小程序 
 
-  * 交互向 VR \(WebGL \| Three.js Mozilla 的A-frame \| unity3D\)
-  * 数据向 D3.js \| 微信小程序 
+前端也是分前后的
+```
 
-* 总结要掌握的框架／技能
-  * 要会部署nodejs环境
-    * webpack babel postcss
-    * 预处理语言
-    * HTML pug, haml
-    * Javascript: ES6, ES7
-    * Vue.js / React \(反正掌握一款MV\* 框架是必要的\)
-  * 了解即将大热的XXXX（例 hotfix 阿里热修复技术）
 
----
-
-#### 科普
-
-* Web3.0 [https://www.zhihu.com/question/19911163](https://www.zhihu.com/question/19911163)
-* Paas Saas
-* Agile 敏捷软件开发
 
 
 
