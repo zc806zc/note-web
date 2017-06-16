@@ -11,6 +11,7 @@
     * [06-RESTful-交接前后端](ch2quan-zhan/02-restfullian-jie.md)
     * [07-如何防止被累死](js-stack/ch5-javascriptkuang-jia-pian/02zen-yao-fang-zhi-bei-lei-si.md)
     * [08-全栈资源整理](08quan-zhan-zi-yuan-zheng-li.md)
+    * [09-重装系统软件整理](09zhong-zhuang-xi-tong-ruan-jian-zheng-li.md)
   * [ch2-学会减速](ch5zong-he.md)
     * [01-测试基础](ch3ce-shi/01ce-shi-ji-chu.md)
     * [02-程序员的数学](toolbox/ch1-note/01ji-suan-ji-de-shu-xue-ji-chu.md)
