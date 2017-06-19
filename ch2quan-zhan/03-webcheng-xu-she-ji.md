@@ -42,7 +42,7 @@
 * CSS冲突解决方案
   * 继承覆盖
   * 关注不同来源的优先级
-    *  id选择器
+    * id选择器
     * ！important
 
 ---
@@ -103,6 +103,7 @@ doucument.body.style.color = newColor; // style.fontSize
   * JavaBean
   * JSF
 * Ruby
+
   * 散列
   * 类
   * 块和迭代器
@@ -110,15 +111,14 @@ doucument.body.style.color = newColor; // style.fontSize
   * Rails
 
 * 关系数据库
+
 * 结构化查询语言
 * 特殊字符的潜在问题
 * JDBC 元数据
 
 ---
 
-#### **Android/**WebAPP
 
-* 原生/webapp/混合等等
 
 
 

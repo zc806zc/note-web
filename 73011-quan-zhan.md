@@ -1,10 +1,8 @@
 # 全栈
 
-* [ ] 完成一个网址收藏的开源项目，输出类似前端导航网站
-
-
-
-
+* [x] 前端生存手册
+* [x] 全栈工程师的自我修养
+* [ ] 一个简易的资源导航开源项目  [https://github.com/alg-security/how-to-solve-links](https://github.com/alg-security/how-to-solve-links)
 
 
 

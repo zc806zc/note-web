@@ -1,49 +1,47 @@
-#### 学习路线
+# 前端生存手册
 
-* （DIV + CSS）模仿一个苏宁级别的静态网站
-
-* 预处理语言（less \| sass）建立一个小型的可重用css库
-
-* JS学习，重点是算法刷题
-
-  * codecademy
-  * Leetcode
-  * 可汗学院算法课
-  * coursera
-
-* 移动端框架Clone一个github项目不停地写注释（一般是响应式的）
-
-  * JQueryMobile/zepto （不要忽略jQuery的地位）
-  * React native/Ionic/Weex/...
-
-* 可以跳跃和超前学习，不要盲目遵循任何人制定的顺序
-
-* 最后就会发现，自己坚持执行才是关键
+* [x] 改变思维
+* [x] 学习路线
+* [x] 生存手册
 
 ---
 
-#### 生存手册
+## 版本控制 Git \| Github
 
-* 看基础书，刷w3c网站，做好理论储备
+* 四种分支 master \| feature \| hotfix \| release
+* 冲突合并  [https://github.com/woai30231/webDevDetails/tree/master/13](https://github.com/woai30231/webDevDetails/tree/master/13)
+* 常用命令
+* Markdown [http://wowubuntu.com/markdown/\#header](http://wowubuntu.com/markdown/#header)
+  * Markdown不支持的可以写HTML 
+  * 隐式链接
+  * 图标
 
-* 看招聘要求，不停地关注那些陌生的词汇
+---
 
-  * 但不一定真的要去学
-  * B2B + B2C + J2EE + UED + AMP + ...
+## 学习路线
+
+* 模仿一个静态网站
+
+* 建立一个小型的可重用CSS库 \(预处理语言\)
+
+* Javascript 算法刷题 \(Codecademy \| Leetcode \| 可汗学院算法 \| Coursera\)
+
+* 移动端框架
+
+---
+
+## 生存手册
+
+* 刷教程网站
+
+* 看招聘要求，关注陌生词汇
+
   * Paas Saas
-  * Agile 敏捷开发
-
   * Web3.0 [https://www.zhihu.com/question/19911163](https://www.zhihu.com/question/19911163)
 
-* 掌握常用工具的基本使用
+* 使用常用工具
 
-  * PS切图 + CDR + DW + AI等素材处理的工具
-  * Visio + Axure + UIDesigner原型方向的工具
-
-* 组建学习小组
-
-  * 需求文档编写
-  * 大型建站/前端工程化
+* 学习小组
 
 * 心理准备
 
@@ -52,13 +50,22 @@
   * 不管是校招还是社招, 都没法避免数据结构与算法
   * 注重横向扩展，具备的职业经历越多，技术栈经验越丰富，才更能有机会脱颖而出
 
-```
-发展方向有两个
-1. 交互向 VR (WebGL | Three.js Mozilla 的A-frame | unity3D)
-2. 数据向 D3.js | 微信小程序 
+> 发展方向有两个
+>
+> 1  
+> .交互向 \(WebGL \| Three.js Mozilla 的A-frame \| unity3D\)
+>
+> 1. 数据向 \(D3.js \| 微信小程序\)
 
-前端也是分前后的
-```
+---
+
+## 如何防止被累死
+
+* “适合“比“最好“更好
+
+* [如何跟上时代脚步](https://juejin.im/post/58e59a0aa0bb9f006906aea1?utm_source=gold_browser_extension)
+
+  * 播客 [dotnetrocks.com](https://www.dotnetrocks.com/)
 
 
 
