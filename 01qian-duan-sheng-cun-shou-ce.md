@@ -17,8 +17,6 @@
   * 隐式链接
   * 图标
 
----
-
 ## 学习路线
 
 * 模仿一个静态网站
@@ -28,8 +26,6 @@
 * Javascript 算法刷题 \(Codecademy \| Leetcode \| 可汗学院算法 \| Coursera\)
 
 * 移动端框架项目敲注释
-
----
 
 ## 生存手册
 
@@ -52,10 +48,9 @@
   * 注重横向扩展，具备的职业经历越多，技术栈经验越丰富，才更能有机会脱颖而出
 
 * 发展方向
-  * .    交互向 \(WebGL \| Three.js Mozilla 的A-frame \| unity3D\)
-  * 数据向 \(D3.js \| 微信小程序\)
 
----
+  * 交互向 \(WebGL \| Three.js Mozilla 的A-frame \| unity3D\)
+  * 数据向 \(D3.js \| 微信小程序\)
 
 ## 如何防止被累死
 
