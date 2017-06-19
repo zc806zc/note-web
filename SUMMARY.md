@@ -1,8 +1,8 @@
 # Summary
 
 * [简介](README.md)
-* [\[1\] 全栈](73011-quan-zhan.md)
-  * [ch1-入手全栈](ch2quan-zhan.md)
+* [\[1\] 全栈篇](73011-quan-zhan.md)
+  * [ch1-全栈](ch2quan-zhan.md)
     * [01-Git-改变思维第一步](03-gityu-markdown.md)
     * [02-前端生存手册](01qian-duan-sheng-cun-shou-ce.md)
     * [03-把脑残知识都塞一个地方（Web基础）](ch2quan-zhan/03-webcheng-xu-she-ji.md)
