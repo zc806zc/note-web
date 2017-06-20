@@ -1,48 +1,22 @@
-#### HTML5-学习笔记前记
-
-```js
-快速学习就像吃快餐一样
-没有在家吃饭的感觉
-
-我学习HTML5是在学习CSS之前
-学习Bootstrap等也是在CSS之前
-
-慢慢地，我就知道这样的弊端了
-如果条件允许还是要先打好基础，可惜当时忙着装逼...
-```
-
-#### **HTML-快速回顾**
+# **HTML**
 
 * [HTML面试题-sandisen](http://www.jianshu.com/p/872f8fb425ce)
+* 移动meta标记
+* 浏览器内核
+* 语义化
+  * 让页面的内容结构化，结构更清晰，便于对浏览器、搜索引擎解析
+  * 使阅读源代码的人更容易将网站分块，便于阅读、维护和理解
+  * 搜索引擎的爬虫也依赖于HTML标记来确定上下文和各个关键字的权重，有利于SEO
+
+> 浏览器会思考，而且经常会取笑我们
 
 ```js
-浏览器会思考，而且经常会取笑我们
-
-// 浏览器内核
-
-// 对语义化的理解
-让页面的内容结构化，结构更清晰，便于对浏览器、搜索引擎解析
-
-使阅读源代码的人更容易将网站分块，便于阅读、维护和理解
-
-搜索引擎的爬虫也依赖于HTML标记来确定上下文和各个关键字的权重，有利于SEO
-
-// cookies，sessionStorage 和 localStorage 的区别
-
-// head
-Apache .htaccess AddDefaultCharset UTF-8
-http://www.standardista.com/html5/http-equiv-the-meta-attribute-explained
-
-// 移动meta标记
-eg. 设置全屏 不希望缩放
-// 但是网站应该允许用户无限制缩放
-
 // 移动厂商特有的值
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="format-detection" content="telephone=no">
 ```
 
-#### HTML5-工具
+# HTML5
 
 ```js
 // 开发工具
