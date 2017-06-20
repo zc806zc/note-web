@@ -1,10 +1,8 @@
-#### Canvas-**基础知识**
+# Canvas-**基础知识**
 
 * [HTML5 Canvas核心技术-code-dl](https://github.com/corehtml5canvas/code)
 * [Canvas-kev3d作品集](http://www.kevs3d.co.uk/dev/phoria/index.html) \| [画布中播放黑白图片](http://html5doctor.com/video-canvas-magic) \|[迟钝的水滴](http://www.blobsallad.se) \| [星空效果](http://tinyurl.com/crn3ed)
 * 有视觉冲击力的Canvas应用实例
-
-  * [~~Canvas Demos~~](http://www.canvasdemos.com) \| [~~维基知识地图~~](http://en.inforapid.org)
 
   * [3D Walker](http://www.benjoffe.com/code/demos/canvascape)
 
@@ -18,6 +16,7 @@
   * [EaselJS](http://www.createjs.com)
 
 * [AI 插画导出HTML](http://visitmix.com/labs/ai2canvas/) \| [RGraph](http://www.rgraph.net/) \| [Zing](http://www.zingchart.com/)
+
 * 基于Canvas的绘图程序
   * [iPaint](https://www.gitbook.com/book/luo0412/white/edit#)
   * [SketchPad](https://www.gitbook.com/book/luo0412/white/edit#)
@@ -28,9 +27,7 @@
   * Canvas里的width height 和 css的区别
   * Canvas是非保留性的绘图界面 记录 交互性 - save\(\) 和 restore\(\)
 
----
-
-#### **绘制/文本/图像视频**
+# **绘制/文本/图像视频**
 
 * [Making Image Filters with Canvas](https://www.gitbook.com/book/luo0412/white/edit#)
 
@@ -114,49 +111,7 @@ if (drawing.getContext) {
     imageData.data = data;
     context.putImageData(imageData, 0, 0);
 }
-
-
 ```
-
----
-
-#### **动画/精灵**
-
-* C
-  anvas动画
-  * setTimeout\(\) 
-  * setInterval\(\) 可能牺牲性能
-  * requestAnimate\(\)
-
-```js
-
-```
-
----
-
-### **物理效果/碰撞检测**
-
-```js
-
-```
-
----
-
-### **游戏开发/自定义控件**
-
-```js
-
-```
-
----
-
-#### **移动平台开发**
-
-```js
-
-```
-
----
 
 #### 后记
 

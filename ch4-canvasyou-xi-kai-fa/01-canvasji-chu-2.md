@@ -1,4 +1,4 @@
-### 使用CanvasAPI创建游戏
+# 使用CanvasAPI创建游戏
 
 * [HTML5 Rocks](https://www.html5rocks.com/en/tutorials/canvas/hidpi/) \| [forgger游戏-code](https://github.com/denodell/frogger) \| [HTML5 Games](http://html5gamedevelopment.com/)
 * 使用Canvas制作游戏, 但以前是Flash Player的专属
