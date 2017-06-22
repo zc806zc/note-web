@@ -1,6 +1,9 @@
-# JS Web
+# MEAN逆袭
 
-* [ ] 复习整理Node.js常用技术
+* [ ] 整理Node.js常用技术
+* [ ] JS面试题整理
+* [ ] Angular \| REACT \| Vue.js
+* [ ] 移动端webapp
 
 
 
