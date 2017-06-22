@@ -1,50 +1,17 @@
-#### **Vue.js**
+# **Vue.js**
 
-* 资源/安装
-  * [vue中文网](https://vuefe.cn/v2/guide/) \| [iView](https://gold.xitu.io/post/58a5a53761ff4b006c44ba5b?utm_source=gold_browser_extension) \| [vue2入门项目-qinshenxue](vue2-vue-router2-webpack2)
+* [x] 语法基础
+* [ ] 开发 vue-cli及工具
+* [ ] vue2
+* [ ] 源码
 
-```js
-<script src="https://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
+---
 
-// 创建大型应用时
-cnpm install vue
-cnpm install --global vue-cli // 命令行
-vue init webpack my-project   // 基于webpack创建vue项目
+# [vue](https://vuefe.cn/v2/guide/)基础
 
-cd my-project
-npm install
-npm run dev
-
-// 文件夹结构解释
-build                // 最终发布的代码存放位置
-config                // 配置目录，包括端口号等 
-node_modules
-
-src    
-/assets     // 放置一些图片，如logo等。
-/components // 组件文件
-/App.vue    // 项目入口文件 可以直接将组件写这里
-/main.js    // 核心文件
-
-static            // 静态资源目录，如图片、字体等
-test            // 初始测试目录，可删除
-index.html    // 首页入口文件 可以添加一些 meta 信息或统计代码
-package.json    
-README.md
-
-// ESlint 
-newline 末尾要有空白行
-
-// IDE
-atom
-```
-
-* 基础
+* computed vs methods
 
 ```js
-Vue.js 不支持 IE8 及其以下 IE 版本 // 干得好！！
-
-// computed vs methods
 我们可以使用 methods 来替代 computed，
 效果上两个都是一样的
 但是 computed 是基于它的依赖缓存，
@@ -53,14 +20,13 @@ Vue.js 不支持 IE8 及其以下 IE 版本 // 干得好！！
 而使用 methods 
 在重新渲染的时候
 函数总会重新调用执行
-
-
-// 复选框
-如果是一个为逻辑值，
-如果是多个则绑定到同一个数组
 ```
 
 * 语法
+  * 修饰符
+  * 按键
+  * 缩写
+  * 暴露
 
 ```js
 // 修饰符
@@ -101,49 +67,14 @@ vm.$el === document.getElementById('example') // true
 vm.$watch('a', function (newVal, oldVal) {
   // 这个回调将在 `vm.a`  改变后调用
 })
-
-// Handlebars 模板
-{{#if ok}}
-  <h1>Yes</h1>
-{{/if}}
 ```
 
-* 组件
+* 组件 prop
 
 ```js
-// prop 
 是单向绑定的
 当父组件的属性变化时，
 将传导给子组件，但是不会反过来
-
-// 可以为 props 指定验证要求
-propA: Number,
-propB: [String, Number], // 多种类型 
-propC: {
-      type: Number,
-      required: true
-      // default: 100
-}
-
-// 数组／对象的默认值应当由一个工厂函数返回
-propE: {
-      type: Object,
-      default: function () {
-            return { message: 'hello' }
-      }
-},
-
-// 自定义验证函数
-propF: {
-      validator: function (value) {
-            return value > 10
-      }
-}
-
-
-// 自定义事件
-$on(eventName)   监听事件
-$emit(eventName) 触发事件
 ```
 
 * 指令
@@ -155,22 +86,23 @@ unbind: 只调用一次， 指令与元素解绑时调用。
 inserted  
 update
 componentUpdated // 被绑定元素所在模板完成一次更新周期时调用
-
-// 钩子函数的参数
 ```
 
-* 路由
-  * [路由演示](https://github.com/chrisvfritz/vue-2.0-simple-routing-example)
+* 路由  [路由演示](https://github.com/chrisvfritz/vue-2.0-simple-routing-example)
+* 与Riot、Backbone.js等框架的比较
+* v-if与v-show的比较 P18
+* debounce 最小延迟 更新高耗 P22
+* v-cloak 保持元素直到关联实例结束编译
 
-```
-https://unpkg.com/vue-router/dist/vue-router.js
-```
+## 开发
 
-* 参考
+* vue-cli插件
+  * vue \| vue sytnax hightlight
+* vue + scrat.js的化学反应：移动开发解决方案
+* 性能优化：bigpipe \| bigrender
+* 学习源码
 
-```js
-菜鸟教程
-```
+
 
 
 
