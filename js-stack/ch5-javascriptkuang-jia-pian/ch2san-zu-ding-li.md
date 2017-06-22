@@ -1,7 +1,16 @@
-#### **JS框架的三足鼎立**
+# **JS框架的三足鼎立**
 
-* [如何选择合适的前端框架，告别选择恐惧症](https://read.douban.com/reader/column/5945187/chapter/30511309/) - SPA
-  * 没有一个框架能解决所有的问题
+* [x] 工程化
+* [ ] 三足鼎立
+* [ ] 其他web开发框架
+
+---
+
+## 前端工程化
+
+* [如何选择合适的前端SPA框架，告别选择恐惧症](https://read.douban.com/reader/column/5945187/chapter/30511309/)
+
+> 没有一个框架能解决所有的问题
 
 ```js
 // jQuery
@@ -50,32 +59,24 @@ Vue.js 也使用了 Virtual DOM、Reactive 及组件化的思想，
  Vuex 、 VueRouter
 ```
 
----
-
 * [2016 年的轻量级 JS 框架和库](https://zhuanlan.zhihu.com/p/24598210)
 * [2016崛起的前端框架 - 王仕军](https://juejin.im/post/58c5e39c8ac24707200a6cff?utm_source=gold_browser_extension)
 
-```js
-
-```
-
 ---
 
-#### **ch1 Sinatra**
+## **ch1 Sinatra**
 
-#### **ch2 CanJS**
+## **ch2 CanJS**
 
-#### **ch3 AngularJS**
+## **ch3 AngularJS**
 
-#### **ch4 Ring**
+## **ch4 Ring**
 
-#### **ch5 Webmacchine**
+## **ch5 Webmacchine**
 
-#### **ch6 Yesod**
+## **ch6 Yesod**
 
-#### **ch7 Immutant**
-
-#### **ch8 结束**
+## **ch7 Immutant**
 
 
 

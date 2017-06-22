@@ -1,4 +1,4 @@
-#### **JS的革命时代**
+# **JS的革命时代**
 
 * 资源
   * [JS应用程序设计-code-dl](https://github.com/oreillymedia/programming_javascript_applications) 
@@ -67,7 +67,7 @@
 * [Node.js日志库Winston](http://www.jianshu.com/p/e71f727c7b32)
 * Node检查器 ： node-inspector
 * 性能分析 
-  * nodetime  https://www.appdynamics.com/nodejs/
+  * nodetime  [https://www.appdynamics.com/nodejs/](https://www.appdynamics.com/nodejs/)
 * 运行时间和进程管理
   * cluster模块利用多核处理器的优势和Node的单线程模式可以派生大量进程，但是派生新进程的代价很高--不仅会影响服务器的负载，还会影响进程的启动时间
 * 搭建集群 PM2
