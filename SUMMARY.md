@@ -56,7 +56,7 @@
   * [ch2-Javascript](js-stack/ch5-javascriptkuang-jia-pian/ch2-jsmian-shi-ti.md)
     * [01-JS-函数与对象](js-stack/ch1-jsji-chu/01-jshan-shu.md)
     * [01-函数式编程](js-stack/ch2-jsjin-jie/01han-shu-shi-bian-cheng.md)
-    * [02-JS高程-DOM](js-stack/ch1-jsji-chu/02-jsgao-ji-cheng-xu-she-ji5.md)
+    * [02-DOM](js-stack/ch1-jsji-chu/02-jsgao-ji-cheng-xu-she-ji5.md)
     * [11-代码优化建议](js-stack/ch6-js-web/02dai-ma-you-hua.md)
     * [02-JS高程-AJAX](js-stack/ch1-jsji-chu/02-jsgao-ji-cheng-xu-she-ji-3.md)
     * [08-浏览器调试](js-stack/ch6-js-web/03liu-lan-qi-diao-shi.md)
