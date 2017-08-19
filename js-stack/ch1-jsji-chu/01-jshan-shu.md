@@ -1,67 +1,37 @@
-#### **JS函数**
+# **Javascript函数**
 
-* 常识
+* 基础
+  * 尽可能避免使用 new 关键字
+  * 因    为分号是用来分隔可执行的JavaScript语句的，函数并不是可执行语句，函数声明不以分号结束
+  * 如果函数调用时设置了过多的参数，参数将无法被引用，因为无法找到对应的参数名,只能使用 arguments 对象来调用
+  * 在 ECMAScript 5 中， prototype 属性是不可枚举的，因此使用 for-in 无法发现
+  * 闭包 自执行
+  * 建议为函数参数设置一个默认值
 
 ```js
-因为分号是用来分隔可执行的JavaScript语句的，
-函数并不是可执行语句，
-函数声明不以分号结束
-
-尽可能避免使用 new 关键字
-
-将function描述为 对象 更为准确
-
-如果函数调用时设置了过多的参数，
-参数将无法被引用，
-因为无法找到对应的参数名。 
-只能使用 arguments 对象来调用。
-
-在 ECMAScript 5 中， 
-prototype 属性是不可枚举的，
-因此使用 for-in 无法发现
-
-// 函数表达式可以存储在变量中
 var add = function (a, b) { return a * b };
 console.log(add(4, 3)); // 12
-console.log(add(7, 3)); // 21
 
-函数可以通过Function()定义,但不推荐
+
 var myFunction = new Function("a", "b", "return a * b");
 var x = myFunction(4, 3);
 
-// 也可以写成
-var myFunction = function (a, b) {return a * b}
-var x = myFunction(4, 3);
-x = myFunction(4, 3) * 2; // 总之变成了一个值
 
-// 函数自调用  自执行  闭包演示
-(function () {
-var x = "Hello!!"; // 我将调用自己
-})();
-
-// arguments.length 属性返回函数调用过程接收到的参数个数
 function argNum(a, b) {
     return arguments.length;
 }
 console.log(argNum(1,2,3,4)); // 4
 console.log(typeof argNum); // function
 console.log( argNum == Object); // false
-
-// toString() 方法将函数作为一个字符串返回
-function myFunc(a, b) {
-    return a * b;
-}
 console.log(myFunc.toString()); // function myFunc(a, b) { return a * b; }
 
-// 建议为函数参数设置一个默认值
+
 function myFunction(x, y) {
     if (y === undefined) { y = 0; }
     // y = y || 0; 
 }
 
-// 如果你打算直接传入 arguments 对象，
-// 或者包含函数中先接收到的也是一个数组，
-// 那么使用 apply()肯定更方便；否则可能call更合适。
+
 function sum(num1, num2){
     return num1 + num2;
 }
@@ -70,6 +40,7 @@ var anotherSum = sum;
 alert(anotherSum(10,10)); //20
 sum = null; // 仅切断sum与函数的联系
 alert(anotherSum(10,10)); //20
+
 
 // 作为值的函数
 function add10(num){
