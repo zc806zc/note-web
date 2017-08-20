@@ -5,6 +5,7 @@
   * [01-前端生存手册](01qian-duan-sheng-cun-shou-ce.md)
   * [02-全栈工程师的自我修养](ch2quan-zhan/02-webquan-zhan-gong-cheng-shi-de-zi-wo-xiu-517b-du-hou-gan.md)
   * [03-全栈资源整理](08quan-zhan-zi-yuan-zheng-li.md)
+  * [03-第二波资源整合](03di-er-bo-zi-yuan-zheng-he.md)
 * [\[2 Web\] 基础](html-css3-stack.md)
   * [01-动骨换血-HTML5](ch1-html5/ch1-html-basic.md)
   * [02-整容演技-CSS3](ch2-css3/01-cssbu-ju.md)
