@@ -87,4 +87,5 @@
     * [02-JS应用程序设计](js-stack/ch6-js-web/02-jsying-yong-cheng-xu-she-8ba1-du-hou-gan.md)
 * [\[6\] 日志](6-ri-zhi.md)
   * [01-JS基础](6-ri-zhi/01-jsji-chu.md)
+  * [02-设计基础](6-ri-zhi/02she-ji-ji-chu.md)
 
