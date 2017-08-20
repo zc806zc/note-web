@@ -22,7 +22,18 @@ C产品我用第三方登陆了，竟然还让我绑定手机号，这不是欺�
    1. \(品牌\)新闻稿 + 名人 + 靠山
    2. 产品突出安全感
    3. 不要强迫用户
-3. **加载等待**·页面刷新  https://juejin.im/entry/598d130e6fb9a03c445de7e7?utm\_source=gold\_browser\_extension
+3. 强弱密码 ~~https://juejin.im/entry/59916f5e518825486b16f0b6?utm\_source=gold\_browser\_extension~~
+   1. 频繁的更改密码没有预想的效果，达不到保护密码安全的目的
+
+```
+当年NIST主管Bill Burr撰写了一份名为NIST Special Publication 800-63的文档，
+建议大家设置密码时混合大写字母、字符和数字，并定期修改。
+这么成（keng）熟（die）的建议后来被各大媒体广为传播，一时传为美谈。
+
+研究显示此类标准，并没有什么卵用…… 
+```
+
+1. **加载等待**·页面刷新  [https://juejin.im/entry/598d130e6fb9a03c445de7e7?utm\_source=gold\_browser\_extension](https://juejin.im/entry/598d130e6fb9a03c445de7e7?utm_source=gold_browser_extension)
    1. 我知道你很着急，但是我也很努力的在刷新
    2. **做一个注重细节的设计师，这样你才可以留住那些难满足的用户**
 
