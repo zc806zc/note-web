@@ -1,6 +1,10 @@
 #### **Linux**
 
-* **常用命令** https://juejin.im/entry/599b9e07f265da246d6af09f?utm\_source=gold\_browser\_extension
+* **常用命令** [https://juejin.im/entry/599b9e07f265da246d6af09f?utm\_source=gold\_browser\_extension](https://juejin.im/entry/599b9e07f265da246d6af09f?utm_source=gold_browser_extension)
+* 常用软件 
+
+https://juejin.im/entry/599bdfb8f265da24722fb77d?utm\_source=gold\_browser\_extension\#%E9%9F%B3%E9%A2%91
+
 * 安装
 
 ```js
