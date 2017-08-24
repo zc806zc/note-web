@@ -1,5 +1,6 @@
 #### **Linux**
 
+* **常用命令** https://juejin.im/entry/599b9e07f265da246d6af09f?utm\_source=gold\_browser\_extension
 * 安装
 
 ```js
@@ -35,7 +36,7 @@
 
 * 基础
   * 鸟哥的linux私房菜 
-  * [中科大-yum](https://lug.ustc.edu.cn/wiki/mirrors/help/centos) \| [史上最全vim快捷键](http://www.runoob.com/w3cnote/all-vim-cheatsheat.html) | [linux命令大全](http://www.runoob.com/linux/linux-command-manual.html) 
+  * [中科大-yum](https://lug.ustc.edu.cn/wiki/mirrors/help/centos) \| [史上最全vim快捷键](http://www.runoob.com/w3cnote/all-vim-cheatsheat.html) \| [linux命令大全](http://www.runoob.com/linux/linux-command-manual.html) 
   * [Linux探索之旅-谢恩铭](https://juejin.im/post/58de122244d904006d050466)
 
 ```js
@@ -81,7 +82,7 @@ mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup
 // : 切换到底线命令模式，以在最底一行输入命令
 ```
 
-* 文件
+* **文件**
 
 ```js
 ls -l # 列出目录
@@ -176,9 +177,7 @@ mkfs -t ext3 /dev/hdc6
 // 磁盘挂载与卸除
 ```
 
-#### Windows
-
-* 基础
+#### Windows常用命令
 
 ```js
 // 常用command
@@ -204,20 +203,6 @@ ctrl + shift + B 书签
 ctrl + shift + del 清除浏览记录
 ctrl + D
 ctrl + H
-```
-
-#### **操作系统**
-
-* 基础
-
-```
-
-```
-
-#### 参考
-
-```js
-菜鸟教程
 ```
 
 
