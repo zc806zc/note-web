@@ -1,29 +1,37 @@
-#### **JS基础**
+## **JS基础**
 
-* 书单
+* **HTML/JS/CSS编码规范** https://juejin.im/post/599ececb5188252423583c27?utm\_source=gold\_browser\_extension
+* **书单名人堂**
 
 ```js
-JavaScript编程全解 
-精通JavaScript开发(Den Odell) 
+JavaScript编程全解（太细腻）
+精通JavaScript开发(Den Odell，不错) 
 
 JavaScript DOM编程艺术
-JavaScript基础教程 / 你不知道的JavaScript
+JavaScript基础教程
+你不知道的JavaScript
 
-JavaScript快速全栈开发 / JavaScript设计模式和开发实战
-JavaScript高级程序设计  
-数据结构与算法JavaScript描述 / 全端Web开发:使用JavaScript与Java
+JavaScript快速全栈开发 
+JavaScript设计模式和开发实战（买不起）
+JavaScript高级程序设计(无聊而经典)
+犀牛书
+
+数据结构与算法JavaScript描述（虎头蛇尾）
+全端Web开发:使用JavaScript与Java
 ```
 
 * 资源
-  * [精通JavaScript开发](https://github.com/denodell/pro-javascript-development) \| [JS数据结构与算法](https://github.com/oreillymedia/data_structures_and_algorithms_using_javascript)
+  * [精通JavaScript开发](https://github.com/denodell/pro-javascript-development) 
+  * [JS数据结构与算法](https://github.com/oreillymedia/data_structures_and_algorithms_using_javascript)
 
 ---
 
-* 语言基础
-  * [对文档进行编辑](https://luo0412.github.io/learn-HTML5-CSS3/03-html5-basis/h5-page-edting.html)
-  * JS使用[Unicode](https://rainsoft.io/what-every-javascript-developer-should-know-about-unicode/)字符集&lt;/del&gt; 
-  * [ECMA标准](http://www.ecma-international.org/publications/standards/Ecma-262.htm)
-  * [ECMAScript5支持情况](https://kangax.github.io/compat-table/es5/)       
+## 语言基础
+
+* [对文档进行编辑](https://luo0412.github.io/learn-HTML5-CSS3/03-html5-basis/h5-page-edting.html)
+* 使用[Unicode](https://rainsoft.io/what-every-javascript-developer-should-know-about-unicode/)字符集
+* [ECMA标准](http://www.ecma-international.org/publications/standards/Ecma-262.htm)
+* [ECMAScript5支持情况](https://kangax.github.io/compat-table/es5/)       
 
 ```js
 // JS定义
@@ -50,7 +58,7 @@ ECMA-262(真名)
 
 ---
 
-* 语法
+## 语法
 
 ```js
 // href操作
