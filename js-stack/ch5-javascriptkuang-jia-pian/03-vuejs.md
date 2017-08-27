@@ -13,6 +13,8 @@
 
 [https://juejin.im/post/59928d55518825486f1e8369?utm\_source=gold\_browser\_extension](https://juejin.im/post/59928d55518825486f1e8369?utm_source=gold_browser_extension)
 
+* API  https://vuejs-tips.github.io/cheatsheet/
+
 ---
 
 ## [vue](https://vuefe.cn/v2/guide/)基础知识
