@@ -5,11 +5,16 @@
 
 ![](/assets/login-sample-23.png)
 
-2. 轮播图  
+1. 轮播图  
 
 > 1% 的点击占用了页面一半（或者更多）的位置
 
-别再使用轮播图了 https://juejin.im/post/599cf1596fb9a02481205803?utm\_source=gold\_browser\_extension
+别再使用轮播图了 [https://juejin.im/post/599cf1596fb9a02481205803?utm\_source=gold\_browser\_extension](https://juejin.im/post/599cf1596fb9a02481205803?utm_source=gold_browser_extension)
+
+* 不要使用**复位**按钮。**这个按钮几乎永远都不会帮助到用户**。
+* 防止双重提交
+
+![](/assets/import-double-submit.png)
 
 
 
