@@ -92,4 +92,5 @@
   * [02-设计笔记](6-ri-zhi/02she-ji-ji-chu.md)
   * [03-数据笔记](6-ri-zhi/03shu-ju-bi-ji.md)
   * [04-流行框架](6-ri-zhi/04liu-xing-kuang-jia.md)
+  * [05-架构](6-ri-zhi/05jia-gou.md)
 

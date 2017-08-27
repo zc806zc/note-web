@@ -4,6 +4,10 @@
 * [史上最全FE资源](http://www.jianshu.com/p/6cb49271cd2a#)\| [最全的前端资源汇总](https://github.com/helloqingfeng/Awsome-Front-End-learning-resource)
 * [前端面试-WangChloe](http://www.jianshu.com/p/3944732228f0) \| [前端学习路径](https://www.gitbook.com/book/luo0412/white/edit#)
 
+## 前端导航网
+
+* http://hao.shejidaren.com/
+
 #### 在线编辑器
 
 * [dillinger.io](http://dillinger.io/) \| JSbin \| jsfiddle
