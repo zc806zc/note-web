@@ -89,4 +89,5 @@
 * [\[6\] 工作日志](6-ri-zhi.md)
   * [01-JS基础](6-ri-zhi/01-jsji-chu.md)
   * [02-设计笔记1](6-ri-zhi/02she-ji-ji-chu.md)
+  * [03-数据笔记](6-ri-zhi/03shu-ju-bi-ji.md)
 
