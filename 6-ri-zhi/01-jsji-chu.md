@@ -33,7 +33,7 @@ function hoisting(){
 
 * JS面试题   [https://juejin.im/entry/598c003c6fb9a03c367d054e?utm\_source=gold\_browser\_extension](https://juejin.im/entry/598c003c6fb9a03c367d054e?utm_source=gold_browser_extension)
 
-* 浏览器工作原理  http://blog.codingplayboy.com/2017/03/29/webpage\_render/  
+* 浏览器工作原理  [http://blog.codingplayboy.com/2017/03/29/webpage\_render/](http://blog.codingplayboy.com/2017/03/29/webpage_render/)  
      1. 浏览器引擎 用来查询及操作渲染引擎的接口  
      2. 渲染引擎  
      3. JS解释器
@@ -77,7 +77,7 @@ function hoisting(){
   * Comet技术
   * SSE：服务器发送事件,使用长链接进行通讯
 * 实现动画
-* **对象继承**的实现
+* **对象继承**的实现  http://www.cnblogs.com/pompey/p/6675559.html
 * 设计模式
 
   * 单例模式
@@ -94,6 +94,7 @@ function hoisting(){
   * 拖拽组件
 
 * **正则表达式**
+
 * es6
   * babel  [https://babeljs.io/blog/2016/12/07/the-state-of-babel](https://babeljs.io/blog/2016/12/07/the-state-of-babel)
 
