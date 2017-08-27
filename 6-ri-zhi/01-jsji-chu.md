@@ -25,12 +25,15 @@ function hoisting(){
 ```
 
 1. this
+   1. https://juejin.im/post/5995c7a76fb9a0247a60c407?utm\_source=gold\_browser\_extension
 
 ## 面试
 
 * 2017面试总结 [https://juejin.im/entry/599038d151882548b31b4f03?utm\_source=gold\_browser\_extension](https://juejin.im/entry/599038d151882548b31b4f03?utm_source=gold_browser_extension)
 
-* 浏览器工作原理   
+* JS面试题   https://juejin.im/entry/598c003c6fb9a03c367d054e?utm\_source=gold\_browser\_extension
+
+* 浏览器工作原理  
      1. 浏览器引擎 用来查询及操作渲染引擎的接口  
      2. 渲染引擎  
      3. JS解释器
@@ -63,7 +66,7 @@ function hoisting(){
   * 垂直居中
   * block和inline-block
   * 移动布局
-  *  rem
+  * rem
   * getComputedStyle
   * 清浮动,BFC
 * 路由实现
@@ -76,16 +79,21 @@ function hoisting(){
 * 实现动画
 * **对象继承**的实现
 * 设计模式
+
   * 单例模式
   * 工厂模式
   * 发布订阅模式
 
 * node多线程实现
+
 * ~~MD5摘要算法其他用途~~
+
 * 组件
   * CSS写轮播
   * 拖拽组件
 * **正则表达式**
+* es6
+  * babel  [https://babeljs.io/blog/2016/12/07/the-state-of-babel](https://babeljs.io/blog/2016/12/07/the-state-of-babel)
 
 
 
