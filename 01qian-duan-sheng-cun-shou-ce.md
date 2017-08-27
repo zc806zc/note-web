@@ -5,8 +5,6 @@
 * [x] 前端生存生存手册
 * [ ] 如何防止被累死
 
----
-
 ## 版本控制 Git \| Github
 
 * 四种分支 master \| feature \| hotfix \| release

@@ -1,4 +1,4 @@
-#### 在线书籍/学习资源
+#### 在线学习
 
 * [free-programming-books](https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md) \| [frontenddevhandbook](https://www.gitbook.com/book/dwqs/frontenddevhandbook/details) 
 * [史上最全FE资源](http://www.jianshu.com/p/6cb49271cd2a#)\| [最全的前端资源汇总](https://github.com/helloqingfeng/Awsome-Front-End-learning-resource)
@@ -6,43 +6,56 @@
 
 #### 在线编辑器
 
-* [dillinger.io](http://dillinger.io/) 
-* JSbin \| jsfiddle \| [菜鸟工具](https://c.runoob.com/)
+* [dillinger.io](http://dillinger.io/) \| JSbin \| jsfiddle
 
-* 笔记/博客
+### 笔记/博客
 
-  * [~~sphinx~~](http://www.sphinx-doc.org/en/stable/) \| [~~http://www.mkdocs.org~~](http://www.mkdocs.org/~~]%28http://www.mkdocs.org/%29~~) \(没试\)
-  * 自建文档 [Docute](https://docute.js.org/#/home) \| JSDOCS
-  * Gitbook\|看云：[Gitbook插件安装配置- 星夜雨年](http://www.tuicool.com/articles/JjQ3qm) \| [Gitbook插件件2](http://www.tuicool.com/articles/zee2ui)
-  * Jekyll \| HEXO : [ruanyifeng-jekyll](http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html) \| [jekyll-Sites](https://github.com/jekyll/jekyll/wiki/Sites)
+* 文档 [Docute](https://docute.js.org/#/home) \| JSDOCS
+* Gitbook （国内的看云）：[Gitbook插件安装配置- 星夜雨年](http://www.tuicool.com/articles/JjQ3qm) \| [Gitbook插件件2](http://www.tuicool.com/articles/zee2ui)
+* Jekyll \| HEXO : [ruanyifeng-jekyll](http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html) \| [jekyll-Sites](https://github.com/jekyll/jekyll/wiki/Sites)
 
 ```js
 // Gitbook
 本地开发 npm install gitbook-plugin-插件名
-直接使用同名网站 写好book.json就会提供支持
-例如
-1. This text is {% em %}highlighted with **markdown**!{% endem %}
-2. prism主题插件 
+使用网站 写好book.json就会提供相应支持
+示例如下
 
-// 看云
-国内较gitbook稳定,并方便易用插件齐全
-可惜有空间限制,最后还是用了gitbook...
+{
+    "title": "小白书",
+    "description": "前端入门书",
+    "author": "luo0412",
+    "language" : "zh-hans",
+    "output.name": "xiaobaishu",
+    "gitbook": "3.2.2",
+    "plugins": [
+        "splitter",
+        "tbfed-pagefooter",
+        "expandable-chapters-small",
+        "emphasize"
+    ],
+    "pluginsConfig": {
+        "tbfed-pagefooter": {
+            "modify_label": "全书最后修改 ",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        }
+    }
+}
 
-// 没试过
-// benhail/thinker-md osc的md编辑器
-// varharrie/angular-mdeditor 基于AngularJs 使用pegdown作解析
+// 插件示例
+1. 高亮 This text is {% em %}highlighted with **markdown**!{% endem %}
+2. prism主题插件
 ```
 
-* IDE/编辑器
-  * 优雅的编辑器
-    * Atom
-    * VScode [vs-code插件-](http://blog.csdn.net/u011127019/article/details/53158660)[天马3798](http://blog.csdn.net/u011127019)
-    * Sublime [Sublime插件推荐](http://www.jianshu.com/p/2f30ccd41165)  \| [推荐2](https://www.zhihu.com/question/37342465)
-    * ~~Adobe Brackets~~
-  * 重器
-    * Web Storm\($\)
-    * netbeans
-    * Eclipse\|Aptana Studio\(没用过\)
+## IDE/编辑器
+
+* 优雅的编辑器
+  * **Atom\(我最喜欢啦\)**
+  * VScode [vs-code插件-](http://blog.csdn.net/u011127019/article/details/53158660)[天马3798](http://blog.csdn.net/u011127019)
+  * Sublime [Sublime插件推荐](http://www.jianshu.com/p/2f30ccd41165)  \| [推荐2](https://www.zhihu.com/question/37342465)
+* IDE重器
+  * Web Storm\($\)
+  * netbeans
+  * Eclipse \| ~~Aptana Studio~~
 
 ```js
 // itellj idea 文件编码问题的解决
@@ -68,14 +81,9 @@ Sass
 SCSS IntelliSense
 Sublime Babel
 
-// Brackets Light (主题)
-// VSCode Great Icons (文件图标)
-// Git History (查看git提交记录)
-
 
 // Sublime重要插件
-CSScomb CSS属性排序插件
-ctrl + shift + c
+CSScomb CSS属性排序插件 ctrl + shift + c
 
 // Sublime + node.js 来运行JS 
 Tools --> Build System --> new Build System...
@@ -98,13 +106,9 @@ pushed folderPath 或 cd /d 进入文件夹
 js filename.js执行
 ```
 
-* 线框图与原型设计-工具
+#### 线框图与原型设计
 
-  * Balsamiq
-
-* 图像处理
-
-  * [6 款 Javascript 的图像处理库 - Tine](https://juejin.im/post/58c0edac0ce4630054592a78?utm_source=gold_browser_extension)
+* Balsamiq
 
 
 

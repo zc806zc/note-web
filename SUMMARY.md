@@ -3,9 +3,9 @@
 * [简介](README.md)
 * [\[1\] 全栈启蒙](73011-quan-zhan.md)
   * [01-前端生存手册](01qian-duan-sheng-cun-shou-ce.md)
-  * [02-全栈工程师的自我修养](ch2quan-zhan/02-webquan-zhan-gong-cheng-shi-de-zi-wo-xiu-517b-du-hou-gan.md)
-  * [03-全栈资源整理](08quan-zhan-zi-yuan-zheng-li.md)
-  * [03-第二波资源整合](03di-er-bo-zi-yuan-zheng-he.md)
+  * [02-全栈工程师的自我修养笔记](ch2quan-zhan/02-webquan-zhan-gong-cheng-shi-de-zi-wo-xiu-517b-du-hou-gan.md)
+  * [03-全栈学习资源整理](08quan-zhan-zi-yuan-zheng-li.md)
+  * [03-资源搜索大整合](03di-er-bo-zi-yuan-zheng-he.md)
 * [\[2\] Web设计守墓人](html-css3-stack.md)
   * [01-动骨换血-HTML5](ch1-html5/ch1-html-basic.md)
   * [02-整容演技-CSS3](ch2-css3/01-cssbu-ju.md)
@@ -90,4 +90,5 @@
   * [01-JS基础](6-ri-zhi/01-jsji-chu.md)
   * [02-设计笔记1](6-ri-zhi/02she-ji-ji-chu.md)
   * [03-数据笔记](6-ri-zhi/03shu-ju-bi-ji.md)
+  * [04-流行框架](6-ri-zhi/04liu-xing-kuang-jia.md)
 
