@@ -18,13 +18,16 @@
 
 * 自然语言界面
 
-http://www.igeekbar.com/igeekbar/post/241.htm
+[http://www.igeekbar.com/igeekbar/post/241.htm](http://www.igeekbar.com/igeekbar/post/241.htm)
 
 ![](/assets/ziranyuyan.png)
 
 * **用户很可能不愿意填写表单**
   * 逻辑分组
   * 重视交互，做有意思的设计
+
+* 页脚
+  * 连贯占一屏 大气 没有给人边角料的感觉  http://www.yuewen.com/
 
 
 
