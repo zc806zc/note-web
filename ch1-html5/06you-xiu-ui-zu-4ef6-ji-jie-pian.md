@@ -12,9 +12,19 @@
 别再使用轮播图了 [https://juejin.im/post/599cf1596fb9a02481205803?utm\_source=gold\_browser\_extension](https://juejin.im/post/599cf1596fb9a02481205803?utm_source=gold_browser_extension)
 
 * 不要使用**复位**按钮。**这个按钮几乎永远都不会帮助到用户**。
-* 防止双重提交
+* 防止表单双重提交
 
 ![](/assets/import-double-submit.png)
+
+* 自然语言界面
+
+http://www.igeekbar.com/igeekbar/post/241.htm
+
+![](/assets/ziranyuyan.png)
+
+* **用户很可能不愿意填写表单**
+  * 逻辑分组
+  * 重视交互，做有意思的设计
 
 
 
