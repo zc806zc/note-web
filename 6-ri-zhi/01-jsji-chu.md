@@ -33,6 +33,8 @@ function hoisting(){
 
 * JS面试题   [https://juejin.im/entry/598c003c6fb9a03c367d054e?utm\_source=gold\_browser\_extension](https://juejin.im/entry/598c003c6fb9a03c367d054e?utm_source=gold_browser_extension)
 
+* 互联网公司最常见的面试算法题有哪些 https://www.zhihu.com/question/24964987
+
 * 浏览器工作原理  [http://blog.codingplayboy.com/2017/03/29/webpage\_render/](http://blog.codingplayboy.com/2017/03/29/webpage_render/)  
      1. 浏览器引擎 用来查询及操作渲染引擎的接口  
      2. 渲染引擎  

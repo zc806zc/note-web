@@ -93,4 +93,5 @@
   * [03-数据笔记](6-ri-zhi/03shu-ju-bi-ji.md)
   * [04-流行框架](6-ri-zhi/04liu-xing-kuang-jia.md)
   * [05-架构](6-ri-zhi/05jia-gou.md)
+  * [06-移动端优化](6-ri-zhi/06yi-dong-duan-you-hua.md)
 

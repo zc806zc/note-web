@@ -14,14 +14,6 @@ for(var i in arr) {
 for(var i of arr) {
   console.log(i);  
 }
-
-// 输出
-// "0"
-// "1"
-// "2"
-// 1
-// 22
-// 3
 ```
 
 * 实现[lazyman](http://www.jianshu.com/p/f1b7cb456d37)
