@@ -1,6 +1,6 @@
 ## **JS基础**
 
-* **HTML/JS/CSS编码规范** https://juejin.im/post/599ececb5188252423583c27?utm\_source=gold\_browser\_extension
+* **HTML/JS/CSS编码规范** [https://juejin.im/post/599ececb5188252423583c27?utm\_source=gold\_browser\_extension](https://juejin.im/post/599ececb5188252423583c27?utm_source=gold_browser_extension)
 * **书单名人堂**
 
 ```js
@@ -23,6 +23,7 @@ JavaScript高级程序设计(无聊而经典)
 * 资源
   * [精通JavaScript开发](https://github.com/denodell/pro-javascript-development) 
   * [JS数据结构与算法](https://github.com/oreillymedia/data_structures_and_algorithms_using_javascript)
+  * JS深入系列  https://juejin.im/post/59278e312f301e006c2e1510
 
 ---
 

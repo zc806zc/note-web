@@ -49,13 +49,13 @@ C产品我用第三方登陆了，竟然还让我绑定手机号，这不是欺�
 
 ![](/assets/jiaohu-tip.png)
 
-1. 市场占比 https://netmarketshare.com/
+1. 市场占比 [https://netmarketshare.com/](https://netmarketshare.com/)
    1. 浏览器
    2. 操作系统\(2017-08\)
 
 ![](/assets/sys-percent.png)
 
-1. SEO  https://juejin.im/entry/598bb9a151882548711b3f08?utm\_source=gold\_browser\_extension
+1. SEO  [https://juejin.im/entry/598bb9a151882548711b3f08?utm\_source=gold\_browser\_extension](https://juejin.im/entry/598bb9a151882548711b3f08?utm_source=gold_browser_extension)
    1. **SEO流量=整体搜索量 X 整体收录 X 整体排名 X 整体点击率**
    2. APP的兴起，流量越来越多的从搜索引擎转向**垂直APP应用**
    3. 国内各搜索引擎市场份额可以参考StatCounter Global Stats近一年的数据

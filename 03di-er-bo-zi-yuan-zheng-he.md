@@ -6,7 +6,8 @@
    3. 海报 [https://www.flowsupply.co/](https://www.flowsupply.co/)
    4. [https://www.stockio.com/](https://www.stockio.com/)
 2. 开源图标
-   1. https://feathericons.com/
+   1. [https://feathericons.com/](https://feathericons.com/)
+   2. http://www.easyicon.net/
 
 ```php
 <!DOCTYPE html>
@@ -24,8 +25,6 @@
   </body>
 </html>
 ```
-
-
 
 
 

@@ -4,6 +4,8 @@
 * [ ] 三足鼎立
 * [ ] 其他web开发框架
 
+* 前端编程之路 http://project.giscafer.com/
+
 ---
 
 ## 前端工程化
@@ -64,19 +66,21 @@ Vue.js 也使用了 Virtual DOM、Reactive 及组件化的思想，
 
 ---
 
-## **ch1 Sinatra**
+## **Sinatra**
 
-## **ch2 CanJS**
+## **CanJS**
 
-## **ch3 AngularJS**
+## **AngularJS**
 
-## **ch4 Ring**
+## **Ring**
 
-## **ch5 Webmacchine**
+## **Webmacchine**
 
-## **ch6 Yesod**
+## **Yesod**
 
-## **ch7 Immutant**
+## **Immutant**
+
+---
 
 
 

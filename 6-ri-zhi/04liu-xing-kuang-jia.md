@@ -5,6 +5,7 @@
 ## 实用库和框架
 
 * 轻量级、无依赖  [https://github.com/jawil/blog/issues/10](https://github.com/jawil/blog/issues/10)
+* 实用css库  https://github.com/marvin1023/sassCore
 
 ## 工具篇
 
@@ -30,7 +31,7 @@
 
 ## 浏览器兼容
 
-* 兼容解决方案  https://juejin.im/post/59a3f2fe6fb9a0249471cbb4?utm\_source=gold\_browser\_extension
+* 兼容解决方案  [https://juejin.im/post/59a3f2fe6fb9a0249471cbb4?utm\_source=gold\_browser\_extension](https://juejin.im/post/59a3f2fe6fb9a0249471cbb4?utm_source=gold_browser_extension)
   * Normalize.css
   * 求窗口大小的兼容写法
   * DOM 事件处理程序的兼容写法（能力检测）

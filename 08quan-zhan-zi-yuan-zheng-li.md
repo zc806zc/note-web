@@ -6,7 +6,7 @@
 
 ## 前端导航网
 
-* http://hao.shejidaren.com/
+* [http://hao.shejidaren.com/](http://hao.shejidaren.com/)
 
 #### 在线编辑器
 
@@ -54,7 +54,7 @@
 
 * 优雅的编辑器
   * **Atom\(我最喜欢啦\)**
-  * VScode [vs-code插件-](http://blog.csdn.net/u011127019/article/details/53158660)[天马3798](http://blog.csdn.net/u011127019)
+  * VScode [vs-code插件-](http://blog.csdn.net/u011127019/article/details/53158660)[天马3798](http://blog.csdn.net/u011127019) \| https://github.com/varHarrie/Dawn-Blossoms/issues/10
   * Sublime [Sublime插件推荐](http://www.jianshu.com/p/2f30ccd41165)  \| [推荐2](https://www.zhihu.com/question/37342465)
 * IDE重器
   * Web Storm\($\)
@@ -113,6 +113,7 @@ js filename.js执行
 #### 线框图与原型设计
 
 * Balsamiq
+* 给程序员的设计学习指南  [http://www.cocoachina.com/special/design/](http://www.cocoachina.com/special/design/)
 
 
 
