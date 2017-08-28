@@ -77,7 +77,8 @@ function hoisting(){
   * Comet技术
   * SSE：服务器发送事件,使用长链接进行通讯
 * 实现动画
-* **对象继承**的实现  http://www.cnblogs.com/pompey/p/6675559.html
+* **对象继承**的实现  [http://www.cnblogs.com/pompey/p/6675559.html](http://www.cnblogs.com/pompey/p/6675559.html)
+  * \_\_proto\_\_指向当前对象的原型，prototype是函数才具有的属性，默认情况下，new 一个函数创建出的对象，其原型都指向这个函数的prototype属性
 * 设计模式
 
   * 单例模式
@@ -96,6 +97,7 @@ function hoisting(){
 * **正则表达式**
 
 * es6
+
   * babel  [https://babeljs.io/blog/2016/12/07/the-state-of-babel](https://babeljs.io/blog/2016/12/07/the-state-of-babel)
 
 

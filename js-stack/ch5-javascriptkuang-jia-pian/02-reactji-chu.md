@@ -1,5 +1,6 @@
 #### R**eact入门**
 
+* vscode插件  https://juejin.im/entry/599d4cb96fb9a024a27bf090?utm\_source=gold\_browser\_extension
 * 基础
   * 一个用于构建 用户界面 的JS库 ，起源于Instagram，主要用于构建UI
   * [React 组件 API](http://www.runoob.com/react/react-component-api.html)
@@ -36,17 +37,9 @@ browser.min.js // 将JSX语法转为JS语法
 
 * 语法
 
-  * 使
-    用大、小写的约定
-    ,来区分本地组件的类和 HTML 标签
-  * J
-    SX 就是 JavaScript
-    , class 和 for 不建议作为 XML 属性名 
-    ,作为替代
-    , 使用 className 和 htmlFor
-  * 注释 r
-    ender里的标签注释要花括号
-     形同 {/\*注释...\*/}
+  * 使用大、小写的约定,来区分本地组件的类和 HTML 标签
+  * **JSX 就是 JavaScript**, class 和 for 不建议作为 XML 属性名 ,作为替代, 使用 className 和 htmlFor
+  * 注释 render里的标签注释要花括号 形同 {/\*注释...\*/}
   * 组件类只能包含一个顶层标签，否则会报错
 
 * React JSX
@@ -70,10 +63,7 @@ ReactDOM.render(myElement, document.getElementById('example'));
 
 * React State\(状态\)
 
-  * R
-    eact 把组件看成
-    一个State Machines
-    ,通过与用户的交互实现不同状态
+  * React 把组件看成一个State Machines,通过与用户的交互实现不同状态
     ,然后渲染 UI
     ,让用户界面和数据保持一致
   * 只
@@ -197,13 +187,6 @@ ReactDOM.render(myElement, document.getElementById('example'));
 #### React服务端渲染
 
 #### React可视化
-
-#### 参考
-
-```js
-深入React技术栈 2016.11 陈屹
-菜鸟教程
-```
 
 
 

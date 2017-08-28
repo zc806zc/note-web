@@ -83,7 +83,7 @@
     * [01-jQuery Mobile](js-stack/ch7-webapp/01-jq-mobileji-chu.md)
     * [03-2017-Vue丰收年](js-stack/ch5-javascriptkuang-jia-pian/03-vuejs.md)
     * [01-React技术栈](js-stack/ch5-javascriptkuang-jia-pian/02-reactji-chu.md)
-    * [02-迈向Angular2好累](js-stack/ch5-javascriptkuang-jia-pian/02mai-xiang-angular2.md)
+    * [02-迈向Angular2好累哦](js-stack/ch5-javascriptkuang-jia-pian/02mai-xiang-angular2.md)
     * [09-MEAN开发-基础](js-stack/ch6-js-web/03-meankai-fa-2.md)
     * [10-MEAN开发-基础2](js-stack/ch6-js-web/03-meankai-fa-1.md)
     * [02-JS应用程序设计](js-stack/ch6-js-web/02-jsying-yong-cheng-xu-she-8ba1-du-hou-gan.md)

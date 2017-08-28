@@ -1,20 +1,17 @@
-#### **ch1 Angular2-简介**
+#### **Angular2**
 
 * [Code-download](https://github.com/mgechev/switching-to-angular2) \| [angular2文档](https://angular.io/docs/ts/latest/quickstart.html)
-* 安装
+
+* 学习清单  https://juejin.im/post/599e4ad151882524417ac921?utm\_source=gold\_browser\_extension
 
 ```
 npm install -g cnpm --registry=https://registry.npm.taobao.org
-cnpm install // 工程文件夹路径改变或重命名需要再次install
 
 // 配置文件
 package.json 
 tsconfig.json     // 定义TS编译器如何从项目源文件生成 JS代码
 typings.json      // 为TS编译器无法识别的库提供额外的定义文件
 systemjs.config.js 
-// 为模块加载器提供了该到哪里查找应用模块的信息
-// 并注册了所有必备的依赖包
-// 它还包括文档中后面的例子需要用到的包
 ```
 
 * 架构
@@ -122,7 +119,7 @@ Scope
 // 脏值检测
 ```
 
-#### **ch2 基础构件**
+#### **基础构件**
 
 ```js
 // 组件基础
@@ -137,13 +134,13 @@ Scope
 // 新的基于组件的路由机制
 ```
 
-#### **ch3 TypeScript**
+#### **TypeScript**
 
 ```js
 记在TypeScript基础
 ```
 
-#### **ch4 Angular2组件和指令入门**
+#### **Angular2组件和指令入门**
 
 ```js
 // 配置开发环境
@@ -173,7 +170,7 @@ Scope
 // 理解并优化脏值检测机制
 ```
 
-#### **ch5 依赖注入**
+#### **依赖注入**
 
 ```js
 // Angular2的依赖注入
@@ -186,7 +183,7 @@ DI的优点
 // 子注射器及其可见性
 ```
 
-#### **ch6 路由和表单**
+#### **路由和表单**
 
 ```js
 // Angular2的路由
@@ -200,7 +197,7 @@ DI的优点
 // 显示存储的所有开发者列表
 ```
 
-#### **ch7 管道 / RESTful服务端之间的通信**
+#### **管道 / RESTful服务端之间的通信**
 
 ```js
 // 数据模型驱动型表单
@@ -214,7 +211,7 @@ DI的优点
 // 使用管道进行数据交换
 ```
 
-#### **ch8 开发体验和服务端渲染**
+#### **开发体验和服务端渲染**
 
 ```js
 // 在Web Worker中运行应用
@@ -228,13 +225,6 @@ DI的优点
 // 使用angular-cli初始化项目
 
 // 入门项目
-```
-
-* 参考
-
-```js
-迈向Angular2 Minko Gechev
-菜鸟教程 // 有几张很不错的示意图
 ```
 
 
