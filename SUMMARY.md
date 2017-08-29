@@ -17,6 +17,7 @@
   * [07-WebRTC-视频聊天](ch1-html5/02-webrtcji-chu-2.md)
   * [08-Canvas-内嵌画图板](ch4-canvasyou-xi-kai-fa/01-canvasji-chu-1.md)
   * [08-HTML5新玩法](ch1-html5/08-html5xin-wan-fa.md)
+  * [05-设计原则-基础笔记](ch1-html5/05she-ji-yuan-5219-ji-chu-bi-ji.md)
 * [\[3\] 企业级JAVA应用](java-stack.md)
   * [01-Java-编程规范](java-stack/ch1-java/01-javabian-cheng-gui-fan.md)
   * [03-JSP-逆天补坑](java-stack/ch3-java-web/02-jspcheng-xu-she-ji-jiao-7a0b-du-hou-gan.md)
