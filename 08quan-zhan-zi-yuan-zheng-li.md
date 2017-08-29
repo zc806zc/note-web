@@ -54,12 +54,15 @@
 
 * 优雅的编辑器
   * **Atom\(我最喜欢啦\)**
-  * VScode [vs-code插件-](http://blog.csdn.net/u011127019/article/details/53158660)[天马3798](http://blog.csdn.net/u011127019) \| https://github.com/varHarrie/Dawn-Blossoms/issues/10
+  * VScode [vs-code插件-](http://blog.csdn.net/u011127019/article/details/53158660)[天马3798](http://blog.csdn.net/u011127019) \| [https://github.com/varHarrie/Dawn-Blossoms/issues/10](https://github.com/varHarrie/Dawn-Blossoms/issues/10)
   * Sublime [Sublime插件推荐](http://www.jianshu.com/p/2f30ccd41165)  \| [推荐2](https://www.zhihu.com/question/37342465)
 * IDE重器
   * Web Storm\($\)
   * netbeans
   * Eclipse \| ~~Aptana Studio~~
+* 新型编程工具
+  * http://www.4hou.com/info/news/7342.html
+  * Cell   一种**类似写小说**的方式（a novel approach）来开发网页应用
 
 ```js
 // itellj idea 文件编码问题的解决
@@ -114,6 +117,14 @@ js filename.js执行
 
 * Balsamiq
 * 给程序员的设计学习指南  [http://www.cocoachina.com/special/design/](http://www.cocoachina.com/special/design/)
+
+## 其他
+
+* **gif录制** https://www.cockos.com/licecap/
+* 75款**动效工具**
+  * http://www.uisdc.com/75-web-animation-tools-1
+  * animate.css
+  * anjis http://anijs.github.io/
 
 
 
