@@ -14,7 +14,7 @@
 根据项目的不同，客户需要的可能是移动栈、Web栈、或者原生应用程序栈
 ```
 
-* 产品流程
+* 产品流程  https://juejin.im/entry/59a7782b5188252445328105?utm\_source=gold\_browser\_extension
 
   * 产品经理
   * 交互设计 
