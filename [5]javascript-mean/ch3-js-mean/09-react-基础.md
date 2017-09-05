@@ -1,6 +1,12 @@
 # R**eact入门**
 
 - vscode插件 <https://juejin.im/entry/599d4cb96fb9a024a27bf090?utm\_source=gold\_browser\_extension>
+- 网站
+
+  - 一个收集react的网站 <https://react.parts/native>
+
+    - <https://github.com/react-native-material-design/react-native-material-design>
+
 - 基础
 
   - 一个用于构建 用户界面 的JS库 ，起源于Instagram，主要用于构建UI
@@ -13,7 +19,9 @@
     - 与已知的库或框架很好地配合
 
   - JSX
+
   - 组件 化， 代码更容易复用 ， 适合于大项目开发
+
   - 单向响应的数据流 ，减少了重复代码 ，比传统数据绑定更简单
 
 ```javascript
@@ -38,7 +46,7 @@ browser.min.js // 将JSX语法转为JS语法
 
   - 使用大、小写的约定,来区分本地组件的类和 HTML 标签
   - **JSX 就是 JavaScript**, class 和 for 不建议作为 XML 属性名 ,作为替代, 使用 className 和 htmlFor
-  - 注释 render里的标签注释要花括号 形同 {/*注释...*/}
+  - 注释 render里的标签注释要花括号 形同 {/_注释..._/}
   - 组件类只能包含一个顶层标签，否则会报错
 
 - React JSX
@@ -100,13 +108,16 @@ ReactDOM.render(myElement, document.getElementById('example'));
   - 函数式编程
 
 - JSX
+
 - React组件
+
 - React数据流
 
   - state
   - props
 
 - React生命周期
+
 - React与DOM
 
 # 漫谈REACT
@@ -172,8 +183,11 @@ ReactDOM.render(myElement, document.getElementById('example'));
   - 核心API
 
 - Redux middleware
+
 - Redux 异步流
+
 - Redux与路由
+
 - Redux与组件
 
   - 容器型组件

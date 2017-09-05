@@ -8,6 +8,11 @@
   - id 声明会覆盖class
   - c lass中的排序不重要 ，但在表中的顺序很重要
 
+- CSS清单 <https://juejin.im/post/59ae076b6fb9a0248e5ce689?utm_source=gold_browser_extension>
+
+  - 抖动分析 <https://juejin.im/entry/59ae15126fb9a0247d4f6d16?utm_source=gold_browser_extension>
+  - A Cross-end HTML5 Game <https://github.com/hiloteam/Hilo>
+
 --------------------------------------------------------------------------------
 
 ## flex
