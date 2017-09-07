@@ -14,6 +14,7 @@
 <https://juejin.im/post/59928d55518825486f1e8369?utm_source=gold_browser_extension>
 
 - API <https://vuejs-tips.github.io/cheatsheet/>
+- vue入门到放弃 <https://juejin.im/post/59aa1248518825392656a86a?utm_source=gold_browser_extension>
 
 --------------------------------------------------------------------------------
 
@@ -114,6 +115,7 @@ componentUpdated // 被绑定元素所在模板完成一次更新周期时调用
   - vue | vue sytnax hightlight
 
 - ~~vue + scrat.js的化学反应：移动开发解决方案~~
+
 - 性能优化：bigpipe | bigrender
 - 要去学习源码
 
