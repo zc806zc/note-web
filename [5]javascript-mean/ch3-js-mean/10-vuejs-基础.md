@@ -117,6 +117,7 @@ componentUpdated // 被绑定元素所在模板完成一次更新周期时调用
 - ~~vue + scrat.js的化学反应：移动开发解决方案~~
 
 - 性能优化：bigpipe | bigrender
+
 - 要去学习源码
 
 # Axios封装
@@ -237,4 +238,33 @@ export default {
     Object.defineProperty(Vue.prototype, "$http", { value: Axios });
   }
 };
+```
+
+## 服务端渲染 ssr
+
+- <https://ssr.vuejs.org/zh/>
+- 处理 Vue 单页面 SEO 的另一种思路
+
+  - preRender + metaInfo <https://github.com/declandewet/vue-meta>
+
+```javascript
+<template>
+  ...
+</template>
+
+<script>
+  export default {
+    metaInfo: {
+      title: 'My Example App', // set a title
+      meta: [{                 // set meta
+        name: 'keyWords',
+        content: 'My Example App'
+      }]
+      link: [{                 // set link
+        rel: 'asstes',
+        href: 'https://assets-cdn.github.com/'
+      }]
+    }
+  }
+</script>
 ```

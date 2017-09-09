@@ -1,5 +1,25 @@
 # **CSS布局**
 
+- BFC(Block formatting context 块级格式化上下文)
+
+  - 哪些元素会生成BFC
+
+    - 根元素
+    - float属性不为none
+    - position为absolute或fixed
+    - display为inline-block, table-cell, table-caption, flex, inline-flex
+    - overflow不为visible
+
+  - BFC有何用
+
+    - 清除浮动
+    - 防止 margin 重叠
+    - 多栏布局的一种方式
+
+```less
+overflow: hidden; // 触发生成BFC,使浮动元素也参与计算
+```
+
 - [负值之美](http://www.cnblogs.com/jscode/archive/2012/08/28/2660078.html) | 将一个元素的margin设置为负值，元素将会变大
 - [常用CSS集](https://github.com/asd0102433/blog/blob/master/前端/css有用的收集.md)
 - 盒模型 display + position + float

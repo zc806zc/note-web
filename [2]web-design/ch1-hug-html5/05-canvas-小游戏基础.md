@@ -1,7 +1,14 @@
 # Canvas-**基础知识**
 
+- svg基础 <http://www.cnblogs.com/yizihan/p/4585396.html>
+- HTML5 游戏引擎
+
+  - phaser <https://github.com/photonstorm/phaser>
+
 - [HTML5 Canvas核心技术-code-dl](https://github.com/corehtml5canvas/code)
+
 - [Canvas-kev3d作品集](http://www.kevs3d.co.uk/dev/phoria/index.html) | [画布中播放黑白图片](http://html5doctor.com/video-canvas-magic) |[迟钝的水滴](http://www.blobsallad.se) | [星空效果](http://tinyurl.com/crn3ed)
+
 - 有视觉冲击力的Canvas应用实例
 
   - [3D Walker](http://www.benjoffe.com/code/demos/canvascape)
