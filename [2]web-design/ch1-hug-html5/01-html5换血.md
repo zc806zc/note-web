@@ -98,6 +98,15 @@ flow流元素
 contenteditable spellcheck
 contextmenu
 draggable dropzone
+
+// html5元素分类
+元数据 link meta base...
+流式 span div
+章式 article nav aside
+标题 h6 hgroup
+段落 img span
+嵌入 iframe svg
+交互  a button input select
 ```
 
 - 浏览器与设备兼容 - 平稳退化, 积极拥抱HTML5
