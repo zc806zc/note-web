@@ -7,10 +7,12 @@
 
 - 书单
 
+- 你真的会写java吗 <https://juejin.im/entry/59ae07d9f265da249600f0ec?utm_source=gold_browser_extension>
+
 ```
-  // 入门
-  《Head First Java》
-  《Java 核心技术》两卷
+// 入门
+《Head First Java》
+《Java 核心技术》两卷
 
 // 进阶  
 《Java 编程思想\(第4版\)》  
@@ -172,6 +174,7 @@ public class Car extends Vehicle {
     - 实现Runnable接口
 
   - 线程的生命周期
+
   - 操作线程
 
     - 休眠
@@ -180,17 +183,22 @@ public class Car extends Vehicle {
     - 礼让
 
   - 线程的优先级
+
   - 线程同步
 
     - 线程安全
     - 线程同步机制
 
   - 线程之间的通信
+
   - 线程死锁
 
 - ch17 图形绘制技术
+
 - ch18 常用工具类
+
 - ch19 数据库编程
+
 - 示例
 
   - 快递打印系统
