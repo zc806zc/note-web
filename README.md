@@ -8,15 +8,16 @@
 
 ## 阅读建议
 
-```js
+```javascript
 // 编辑器
 Atom + beautify(格式化)
 
 // 使用chrome插件
-目录 octotree
+目录 octotree / insight.io
 高亮 Liner
 
 // 弃用gitbook的原因
-1. 生成的文件结构不实现组织就会极其混乱, 拖拽交互可能丢失文件的bug
-2. 国内网络原因
+1\. 生成的文件结构混乱
+2\. web拖拽交互可能丢失文件
+3\. 国内网络
 ```
