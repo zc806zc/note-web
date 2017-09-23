@@ -152,6 +152,24 @@ ReactDOM.render(myElement, document.getElementById('example'));
   - Enzyme
   - 自动化测试
 
+- React/Redux/webpack教程
+
+  - <http://www.ruanyifeng.com/blog/2016/09/react-technology-stack.html>
+  - <http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_one_basic_usages.html> (Redux教程)
+  - <https://github.com/ruanyf/react-demos> | <https://github.com/ruanyf/webpack-demos>
+
+
+
+- Flux 架构
+
+  - <https://github.com/ruanyf/extremely-simple-flux-demo>
+  - <http://blog.andrewray.me/flux-for-stupid-people/>
+  - <http://www.ruanyifeng.com/blog/2016/01/flux.html>
+
+```javascript
+Flux 的最大特点，就是数据的"单向流动"
+```
+
 --------------------------------------------------------------------------------
 
 # 解读React源码

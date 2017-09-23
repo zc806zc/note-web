@@ -1,5 +1,47 @@
 # **BOM**
 
+- **DOM** 文档对象模型 Document Object Model
+
+```javascript
+针对 XML 但经过扩展用于 HTML 的应用程序编程接口
+
+DOM 并不只是针对 JavaScript 的，
+很多别的语言也都实现了 DOM
+
+SVG Scalable Vector Graphic，可伸缩矢量图
+
+MathML（Mathematical Markup Language，数学标记语言）
+SMIL（Synchronized Multimedia Integration Language，同步多媒体集成语言）
+
+// BOM 浏览器对象模型
+弹出新浏览器窗口的功能；
+移动、缩放和关闭浏览器窗口的功能；
+提供浏览器详细信息的 **navigator** 对象；
+提供浏览器所加载页面的详细信息的 **location** 对象；
+提供用户显示器分辨率详细信息的 **screen** 对象；
+对 **cookies** 的支持；
+像 **XMLHttpRequest** 和 IE的 ActiveXObject 这样的 **自定义对象**
+script
+* **async** 立即下载脚本，但不应妨碍页面中的其他操作
+* **异步**脚本不要在加载期间修改 DOM
+* **defer** 表示脚本可以**延迟**到文档 **完全被解析和显示**之后再执行
+* 最好只包含一个延迟脚本
+* 只适用于外部脚本文件
+* 还是按照顺序来
+```
+
+- 示例
+
+```javascript
+* <del>language type charset</del>
+* <del>不要在代码中的任何地方出现 "</script>"
+
+function sayScript(){
+// alert("</script>");
+alert("<\/script>"); // 正确方式
+}
+```
+
 - 引子
 
 ```javascript
