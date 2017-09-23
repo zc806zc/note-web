@@ -7,7 +7,7 @@
 
 - 书单
 
-- 你真的会写java吗 <https://juejin.im/entry/59ae07d9f265da249600f0ec?utm_source=gold_browser_extension>
+  - 你真的会写java吗 <https://juejin.im/entry/59ae07d9f265da249600f0ec?utm_source=gold_browser_extension>
 
 ```
 // 入门
@@ -49,93 +49,92 @@
 
 - 基础
 
-```
+  - 排序算法 <https://juejin.im/entry/59c5d26951882578e00ddcb2?utm_source=gold_browser_extension> ```
 
 Java程序的执行模式是 半编译半解释
 
-虚拟机可以用硬件实现，  
+虚拟机可以用硬件实现，<br>
 字节代码是虚拟机的机器码
 
-只能有一个main方法  
-main方法只能是一个public静态方法  
+只能有一个main方法<br>
+main方法只能是一个public静态方法<br>
 一个源程序文件中最多只能有一个`public`类，其他类的个数不限
 
-System不是关键字  
-加号 + 的优先级大于 =  
+System不是关键字<br>
+加号 + 的优先级大于 =<br>
 java.lang包中的所有类是隐式导入的
+
 ```
 
 - 异常
-
 ```
 
 用户输入了非法数据
 
-要打开的文件不存在   
+要打开的文件不存在<br>
 网络通信时连接中断，或者JVM内存溢出
 
-可控式异常 IOException  
+可控式异常 IOException<br>
 运行时异常
+
 ```
 
 - 输入输出
-
 ```
 
-long = int + float  赋值会出错
+long = int + float 赋值会出错
 
-控制double输出精度的方法  
-(int)(26.3456*100)/100 --小数点后两位  
-System.out.print("%.3f",item);  
+控制double输出精度的方法<br>
+(int)(26.3456*100)/100 --小数点后两位<br>
+System.out.print("%.3f",item);<br>
 format
 
-Scanner kb = new Scanner(System.in);  
+Scanner kb = new Scanner(System.in);<br>
 int i = kb.nextInt() % 4;
 
-import java.text.DecimalFormat;  
-DecimalFormat df = new DecimalFormat( "0.00");  
+import java.text.DecimalFormat;<br>
+DecimalFormat df = new DecimalFormat( "0.00");<br>
 System.out.println("Accumulated value is "+df.format(futureInvestment));
 
-// 输出结果 1.0  
-int a = 5, b = 4;  
-double d;  
-d = a / b;  
+// 输出结果 1.0<br>
+int a = 5, b = 4;<br>
+double d;<br>
+d = a / b;<br>
 System.out.println(d);
+
 ```
 
 - if(boolean) {} 里面只能是布尔值，与C语言有区别, 例if(3)不允许
-
 ```
 
-if(3) { printf("hello wo"); }  
-if(3) { System.out.println("je"); } //   required: boolean
+if(3) { printf("hello wo"); }<br>
+if(3) { System.out.println("je"); } // required: boolean
+
 ```
 
 - else总是和最近的if匹配 -> 加括号的重要性
-
 ```
 
-int i = 1,  j = 1, k =1;  
-if\(i > j\)  
-if\( j > k\)   
-    System.out.print\("A"\);  
-else   
-    System.out.print\("B"\);  // 所以什么也不输出
+int i = 1, j = 1, k =1;<br>
+if(i > j)<br>
+if( j > k)<br>
+System.out.print("A");<br>
+else<br>
+System.out.print("B"); // 所以什么也不输出
+
 ```
 
 - instanceof判断对象类型
-
 ```
 
-class Vehicle {}  
-public class Car extends Vehicle {  
-  public static void main\(String args\[\]\) {  
-      Vehicle a = new Car\(\);  
-      boolean result = a instanceof Car;  
-      System.out.println\( result\);  
-  }  
-}
-```
+class Vehicle {}<br>
+public class Car extends Vehicle {<br>
+public static void main(String args[]) {<br>
+Vehicle a = new Car();<br>
+boolean result = a instanceof Car;<br>
+System.out.println( result);<br>
+}<br>
+} ```
 
 - ch1-3 初始Java，Eclipse开发工具、Java语言基础
 - ch4 流程控制
