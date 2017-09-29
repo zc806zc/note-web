@@ -1,3 +1,10 @@
+# idea安装
+
+```js
+http://blog.csdn.net/fyqcdbdx/article/details/46788915
+-server -XX:PermSize=128M -XX:MaxPermSize=256m
+```
+
 # **JSP-开发环境搭建**
 
 - [JSP环境搭建](http://www.jianshu.com/p/5b022371de26)
@@ -7,7 +14,7 @@
   - [使用IntelliJ IDEA开发JavaWeb项目](http://youthlin.com/20151128.html)
   - [Idea导出war](http://blog.csdn.net/thehide/article/details/52042487) | [Tomcat-IDEA虚拟目录](http://www.cnblogs.com/zhuiyi/p/5900092.html)| [JavaBean classes路径调整](http://www.itnose.net/detail/6272750.html)
 
-```
+```js
 // 准备环境
 JDK
 Eclipse Java EE
