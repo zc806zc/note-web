@@ -1,4 +1,5 @@
 # JS基础-致最爱的语言
+
 > JavaScript不是世界上最好的语言,但这些致力于改善JavaScript的程序员是！！
 
 - 书单名人堂/资源
@@ -15,7 +16,8 @@
 ```javascript
 // 入门
 JavaScript编程全解（太细腻）
-精通JavaScript开发(Den Odell,我看这本书的时候才发现grunt已经过时...)
+精通JavaScript开发
+(学校看这本书的时候,JS浪潮早已更新换代...)
 
 // 进阶
 JavaScript DOM编程艺术
@@ -44,7 +46,7 @@ JavaScript高级程序设计(红宝书)
 ```javascript
 // 宿主语言
 Web 浏览器只是 ECMAScript 实现可能的宿主环境之一
-其他宿主环境包括Node\Adobe Flash
+其他宿主环境包括Node、Adobe、Flash
 
 // 公式
 Browser JS ≈ ECMA + DOM + BOM
@@ -1015,21 +1017,26 @@ EventUtil.addHandler(form, "submit", function(event){
 ## 浏览器调试
 
 - chrome开发者工具, 例如
+
   - Task Management
   - Profiles - Heap Snapshot
   - Timeline 内存时间轴
-- console http://ghmagical.com/article/page/id/S6S2E4BolVg7
-  - console.log发布前一定要删掉
-- 工具文档 http://www.css88.com/doc/chrome-devtools/settings/
 
+- console <http://ghmagical.com/article/page/id/S6S2E4BolVg7>
+
+  - console.log发布前一定要删掉
+
+- 工具文档 <http://www.css88.com/doc/chrome-devtools/settings/>
 
 - 内存泄漏
+
   - 不再需要的变量一直没有释放
   - 函数闭包 removeEventListener
   - 多个对象之间的循环引用
   - 数据引用保存独立的局部变量副本
 
 - 性能瓶颈
+
   - 即浏览器有时会出现一瞬间的锁定或冻结
   - 原因：浏览器渲染被迫优先处理JS解释器，使其赶上渲染速度
   - for 或 while迭代
@@ -1078,8 +1085,6 @@ console.timeEnd()
 
   - [grunt-strip](https://github.com/jsoverson/grunt-strip)
   - [gulp-strip-debug](https://github.com/sindresorhus/gulp-strip-debug)
-
-
 
 ## 浏览器插件学习
 
