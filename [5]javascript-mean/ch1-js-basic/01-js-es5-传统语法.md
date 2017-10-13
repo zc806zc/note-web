@@ -1,31 +1,39 @@
 # JS基础-致最爱的语言
+> JavaScript不是世界上最好的语言,但这些致力于改善JavaScript的程序员是！！
 
 - 书单名人堂/资源
 
   - 精通JavaScript开发 <https://github.com/denodell/pro-javascript-development>
   - JS数据结构与算法 <https://github.com/oreillymedia/data_structures_and_algorithms_using_javascript>
+  - JS红宝书 图书源码 <http://www.wrox.com/WileyCDA/WroxTitle/Professional-JavaScript-for-Web-Developers-3rd-Edition.productCd-1118026691,descCd-DOWNLOAD.html>
+  - Professional-Javascript-for-Web-Developers 源码 <https://github.com/zgdong/Professional-Javascript-for-Web-Developers/tree/master/Professional-Javascript-for-web-developers>
+
+- 博客/资源
+
   - JS深入系列 <https://juejin.im/post/59278e312f301e006c2e1510>
-  - [源码下载](http://www.wrox.com/WileyCDA/WroxTitle/Professional-JavaScript-for-Web-Developers-3rd-Edition.productCd-1118026691,descCd-DOWNLOAD.html)
-  - [github下载](https://github.com/zgdong/Professional-Javascript-for-Web-Developers/tree/master/Professional-Javascript-for-web-developers)
 
 ```javascript
+// 入门
 JavaScript编程全解（太细腻）
-精通JavaScript开发(Den Odell，不错)
+精通JavaScript开发(Den Odell,我看这本书的时候才发现grunt已经过时...)
 
+// 进阶
 JavaScript DOM编程艺术
 JavaScript基础教程
 你不知道的JavaScript
 
-JavaScript快速全栈开发？？
-JavaScript设计模式和开发实战（买不起）
-JavaScript高级程序设计(无聊经典)
-犀牛书（圣经）
+// 扩展或深入
+JavaScript快速全栈开发
+JavaScript设计模式和开发实战
+JavaScript高级程序设计(红宝书)
+犀牛书（JS圣经）
+数据结构与算法JavaScript描述（第1版虎头蛇尾）
 
-数据结构与算法JavaScript描述（虎头蛇尾）
+// 再深入
 全端Web开发:使用JavaScript与Java
 ```
 
-# 语言本身
+# 语法
 
 > 一门基于对象和事件驱动并具有安全性的脚本语言
 
@@ -1006,49 +1014,26 @@ EventUtil.addHandler(form, "submit", function(event){
 
 ## 浏览器调试
 
-- chrome开发者工具内容 f12
-
+- chrome开发者工具, 例如
   - Task Management
   - Profiles - Heap Snapshot
   - Timeline 内存时间轴
-
-- 内存（泄漏） - 不再需要的变量一直没有释放
-
+- console http://ghmagical.com/article/page/id/S6S2E4BolVg7
   - console.log发布前一定要删掉
+- 工具文档 http://www.css88.com/doc/chrome-devtools/settings/
+
+
+- 内存泄漏
+  - 不再需要的变量一直没有释放
   - 函数闭包 removeEventListener
-  - 多个对象之间的循环引用 - 数据引用保存独立的局部变量副本
+  - 多个对象之间的循环引用
+  - 数据引用保存独立的局部变量副本
 
-- 性能瓶颈：浏览器有时会出现一瞬间的锁定或冻结
-
+- 性能瓶颈
+  - 即浏览器有时会出现一瞬间的锁定或冻结
   - 原因：浏览器渲染被迫优先处理JS解释器，使其赶上渲染速度
-  - for 或 while执行太多的迭代
+  - for 或 while迭代
   - Collect JavaScript CPU Profile
-
-- console.log()
-
-  - 可在调试输出时，使用配色方案，css等
-
-```javascript
-// 如何在浏览器查看代码
-1/.pretty-printing 重排版代码
-2/.source maps 缩编时添加一个指向完整版的引用
-// # souceMappingURL=/scripts/scripts.js.map
-X-SourceMap: /scripts/scripts/js.map
-3/.或使用UglifyJS或Google Closure Compiler实现
-
-console.info()  一般信息
-console.bug()  辅助错误调试
-console.warn() 指出 潜在问题 的具体情况
-console.error() 出现 错误 并指出错误的具体情况
-
-console.time()
-console.timeEnd()
-```
-
-- 发布时自动移除console对象
-
-  - [grunt-strip](https://github.com/jsoverson/grunt-strip)
-  - [gulp-strip-debug](https://github.com/sindresorhus/gulp-strip-debug)
 
 - [前端工程师必会的6个调试技术](https://read.douban.com/reader/column/5945187/chapter/30774228/)
 
@@ -1061,6 +1046,40 @@ console.timeEnd()
   - 对移动设备进行调试：**先在浏览器进行响应式设计，随后在真机上进行测试**。
 
   - 对网站的性能进行调试
+
+```javascript
+// 让Chrome变成编辑器
+document.body.contentEditable=true
+
+// 打开命令菜单
+Ctrl + Shift + P
+
+// 如何在浏览器查看代码
+1/.pretty-printing 重排版代码
+2/.source maps 缩编时添加一个指向完整版的引用
+// # souceMappingURL=/scripts/scripts.js.map
+X-SourceMap: /scripts/scripts/js.map
+3/.或使用UglifyJS或Google Closure Compiler实现
+
+// 输出
+console.info()  一般信息
+console.bug()  辅助错误调试
+console.warn() 指出 潜在问题 的具体情况
+console.error() 出现 错误 并指出错误的具体情况
+
+// 设置css输出
+
+// 计时
+console.time()
+console.timeEnd()
+```
+
+- 发布时自动移除console对象
+
+  - [grunt-strip](https://github.com/jsoverson/grunt-strip)
+  - [gulp-strip-debug](https://github.com/sindresorhus/gulp-strip-debug)
+
+
 
 ## 浏览器插件学习
 
