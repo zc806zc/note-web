@@ -122,3 +122,249 @@ HTML table 转换成数据网格
 验证
 下拉框（格式化,过滤）
 ```
+
+## UI
+
+- 背景
+- 对话框和灯箱
+- 弹出层
+- 筛选排序
+- 反馈
+- 悬停
+- 布局
+- 图表
+- 加载
+
+  - <https://codepen.io/collection/jifIK/>
+
+- 圆边
+
+- 滚动
+
+- 标签
+
+- 文本链接
+
+- 工具提示
+
+- 网络类型
+
+## 输入
+
+- 通用输入
+- 拾色器
+- 定制和风格
+- 时间日期
+- 拖放
+- 自动完成
+- 密码
+- 投票率
+- 搜索
+- 选择框
+- 快捷键
+- 触摸
+- 丰富的输入
+- 上传
+- 验证
+
+## 媒体
+
+- 音频和视频
+- 幻灯片和轮播图
+- 图片展示
+- 图像
+- 地图
+- 滑块和旋转
+- Tabs
+
+## 导航
+
+- 水平导航
+- 垂直导航
+- 文件树
+- 手风琴导航
+- 分页
+- 其他导航
+
+## 其他
+
+- 动画效果
+
+  - 默认情况下，所有 HTML 元素的位置都是静态的，并且无法移动。如需对位置进行操作，记得首先把元素的 CSS position 属性设置为 relative、fixed 或 absolute。
+
+- 浏览器调整
+
+- 移动
+
+- 独立的部件
+
+- 杂项
+
+- 游戏
+
+## 网页模板
+
+## 常用代码
+
+- 三级联动
+
+  - 省市区 <http://www.jq22.com/webqd3010>
+
+- 时钟
+
+```javascript
+window.onload = function() {
+    var timer = setInterval(mytime, 1000)
+}
+
+function mytime() {
+    var a = new Date();
+    var b = a.getFullYear();
+    var c = a.getMonth() + 1;
+    var d = a.getDay();
+    var e = a.getDate();
+    var f = a.getHours();
+    var g = a.getMinutes();
+    var m = a.getSeconds();
+    con.innerHTML = f + "时" + g + "分" + m + "秒";
+}
+```
+
+- 抽奖
+
+```javascript
+function playFun() {
+    clearInterval(timer); // 先清除
+    timer = setInterval(function() {
+        var random = Math.floor(Math.random() * data.length);
+        title.innerHTML = data[random];
+    }, 50);
+}
+
+function stopFun() {
+    clearInterval(timer);
+}
+```
+
+- 选项卡
+
+```javascript
+$("#" + wrapId).find("div").eq(index).show().siblings().hide();  // 显示自己隐藏兄弟
+```
+
+- 时间正序排序
+
+```javascript
+var data = {
+    "rows": [{
+        "name": "张三",
+        "time": "2011-4-1 0:00:00",
+    },{
+        "name": "李四",
+        "time": "2015-5-6 12:30:00",
+    },{
+        "name": "王五",
+        "time": "2012-10-1 22:10:00",
+    },{
+        "name": "赵六",
+        "time": "2011-9-1 22:10:00",
+    }]
+};
+var rows = data.rows;
+rows.sort(function(a,b){
+    return Date.parse(a.time) - Date.parse(b.time);//时间正序
+});
+```
+
+- 限时答题 <http://www.jq22.com/webqd3103>
+- 可滚动的tbody <http://www.jq22.com/webqd3098>
+
+```javascript
+第一步是：设置 tbody 为 display:block ，以便我们可以应用 height 和 overflow 属性。
+下一步将是：设置thead 中的 tr元素设置为 display:block。
+```
+
+- 去除空格
+
+```javascript
+function Trim(str) {
+    var result;
+    result = str.replace(/(^\s+)|(\s+$)/g, "");
+    result = result.replace(/\s/g, "");
+    return result;
+}
+```
+
+- 关于jquery实现px转换为rem代码
+
+```javascript
+var deviceWidth = document.documentElement.clientWidth;
+if (deviceWidth > 640) {
+    deviceWidth = 640;
+}
+if (deviceWidth < 320) {
+    deviceWidth = 320;
+}
+document.documentElement.style.fontSize = deviceWidth / 3.75 + 'px';
+//此部分是设计稿宽度为375px的，这边设置为3.75  页面调用时，如果实际设计稿为760px，那边这边的3.75数值改为7.60
+window.onresize = function() {
+    var deviceWidth = document.documentElement.clientWidth;
+    if (deviceWidth > 640) {
+        deviceWidth = 640;
+    }
+    if (deviceWidth < 320) {
+        deviceWidth = 320;
+    }
+    document.documentElement.style.fontSize = deviceWidth / 3.75 + 'px';
+}
+```
+
+- canvas选座位 <http://www.jq22.com/webqd3040>
+
+- 原生弹幕 <http://www.jq22.com/webqd3046>
+
+- 淘宝评分 <http://www.jq22.com/webqd3035>
+
+```javascript
+function praise(num, obj) {
+    obj.prevAll().attr('class', 'xx-star');
+    obj.attr('class', 'xx-star');
+    obj.nextAll().attr('class', 'xx-star2');
+    $(".display-star").html(num + '星');
+}
+```
+
+- js数字金额大写转换 <http://www.jq22.com/webqd3030>
+
+- 下拉菜单 css实现 <http://www.jq22.com/webqd3033>
+
+- jQuery弹出窗口可移动、缩放 <http://www.jq22.com/webqd3029>
+
+- 图片炸裂 <http://www.jq22.com/webqd3028>
+
+- 打字效果
+
+```javascript
+var zi = "这是个神奇的网站！";
+var i = 0;
+var divObj; //全局变量
+function init() {
+    divObj = document.getElementById("divId");
+    setInterval(show, 200); //每个指定的毫秒执行一次函数
+}init();
+
+function show() {
+    i++;
+    var jzi = zi.substring(0, i); //截取字符串，每次截取一个
+    divObj.innerHTML = jzi; //往div设置内容
+    if (i == zi.length) { //当字符串写完后，重新开始执行
+        i = 0;
+    }
+}
+```
+
+## 参考
+
+```javascript
+jq22.com
+```
