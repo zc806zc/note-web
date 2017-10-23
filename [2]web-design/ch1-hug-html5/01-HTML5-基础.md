@@ -86,6 +86,18 @@ input和textarea 的autofocus required placeholder
 <a href="tel:16505551212">xxx</a>
 // href也不是必需的了
 
+
+//  datalist
+<input list="browsers">
+
+<datalist id="browsers">
+  <option value="Internet Explorer">
+  </option><option value="Firefox">
+  </option><option value="Chrome">
+  </option><option value="Opera">
+  </option><option value="Safari">
+</option></datalist>
+
 短语元素
 区段元素 // 但语义限制也不能位于短语元素中
 heading
@@ -195,7 +207,7 @@ figure,details 会产生自己的纲要
 
 - SEO
 
-```javascript
+```css
 // data-*  
 // jq已经封装
 不至于与未来的属性相冲突
@@ -230,14 +242,14 @@ RDFa 属性，笨重
 微格式 Microformats, class="vCard"
 微数据
 
-<div itemscope itemtype="http://data-vocabulary.org/Review">
-<h1 itemprop="itemreviewed">Jan's Pizza House</h1>
-<p>Reviewed by <span itemprop="reviewer">Jared Elberadi</span> on
-<time itemprop="dtreviewed" datetime="2011-01-26">January 26</time>.<p>
-<p itemprop="summary">Pretty bad, and then the Health Department showed up.</p>
-<p itemprop="description">...</p>
-<p>Rating: <span itemprop="rating">0.5</span></p>
-</div>
+// <div itemscope itemtype="http://data-vocabulary.org/Review">
+// <h1 itemprop="itemreviewed">Jan's Pizza House</h1>
+// <p>Reviewed by <span itemprop="reviewer">Jared Elberadi</span> on
+// <time itemprop="dtreviewed" datetime="2011-01-26">January 26</time>.<p>
+// <p itemprop="summary">Pretty bad, and then the Health Department showed up.</p>
+// <p itemprop="description">...</p>
+// <p>Rating: <span itemprop="rating">0.5</span></p>
+// </div>
 
 
 // 元数据有关工具
@@ -334,7 +346,7 @@ muted poster height weight
 不同角度拍摄的体育赛事
 
 // 格式
-最流行：MP3音频 H.264视频
+最流行：MP3音频 H .264 视频
 
 // 编解码器 和 容器格式
 // 容器

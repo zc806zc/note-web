@@ -126,6 +126,10 @@ console.log(num.toPrecision(1)); //"1e+2"
 console.log(num.toPrecision(2)); //"99"
 console.log(num.toPrecision(3)); //"99.0"
 
+
+var htmlstr = `${title[0]}: <select  onChange='bindEvent(this)'><option value="0">--请选择${title[0]}--</option>${opt}</select>`
+this.dom.innerHTML = htmlstr;
+
 // return的作用
 1/.暴露出去
 2/.退出函数

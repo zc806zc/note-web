@@ -202,13 +202,166 @@ HTML table 转换成数据网格
 
 - 游戏
 
+  - 找不同色块的游戏 <http://www.jq22.com/webqd2835>
+
 ## 网页模板
 
 ## 常用代码
 
+- 图片放大
+
+```css
+.box{
+    width: 200px;
+    height:200px;
+    overflow: hidden;
+}
+img{
+    width: 100%;
+    transition: transform 1.6s;
+}
+img:hover{
+    transform: scale(2.0);
+}
+```
+
+- 返回顶部
+
+  - <http://www.jq22.com/webqd2804>
+
+```js
+$(function() {
+    // 监听一定的高度
+    $(window).scroll(function() {
+        if ($(window).scrollTop() >= 300) {
+            $('.gongyong a').fadeIn(600);
+        } else {
+            $('.gongyong a').fadeOut(600);
+        }
+    });
+    $('.bottom a').click(function() {
+        $("html,body").animate({
+            scrollTop: $(document).height()
+        }, 500);
+    });
+});
+```  
+
+- 表格排序
+
+  - <http://www.jq22.com/webqd2793>
+
+- 表单
+
+  - 文本框自动跳转下一个 <http://www.jq22.com/webqd2809>
+
+```javascript
+$(function() {
+    var inputLength = $('input').length;
+    //$('input').keyup(function(){})
+    //使用jQuery事件代理的事件绑定方式，不需要对每个input进行事件绑定，有利于性能优化
+    $('#body').delegate('input', 'keyup', function() {
+        var _this = $(this),
+            valLength = _this.val().length,
+            index = _this.index();
+        if (valLength > 0) {
+            if ((index + 1) > inputLength) return false; //输入完成时进行操作
+            _this.attr('data-in', 'true').next().focus();
+        } else if (valLength == 0 && _this.attr('data-in') == 'true') {
+            if (index == 0) return false; //删除所有时进行操作
+            _this.attr('data-in', 'false').prev().focus();
+        }
+    });
+});
+```
+
+- 表单验证
+
+  - <http://www.jq22.com/webqd2853>
+
 - 三级联动
 
   - 省市区 <http://www.jq22.com/webqd3010>
+
+- 拖放
+
+  - 图片 <http://www.jq22.com/webqd2950>
+  - 支持排序 <http://www.jq22.com/webqd2944>
+
+```javascript
+// 图片拖放
+<div id="wrap2" class="wrap" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("Img");
+    ev.target.appendChild(document.getElementById(data));
+}
+
+// 拖拽排序
+function DragDrop(id) {
+    this.parentBox = document.getElementById(id)
+    this.editSwith = this.parentBox.querySelector('.editOrder');
+    this.save = this.parentBox.querySelector('.save');
+    this.list = this.parentBox.querySelector('.list');
+    this.li = this.list.querySelectorAll('li');
+    this.aPosXY = []; //原始位置
+    this.aPosXYClone = [];
+    this.moveStatus = false; //移动状态
+    this.editAble = false; //编辑状态
+    this.dashedBox = null;
+    this.moveItem = null;
+    this.moveItemH = null;
+    this.mouseDownPos = [];
+    this.inScope = false;
+}
+
+//鼠标移动
+DragDrop.prototype.mouseMove = function(e, obj) {
+
+    var relativeListX = e.pageX - this.list.offsetLeft; //鼠标相对ul的位置 x
+    var relativeListY = e.pageY - this.list.offsetTop; //鼠标相对ul的位置 y
+    var objIndex = obj.getAttribute('data-index'); //获取当前选中元素的下标
+    var objLeft = this.aPosXY[objIndex].x;
+    var objTop = this.aPosXY[objIndex].y; //根据下标获取当前选中元素 固定的时候的定位 x,y;
+    //      console.log('objLeft：'+objLeft+'  objTop：'+objTop); //  objLeft：10px  objTop：10px
+    var relativeObjX = this.mouseDownPos.x - parseInt(objLeft); //鼠标按下时鼠标相对于选中元素的位置x
+    var relativeObjY = this.mouseDownPos.y - parseInt(objTop); //鼠标按下时鼠标相对于选中元素的位置y
+    var objMoveX = relativeListX - relativeObjX;
+    var objMoveY = relativeListY - relativeObjY;
+    //      console.log(objMoveX +'  '+objMoveY)
+    //      console.log('x:'+relativeListX+' y:'+relativeListY);
+    //      console.log('x:'+relativeObjX+' y:'+relativeObjY);
+    setCss(obj, {
+        'left': objMoveX + 'px',
+        'top': objMoveY + 'px'
+    });
+    for (var i = 0; i < this.aPosXYClone.length; i++) {
+        if (!(i == objIndex)) {
+            if (objMoveY + obj.offsetHeight >= parseInt(this.aPosXYClone[i].y) + this.li[i].offsetHeight / 2 && objMoveY + obj.offsetHeight < parseInt(this.aPosXYClone[i].y) + this.li[i].offsetHeight || objMoveY >= parseInt(this.aPosXYClone[i].y) && objMoveY < parseInt(this.aPosXYClone[i].y) + this.li[i].offsetHeight / 2) {
+                //            console.log(i);
+                var ts = [];
+                ts.x = this.dashedBox.style.left;
+                ts.y = this.dashedBox.style.top;
+                this.aPosXYClone[objIndex] = this.aPosXYClone[i];
+                this.aPosXYClone[i] = ts;
+                setCss(this.dashedBox, {
+                    'left': this.aPosXYClone[objIndex].x,
+                    'top': this.aPosXYClone[objIndex].y
+                });
+                setCss(this.li[i], {
+                    'left': ts.x,
+                    'top': ts.y
+                });
+                //            console.log(this.aPosXYClone)
+                //            console.log(this.aPosXY)
+                return false;
+            }
+        }
+    }
+
+}
+```
 
 - 时钟
 
@@ -245,6 +398,10 @@ function stopFun() {
     clearInterval(timer);
 }
 ```
+
+- 广告
+
+- 饿了么添加菜品小球动画 <http://www.jq22.com/webqd2892>
 
 - 选项卡
 
@@ -338,9 +495,42 @@ function praise(num, obj) {
 
 - 下拉菜单 css实现 <http://www.jq22.com/webqd3033>
 
+- 本地input选择图片实时显示
+
+  - createObjectURL <http://www.jq22.com/webqd2884>
+  - FileReader <http://www.jq22.com/webqd2885>
+  - 转base64显示 <http://www.jq22.com/webqd2806>
+
+```javascript
+$('.a').change(function(e) {
+    var _URL = window.URL || window.webkitURL;
+    var file, img;
+    if ((file = this.files[0])) {
+        img = new Image();
+        img.onload = function() {
+            $('.img').attr('src', this.src);
+            console.log(this.width)
+        };
+        img.src = _URL.createObjectURL(file);
+    }
+})
+
+if (window.FileReader) {
+    var reader = new FileReader();
+    var _file = this.files[0];
+
+    reader.readAsDataURL(_file);
+    reader.onload = function() {
+        preImg.setAttribute('src', this.result);
+    }
+}
+```
+
 - jQuery弹出窗口可移动、缩放 <http://www.jq22.com/webqd3029>
 
 - 图片炸裂 <http://www.jq22.com/webqd3028>
+
+  - 切割轮播图 <http://www.jq22.com/webqd2833>
 
 - 打字效果
 
@@ -362,6 +552,108 @@ function show() {
     }
 }
 ```
+
+- 百度搜索结果 <http://www.jq22.com/webqd2961>
+
+```javascript
+/*
+需求:
+1.找到文本框，在文本框中输入的字符会出现再搜索信息框中
+2.键盘事件
+3.如何拿到百度关键字的数据
+后台传输    AJAX    jsonp    数据渲染
+*/
+var oText = document.getElementById("text");
+var oSea = document.getElementsByClassName("search")[0]; //class是集合，要获取下标
+var oUl = oSea.getElementsByTagName("ul")[0];
+oText.onkeyup = function() {
+    var val = this.value;
+    /*            if(val){
+                    oSea.style.display = "block";
+                }else{
+                    oSea.style.display = "none";                
+                }*/
+    //三目运算
+    oSea.style.display = val ? "block" : "none";
+    var os = document.createElement("script");
+    os.src = "https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=" + val + "&cb=xiaolong&_=1499584946110";
+    document.body.appendChild(os); //当前节点中添加一个子节点
+}
+
+function xiaolong(json) {
+    oUl.innerHTML = '';
+    json.s.forEach(function(data) {
+        var oLi = document.createElement("li");
+        oLi.innerHTML = "<a href='https:www.baidu.com/s?wd=" + data + "'>" + data + "</a>";
+        oUl.appendChild(oLi);
+    }); //数组专门遍历
+}
+```
+
+- 碰撞检测
+
+```javascript
+function judgeCrash(obj) {
+    this.first = obj.elem1;
+    this.second = obj.elem2;
+    this.fnS = obj.fnS;
+    this.fnE = obj.fnE;
+    this.judge = function() {
+        var Stop = this.second.offsetTop;
+        var Sleft = this.second.offsetLeft;
+        var Ftop = this.first.offsetTop;
+        var Fleft = this.first.offsetLeft;
+        var minLeft = Fleft - this.second.offsetWidth;
+        var maxLeft = Fleft + this.first.offsetWidth;
+        var minTop = Ftop - this.second.offsetHeight;
+        var maxTop = Ftop + this.first.offsetHeight;
+        if (Sleft >= minLeft && Sleft <= maxLeft && Stop >= minTop && Stop <= maxTop) {
+            if (this.fnS) { //判断fun有没有
+                this.fnS();
+                return;
+            }
+        }
+        if (this.fnE) { //判断error有没有
+            this.fnE();
+        }
+    }
+    var fn = this.judge;
+    this.first.onmousedown = function(event) {
+        var t = this; //t=this.first
+        console.log(t)
+        var startX = event.clientX;
+        var startY = event.clientY;
+        var offX = t.offsetLeft;
+        var offY = t.offsetTop;
+        document.onmousemove = function(event) {
+            var theleft = event.clientX - startX;
+            var theTop = event.clientY - startY;
+            fn();
+            t.style.left = offX + theleft + 'px';
+            t.style.top = offY + theTop + 'px';
+        }
+        document.onmouseup = function(event) {
+            document.onmousemove = null;
+        }
+    }
+}
+
+judgeCrash({
+    elem1: second1,
+    elem2: first1,
+    fnS: function() {
+        console.log("Yes");
+        document.getElementById('one').innerHTML = 'Yes';
+    },
+    fnE: function() {
+
+    }
+});
+```
+
+- 格式化CSS代码 <http://www.jq22.com/webqd2886>
+
+  - 正则表达式
 
 ## 参考
 

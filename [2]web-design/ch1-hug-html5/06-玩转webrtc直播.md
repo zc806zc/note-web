@@ -1,4 +1,4 @@
-# **使用WebRTC实现视频聊天**
+## 使用WebRTC实现视频聊天
 
 - 在互联网上的两个浏览器之间将多媒体数据以流的方式进行传输
 - WebRTC 网络实时通信
@@ -8,7 +8,7 @@
 - 音频回声抵消
 - getUserMadia
 
-```
+```javascript
 // Expose the browser-specific versions of the getUserMedia() method through the standard
 // method name. If the standard name is already supported in the browser (as it is in Opera),
 // use that, otherwise fall back to Mozilla's, Google's or Microsoft's implementations as
@@ -19,7 +19,7 @@ navigator.webkitGetUserMedia || navigator.msGetUserMedia;
 
 - 访问网络摄像头和麦克风
 
-```
+```javascript
 // Define a function to execute if we are successfully able to access the user's webcam and
 // microphone
 function onSuccess() {
@@ -53,7 +53,7 @@ throw new Error("Sorry, getUserMedia() is not supported in your browser");
 
 - 把网络摄像头和麦克风的数据内容回拨给用户
 
-```
+```javascript
 // Use the getUserMedia() polyfill from Listing 12-1 for best cross-browser support
 
 // Define a function to execute if we are successfully able to access the user's webcam and
@@ -107,7 +107,7 @@ throw new Error("Sorry, getUserMedia() is not supported in your browser");
 - EventSource API
 - WebSocket
 
-# **WebRTC基础**
+## WebRTC基础
 
 - [WebRTC 点对点直播](https://segmentfault.com/a/1190000008416360)
 

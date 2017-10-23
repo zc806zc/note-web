@@ -112,6 +112,33 @@ $(".target:nth-child(3)").addClass("animated bounce");
 - 文本行的斑马条纹
 
 - 现实中的文字效果/环形文字
+  - 文字颜色动态渐变 http://www.jq22.com/webqd2810
+
+```css
+div {
+	width:600px;
+	height:300px;
+	margin:0 auto;
+	margin-top:100px;
+	font-size:80px;
+	text-align:center;
+	background:-webkit-linear-gradient(left,#147B96,#E6D205 25%,#147B96 50%,#E6D205 75%,#147B96);
+	color:transparent;
+	-webkit-background-clip:text;
+	background-size:200% 100%;
+	animation:masked-animation 1s infinite linear;
+}
+@-webkit-keyframes masked-animation {
+	0% {
+	background-position:0 0;
+}
+100% {
+	background-position:-100% 0;
+}
+}
+
+
+```  
 
 ## 用户体验
 
