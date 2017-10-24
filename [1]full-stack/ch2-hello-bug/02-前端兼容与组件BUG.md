@@ -1,5 +1,284 @@
 # 浏览器兼容
 
+- 日常工具箱兼容IE8 <http://www.jq22.com/webqd2755>
+
+```javascript
+;(function() {
+    Toolkit = function() {};
+    //工具箱
+    var toolkit = Toolkit;
+    /**
+     * 打印日志
+     * @param {String} text 日志文本
+     */
+    toolkit.prototype.log = function(text) {
+        console.log(text);
+    }
+
+    /**
+     * 格式化
+     * @param {String} str 字符串
+     * @param {Object} args 参数
+     */
+    toolkit.prototype.format = function(str, args) {
+        var temp = str.replace(/\{(\w+)\}/g, function(k1, k2) {
+            return args[k2];
+        });
+        return temp;
+    };
+
+    /**
+     * 格式化JSON
+     * @param {Object} data
+     */
+    toolkit.prototype.parseJson = function(data) {
+        if(window.JSON && window.JSON.parse) {
+            return window.JSON.parse(data);
+        }
+        var rValidtokens = /"[^"\\\n\r]*"|true|false|null|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?/g,
+            rValidchars = /^[\],:{}\s]*$/,
+            rValidbraces = /(?:^|:|,)(?:\s*\[)+/g,
+            rValidescape = rValidescape = /\\(?:["\\\/bfnrt]|u[0-9a-fA-F]{4})/g;
+        if(rValidchars.test(data.replace(rValidescape, '@').replace(rValidtokens, ']').replace(rValidbraces, ''))) {
+            return(new Function('return ' + data))();
+        } else {
+            //抛出异常
+        }
+    }
+
+    /**
+     * 获得对象的所有属性值
+     * @param {Object} object
+     */
+    toolkit.prototype.getObjectKeys = function(object) {
+        if(object !== Object(object)) {
+            throw new TypeError('Object.keys called on a non-object');
+        }
+        var keys = [];
+        var temp = null;
+        for(temp in object) {
+            if(Object.prototype.hasOwnProperty.call(object, temp)) {
+                keys.push(temp);
+            }
+        }
+        return keys;
+    }
+
+    /**
+     * 对象格式化字符串
+     * @param {Object} object
+     */
+    toolkit.prototype.stringify = function(object) {
+        if(window.JSON && window.JSON.stringify) {
+            return window.JSON.stringify(object);
+        }
+        var s = "";
+        if(!Object.keys) {
+            Object.keys = toolkit.prototype.getObjectKeys;
+        }
+        var keys = Object.keys(object);
+        for(var key in keys) {
+            s += ",\"" + keys[key] + "\":\"" + object[keys[key]] + "\"";
+        }
+        if(s != "") {
+            s = s.substring(1);
+        }
+        return "{" + s + "}";
+    }
+
+    /**
+     * 将日期格式化
+     * @param {Object} date 日期
+     * @param {Object} fmt 格式化
+     */
+    toolkit.prototype.formatDate = function(date, fmt) {
+        var o = {
+            "M+": date.getMonth() + 1,
+            "d+": date.getDate(),
+            "h+": date.getHours(),
+            "H+": date.getHours(),
+            "m+": date.getMinutes(),
+            "s+": date.getSeconds(),
+            "q+": Math.floor((date.getMonth() + 3) / 3),
+            "S+": date.getMilliseconds()
+        };
+        if(/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (date.getFullYear() + "").substr(4 - RegExp.$1.length));
+        for(var k in o)
+            if(new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+        return fmt;
+    }
+
+    //工具类
+    toolkit.classes = function() {
+        toolkit.prototype.datepacket = Datepacket;
+    }
+    toolkit.classes();
+
+    function Datepacket() {};
+    //默认格式化模板
+    var dateFormateTemplate = {
+        "yyyy": "([0-9]{2}|[0-9]{4})",
+        "MM": "([0]{1}[0-9]{1}|[1]{1}[0-2]{1})",
+        "dd": "([0-2]{1}[0-9]{1}|[3]{1}[0-1]{1})",
+        "HH": "([0-1]{1}[0-9]{1}|[2]{1}[0-3]{1})",
+        "mm": "([0-5]{1}[0-9]{1})",
+        "ss": "([0-5]{1}[0-9]{1})",
+        "S": "([0-9]d+)"
+    }
+    //缩写
+    var df = dateFormateTemplate;
+    var pt = toolkit.prototype;
+    /**
+     * 获得当前日期
+     * @param {String} fmt 格式化字符串
+     */
+    pt.datepacket.prototype.getCurrentDate = function(fmt) {
+        if(fmt != null) {
+            return pt.formatDate(new Date(), fmt);
+        }
+        return pt.formatDate(new Date(), "yyyy-MM-dd HH:mm:ss.S");
+    };
+
+    /**
+     * 获得当前日期后一天
+     * @param {String} fmt 格式化字符串
+     */
+    pt.datepacket.prototype.getNextDate = function(fmt) {
+        var currentDate = new Date();
+        currentDate.setDate(currentDate.getDate() + 1)
+        if(fmt != null) {
+            return pt.formatDate(currentDate, fmt);
+        }
+        return pt.formatDate(currentDate, "yyyy-MM-dd HH:mm:ss.S");
+    };
+
+    /**
+     * 获得当前日期前一天
+     * @param {String} fmt 格式化字符串
+     */
+    pt.datepacket.prototype.getPreDate = function(fmt) {
+        var currentDate = new Date();
+        currentDate.setDate(currentDate.getDate() - 1)
+        if(fmt != null) {
+            return pt.formatDate(currentDate, fmt);
+        }
+        return pt.formatDate(currentDate, "yyyy-MM-dd HH:mm:ss.S");
+    };
+
+    /**
+     * 获得当前日期偏移量日期字符串
+     * @param {Object} offset 偏移量
+     * @param {Object} fmt 输出格式化
+     */
+    pt.datepacket.prototype.getOffsetDate = function(offset, fmt) {
+        var currentDate = new Date();
+        currentDate.setDate(currentDate.getDate() + offset)
+        if(fmt != null) {
+            return pt.formatDate(currentDate, fmt);
+        }
+        return pt.formatDate(currentDate, "yyyy-MM-dd HH:mm:ss.S");
+    };
+
+    /**
+     * 兼容IE8 转换日期，支持yyyy-MM-dd HH:mm:ss.S
+     * @param {String} dateStringInRange 日期字符串
+     */
+    pt.datepacket.prototype.parseISO8601 = function(dateStringInRange, reg) {
+        var temp = df.defaults;
+        var isoExp = reg;
+        var date = new Date(NaN);
+        var month = null;
+        var parts = isoExp.exec(dateStringInRange);
+
+        if(parts) {
+            month = +parts[2];
+            date.setFullYear(parts[1], month - 1, parts[3]);
+            if(month != date.getMonth() + 1) {
+                date.setTime(NaN);
+            }
+        }
+        return date;
+    }
+
+    /**
+     * 根据字符串获得偏移量日期
+     * @param {String} str 日期字符串
+     * @param {Integer} offset 偏移量
+     * @param {Object} fmt 输出格式化字符串
+     */
+    pt.datepacket.prototype.getSOffsetDate = function(str, offset, fmt) {
+        var temp = df.defaults;
+        var arrays = [temp["YMD"], temp["YMDHMS"], temp["YMDTHMS"], temp["YMDHMSP"], temp["YMDTHMSP"]]
+        var formatReg = null;
+        var isISO8601 = false;
+        for(var i in arrays) {
+            var value = arrays[i];
+            var reg = new RegExp(value);
+            if(reg.test(str)) {
+                formatReg = reg;
+                isISO8601 = true;
+                break;
+            }
+        }
+
+        var date = null;
+        if(isISO8601) {
+            date = this.parseISO8601(str, formatReg);
+        } else {
+            date = new Date(str);
+        }
+        date.setDate(date.getDate() + offset)
+        if(fmt != null) {
+            return pt.formatDate(date, fmt);
+        }
+        return pt.formatDate(date, "yyyy-MM-dd HH:mm:ss.S");
+    };
+
+    df.defaults = {};
+    //初始化
+    var initDefaults = function() {
+        df.defaults["YMD"] = df["yyyy"] + "-" + df["MM"] + "-" + df["dd"];
+        df.defaults["HMS"] = df["HH"] + ":" + df["mm"] + ":" + df["ss"];
+        df.defaults["HMSP"] = df.defaults["HH:mm:ss"] + "." + df["S"];
+        df.defaults["YMDHMS"] = df.defaults["YMD"] + df.defaults["HMS"];
+        df.defaults["YMDTHMS"] = df.defaults["YMD"] + " " + df.defaults["HMS"];
+        df.defaults["YMDHMSP"] = df.defaults["YMD"] + "" + df.defaults["HMSP"];
+        df.defaults["YMDTHMSP"] = df.defaults["YMD"] + " " + df.defaults["HMSP"];
+    }
+    initDefaults();
+    window.Toolkit = Toolkit;
+}());
+```
+
+- palceholder
+
+  - jquery扩展 <http://www.jq22.com/webqd2725>
+  - http://www.jq22.com/webqd2724
+
+```javascript
+;(function($) {
+    $.fn.placeholder = function(options) {
+        var opts = $.extend({}, $.fn.placeholder.defaults, options);
+        var isIE = document.all ? true : false;
+        return this.each(function() {
+            var _this = this,
+                placeholderValue = _this.getAttribute("placeholder"); //缓存默认的placeholder值
+            if (isIE) {
+                _this.setAttribute("value", placeholderValue);
+                _this.onfocus = function() {
+                    $.trim(_this.value) == placeholderValue ? _this.value = "" : '';
+                };
+                _this.onblur = function() {
+                    $.trim(_this.value) == "" ? _this.value = placeholderValue : '';
+                };
+            }
+        });
+    };
+})(jQuery);
+
+$("input").placeholder();
+```
+
 - 兼容解决方案 <https://juejin.im/post/59a3f2fe6fb9a0249471cbb4?utm_source=gold_browser_extension>
 
   - Normalize.css

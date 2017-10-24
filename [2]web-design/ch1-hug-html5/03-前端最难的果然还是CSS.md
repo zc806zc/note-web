@@ -88,6 +88,37 @@ $(".target:nth-child(3)").addClass("animated bounce");
 - 单侧投影/不规则投影
 
 - 染色效果/毛玻璃/折角效果
+  - 纸张效果 http://www.jq22.com/webqd2713
+
+```css
+.paper {
+	position:relative;
+	width:200px;
+	height:250px;
+	background:#fff;
+	border:1px solid #eee;
+	float:left;
+	margin:10px;
+	box-shadow:0 0 5px rgba(0,0,0,0.27),0 0 20px  rgba(0,0,0,.1) inset;
+}
+.paper::after,.paper::before {
+	content:'';
+	position:absolute;
+	bottom:6px;
+	width:100px;
+	height:1px;
+	z-index:-1;
+	box-shadow:0 2px 12px 5px rgba(0,0,0,.3);
+}
+.paper::after {
+	left:4px;
+	transform:rotate(-6deg);
+}
+.paper::before {
+	right:4px;
+	transform:rotate(6deg);
+}
+```  
 
 # 字体排版
 
