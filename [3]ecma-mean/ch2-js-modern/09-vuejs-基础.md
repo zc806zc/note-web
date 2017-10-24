@@ -1,24 +1,15 @@
-# **Vue.js**
-
-- [x] 语法基础
-- [ ] 开发 vue-cli及工具
-- [ ] vue2
-- [ ] 开始看源码
-
---------------------------------------------------------------------------------
-
 # vue资源整理
 
+- <https://vuefe.cn/v2/guide/>
 - 前端每周清单半年盘点之 Vue.js 篇
 
 <https://juejin.im/post/59928d55518825486f1e8369?utm_source=gold_browser_extension>
 
 - API <https://vuejs-tips.github.io/cheatsheet/>
 - vue入门到放弃 <https://juejin.im/post/59aa1248518825392656a86a?utm_source=gold_browser_extension>
+- 父子组件之间传值 <https://juejin.im/post/59ec95006fb9a0451c398b1a?utm_source=gold_browser_extension>
 
---------------------------------------------------------------------------------
-
-# [vue](https://vuefe.cn/v2/guide/)基础知识
+# vue语法
 
 - computed vs methods
 
@@ -106,15 +97,13 @@ componentUpdated // 被绑定元素所在模板完成一次更新周期时调用
 - debounce 最小延迟 更新高耗 P22
 - v-cloak 保持元素直到关联实例结束编译
 
---------------------------------------------------------------------------------
-
 # 开发环境配置
 
 - vue-cli插件
 
   - vue | vue sytnax hightlight
 
-- ~~vue + scrat.js的化学反应：移动开发解决方案~~
+- vue + scrat.js的移动开发解决方案
 
 - 性能优化：bigpipe | bigrender
 

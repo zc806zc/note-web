@@ -1,5 +1,4 @@
-## 结构与布局
-
+# 结构与布局
 
 - 盒模型 display + position + float
 - BFC(Block formatting context 块级格式化上下文)
@@ -29,20 +28,10 @@ overflow: hidden; // 触发生成BFC,使浮动元素也参与计算
 
 - 负值之美(将一个元素的margin设置为负值，元素将会变大) <http://www.cnblogs.com/jscode/archive/2012/08/28/2660078.html>
 
-- 实用工具集
+- CSS清单 <https://juejin.im/post/59ae076b6fb9a0248e5ce689?utm_source=gold_browser_extension>
 
-  - 常用CSS集 <https://github.com/asd0102433/blog/blob/master/前端/css有用的收集.md>
-  - <https://juejin.im/entry/59af8eb8f265da247a15c27f?utm_source=gold_browser_extension>
-
-    - Shed.css
-    - Tachyons 快速加载，高可读性，和100%响应式界面
-    - Basscss 人性化命名
-    - Beard 具有争议的helper类
-
-  - CSS清单 <https://juejin.im/post/59ae076b6fb9a0248e5ce689?utm_source=gold_browser_extension>
-
-    - 抖动分析 <https://juejin.im/entry/59ae15126fb9a0247d4f6d16?utm_source=gold_browser_extension>
-    - A Cross-end HTML5 Game <https://github.com/hiloteam/Hilo>
+  - 抖动分析 <https://juejin.im/entry/59ae15126fb9a0247d4f6d16?utm_source=gold_browser_extension>
+  - A Cross-end HTML5 Game <https://github.com/hiloteam/Hilo>
 
 - 自适应内部元素
 
@@ -55,8 +44,6 @@ overflow: hidden; // 触发生成BFC,使浮动元素也参与计算
 - 垂直居中
 
 - 紧贴底部的页脚
-
-
 
 - flex
 
@@ -81,7 +68,7 @@ $("#right-well").children().css("color", "red");
 $(".target:nth-child(3)").addClass("animated bounce");
 ```
 
-## 背景与边框
+# 背景与边框
 
 - Web标准
 - CSS编码技巧
@@ -90,8 +77,7 @@ $(".target:nth-child(3)").addClass("animated bounce");
 
 - 灵活的背景定位/条纹背景/复杂的背景图案/伪随机背景
 
-
-## 形状/视觉效果
+# 形状/视觉效果
 
 - 自适应的椭圆/平行四边形/菱形图片
 
@@ -103,7 +89,7 @@ $(".target:nth-child(3)").addClass("animated bounce");
 
 - 染色效果/毛玻璃/折角效果
 
-## 字体排版
+# 字体排版
 
 - 连字符断行/插入换行/调整tab的宽度
 
@@ -112,35 +98,34 @@ $(".target:nth-child(3)").addClass("animated bounce");
 - 文本行的斑马条纹
 
 - 现实中的文字效果/环形文字
-  - 文字颜色动态渐变 http://www.jq22.com/webqd2810
+
+  - 文字颜色动态渐变 <http://www.jq22.com/webqd2810>
 
 ```css
 div {
-	width:600px;
-	height:300px;
-	margin:0 auto;
-	margin-top:100px;
-	font-size:80px;
-	text-align:center;
-	background:-webkit-linear-gradient(left,#147B96,#E6D205 25%,#147B96 50%,#E6D205 75%,#147B96);
-	color:transparent;
-	-webkit-background-clip:text;
-	background-size:200% 100%;
-	animation:masked-animation 1s infinite linear;
+    width:600px;
+    height:300px;
+    margin:0 auto;
+    margin-top:100px;
+    font-size:80px;
+    text-align:center;
+    background:-webkit-linear-gradient(left,#147B96,#E6D205 25%,#147B96 50%,#E6D205 75%,#147B96);
+    color:transparent;
+    -webkit-background-clip:text;
+    background-size:200% 100%;
+    animation:masked-animation 1s infinite linear;
 }
 @-webkit-keyframes masked-animation {
-	0% {
-	background-position:0 0;
+    0% {
+    background-position:0 0;
 }
 100% {
-	background-position:-100% 0;
+    background-position:-100% 0;
 }
 }
+```
 
-
-```  
-
-## 用户体验
+# 用户体验
 
 - 适合的鼠标光标
 - 扩大可点击区域
@@ -154,8 +139,7 @@ div {
 
 - 交互式的图片对比控件
 
-
-## 过渡与动画
+# 过渡与动画
 
 - 缓动效果/逐帧动画/闪烁动画
 
@@ -202,6 +186,17 @@ div {
 - 内外边距问题视口
 
 - 媒体查询
+
+## 实用工具集
+
+- Bulma
+- 常用CSS集 <https://github.com/asd0102433/blog/blob/master/前端/css有用的收集.md>
+- <https://juejin.im/entry/59af8eb8f265da247a15c27f?utm_source=gold_browser_extension>
+
+  - Shed.css
+  - Tachyons 快速加载，高可读性，和100%响应式界面
+  - Basscss 人性化命名
+  - Beard 具有争议的helper类
 
 ## 书单
 
