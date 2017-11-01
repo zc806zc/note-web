@@ -17,6 +17,24 @@
     - 防止 margin 重叠
     - 多栏布局的一种方式
 
+- 清除浮动 <http://www.cnblogs.com/dolphinX/p/3508869.html>
+
+```javascript
+分隔符不是网页内容的一部分，应该从html中分离，使用css实现
+
+不要有多余的div，也应该写在css P57
+
+// Background-image和<img>
+背景图css实现,语义内容img标签
+
+text-indent: -999px; // 用于说明性的空标签
+
+// 设置网页标题层级
+hgroup
+保持一个h1
+不要跳级，必要时可以选择hide
+```
+
 ```less
 overflow: hidden; // 触发生成BFC,使浮动元素也参与计算
 ```
@@ -50,23 +68,6 @@ overflow: hidden; // 触发生成BFC,使浮动元素也参与计算
   - flex <http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool>)
   - demo <http://www.ruanyifeng.com/blog/2015/07/flex-examples.html>)
 
-```javascript
-// BootStrap有关
-bootstrap btn-block // 使其成为块级元素
-不要忘记加class="row"
-<div class="well"></div> // 视觉深度
-
-// Jq动画
-jQuery + Animate.css
-$("button").prop("disabled", true);
-$("#target2").appendTo("#right-well");
-
-$("#target5").clone().appendTo("#left-well");
-$("#target1").parent().css("background-color", "red");
-
-$("#right-well").children().css("color", "red");
-$(".target:nth-child(3)").addClass("animated bounce");
-```
 
 # 背景与边框
 
@@ -88,37 +89,38 @@ $(".target:nth-child(3)").addClass("animated bounce");
 - 单侧投影/不规则投影
 
 - 染色效果/毛玻璃/折角效果
-  - 纸张效果 http://www.jq22.com/webqd2713
+
+  - 纸张效果 <http://www.jq22.com/webqd2713>
 
 ```css
 .paper {
-	position:relative;
-	width:200px;
-	height:250px;
-	background:#fff;
-	border:1px solid #eee;
-	float:left;
-	margin:10px;
-	box-shadow:0 0 5px rgba(0,0,0,0.27),0 0 20px  rgba(0,0,0,.1) inset;
+    position:relative;
+    width:200px;
+    height:250px;
+    background:#fff;
+    border:1px solid #eee;
+    float:left;
+    margin:10px;
+    box-shadow:0 0 5px rgba(0,0,0,0.27),0 0 20px  rgba(0,0,0,.1) inset;
 }
 .paper::after,.paper::before {
-	content:'';
-	position:absolute;
-	bottom:6px;
-	width:100px;
-	height:1px;
-	z-index:-1;
-	box-shadow:0 2px 12px 5px rgba(0,0,0,.3);
+    content:'';
+    position:absolute;
+    bottom:6px;
+    width:100px;
+    height:1px;
+    z-index:-1;
+    box-shadow:0 2px 12px 5px rgba(0,0,0,.3);
 }
 .paper::after {
-	left:4px;
-	transform:rotate(-6deg);
+    left:4px;
+    transform:rotate(-6deg);
 }
 .paper::before {
-	right:4px;
-	transform:rotate(6deg);
+    right:4px;
+    transform:rotate(6deg);
 }
-```  
+```
 
 # 字体排版
 
@@ -170,13 +172,7 @@ div {
 
 - 交互式的图片对比控件
 
-# 过渡与动画
 
-- 缓动效果/逐帧动画/闪烁动画
-
-- 打字动画
-
-- 状态平滑的动画
 
 # CSS3
 
@@ -233,4 +229,112 @@ div {
 
 ```javascript
 CSS揭秘
+```
+
+# CSS最佳实践
+
+- CSS-高维护性
+
+```javascript
+// css分为通用类和业务类
+// 参考结构如下
+
+css/
+    lib/
+    reader/
+        reader.header.css
+        reader.content.css
+        reader.footer.css
+        reader.action.css // 操作类
+    common.css
+    default.css
+    ie-style.css // 单独写
+
+
+// 重置css
+Eric Meyer的reset
+YUI Reset CSS
+
+// 给CSS排序
+分类 Andy Ford
+Display&Flow
+Positioning
+Dimensions
+Margin padding borders outline
+Typographic Style
+Backgrounds
+Other:opacity ,cursors ,Generated Conetent
+
+// CSS权重
+id > 类/伪类/属性选择 > 标签选择/伪对象 > 通配符
+
+// 使用建议
+不要用id选择器
+减少层级
+多组合少继承
+
+// em px %
+使用em设置字体 -> gem rem
+使用百分比设置尺寸
+```
+
+- CSS-高性能
+
+```javascript
+CSS选择器是从右到左 匹配
+最右边的是关键选择器
+
+避免使用标签选择器或单个选择器
+.ref p.list div
+.ref p.list [data-link="#red"]
+
+避免使用 * { }
+
+避免id前加标签，因为id是唯一的
+例如div#page_index
+
+不要在选择符中定义太多层级
+
+// 测试CSS开销的网站
+CSS selectors Test
+
+// css图片处理
+图片大小在200kb以内传输时间差不多
+上下至少预留14px,左右16px的边距
+背景图放在有关图最右侧
+
+// 借助工具
+合并上传的多图 -> CSS Sprite Generator
+根据选中区域生成CSS -> Sprite Cow
+分析网站来生成CSS和雪碧图 -> SpriteMe
+
+// 简洁属性值
+p.reader-title {
+  color: #F3E;
+  font-size: .8em;
+  padding: 0;
+}
+
+
+// chrome自带工具来查找无用样式
+不使用@import -> 阻止并行下载
+避免使用IE浏览器的图片滤镜和CSS表达式
+```
+
+# CSS3最佳实践
+
+- 资源
+
+  - CSS3兼容查看: caniuse.com | CSS3 Click Chart | [CSS contents and browser compatibility](http://www.quirksmode.org/css/contents.html)
+  - 添加浏览器前缀
+
+    - 在线： Prefixr
+    - Autoprefixer (灵活度更高 -> sublime插件)
+    - cssFx, CSS Agent, -prefix-tree
+    - sass, less 的 模板功能
+
+```javascript
+// 优雅降级或兼容处理
+JS实现，例框架Modernizr
+HTML5建议网站: html5please
 ```

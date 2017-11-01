@@ -44,6 +44,22 @@ html() text()
 页面加载时间
 事件绑定和切换
 动画效果
+
+// BootStrap有关
+bootstrap btn-block // 使其成为块级元素
+不要忘记加class="row"
+<div class="well"></div> // 视觉深度
+
+// Jq动画
+jQuery + Animate.css
+$("button").prop("disabled", true);
+$("#target2").appendTo("#right-well");
+
+$("#target5").clone().appendTo("#left-well");
+$("#target1").parent().css("background-color", "red");
+
+$("#right-well").children().css("color", "red");
+$(".target:nth-child(3)").addClass("animated bounce");
 ```
 
 - [jQuery插件](http://plugins.jquery.com/)
