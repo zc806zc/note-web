@@ -68,7 +68,6 @@ overflow: hidden; // 触发生成BFC,使浮动元素也参与计算
   - flex <http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool>)
   - demo <http://www.ruanyifeng.com/blog/2015/07/flex-examples.html>)
 
-
 # 背景与边框
 
 - Web标准
@@ -91,6 +90,7 @@ overflow: hidden; // 触发生成BFC,使浮动元素也参与计算
 - 染色效果/毛玻璃/折角效果
 
   - 纸张效果 <http://www.jq22.com/webqd2713>
+  - 优惠券 <http://www.jq22.com/webqd1778>    
 
 ```css
 .paper {
@@ -171,8 +171,6 @@ div {
 - 滚动提示
 
 - 交互式的图片对比控件
-
-
 
 # CSS3
 
