@@ -53,3 +53,4 @@ function create5star(context, sx, sy, radius, color, rotato) {
 ```
 
 - 星空 <http://www.jq22.com/webqd2233>
+- svg路径动画 <http://www.jq22.com/webqd2060>

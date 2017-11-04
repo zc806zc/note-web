@@ -77,6 +77,11 @@ href="javascript:void(0)"  // 优于href=""
 href="javascript:void(alert('Warning!!!'))"
 href="javascript:test();" // 执行此全局函数
 
+// 论如何弄死链接
+方法一: <a href="###">点击</a>
+方法二: <a href="javascript::">点击</a>
+方法三: <a href="Javascript:void(0);">点击</a>
+
 // void
 function getValue(){
     var a, b, c;
