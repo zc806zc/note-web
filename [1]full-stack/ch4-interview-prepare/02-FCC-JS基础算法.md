@@ -1,90 +1,72 @@
-# **1\. Reverse a String 翻转字符串**
+# 1\. Reverse a String 翻转字符串
 
 ```javascript
 function reverseString(str) {
-var arr=str.split("");
-str=arr.reverse().join("");
-return str;
+    return str.split('').reverse().join('');
 }
-reverseString("hello");
-
-// solution2 链式语法
-function reverseString(str) {
-return str.split('').reverse().join('');
-}
-reverseString("hello");
 ```
 
-# **2\. Factorialize a Number**
-
-英文描述：Return the factorial of the provided integer.<br>
-中文描述：对一个数进行阶乘
+# 2\. Factorialize a Number 对一个数进行阶乘
 
 ```javascript
-function factorialize(num) {
-  if(num===1||num===0){
+function factorialize (num) {
+  if (num===1||num===0){
       return 1;
-  } else{
+  } else {
       return num*factorialize(num-1);
   }
 }
 factorialize(5);
 ```
 
-# **3、Check for Palindromes**
-
-英文描述： Return true if the given string is a palindrome. Otherwise, return false.<br>
-中文描述： 检查所给字符串是否回文，是则返回true，否则返回false（其中忽略大小写和空格）
+# 3、Check for Palindromes 判断回文数
 
 ```javascript
 function palindrome(str) {
-var str1=str.replace(/[\W_]/g,"");
-if(str1.split("").reverse().join("").toLowerCase()==str1.toLowerCase()){
-return true;
-}else{
-return false;
-}
+    var str1 = str.replace(/[\W_]/g,"");
+    if(str1.split("").reverse().join("").toLowerCase() == str1.toLowerCase()){
+        return true;
+    } else{
+        return false;
+    }
 }
 palindrome("eye");
 ```
 
-# **4、Find the Longest Word in a String**
+# 4、Find the Longest Word in a String
 
 英文描述： Return the length of the longest word in the provided sentence<br>
 中文描述： 对所给的句子返回其中最长单词的字母数
 
 ```javascript
 function findLongestWord(str) {
-var arr=str.split(" ");
-var arrNum=[];
-for(var i=0;i<arr.length;i++){
-arrNum.push(arr[i].length);
-}
-return Math.max.apply(null,arrNum);
+    var arr=str.split(" ");
+    var arrNum=[];
+    for(var i=0;i<arr.length;i++){
+        arrNum.push(arr[i].length);
+    }
+    return Math.max.apply(null,arrNum);
 }
 findLongestWord("The quick brown fox jumped over the lazy dog");
 ```
 
-# **5、Title Case a Sentence**
-
-英文描述：Return the provided string with the first letter of each word capitalized. Make sure the rest of the word is in lower case.<br>
-中文描述：对所给的句子中所有单词首字母大写，其余字母小写
+# **5、Title Case a Sentence** 对所给的句子中所有单词首字母大写，其余字母小写
 
 ```javascript
 function titleCase(str) {
-var arr=str.split(" ");
-for(var i=0;i<arr.length;i++){
-var arr1=arr[i].toString().split("");
-for(var j=0;j<arr1.length;j++){
-if(j===0){
-arr1[j]=arr1[j].toUpperCase();
-}else{
-arr1[j]=arr1[j].toLowerCase();
-}
-}
-arr[i]=arr1.join("");
-}
-return arr.join(" ");
+    var arr=str.split(" ");
+    for(var i=0;i<arr.length;i++){
+        var arr1=arr[i].toString().split("");
+        for(var j=0;j<arr1.length;j++){
+            if(j===0){
+                arr1[j]=arr1[j].toUpperCase();
+            } else{
+                arr1[j]=arr1[j].toLowerCase();
+            }
+        }
+        arr[i]=arr1.join("");
+    }
+    return arr.join(" ");
 }
 titleCase("I'm a little tea pot");
 ```
@@ -96,12 +78,12 @@ titleCase("I'm a little tea pot");
 
 ```javascript
 function largestOfFour(arr) {
-var maxArr=[];
-for(var i=0;i<arr.length;i++){
-var max=Math.max.apply(null,arr[i]);
-maxArr.push(max);
-}
-return maxArr;
+    var maxArr=[];
+    for(var i=0;i<arr.length;i++){
+        var max=Math.max.apply(null,arr[i]);
+        maxArr.push(max);
+    }
+    return maxArr;
 }
 largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
 ```
