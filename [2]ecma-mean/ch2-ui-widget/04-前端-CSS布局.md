@@ -1,3 +1,13 @@
+# CSS学习资源
+
+- <https://segmentfault.com/a/1190000006689923>
+- 打印优化
+
+```javascript
+.page-break    { page-break-before: always; }
+/* put this class into your main.css file with "display:none;" */
+```
+
 # 结构与布局
 
 - 盒模型 display + position + float
@@ -90,7 +100,7 @@ overflow: hidden; // 触发生成BFC,使浮动元素也参与计算
 - 染色效果/毛玻璃/折角效果
 
   - 纸张效果 <http://www.jq22.com/webqd2713>
-  - 优惠券 <http://www.jq22.com/webqd1778>    
+  - 优惠券 <http://www.jq22.com/webqd1778>
 
 ```css
 .paper {
@@ -194,8 +204,7 @@ div {
 
 - Web字体
 
-  - Font Squirrel [http://www.fontsquirrel.com](http://www.fontsquirrel.com（推荐Callographic,Novelty,Retro) （推荐Callographic,Novelty,Retro字体）
-
+  - Font Squirrel <http://www.fontsquirrel.com> 推荐Callographic,Novelty,Retro
   - Webfont Generator
 
   - Google Fonts <http://www.google.com/fonts>
@@ -211,6 +220,12 @@ div {
 - 内外边距问题视口
 
 - 媒体查询
+
+- 20个响应式网页设计中的"神话"误区 <https://www.yrucd.com/25813.html>
+  - 响应式网页设计 = 移动端优化
+  - 不是每个人都看到了响应式网页设计的价值
+  - SEO对响应式网页的支持非常好，很多搜索引擎发现你的网站没有针对手机优化，就降低你的网站排名
+  -
 
 ## 实用工具集
 
