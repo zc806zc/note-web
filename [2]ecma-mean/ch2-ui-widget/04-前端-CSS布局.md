@@ -8,6 +8,18 @@
 /* put this class into your main.css file with "display:none;" */
 ```
 
+- 伪元素
+
+  - <https://juejin.im/post/5a0029a45188254dd935cc40?utm_source=gold_browser_extension>
+  - 计数器
+  - 梯形标签页 <http://dabblet.com/gist/1345dc9399dc8e794502>
+
+```javascript
+counter-reset: 属性创建或者重置一个或多个计数器；
+counter-increment: 属性递增一个或多个计数器值；
+content: 与:before 及:after 伪元素配合使用，来插入生成内容。
+```
+
 # 结构与布局
 
 - 盒模型 display + position + float
