@@ -16,6 +16,7 @@ function numCompareBox(options) {
 }
 
 var numCompareBoxExtend = {
+    dialog: null, // 引用弹框对象
     // 初始化
     init: function () {
         // 默认打开弹框
