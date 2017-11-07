@@ -6,9 +6,11 @@
 function numCompareBox(options) {
     var settings = {
         title: '号码比对',
+        self: '',  // 弹框所在div
+        parent: '' // 弹框父级div
     };
     this.settings = $.extend(settings, options);
-    this.body = $('.num_compare_dialog'); // 弹框内容所在div
+    this.body = $(this.settings.self);
     this.init();
     return this;
 }
@@ -44,9 +46,8 @@ var numCompareBoxExtend = {
                 var wrap = this.DOM.wrap;
                 wrap.css({ opacity: "0" }).animate({ opacity: "1" }, 500);
             },
-            ok: function () {
-
-            },
+            ok: false, // 不用原生
+            cancel: false,
             close: function () {
                 // 重置函数
                 $this.reset();
@@ -61,23 +62,43 @@ var numCompareBoxExtend = {
     // 监听事件绑定
     bindEvent: function () {
         var $this = this;
-
     },
 
-    // 弹框隐藏/表单重置
-    reset: function () {
-        // 弹框重置并隐藏
-        this.body.appendTo($('#sms_push')).hide(); // 页面所在父容器
-
-        // 表单重置
-
+    // 提交按钮
+    bindSubmitBtn: function () {
+        var $this = this;
+        this.body.find('.btn').off('click').on('click', function () {
+            if ($this.checkForm()){
+              alert('提交');
+            }
+        });
     },
 
     /**
      * 数据交互
      * ===========================
      */
+    // 表单校验
+    checkForm: function () {
+
+    },
+
+    // 弹框隐藏/表单重置
+    reset: function () {
+       // 弹框重置并隐藏
+       this.body.appendTo(this.settings.parent).hide();
+
+       // 表单重置
+    }
 
 };
 $.extend(numCompareBox.prototype, numCompareBoxExtend);
+
+// 调用
+$('.btn').off('click').on('click', function () {
+  new addPreviewBox({
+      self: '.yyy',
+      parent: '.xxx'
+  });
+});
 ```
