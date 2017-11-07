@@ -1052,8 +1052,9 @@ EventUtil.addHandler(form, "submit", function(event){
   - Collect JavaScript CPU Profile
 
 - 开发者工具
-  - 前端工程师必会的6个调试技术 https://read.douban.com/reader/column/5945187/chapter/30774228/
-  - 前端工程师必会的6个调试技术
+
+  - 前端工程师必会的6个调试技术 <https://read.douban.com/reader/column/5945187/chapter/30774228/>
+  - <https://juejin.im/entry/5a0001b86fb9a0451a75c591?utm_source=gold_browser_extension>
   - 基本的调试： HTML、CSS 和 JavaScript
   - 使用网络工具对 API 进行测试
 
@@ -1063,8 +1064,9 @@ EventUtil.addHandler(form, "submit", function(event){
   - 对移动设备进行调试：**先在浏览器进行响应式设计，随后在真机上进行测试**。
 
   - 对网站的性能进行调试
+
   - 在控制台中输入debug(car.funcY)，当调用car.funcY时，将以调试模式停止
-  -  Postman 很棒，但Firefox更快
+  - Postman 很棒，但Firefox更快
 
 ```javascript
 // 让Chrome变成编辑器
