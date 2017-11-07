@@ -1051,8 +1051,9 @@ EventUtil.addHandler(form, "submit", function(event){
   - for 或 while迭代
   - Collect JavaScript CPU Profile
 
-- [前端工程师必会的6个调试技术](https://read.douban.com/reader/column/5945187/chapter/30774228/)
-
+- 开发者工具
+  - 前端工程师必会的6个调试技术 https://read.douban.com/reader/column/5945187/chapter/30774228/
+  - 前端工程师必会的6个调试技术
   - 基本的调试： HTML、CSS 和 JavaScript
   - 使用网络工具对 API 进行测试
 
@@ -1062,6 +1063,8 @@ EventUtil.addHandler(form, "submit", function(event){
   - 对移动设备进行调试：**先在浏览器进行响应式设计，随后在真机上进行测试**。
 
   - 对网站的性能进行调试
+  - 在控制台中输入debug(car.funcY)，当调用car.funcY时，将以调试模式停止
+  -  Postman 很棒，但Firefox更快
 
 ```javascript
 // 让Chrome变成编辑器
@@ -1083,11 +1086,27 @@ console.bug()  辅助错误调试
 console.warn() 指出 潜在问题 的具体情况
 console.error() 出现 错误 并指出错误的具体情况
 
+// 表格输出
+var animals = [
+    { animal: 'Horse', name: 'Henry', age: 43 },
+    { animal: 'Dog', name: 'Fred', age: 13 },
+    { animal: 'Cat', name: 'Frodo', age: 18 }
+];
+
+console.table(animals);
+
 // 设置css输出
 
 // 计时
-console.time()
-console.timeEnd()
+console.time('Timer1');
+
+var items = [];
+
+for(var i = 0; i < 100000; i++){
+   items.push({index: i});
+}
+
+console.timeEnd('Timer1');
 ```
 
 - 发布时自动移除console对象
