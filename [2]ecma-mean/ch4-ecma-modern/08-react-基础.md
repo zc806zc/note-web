@@ -97,8 +97,6 @@ ReactDOM.render(myElement, document.getElementById('example'));
   - React 支持一种非常特殊的属性 Ref ,你可以用来绑定到 render() 输出的任何组件上
   - 支 撑实例（ backing instance ） ,任何时间总是拿到正确的实例
 
---------------------------------------------------------------------------------
-
 # 初入REACT世界
 
 - React简介
@@ -158,8 +156,6 @@ ReactDOM.render(myElement, document.getElementById('example'));
   - <http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_one_basic_usages.html> (Redux教程)
   - <https://github.com/ruanyf/react-demos> | <https://github.com/ruanyf/webpack-demos>
 
-
-
 - Flux 架构
 
   - <https://github.com/ruanyf/extremely-simple-flux-demo>
@@ -214,8 +210,15 @@ Flux 的最大特点，就是数据的"单向流动"
 
 # Redux高级运用
 
---------------------------------------------------------------------------------
-
 # React服务端渲染
 
 # React可视化
+
+# Preact
+
+- <https://juejin.im/post/5a0191f25188254de1699b0b?utm_source=gold_browser_extension>
+- component
+- h函数
+- render
+- diff算法
+- 回收机制
