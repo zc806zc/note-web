@@ -41,7 +41,7 @@ var numCompareBoxExtend = {
         this.dialog = $.dialog({
             title: title,
             content: body,
-            // zIndex: 700, // 弹框上弹框，这一行注释
+            // zIndex: 700, // 弹框上弹框，注释这一行
             init: function () {
                 var wrap = this.DOM.wrap;
                 wrap.css({ opacity: "0" }).animate({ opacity: "1" }, 500);
@@ -49,8 +49,7 @@ var numCompareBoxExtend = {
             ok: false, // 不用原生
             cancel: false,
             close: function () {
-                // 重置函数
-                $this.reset();
+                $this.reset(); // 重置
             },
             esc: false,
             lock: true,
@@ -81,6 +80,7 @@ var numCompareBoxExtend = {
     // 表单校验
     checkForm: function () {
 
+        return true;
     },
 
     // 弹框隐藏/表单重置
@@ -96,9 +96,9 @@ $.extend(numCompareBox.prototype, numCompareBoxExtend);
 
 // 调用
 $('.btn').off('click').on('click', function () {
-  new addPreviewBox({
-      self: '.yyy',
-      parent: '.xxx'
-  });
+    new numCompareBox({
+        self: '.yyy',
+        parent: '.xxx'
+    });
 });
 ```
