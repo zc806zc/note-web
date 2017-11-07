@@ -20,6 +20,12 @@ counter-increment: 属性递增一个或多个计数器值；
 content: 与:before 及:after 伪元素配合使用，来插入生成内容。
 ```
 
+> 前端最难的不是JS，果然还是CSS...
+
+# CSS3
+
+> 限制住自己的不是自己而是想象力
+
 # 结构与布局
 
 - 盒模型 display + position + float
@@ -157,6 +163,7 @@ overflow: hidden; // 触发生成BFC,使浮动元素也参与计算
 - 现实中的文字效果/环形文字
 
   - 文字颜色动态渐变 <http://www.jq22.com/webqd2810>
+  - 常用效果 <http://www.jq22.com/webqd443>
 
 ```css
 div {
@@ -369,3 +376,4 @@ HTML5建议网站: html5please
 # CSS3作图
 
 - 皮卡丘 <http://www.jq22.com/webqd660>
+- 仿真笔记本 <http://www.jq22.com/webqd113>
