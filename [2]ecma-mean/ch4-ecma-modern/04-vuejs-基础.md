@@ -8,6 +8,14 @@
 - API <https://vuejs-tips.github.io/cheatsheet/>
 - vue入门到放弃 <https://juejin.im/post/59aa1248518825392656a86a?utm_source=gold_browser_extension>
 - 父子组件之间传值 <https://juejin.im/post/59ec95006fb9a0451c398b1a?utm_source=gold_browser_extension>
+- <https://juejin.im/post/59fa9257f265da43062a1b0e?utm_source=gold_browser_extension>
+
+  - vuex的用户信息为什么还要存一遍在浏览器里?
+  - 首屏加载比较慢
+  - SSR(服务端渲染就能满足你的需求),因为请求回来就是一个处理完毕的 html
+  - 写小程序 wepy
+  - mock
+  - 页面拦截 <https://router.vuejs.org/zh-cn/advanced/navigation-guards.html>
 
 # vue语法
 
