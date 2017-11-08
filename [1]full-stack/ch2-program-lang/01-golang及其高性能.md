@@ -1,20 +1,14 @@
-# **Go基础**
+# Go基础
 
-- 安装
+- <https://golang.org/dl/>
+- LiteIDE 开发工具 <https://sourceforge.net/projects/liteide/files/>
 
-  - [go 下载](https://golang.org/dl/)
-  - [LiteIDE](https://sourceforge.net/projects/liteide/files/)
+```javascript
+go run test.go // 运行
 
-```go
-// 测试
-go run test.go
-
-atom + script插件 // 推荐
-
+atom + script插件
 // LiteIDE eclipse
 ```
-
---------------------------------------------------------------------------------
 
 - 基础
 
@@ -32,8 +26,6 @@ atom + script插件 // 推荐
 
 海量并行的支持  游戏服务端
 ```
-
---------------------------------------------------------------------------------
 
 - 语法
 

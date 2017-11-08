@@ -1,4 +1,4 @@
-# 1\. Reverse a String 翻转字符串
+# 1、 Reverse a String 翻转字符串
 
 ```javascript
 function reverseString(str) {
@@ -6,7 +6,7 @@ function reverseString(str) {
 }
 ```
 
-# 2\. Factorialize a Number 对一个数进行阶乘
+# 2、 Factorialize a Number 对一个数进行阶乘
 
 ```javascript
 function factorialize (num) {
@@ -50,7 +50,9 @@ function findLongestWord(str) {
 findLongestWord("The quick brown fox jumped over the lazy dog");
 ```
 
-# **5、Title Case a Sentence** 对所给的句子中所有单词首字母大写，其余字母小写
+# 5、Title Case a Sentence
+
+对所给的句子中所有单词首字母大写，其余字母小写
 
 ```javascript
 function titleCase(str) {
@@ -71,7 +73,7 @@ function titleCase(str) {
 titleCase("I'm a little tea pot");
 ```
 
-# **6、Return Largest Numbers in Arrays**
+# 6、Return Largest Numbers in Arrays
 
 英文描述：Return an array consisting of the largest number from each provided sub-array. For simplicity, the provided array will contain exactly 4 sub-arrays.<br>
 中文描述：在一个数组中，其元素全为数组（二维数组），返回其每个数组中的最大值组成的数组
@@ -88,7 +90,7 @@ function largestOfFour(arr) {
 largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
 ```
 
-# **7、Confirm the Ending**
+# 7、Confirm the Ending
 
 英文描述：Check if a string (first argument, str) ends with the given target string (second argument, target).<br>
 中文描述：对所给的字符串（第一个参数）确认是否是以第二个参数结尾，是则返回true，否则返回false
@@ -116,7 +118,7 @@ return bool;
 confirmEnding("Bastian", "n");
 ```
 
-# **8、Repeat a string repeat a string**
+# 8、Repeat a string repeat a string
 
 英文描述：Repeat a given string (first argument)num times (second argument). Return an empty string if num is a negative number.<br>
 中文描述：对所给的字符串根据第二个数字参数重复次数
@@ -138,7 +140,7 @@ return str;
 repeatStringNumTimes("abc", 3);
 ```
 
-# **9、Truncate a string**
+# 9、Truncate a string
 
 英文描述：Truncate a string (first argument) if it is longer than the given maximum string length (second argument). Return the truncated string with a ... ending. However, if the given maximum string length num is less than or equal to 3, then the addition of the three dots does not add to the string length in determining the truncated string.<br>
 中文描述：对所给的字符串根据第二个参数进行添加...，如果第二个参数大于或者等于字符串的长度，则直接返回字符串；否则分为两种情况，如果第二个参数小于或等于3，则从开头截取第二个参数大小长度的字符串，再在末尾添加上...，否则，第二个参数作为返回字符串的长度，其中还包括末尾的...
@@ -171,7 +173,7 @@ return str;
 truncateString("A-tisket a-tasket A green and yellow basket", 11);
 ```
 
-# **10、Chunky Monkey**
+# 10、Chunky Monkey
 
 英文描述：Write a function that splits an array (first argument) into groups the length ofsize (second argument) and returns them as a two-dimensional array<br>
 中文描述：对所给的数组，根据第二个参数将其化为二维数组，其中第二个参数为作为元素的数组的长度
@@ -197,7 +199,7 @@ return arrTem;
 chunkArrayInGroups(["a", "b", "c", "d"], 2);
 ```
 
-# **11、Slasher Flick**
+# 11、Slasher Flick
 
 英文描述：Return the remaining elements of an array after chopping off n elements from the head. The head means the beginning of the array, or the zeroth index.<br>
 中文描述：对所给的数组，根据第二个参数进行截取操作，如果第二个参数大于数组的长度，则返回空数组，否则将返回第二个参数作为索引值之后的所有元素组成的数组
@@ -215,7 +217,7 @@ return arr;
 slasher([1, 2, 3], 2);
 ```
 
-# **12、Mutations**
+# 12、Mutations
 
 英文描述：Return true if the string in the first element of the array contains all of the letters of the string in the second element of the array.<br>
 中文描述：对所给的一个含有两个元素的数组，检查第二个元素的所有字母是否都在第一个元素中出现过，是返回true，否则返回false，其中忽略大小写。
@@ -234,7 +236,7 @@ return true;
 mutation(["hello", "hey"]);
 ```
 
-# **13、Falsy Bouncer**
+# 13、Falsy Bouncer
 
 英文描述：Remove all falsy values from an array.<br>
 中文描述：将一个数组中元素转化为布尔值为false的元素
@@ -254,7 +256,7 @@ return false;
 bouncer([7, "ate", "", false, 9]);
 ```
 
-# **14、Seek and Destroy**
+# 14、Seek and Destroy
 
 英文描述：You will be provided with an initial array (the first argument in the destroyer function), followed by one or more arguments. Remove all elements from the initial array that are of the same value as these arguments.<br>
 中文描述：对所给的字符串根据参数删除这些元素
@@ -279,7 +281,7 @@ return arrNum;
 destroyer([1, 2, 3, 1, 2, 3], 2, 3);
 ```
 
-# **15、Where do I belong**
+# 15、Where do I belong
 
 英文描述：Return the lowest index at which a value (second argument) should be inserted into an array (first argument) once it has been sorted.<br>
 中文描述：将一个数组按照大小顺序插入一个数组中，返回其应该在的索引值
@@ -298,7 +300,7 @@ return index;
 getIndexToIns([40, 60], 50);
 ```
 
-# **16、Caesars Cipher**
+# 16、Caesars Cipher
 
 英文描述：One of the simplest and most widely known ciphers is a Caesar cipher, also known as a shift cipher. In a shift cipher the meanings of the letters are shifted by some set amount.<br>
 中文描述：回转13位密码，点击这里查看定义
@@ -325,7 +327,7 @@ return str1;
 rot13("SERR PBQR PNZC");
 ```
 
-# **1\. Sum All Numbers in a Range**
+# 1\. Sum All Numbers in a Range
 
 We'll pass you an array of two numbers. Return the sum of those two numbers and all numbers between them.<br>
 The lowest number will not always come first.<br>
@@ -353,7 +355,7 @@ return sum;
 sumAll([1, 4]);
 ```
 
-# **2\. Diff Two Arrays**
+# 2\. Diff Two Arrays
 
 Compare two arrays and return a new array with any items only found in one of the two given arrays, but not both. In other words, return the symmetric difference of the two arrays.<br>
 求两个给定数组的diff
@@ -395,7 +397,7 @@ diff(["andesite", "grass", "dirt", "pink wool", "dead shrub"], ["diorite", "ande
 //diff([1, 2, 3, 5], [1, 2, 3, 4, 5]);
 ```
 
-# **3\. Roman Numeral Converter**
+# 3\. Roman Numeral Converter
 
 Convert the given number into a roman numeral.<br>
 将给定数字转化为罗马数字
@@ -423,7 +425,7 @@ return ret.reverse().join("");
 convert(12);
 ```
 
-# **4\. Where art thou**
+# 4\. Where art thou
 
 Make a function that looks through an array of objects (first argument) and returns an array of all objects that have matching property and value pairs (second argument). Each property and value pair of the source object has to be present in the object from the collection if it is to be included in the returned array.<br>
 参数1给定一个若干对象构成的数组，参数2给定一个对象，算法需要从参数1中查找匹配参数2对象的所有对象并以数组形式输出。
@@ -453,7 +455,7 @@ return arr;
 where([{ "a": 1 }, { "a": 1 }, { "a": 1, "b": 2 }], { "a": 1 });
 ```
 
-# **5\. Search and Replace**
+# 5\. Search and Replace
 
 Perform a search and replace on the sentence using the arguments provided and return the new sentence.<br>
 First argument is the sentence to perform the search and replace on.<br>
@@ -513,7 +515,7 @@ return(str.substr(i).concat(tmp.join("")) + "ay");
 translate("alifornia");
 ```
 
-# **7\. DNA Pairing**
+# 7\. DNA Pairing
 
 The DNA strand is missing the pairing element. Take each character, get its pair, and return the results as a 2d array.<br>
 DNA配对，DNA的配对形如"AT,CG"模式，亦即出现字母"A"则给之以"T"配对，以此类推。
@@ -537,7 +539,7 @@ return arr;
 pair("GCG");
 ```
 
-# **8\. Missing letters**
+# 8\. Missing letters
 
 Find the missing letter in the passed letter range and return it.<br>
 If all letters are present in the range, return undefined.<br>
@@ -564,7 +566,7 @@ fearNotLetter("bcd");
 //fearNotLetter("abcdefghjklmno");
 ```
 
-# **9\. Boo who**
+# 9\. Boo who
 
 Check if a value is classified as a boolean primitive. Return true or false.<br>
 这个不知道为什么会算到中级里来，简直简单的发指。
@@ -578,7 +580,7 @@ return typeof bool === "boolean";
 boo(null);
 ```
 
-# **10\. Sorted Union**
+# 10\. Sorted Union
 
 Write a function that takes two or more arrays and returns a new array of unique values in the order of the original provided arrays.<br>
 In other words, all values present from all arrays should be included in their original order, but with no duplicates in the final array.<br>
@@ -607,7 +609,7 @@ return res;
 unite([1, 3, 2], [5, 2, 1, 4], [2, 1]);
 ```
 
-# **11\. Convert HTML Entities**
+# 11\. Convert HTML Entities
 
 Convert the characters &, <, >, " (double quote), and ' (apostrophe), in a string to their corresponding HTML entities.<br>
 将HTML的特殊字符转义
@@ -621,7 +623,7 @@ return str.replace(/&/g,"&").replace(/</g,"<").replace(/>/g,">").replace(/\"/g,"
 convert("Hamburgers < Pizza < Tacos");
 ```
 
-# **12\. Spinal Tap Case**
+# 12\. Spinal Tap Case
 
 Convert a string to spinal case. Spinal case is all-lowercase-words-joined-by-dashes.<br>
 字符串格式变换，将给定的字符串用"-"连接起来。
@@ -651,7 +653,7 @@ spinalCase("thisIsSpinalTap") ;
 spinalCase("The_Andy_Griffith_Show");
 ```
 
-# **13\. Sum All Odd Fibonacci Numbers**
+# 13\. Sum All Odd Fibonacci Numbers
 
 Return the sum of all odd Fibonacci numbers up to and including the passed number if it is a Fibonacci number.<br>
 求和给定参数内的所有奇Fibonacci数的和。Fibonacci数是后一个数字等于前两个数字和的形式的数列。
@@ -694,7 +696,7 @@ return sum;
 sumFibs(1000);
 ```
 
-# **14\. Sum All Primes**
+# 14\. Sum All Primes
 
 Sum all the prime numbers up to and including the provided number.<br>
 求和给定参数内的所有素数。
@@ -725,7 +727,7 @@ return sum;
 sumPrimes(10);
 ```
 
-# **15\. Smallest Common Multiple**
+# 15\. Smallest Common Multiple
 
 Find the smallest common multiple of the provided parameters that can be evenly divided by both, as well as by all sequential numbers in the range between these parameters.<br>
 给定一个参数数组，返回数组序列内所有数字的最小公倍数。如给定[1,5]，则需要返回"1,2,3,4,5"的最小公倍数。
@@ -766,7 +768,7 @@ return divide2solve(res);
 smallestCommons([1,5]);
 ```
 
-# **16\. Finders Keepers**
+# 16\. Finders Keepers
 
 Create a function that looks through an array (first argument) and returns the first element in the array that passes a truth test (second argument).<br>
 给定两个参数，第一个参数是一个数组，第二个参数是一个测试函数，算法需要返回满足该测试函数的第一个数组元素。
@@ -784,7 +786,7 @@ find([1, 2, 3, 4], function(num){ return num % 2 === 0; });
 find([1, 3, 5, 8, 9, 10], function(num) { return num % 2 === 0; });
 ```
 
-# **17\. Drop it**
+# 17\. Drop it
 
 Drop the elements of an array (first argument), starting from the front, until the predicate (second argument) returns true.<br>
 给定两个参数，第一个参数是一个数组，第二个参数是一个测试函数，算法需要以数组形式弹出满足测试函数的数组元素。
@@ -809,7 +811,7 @@ drop([1, 2, 3], function(n) {return n < 3; });
 drop([1, 2, 3, 5], function(n) {return n > 5;});
 ```
 
-# **18\. Steamroller**
+# 18\. Steamroller
 
 Flatten a nested array. You must account for varying levels of nesting.<br>
 "Steamroller",压路机，很形象，将一个嵌套多层的数组扁平化，亦即接受多层嵌套的数组，输出无嵌套数组，且输出数组的元素为输入嵌套的数组元素。
@@ -832,7 +834,7 @@ return flatArr;
 steamroller([1, [2], [3, [[4]]]]);
 ```
 
-# **19\. Binary Agents**
+# 19\. Binary Agents
 
 Return an English translated sentence of the passed binary string.<br>
 翻译给定的二进制串，给定一串01串，输出表示的句子。
@@ -862,7 +864,7 @@ binaryAgent("01000001 01110010 01100101 01101110 00100111 01110100 00100000 0110
 //binaryAgent("01000001");
 ```
 
-# **20\. Everything Be True**
+# 20\. Everything Be True
 
 Check if the predicate (second argument) is truthy on all elements of a collection (first argument).<br>
 给定两个参数，第一个参数是一个对象数组，第二个参数是一个字符串，算法需要判断参数1的对象数组是否都有参数2对应的key且对应的value值为true。
@@ -881,7 +883,7 @@ return true;
 every([{"user": "Tinky-Winky", "sex": "male", "age": 0}, {"user": "Dipsy", "sex": "male", "age": 3}, {"user": "Laa-Laa", "sex": "female", "age": 5}, {"user": "Po", "sex": "female", "age": 4}], "age");
 ```
 
-# **21\. Arguments Optional**
+# 21\. Arguments Optional
 
 Create a function that sums two arguments together. If only one argument is provided, then return a function that expects one argument and returns the sum.<br>
 js可选参数问题，题干要求求和给定的两个参数，如果只给定了一个参数，则返回一个可以再接收一个参数进行求和的函数。

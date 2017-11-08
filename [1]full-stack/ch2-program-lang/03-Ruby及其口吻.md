@@ -1,22 +1,21 @@
-# **Ruby基础**
+# Ruby基础
 
-- 安装
-
-  - [ruby-win](http://rubyinstaller.org/downloads/) | [rubywin-dl](http://suke.my.coocan.jp/ruby/rubywin/index_e.html)
+- ruby-win <http://rubyinstaller.org/downloads/>
+- rubywin-dl <http://suke.my.coocan.jp/ruby/rubywin/index_e.html>
 
 ```ruby
-// 测试
+# 测试
 $ ruby -v
 ruby 2.2.3
 $ ruby test.rb
 
-// IDE
+# IDE
 rubywin
 RDE
 sublime + 编译系统 // 推荐
 atom + script插件 // 推荐
 
-// 交互式 Ruby（IRb）
+# 交互式 Ruby（IRb）
 $irb
 irb 0.6.1(99/09/16)
 irb(main):001:0> def hello
@@ -28,10 +27,8 @@ irb(main):005:0> hello
 Hello World
 nil
 
-// 中文编码 utf-8
+# 中文编码 utf-8
 ```
-
---------------------------------------------------------------------------------
 
 - 基础
 
@@ -46,11 +43,9 @@ Ruby 支持许多 GUI 工具，比如 Tcl/Tk、GTK 和 OpenGL
 Ruby 有丰富的内置函数，可以直接在 Ruby 脚本中使用
 ```
 
---------------------------------------------------------------------------------
-
 - 命令行
 
-  - [菜鸟-命令行手册](http://www.runoob.com/ruby/ruby-command-line-options.html)
+  - <http://www.runoob.com/ruby/ruby-command-line-options.html>
 
 ```ruby
 -a    与 -n 或 -p 一起使用时，可以打开自动拆分模式(auto split mode)
