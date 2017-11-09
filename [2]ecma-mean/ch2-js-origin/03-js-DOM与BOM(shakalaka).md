@@ -1,6 +1,17 @@
-# **BOM**
+# DOM
 
-- **DOM** 文档对象模型 Document Object Model
+- DOM
+
+  - 文档对象模型 Document Object Model
+  - 尚无正式标准
+  - 使JavaScript有能力与浏览器 (B)对话
+  - 针对 HTML 和 XML 文档的一个 API
+  - 应用程序编程接口
+
+    - 一个层次化的节点树
+    - 真正的跨平台、语言中立
+
+- DOM2 和 DOM3模块
 
 ```javascript
 针对 XML 但经过扩展用于 HTML 的应用程序编程接口
@@ -16,43 +27,65 @@ SMIL（Synchronized Multimedia Integration Language，同步多媒体集成语�
 // BOM 浏览器对象模型
 弹出新浏览器窗口的功能；
 移动、缩放和关闭浏览器窗口的功能；
-提供浏览器详细信息的 **navigator** 对象；
-提供浏览器所加载页面的详细信息的 **location** 对象；
-提供用户显示器分辨率详细信息的 **screen** 对象；
-对 **cookies** 的支持；
-像 **XMLHttpRequest** 和 IE的 ActiveXObject 这样的 **自定义对象**
+提供浏览器详细信息的 navigator 对象；
+提供浏览器所加载页面的详细信息的 location 对象；
+提供用户显示器分辨率详细信息的 screen 对象；
+对 cookies 的支持；
+像 XMLHttpRequest 和 IE的 ActiveXObject 这样的 自定义对象
 script
-* **async** 立即下载脚本，但不应妨碍页面中的其他操作
-* **异步**脚本不要在加载期间修改 DOM
-* **defer** 表示脚本可以**延迟**到文档 **完全被解析和显示**之后再执行
-* 最好只包含一个延迟脚本
-* 只适用于外部脚本文件
-* 还是按照顺序来
-```
 
-- 示例
+async 立即下载脚本，但不应妨碍页面中的其他操作
+异步脚本不要在加载期间修改 DOM
+defer 表示脚本可以延迟到文档 完全被解析和显示之后再执行
+最好只包含一个延迟脚本
+只适用于外部脚本文件
+还是按照顺序来
 
-```javascript
-* <del>language type charset</del>
-* <del>不要在代码中的任何地方出现 "</script>"
+
+// 不要在代码中的任何地方出现 "</script>"
 
 function sayScript(){
-// alert("</script>");
-alert("<\/script>"); // 正确方式
+  // alert("</script>");
+  alert("<\/script>"); // 正确方式
 }
 ```
 
-- 引子
+# DOM操作
+
+- 删除子元素
+- 声名与取值
 
 ```javascript
-尚无正式标准
-使JavaScript有能力与浏览器 (B)对话
+// 定位演示
+var x=document.getElementById("intro");
+var y=x.getElementsByTagName("p");  // div里的p
+document.write(y[0].innerHTML);  // 注意0
+
+// x=document.getElementsByClassName("intro");
+
+// 指定属性
+document.getElementById("p1").innerHTML="新文本!";
+document.getElementById("image").src="landscape.jpg";
+document.getElementById("p2").style.fontFamily="Arial";
+
+// 移除子元素
+var parent=document.getElementById("div1");
+var child=document.getElementById("p1");
+parent.removeChild(child);
+
+// 确定父子关系才能删除的
+var child=document.getElementById("p1");
+child.parentNode.removeChild(child);
+
+// input, rather than input.value
+var input_val = document.getElementById("input_val");  
+get_val_btn.addEventListener("click", myFunc);
+function myFunc() { alert(input_val.value); }
 ```
 
-- 基础
+# 窗口与尺寸
 
 ```javascript
-// 窗口与尺寸
 window.open()  close()
 window.moveTo()  resizeTo() -调整尺寸
 
@@ -125,11 +158,6 @@ location.port = 8080;
 location.reload(); //重新加载（有可能从缓存中加载）
 location.reload(true); //重新加载（从服务器重新加载）
 
-// History
-history.back()  
-forward()
-
-go(-1)
 
 // Navigator
 navigator 对象的信息具有误导性，
@@ -218,14 +246,63 @@ navigator.registerProtocolHandler("mailto",
 "http://www.somemailclient.com?cmd=%s", "Some Mail Client")
 ```
 
-- 计时事件
+- NodeList
+
+  - 是有生命、有呼吸的对象，而不是某个瞬间的一张快照
+  - hasChildNodes() 比查询 childNodes列表的 length 属性更简单
+  - ownerDocument
+  - appendChild() 和 insertBefore()
+  - replaceChild() removeChild() , 通过 removeChild() 移除的节点仍然为文档所有，只不过在文档中已经没有了自己的位置
+
+  - cloneNode() 方法接受一个布尔值参数，表示是否执行 深复制， 在复制之前最好先移除事件处理程序
+
+  - normalize() 处理文档树中的文本节点
+
+- 网页请求：URL 、 domain 和 referrer
+
+- 特殊集合
+
+  - document.anchors
+  - document.forms
+  - document.images
+  - document.links
+
+- DOM 一致性检测 P259
+
+  - document.implementation
+  - hasFeature()
+
+# DOM优化
+
+- <https://juejin.im/entry/59ae19666fb9a024903aceae?utm_source=gold_browser_extension>
+
+- DOM 性能优化
+
+  - 网络消耗
+  - DOM 在浏览器的初始化
+  - DOM 的结构和动态操作
+  - JS 业务逻辑
+
+- 简化 HTML 结构
+
+  - 减少不必要的嵌套, 尽量扁平化、语义化
+  - 用DIV + CSS 替代 Table布局
+  - 多使用Flex Box
+  - 用border-bottom代替
+
+- 避免重绘与回流
+
+  - 回流可能导致整个 DOM 树的重新构造, 所以是性能的一大杀手
+  - 不要对元素进行 JS 动画流操作, 尽量使用 CSS 动画属性，以减少回流的 Render Tree 的规模
+
+# 计时事件
 
 ```javascript
  setInterval()
  setTimeout()
 ```
 
-- Cookies
+# Cookies
 
 ```javascript
 存储 web 页面的用户信息
@@ -235,149 +312,50 @@ navigator.registerProtocolHandler("mailto",
 旧的 cookie 不会被覆盖。
 新 cookie 将添加到 document.cookie中
 
-    document.cookie="username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 GMT; path=/";
-    var x = document.cookie;
-    document.cookie="username=John Smith; expires=Thu, 18 Dec 2013 12:00:00 GMT; path=/"; // 修改覆盖
-    document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 GMT"; // 过期时间删除 不用指定值
+document.cookie="username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 GMT; path=/";
+var x = document.cookie;
+document.cookie="username=John Smith; expires=Thu, 18 Dec 2013 12:00:00 GMT; path=/"; // 修改覆盖
+document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 GMT"; // 过期时间删除 不用指定值
 
-    function setCookie(cname,cvalue,exdays)
-    {
-    var d = new Date();
-    d.setTime(d.getTime()+(exdays*24*60*60*1000));
-    var expires = "expires="+d.toGMTString();
-    document.cookie = cname + "=" + cvalue + "; " + expires;
-    }
-
-    function getCookie(cname)
-    {
-    var name = cname + "=";
-    var ca = document.cookie.split(';');
-    for(var i=0; i<ca.length; i++)
-      {
-      var c = ca[i].trim();
-      if (c.indexOf(name)==0) return c.substring(name.length,c.length);
-    }
-    return "";
-    }
-
-    function checkCookie()
-    {
-    var user=getCookie("username");
-    if (user!="")
-      {
-      alert("Welcome again " + user);
-      }
-    else
-      {
-      user = prompt("Please enter your name:","");
-      if (user!="" && user!=null)
-        {
-        setCookie("username",user,365);
-        }
-      }
-    }
-```
-
-# **DOM**
-
-```javascript
-// 三个坐标
-id tag class
-
-// DOM操作
-删除子元素
-声名与取值
-
-// 定位演示
-var x=document.getElementById("intro");
-var y=x.getElementsByTagName("p");  // div里的p
-document.write(y[0].innerHTML);  // 注意0
-
-// x=document.getElementsByClassName("intro");
-
-// 指定属性
-document.getElementById("p1").innerHTML="新文本!";
-document.getElementById("image").src="landscape.jpg";
-document.getElementById("p2").style.fontFamily="Arial";
-
-// 移除子元素
-var parent=document.getElementById("div1");
-var child=document.getElementById("p1");
-parent.removeChild(child);
-
-// 确定父子关系才能删除的
-var child=document.getElementById("p1");
-child.parentNode.removeChild(child);
-
-// input, rather than input.value
-var input_val = document.getElementById("input_val");  
-get_val_btn.addEventListener("click", myFunc);
-function myFunc() { alert(input_val.value); }
-```
-
-- 事件
-
-```javascript
-onload onunload 页面的加载与卸载
-
-鼠标事件
-onmouseover  onmouseout
-onmousedown onmouseup onclick
-
-onchange
-
-监听器
-可以向同一个元素中添加多个事件及事件类型
-向windows添加句柄(例调整窗口时触发)
-注意移除监听器
-注意 on前缀
-
-// html页面耦合
-<h1 onclick="this.innerHTML='oops!'">点击!</h1>
-<h1 onclick="changetext(this)">点击!</h1>
-<body onload="checkCookies()">
-
-// 联系JS中的函数
-function changetext(id) {
-    id.innerHTML="Ooops!";
+function setCookie(cname,cvalue,exdays)
+{
+var d = new Date();
+d.setTime(d.getTime()+(exdays*24*60*60*1000));
+var expires = "expires="+d.toGMTString();
+document.cookie = cname + "=" + cvalue + "; " + expires;
 }
 
-// 分离
-document.getElementById("myBtn").onclick = function(){
-    displayDate()
-};
-
-// 监听器
-document.getElementById("myBtn").addEventListener("click", displayDate);
-
-// 对window对象的resize事件进行监听
-window.addEventListener("resize", function(){
-    document.getElementById("demo").innerHTML = sometext;
-});
-
-// 移除监听器
-element.removeEventListener("mousemove", myFunction);
-
-// 跨浏览器兼容
-var x = document.getElementById("myBtn");
-if (x.addEventListener) {            
-    x.addEventListener("click", myFunction);
-} else if (x.attachEvent) {      // IE 8 及更早版本
-    x.attachEvent("onclick", myFunction);
+function getCookie(cname)
+{
+var name = cname + "=";
+var ca = document.cookie.split(';');
+for(var i=0; i<ca.length; i++)
+  {
+  var c = ca[i].trim();
+  if (c.indexOf(name)==0) return c.substring(name.length,c.length);
+}
+return "";
 }
 
-element.attachEvent(event, function);
-element.detachEvent(event, function);
+function checkCookie()
+{
+var user=getCookie("username");
+if (user!="")
+  {
+  alert("Welcome again " + user);
+  }
+else
+  {
+  user = prompt("Please enter your name:","");
+  if (user!="" && user!=null)
+    {
+    setCookie("username",user,365);
+    }
+  }
+}
 ```
 
-- 参考
-
-```javascript
-菜鸟教程
-JavaScript DOM编程艺术
-```
-
-# **BOM与客户端检测**
+# BOM与客户端检测
 
 - BOM 浏览器提供商会按照各自的想法随意去扩展它
 - window双重角色
@@ -397,7 +375,7 @@ JavaScript DOM编程艺术
   - JavaScript 是一个单线程序的解释器，因此一定时间内只能执行一段代码
   - JavaScript 任务队列
   - 超时调用 ID 例clearTimeout(id)
-  - 一般认为，使用 超**时调用**来模拟间歇调用的是一种最佳模式
+  - 一般认为，使用 超时调用来模拟间歇调用的是一种最佳模式
 
 - "最小公分母"策略
 
@@ -423,63 +401,3 @@ JavaScript DOM编程艺术
   - 识别windows操作系统
   - 识别移动设备
   - 识别游戏系统
-
-  # **DOM**
-
-  1. 针对 HTML 和 XML 文档的一个 API
-  2. 应用程序编程接口
-
-    - 一个层次化的节点树
-    - 真正的跨平台、语言中立
-
-  3. NodeList
-
-    - 是有生命、有呼吸的对象，而不是某个瞬间的一张快照
-    - hasChildNodes() 比查询 childNodes列表的 length 属性更简单
-    - ownerDocument
-    - appendChild() 和 insertBefore()
-    - replaceChild() removeChild() , 通过 removeChild() 移除的节点仍然为文档所有，只不过在文档中已经没有了自己的位置
-
-    - cloneNode() 方法接受一个布尔值参数，表示是否执行 深复制， 在复制之前最好先移除事件处理程序
-
-    - normalize() 处理文档树中的文本节点
-
-  4. 网页请求：URL 、 domain 和 referrer
-
-  5. 特殊集合
-
-    - document.anchors
-    - document.forms
-    - document.images
-    - document.links
-
-  6. **DOM 一致性检测** P259
-
-    1. document.implementation
-    2. hasFeature()
-
-- DOM2 和 DOM3模块
-
-  # DOM优化
-
-- <https://juejin.im/entry/59ae19666fb9a024903aceae?utm_source=gold_browser_extension>
-
-- DOM 性能优化
-
-  - 网络消耗
-  - DOM 在浏览器的初始化
-  - DOM 的结构和动态操作
-  - JS 业务逻辑
-
-- 优化措施
-
-  - 简化 HTML 结构（减少不必要的嵌套，尽量扁平化、语义化）
-
-    - 使用 DIV + CSS 替代 Tables 来布局
-    - 多使用 Flex Box
-    - 避免使用 hr 标签来添加水平线，可使用 CSS 的 border-bottom 来代替
-
-  - 避免重绘与回流
-
-    - 回流可能导致整个 DOM 树的重新构造，所以是性能的一大杀手
-    - 不要对元素进行 JS 动画流操作，尽量使用 CSS 动画属性，以减少回流的 Render Tree 的规模

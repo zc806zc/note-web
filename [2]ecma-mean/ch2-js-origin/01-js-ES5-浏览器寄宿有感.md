@@ -288,7 +288,10 @@ console.log(scope); // "local"
 
 ## 数组与对象
 
-- 数组API全解密 <https://juejin.im/entry/59ad2cacf265da248a7aa6cc?utm_source=gold_browser_extension>
+- 数组API全解密
+
+  - <https://juejin.im/entry/59ad2cacf265da248a7aa6cc?utm_source=gold_browser_extension>
+
 - 函数
 
   - 内置函数
@@ -422,37 +425,6 @@ function setName(obj) {
 var person = new Object();
 setName(person);
 alert(person.name); //"Nicholas"
-```
-
-## 垃圾收集
-
-```javascript
-标记清除
-引用计数
-循环引用问题
-垃圾收集器是周期性运行的
-window.CollectGarbage()
-管理内存
-分配给 Web浏览器的可用内存数量通常要比分配给桌面应用程序的少，一旦数据不再有用，最好通过将其值设置为 null 来释放其引用——这个做法叫做解除引用
-
-// 循环引用示例
-function problem(){
-  var objectA = new Object();
-  var objectB = new Object();
-  objectA.someOtherObject = objectB;
-  objectB.anotherObject = objectA;
-}
-
-// 解除一个值的引用并不意味着自动回收该值所占用的内存。
-// 解除引用的真正作用是让值脱离执行环境，以便垃圾收集器下次运行时将其回收
-function createPerson(name){
-  var localPerson = new Object();
-  localPerson.name = name;
-  return localPerson;
-}
-var globalPerson = createPerson("Nicholas");
-// 手工解除 globalPerson 的引用
-globalPerson = null;
 ```
 
 ## 引用类型
@@ -1021,4 +993,59 @@ EventUtil.addHandler(form, "submit", function(event){
     target.elements["comments"].value =
             document.getElementById("richedit").innerHTML;
 });
+```
+
+- 事件
+
+```javascript
+onload onunload 页面的加载与卸载
+
+鼠标事件
+onmouseover  onmouseout
+onmousedown onmouseup onclick
+
+onchange
+
+监听器
+可以向同一个元素中添加多个事件及事件类型
+向windows添加句柄(例调整窗口时触发)
+注意移除监听器
+注意 on前缀
+
+// html页面耦合
+<h1 onclick="this.innerHTML='oops!'">点击!</h1>
+<h1 onclick="changetext(this)">点击!</h1>
+<body onload="checkCookies()">
+
+// 联系JS中的函数
+function changetext(id) {
+    id.innerHTML="Ooops!";
+}
+
+// 分离
+document.getElementById("myBtn").onclick = function(){
+    displayDate()
+};
+
+// 监听器
+document.getElementById("myBtn").addEventListener("click", displayDate);
+
+// 对window对象的resize事件进行监听
+window.addEventListener("resize", function(){
+    document.getElementById("demo").innerHTML = sometext;
+});
+
+// 移除监听器
+element.removeEventListener("mousemove", myFunction);
+
+// 跨浏览器兼容
+var x = document.getElementById("myBtn");
+if (x.addEventListener) {            
+    x.addEventListener("click", myFunction);
+} else if (x.attachEvent) {      // IE 8 及更早版本
+    x.attachEvent("onclick", myFunction);
+}
+
+element.attachEvent(event, function);
+element.detachEvent(event, function);
 ```
