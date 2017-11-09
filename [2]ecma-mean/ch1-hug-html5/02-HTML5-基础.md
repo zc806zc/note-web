@@ -1,6 +1,6 @@
-# **HTML**
+# HTML
 
-- [HTML面试题-sandisen](http://www.jianshu.com/p/872f8fb425ce)
+- HTML标记争论的论坛 <http://html5doctor.com>
 - 移动meta标记
 
 ```javascript
@@ -54,9 +54,14 @@
 <!-- pc端调整页面兼容代码 -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="renderer" content="webkit|ie-comp|ie-stand">
+
+// 移动厂商特有的值
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
 ```
 
 - 浏览器内核与渲染引擎
+
 - 语义化
 
   - 让页面的内容结构化，结构更清晰，便于对浏览器、搜索引擎解析
@@ -65,43 +70,40 @@
 
 > 浏览器会思考，而且经常会取笑我们
 
+# 积极拥抱HTML5
+
+> 开发人员就不要说H5,不会显得自己很low, H5 ≠ 那些个酷炫的页面
+
+- HTML5秘籍
+
+  - <http://www.prosetech.com/html5>
+
+- HTML5移动开发
+
+  - <http://www.oreilly.com/pub/missingmanuals/html5tmm2e>
+  - <http://www.standardista.com/mobile/>
+
+- 渐近增强|优雅降级
+
+  - 浏览器与设备兼容
+  - Modernizer | html5shiv/html5.js
+  - 浏览器市场占有率 <http://gs.statcounter.com>
+  - Can I use
+  - 腻子脚本
+
+    - <https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills>
+    - 腻子脚本 通过 createElement('header')的方式 让IE支持HTML5
+
 ```javascript
-// 移动厂商特有的值
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="format-detection" content="telephone=no">
+// 在IE上进行js测试
+saved from url=(0014)about:internet
 ```
 
-## HTML5-工具篇
+# HTML5语义化
 
-- Chrome Canary(金丝雀)
-- 移动视口
+- 元素更迭史
 
-  - SceenQueri.es网站
-  - touch-event
-  - thumbs.js 触控事件的腻子脚本
-
-- 远程调试 web inspector <http://www.cnblogs.com/jingwei/p/4739618.html>
-
-- weinre
-- Aardwolf
-- 仿真器与模拟器
-- 在线工具
-
-  - <https://www.quirksmode.org/m/tests/widthtest.html> 查看影响媒体查询的重要统计数据
-  - W3C mobileOK Checker 检查网站是否符合最佳实践
-  - mobileReady 基于上者的友好工具
-
-- 自动化测试
-
-  - Jasmine
-  - PhantonmJS/CasperJS
-  - Sinon.JS
-  - SauceLabs
-
-## 积极拥抱HTML5
-
-- HTML5秘籍 <http://www.prosetech.com/html5> | <http://www.oreilly.com/pub/missingmanuals/html5tmm2e> HTML5移动开发 <http://www.standardista.com/mobile/>
-- 元素更迭史 <https://www.w3.org/TR/html5-diff>
+  - <https://www.w3.org/TR/html5-diff>
 
 ```javascript
 <nobr>  // 被css white-space: nowrap 代替
@@ -134,13 +136,25 @@ input和textarea 的autofocus required placeholder
 <html lang="en"> // 方便屏幕阅读器
 ```
 
-- HTML5 再没有内联元素块元素的概念了，因为那是基于外观的定义
+![](/assets/h5-grammar755.png)
+
+- 语义化
+
+  - 再没有内联元素块元素的概念了，因为那是外观定义不是语义定义
+  - 分类
+
+    - 短语元素 章式 article nav aside
+    - 区段元素 段落 img span
+    - heading 标题 h6 hgroup
+    - metadata 元数据 link meta base...
+    - flow流元素 span div
+    - 嵌入式embedd元素 iframe svg
+    - 交互式interactive元素 a button input select
 
 ```javascript
 <a>里可以放置任何东西了
 <a href="tel:16505551212">xxx</a>
 // href也不是必需的了
-
 
 //  datalist
 <input list="browsers">
@@ -153,60 +167,13 @@ input和textarea 的autofocus required placeholder
   </option><option value="Safari">
 </option></datalist>
 
-短语元素
-区段元素 // 但语义限制也不能位于短语元素中
-heading
-metadata
-flow流元素
-嵌入式embedd元素
-交互式interactive元素
 
 // 交互式属性
 contenteditable spellcheck
 contextmenu
 draggable dropzone
 
-// html5元素分类
-元数据 link meta base...
-流式 span div
-章式 article nav aside
-标题 h6 hgroup
-段落 img span
-嵌入 iframe svg
-交互  a button input select
-```
-
-- 浏览器与设备兼容 - 平稳退化, 积极拥抱HTML5
-
-  - Modernizer | html5shim/html5.js
-  - 浏览器市场占有率 <http://gs.statcounter.com>
-  - html标记争论的论坛 <http://html5doctor.com>
-  - Can I use
-
-```javascript
-// 对付旧版本浏览器,使用腻子脚本
-<a href="https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills"
-    target="_blank">腻子脚本</a>
-
-// 在IE上进行js测试
-saved from url=(0014)about:internet
-
-// 腻子脚本 让IE支持HTML5
-通过 createElement('header')的方式
-
-// HTML校验
-w3c的W3Validator
-ff插件：HTML Validator // 基于HTML Tidy,可以美化代码
-```
-
-## 动骨-HTML的语义化
-
-- 语义化
-
-![](/assets/h5-grammar755.png)
-
-```javascript
-// 1.<header>
+// <header>
 作网页页眉
 作为内容的标题 // 一般是附带概要日期等信息的那种
 // 在页眉中添加看不见的标题<h1> // display:none
@@ -219,7 +186,7 @@ ff插件：HTML Validator // 基于HTML Tidy,可以美化代码
     scenarios plays out?</figcaption>
 </figure>
 
-// 5\. <section> 略带语义的块 适合任何以标题开头的区块
+// <section> 略带语义的块 适合任何以标题开头的区块
 // 类似bootstrap的样式嵌套还是用div // 因为并没有语义
 eg. About US
 购物记录和产品清单
@@ -242,14 +209,18 @@ details[open] * {display: auto; }
 // <menu><menuitem> // 类似右键菜单 支持不好
 ```
 
-- HTML5纲要
+- HTML校验
 
-  - 在线HTML纲要生成器<http://gsnedders.html5.org/outliner>
+  - w3c的W3Validator
+  - ff插件：HTML Validator // 基于HTML Tidy,可以美化代码
+
+- 生成HTML5纲要
+
+  - 为了合理结构
+  - 在线HTML纲要生成器 <http://gsnedders.html5.org/outliner>
   - Chrome扩展 h5o <http://code.google.com/p/h5o>
 
 ```javascript
-为了合理结构
-
 // h1~h6 层级
 // 区块根 body,blockquote,td,fieldset
 figure,details 会产生自己的纲要
@@ -257,10 +228,10 @@ figure,details 会产生自己的纲要
 不会有问题
 
 // 遇到aside 意外关闭的情况
-// 自己写 section / div 代替 aside
+可以自己写 section / div 代替 aside
 ```
 
-- SEO
+- HTML5的SEO
 
 ```css
 // data-*  
@@ -317,7 +288,7 @@ Structured Data Testing Tools // https://search.google.com/structured-data/testi
 // 谷歌不使用css隐藏的语义数据
 ```
 
-## 换血-web组件进化
+# HTML5组件进化
 
 - web表单
 
@@ -419,10 +390,8 @@ muted poster height weight
 // 后备措施
 <audio><source>
 1\. 上传youtube
-
 2\. Flash, Flowplayer Flash
 // manual-VideoWithFlashFallback.html
-
 3\. 若Flash都没装的，提供下载链接
 
 // 翻转方案
@@ -463,4 +432,19 @@ WebVTT（一致支持） 和 TTML（成熟但复杂）
 subtitles(外语片)和 captains(静音)
 
 Captionator.js // 适时抓取文本
+
+<!-- 嵌入视频 -->
+<video id="myVideo">
+<source src="conference.webm" type="video/webm; codecs='vp8, vorbis'">
+<source src="conference.ogv" type="video/ogg; codecs='theora, vorbis'">
+<source src="conference.mpg">
+Video player not available.
+</video>
+
+<!-- 嵌入音频 -->
+<audio id="myAudio">
+<source src="song.ogg" type="audio/ogg">
+<source src="song.mp3" type="audio/mpeg">
+Audio player not available.
+</audio>
 ```
