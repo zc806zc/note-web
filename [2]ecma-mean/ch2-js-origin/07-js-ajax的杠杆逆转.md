@@ -1,4 +1,4 @@
-# **ch20 JSON**
+# ch20 JSON
 
 - JSON 字符串必须使用双引号
 - JSON 中的对象要求给属性加引号
@@ -70,9 +70,7 @@ var jsonText = JSON.stringify(book, ["title", "edition"]);
 // {"title":"Professional JavaScript","edition":3}
 ```
 
---------------------------------------------------------------------------------
-
-# **ch18 JavaScript 与 XML**
+# ch18 JavaScript 与 XML
 
 - DOMParser 类型
 - XMLSerializer 类型
@@ -128,17 +126,15 @@ alert(xmldom.xml);
 xmldom.load("example.xml");
 ```
 
---------------------------------------------------------------------------------
-
-# **JSON和Ajax**
+# JSON和Ajax
 
 - 工具
 
 ```javascript
-  + 校验工具 [JSONLint](http://www.jsonlint.com/)
-  + 构建JSON逻辑模型 [JSON Editor Online](http://jsoneditoronline.org/)
-  + [JSON→CSV](https://github.com/konklone/json)
-  + [JSON格式化工具](http://www.runoob.com/jsontool)
+校验工具 [JSONLint](http://www.jsonlint.com/)
+构建JSON逻辑模型 [JSON Editor Online](http://jsoneditoronline.org/)
+[JSON→CSV](https://github.com/konklone/json)
+[JSON格式化工具](http://www.runoob.com/jsontool)
 ```
 
 - 常识
@@ -200,7 +196,7 @@ $.post()
 $.ajax()
 ```
 
-- **JSONP**
+- JSONP
 
 ```javascript
 通过PHP跨域请求
@@ -281,7 +277,7 @@ String addrJsonStr =
 Address addrIn = mapper.readValue(addrJsonStr, Address.class);
 ```
 
-# **JSON和Ajax**
+# JSON和Ajax
 
 - 工具
 
@@ -290,11 +286,9 @@ Address addrIn = mapper.readValue(addrJsonStr, Address.class);
   - [JSON→CSV](https://github.com/konklone/json)
   - [JSON格式化工具](http://www.runoob.com/jsontool)
 
---------------------------------------------------------------------------------
-
 - 常识
 
-```
+```javascript
 // JSON
 JavaScript Object Notation
 JavaScript 对象表示法
@@ -351,9 +345,9 @@ $.post()
 $.ajax()
 ```
 
-- **JSONP**
+- JSONP
 
-```
+```javascript
 通过PHP跨域请求
 通过JSONP跨域请求
 
@@ -432,48 +426,46 @@ String addrJsonStr =
 Address addrIn = mapper.readValue(addrJsonStr, Address.class);
 ```
 
-# **ch19 E4X**
+# E4X
 
 ```javascript
-* E4X 本身不是一门语言，它只是 ECMAScript 语言的可选扩展
-* 几个新的全局类型
-    * XML ：XML 结构中的任何一个独立的部分。
-    * XMLList ：XML 对象的集合。
-    * Namespace ：命名空间前缀与命名空间 URI 之间的映射。
-    * QName ：由内部名称和命名空间 URI 组成的一个限定名
-* 其内部机制是将每一种类型（特别是XML 和 XMLList ）都映射为多个 DOM 类型
-* for-each-in 循环
-* 使用两个点（ .. ）表示要匹配所有后代元素，
-* 使用 @ 字符表示应该返回一或多个特性。
-* 星号字符（ * ）是一个通配符，可以匹配任意类型的节点。
-* 所有这些查询都可以通过一组执行相同操作的方法来实现。
-
-
+E4X 本身不是一门语言，它只是 ECMAScript 语言的可选扩展
+几个新的全局类型
+    XML ：XML 结构中的任何一个独立的部分。
+    XMLList ：XML 对象的集合。
+    Namespace ：命名空间前缀与命名空间 URI 之间的映射。
+    QName ：由内部名称和命名空间 URI 组成的一个限定名
+其内部机制是将每一种类型（特别是XML 和 XMLList ）都映射为多个 DOM 类型
+for-each-in 循环
+使用两个点（ .. ）表示要匹配所有后代元素，
+使用 @ 字符表示应该返回一或多个特性。
+星号字符（ * ）是一个通配符，可以匹配任意类型的节点。
+所有这些查询都可以通过一组执行相同操作的方法来实现。
 
 <script type="text/javascript;e4x=1" src="e4x_file.js"></script>
 ```
 
-# **ch21 Ajax 与 Comet**
+# ch21 Ajax 与 Comet
 
 ```javascript
-* 使用 XMLHttpRequest 对象
-* 使用 XMLHttpRequest 事件
-* 跨域 Ajax 通信的限制
-* 跨资源共享 CORS Cross-Origin Resource Sharing
-* 其他跨域技术
-    * 图像ping 单向
-        * 只能发送 GET 请求，
-        * 无法访问服务器的响应文本
-    *  JSONP
-        *  JSON with padding
-        * 回调函数和数据
-    * Comet 更高级的 Ajax 技术 服务器推送
-        * 有两种实现 Comet 的方式：长轮询和流
-* 服务器发送事件 SSE Server-Sent Events
-    * 组合 XHR 和 SSE 也是能实现双向通信的
-* Web Sockets 全双工、双向通信
-    * 非常适合移动应用
-* ajax与comet的安全问题
+使用 XMLHttpRequest 对象
+使用 XMLHttpRequest 事件
+跨域 Ajax 通信的限制
+跨资源共享 CORS Cross-Origin Resource Sharing
+其他跨域技术
+    图像ping 单向
+        只能发送 GET 请求，
+        无法访问服务器的响应文本
+    JSONP
+        JSON with padding
+        回调函数和数据
+    Comet 更高级的 Ajax 技术 服务器推送
+        有两种实现 Comet 的方式：长轮询和流
+服务器发送事件 SSE Server-Sent Events
+    组合 XHR 和 SSE 也是能实现双向通信的
+Web Sockets 全双工、双向通信
+    非常适合移动应用
+Ajax与comet的安全问题
 
 
 // JSONP示例
