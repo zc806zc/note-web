@@ -72,7 +72,7 @@
 
 # 积极拥抱HTML5
 
-> 开发人员就不要说H5,不会显得自己很low, H5 ≠ 那些个酷炫的页面
+> 开发人员就不要说H5了,不然会显得自己很low, HTML5 ≠ 那些个酷炫的页面, HTML5更多的是新标准而不是新技术
 
 - HTML5秘籍
 
@@ -143,8 +143,8 @@ input和textarea 的autofocus required placeholder
   - 再没有内联元素块元素的概念了，因为那是外观定义不是语义定义
   - 分类
 
-    - 短语元素 章式 article nav aside
-    - 区段元素 段落 img span
+    - 短语元素 段落 img span
+    - 区段元素 章式 article nav aside
     - heading 标题 h6 hgroup
     - metadata 元数据 link meta base...
     - flow流元素 span div
