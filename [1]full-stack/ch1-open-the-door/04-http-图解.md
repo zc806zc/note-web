@@ -24,6 +24,47 @@
 
 # HTTP和HTTPS的差异
 
+- HTTP
+
+  - <https://certbot.eff.org/>
+
+  - <http://www.ruanyifeng.com/blog/2016/08/http.html> HTTP协议入门
+
+```javascript
+// HTTPS 升级指南
+
+// HTTP协议入门
+TCP/IP 协议的应用层协议
+默认使用80端口
+
+// HTTP/2 // 没有子版本
+```
+
+- Content Security Policy
+
+  - <http://www.ruanyifeng.com/blog/2016/09/csp.html>
+
+```javascript
+// 跨域脚本攻击 XSS
+
+能不能根本上解决问题，浏览器自动禁止外部注入恶意脚本
+// 网页安全政策 CSP
+实质就是白名单制度 // 列入可信主机
+
+1\. 通过 HTTP 头信息的Content-Security-Policy的字段
+2\. <meta http-equiv="Content-Security-Policy"
+         content="script-src 'self';
+         object-src 'none';  // <object>标签：不信任任何URL，即不加载任何资源
+         style-src cdn.example.org third-party.org;
+         child-src https:"> // 必须使用HTTPS协议加载
+
+// report-uri
+不仅希望防止 XSS，还希望记录此类行为
+
+// Content-Security-Policy-Report-Only
+不执行限制选项，只是记录违反限制的行为
+```
+
 - <https://juejin.im/post/5a030e326fb9a0450a66c8ea?utm_source=gold_browser_extension>
 - 握手挥手...
 

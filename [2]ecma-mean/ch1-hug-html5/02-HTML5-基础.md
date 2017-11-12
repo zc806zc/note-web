@@ -60,13 +60,47 @@
 <meta name="format-detection" content="telephone=no">
 ```
 
+- YAML
+
+  - <http://www.ruanyifeng.com/blog/2016/07/yaml.html>
+  - <https://github.com/nodeca/js-yaml> ([JS-YAML](https://github.com/nodeca/js-yaml)库 把函数和正则表达式转为字符串)
+
+```javascript
+YAML 是专门用来写配置文件的语言，非常简洁和强大
+远比 JSON 格式方便
+
+一种通用的数据串行化格式
+只允许使用空格
+
+// 支持的数据结构
+对象
+数组
+纯量（scalars） // 单个的、不可再分的值
+
+hash: { name: Steve, foo: bar }
+// { hash: { name: 'Steve', foo: 'bar' } } // JS
+
+-
+ - Cat
+ - Dog
+ - Goldfish
+// [ [ 'Cat', 'Dog', 'Goldfish' ] ] // JS
+
+// 复合结构
+
+// 纯量
+parent: ~
+// { parent: null } // JS
+
+e: !!str 123
+f: !!str true
+// { e: '123', f: 'true' } // 强调数据类型转化
+
+// | > + -
+// 锚点&和别名*，可以用来引用
+```
+
 - 浏览器内核与渲染引擎
-
-- 语义化
-
-  - 让页面的内容结构化，结构更清晰，便于对浏览器、搜索引擎解析
-  - 使阅读源代码的人更容易将网站分块，便于阅读、维护和理解
-  - 搜索引擎的爬虫也依赖于HTML标记来确定上下文和各个关键字的权重，有利于SEO
 
 > 浏览器会思考，而且经常会取笑我们
 
@@ -150,6 +184,12 @@ input和textarea 的autofocus required placeholder
     - flow流元素 span div
     - 嵌入式embedd元素 iframe svg
     - 交互式interactive元素 a button input select
+
+- 语义化的优势
+
+  - 让页面的内容结构化，结构更清晰，便于对浏览器、搜索引擎解析
+  - 使阅读源代码的人更容易将网站分块，便于阅读、维护和理解
+  - 搜索引擎的爬虫也依赖于HTML标记来确定上下文和各个关键字的权重，有利于SEO
 
 ```javascript
 <a>里可以放置任何东西了
