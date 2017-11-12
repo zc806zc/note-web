@@ -1,4 +1,4 @@
-# **Java基础**
+# Java基础
 
 - 资源
 
@@ -9,7 +9,7 @@
 
   - 你真的会写java吗 <https://juejin.im/entry/59ae07d9f265da249600f0ec?utm_source=gold_browser_extension>
 
-```
+```java
 // 入门
 《Head First Java》
 《Java 核心技术》两卷
@@ -37,20 +37,17 @@
 《算法设计与分析》王晓东
 ```
 
---------------------------------------------------------------------------------
-
 - 网站
 
   - [并发编程指南](http://ifeve.com/java-7-concurrency-cookbook/)
   - [100问](https://github.com/giantray/stackoverflow-java-top-qa)
   - [ConcretePage](http://www.concretepage.com/) Java 资源类网站，可以找到各种 Java 框架及相关教程
 
---------------------------------------------------------------------------------
-
 - 基础
 
-  - 排序算法 <https://juejin.im/entry/59c5d26951882578e00ddcb2?utm_source=gold_browser_extension> ```
+  - 排序算法 <https://juejin.im/entry/59c5d26951882578e00ddcb2?utm_source=gold_browser_extension>
 
+```java
 Java程序的执行模式是 半编译半解释
 
 虚拟机可以用硬件实现，<br>
@@ -63,11 +60,11 @@ main方法只能是一个public静态方法<br>
 System不是关键字<br>
 加号 + 的优先级大于 =<br>
 java.lang包中的所有类是隐式导入的
-
 ```
 
 - 异常
-```
+
+```java
 
 用户输入了非法数据
 
@@ -76,11 +73,11 @@ java.lang包中的所有类是隐式导入的
 
 可控式异常 IOException<br>
 运行时异常
-
 ```
 
 - 输入输出
-```
+
+```java
 
 long = int + float 赋值会出错
 
@@ -101,19 +98,19 @@ int a = 5, b = 4;<br>
 double d;<br>
 d = a / b;<br>
 System.out.println(d);
-
 ```
 
 - if(boolean) {} 里面只能是布尔值，与C语言有区别, 例if(3)不允许
-```
+
+```java
 
 if(3) { printf("hello wo"); }<br>
 if(3) { System.out.println("je"); } // required: boolean
-
 ```
 
 - else总是和最近的if匹配 -> 加括号的重要性
-```
+
+```java
 
 int i = 1, j = 1, k =1;<br>
 if(i > j)<br>
@@ -121,12 +118,11 @@ if( j > k)<br>
 System.out.print("A");<br>
 else<br>
 System.out.print("B"); // 所以什么也不输出
-
 ```
 
 - instanceof判断对象类型
-```
 
+```java
 class Vehicle {}<br>
 public class Car extends Vehicle {<br>
 public static void main(String args[]) {<br>
@@ -134,7 +130,8 @@ Vehicle a = new Car();<br>
 boolean result = a instanceof Car;<br>
 System.out.println( result);<br>
 }<br>
-} ```
+}
+```
 
 - ch1-3 初始Java，Eclipse开发工具、Java语言基础
 - ch4 流程控制
@@ -162,7 +159,7 @@ System.out.println( result);<br>
 
 - ch11 输入/输出
 
-# **Java基础2**
+# Java基础2
 
 - ch12-15 Swing程序设计 事件处理 表格与树组件
 - ch16 多线程
