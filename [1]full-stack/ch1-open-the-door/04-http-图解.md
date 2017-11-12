@@ -1,6 +1,6 @@
 # HTTP图解
 
-- ch1 了解Web及网络基础
+- ch1 <mark>了解Web及网络基础</mark>
 
 - ch2 简单的HTTP协议
 
@@ -302,6 +302,7 @@ Nginx是Apache服务器不错的替代品
 - Web服务器
 
 - FTP服务应用
+
 - NAS网络存储应用
 
 # 6\. 网络安全
