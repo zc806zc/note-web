@@ -1,6 +1,6 @@
 # HTTP图解
 
-- ch1 <mark>了解Web及网络基础</mark>
+- ch1 _了解Web及网络基础_
 
 - ch2 简单的HTTP协议
 
