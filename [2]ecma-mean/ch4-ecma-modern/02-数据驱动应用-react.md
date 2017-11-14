@@ -2,17 +2,6 @@
 
 - [6 款 Javascript 的图像处理库 - Tine](https://juejin.im/post/58c0edac0ce4630054592a78?utm_source=gold_browser_extension)
 
-
-# **JS框架的三足鼎立**
-
-- [x] 工程化
-- [ ] 三足鼎立
-- [ ] 其他web开发框架
-
-- 前端编程之路 <http://project.giscafer.com/>
-
---------------------------------------------------------------------------------
-
 ## 前端工程化
 
 - [如何选择合适的前端SPA框架，告别选择恐惧症](https://read.douban.com/reader/column/5945187/chapter/30511309/)
@@ -69,25 +58,25 @@ Vue.js 也使用了 Virtual DOM、Reactive 及组件化的思想，
 - [2016 年的轻量级 JS 框架和库](https://zhuanlan.zhihu.com/p/24598210)
 - [2016崛起的前端框架 - 王仕军](https://juejin.im/post/58c5e39c8ac24707200a6cff?utm_source=gold_browser_extension)
 
---------------------------------------------------------------------------------
-
-## **Sinatra**
-
-## **CanJS**
-
-## **AngularJS**
-
-## **Ring**
-
-## **Webmacchine**
-
-## **Yesod**
-
-## **Immutant**
-
---------------------------------------------------------------------------------
-
 # 三足鼎立
 
-- [ ] Vue | React | Ng看书笔记
-- [ ] jQuery（例如jq mobile）做一个项目总结一下
+- React
+- Vue
+- Angular
+- 前端编程之路 <http://project.giscafer.com/>
+
+# 7周7web框架
+
+- Sinatra
+
+- CanJS
+
+- AngularJS
+
+- Ring
+
+- Webmacchine
+
+- Yesod
+
+- Immutant
