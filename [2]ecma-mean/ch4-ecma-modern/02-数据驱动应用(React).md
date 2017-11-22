@@ -64,6 +64,7 @@ Vue.js 也使用了 Virtual DOM、Reactive 及组件化的思想，
 - Vue
 - Angular
 - 前端编程之路 <http://project.giscafer.com/>
+- <https://juejin.im/post/5a0d5df1f265da43062a542f?utm_medium=fe&utm_source=weixinqun>
 
 # 7周7web框架
 
