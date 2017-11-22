@@ -1,7 +1,3 @@
-# 图像处理
-
-- [6 款 Javascript 的图像处理库 - Tine](https://juejin.im/post/58c0edac0ce4630054592a78?utm_source=gold_browser_extension)
-
 ## 前端工程化
 
 - [如何选择合适的前端SPA框架，告别选择恐惧症](https://read.douban.com/reader/column/5945187/chapter/30511309/)
