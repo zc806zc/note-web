@@ -1,6 +1,7 @@
 # vue资源整理
 
 - <https://vuefe.cn/v2/guide/>
+- vue面试题 <https://juejin.im/post/59ffb4b66fb9a04512385402?utm_source=gold_browser_extension>
 - 前端每周清单半年盘点之 Vue.js 篇
 
 <https://juejin.im/post/59928d55518825486f1e8369?utm_source=gold_browser_extension>
