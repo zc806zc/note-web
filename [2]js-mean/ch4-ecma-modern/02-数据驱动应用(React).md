@@ -1,7 +1,3 @@
-# 图像处理
-
-- [6 款 Javascript 的图像处理库 - Tine](https://juejin.im/post/58c0edac0ce4630054592a78?utm_source=gold_browser_extension)
-
 ## 前端工程化
 
 - [如何选择合适的前端SPA框架，告别选择恐惧症](https://read.douban.com/reader/column/5945187/chapter/30511309/)
@@ -64,6 +60,7 @@ Vue.js 也使用了 Virtual DOM、Reactive 及组件化的思想，
 - Vue
 - Angular
 - 前端编程之路 <http://project.giscafer.com/>
+- <https://juejin.im/post/5a0d5df1f265da43062a542f?utm_medium=fe&utm_source=weixinqun>
 
 # 7周7web框架
 

@@ -1,3 +1,21 @@
+# 常见几个概念
+
+- 并发与并行
+
+  - <https://juejin.im/entry/59c645be6fb9a00a4636fec8?utm_source=gold_browser_extension>
+  - 并行:以可独立执行的进程集合的方式编程
+  - 并发:以可同时执行的（可能相关的）计算指令方式编程
+
+![](https://user-gold-cdn.xitu.io/2017/9/23/559e304a7bb112e68371a79a6ef48333?imageView2/0/w/1280/h/960)
+
+![](https://user-gold-cdn.xitu.io/2017/9/23/1c7b9a2de81ca5775ebb0c72eb177fd2?imageView2/0/w/1280/h/960)
+
+```javascript
+书堆是Web数据，地鼠是CPU，推车是调度、渲染或是网络，
+火堆是代理、浏览器或是其他的消费者。
+地鼠提供网络数据，这就是一个可扩展的Web服务的并发设计了
+```
+
 # Go基础
 
 - <https://golang.org/dl/>
