@@ -49,3 +49,18 @@ module.exports = Queue;
 // queue.dequeue()
 // queue.dequeue()
 // queue.print() // 'Camila'
+
+
+var Queue = require('./queue') // 导入
+
+const queue = new Queue()
+console.log(queue.isEmpty) // true
+
+queue.enqueue('John')
+queue.enqueue('Jack')
+queue.enqueue('Camila')
+console.log(queue.size) // 3s
+console.log(queue.isEmpty) // false
+queue.dequeue()
+queue.dequeue()
+queue.print() // 'Camila'
