@@ -51,7 +51,7 @@ module.exports = Queue;
 // queue.print() // 'Camila'
 
 
-var Queue = require('./queue') // 导入
+var Queue = require('./queueES') // 导入
 
 const queue = new Queue()
 console.log(queue.isEmpty) // true
