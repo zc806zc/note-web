@@ -2,7 +2,8 @@
  * 队列
  */
 function Queue() {
-	this.dataStore = [];
+  this.dataStore = [];
+
 	this.enqueue = enqueue;
 	this.dequeue = dequeue;
 	this.front = front;
