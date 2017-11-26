@@ -97,23 +97,23 @@ largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 85
 
 ```javascript
 function confirmEnding(str, target) {
-var arr=str.split(" ");
-var arr1=[];
-for(var i=0;i<arr.length;i++){
-var arr2=arr[i].split("");
-arr1=arr1.concat(arr2);
-}
-arr1=arr1.reverse();
-var bool=true;
-target=target.split("");
-target=target.reverse();
-for(var j=0;j<target.length;j++){
-if(target[j]!==arr1[j]){
-bool=false;
-break;
-}
-}
-return bool;
+  var arr = str.split(" ");
+  var arr1 = [];
+  for (var i = 0; i < arr.length; i++) {
+    var arr2 = arr[i].split("");
+    arr1 = arr1.concat(arr2);
+  }
+  arr1 = arr1.reverse();
+  var bool = true;
+  target = target.split("");
+  target = target.reverse();
+  for (var j = 0; j < target.length; j++) {
+    if (target[j] !== arr1[j]) {
+      bool = false;
+      break;
+    }
+  }
+  return bool;
 }
 confirmEnding("Bastian", "n");
 ```
@@ -125,17 +125,17 @@ confirmEnding("Bastian", "n");
 
 ```javascript
 function repeatStringNumTimes(str, num) {
-if(num<=0){
-str="";
-}else{
-var arr=str.split("");
-var arr1=[];
-for(var i=0;i<num;i++){
-arr1=arr1.concat(arr);
-}
-str=arr1.join("");
-}
-return str;
+  if (num <= 0) {
+    str = "";
+  } else {
+    var arr = str.split("");
+    var arr1 = [];
+    for (var i = 0; i < num; i++) {
+      arr1 = arr1.concat(arr);
+    }
+    str = arr1.join("");
+  }
+  return str;
 }
 repeatStringNumTimes("abc", 3);
 ```
@@ -147,28 +147,27 @@ repeatStringNumTimes("abc", 3);
 
 ```javascript
 function truncateString(str, num) {
-var arr=str.split("");
-var arrTem=[];
-if(arr.length<=num){
-for(var k=0;k<arr.length;k++){
-arrTem[k]=arr[k];
-}
-str=arrTem.join("");
-}else{
-if(num<=3){
-for(var i=0;i<num;i++){
-arrTem[i]=arr[i];
-}
-str=arrTem.join("")+"...";
-}
-else{
-for(var j=0;j<num-3;j++){
-arrTem[j]=arr[j];
-}
-str=arrTem.join("")+"...";
-}
-}
-return str;
+  var arr = str.split("");
+  var arrTem = [];
+  if (arr.length <= num) {
+    for (var k = 0; k < arr.length; k++) {
+      arrTem[k] = arr[k];
+    }
+    str = arrTem.join("");
+  } else {
+    if (num <= 3) {
+      for (var i = 0; i < num; i++) {
+        arrTem[i] = arr[i];
+      }
+      str = arrTem.join("") + "...";
+    } else {
+      for (var j = 0; j < num - 3; j++) {
+        arrTem[j] = arr[j];
+      }
+      str = arrTem.join("") + "...";
+    }
+  }
+  return str;
 }
 truncateString("A-tisket a-tasket A green and yellow basket", 11);
 ```
@@ -180,21 +179,21 @@ truncateString("A-tisket a-tasket A green and yellow basket", 11);
 
 ```javascript
 function chunkArrayInGroups(arr, size) {
-var num=Math.floor(arr.length/size);
-var remainder=arr.length%size;
-var arrTem=[];
-for(var i=1;i<=num;i++){
-var arr1=arr.slice(0,size);
-for(var j=0;j<size;j++){
-arr.shift();
-}
-arrTem.push(arr1);
-}
-if(remainder!==0){
-var arr2=arr;
-arrTem.push(arr2);
-}
-return arrTem;
+  var num = Math.floor(arr.length / size);
+  var remainder = arr.length % size;
+  var arrTem = [];
+  for (var i = 1; i <= num; i++) {
+    var arr1 = arr.slice(0, size);
+    for (var j = 0; j < size; j++) {
+      arr.shift();
+    }
+    arrTem.push(arr1);
+  }
+  if (remainder !== 0) {
+    var arr2 = arr;
+    arrTem.push(arr2);
+  }
+  return arrTem;
 }
 chunkArrayInGroups(["a", "b", "c", "d"], 2);
 ```
@@ -206,12 +205,12 @@ chunkArrayInGroups(["a", "b", "c", "d"], 2);
 
 ```javascript
 function slasher(arr, howMany) {
-if(howMany>=arr.length){
-arr=[];
-}else{
-arr.splice(0,howMany);
-}
-return arr;
+  if (howMany >= arr.length) {
+    arr = [];
+  } else {
+    arr.splice(0, howMany);
+  }
+  return arr;
 }
 
 slasher([1, 2, 3], 2);
@@ -224,14 +223,14 @@ slasher([1, 2, 3], 2);
 
 ```javascript
 function mutation(arr) {
-var str=arr[0].toString().toLowerCase();
-var chArr=arr[1].toString().split("");
-for(var i=0;i<chArr.length;i++){
-if(str.indexOf(chArr[i].toLowerCase())<0){
-return false;
-}
-}
-return true;
+  var str = arr[0].toString().toLowerCase();
+  var chArr = arr[1].toString().split("");
+  for (var i = 0; i < chArr.length; i++) {
+    if (str.indexOf(chArr[i].toLowerCase()) < 0) {
+      return false;
+    }
+  }
+  return true;
 }
 mutation(["hello", "hey"]);
 ```
@@ -243,15 +242,16 @@ mutation(["hello", "hey"]);
 
 ```javascript
 function bouncer(arr) {
-arr=arr.filter(isFalse);
-return arr;
+  arr = arr.filter(isFalse);
+  return arr;
 }
-function isFalse(num){
-if(num){
-return true;
-}else{
-return false;
-}
+
+function isFalse(num) {
+  if (num) {
+    return true;
+  } else {
+    return false;
+  }
 }
 bouncer([7, "ate", "", false, 9]);
 ```
@@ -263,20 +263,20 @@ bouncer([7, "ate", "", false, 9]);
 
 ```javascript
 function destroyer(arr) {
-var args=Array.prototype.slice.apply(arguments);
-var arrNum=args[0];
-for(var i=1;i<args.length;i++){
-var tem=args[i];
-arrNum=arrNum.filter(function(num){
-if(num===tem){
-return false;
-}else{
-return true;
-}
-});
+  var args = Array.prototype.slice.apply(arguments);
+  var arrNum = args[0];
+  for (var i = 1; i < args.length; i++) {
+    var tem = args[i];
+    arrNum = arrNum.filter(function (num) {
+      if (num === tem) {
+        return false;
+      } else {
+        return true;
+      }
+    });
 
-}
-return arrNum;
+  }
+  return arrNum;
 }
 destroyer([1, 2, 3, 1, 2, 3], 2, 3);
 ```
@@ -288,14 +288,16 @@ destroyer([1, 2, 3, 1, 2, 3], 2, 3);
 
 ```javascript
 function getIndexToIns(arr, num) {
-arr.sort(function(a,b){return a-b;});
-var index=0;
-for(var i=0;i<arr.length;i++){
-if(num>arr[i]){
-index=i+1;
-}
-}
-return index;
+  arr.sort(function (a, b) {
+    return a - b;
+  });
+  var index = 0;
+  for (var i = 0; i < arr.length; i++) {
+    if (num > arr[i]) {
+      index = i + 1;
+    }
+  }
+  return index;
 }
 getIndexToIns([40, 60], 50);
 ```
@@ -307,22 +309,21 @@ getIndexToIns([40, 60], 50);
 
 ```javascript
 function rot13(str) {
-var arr=[];
-var str1="";
-for(var i=0;i<str.length;i++){
-var codeNum=str.charCodeAt(i);
-if((64<codeNum)&&(codeNum<=77)){
-codeNum=codeNum+13;
-}
-else if((77<codeNum)&&(codeNum<91)){
-codeNum=13-(90-codeNum)+64;
-}
-arr.push(codeNum);
-}
-for(var j=0;j<arr.length;j++){
-str1+=String.fromCharCode(arr[j]);
-}
-return str1;
+  var arr = [];
+  var str1 = "";
+  for (var i = 0; i < str.length; i++) {
+    var codeNum = str.charCodeAt(i);
+    if ((64 < codeNum) && (codeNum <= 77)) {
+      codeNum = codeNum + 13;
+    } else if ((77 < codeNum) && (codeNum < 91)) {
+      codeNum = 13 - (90 - codeNum) + 64;
+    }
+    arr.push(codeNum);
+  }
+  for (var j = 0; j < arr.length; j++) {
+    str1 += String.fromCharCode(arr[j]);
+  }
+  return str1;
 }
 rot13("SERR PBQR PNZC");
 ```
@@ -334,22 +335,22 @@ The lowest number will not always come first.<br>
 求和给定数组约束范围内的所有数字
 
 ```javascript
-function getMaxMin(arr,op){
-if(op === "max"){
-return Math.max.apply(null,arr);
-}else {
-return Math.min.apply(null,arr);
-}
+function getMaxMin(arr, op) {
+  if (op === "max") {
+    return Math.max.apply(null, arr);
+  } else {
+    return Math.min.apply(null, arr);
+  }
 }
 
 function sumAll(arr) {
-var sum = 0;
-var min = getMaxMin(arr,"min");
-var max = getMaxMin(arr,"max");
-for(var i=min;i<=max;i++){
-sum += i;
-}
-return sum;
+  var sum = 0;
+  var min = getMaxMin(arr, "min");
+  var max = getMaxMin(arr, "max");
+  for (var i = min; i <= max; i++) {
+    sum += i;
+  }
+  return sum;
 }
 
 sumAll([1, 4]);
@@ -362,34 +363,34 @@ Compare two arrays and return a new array with any items only found in one of th
 
 ```javascript
 function diff(arr1, arr2) {
-var newArr = [];
-/*
-var tmpall = arr1.concat(arr2);
-for(var i=0,len=tmpall.length;i<len;i++){
-if(arr1.indexOf(tmpall[i]) != -1){
-//存在1里不存在2里
-if(arr2.indexOf(tmpall[i]) == -1){
-newArr.push(tmpall[i]);
-}
-}else {
-if(arr2.indexOf(tmpall[i]) != -1){
-newArr.push(tmpall[i]);
-}
-}
-}
-*/
-arr1.filter(function(val){
-if(arr2.indexOf(val) == -1){
-newArr.push(val);
-}
-});
+  var newArr = [];
+  /*
+  var tmpall = arr1.concat(arr2);
+  for(var i=0,len=tmpall.length;i<len;i++){
+  if(arr1.indexOf(tmpall[i]) != -1){
+  //存在1里不存在2里
+  if(arr2.indexOf(tmpall[i]) == -1){
+  newArr.push(tmpall[i]);
+  }
+  }else {
+  if(arr2.indexOf(tmpall[i]) != -1){
+  newArr.push(tmpall[i]);
+  }
+  }
+  }
+  */
+  arr1.filter(function (val) {
+    if (arr2.indexOf(val) == -1) {
+      newArr.push(val);
+    }
+  });
 
-arr2.filter(function(val){
-if(arr1.indexOf(val) == -1 && newArr.indexOf(val) == -1){
-newArr.push(val);
-}
-});
-return newArr;
+  arr2.filter(function (val) {
+    if (arr1.indexOf(val) == -1 && newArr.indexOf(val) == -1) {
+      newArr.push(val);
+    }
+  });
+  return newArr;
 }
 
 diff(["andesite", "grass", "dirt", "pink wool", "dead shrub"], ["diorite", "andesite", "grass", "dirt", "dead shrub"]);
@@ -403,24 +404,29 @@ Convert the given number into a roman numeral.<br>
 将给定数字转化为罗马数字
 
 ```javascript
-function convert(num){
-var tmp = num;
-//按位数做罗马数字-整数的映射
-var romanNum = [["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX" ],[ "", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC" ],[ "", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM" ],[ "", "M", "MM", "MMM", "", "", "", "", "", "", "" ]];
-var ret = [];
-var i = 0;
-//求总位数
-while(tmp){
-i ++;
-tmp = parseInt(tmp / 10);
-}
-var j = 0;
-while(num && j < i){
-ret.push(romanNum[j][num % 10]);
-num = parseInt(num / 10);
-j++;
-}
-return ret.reverse().join("");
+function convert(num) {
+  var tmp = num;
+  //按位数做罗马数字-整数的映射
+  var romanNum = [
+    ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"],
+    ["", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"],
+    ["", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"],
+    ["", "M", "MM", "MMM", "", "", "", "", "", "", ""]
+  ];
+  var ret = [];
+  var i = 0;
+  //求总位数
+  while (tmp) {
+    i++;
+    tmp = parseInt(tmp / 10);
+  }
+  var j = 0;
+  while (num && j < i) {
+    ret.push(romanNum[j][num % 10]);
+    num = parseInt(num / 10);
+    j++;
+  }
+  return ret.reverse().join("");
 }
 convert(12);
 ```
@@ -432,27 +438,36 @@ Make a function that looks through an array of objects (first argument) and retu
 
 ```javascript
 function where(collection, source) {
-var arr = [];
-// What's in a name?
-var orikey = "",
-orivalue = "";
-for(var key in source){
-orikey = key;
-orivalue = source[key];
-}
-for(var i=0,len=collection.length;i<len;i++){
-for(var key in collection[i]){
-if(key === orikey && orivalue === collection[i][key]){
-arr.push(collection[i]);
-}
-}
-}
-return arr;
+  var arr = [];
+  // What's in a name?
+  var orikey = "",
+    orivalue = "";
+  for (var key in source) {
+    orikey = key;
+    orivalue = source[key];
+  }
+  for (var i = 0, len = collection.length; i < len; i++) {
+    for (var key in collection[i]) {
+      if (key === orikey && orivalue === collection[i][key]) {
+        arr.push(collection[i]);
+      }
+    }
+  }
+  return arr;
 }
 
 //where([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" });
 
-where([{ "a": 1 }, { "a": 1 }, { "a": 1, "b": 2 }], { "a": 1 });
+where([{
+  "a": 1
+}, {
+  "a": 1
+}, {
+  "a": 1,
+  "b": 2
+}], {
+  "a": 1
+});
 ```
 
 # 5\. Search and Replace
@@ -464,22 +479,22 @@ Third argument is what you will be replacing the second argument with (after).<b
 执行查找和替换，将句子(参数1)中出现的词(参数2)用另一个(参数3)替换
 
 ```javascript
-function isFirstUpper(str){
-return /^[A-Z]/.test(str);
+function isFirstUpper(str) {
+  return /^[A-Z]/.test(str);
 }
 
-function firstToUpper(str){
-return str.replace(/^[a-z]/,function(v){
-return v.toUpperCase();
-});
+function firstToUpper(str) {
+  return str.replace(/^[a-z]/, function (v) {
+    return v.toUpperCase();
+  });
 }
 
 function myReplace(str, before, after) {
-//判断待替换的单词是否是首字母大写，如果是则将替换的置为首字母大写
-if(isFirstUpper(before)){
-after = firstToUpper(after);
-}
-return (str.replace(before,after));
+  //判断待替换的单词是否是首字母大写，如果是则将替换的置为首字母大写
+  if (isFirstUpper(before)) {
+    after = firstToUpper(after);
+  }
+  return (str.replace(before, after));
 }
 
 myReplace("He is Sleeping on the couch", "Sleeping", "sitting");
@@ -493,23 +508,23 @@ Translate the provided string to pig latin.<br>
 
 ```javascript
 function translate(str) {
-//遍历单词字符串，找到第一个元音字符，将其之前的字符暂存
-//然后将暂存字符搬到字符串最后并加上"ay"，如果存串为空，则直接加上"way"
-var vowel = ['a','e','i','o','u'];
-var tmp = [];
-for(var i=0,len=str.length;i<len;i++){
-if(vowel.indexOf(str[i].toLowerCase()) != -1){
-break;
-}else {
-tmp.push(str[i]);
-}
-}
-if(i === 0){
-return (str + "way");
-}else {
-return(str.substr(i).concat(tmp.join("")) + "ay");
+  //遍历单词字符串，找到第一个元音字符，将其之前的字符暂存
+  //然后将暂存字符搬到字符串最后并加上"ay"，如果存串为空，则直接加上"way"
+  var vowel = ['a', 'e', 'i', 'o', 'u'];
+  var tmp = [];
+  for (var i = 0, len = str.length; i < len; i++) {
+    if (vowel.indexOf(str[i].toLowerCase()) != -1) {
+      break;
+    } else {
+      tmp.push(str[i]);
+    }
+  }
+  if (i === 0) {
+    return (str + "way");
+  } else {
+    return (str.substr(i).concat(tmp.join("")) + "ay");
 
-}
+  }
 }
 
 translate("alifornia");
@@ -522,18 +537,18 @@ DNA配对，DNA的配对形如"AT,CG"模式，亦即出现字母"A"则给之以"
 
 ```javascript
 function pair(str) {
-var map = {
-"A": "T",
-"T": "A",
-"C": "G",
-"G": "C"
-};
-var arr = [];
-for(var i=0,len=str.length;i<len;i++){
-var value = map[str[i].toUpperCase()];
-arr.push([str[i],value]);
-}
-return arr;
+  var map = {
+    "A": "T",
+    "T": "A",
+    "C": "G",
+    "G": "C"
+  };
+  var arr = [];
+  for (var i = 0, len = str.length; i < len; i++) {
+    var value = map[str[i].toUpperCase()];
+    arr.push([str[i], value]);
+  }
+  return arr;
 }
 
 pair("GCG");
@@ -547,19 +562,19 @@ If all letters are present in the range, return undefined.<br>
 
 ```javascript
 function fearNotLetter(str) {
-var arr = [];
-for(var i=0,len=str.length;i<len;i++){
-//均先转为小写字母后转为数字，起始为0
-var tmp = str[i].toLowerCase().charCodeAt(0) - 97;
-arr.push(tmp);
-}
-for(var j=0,len2=arr.length,k=arr[j];j<len2;j++){
-if(k != arr[j]){
-//console.log(arr[j]);
-return String.fromCharCode(arr[j] + 97 -1 );
-}
-k++;
-}
+  var arr = [];
+  for (var i = 0, len = str.length; i < len; i++) {
+    //均先转为小写字母后转为数字，起始为0
+    var tmp = str[i].toLowerCase().charCodeAt(0) - 97;
+    arr.push(tmp);
+  }
+  for (var j = 0, len2 = arr.length, k = arr[j]; j < len2; j++) {
+    if (k != arr[j]) {
+      //console.log(arr[j]);
+      return String.fromCharCode(arr[j] + 97 - 1);
+    }
+    k++;
+  }
 }
 
 fearNotLetter("bcd");
@@ -569,12 +584,11 @@ fearNotLetter("bcd");
 # 9\. Boo who
 
 Check if a value is classified as a boolean primitive. Return true or false.<br>
-这个不知道为什么会算到中级里来，简直简单的发指。
 
 ```javascript
 function boo(bool) {
-// What is the new fad diet for ghost developers? The Boolean.
-return typeof bool === "boolean";
+  // What is the new fad diet for ghost developers? The Boolean.
+  return typeof bool === "boolean";
 }
 
 boo(null);
@@ -589,21 +603,21 @@ The unique numbers should be sorted by their original order, but the final array
 
 ```javascript
 function unite() {
-if(arguments.length === 1){
-return arguments[0];
-}
-var arr = [],
-res = [];
-for(var i=0,len=arguments.length;i<len;i++){
-arr = arguments[i];
-for(var j=0;j<arr.length;j++){
-//如果结果数组中不存在该值则放入数组
-if(res.indexOf(arr[j]) === -1){
-res.push(arr[j]);
-}
-}
-}
-return res;
+  if (arguments.length === 1) {
+    return arguments[0];
+  }
+  var arr = [],
+    res = [];
+  for (var i = 0, len = arguments.length; i < len; i++) {
+    arr = arguments[i];
+    for (var j = 0; j < arr.length; j++) {
+      //如果结果数组中不存在该值则放入数组
+      if (res.indexOf(arr[j]) === -1) {
+        res.push(arr[j]);
+      }
+    }
+  }
+  return res;
 }
 
 unite([1, 3, 2], [5, 2, 1, 4], [2, 1]);
@@ -616,11 +630,13 @@ Convert the characters &, <, >, " (double quote), and ' (apostrophe), in a strin
 
 ```javascript
 function convert(str) {
-// :)
-return str.replace(/&/g,"&").replace(/</g,"<").replace(/>/g,">").replace(/\"/g,""").replace(/\'/g,"'");
-}
+  // :)
+  return str.replace(/&/g, "&").replace(/</g, "<").replace(/>/g, ">").replace(/\"/g, ""
+    ").replace(/\'/g,"
+    '");
+  }
 
-convert("Hamburgers < Pizza < Tacos");
+  convert("Hamburgers < Pizza < Tacos");
 ```
 
 # 12\. Spinal Tap Case
@@ -630,26 +646,26 @@ Convert a string to spinal case. Spinal case is all-lowercase-words-joined-by-da
 
 ```javascript
 function spinalCase(str) {
-// "It's such a fine line between stupid, and clever."
-// --David St. Hubbins
-//return str.toLowerCase().replace(/[^a-zA-Z]/g," ").replace(/\s/g,'-');
-if(!/[^a-zA-Z]/.test(str) && str.indexOf(" ") === -1){
-var res = "";
-for(var i=0,len=str.length;i<len;i++){
-if(/[A-Z]/.test(str[i])){
-var tmp = " " + str[i];
-res += tmp;
-}else {
-res += str[i];
-}
-}
-str = res;
-}
-return str.toLowerCase().replace(/[^a-zA-Z]/g," ").replace(/\s/g,'-');
+  // "It's such a fine line between stupid, and clever."
+  // --David St. Hubbins
+  //return str.toLowerCase().replace(/[^a-zA-Z]/g," ").replace(/\s/g,'-');
+  if (!/[^a-zA-Z]/.test(str) && str.indexOf(" ") === -1) {
+    var res = "";
+    for (var i = 0, len = str.length; i < len; i++) {
+      if (/[A-Z]/.test(str[i])) {
+        var tmp = " " + str[i];
+        res += tmp;
+      } else {
+        res += str[i];
+      }
+    }
+    str = res;
+  }
+  return str.toLowerCase().replace(/[^a-zA-Z]/g, " ").replace(/\s/g, '-');
 }
 
 spinalCase('This Is Spinal Tap');
-spinalCase("thisIsSpinalTap") ;
+spinalCase("thisIsSpinalTap");
 spinalCase("The_Andy_Griffith_Show");
 ```
 
@@ -668,29 +684,29 @@ return 1;
 return fibNums(num-2) + fibNums(num-1);
 }
 }*/
-function fibNums(num){
-//非递归方式
-var tmp = [1,1];
-if(num <=2){
-return 1;
-}
-for(var i=3;i<=num;i++){
-var t = tmp[0] + tmp[1];
-tmp[1] = tmp[0];
-tmp[0] = t;
-}
-return tmp[0];
+function fibNums(num) {
+  //非递归方式
+  var tmp = [1, 1];
+  if (num <= 2) {
+    return 1;
+  }
+  for (var i = 3; i <= num; i++) {
+    var t = tmp[0] + tmp[1];
+    tmp[1] = tmp[0];
+    tmp[0] = t;
+  }
+  return tmp[0];
 }
 
 //求小于num的fibnacci数
-function sumFibs(num){
-var sum = 0;
-for(var i=1;fibN = fibNums(i), fibN <= num;i++){
-if(fibN %2){
-sum += fibN;
-}
-}
-return sum;
+function sumFibs(num) {
+  var sum = 0;
+  for (var i = 1; fibN = fibNums(i), fibN <= num; i++) {
+    if (fibN % 2) {
+      sum += fibN;
+    }
+  }
+  return sum;
 }
 
 sumFibs(1000);
@@ -702,26 +718,26 @@ Sum all the prime numbers up to and including the provided number.<br>
 求和给定参数内的所有素数。
 
 ```javascript
-function isPrime(num){
-var sum = 0;
-for(var i=2;i<=Math.sqrt(num);i++){
-sum += i;
-if(num % i === 0){
-return false;
-}
-}
-return true;
+function isPrime(num) {
+  var sum = 0;
+  for (var i = 2; i <= Math.sqrt(num); i++) {
+    sum += i;
+    if (num % i === 0) {
+      return false;
+    }
+  }
+  return true;
 }
 
 //后续算法改进
 function sumPrimes(num) {
-var sum = 0;
-for(var i=2;i<=num;i++){
-if(isPrime(i)){
-sum += i;
-}
-}
-return sum;
+  var sum = 0;
+  for (var i = 2; i <= num; i++) {
+    if (isPrime(i)) {
+      sum += i;
+    }
+  }
+  return sum;
 }
 
 sumPrimes(10);
@@ -733,39 +749,39 @@ Find the smallest common multiple of the provided parameters that can be evenly 
 给定一个参数数组，返回数组序列内所有数字的最小公倍数。如给定[1,5]，则需要返回"1,2,3,4,5"的最小公倍数。
 
 ```javascript
-function smallestCommon(m,n){
-var max = m > n ? m : n;
-for(var i=max;;i+=max){
-if((i%m === 0) && (i%n === 0)){
-return i;
-}
-}
+function smallestCommon(m, n) {
+  var max = m > n ? m : n;
+  for (var i = max;; i += max) {
+    if ((i % m === 0) && (i % n === 0)) {
+      return i;
+    }
+  }
 }
 
 //分治给出数组的最小公倍数
-function divide2solve(arr){
-if(arr.length === 1 ){
-return smallestCommon(1,arr[0]);
-}
-var mid = arr.length / 2;
-var left = arr.slice(0,mid);
-var right = arr.slice(mid);
-var leftCommon = divide2solve(left);
-var rightCommon = divide2solve(right);
-return smallestCommon(leftCommon,rightCommon);
+function divide2solve(arr) {
+  if (arr.length === 1) {
+    return smallestCommon(1, arr[0]);
+  }
+  var mid = arr.length / 2;
+  var left = arr.slice(0, mid);
+  var right = arr.slice(mid);
+  var leftCommon = divide2solve(left);
+  var rightCommon = divide2solve(right);
+  return smallestCommon(leftCommon, rightCommon);
 }
 
 function smallestCommons(arr) {
-var res = [];
-var start = arr[0] < arr[1] ? arr[0] : arr[1],
-end = arr[0] < arr[1] ? arr[1] : arr[0];
-for(;start <= end;start++){
-res.push(start);
-}
-return divide2solve(res);
+  var res = [];
+  var start = arr[0] < arr[1] ? arr[0] : arr[1],
+    end = arr[0] < arr[1] ? arr[1] : arr[0];
+  for (; start <= end; start++) {
+    res.push(start);
+  }
+  return divide2solve(res);
 }
 
-smallestCommons([1,5]);
+smallestCommons([1, 5]);
 ```
 
 # 16\. Finders Keepers
@@ -775,15 +791,19 @@ Create a function that looks through an array (first argument) and returns the f
 
 ```javascript
 function find(arr, func) {
-var res = arr.filter(func);
-if(res.length){
-return res[0];
-}
-return undefined;
+  var res = arr.filter(func);
+  if (res.length) {
+    return res[0];
+  }
+  return undefined;
 }
 
-find([1, 2, 3, 4], function(num){ return num % 2 === 0; });
-find([1, 3, 5, 8, 9, 10], function(num) { return num % 2 === 0; });
+find([1, 2, 3, 4], function (num) {
+  return num % 2 === 0;
+});
+find([1, 3, 5, 8, 9, 10], function (num) {
+  return num % 2 === 0;
+});
 ```
 
 # 17\. Drop it
@@ -793,22 +813,26 @@ Drop the elements of an array (first argument), starting from the front, until t
 
 ```javascript
 function drop(arr, func) {
-// Drop them elements.
-var tmp;
-var res = [];
-for(var i=0,len=arr.length;i<len;i++){
-tmp = arr.shift();
-if(func(tmp)){
-//需要置回弹出的元素
-arr.unshift(tmp);
-break;
-}
-}
-return arr;
+  // Drop them elements.
+  var tmp;
+  var res = [];
+  for (var i = 0, len = arr.length; i < len; i++) {
+    tmp = arr.shift();
+    if (func(tmp)) {
+      //需要置回弹出的元素
+      arr.unshift(tmp);
+      break;
+    }
+  }
+  return arr;
 }
 
-drop([1, 2, 3], function(n) {return n < 3; });
-drop([1, 2, 3, 5], function(n) {return n > 5;});
+drop([1, 2, 3], function (n) {
+  return n < 3;
+});
+drop([1, 2, 3, 5], function (n) {
+  return n > 5;
+});
 ```
 
 # 18\. Steamroller
@@ -818,20 +842,24 @@ Flatten a nested array. You must account for varying levels of nesting.<br>
 
 ```javascript
 function steamroller(arr, flatArr) {
-if (!flatArr) flatArr = [];
+  if (!flatArr) flatArr = [];
 
-for (var i in arr) {
-if(!Array.isArray(arr[i])){
-flatArr.push(arr[i]);
-}else {
-steamroller(arr[i],flatArr);
-}
+  for (var i in arr) {
+    if (!Array.isArray(arr[i])) {
+      flatArr.push(arr[i]);
+    } else {
+      steamroller(arr[i], flatArr);
+    }
+  }
+
+  return flatArr;
 }
 
-return flatArr;
-}
-
-steamroller([1, [2], [3, [[4]]]]);
+steamroller([1, [2],
+  [3, [
+    [4]
+  ]]
+]);
 ```
 
 # 19\. Binary Agents
@@ -840,24 +868,24 @@ Return an English translated sentence of the passed binary string.<br>
 翻译给定的二进制串，给定一串01串，输出表示的句子。
 
 ```javascript
-function trans(str){
-var sum =0;
-for(var i=0,len=str.length;i<len;i++){
-(function (index){
-sum += str[index] * Math.ceil(str[index] * Math.pow(2,len-1-index));
-})(i);
-}
-return sum;
+function trans(str) {
+  var sum = 0;
+  for (var i = 0, len = str.length; i < len; i++) {
+    (function (index) {
+      sum += str[index] * Math.ceil(str[index] * Math.pow(2, len - 1 - index));
+    })(i);
+  }
+  return sum;
 }
 
 function binaryAgent(str) {
-var res = "";
-var arr = str.split(" ");
-for(var i in arr){
-var ret = trans(arr[i]);
-res += String.fromCharCode(ret);
-}
-return res;
+  var res = "";
+  var arr = str.split(" ");
+  for (var i in arr) {
+    var ret = trans(arr[i]);
+    res += String.fromCharCode(ret);
+  }
+  return res;
 }
 
 binaryAgent("01000001 01110010 01100101 01101110 00100111 01110100 00100000 01100010 01101111 01101110 01100110 01101001 01110010 01100101 01110011 00100000 01100110 01110101 01101110 00100001 00111111");
@@ -870,17 +898,33 @@ Check if the predicate (second argument) is truthy on all elements of a collecti
 给定两个参数，第一个参数是一个对象数组，第二个参数是一个字符串，算法需要判断参数1的对象数组是否都有参数2对应的key且对应的value值为true。
 
 ```javascript
-function every(collection,pre){
-for(var i in collection){
-if(!collection[i][pre]){
-return false;
-}
-}
-return true;
+function every(collection, pre) {
+  for (var i in collection) {
+    if (!collection[i][pre]) {
+      return false;
+    }
+  }
+  return true;
 }
 
 //every([{"user": "Tinky-Winky", "sex": "male"}, {"user": "Dipsy", "sex": "male"}, {"user": "Laa-Laa", "sex": "female"}, {"user": "Po", "sex": "female"}], "sex");
-every([{"user": "Tinky-Winky", "sex": "male", "age": 0}, {"user": "Dipsy", "sex": "male", "age": 3}, {"user": "Laa-Laa", "sex": "female", "age": 5}, {"user": "Po", "sex": "female", "age": 4}], "age");
+every([{
+  "user": "Tinky-Winky",
+  "sex": "male",
+  "age": 0
+}, {
+  "user": "Dipsy",
+  "sex": "male",
+  "age": 3
+}, {
+  "user": "Laa-Laa",
+  "sex": "female",
+  "age": 5
+}, {
+  "user": "Po",
+  "sex": "female",
+  "age": 4
+}], "age");
 ```
 
 # 21\. Arguments Optional
@@ -889,26 +933,26 @@ Create a function that sums two arguments together. If only one argument is prov
 js可选参数问题，题干要求求和给定的两个参数，如果只给定了一个参数，则返回一个可以再接收一个参数进行求和的函数。
 
 ```javascript
-function isNum(val){
-return typeof val === "number";
+function isNum(val) {
+  return typeof val === "number";
 }
 
 function add(x) {
-if(arguments.length == 1){
-if(!isNum(x)){
-return undefined;
-}
-return function(y){
-if(!isNum(y)){
-return undefined;
-}
-return x + y;
-};
-}
-if(!isNum(arguments[1])){
-return undefined;
-}
-return arguments[0] + arguments[1];
+  if (arguments.length == 1) {
+    if (!isNum(x)) {
+      return undefined;
+    }
+    return function (y) {
+      if (!isNum(y)) {
+        return undefined;
+      }
+      return x + y;
+    };
+  }
+  if (!isNum(arguments[1])) {
+    return undefined;
+  }
+  return arguments[0] + arguments[1];
 }
 
 add(2)([3]);
