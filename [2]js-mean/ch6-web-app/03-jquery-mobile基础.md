@@ -1,16 +1,16 @@
-# **ch1 jQuery MObile基础**
+# jQuery MObile基础
 
 - touch-friendly
 - [官网示例](http://demos.jquerymobile.com/1.4.5/)
 - [JQM Gallery](https://jqmgallery.com/)
 - [源码下载](https://github.com/cfjedimaster/jQuery-Mobile-Book)
 
-# **ch2-5 页面 页眉页脚与工具栏、列表**
+# 页面 页眉页脚与工具栏、列表
 
 - 搜索过滤
 - 创建[酒店简易app](http://qmen.space/jqm-hotel-simple-app/)
 
-# **ch6-8 表单、模态对话框及微件**
+# 表单、模态对话框及微件
 
 - [ColdFusion](http://www.adobe.com/products/coldfusion-family.html)
 
@@ -18,7 +18,9 @@
   - 仅开发而言是免费的
 
 - 单选按钮和复选框
+
 - 选择菜单
+
 - 搜索、开关以及滑块组件
 - 使用原生表单控件
 
@@ -29,12 +31,15 @@
   - data-mini="true"
 
 - 对话框
+
 - 网格布局
 
   - 响应式网格
 
 - 可折叠内容
+
 - 弹出式窗口
+
 - 响应式表格
 - 面板
 - 创建[NoteKeeper-app](http://qmen.space/jqm-notekeeper-app/notekeeper.html)
@@ -43,21 +48,18 @@
   - kittyDressUp
   - 动态创建新页面
 
-# **ch9 配置、实用程序以及JS方 法**
+# 配置、实用程序以及JS方 法
 
 - 配置
 
   - mobileinit
   - jq的extend
 
-```
-```
+# 使用事件
 
-# **ch10 使用事件**
+# jQuery Mobile的功能增强
 
-# **ch11 jQuery Mobile的功能增强**
-
-# **ch12 创建原生应用程序**
+# 创建原生应用程序
 
 - 使用[phoneGap](http://phonegap.com/)封装器技术
 
@@ -84,6 +86,7 @@
         - 可以拿ch12 app1做测试
 
     - ch12 app2是联系人有关的app
+
     - 上传以后会针对不同的平台自动添加JS
     - deviceready 当前代码可以使用高级的功能
     - <https://github.com/luo0412/jq-mobile-test.git>
@@ -91,18 +94,14 @@
 
 - Apache Cordova
 
-  ```
-  foundContacts = function(matches){
-      //create results in our list
-      var s = "";
-      for (var i = 0; i < matches.length; i++) {
-          s += "<li>"+matches[i].displayName+"</li>";
-      }
-      $("#results").html(s);
-      $("#results").listview("refresh");
-  }
-  ```
+```javascript
 
-# **ch13 一个RSS阅读器应用程序**
+foundContacts = function(matches){ //
+  create results in our list var s = ""; for (var i = 0; i < matches.length; i++) { s += "
 
-- [可能的演示地址](http://qmen.space/jqm-rss-reader-app/index.html)
+ "+matches[i].displayName+"
+"; } $("#results").html(s); $("#results").listview("refresh");
+}
+```
+
+# 一个RSS阅读器应用程序

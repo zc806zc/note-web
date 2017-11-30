@@ -1,3 +1,14 @@
+# 前端框架封装度
+
+- <https://www.zhihu.com/question/37946473>
+- 纯html+css
+- jQuery-ui -> easy-ui/DWZ
+- bootstrap -> metronic/adminLTE(bootstrap等二次开发)
+- extjs
+- vaadin/GWT
+
+# WebAPP NativeAPP 与 React Native(与混合开发)
+
 # WebApp阵营
 
 - Angular + Ionic
@@ -64,6 +75,7 @@
 - Pure.css
 
 - Skeleton
+
 - Amaze UI
 
   - 国内首个开源HTML5跨屏前端框架产品系列
@@ -84,6 +96,7 @@
 - Fries 是一款 **稳定**的HTML-CSS-JS框架
 
 - Junior 整个框架使用 **Zepto**，且整合了 **backbone.js**的视图和路由。
+
 - Sidetap 简洁轻量
 - Mobello 简化移动Web应用的开发过程
 - Material--UI

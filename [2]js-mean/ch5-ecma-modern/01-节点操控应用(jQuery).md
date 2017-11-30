@@ -457,17 +457,9 @@ $(function() {
 //=====================================
 ```
 
-# 前端框架封装度
-- https://www.zhihu.com/question/37946473
-- 纯html+css
-- jQuery-ui -> easy-ui/DWZ
-- bootstrap -> metronic/adminLTE(bootstrap等二次开发)
-- extjs
-- vaadin/GWT
-
 # layui缺陷
 
 - 表格行内编辑还不支持填充数据与更新
 - 表格不完全支持resize, f12以后分页会消失
 - 弹框不支持滚动条，目前提供的参数是 是否屏蔽浏览器滚动条
-- layui目前我比较喜欢，但以上问题很多组件库都存在 
+- layui目前我比较喜欢，但以上问题很多组件库都存在
