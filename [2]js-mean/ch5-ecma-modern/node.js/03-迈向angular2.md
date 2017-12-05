@@ -1,4 +1,4 @@
-# **Angular2**
+# Angular2
 
 - [Code-download](https://github.com/mgechev/switching-to-angular2) | [angular2文档](https://angular.io/docs/ts/latest/quickstart.html)
 - 学习清单 <https://juejin.im/post/599e4ad151882524417ac921?utm\_source=gold\_browser\_extension>
@@ -100,7 +100,7 @@ traceur // ES6转码器，将ES6代码转换为当前浏览器支持的ES5代码
 更好的模块化
 ```
 
-## **基础构件**
+## 基础构件
 
 - 组件
 - 管道
@@ -108,9 +108,9 @@ traceur // ES6转码器，将ES6代码转换为当前浏览器支持的ES5代码
 - 服务
 - 新的基于组件的路由机制
 
-## **TypeScript**
+## TypeScript
 
-## **Angular2组件和指令入门**
+## Angular2组件和指令入门
 
 - 配置开发环境
 - Angular2指令用法
@@ -125,7 +125,7 @@ traceur // ES6转码器，将ES6代码转换为当前浏览器支持的ES5代码
 - TemplateRef定义通用视图
 - 理解并优化脏值检测机制
 
-## **依赖注入**
+## 依赖注入
 
 - Angular2的依赖注入
 
@@ -136,21 +136,21 @@ traceur // ES6转码器，将ES6代码转换为当前浏览器支持的ES5代码
 - 定义实例化服务的工厂
 - 子注射器及其可见性
 
-## **路由和表单**
+## 路由和表单
 
 - Angular2的路由
 - Angular2的表单用法
 - Angular2的双向数据绑定
 - 存储表单数据
 
-## **管道 / RESTful服务端之间的通信**
+## 管道 / RESTful服务端之间的通信
 
 - 数据模型驱动型表单
 - Angular的HTTP模块
 - 参数化视图 嵌套视图
 - 使用管道进行数据交换
 
-## **开发体验和服务端渲染**
+## 开发体验和服务端渲染
 
 - 在Web Worker中运行应用
 - SPA的加载过程
@@ -245,3 +245,8 @@ fax 引用了 input 元素，并将value传递给事件句柄
 // 输入输出属性
 // 模板表达式操作符
 ```
+
+# Aurelia
+
+- Angular 2.0的开发者之一创建了新的框架Aurelia
+- https://www.zhihu.com/question/28735192?sort=created
