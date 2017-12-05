@@ -1,33 +1,39 @@
-# R**eact入门**
+# React资源
 
-- vscode插件 <https://juejin.im/entry/599d4cb96fb9a024a27bf090?utm\_source=gold\_browser\_extension>
+- 后台框架
+
+  - Ant Design https://preview.pro.ant.design
+
+- vscode插件
+  - <https://juejin.im/entry/599d4cb96fb9a024a27bf090?utm\_source=gold\_browser\_extension>
+
 - 网站
 
   - 一个收集react的网站 <https://react.parts/native>
+  - <https://github.com/react-native-material-design/react-native-material-design>
 
-    - <https://github.com/react-native-material-design/react-native-material-design>
+# React
 
 - 基础
 
   - 一个用于构建 用户界面 的JS库 ，起源于Instagram，主要用于构建UI
-  - [React 组件 API](http://www.runoob.com/react/react-component-api.html)
+  - API http://www.runoob.com/react/react-component-api.html
   - 建议使用 CommonJS 模块系统 （browserify 或 webpack）
   - 特点
 
     - 采用声明范式，可以轻松描述应用
     - DOM模拟 virtual-Dom ，最大限度地减少与DOM的交互
     - 与已知的库或框架很好地配合
+  
+- 语法
 
-  - JSX
-
-  - 组件 化， 代码更容易复用 ， 适合于大项目开发
-
-  - 单向响应的数据流 ，减少了重复代码 ，比传统数据绑定更简单
+  - 使用大、小写的约定,来区分本地组件的类和 HTML 标签
+  - JSX 就是 JavaScript, class 和 for 不建议作为 XML 属性名 ,作为替代, 使用 className 和 htmlFor
+  - 注释 render里的标签注释要花括号 形同 {/_注释..._/}
+  - 组件类只能包含一个顶层标签，否则会报错  
 
 ```javascript
-// 安装
-使用 create-react-app
-
+使用 create-react-app进行安装
 // npm install -g cnpm --registry=https://registry.npm.taobao.org
 // npm config set registry https://registry.npm.taobao.org
 
@@ -42,14 +48,11 @@ react-dom.min.js // DOM 相关
 browser.min.js // 将JSX语法转为JS语法
 ```
 
-- 语法
+- JSX
 
-  - 使用大、小写的约定,来区分本地组件的类和 HTML 标签
-  - **JSX 就是 JavaScript**, class 和 for 不建议作为 XML 属性名 ,作为替代, 使用 className 和 htmlFor
-  - 注释 render里的标签注释要花括号 形同 {/_注释..._/}
-  - 组件类只能包含一个顶层标签，否则会报错
+- 组件化， 代码更容易复用 ， 适合于大项目开发
 
-- React JSX
+- 单向响应的数据流 ，减少了重复代码 ，比传统数据绑定更简单
 
 ```javascript
 很像 XML 的 JS语法扩展
@@ -166,8 +169,6 @@ ReactDOM.render(myElement, document.getElementById('example'));
 Flux 的最大特点，就是数据的"单向流动"
 ```
 
---------------------------------------------------------------------------------
-
 # 解读React源码
 
 - Virtual DOM
@@ -175,8 +176,6 @@ Flux 的最大特点，就是数据的"单向流动"
 - 解密setState机制
 - diff算法
 - React patch方法
-
---------------------------------------------------------------------------------
 
 # 认识Flux架构模式
 
@@ -187,7 +186,6 @@ Flux 的最大特点，就是数据的"单向流动"
   - 核心思想
   - 不足
 
---------------------------------------------------------------------------------
 
 # 深入Redux应用架构
 
