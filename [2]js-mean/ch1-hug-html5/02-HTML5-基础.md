@@ -2,6 +2,7 @@
 
 - HTML标记争论的论坛 <http://html5doctor.com>
 - 移动meta标记
+  - 关于head <http://www.css88.com/archives/6410>
 
 ```javascript
 <meta charset="UTF-8">
