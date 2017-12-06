@@ -20,6 +20,9 @@
   - 一个收集react的网站 <https://react.parts/native>
   - <https://github.com/react-native-material-design/react-native-material-design>
 
+  - Redux
+    - http://www.redux.org.cn/
+
 # React
 
 - 基础

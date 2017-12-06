@@ -54,6 +54,7 @@ protected void init(VaadinRequest vaadinRequest) {
 # 移动开发方式
 
 - 原生(nice)
+
 - WebApp(跨平台)
   - React Native | Vue + Veex (Vux)
   - Angular + Ionic + Vue + WeUI (Vux) | React + (Onsen UI/TouchstoneJS/Reapp + ...)
@@ -61,9 +62,12 @@ protected void init(VaadinRequest vaadinRequest) {
   - Meteor + React 技术架构
     - https://guide.meteor.com/
     - https://www.zhihu.com/question/20296322
-    - 发展并不好
+    - 貌似发展并不好
+
+> 注意：webapp包括H5页面级别的app和React Native这样的接近原生体验的两种，是不一样的
 
 - 混合开发
+
 - 关于网上说wepapp是未来趋势的论断
   - 呵呵~~
 
