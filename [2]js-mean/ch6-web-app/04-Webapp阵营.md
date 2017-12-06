@@ -54,13 +54,18 @@ protected void init(VaadinRequest vaadinRequest) {
 # 移动开发方式
 
 - 原生(nice)
-- WebApp
+- WebApp(跨平台)
+  - React Native | Vue + Veex (Vux)
+  - Angular + Ionic + Vue + WeUI (Vux) | React + (Onsen UI/TouchstoneJS/Reapp + ...)
   - jQuery/Zepto + Sencha Touch + Framework7(iOS 和 Android 双皮肤)
-  - Angular + Ionic
-  - Vue + Veex (Vux)
-  - React + (Onsen UI/TouchstoneJS/Reapp + ...)
-  - React Native
+  - Meteor + React 技术架构
+    - https://guide.meteor.com/
+    - https://www.zhihu.com/question/20296322
+    - 发展并不好
+
 - 混合开发
+- 关于网上说wepapp是未来趋势的论断
+  - 呵呵~~
 
 
 # 框架概览
