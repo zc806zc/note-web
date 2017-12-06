@@ -1,3 +1,40 @@
+# 阿里云(Oneinstack|CentOS为例)
+
+- 官方教程 https://help.aliyun.com/document_detail/50774.html?spm=5176.doc50775.6.630.uJaGYl
+
+- oneinstack https://oneinstack.com/install/
+  - 支持JAVA和PHP，把所有事情都做好了，不需要其他任何配置
+  - 自带了https
+
+- 建站步骤
+  - 学生机购买ECS
+  - 安全组规则修改
+  - ftp
+  - 安装oneinstack
+
+- 问题
+
+  - 改端口
+  - 虚拟路径设置
+
+```javascript
+// 操作过程
+cd /root/oneinstack
+./vhost.sh add/del
+
+// 启停服务器
+service nginx reload/restart
+service tomcat start/stop
+
+sudo /usr/local/nginx/sbin/nginx -s reload
+sudo /phpstudy/server/httpd/bin/apachectl restart
+sudo ./../tomcat/bin/startup.sh // 先cd进去 再 ./startup.sh
+
+// 配置文件
+/usr/local/nginx/conf/   // https证书配在这里
+/root/oneinstack/config/
+```
+
 # Jekyll
 
 - 资源
@@ -364,32 +401,7 @@ location ~ \.php(.*)$ {
 
 ![](/assets/https-aliyun-1.jpg)
 
-# 阿里云(Oneinstack|CentOS为例)
 
-- [阿里云-官方教程](https://help.aliyun.com/document_detail/50774.html?spm=5176.doc50775.6.630.uJaGYl) | [oneinstack-install](https://oneinstack.com/install/)
-- oneinstack 支持JAVA和PHP，把所有事情都做好了，不需要其他任何配置，不要绕弯，使用前先完整看一边它的手册，例如自带HTTPS升级，不要多此一举
-- 问题
-
-  - 改端口
-  - 虚拟路径设置
-
-```javascript
-// 操作过程
-cd /root/oneinstack
-./vhost.sh add/del
-
-// 启停服务器
-service nginx reload/restart
-service tomcat start/stop
-
-sudo /usr/local/nginx/sbin/nginx -s reload
-sudo /phpstudy/server/httpd/bin/apachectl restart
-sudo ./../tomcat/bin/startup.sh // 先cd进去 再 ./startup.sh
-
-// 配置文件
-/usr/local/nginx/conf/   // https证书配在这里
-/root/oneinstack/config/
-```
 
 # 建站小结
 
