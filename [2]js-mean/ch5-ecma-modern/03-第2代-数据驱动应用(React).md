@@ -10,9 +10,10 @@
 
 - 后台框架
 
-  - Ant Design https://preview.pro.ant.design
+  - Ant Design <https://preview.pro.ant.design>
 
 - vscode插件
+
   - <https://juejin.im/entry/599d4cb96fb9a024a27bf090?utm\_source=gold\_browser\_extension>
 
 - 网站
@@ -20,28 +21,33 @@
   - 一个收集react的网站 <https://react.parts/native>
   - <https://github.com/react-native-material-design/react-native-material-design>
 
+  - Mobx
+
+    - <http://cn.mobx.js.org/>
+
   - Redux
-    - http://www.redux.org.cn/
+
+    - <http://www.redux.org.cn/>
 
 # React
 
 - 基础
 
   - 一个用于构建 用户界面 的JS库 ，起源于Instagram，主要用于构建UI
-  - API http://www.runoob.com/react/react-component-api.html
+  - API <http://www.runoob.com/react/react-component-api.html>
   - 建议使用 CommonJS 模块系统 （browserify 或 webpack）
   - 特点
 
     - 采用声明范式，可以轻松描述应用
     - DOM模拟 virtual-Dom ，最大限度地减少与DOM的交互
     - 与已知的库或框架很好地配合
-  
+
 - 语法
 
   - 使用大、小写的约定,来区分本地组件的类和 HTML 标签
   - JSX 就是 JavaScript, class 和 for 不建议作为 XML 属性名 ,作为替代, 使用 className 和 htmlFor
   - 注释 render里的标签注释要花括号 形同 {/_注释..._/}
-  - 组件类只能包含一个顶层标签，否则会报错  
+  - 组件类只能包含一个顶层标签，否则会报错
 
 ```javascript
 使用 create-react-app进行安装
@@ -197,7 +203,6 @@ Flux 的最大特点，就是数据的"单向流动"
   - 核心思想
   - 不足
 
-
 # 深入Redux应用架构
 
 - Redux
@@ -231,4 +236,3 @@ Flux 的最大特点，就是数据的"单向流动"
 - render
 - diff算法
 - 回收机制
-
