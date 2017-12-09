@@ -1,5 +1,14 @@
 # Form/Data/Button
 
+- 表单校验
+
+  - cleave.js
+
+    - <https://github.com/nosir/cleave.js>
+    - Format input text content when you are typing...
+
+  - jquery validate
+
 - 银行卡号空格 <http://www.jq22.com/webqd1489>
 
 ```javascript
@@ -236,3 +245,211 @@ else
 ```
 
 - 输入框输入字数限制 <http://www.jq22.com/webqd2084>
+
+- 按钮
+
+  - btn-css-generator <http://www.bestcssbuttongenerator.com/#/8>
+  - 防止表单重复提交的loading
+  - 悬浮
+
+    - <http://www.jq22.com/webqd1687>
+    - <http://www.jq22.com/webqd1688>
+    - <http://www.jq22.com/webqd114>
+
+![](/assets/import-double-submit.png)
+
+- 登录
+
+  - <https://profile.freepik.com/login>
+  - 复位这个按钮几乎永远都不会帮助到用户
+
+![](/assets/login-sample-23.png)
+
+- 用户很可能不愿意填写表单
+
+  - 逻辑分组
+  - 重视交互，做有意思的设计
+
+- 表格 <https://colorlib.com/wp/css3-table-templates/>
+
+  - Crisp table <http://codepen.io/stursby/pen/HdiJh>
+  - heavy table <http://codepen.io/victordarras/pen/hJHAm?editors=0110>
+
+- 筛选排序
+
+- 图表
+
+- 输入
+
+  - 通用输入
+  - 拾色器
+  - 定制和风格
+  - 时间日期
+  - 拖放
+  - 自动完成
+  - 密码
+  - 投票率
+  - 搜索 <http://www.jq22.com/webqd1354>
+  - 选择框
+  - 快捷键
+  - 触摸
+  - 丰富的输入
+  - 上传
+  - 验证
+
+    - <http://www.jq22.com/webqd2853>
+
+- 滑动验证
+
+  - 简单滑动验证 <http://www.jq22.com/webqd1933>
+
+```javascript
+function slide(range, conSlide, obj) {
+     var rangeValue;
+     var flag = false;
+     if (obj.max) {
+         range.max = obj.max;
+     }
+     range.onmousedown = function() {
+         flag = true;
+         if (flag) {
+             range.onmousemove = function() {
+                 rangeValue = range.value;
+                 conSlide.style.left = rangeValue + "px";
+             }
+         }
+     }
+
+     range.onmouseup = function() {
+         flag = false;
+         range.onmousemove = null;
+         if (obj.err) {
+             if (rangeValue >= (232 - obj.err) && rangeValue <= (232 + obj.err)) {
+                 alert("验证成功");
+             }
+         } else {
+             if (rangeValue >= 227 && rangeValue <= 237) {
+                 alert("验证成功");
+             }
+         }
+
+         conSlide.style.left = "0px";
+         range.value = 0;
+     }
+ }
+```
+
+- 穿梭框
+
+- 下拉框 | 选择框
+
+  - niceSelect
+  - select2
+  - 模拟下拉框 <http://www.jq22.com/webqd2375> | 可多选 <http://www.jq22.com/webqd933>
+  - 简单自动义 <http://www.jq22.com/webqd1696>
+  - 可编辑下拉框 <http://www.jq22.com/webqd1511>
+  - 标签 <http://www.jq22.com/webqd462>
+
+```javascript
+// 外面嵌套一层
+<div class="select">
+  <select name="slct" id="slct">
+    <option>Choose an option</option>
+    <option value="1">Pure CSS</option>
+  </select>
+</div>
+```
+
+- 邮箱自动加上@后面内容 <http://www.jq22.com/webqd2374>
+
+```javascript
+function $(id) {
+    return document.getElementById(id);
+}
+var lists;
+var len;
+window.onload = function() {
+    var objtxt = $("regemail");
+    var objlist = $("maillist");
+
+    lists = document.getElementsByTagName("li");
+    len = lists.length;
+
+    //给每一个li绑定一个鼠标点击事件
+    for (var i = 1; i < len; i++) {
+        lists[i].onmousedown = function() {
+            objtxt.value = this.textContent;
+            objlist.style.display = "none";
+        }
+    }
+
+    //计算这个下拉框的显示位置
+    //焦点选中时
+    objtxt.onfocus = function() {
+        objlist.style.display = "block";
+    }
+    //焦点移开时
+    objtxt.onblur = function() {
+        // objlist.style.display="none";
+    }
+
+    //输入过程中时
+    objtxt.onkeyup = function() {
+        //获取文本中的值
+        var txt = this.value;
+        var flag = "";
+        if (txt.indexOf("@") > 0) {
+            flag = txt.substring(txt.indexOf("@") - 1); //获取输入的@开始的内容
+            txt = txt.substring(0, txt.indexOf("@"));
+        } else {
+            flag = "";
+        }
+        var val = "";
+        //将这个值放到所有的li前面
+        for (var i = 1; i < len; i++) {
+            val = lists[i].textContent;
+            val = val.substring(val.indexOf("@"));
+            lists[i].textContent = txt + val;
+        }
+
+        //如果用户输入了@，则检查哪些是否满足条件的
+        if (flag != "") {
+            var reg = new RegExp(flag, "i");
+            for (var i = 1; i < len; i++) {
+                if (reg.test(lists[i].textContent)) {
+                    lists[i].style.display = "block";
+                } else {
+                    lists[i].style.display = "none";
+                }
+            }
+        }
+    }
+}
+```
+
+- 云标签
+
+  - <http://www.jq22.com/webqd1921>
+
+- 行内编辑 <http://www.jq22.com/webqd1430>
+
+```javascript
+$('tr td').on('click', function() {
+    var txt = $(this).text();
+    $(this).text('');
+    $(this).append('<input type="text">');
+    $(this).children('input').focus();
+    $(this).unbind('clcik');
+    var child = $(this).children('input');
+    var that = $(this);
+    child.blur(function() {
+        var childTxt = child.val();
+        if (childTxt == '') {
+            that.text(txt);
+        } else {
+            that.text(childTxt);
+        }
+        that.remove('input');
+    })
+})
+```

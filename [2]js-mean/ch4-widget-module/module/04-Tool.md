@@ -1,8 +1,15 @@
 # Tool
 
+- 提示标签
+
+  - popper.js <https://github.com/FezVrasta/popper.js>
+
 - 浏览器信息
 
   - <http://www.jq22.com/webqd77>
+  - feature.js
+
+    - <https://github.com/viljamis/feature.js>
 
 ```javascript
 function getBrowserInfo() {
@@ -221,3 +228,189 @@ var daochu = (function() {
     }
 })()
 ```
+
+- gif预览
+
+  - jqGifPreview <https://github.com/SodhanaLibrary/jqGifPreview>
+
+- 放大镜
+
+  - jfMagnify <https://github.com/fonstok/jfMagnify>
+
+- 网站标签页
+
+  - I-Miss-You
+
+    - <https://github.com/Bahlaouane-Hamza/I-Miss-You>
+    - jQuery plugin to change the title & favicon of the page when the user is not viewing your website
+
+- 弹幕 <http://www.jq22.com/webqd2447>
+
+```javascript
+spanDom.stop().animate({
+    "right": pageW + 300
+}, 10000, "linear", function() {
+    $(this).remove();
+});
+```
+
+- 放大镜
+
+  - 精简版JS <http://www.jq22.com/webqd2110>
+  - <http://www.jq22.com/webqd643>
+
+- 聊天室 <http://www.jq22.com/webqd2560>
+
+- 客服反馈
+
+- 滚动条 | 进度条
+
+  - jquery.slimScroll
+  - JS自定义 <http://www.jq22.com/webqd2618> | <http://www.jq22.com/webqd1910>
+  - 进度条 <http://www.jq22.com/webqd1913>
+  - css3进度条 <http://www.jq22.com/webqd1062>
+
+- 返回顶部
+
+  - <http://www.jq22.com/webqd2804>
+
+```javascript
+$(function() {
+  // 监听一定的高度
+  $(window).scroll(function() {
+      if ($(window).scrollTop() >= 300) {
+          $('.gongyong a').fadeIn(600);
+      } else {
+          $('.gongyong a').fadeOut(600);
+      }
+  });
+  $('.bottom a').click(function() {
+      $("html,body").animate({
+          scrollTop: $(document).height()
+      }, 500);
+  });
+});
+```
+
+- 音频和视频
+- 图像
+- 地图
+- 浏览器调整
+- 格式化CSS代码 <http://www.jq22.com/webqd2886>
+
+  - 正则表达式
+
+- canvas选座位 <http://www.jq22.com/webqd3040>
+
+- 广告
+
+  - 优雅地做广告 eg. 图片广告
+  - <http://www.jq22.com/webqd2630>
+  - <http://www.jq22.com/webqd1461>
+
+```javascript
+var xin = true,
+    yin = true;
+var step = 1;
+var delay = 10;
+var $obj;
+$(function() {
+    $obj = $("#imgDiv");
+    var time = window.setInterval("move()", delay);
+    $obj.mouseover(function() {
+        clearInterval(time)
+    });
+    $obj.mouseout(function() {
+        time = window.setInterval("move()", delay)
+    });
+});
+
+function move() {
+    var left = $obj.offset().left;
+    var top = $obj.offset().top;
+    var L = T = 0; //左边界和顶部边界
+    var R = $(window).width() - $obj.width(); // 右边界
+    var B = $(window).height() - $obj.height(); //下边界
+    if (left < L) {
+        xin = true; // 水平向右移动
+    }
+    if (left > R) {
+        xin = false;
+    }
+    if (top < T) {
+        yin = true;
+    }
+    if (top > B) {
+        yin = false;
+    }
+    left = left + step * (xin == true ? 1 : -1);
+    top = top + step * (yin == true ? 1 : -1);
+    // 给div 元素重新定位
+    $obj.offset({
+        top: top,
+        left: left
+    })
+}
+$(function() {
+    $("#a").click(function() {
+        var b = $("#a").parent();
+        $(b).remove();
+    })
+})
+$("#imgDiv").draggable();
+```
+
+- 打印
+
+  - jqprint <http://www.jq22.com/jquery-info347>
+
+- 计算器
+
+  - 支持多进制<http://www.jq22.com/webqd3218>
+
+```javascript
+switch (sign) {
+    case "+":
+        document.getElementById("pm").innerHTML = parseFloat(op1) + parseFloat(document.getElementById("pm").innerHTML);
+        break;
+    ...
+
+    case "x^y":
+        document.getElementById("pm").innerHTML = Math.pow(parseFloat(op1), parseFloat(document.getElementById("pm").innerHTML));
+        break;
+}
+```
+
+- 定时器
+
+  - <http://www.jq22.com/webqd2595>
+  - 倒计时 <http://www.jq22.com/webqd2484> | 毫秒 <http://www.jq22.com/webqd2064>
+
+```javascript
+function countDown(count) {
+    var ms = count % 1000; //毫秒
+    var s = (Math.floor(count / 1000)) % 60; //秒
+    var min = Math.floor(count / 1000 / 60); //分
+    if (ms < 10) {
+        ms = '00' + ms;
+    } else if (ms < 100) {
+        ms = "0" + ms;
+    }
+    if (s < 10) {
+        s = '0' + s;
+    }
+    if (min < 10) {
+        min = "0" + min;
+    }
+    var otime = {
+        ms: ms,
+        s: s,
+        min: min
+    };
+    return otime;
+}
+```
+
+- 日历一览 <http://www.jq22.com/webqd2183>
+
+- 抽奖摇号 <http://www.jq22.com/webqd2292>

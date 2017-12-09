@@ -166,3 +166,155 @@ img:hover {
 - 卷轴动画
 
   - <http://www.jq22.com/webqd790>
+
+- 代码高亮
+
+  - <https://asvd.github.io/microlight/>
+
+- 对勾 <http://www.jq22.com/webqd1741>
+- 雨雪风霜
+
+  - 下雪 <http://www.jq22.com/webqd2417>
+  - 代码雨 <http://www.jq22.com/webqd2385>
+
+- 缓动效果/逐帧动画/闪烁动画
+
+- 状态平滑的动画
+
+- 波纹动画
+
+  - <http://www.jq22.com/webqd2309>
+  - 实用导航点击效果 <http://www.jq22.com/webqd1977>
+
+- 呼吸灯 <http://www.jq22.com/webqd1732>
+
+- 鼠标
+
+  - 鼠标滑过 <http://www.jq22.com/webqd2506>
+  - 鼠标跟随 <http://www.jq22.com/webqd2430> | 鼠标蛇 <http://www.jq22.com/webqd2385>
+  - 鼠标替换
+
+- CSS3-3D立方体 <http://www.html5tricks.com/demo/css3-3d-cube-rotate/index.html>
+
+- 打字动画
+
+  - typetype <https://github.com/iamdanfox/typetype>
+  - 简单 <http://www.jq22.com/webqd2098>
+  - css3 <http://www.jq22.com/webqd1444>
+
+```javascript
+// 思路
+var zi = "这是个神奇的网站！";
+var i = 0;
+var divObj; //全局变量
+function init() {
+    divObj = document.getElementById("divId");
+    setInterval(show, 200); //每个指定的毫秒执行一次函数
+}init();
+
+function show() {
+    i++;
+    var jzi = zi.substring(0, i); //截取字符串，每次截取一个
+    divObj.innerHTML = jzi; //往div设置内容
+    if (i == zi.length) { //当字符串写完后，重新开始执行
+        i = 0;
+    }
+}
+```
+
+- 纸张效果 <http://www.zhangxinxu.com/wordpress/2011/02/几种纯csscss3下的纸张效果展示/>
+- 锯齿效果 <http://www.softwhy.com/forum.php?mod=viewthread&tid=19089>
+- 加载
+
+  - <https://codepen.io/collection/jifIK/>
+  - <https://github.com/tobiasahlin/SpinKit>
+
+- 动画效果
+
+```javascript
+默认情况下，所有 HTML 元素的位置都是静态的，并且无法移动。如需对位置进行操作，记得首先把元素的 CSS position 属性设置为 relative、fixed 或 absolute。
+```
+
+- 图片炸裂 <http://www.jq22.com/webqd3028>
+
+- 拖放
+
+  - draggable <https://github.com/Shopify/draggable>
+  - 图片 <http://www.jq22.com/webqd2950>
+  - 支持排序 <http://www.jq22.com/webqd2944>
+  - HTML5拖拽 <http://www.jq22.com/webqd2072>
+
+```javascript
+// 图片拖放
+<div id="wrap2" class="wrap" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("Img");
+    ev.target.appendChild(document.getElementById(data));
+}
+
+// 拖拽排序
+function DragDrop(id) {
+    this.parentBox = document.getElementById(id)
+    this.editSwith = this.parentBox.querySelector('.editOrder');
+    this.save = this.parentBox.querySelector('.save');
+    this.list = this.parentBox.querySelector('.list');
+    this.li = this.list.querySelectorAll('li');
+    this.aPosXY = []; //原始位置
+    this.aPosXYClone = [];
+    this.moveStatus = false; //移动状态
+    this.editAble = false; //编辑状态
+    this.dashedBox = null;
+    this.moveItem = null;
+    this.moveItemH = null;
+    this.mouseDownPos = [];
+    this.inScope = false;
+}
+
+//鼠标移动
+DragDrop.prototype.mouseMove = function(e, obj) {
+
+    var relativeListX = e.pageX - this.list.offsetLeft; //鼠标相对ul的位置 x
+    var relativeListY = e.pageY - this.list.offsetTop; //鼠标相对ul的位置 y
+    var objIndex = obj.getAttribute('data-index'); //获取当前选中元素的下标
+    var objLeft = this.aPosXY[objIndex].x;
+    var objTop = this.aPosXY[objIndex].y; //根据下标获取当前选中元素 固定的时候的定位 x,y;
+    //      console.log('objLeft：'+objLeft+'  objTop：'+objTop); //  objLeft：10px  objTop：10px
+    var relativeObjX = this.mouseDownPos.x - parseInt(objLeft); //鼠标按下时鼠标相对于选中元素的位置x
+    var relativeObjY = this.mouseDownPos.y - parseInt(objTop); //鼠标按下时鼠标相对于选中元素的位置y
+    var objMoveX = relativeListX - relativeObjX;
+    var objMoveY = relativeListY - relativeObjY;
+    //      console.log(objMoveX +'  '+objMoveY)
+    //      console.log('x:'+relativeListX+' y:'+relativeListY);
+    //      console.log('x:'+relativeObjX+' y:'+relativeObjY);
+    setCss(obj, {
+        'left': objMoveX + 'px',
+        'top': objMoveY + 'px'
+    });
+    for (var i = 0; i < this.aPosXYClone.length; i++) {
+        if (!(i == objIndex)) {
+            if (objMoveY + obj.offsetHeight >= parseInt(this.aPosXYClone[i].y) + this.li[i].offsetHeight / 2 && objMoveY + obj.offsetHeight < parseInt(this.aPosXYClone[i].y) + this.li[i].offsetHeight || objMoveY >= parseInt(this.aPosXYClone[i].y) && objMoveY < parseInt(this.aPosXYClone[i].y) + this.li[i].offsetHeight / 2) {
+                //            console.log(i);
+                var ts = [];
+                ts.x = this.dashedBox.style.left;
+                ts.y = this.dashedBox.style.top;
+                this.aPosXYClone[objIndex] = this.aPosXYClone[i];
+                this.aPosXYClone[i] = ts;
+                setCss(this.dashedBox, {
+                    'left': this.aPosXYClone[objIndex].x,
+                    'top': this.aPosXYClone[objIndex].y
+                });
+                setCss(this.li[i], {
+                    'left': ts.x,
+                    'top': ts.y
+                });
+                //            console.log(this.aPosXYClone)
+                //            console.log(this.aPosXY)
+                return false;
+            }
+        }
+    }
+
+}
+```
