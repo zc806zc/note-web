@@ -18,6 +18,9 @@
   - mock
   - 页面拦截 <https://router.vuejs.org/zh-cn/advanced/navigation-guards.html>
 
+- 首屏加载
+    - https://juejin.im/post/5a291092518825293b50366d
+    
 # vue语法
 
 - computed vs methods
