@@ -68,13 +68,22 @@ $(function() {
 
 - 联动
 
-  - 省市联动
+  - 省市下拉框联动
 
+    - (推荐) <http://www.jq22.com/jquery-info8054>
+    - <http://www.jq22.com/jquery-info16612>
+    - <http://www.jq22.com/jquery-info448>
     - 原生JS <http://www.jq22.com/yanshi16932>
-      - http://www.jq22.com/demo/jQuery3jld201711162305/js/jsAddress.js
     - <http://www.jq22.com/webqd3010>
 
   - 字母点击选择 <http://www.jq22.com/webqd2257>
+
+  - 省市区面板点击
+
+    - (推荐) <http://www.jq22.com/jquery-info7095>
+    - 仿京东 <http://www.jq22.com/jquery-info9397>
+    - <http://www.jq22.com/jquery-info13655>
+    - <http://www.jq22.com/jquery-info2876>
 
 - 时间正序排序
 
