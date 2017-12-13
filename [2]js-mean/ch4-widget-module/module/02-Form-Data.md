@@ -68,7 +68,12 @@ $(function() {
 
 - 联动
 
-  - 省市二级联动 <http://www.jq22.com/webqd3010>
+  - 省市联动
+
+    - 原生JS <http://www.jq22.com/yanshi16932>
+      - http://www.jq22.com/demo/jQuery3jld201711162305/js/jsAddress.js
+    - <http://www.jq22.com/webqd3010>
+
   - 字母点击选择 <http://www.jq22.com/webqd2257>
 
 - 时间正序排序
