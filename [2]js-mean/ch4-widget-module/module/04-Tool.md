@@ -307,6 +307,9 @@ $(function() {
   - 优雅地做广告 eg. 图片广告
   - <http://www.jq22.com/webqd2630>
   - <http://www.jq22.com/webqd1461>
+  - 卡片式广告
+
+    - <http://www.jq22.com/yanshi64>
 
 ```javascript
 var xin = true,

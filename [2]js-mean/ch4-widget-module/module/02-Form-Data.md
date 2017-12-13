@@ -27,6 +27,11 @@
 
 - 其他功能类
 
+```javascript
+// 参考
+jq22.com
+```
+
 # 按钮
 
 - btn-css-generator <http://www.bestcssbuttongenerator.com/#/8>
@@ -43,7 +48,11 @@
 
 - 通用输入
 - 拾色器
+
+  - 兼容性好 <http://www.jq22.com/jquery-info367>
+
 - 时间日期
+
 - 自动完成
 - 密码框
 - 投票率
