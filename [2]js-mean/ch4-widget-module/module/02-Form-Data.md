@@ -70,20 +70,19 @@ $(function() {
 
   - 省市下拉框联动
 
-    - (推荐) <http://www.jq22.com/jquery-info8054>
-    - <http://www.jq22.com/jquery-info16612>
-    - <http://www.jq22.com/jquery-info448>
-    - 原生JS <http://www.jq22.com/yanshi16932>
-    - <http://www.jq22.com/webqd3010>
+    - (推荐) 传统类型 <http://www.jq22.com/jquery-info8054>
+    - 同一下拉框内三次点击 <http://www.jq22.com/jquery-info16612>
 
-  - 字母点击选择 <http://www.jq22.com/webqd2257>
+    - 原生JS
+
+      - 0_27_12拼接 <http://www.jq22.com/jquery-info448>
 
   - 省市区面板点击
 
     - (推荐) <http://www.jq22.com/jquery-info7095>
     - 仿京东 <http://www.jq22.com/jquery-info9397>
-    - <http://www.jq22.com/jquery-info13655>
-    - <http://www.jq22.com/jquery-info2876>
+    - 较全面 <http://www.jq22.com/jquery-info13655>
+    - 字母点击 移动端 <http://www.jq22.com/webqd2257>
 
 - 时间正序排序
 
