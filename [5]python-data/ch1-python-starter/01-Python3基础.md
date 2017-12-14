@@ -1,9 +1,8 @@
 # Python语法
 
-- [hello-python3](https://github.com/luo0412/hello-python3)
 - [网络爬虫项目大全](http://blog.csdn.net/hp910315/article/details/53517399)
 - [Python教程-廖雪峰](http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000)
-- [Python编程规范-google](http://www.runoob.com/w3cnote/google-python-styleguide.html)
+
 
 - 第三方库
 
@@ -51,7 +50,6 @@ SublimeCodeIntel
 Python PEP8 Autoformat // 自动格式化 CTRL+SHIFT+R
 ```
 
---------------------------------------------------------------------------------
 
 # Python语言基础
 
@@ -123,7 +121,6 @@ input("按enter后退出")
 
   - pickle 模块
 
---------------------------------------------------------------------------------
 
 ## 数据类型
 
@@ -297,7 +294,6 @@ What is your quest?  It is the holy grail.
 What is your favorite color?  It is blue.
 ```
 
---------------------------------------------------------------------------------
 
 ### 字符串
 
@@ -340,9 +336,9 @@ pip install bs4
 ```python
 2 / 4  # 0.5
 2 // 4 # 0
-2 ** 5 # 32
+2  5 # 32
 
-c **= a // 即c = c ** a
+c = a // 即c = c  a
 ```
 
 - 迭代器和生成器
@@ -351,7 +347,6 @@ c **= a // 即c = c ** a
   - iter() 和 next()
   - 使用了 yield 的函数被称为生成器，生成器就是一个迭代器
 
---------------------------------------------------------------------------------
 
 ### 函数
 
@@ -408,7 +403,7 @@ raise NameError('HiThere')
 with语句
 ```
 
-#### **Python基础2**
+#### Python基础2
 
 - 模块
 

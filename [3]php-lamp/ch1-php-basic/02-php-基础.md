@@ -1,4 +1,4 @@
-# **PHP - 语法**
+# PHP - 语法
 
 - 安装
 
@@ -345,11 +345,11 @@ new D\E()的解析:
 
   - [php7-new-features](http://www.runoob.com/php/php7-new-features.html)
 
-```php
+````php
 ```
 
 - 参考
 
 ```php
 菜鸟教程
-```
+````

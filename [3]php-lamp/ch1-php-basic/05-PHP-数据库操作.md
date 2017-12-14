@@ -4,7 +4,7 @@
 
   - [heidiSQL-dl](https://www.heidisql.com/download.php)
 
-```
+```javascript
 // MYSQL安装
 
 // 数据库管理/图形化工具
@@ -183,7 +183,7 @@ my.conf
 
 - 使用MySQL扩展
 
-```php
+````php
 ```
 
 - PDO/Mysqli/ODBC
@@ -217,9 +217,8 @@ b - BLOB（binary large object:二进制大对象）
 $stmt->bind_param("sss", $firstname, $lastname, $email);
 
 // PDO 中的预处理语句
-```
+````
 
 - MariaDB
 
-```php
-```
+`php`

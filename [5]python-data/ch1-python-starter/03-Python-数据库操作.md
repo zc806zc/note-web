@@ -1,4 +1,4 @@
-# **Python操作数据库**
+# Python操作数据库
 
 - MySQL
 

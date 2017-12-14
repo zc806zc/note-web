@@ -1,4 +1,4 @@
-# **PHP-应用实例**
+# PHP-应用实例
 
 - 表单提交
 
@@ -102,7 +102,7 @@ PHP查询数据后传参给JS
 
 - cURL
 
-```php
+````php
 ```
 
 - XML/JSON
@@ -129,20 +129,20 @@ json_decode()
 
 // 中文编码问题 JSON_UNESCAPED_UBICODE
 // urlEncode 低版本
-```
+````
 
 - 邮件
 
-```php
+````php
 ```
 
 - 参考
 
 ```php
 PHP + MariaDB Web开发 李世川
-```
+````
 
-# **PHP实用技能**
+# PHP实用技能
 
 - 分页
 

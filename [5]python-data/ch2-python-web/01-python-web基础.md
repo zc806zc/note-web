@@ -1,4 +1,4 @@
-# **Flask基础**
+# Flask基础
 
 ## 基础
 
@@ -15,7 +15,7 @@
 
 ## WTForm表单编程
 
-# **Twisted基础**
+# Twisted基础
 
 ## 安装
 
@@ -58,7 +58,7 @@ twisted.internet.reactor.run()
 pip install pyopenssl
 ```
 
-# **Tornado**
+# Tornado
 
 ## 基础
 
