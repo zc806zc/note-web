@@ -54,6 +54,7 @@ jq22.com
 - 时间日期
 
 - 自动完成
+
 - 密码框
 - 投票率
 - 选择框
@@ -220,6 +221,10 @@ function xiaolong(json) {
 
 - 上传
 
+  - dropzone
+
+    - <https://github.com/enyo/dropzone>
+
   - 本地input选择图片实时显示
 
     - createObjectURL <http://www.jq22.com/webqd2884>
@@ -261,8 +266,10 @@ if (window.FileReader) {
   - Format input text content when you are typing...
 
 - jquery validate
+
 - 银行卡
-  - card https://github.com/jessepollak/card
+
+  - card <https://github.com/jessepollak/card>
 
 # 表格
 

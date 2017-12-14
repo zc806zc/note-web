@@ -1,24 +1,36 @@
 # Layout/Panel
 
 - 布局
+
   - 栅格布局
   - 网格布局
   - muuri
 
     - <https://github.com/haltu/muuri>
     - Responsive, sortable, filterable and draggable grid layouts
-  - 全屏
-    - fullPage  
-      - https://github.com/alvarotrigo/fullPage.js
 
-  - 拖拽    
-    - dragula https://github.com/bevacqua/dragula
+  - 全屏
+
+    - fullPage
+
+      - <https://github.com/alvarotrigo/fullPage.js>
+
+  - 拖拽
+
+    - dragula <https://github.com/bevacqua/dragula>
+
+  - 滚动条
+
+    - scrollreveal
+
+      - <https://github.com/jlmakes/scrollreveal>
 
 - 弹框
 
   - layer
   - sweetalert
-    - https://github.com/t4t5/sweetalert
+
+    - <https://github.com/t4t5/sweetalert>
     - <https://github.com/limonte/sweetalert2>
 
   - izimodal <https://github.com/dolce/iziModal>
