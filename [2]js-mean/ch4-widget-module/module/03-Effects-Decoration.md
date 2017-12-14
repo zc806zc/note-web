@@ -6,13 +6,13 @@
 
   - 粒子效果
 
-- 手势交互
+- 交互
 
   - interact.js <https://github.com/taye/interact.js>
 
     - <http://www.jq22.com/yanshi17203>
 
-- 色彩方案
+- 色彩
 
   - 配色方案
   - 分析网页主色/配色方案
@@ -23,7 +23,15 @@
   - 渐变背景色
   - 换肤
 
-# 未整理
+# 动画
+
+- 插件
+  - animate.css | A+ 
+  - Effeckt https://github.com/h5bp/Effeckt.css
+
+# 交互
+
+# 色彩
 
 - 右下角角标选中/标记
 

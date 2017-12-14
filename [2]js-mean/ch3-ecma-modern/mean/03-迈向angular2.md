@@ -1,4 +1,7 @@
-# Angular2
+# Angular2+
+
+- ngx-admin
+ - https://github.com/akveo/ngx-admin
 
 - [Code-download](https://github.com/mgechev/switching-to-angular2) | [angular2文档](https://angular.io/docs/ts/latest/quickstart.html)
 - 学习清单 <https://juejin.im/post/599e4ad151882524417ac921?utm\_source=gold\_browser\_extension>

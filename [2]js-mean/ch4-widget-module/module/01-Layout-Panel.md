@@ -6,12 +6,15 @@
 
     - <https://github.com/haltu/muuri>
     - Responsive, sortable, filterable and draggable grid layouts
+  - 全屏
+    - fullPage  
+      - https://github.com/alvarotrigo/fullPage.js
 
 - 弹框
 
   - layer
-  - sweetalert2
-
+  - sweetalert
+    - https://github.com/t4t5/sweetalert
     - <https://github.com/limonte/sweetalert2>
 
   - izimodal <https://github.com/dolce/iziModal>

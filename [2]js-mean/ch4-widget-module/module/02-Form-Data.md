@@ -261,6 +261,8 @@ if (window.FileReader) {
   - Format input text content when you are typing...
 
 - jquery validate
+- 银行卡
+  - card https://github.com/jessepollak/card
 
 # 表格
 

@@ -1,10 +1,14 @@
-# **Node.js**安装与基础
+# Node.js安装与基础
+
+- 资源
+
+  - <https://github.com/sindresorhus/awesome-nodejs>
 
 - npm
 - package.json
 - express | socket.io [expressjs.com](https://www.gitbook.com/book/luo0412/white/details#) | [http://socket.io/docs/](https://www.gitbook.com/book/luo0412/white/details#)
 - [Node-App的托管](https://github.com/nodejs/node-v0.x-archive/wiki/node-hosting) Joyent
-- ~~Netscape Enterprise Server (早期类似产品)~~
+- Netscape Enterprise Server (早期类似产品)
 
   - 为HTTP应用程序编码
 
@@ -16,7 +20,7 @@
 
 - 学习资源
 
-  - ~~<https://groups.google.com/forum/\#!forum/nodejs>~~
+  - <https://groups.google.com/forum/\#!forum/nodejs>
   - <http://stackoverflow.com/questions/tagged/node.js>
   - 了不起的Node.js <https://github.com/kdchang/smashing-nodejs-examples>
 
@@ -64,9 +68,7 @@ for (; index < length; index++) {
 }
 ```
 
---------------------------------------------------------------------------------
-
-# **构建工具及自动化**
+# 构建工具及自动化
 
 - 自动化构建解决日复一日的工作流程
 
@@ -95,7 +97,7 @@ for (; index < length; index++) {
   - <https://github.com/timmywil/grunt-bowercopy>
   - <https://github.com/zont/gulp-bower>
 
-- ~~其他~~
+- 其他
 
   - spm
   - component
@@ -141,7 +143,7 @@ npm install gulp-header --save-dev // 没有watch, 已经在API里
 
 --------------------------------------------------------------------------------
 
-# **JavaScript概览**
+# JavaScript概览
 
 - Object - key
 
@@ -187,7 +189,7 @@ console.log(a.name == 'your'); // true
 
 - 始终对函数命名 便于调试
 
-  - **PROTO**
+  - PROTO
 
 - 不需要中间构造器
 
@@ -226,33 +228,33 @@ var a = new Date('12/25/1990');
 console.log(a.ago); // 1360 weeks ago
 ```
 
-# **阻塞与非阻塞IO**
+# 阻塞与非阻塞IO
 
-# **Node中的JavScript**
+# Node中的JavScript
 
-# **命令行工具以及FS API**
-
---------------------------------------------------------------------------------
-
-# **TCP/HTTP/Connect**
-
-# **Express**
-
-# **WebSocket**
-
-# **Socket.IO**
+# 命令行工具以及FS API
 
 --------------------------------------------------------------------------------
 
-# **MongoDB/MySQL**
+# TCP/HTTP/Connect
 
-# **Redis**
+# Express
 
-# **代码共享**
+# WebSocket
+
+# Socket.IO
 
 --------------------------------------------------------------------------------
 
-# **测试**
+# MongoDB/MySQL
+
+# Redis
+
+# 代码共享
+
+--------------------------------------------------------------------------------
+
+# 测试
 
 --------------------------------------------------------------------------------
 
@@ -308,7 +310,7 @@ Node.js程序不止在一台服务器上
 
 - 开发OAuth2认证服务器
 
-  - [**book-nodejs-in-action-season-2**](https://github.com/leizongmin/book-nodejs-in-action-season-2)
+  - [book-nodejs-in-action-season-2](https://github.com/leizongmin/book-nodejs-in-action-season-2)
 
 ```javascript
 // 第三方模块
