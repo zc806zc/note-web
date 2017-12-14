@@ -1,32 +1,49 @@
 # Tool
 
+- 图片显示
+
+  - prettyPhoto
+
+    - <http://www.jq22.com/jquery-info255>
+
 - 聊天
-  - https://github.com/RocketChat/Rocket.Chat
-  
+
+  - <https://github.com/RocketChat/Rocket.Chat>
+
 - 地图
-  - https://github.com/Leaflet/Leaflet
+
+  - <https://github.com/Leaflet/Leaflet>
 
 - 视频
+
   - video.js
-   - https://github.com/videojs/video.js
-   - open source HTML5 & Flash video player
+
+    - <https://github.com/videojs/video.js>
+    - open source HTML5 & Flash video player
 
 - 复制粘贴
-  - clipboard.js https://github.com/zenorocha/clipboard.js
+
+  - clipboard.js <https://github.com/zenorocha/clipboard.js>
 
 - 文件格式转化
+
   - pdf2htmlEX
-    - https://github.com/coolwanglu/pdf2htmlEX
+
+    - <https://github.com/coolwanglu/pdf2htmlEX>
     - Convert PDF to HTML without losing text or format.
 
 - 邮件
-    - foundation-emails
-     - https://github.com/zurb/foundation-emails
-     - Quickly create responsive HTML emails that work on any device and client. Even Outlook   
+
+  - foundation-emails
+
+    - <https://github.com/zurb/foundation-emails>
+    - Quickly create responsive HTML emails that work on any device and client. Even Outlook
 
 - 用户操作导航
+
   - intro.js
-    - https://github.com/usablica/intro.js
+
+    - <https://github.com/usablica/intro.js>
     - A better way for new feature introduction and step-by-step users guide for your website and project.
 
 - 提示标签

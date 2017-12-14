@@ -20,14 +20,16 @@
     - <http://www.jq22.com/jquery-info235>
 
   - 取色器
+
   - 渐变背景色
   - 换肤
 
 # 动画
 
 - 插件
-  - animate.css | A+ 
-  - Effeckt https://github.com/h5bp/Effeckt.css
+
+  - animate.css | A+
+  - Effeckt <https://github.com/h5bp/Effeckt.css>
 
 # 交互
 

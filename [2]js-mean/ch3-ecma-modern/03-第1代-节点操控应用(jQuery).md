@@ -36,6 +36,8 @@ __proto__ 查看对象原型
 
 - 常用方法
 
+  - select操作(整理后删除) <http://blog.csdn.net/nairuohe/article/details/6307367>
+
 ```javascript
 html() text()
 元素遍历查找
@@ -112,8 +114,9 @@ jQuery(document).ready(function($){
 ```
 
 - 高效的jQuery代码编写技巧总结
-  - http://gcdn.gcpowertools.com.cn/showtopic-28514-1-3.html?utm_source=gold.xitu.io&utm_medium=referral&utm_campaign=20170222
-  - http://www.cnblogs.com/edison1105/archive/2012/07/31/2617518.html
+
+  - <http://gcdn.gcpowertools.com.cn/showtopic-28514-1-3.html?utm_source=gold.xitu.io&utm_medium=referral&utm_campaign=20170222>
+  - <http://www.cnblogs.com/edison1105/archive/2012/07/31/2617518.html>
 
 ```javascript
 // 使用匈牙利命名法
