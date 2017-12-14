@@ -8,6 +8,10 @@
 
 # React资源
 
+- react-starter-kit
+
+  - <https://github.com/kriasoft/react-starter-kit>
+
 - 后台框架
 
   - Ant Design <https://preview.pro.ant.design>

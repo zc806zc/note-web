@@ -1,6 +1,8 @@
 # interview-preparation
 
-- 囊括算法、前端、以及面试礼仪的一本超酷的技术面试指南。 <https://github.com/yangshun/tech-interview-handbook>
+- 面试宝典
+  - <https://github.com/yangshun/tech-interview-handbook> 囊括算法、前端、以及面试礼仪的一本超酷的技术面试指南。
+  - https://github.com/MaximAbramchuck/awesome-interview-questions
 
 - JS实现链表
 
