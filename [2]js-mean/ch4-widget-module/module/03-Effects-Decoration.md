@@ -1,5 +1,30 @@
 # Effect/Animate/Decoration
 
+主要分为以下几类
+
+- 动画
+
+  - 粒子效果
+
+- 手势交互
+
+  - interact.js <https://github.com/taye/interact.js>
+
+    - <http://www.jq22.com/yanshi17203>
+
+- 色彩方案
+
+  - 配色方案
+  - 分析网页主色/配色方案
+
+    - <http://www.jq22.com/jquery-info235>
+
+  - 取色器
+  - 渐变背景色
+  - 换肤
+
+# 未整理
+
 - 右下角角标选中/标记
 
   - <http://www.jq22.com/webqd1488>
