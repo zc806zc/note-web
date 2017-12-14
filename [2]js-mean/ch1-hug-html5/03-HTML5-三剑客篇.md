@@ -1,5 +1,11 @@
 # Web Storage-数据/离线存储
 
+- store.js
+
+  - <https://github.com/marcuswestin/store.js>
+
+- <https://github.com/localForage/localForage>
+
 - 原理：（AppCache）从浏览器的缓存中分出来的一块缓存区，与传统的客户端应用同场竞技
 
 - 存储类型

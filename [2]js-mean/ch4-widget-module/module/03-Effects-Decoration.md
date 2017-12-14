@@ -2,6 +2,8 @@
 
 主要分为以下几类
 
+- 图标库
+
 - 动画
 
   - 粒子效果
@@ -22,7 +24,17 @@
   - 取色器
 
   - 渐变背景色
+
   - 换肤
+
+# 图标库
+
+- feather
+
+  - <https://github.com/feathericons/feather>
+
+- Snap.svg
+  - https://github.com/adobe-webplatform/Snap.svg  
 
 # 动画
 
@@ -30,6 +42,10 @@
 
   - animate.css | A+
   - Effeckt <https://github.com/h5bp/Effeckt.css>
+  - mojs
+
+    - <https://github.com/legomushroom/mojs>
+    - motion graphics toolbelt for the web
 
 # 交互
 

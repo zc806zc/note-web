@@ -1,10 +1,21 @@
 # Tool
 
+- 富文本编辑器
+
+  - echarts | wangeditor
+  - <https://github.com/yabwe/medium-editor>
+  - <https://github.com/benweet/stackedit>
+
 - 图片显示
 
   - prettyPhoto
 
     - <http://www.jq22.com/jquery-info255>
+
+- 截图
+
+  - <https://github.com/jwagner/smartcrop.js>
+  - <https://github.com/niklasvh/html2canvas>
 
 - 聊天
 
@@ -20,6 +31,12 @@
 
     - <https://github.com/videojs/video.js>
     - open source HTML5 & Flash video player
+
+  - <https://github.com/sampotts/plyr>
+
+- 音频
+
+  - <https://github.com/goldfire/howler.js>
 
 - 复制粘贴
 

@@ -20,6 +20,17 @@
 - 表格
 
   - 筛选排序
+  - dataTables
+  - <https://handsontable.com/>
+  - 导入导出
+
+    - js-xlsx <https://github.com/SheetJS/js-xlsx>
+
+- (json)格式转化
+
+  - normalizr
+
+    - <https://github.com/paularmstrong/normalizr>
 
 - 图表(详见在可视化章节笔记)
 
@@ -53,14 +64,20 @@ jq22.com
 
 - 时间日期
 
+  - <https://github.com/uxsolutions/bootstrap-datepicker>
+
 - 自动完成
 
 - 密码框
 
 - 投票率
+
 - 选择框
+
 - 快捷键
+
 - 触摸
+
 - 丰富的输入
 - 上传
 
@@ -265,6 +282,11 @@ if (window.FileReader) {
 
   - <https://github.com/nosir/cleave.js>
   - Format input text content when you are typing...
+
+- validator.js
+
+  - <https://github.com/chriso/validator.js>
+  - String validation
 
 - jquery validate
 
