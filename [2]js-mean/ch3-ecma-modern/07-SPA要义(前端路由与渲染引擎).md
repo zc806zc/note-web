@@ -1,4 +1,32 @@
-# 客户端模板引擎
+# 前端模板引擎
+
+- 性能对比
+
+  - <https://www.cnblogs.com/guohu/p/3870677.html>
+  - artTemplate
+
+    - <https://github.com/aui/art-template>
+
+  - juicer
+
+  - doT
+
+- <https://www.zhihu.com/question/32524504>
+
+- handlebar | mustache
+
+- ETPL
+
+  - <http://ecomfe.github.io/etpl/>
+
+- jsrender(jquery-tmpl已不维护)
+
+  - <https://github.com/BorisMoore/jsrender>
+  - with or without jQuery.
+
+- pug.js
+
+  - <https://github.com/pugjs/pug>
 
 - 基础
 
