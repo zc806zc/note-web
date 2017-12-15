@@ -118,10 +118,12 @@ content: 与:before 及:after 伪元素配合使用，来插入生成内容。
 - 清除浮动 <http://www.cnblogs.com/dolphinX/p/3508869.html>
 
 - 自适应布局
-  - https://juejin.im/post/5a22d0086fb9a0451a7631ee
+
+  - <https://juejin.im/post/5a22d0086fb9a0451a7631ee>
   - 使用IE盒模型box-sizing: border-box
 
 - 关于各种布局的选择
+
   - 在浏览器支持的情况下，页面的大框架推荐用grid布局。
   - 定好架子后，局部布局推荐用flex。
   - float和inline-block浏览器支持好，但各有缺点。
@@ -456,3 +458,12 @@ HTML5建议网站: html5please
 
 - 皮卡丘 <http://www.jq22.com/webqd660>
 - 仿真笔记本 <http://www.jq22.com/webqd113>
+
+# 其他
+
+- 网站背景
+
+  - <https://juejin.im/entry/5a33232451882561a20a8273>
+  - 产品宣传随着滚动的背景 <https://codepen.io/randseay/pen/bVWEPJ>
+  - <https://codepen.io/zrichard/pen/wEFBd>
+  - <https://codepen.io/MKasio/pen/kEypt>
