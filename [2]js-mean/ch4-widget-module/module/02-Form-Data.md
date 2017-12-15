@@ -17,6 +17,10 @@
 
 - 表单校验
 
+- 提示标签
+
+  - popper.js <https://github.com/FezVrasta/popper.js>
+
 - 表格
 
   - 筛选排序
@@ -25,12 +29,106 @@
   - 导入导出
 
     - js-xlsx <https://github.com/SheetJS/js-xlsx>
+    - 网页表格导出excel格式 <http://www.jq22.com/webqd2279>
 
-- (json)格式转化
+```javascript
+var daochu = (function() {
+    var uri = 'data:application/vnd.ms-excel;base64,',
+        template = template = '<html 字数限制省略属性><meta http-equiv="Content-Type" charset=utf-8"><head><!--[if gte mso 9]> <head><!--[if gte mso 9]><xml><x:ExcelWorkbook><x:ExcelWorksheets><x:ExcelWorksheet><x:Name>{worksheet}</x:Name><x:WorksheetOptions><x:DisplayGridlines/></x:WorksheetOptions></x:ExcelWorksheet></x:ExcelWorksheets></x:ExcelWorkbook></xml><![endif]--></head><body><table>{table}</table></body></html>',
+        base64 = function(s) {
+            return window.btoa(unescape(encodeURIComponent(s)))
+        },
+        format = function(s, c) {
+            return s.replace(/{(\w+)}/g, function(m, p) {
+                return c[p];
+            })
+        }
+    return function(table, name) {
+        if (!table.nodeType) table = document.getElementById(table)
+        var ctx = {
+            worksheet: name || 'Worksheet',
+            table: table.innerHTML
+        }
+        window.location.href = uri + base64(format(template, ctx))
+    }
+})()
+```
 
-  - normalizr
+- 传输数据格式
+
+  - normalizr(json)
 
     - <https://github.com/paularmstrong/normalizr>
+
+  - 货币处理
+
+    - currency.js
+    - js数字金额大写转换
+
+      - <http://www.jq22.com/webqd3030>
+      - <http://www.jq22.com/webqd1708>
+
+  - 时间
+
+  - md5
+
+    - md5.js | jquery-md5
+    - <http://www.jq22.com/webqd1506>
+
+  - 时间
+
+    - 周显示 <http://www.jq22.com/webqd2426>
+    - luxon | moment.js
+
+      - <https://github.com/moment/luxon>
+
+```javascript
+Date.prototype.Format = function(fmt) {
+    var o = {
+        "M+": this.getMonth() + 1, //月份
+        "d+": this.getDate(), //日
+        "h+": this.getHours() % 12 == 0 ? 12 : this.getHours() % 12, //小时
+        "H+": this.getHours(), //小时
+        "m+": this.getMinutes(), //分
+        "s+": this.getSeconds(), //秒
+        "S": this.getMilliseconds() //毫秒
+    };
+    //周
+    var week = {
+        "0": "日",
+        "1": "一",
+        "2": "二",
+        "3": "三",
+        "4": "四",
+        "5": "五",
+        "6": "六"
+    };
+    //季度
+    var quarter = {
+        "1": "一",
+        "2": "二",
+        "3": "三",
+        "4": "四"
+    };
+    if (/(y+)/.test(fmt)) {
+        fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+    }
+    if (/(E+)/.test(fmt)) {
+        fmt = fmt.replace(RegExp.$1, ((RegExp.$1.length > 1) ? (RegExp.$1.length > 2 ? "星期" : "周") : "") + week[this.getDay() + ""]);
+    }
+    if (/(q+)/.test(fmt)) {
+        fmt = fmt.replace(RegExp.$1, ((RegExp.$1.length > 1) ? "第" : "") + quarter[Math.floor((this.getMonth() + 3) / 3) + ""] + "季度");
+    }
+    for (var j in o) {
+        if (new RegExp("(" + j + ")").test(fmt)) {
+            fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[j]) : (("00" + o[j]).substr(("" + o[j]).length)));
+        }
+    }
+    return fmt;
+}
+
+new Date().Format("yyyy-MM-dd E HH:mm:ss")
+```
 
 - 图表(详见在可视化章节笔记)
 
@@ -65,12 +163,32 @@ jq22.com
 - 时间日期
 
   - <https://github.com/uxsolutions/bootstrap-datepicker>
+  - 日历一览 <http://www.jq22.com/webqd2183>
 
 - 自动完成
 
 - 密码框
 
 - 投票率
+
+- 进度条
+
+  - <http://www.jq22.com/webqd1913>
+  - css3进度条 <http://www.jq22.com/webqd1062>
+
+- 星级评分
+
+  - <http://www.jq22.com/webqd3035>
+  - CSS实现 <http://www.jq22.com/webqd1144>
+
+```javascript
+function praise(num, obj) {
+    obj.prevAll().attr('class', 'xx-star');
+    obj.attr('class', 'xx-star');
+    obj.nextAll().attr('class', 'xx-star2');
+    $(".display-star").html(num + '星');
+}
+```
 
 - 选择框
 
@@ -79,6 +197,7 @@ jq22.com
 - 触摸
 
 - 丰富的输入
+
 - 上传
 
 ```javascript
@@ -418,49 +537,6 @@ window.onload = function() {
 ```
 
 - 点赞 <http://www.jq22.com/webqd2408>
-
-- 复制文字追加网站来源
-
-  - <http://www.jq22.com/webqd581>
-
-```javascript
-//复制内容自动添加版权信息
-var Sys = {};
-var ua = navigator.userAgent.toLowerCase();
-if( window.ActiveXObject )
-{
-    document.body.oncopy=function()
-    {
-        event.returnValue = false;
-        var t=document.selection.createRange().text;
-        var s="\r\n原文出自[jQuery插件库] 转载请保留原文链接:"+location.href;
-        clipboardData.setData('Text',t+'\r\n'+s);
-    }
-}
-
-else
-{
-    function addLink()
-    {
-        var body_element = document.getElementsByTagName('body')[0];
-        var selection;
-        selection = window.getSelection();
-        var pagelink = " 原文出自[jQuery插件库] 转载请保留原文链接:"+document.location.href;
-
-        var copytext = selection + pagelink;
-        var newdiv = document.createElement('div');
-        newdiv.style.position='absolute';
-        newdiv.style.left='-99999px';
-        body_element.appendChild(newdiv);
-        newdiv.innerHTML = copytext;
-        selection.selectAllChildren(newdiv);
-        window.setTimeout(function(){
-          body_element.removeChild(newdiv);
-        }, 0);
-    }
-    document.oncopy = addLink;
-}
-```
 
 - 表单输入实时监听
 

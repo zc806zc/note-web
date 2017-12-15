@@ -25,6 +25,57 @@
 
       - <https://github.com/jlmakes/scrollreveal>
 
+    - jquery.slimScroll
+
+    - JS自定义 <http://www.jq22.com/webqd2618> | <http://www.jq22.com/webqd1910>
+
+  - 元素定位
+
+    - 页脚置底 <http://liaokeyu.com/%E6%8A%80%E6%9C%AF/2017/01/06/%E8%AF%91-CSS%E4%BA%94%E7%A7%8D%E6%96%B9%E5%BC%8F%E5%AE%9E%E7%8E%B0Footer%E7%BD%AE%E5%BA%95.html>
+    - 固定在浏览器顶部 <http://www.jq22.com/webqd2646>
+    - 返回顶部
+
+      - <http://www.jq22.com/webqd2804>
+
+```javascript
+$(function() {
+  // 监听一定的高度
+  $(window).scroll(function() {
+      if ($(window).scrollTop() >= 300) {
+          $('.gongyong a').fadeIn(600);
+      } else {
+          $('.gongyong a').fadeOut(600);
+      }
+  });
+  $('.bottom a').click(function() {
+      $("html,body").animate({
+          scrollTop: $(document).height()
+      }, 500);
+  });
+});
+```
+
+- 导航
+
+  - 锚点跳转
+
+    - <http://www.jq22.com/webqd2418>
+
+  ```javascript
+  $(window).ready(function() {
+      $('#nav > .menu').on('click', function() {
+          var $this = $(this);
+          $this.addClass('active').siblings('.menu').removeClass('active');
+          $("html,body").animate({
+              scrollTop: $("#main > .box").eq($this.index() - 1).offset().top // 这一句
+          }, 300);
+          $("#bar").animate({
+              left: $this.offset().left
+          }, 300);
+      });
+  });
+  ```
+
 - 弹框
 
   - layer
@@ -35,29 +86,15 @@
 
   - izimodal <https://github.com/dolce/iziModal>
 
-- 元素定位
+- 相册
 
-  - 页脚置底 <http://liaokeyu.com/%E6%8A%80%E6%9C%AF/2017/01/06/%E8%AF%91-CSS%E4%BA%94%E7%A7%8D%E6%96%B9%E5%BC%8F%E5%AE%9E%E7%8E%B0Footer%E7%BD%AE%E5%BA%95.html>
-  - 固定在浏览器顶部 <http://www.jq22.com/webqd2646>
+  - gif预览
 
-- 锚点跳转
+    - jqGifPreview <https://github.com/SodhanaLibrary/jqGifPreview>
 
-  - <http://www.jq22.com/webqd2418>
+- prettyPhoto
 
-```javascript
-$(window).ready(function() {
-    $('#nav > .menu').on('click', function() {
-        var $this = $(this);
-        $this.addClass('active').siblings('.menu').removeClass('active');
-        $("html,body").animate({
-            scrollTop: $("#main > .box").eq($this.index() - 1).offset().top // 这一句
-        }, 300);
-        $("#bar").animate({
-            left: $this.offset().left
-        }, 300);
-    });
-});
-```
+  - <http://www.jq22.com/jquery-info255>
 
 - 全屏/放大
 
@@ -205,6 +242,8 @@ message=$.mengfan.show('新消息');
 },10000);
 ```
 
+- 浏览器调整
+
 - 贴边停靠 <http://www.jq22.com/webqd2141>
 
 - 下拉加载更多 <http://www.jq22.com/webqd2043>
@@ -325,34 +364,3 @@ ul li:hover .center {
   - 简单分页 <http://www.jq22.com/webqd1246>
 
 - 其他导航
-
-- 垂直字幕|中奖名单
-
-  - CSS <http://www.jq22.com/webqd2625>
-  - marquee(过时) <http://www.jq22.com/webqd2575>
-  - JS <http://www.jq22.com/webqd2444> | <http://www.jq22.com/webqd2391>
-
-```less
-.div1 {
-    width:200px;
-    height:200px;
-    overflow:hidden;
-    margin:auto;
-    position:relative;
-}
-@keyframes anis {
-    100% {
-      transform:translateY(-200px)
-    }
-}
-
-img {
-    position:absolute;
-}
-.div2 {
-    animation:anis 10s linear infinite;
-}
-.div2:hover {
-    animation-play-state:paused;
-}
-```
