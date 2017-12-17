@@ -1,5 +1,6 @@
 # PHP/Ajax-快速建站
 
+- WordPress <https://github.com/WordPress/WordPress>
 - 模板-快速建站
 
   - [WordPress-主题插件权限-FTP输入问题](http://jingyan.baidu.com/article/4f34706efc1237e387b56da4.html)
