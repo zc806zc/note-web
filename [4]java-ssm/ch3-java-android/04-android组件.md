@@ -2,11 +2,21 @@
 
 - <https://github.com/googlesamples/android-architecture-components>
 
+# Android UI库
+
+- QMUI <https://github.com/QMUI/QMUI_Android>
+
+  - 提高 Android UI 开发效率的 UI 库
+
 # 布局
 
 - BRVAH <https://github.com/CymChad/BaseRecyclerViewAdapterHelper>
 
   - Powerful and flexible RecyclerAdapter
+
+- 下拉加载
+
+  - <https://github.com/scwang90/SmartRefreshLayout>
 
 # 表单 | 数据
 
@@ -41,3 +51,5 @@
   - <https://github.com/Wechat-Group/weixin-java-tools>
 
 - <https://github.com/vondear/RxTools>
+
+- <https://github.com/Blankj/AndroidUtilCode>
