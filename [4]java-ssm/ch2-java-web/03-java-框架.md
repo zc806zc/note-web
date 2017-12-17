@@ -1,6 +1,6 @@
-# **JSP-框架**
+# JSP-框架
 
-```java
+````java
 ```
 
 # Spring Boot
@@ -8,7 +8,7 @@
 - 基础
 
 ```java
-```
+````
 
 # Spring
 
@@ -193,5 +193,4 @@ select * from User user where user.id > 10 order by user.id desc
 
 # MyBatis
 
-```java
-```
+`java`

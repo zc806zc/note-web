@@ -2,7 +2,8 @@
 
 主要分为以下几类
 
-- 图标库
+- 图标|字体
+
 
 - 动画
 
@@ -34,7 +35,11 @@
   - <https://github.com/feathericons/feather>
 
 - Snap.svg
-  - https://github.com/adobe-webplatform/Snap.svg  
+
+  - <https://github.com/adobe-webplatform/Snap.svg>
+
+- https://github.com/FortAwesome/Font-Awesome
+- 大量象形文字 <https://github.com/ryanoasis/nerd-fonts>  
 
 # 动画
 

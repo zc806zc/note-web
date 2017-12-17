@@ -3,6 +3,10 @@
 - <https://github.com/browserify/browserify>
 - <https://github.com/caolan/async>
 
+- hackathon-starter <https://github.com/sahat/hackathon-starter>
+
+  - A boilerplate for Node.js web applications
+
 - 资源
 
   - <https://github.com/sindresorhus/awesome-nodejs>
@@ -20,11 +24,16 @@
 
 - npm
 
+- node-interview <https://github.com/ElemeFE/node-interview>
+
+  - How to pass the Node.js interview of ElemeFE
+
 - package.json
 
 - express | socket.io [expressjs.com](https://www.gitbook.com/book/luo0412/white/details#) | [http://socket.io/docs/](https://www.gitbook.com/book/luo0412/white/details#)
 
 - [Node-App的托管](https://github.com/nodejs/node-v0.x-archive/wiki/node-hosting) Joyent
+
 - Netscape Enterprise Server (早期类似产品)
 
   - 为HTTP应用程序编码
