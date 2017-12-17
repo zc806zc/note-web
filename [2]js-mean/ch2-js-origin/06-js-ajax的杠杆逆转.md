@@ -1,4 +1,33 @@
-# ch20 JSON
+# JSON优雅地封装
+
+- 拦截
+
+```javascript
+const apiService = new Proxy(axios, {
+  get (target, propKey, receiver) {
+    return function (...args) {
+      return target[propKey](...args)
+        .then((res) => {
+          const resData = typeof res.data === 'string' ? JSON.parse(res.data) : res.data;
+          return typeof resData.obj === 'string' ? JSON.parse(resData.obj) : resData.obj; // string or object are both ok
+        })
+        .catch((err) => {
+          throw err;
+        });
+    }
+  }
+});
+
+apiService.get('/user/12345')
+    .then((data) => {
+        console.log(data);
+    })
+    .catch((error) => {
+        console.log(error);
+    });
+```
+
+# JSON
 
 - JSON 字符串必须使用双引号
 - JSON 中的对象要求给属性加引号
@@ -70,7 +99,7 @@ var jsonText = JSON.stringify(book, ["title", "edition"]);
 // {"title":"Professional JavaScript","edition":3}
 ```
 
-# ch18 JavaScript 与 XML
+# JavaScript 与 XML
 
 - DOMParser 类型
 - XMLSerializer 类型
@@ -104,177 +133,23 @@ alert(xml);
 // 但公认的还是使用 XMLHttp-Request 对象比较好。
 var xmldom = createDocument();
 xmldom.async = true;
-xmldom.onreadystatechange = function(){
-if (xmldom.readyState == 4){
-if (xmldom.parseError != 0){
-alert("An error occurred:\nError Code: "
-+ xmldom.parseError.errorCode + "\n"
-+ "Line: " + xmldom.parseError.line + "\n"
-+ "Line Pos: " + xmldom.parseError.linepos + "\n"
-+ "Reason: " + xmldom.parseError.reason);
-} else {
-alert(xmldom.documentElement.tagName); //"root"
-alert(xmldom.documentElement.firstChild.tagName); //"child"
-var anotherChild = xmldom.createElement("child");
-xmldom.documentElement.appendChild(anotherChild);
-var children = xmldom.getElementsByTagName("child");
-alert(children.length); //2
-alert(xmldom.xml);
-}
-}
+xmldom.onreadystatechange = function () {
+    if (xmldom.readyState == 4) {
+        if (xmldom.parseError != 0) {
+            alert("An error occurred:\nError Code: " + xmldom.parseError.errorCode + "\n" + "Line: " + xmldom.parseError
+                .line + "\n" + "Line Pos: " + xmldom.parseError.linepos + "\n" + "Reason: " + xmldom.parseError.reason);
+        } else {
+            alert(xmldom.documentElement.tagName); //"root"
+            alert(xmldom.documentElement.firstChild.tagName); //"child"
+            var anotherChild = xmldom.createElement("child");
+            xmldom.documentElement.appendChild(anotherChild);
+            var children = xmldom.getElementsByTagName("child");
+            alert(children.length); //2
+            alert(xmldom.xml);
+        }
+    }
 };
 xmldom.load("example.xml");
-```
-
-# JSON和Ajax
-
-- 工具
-
-```javascript
-校验工具 [JSONLint](http://www.jsonlint.com/)
-构建JSON逻辑模型 [JSON Editor Online](http://jsoneditoronline.org/)
-[JSON→CSV](https://github.com/konklone/json)
-[JSON格式化工具](http://www.runoob.com/jsontool)
-```
-
-- 常识
-
-```javascript
-// JSON
-JavaScript Object Notation
-JavaScript 对象表示法
-
-对象 + 数组形式
-主要是JS和PHP中的JSON
-
-// AJAX
-Asynchronous Javascript And XML
-
-普通网页流程 处理 - 等待 - 处理 -等待
-Ajax  按需 获取数据
-减少冗余请求和响应, 减轻服务器负担,节省带宽，
-数据加载 用户体验 减少等待时间
-不刷新页面的情况下与服务器进行通信
-
-AJAX引擎
-
-Ajax的核心： XMLHttpRequest
-xhr  
-
-// XML
-Extensible Markup Language
-可自定义
-描述 和存储数据
-
-// Ajax对象的创建过程
-声名对象
-var xhr = new XMLHttpRequest();
-
-发送请求
-open
-send
-使用GET方式传递 要使用
-encodeURIComponent 处理
-防止中文乱码
-
-接收返回信息
-readyState onreadystatechange事件
-status状态码
-200 ?
-403 被禁止访问
-404
-503 服务不可用
-
-获取响应信息
-responseText
-responseBody
-responseXM
-
-// 使用jQuery操作ajax
-$.get()
-$.post()
-$.ajax()
-```
-
-- JSONP
-
-```javascript
-通过PHP跨域请求
-通过JSONP跨域请求
-
-// jQuery获取json
-$(".message").html(JSON.stringify(json));
-$.getJSON(‘http://example/service/addresses/home/1’,
-    function(data) {
-        var address = JSON.parse(data);
-        console.log(“Address Line 1 = “ + address.line1);
-    }
-);
-
-// forEach()函数来循环
-$.getJSON("/json/cats.json", function(json) {
-var html = "";
-json.forEach(function(val) {
-var keys = Object.keys(val);
-html += "<div class = 'cat'>";
-keys.forEach(function(key) {
-html += "<b>" + key + "</b>: " + val[key] + "<br>";
-});
-html += "</div><br>";
-});
-
-// 过滤
-json = json.filter(function(val) {
-    return (val.id !== 1);
-});
-
-// java实现
-import java.io.Writer;
-import java.io.StringWriter;
-import org.codehaus.jackson.map.ObjectMapper;
-
-public class Address {
-private String line1;
-private String city;
-private String stateOrProvince;
-private String zipOrPostalCode;
-private String country;
-
-public Address() {}
-
-public String getLine1() {
-return line1;
-}
-
-public void setLine1(line1) {
-this.line1 = line1;
-}
-
-// Remaining getters and setters
-}
-
-Address addrOut = new Address();
-
-// Call setters to populate addrOut
-ObjectMapper mapper = new ObjectMapper(); // Reuse this.
-// Marshal Address object to JSON String.
-Writer writer = new StringWriter();
-mapper.writeValue(writer, addrOut);
-System.out.println(writer.toString());
-
-// Unmarshal Address object from JSON String.
-String addrJsonStr =
-“{“ +
-“\”address\” : {“ +
-“\”line1\” : \”555 Main Street\”,” +
-“\”city\” : \”Denver\”,”
-“\”stateOrProvince\” : \”CO\”,”
-“\”zipOrPostalCode\” : \”80202\”,” +
-“\”country\” : \”USA\”” +
-“}” +
-“}”;
-
-Address addrIn = mapper.readValue(addrJsonStr, Address.class);
 ```
 
 # JSON和Ajax
@@ -345,7 +220,7 @@ $.post()
 $.ajax()
 ```
 
-- JSONP
+# JSONP
 
 ```javascript
 通过PHP跨域请求
@@ -445,7 +320,7 @@ for-each-in 循环
 <script type="text/javascript;e4x=1" src="e4x_file.js"></script>
 ```
 
-# ch21 Ajax 与 Comet
+# Ajax 与 Comet
 
 ```javascript
 使用 XMLHttpRequest 对象
@@ -469,49 +344,51 @@ Ajax与comet的安全问题
 
 
 // JSONP示例
-function handleResponse(response){
-alert("You’re at IP address " + response.ip + ", which is in " +
-response.city + ", " + response.region_name);
+
+function handleResponse(response) {
+    alert("You’re at IP address " + response.ip + ", which is in " +
+        response.city + ", " + response.region_name);
 }
 var script = document.createElement("script");
 script.src = "http://freegeoip.net/json/?callback=handleResponse";
 document.body.insertBefore(script, document.body.firstChild);
 
 // 用 XHR 对象实现 HTTP 流的典型代码
-function createStreamingClient(url, progress, finished){
-var xhr = new XMLHttpRequest(),
-received = 0;
-xhr.open("get", url, true);
-xhr.onreadystatechange = function(){
-var result;
-if (xhr.readyState == 3){
-//只取得最新数据并调整计数器
-result = xhr.responseText.substring(received);
-received += result.length;
-//调用 progress 回调函数
-progress(result);
-} else if (xhr.readyState == 4){
-finished(xhr.responseText);
+
+function createStreamingClient(url, progress, finished) {
+    var xhr = new XMLHttpRequest(),
+        received = 0;
+    xhr.open("get", url, true);
+    xhr.onreadystatechange = function () {
+        var result;
+        if (xhr.readyState == 3) {
+            //只取得最新数据并调整计数器
+            result = xhr.responseText.substring(received);
+            received += result.length;
+            //调用 progress 回调函数
+            progress(result);
+        } else if (xhr.readyState == 4) {
+            finished(xhr.responseText);
+        }
+    };
+    xhr.send(null);
+    return xhr;
 }
-};
-xhr.send(null);
-return xhr;
-}
-var client = createStreamingClient("streaming.php", function(data){
-alert("Received: " + data);
-}, function(data){
-alert("Done!");
+var client = createStreamingClient("streaming.php", function (data) {
+    alert("Received: " + data);
+}, function (data) {
+    alert("Done!");
 });
 
 // WebSocket简单示例
 var socket = new WebSocket("ws://www.example.com/server.php");
-socket.onopen = function(){
-alert("Connection established.");
+socket.onopen = function () {
+    alert("Connection established.");
 };
-socket.onerror = function(){
-alert("Connection error.");
+socket.onerror = function () {
+    alert("Connection error.");
 };
-socket.onclose = function(){
-alert("Connection closed.");
+socket.onclose = function () {
+    alert("Connection closed.");
 };
 ```

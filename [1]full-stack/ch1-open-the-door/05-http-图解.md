@@ -24,6 +24,14 @@
 
 # HTTP和HTTPS的差异
 
+- 九个问题从入门到熟悉HTTPS
+
+  - <https://juejin.im/post/5a2ff29c6fb9a045132aac5a>
+
+```javascript
+
+```
+
 - HTTP
 
   - <https://certbot.eff.org/>
@@ -38,7 +46,7 @@ TCP/IP 协议的应用层协议
 默认使用80端口
 
 // HTTP/2 // 没有子版本
-```
+````
 
 - Content Security Policy
 
