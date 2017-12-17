@@ -2,7 +2,8 @@
 
 - [网络爬虫项目大全](http://blog.csdn.net/hp910315/article/details/53517399)
 - [Python教程-廖雪峰](http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000)
-
+- awesome-python
+  - <https://github.com/vinta/awesome-python>
 
 - 第三方库
 
@@ -49,7 +50,6 @@ pylinter
 SublimeCodeIntel
 Python PEP8 Autoformat // 自动格式化 CTRL+SHIFT+R
 ```
-
 
 # Python语言基础
 
@@ -120,7 +120,6 @@ input("按enter后退出")
   - 文件 | 目录
 
   - pickle 模块
-
 
 ## 数据类型
 
@@ -294,7 +293,6 @@ What is your quest?  It is the holy grail.
 What is your favorite color?  It is blue.
 ```
 
-
 ### 字符串
 
 - 字符串是不可变的
@@ -346,7 +344,6 @@ c = a // 即c = c  a
   - 迭代器只能往前不会后退
   - iter() 和 next()
   - 使用了 yield 的函数被称为生成器，生成器就是一个迭代器
-
 
 ### 函数
 

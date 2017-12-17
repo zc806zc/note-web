@@ -1,23 +1,23 @@
 # Flask基础
 
-## 基础
+- <https://github.com/pallets/flask>
 
-- 年轻
-- 着眼于微小项目
+- 基础
 
-## 路由
+  - 年轻
+  - 着眼于微小项目
 
-## Context上下文
+- 路由
 
-## jinja2模板编程
+- Context上下文
 
-## SQLAlchemy数据库编程
+- jinja2模板编程
 
-## WTForm表单编程
+- SQLAlchemy数据库编程
+
+- WTForm表单编程
 
 # Twisted基础
-
-## 安装
 
 - windows安装 需要zope Interface与pywin32支持库
 - 开发TCP广播系统 见源码
@@ -28,18 +28,75 @@ twisted.internet.reactor.run()
 
 - 组播技术 相对于单播点对点模式
 
---------------------------------------------------------------------------------
+# Tornado
 
-## 基础
+- 强项是利用协程机制开发高并发的服务器系统 eg. 社交网络
+- 可扩展的web服务器
 
-- 开源事件驱动框架，很高的运行效率
-- 并不是全栈框架 例如没有提供模板引擎
-- 从传输层到(底层)自定义应用协议的网络程序开发
-- 对python3支持有限
+- 异步与协程基础
 
-## UDP编程技术
+- 用户身份验证框架
 
-## 高级
+# Python-web
+
+- [Python高效开发实战-code-dl](http://www.broadview.com.cn/book/3661)
+
+  - Django + PostgreSQL开发移动 Twitter
+  - Tornado + jQuery开发WebSocket聊天室
+  - Flask + BootStrap + Restful开发学校管理系统
+  - Twisted + SQLAlchemy + ZeroMQ开发跨平台物联网消息网关
+
+# 其他基础
+
+- 三种协议
+
+  - TCP/IP
+  - HTTP
+  - Socket 进程通信机制 用于IP地址和端口，是一个通信链的句柄(?)
+
+- Socket TCP原语 | Socket UDP原语
+
+```python
+客户端
+socket() -> connect() -> send()/recv() -> close()
+
+服务端
+socket() -> bind() -> listen() -> accept() -> recv()/send() -> close()
+
+UDP
+recvfrom()
+sendto()
+
+http://m.qmen.space:8888/
+```
+
+- 常用端口号（搜索下）
+- 状态码
+
+  - 1xx 收到请等待
+  - 2xx OK success
+  - 3xx 重定向
+  - 4xx 客户端错误 402是付费访问 403是禁止访问
+  - 5xx 服务端错误
+
+- ngnix | WSGI
+
+```python
+pip install uwsgi
+uwsgi --http:9090 --wsgi-file webapp.py
+uwsgi uwsgi.ini
+```
+
+- 基础
+
+  - 开源事件驱动框架，很高的运行效率
+  - 并不是全栈框架 例如没有提供模板引擎
+  - 从传输层到(底层)自定义应用协议的网络程序开发
+  - 对python3支持有限
+
+- UDP编程技术
+
+- 高级
 
 - 延迟调用 Defer
 
@@ -58,73 +115,7 @@ twisted.internet.reactor.run()
 pip install pyopenssl
 ```
 
-# Tornado
-
-## 基础
-
-- 强项是利用协程机制开发高并发的服务器系统 eg. 社交网络
-- 可扩展的web服务器
-
---------------------------------------------------------------------------------
-
-- 异步与协程基础
-
-````
-```
-
-- 用户身份验证框架
-````
-
-````
-
-#### Python-web
-
-* [Python高效开发实战-code-dl](http://www.broadview.com.cn/book/3661)
-  * Django + PostgreSQL开发移动 Twitter
-  * Tornado + jQuery开发WebSocket聊天室
-  * Flask + BootStrap + Restful开发学校管理系统
-  * Twisted + SQLAlchemy + ZeroMQ开发跨平台物联网消息网关
-
-#### 基础
-
-* 三种协议
-  * TCP/IP
-  * HTTP
-  * Socket 进程通信机制 用于IP地址和端口，是一个通信链的句柄\(?\)
-* Socket TCP原语 \| Socket UDP原语
-
-```py
-客户端
-socket() -> connect() -> send()/recv() -> close()
-
-服务端
-socket() -> bind() -> listen() -> accept() -> recv()/send() -> close()
-
-UDP
-recvfrom()
-sendto()
-
-http://m.qmen.space:8888/
-````
-
-- 常用端口号（搜索下）
-- 状态码
-
-  - 1xx 收到请等待
-  - 2xx OK success
-  - 3xx 重定向
-  - 4xx 客户端错误 402是付费访问 403是禁止访问
-  - 5xx 服务端错误
-
-- ngnix | WSGI
-
-```
-pip install uwsgi
-uwsgi --http:9090 --wsgi-file webapp.py
-uwsgi uwsgi.ini
-```
-
-### 数据库
+# 数据库
 
 - 数据库
 
@@ -140,8 +131,8 @@ uwsgi uwsgi.ini
   - SQLObject ruby式
   - storm 中型 要写ddl代码
 
-### 参考
+# 参考
 
-```
+```python
 Python高效开发实战
 ```

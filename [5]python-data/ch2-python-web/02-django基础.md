@@ -1,6 +1,8 @@
 # Django
 
-- [Django安装](https://www.djangoproject.com/download/) | [第一个Django](https://docs.djangoproject.com/en/1.10/intro/tutorial01/)
+- <https://github.com/django/django>
+- Django安装 <https://www.djangoproject.com/download>
+- 第一个Django <https://docs.djangoproject.com/en/1.10/intro/tutorial01>
 
 ```python
 pip install django
@@ -24,14 +26,12 @@ python manage.py runserver 0.0.0.0:8000
 访问 localhost:8000/app/
 ```
 
-
 # Django基础
 
 - 重量级 最广泛 最成熟
 - 强大而封闭 因为它的各个模块结合地比较紧密
 - BSD版权
 - 定义了服务发布 路由映射 模板编程 数据处理的一整套功能
-
 
 # Django模型层
 
