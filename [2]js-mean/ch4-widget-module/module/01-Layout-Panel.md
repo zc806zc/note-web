@@ -27,6 +27,10 @@
 
     - jquery.slimScroll
 
+    - scrollama <https://github.com/russellgoldenberg/scrollama>
+
+      - Scrollytelling with IntersectionObserver
+
     - JS自定义 <http://www.jq22.com/webqd2618> | <http://www.jq22.com/webqd1910>
 
   - 元素定位

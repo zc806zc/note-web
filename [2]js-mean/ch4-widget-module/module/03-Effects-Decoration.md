@@ -4,7 +4,6 @@
 
 - 图标|字体
 
-
 - 动画
 
   - 粒子效果
@@ -38,8 +37,9 @@
 
   - <https://github.com/adobe-webplatform/Snap.svg>
 
-- https://github.com/FortAwesome/Font-Awesome
-- 大量象形文字 <https://github.com/ryanoasis/nerd-fonts>  
+- <https://github.com/FortAwesome/Font-Awesome>
+
+- 大量象形文字 <https://github.com/ryanoasis/nerd-fonts>
 
 # 动画
 
@@ -51,6 +51,10 @@
 
     - <https://github.com/legomushroom/mojs>
     - motion graphics toolbelt for the web
+
+  - popmotion <https://github.com/Popmotion/popmotion>
+
+    - Create unique animations and interactions with tweens, physics and input tracking.
 
 # 交互
 
