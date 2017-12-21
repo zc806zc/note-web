@@ -4,6 +4,10 @@
 
   - Python Development Workflow for Humans.
 
+- pytorch <https://github.com/pytorch/pytorch>
+
+  - 动态建图的工具
+
 # HTTP请求库
 
 - scrapy
@@ -16,7 +20,8 @@
 
 - 视频下载
 
-  - <https://github.com/rg3/youtube-dl>
+  - youtube-dl <https://github.com/rg3/youtube-dl>
+  - you-get <https://github.com/soimort/you-get>
 
 - pytorch
 
