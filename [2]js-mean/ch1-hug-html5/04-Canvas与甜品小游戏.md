@@ -33,13 +33,29 @@
 
 - 使IE兼容Canvas
 
-  - ExplorerCanvas VML
+  - ExplorerCanvas -> VML
 
     - <https://github.com/arv/explorercanvas>
+    - http://blog.csdn.net/yuanxiaojiao0012/article/details/49801887
 
   - FlashCanvas （推荐）
 
     - <https://github.com/stupidQ/flashcanvas>
+
+```html
+<script type="text/javascript" src="../html5.js"></script>
+<script type="text/javascript" src="../excanvas.compiled.js"></script>
+
+需要注意
+（1） 拖拽事件参数e没有target属性，可由srcElement属性来替代
+（2）拖拽事件参数e没有preventDefault方法，这个方法用了阻止默认行为，
+如果没有这个方法，拖拽的时候会单独打开一个页面，可以替换为：
+window.event.returnValue = false;
+（3）如果显示原有的canvas节点，此时就没问题了，
+可是如果动态创建节点（var nodeElement = document.createElement(“canvas”);），
+不能调用getContext方法了就有问题了，可以用 G_vmlCanvasManager.initElement(nodeElement)先初始化节点，
+后再getContext（），记得getContext之前要先添加节点，即$(‘main’).appendChild(nodeElement);
+```    
 
 # 绘制/文本/图像视频
 
