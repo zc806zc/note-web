@@ -2,9 +2,7 @@
 
 ## Layout/Panel
 
-- Accordion
-- Alert
-- Layout
+- Layout(布局)
 
   - Width(Define the width of elements for different viewport sizes.)
   - Visibility
@@ -18,10 +16,13 @@
   - Padding
   - Position
   - Sticky(Make elements remain at the top of the viewport, like a sticky navigation.)
+  - Sortable/Darggable
+  - Scroll
 
-- Sortable/Darggable
+    - Scroll
+    - Totop(Create a simple to-top scroller.)
 
-- Nav
+- Nav(导航)
 
   - Nav
   - Navbar
@@ -32,41 +33,34 @@
   - Thumbnav
   - Subnav(Defines different styles for a sub navigation.)
   - Off-canvas(Create an off-canvas sidebar that slides in and out of the page, which is perfect for creating mobile navigations.)
-
-- Tab
-
   - Tab
-  - Switcher
 
-- Card
+    - Tab
+    - Switcher
+    - Accordion
 
-- Drop(Position any element in relation to another element.)
+- Modal/Panel(弹框)
 
-  - Drop
-  - Dropdown
-
-- Scroll
-
-  - Scroll
-  - Totop(Create a simple to-top scroller.)
-
-- Modal(Create modal dialogs with different styles and transitions.)
-
-  - Modal
+  - Modal(Create modal dialogs with different styles and transitions.)
   - Lightbox(Create a responsive lightbox gallery with images and videos.)
   - Notification
   - Slideshow(Create a responsive slideshow with images and videos.)
-  - Tooltip
 
-- Utility(A collection of useful utility classes to style your content.)
+  - Drop(Position any element in relation to another element.)
+
+    - Drop
+    - Dropdown
 
 ## Form/Data
 
-- Button
-- Badge
-- Close
-- Form
+- Button(按钮)
 
+  - Button
+  - Close
+
+- Form(表单)
+
+  - Label
   - Input
   - Search
   - Select
@@ -74,66 +68,65 @@
   - Radio
   - Checkbox
   - Range
+  - Upload
+  - Placeholder(Create a placeholder space that can be used for uploading files via drag and drop.)
 
-- Upload
+- Tip(提示)
 
-- Pagination
+  - Badge
+  - Tooltip
+  - Alert
+  - Progress
+  - Spinner
 
-- Placeholder(Create a placeholder space that can be used for uploading files via drag and drop.)
+- Table/List(表格列表)
 
-- Progress
+  - Table
+  - List
 
-- Spinner
+    - List
+    - Description list
 
-- Table
+  - Pagination
 
 ## Effects/Decoration
 
-- Base(This component provides the default style for all HTML elements.)
-- Print(Optimize your pages for legible and economic printing.)
-- Icon
-- Animation
+- Theme/Base(基本样式)
 
-  - Toggle
-  - Transition(Create smooth transitions between two states when hovering an element.)
+  - Base(This component provides the default style for all HTML elements.)
+  - Background
+  - Inverse(Inverse the style of any component for light or dark backgrounds.)
+  - Tile(Create layout boxes with different backgrounds that can be arranged seamlessly next to each other.)
+  - Print(Optimize your pages for legible and economic printing.)
 
-- Content
+- Article(文章)
 
+  - Article
+  - Link
+  - Card
   - Text
   - Heading
   - Section
-  - Article
   - Comment
-  - Tile(Create layout boxes with different backgrounds that can be arranged seamlessly next to each other.)
+  - Divider
+  - Marker(Create a marker icon that can be displayed on top of images.)
+  - Overlay(Create an image overlay, which comes in different styles.)
 
-- List
+- Icon/Font(图标字体)
 
-  - List
-  - Description list
+- Animation(动画)
 
-- Background
+  - Toggle
+  - Transition(Create smooth transitions between two states when hovering an element.)
+  - Scrollspy(Trigger events and animations while scrolling your page.)
+  - Parallax(Animate CSS properties depending on the scroll position of the document.)
 
-- Divider
-
-- Inverse(Inverse the style of any component for light or dark backgrounds.)
-
-- Label
-
-- Link
-
-- Marker(Create a marker icon that can be displayed on top of images.)
-
-- Overlay(Create an image overlay, which comes in different styles.)
-
-- Parallax(Animate CSS properties depending on the scroll position of the document.)
-
-  - Grid Parallax(Move single columns of a grid at different speeds while scrolling.)
-
-- Scrollspy(Trigger events and animations while scrolling your page.)
+    - Grid Parallax(Move single columns of a grid at different speeds while scrolling.)
 
 ## Tool
 
 - Countdown
+- ...
 
 ## 參考
 
