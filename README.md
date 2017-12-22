@@ -5,7 +5,7 @@
 - 笔记使用的编辑器
 
   - Atom
-  - beautify(格式化)
+  - Atom beautify(格式化插件)
 
 - 辅助chrome插件
 
