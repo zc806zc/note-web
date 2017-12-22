@@ -346,3 +346,9 @@ _dirtyPosition _dirtyRotation
 基于ASCII的三维静态模型存储格式
 包含信息，顶点坐标，面数组，纹理坐标，材质文件
 ```
+
+# 扩展插件
+
+- whs.js <https://github.com/WhitestormJS/whs.js>
+
+  - 🚀 🌪 Super-fast 3D framework for Web Applications 🥇 & Games 🎮. Based on Three.js
