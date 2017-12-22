@@ -31,6 +31,10 @@
     - js-xlsx <https://github.com/SheetJS/js-xlsx>
     - 网页表格导出excel格式 <http://www.jq22.com/webqd2279>
 
+- 模板渲染引擎
+
+  - artTemplate
+
 ```javascript
 var daochu = (function() {
     var uri = 'data:application/vnd.ms-excel;base64,',
