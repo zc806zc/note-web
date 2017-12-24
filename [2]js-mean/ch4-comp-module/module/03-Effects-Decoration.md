@@ -8,6 +8,30 @@
 
   - 粒子效果
 
+    - create.js
+
+  - SuperSlide v2.1.1 <http://www.SuperSlide2.com/>
+
+  - jquery.easing <https://github.com/gdsmith/jquery.easing>
+
+```javascript
+// 动画 ====================
+quicksand
+jQuery plugin. Reorder and filter items with a nice shuffling animation.
+
+// create a smooth jump to sub navigational menu in one JS call
+jumpto
+
+// wow.js
+Reveal Animations When You Scroll. Very Animate.css Friend :-)
+Easily customize animation settings: style, delay, length, offset, iterations...
+
+
+// 效果
+Filterizr is a jQuery plugin that sorts, shuffles and applies stunning filters over
+responsive galleries using CSS3 transitions and custom CSS effects.
+```
+
 - 交互
 
   - interact.js <https://github.com/taye/interact.js>
@@ -36,6 +60,8 @@
 - Snap.svg
 
   - <https://github.com/adobe-webplatform/Snap.svg>
+  - 一个操纵 SVG 节点/制作 SVG 动画的框架
+  - <https://aotu.io/notes/2017/01/22/snapsvg/index.html>
 
 - <https://github.com/FortAwesome/Font-Awesome>
 
@@ -109,16 +135,6 @@ span:nth-child(2) {
     height:2px;
     transition:.5s;
 }
-```
-
-- 单选复选框优化 <http://www.jq22.com/webqd2718>
-
-```html
-<span class="radio_box">
- <input type="radio" id="radio_1" name="radio" checked="">
- <label for="radio_1"></label>
- <em>选项1</em>
-</span>
 ```
 
 - 数字滚动显示

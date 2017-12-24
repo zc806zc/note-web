@@ -23,6 +23,7 @@
 - 网站标签页
 
 - 客服反馈
+
 - 打印
 - 抽奖 | 摇号
 - 代码格式化
@@ -46,6 +47,8 @@
 - <https://github.com/niklasvh/html2canvas>
 
 - jfMagnify <https://github.com/fonstok/jfMagnify>
+
+- jquery.etalage.min.js
 
 - 精简版JS <http://www.jq22.com/webqd2110>
 

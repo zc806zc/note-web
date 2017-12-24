@@ -159,6 +159,18 @@ jq22.com
 
 # 表单
 
+- 单选复选框优化 <http://www.jq22.com/webqd2718>
+
+  - jquery-labelauty
+
+```html
+<span class="radio_box">
+ <input type="radio" id="radio_1" name="radio" checked="">
+ <label for="radio_1"></label>
+ <em>选项1</em>
+</span>
+```
+
 - 通用输入
 - 拾色器
 
@@ -273,6 +285,13 @@ function slide(range, conSlide, obj) {
 
     - niceSelect
     - select2
+    - jquery.sumoselect
+
+      - A jQuery Single/Multi Select plugin which can be used on almost any device
+
+    - Superfish
+
+      - It is a jQuery plugin that adds usability enhancements to existing multi-level drop-down menus.
 
   - 模拟下拉框 <http://www.jq22.com/webqd2375> | 可多选 <http://www.jq22.com/webqd933>
 
@@ -413,6 +432,8 @@ if (window.FileReader) {
 
 - jquery validate
 
+- jQuery-form
+
 - 银行卡
 
   - card <https://github.com/jessepollak/card>
@@ -434,7 +455,12 @@ if (window.FileReader) {
 
 - 筛选排序
 
+  - jquery.isotope
+
+    - Filter & sort magical layouts GPL
+
   - 时间正序排序
+
   - 表格排序
 
     - <http://www.jq22.com/webqd2793>
@@ -470,6 +496,10 @@ rows.sort(function(a,b){
 - 云标签
 
   - <http://www.jq22.com/webqd1921>
+
+- jquery-tags-input
+
+  - <http://xoxco.com/projects/code/tagsinput/>
 
 # 功能类
 

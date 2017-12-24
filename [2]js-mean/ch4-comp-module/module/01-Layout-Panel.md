@@ -9,11 +9,21 @@
     - <https://github.com/haltu/muuri>
     - Responsive, sortable, filterable and draggable grid layouts
 
+  - masonry
+
+    - Cascading grid layout library
+
   - 全屏
 
     - fullPage
 
       - <https://github.com/alvarotrigo/fullPage.js>
+
+    - 全屏视频
+
+      - FitVids.js
+
+        - A lightweight, easy-to-use jQuery plugin for fluid width video embeds.
 
   - 拖拽
 
@@ -30,6 +40,8 @@
     - scrollama <https://github.com/russellgoldenberg/scrollama>
 
       - Scrollytelling with IntersectionObserver
+
+    - jquery.nicescroll
 
     - JS自定义 <http://www.jq22.com/webqd2618> | <http://www.jq22.com/webqd1910>
 
@@ -90,15 +102,21 @@ $(function() {
 
   - izimodal <https://github.com/dolce/iziModal>
 
+  - Waypoints
+
+  - cbpGridGallery.js
+
+  - Magnific Popup
+
 - 相册
 
   - gif预览
 
     - jqGifPreview <https://github.com/SodhanaLibrary/jqGifPreview>
+    - lightbox
+    - prettyPhoto
 
-- prettyPhoto
-
-  - <http://www.jq22.com/jquery-info255>
+      - <http://www.jq22.com/jquery-info255>
 
 - 全屏/放大
 
@@ -287,6 +305,23 @@ $(window).scroll(function() {
   - 全屏垂直滚动 <http://www.jq22.com/webqd1991>
   - CSS3轮播 <http://www.jq22.com/webqd2427>
   - 渐隐效果仿dribble <http://www.jq22.com/webqd2023>
+  - Camera slideshow <https://www.pixedelic.com/plugins/camera/>
+
+  - fancybox
+
+  - jquery.flexisel.js
+
+  - Nivo Slider
+
+    - The Most Awesome jQuery Image Slider
+
+  - FlexSlider 2
+
+    - The best responsive slider. Period.
+
+  - bxslider-4
+
+    - Responsive jQuery content slider
 
 ```css
 #photos {
