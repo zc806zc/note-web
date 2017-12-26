@@ -5,6 +5,7 @@
   - 插件库 <http://www.jq22.com>
   - jquery官网 <http://jquery.com>
   - 选择器手册 <http://www.runoob.com/jquery/jquery-ref-selectors.html>
+  - <http://hemin.cn/jq/>
 
 - 内容
 

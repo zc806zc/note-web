@@ -6,6 +6,7 @@
 
 <https://juejin.im/post/59928d55518825486f1e8369?utm_source=gold_browser_extension>
 
+- <https://github.com/jsfront/src/blob/master/vuejs.md>
 - API <https://vuejs-tips.github.io/cheatsheet/>
 - vue入门到放弃 <https://juejin.im/post/59aa1248518825392656a86a?utm_source=gold_browser_extension>
 - 父子组件之间传值 <https://juejin.im/post/59ec95006fb9a0451c398b1a?utm_source=gold_browser_extension>
@@ -19,8 +20,9 @@
   - 页面拦截 <https://router.vuejs.org/zh-cn/advanced/navigation-guards.html>
 
 - 首屏加载
-    - https://juejin.im/post/5a291092518825293b50366d
-    
+
+  - <https://juejin.im/post/5a291092518825293b50366d>
+
 # vue语法
 
 - computed vs methods
