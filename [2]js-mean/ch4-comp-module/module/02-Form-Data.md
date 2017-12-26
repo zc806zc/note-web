@@ -24,8 +24,14 @@
 - 表格
 
   - 筛选排序
-  - dataTables
-  - <https://handsontable.com/>
+  - dataTables | bootstrap-table
+
+    - <https://github.com/wenzhixin/bootstrap-table>
+
+  - 商业
+
+    - handsontable <https://handsontable.com/>
+
   - 导入导出
 
     - js-xlsx <https://github.com/SheetJS/js-xlsx>
@@ -72,19 +78,17 @@ var daochu = (function() {
       - <http://www.jq22.com/webqd3030>
       - <http://www.jq22.com/webqd1708>
 
-  - 时间
+- md5
 
-  - md5
+  - md5.js | jquery-md5
+  - <http://www.jq22.com/webqd1506>
 
-    - md5.js | jquery-md5
-    - <http://www.jq22.com/webqd1506>
+- 时间
 
-  - 时间
+  - 周显示 <http://www.jq22.com/webqd2426>
+  - luxon | moment.js
 
-    - 周显示 <http://www.jq22.com/webqd2426>
-    - luxon | moment.js
-
-      - <https://github.com/moment/luxon>
+    - <https://github.com/moment/luxon>
 
 ```javascript
 Date.prototype.Format = function(fmt) {
@@ -178,8 +182,12 @@ jq22.com
 
 - 时间日期
 
+  - moment.js
+  - 时间日期处理 <https://github.com/datejs/Datejs>
   - <https://github.com/uxsolutions/bootstrap-datepicker>
   - 日历一览 <http://www.jq22.com/webqd2183>
+  - fullcalender | my97
+  - 农历 <https://github.com/zzyss86/LunarCalendar>
 
 - 自动完成
 
@@ -380,6 +388,11 @@ function xiaolong(json) {
 ```
 
 - 上传
+
+  - jQuery-File-Upload | fex webuploader(兼容性好)
+
+    - <https://blueimp.github.io/jQuery-File-Upload/>
+    - <http://fex.baidu.com/webuploader/>
 
   - dropzone
 

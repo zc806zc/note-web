@@ -2,6 +2,7 @@
 
 - HTML标记争论的论坛 <http://html5doctor.com>
 - 移动meta标记
+
   - 关于head <http://www.css88.com/archives/6410>
 
 ```javascript
@@ -109,8 +110,10 @@ f: !!str true
 
 > 开发人员就不要说H5了,不然会显得自己很low, HTML5 ≠ 那些个酷炫的页面, HTML5更多的是新标准而不是新技术
 
+- HTML5 有哪些让你惊艳的 demo？ <https://www.zhihu.com/question/24398907>
 - html5-boilerplate
-  - https://github.com/h5bp/html5-boilerplate
+
+  - <https://github.com/h5bp/html5-boilerplate>
   - A professional front-end template for building fast, robust, and adaptable web apps or sites.
 
 - HTML5秘籍
@@ -126,7 +129,9 @@ f: !!str true
 
   - 浏览器与设备兼容
   - Modernizer | html5shiv/html5.js
-    - https://github.com/Modernizr/Modernizr
+
+    - <https://github.com/Modernizr/Modernizr>
+
   - 浏览器市场占有率 <http://gs.statcounter.com>
   - Can I use
   - 腻子脚本

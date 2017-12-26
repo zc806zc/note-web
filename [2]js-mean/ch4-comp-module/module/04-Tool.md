@@ -3,7 +3,7 @@
 主要包括以下几类
 
 - 富文本编辑器
-- 放大镜 | 截图
+- 放大镜 | 截图 | 裁剪
 - 弹幕 | 字幕
 - 聊天
 - 地图
@@ -25,21 +25,37 @@
 - 客服反馈
 
 - 打印
+
 - 抽奖 | 摇号
+
 - 代码格式化
+
 - 广告
+
 - 选座位
+
 - 计算器
 - 倒计时 | 计时器
 - 代码编辑器
 
   - codemirror
 
+- 分享
+
+- 繁简字转化
+
+  - OpenCC <https://github.com/BYVoid/OpenCC>
+
 # 富文本编辑器
 
-- echarts | wangeditor
-- <https://github.com/yabwe/medium-editor>
-- <https://github.com/benweet/stackedit>
+- ueditor | wangeditor
+- 经典 ckeditor | kindeditor
+- medium-editor <https://github.com/yabwe/medium-editor>
+- stackedit <https://github.com/benweet/stackedit>
+- 次选
+
+  - summernote <https://github.com/summernote/summernote>
+  - wysiwyg <https://github.com/mindmup/bootstrap-wysiwyg/>
 
 # 放大镜 | 截图
 
@@ -53,6 +69,10 @@
 - 精简版JS <http://www.jq22.com/webqd2110>
 
 - <http://www.jq22.com/webqd643>
+
+- 裁剪
+
+  - <http://www.shearphoto.com/>
 
 # 聊天
 
@@ -348,3 +368,8 @@ img {
     animation-play-state:paused;
 }
 ```
+
+# 分享
+
+- 百度分享 <http://share.baidu.com/>
+- 常见 jiathis <http://jiathis.com/>

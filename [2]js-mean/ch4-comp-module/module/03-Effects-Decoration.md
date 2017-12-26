@@ -4,7 +4,15 @@
 
 - 图标|字体
 
+  - <https://icons8.com/preloaders/en/free>
+
 - 动画
+
+  - 网站
+
+    - jq22
+    - <http://www.17sucai.com/>
+    - <http://microjs.com/>
 
   - 粒子效果
 

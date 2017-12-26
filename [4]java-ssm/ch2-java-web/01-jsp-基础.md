@@ -1,12 +1,14 @@
-# idea安装
+# Idea
 
-```js
+- <https://github.com/judasn/IntelliJ-IDEA-Tutorial>
+
+```javascript
 // idea 内存溢出问题
 http://blog.csdn.net/fyqcdbdx/article/details/46788915
 -server -XX:PermSize=128M -XX:MaxPermSize=256m
 ```
 
-# **JSP-开发环境搭建**
+# JSP-开发环境搭建
 
 - [JSP环境搭建](http://www.jianshu.com/p/5b022371de26)
 
@@ -15,7 +17,7 @@ http://blog.csdn.net/fyqcdbdx/article/details/46788915
   - [使用IntelliJ IDEA开发JavaWeb项目](http://youthlin.com/20151128.html)
   - [Idea导出war](http://blog.csdn.net/thehide/article/details/52042487) | [Tomcat-IDEA虚拟目录](http://www.cnblogs.com/zhuiyi/p/5900092.html)| [JavaBean classes路径调整](http://www.itnose.net/detail/6272750.html)
 
-```js
+```javascript
 // 准备环境
 JDK
 Eclipse Java EE
@@ -60,7 +62,7 @@ Atom的autocomplete-jsp插件
 
 ![](/assets/idea-refresh978.png) ![](/assets/auto453.png)![](/assets/webroot-add899.png)![](/assets/classes-path785.png)![](/assets/artifacts-setting432.png)
 
-# **JSP基础**
+# JSP基础
 
 ```java
 // java server page
@@ -274,7 +276,7 @@ exception exception.getMessage()
 ````
 ```
 
-# **JSP开发基础**
+# JSP开发基础
 
 - [JSP程序设计-code-dl](http://download.csdn.net/detail/gaoyuyihao/9249135)
 - Java
@@ -325,7 +327,7 @@ ASP.NET Web Form 强大的窗体
 
 # ![](/assets/j2ee-structure77283.png)
 
-# **JSP语法/内置对象**
+# JSP语法/内置对象
 
 ```java
 // request/response
@@ -337,7 +339,7 @@ ASP.NET Web Form 强大的窗体
 在线考试系统
 ```
 
-# **JavaBean**
+# JavaBean
 
 ```java
 // JavaBean
@@ -362,7 +364,7 @@ valuebean
 // Javabean统计登录次数
 ```
 
-# **Servlet**
+# Servlet
 
 ```java
 主要用于B/S结构,用来充当一个请求控制处理的角色
@@ -427,7 +429,7 @@ HttpServletResponse接口
 // Servlet监听器 // 实现同一用户只能有一个在线
 ```
 
-# **JSP实用组件**
+# JSP实用组件
 
 - [Common-FileUpload](http://commons.apache.org/proper/commons-fileupload/)
 
@@ -449,7 +451,7 @@ DOM4J
 JDOM
 ```
 
-# **JSP数据库**
+# JSP数据库
 
 - [JSP连接JSTL-MySQL](http://www.runoob.com/jsp/jsp-database-access.html)
 
@@ -518,7 +520,7 @@ META-INF\context.xml
 JNDI Jav命名与目录接口
 ```
 
-# **JSP与AJAX**
+# JSP与AJAX
 
 ```java
 // 中文乱码 utf-8
@@ -623,7 +625,7 @@ BodyTag接口
 或者在web.xml中配置
 ```
 
-# **日志/参考**
+# 日志/参考
 
 ```java
 // JSP程序设计 第2版 郭珍 王国辉 // 我们的教材，略有错漏，但相对还好

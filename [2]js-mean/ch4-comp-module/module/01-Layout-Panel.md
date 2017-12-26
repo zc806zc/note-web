@@ -300,8 +300,11 @@ $(window).scroll(function() {
 
 - 轮播图
 
-  - 别再使用轮播图了 <https://juejin.im/post/599cf1596fb9a02481205803?utm_source=gold_browser_extension>
+  - myfocus
+  - superslide
+
   - 切割轮播图 <http://www.jq22.com/webqd2833>
+
   - 全屏垂直滚动 <http://www.jq22.com/webqd1991>
   - CSS3轮播 <http://www.jq22.com/webqd2427>
   - 渐隐效果仿dribble <http://www.jq22.com/webqd2023>

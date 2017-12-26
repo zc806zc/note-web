@@ -9,6 +9,7 @@
   - 用户体验
 
 - 响应式布局
+
 - CSS模块化
 
 # CSS实用工具集
@@ -318,6 +319,7 @@ div {
 
 # CSS module
 
+- web components <http://css-tricks.com/modular-future-web-components//>
 - <https://github.com/ruanyf/css-modules-demos> 示例
 - <https://github.com/css-modules/css-modules/blob/master/docs/get-started.md>
 - <https://github.com/ruanyf/webpack-demos> (webpack教程)
