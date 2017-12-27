@@ -12,6 +12,11 @@
   - masonry
 
     - Cascading grid layout library
+    - <https://github.com/desandro/masonry>
+
+  - neat
+
+    - <https://github.com/thoughtbot/neat>
 
   - 全屏
 
@@ -21,7 +26,7 @@
 
     - 全屏视频
 
-      - FitVids.js
+      - FitVids.js <https://github.com/davatron5000/FitVids.js>
 
         - A lightweight, easy-to-use jQuery plugin for fluid width video embeds.
 
@@ -94,6 +99,7 @@ $(function() {
 
 - 弹框
 
+  - 纯css模拟 <https://github.com/drublic/css-modal>
   - layer
   - sweetalert
 
@@ -300,14 +306,21 @@ $(window).scroll(function() {
 
 - 轮播图
 
-  - myfocus
-  - superslide
+  - (首选) slick <https://github.com/kenwheeler/slick>
 
-  - 切割轮播图 <http://www.jq22.com/webqd2833>
+    - the last carousel you'll ever need
 
-  - 全屏垂直滚动 <http://www.jq22.com/webqd1991>
-  - CSS3轮播 <http://www.jq22.com/webqd2427>
-  - 渐隐效果仿dribble <http://www.jq22.com/webqd2023>
+  - (推荐) superslide
+
+  - 轻量级
+
+    - unslider
+    - siema <https://github.com/pawelgrzybek/siema>
+
+  - 传统
+
+    - myfocus(jquery)
+
   - Camera slideshow <https://www.pixedelic.com/plugins/camera/>
 
   - fancybox
@@ -325,6 +338,14 @@ $(window).scroll(function() {
   - bxslider-4
 
     - Responsive jQuery content slider
+
+  - 切割轮播图 <http://www.jq22.com/webqd2833>
+
+  - 全屏垂直滚动 <http://www.jq22.com/webqd1991>
+
+  - CSS3轮播 <http://www.jq22.com/webqd2427>
+
+  - 渐隐效果仿dribble <http://www.jq22.com/webqd2023>
 
 ```css
 #photos {

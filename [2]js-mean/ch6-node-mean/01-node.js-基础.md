@@ -1,5 +1,9 @@
 # Node.js安装与基础
 
+- sails
+
+  - <https://github.com/balderdashy/sails>
+
 - <https://github.com/browserify/browserify>
 - <https://github.com/caolan/async>
 
@@ -167,8 +171,6 @@ npm install gulp-rename --save-dev
 npm install gulp-header --save-dev // 没有watch, 已经在API里
 ```
 
---------------------------------------------------------------------------------
-
 # JavaScript概览
 
 - Object - key
@@ -260,8 +262,6 @@ console.log(a.ago); // 1360 weeks ago
 
 # 命令行工具以及FS API
 
---------------------------------------------------------------------------------
-
 # TCP/HTTP/Connect
 
 # Express
@@ -270,19 +270,13 @@ console.log(a.ago); // 1360 weeks ago
 
 # Socket.IO
 
---------------------------------------------------------------------------------
-
 # MongoDB/MySQL
 
 # Redis
 
 # 代码共享
 
---------------------------------------------------------------------------------
-
 # 测试
-
---------------------------------------------------------------------------------
 
 # 参考
 

@@ -188,6 +188,8 @@ jq22.com
   - 日历一览 <http://www.jq22.com/webqd2183>
   - fullcalender | my97
   - 农历 <https://github.com/zzyss86/LunarCalendar>
+  - <https://github.com/dangrossman/bootstrap-daterangepicker>
+  - pickadate.js <https://github.com/amsul/pickadate.js>
 
 - 自动完成
 

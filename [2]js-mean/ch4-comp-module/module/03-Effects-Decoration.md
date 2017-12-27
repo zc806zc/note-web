@@ -4,7 +4,10 @@
 
 - 图标|字体
 
-  - <https://icons8.com/preloaders/en/free>
+  - font-awesome
+  - 阿里矢量图标库 <http://www.iconfont.cn/>
+  - svg <https://icons8.com/preloaders/en/free>
+  - google图标 <https://github.com/google/material-design-icons>
 
 - 动画
 
@@ -14,9 +17,15 @@
     - <http://www.17sucai.com/>
     - <http://microjs.com/>
 
+  - Hover.css
+
+    - <https://github.com/IanLunn/Hover>
+
   - 粒子效果
 
     - create.js
+
+  - 一组简单可爱的css动效 <https://github.com/jonsuh/hamburgers>
 
   - SuperSlide v2.1.1 <http://www.SuperSlide2.com/>
 
@@ -403,3 +412,9 @@ DragDrop.prototype.mouseMove = function(e, obj) {
 
 }
 ```
+
+# 文章
+
+- mocka <https://github.com/Chalarangelo/mocka>
+
+  - Simple, elegant content placeholder

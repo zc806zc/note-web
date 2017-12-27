@@ -35,7 +35,9 @@
 - 选座位
 
 - 计算器
+
 - 倒计时 | 计时器
+
 - 代码编辑器
 
   - codemirror
@@ -48,10 +50,20 @@
 
 # 富文本编辑器
 
+- (首选) brackets <https://github.com/adobe/brackets>
+- quill <https://github.com/quilljs/quill>
+- draft-js <https://github.com/facebook/draft-js>
 - ueditor | wangeditor
 - 经典 ckeditor | kindeditor
+- pell
+- x-editable <https://github.com/vitalets/x-editable>
+
+  - jquery
+
 - medium-editor <https://github.com/yabwe/medium-editor>
+
 - stackedit <https://github.com/benweet/stackedit>
+
 - 次选
 
   - summernote <https://github.com/summernote/summernote>
@@ -74,6 +86,10 @@
 
   - <http://www.shearphoto.com/>
 
+- img2css <https://github.com/javierbyte/img2css>
+
+  - 图片转css
+
 # 聊天
 
 - <https://github.com/RocketChat/Rocket.Chat>
@@ -91,7 +107,11 @@
   - <https://github.com/videojs/video.js>
   - open source HTML5 & Flash video player
 
-- <https://github.com/sampotts/plyr>
+- flv.js
+
+  - <https://github.com/Bilibili/flv.js>
+
+- plyr <https://github.com/sampotts/plyr>
 
 # 音频
 

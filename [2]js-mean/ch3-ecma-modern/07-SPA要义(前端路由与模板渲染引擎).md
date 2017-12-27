@@ -51,6 +51,11 @@ Vue.js 也使用了 Virtual DOM、Reactive 及组件化的思想，
  Vuex 、 VueRouter
 ```
 
+# 按需加载
+
+- loadCSS https://github.com/filamentgroup/loadCSS
+  - 异步加载CSS
+
 # 前端模板引擎
 
 - 性能对比
@@ -64,9 +69,13 @@ Vue.js 也使用了 Virtual DOM、Reactive 及组件化的思想，
 
   - doT
 
+- pug.js
+
+  - <https://github.com/pugjs/pug>
+
 - <https://www.zhihu.com/question/32524504>
 
-- handlebar | mustache
+- 经典 handlebar | mustache
 
 - ETPL
 
@@ -76,10 +85,6 @@ Vue.js 也使用了 Virtual DOM、Reactive 及组件化的思想，
 
   - <https://github.com/BorisMoore/jsrender>
   - with or without jQuery.
-
-- pug.js
-
-  - <https://github.com/pugjs/pug>
 
 - 基础
 
