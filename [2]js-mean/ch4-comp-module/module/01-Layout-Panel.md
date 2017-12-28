@@ -380,9 +380,12 @@ $(window).scroll(function() {
 
   - layer 推荐
   - tecent artDialog
-  - lhgdialog
+  - 传统 lhgdialog
   - JS简单 <http://www.jq22.com/webqd2525>
   - <http://www.jq22.com/webqd2001>
+  - 弹出层提取理念
+
+    - lhgdialog会销毁之前提取的内容, 这种处理似乎不太合适
 
 - 布局
 
