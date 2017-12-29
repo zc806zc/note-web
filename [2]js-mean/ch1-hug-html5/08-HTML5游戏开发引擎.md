@@ -12,6 +12,8 @@
 
     - Cocos2d-x is a suite of open-source, cross-platform, game-development tools used by millions of developers all over the world.
 
+- Hilo https://github.com/hiloteam/Hilo
+
 # Create.js
 
 - <https://createjs.com/demos/easeljs/draganddrop>
