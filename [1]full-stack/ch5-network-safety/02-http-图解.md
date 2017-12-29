@@ -28,9 +28,9 @@
 
   - <https://juejin.im/post/5a2ff29c6fb9a045132aac5a>
 
-```javascript
+- http2
 
-```
+  - <https://files.alicdn.com/tpsservice/0f6bc44e79b1aab8c849242dd6149522.pdf>
 
 - HTTP
 
@@ -46,7 +46,8 @@ TCP/IP 协议的应用层协议
 默认使用80端口
 
 // HTTP/2 // 没有子版本
-````
+`
+```
 
 - Content Security Policy
 

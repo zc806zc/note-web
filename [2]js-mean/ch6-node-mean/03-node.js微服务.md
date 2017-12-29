@@ -1,5 +1,16 @@
 # Node.js 微服务
 
+- Node.js 微应用实践
+
+  - <https://files.alicdn.com/tpsservice/740eedb3f716e354650db16171cf74d5.pdf>
+  - 微应用 -> 几个微应用组合得到产品
+    - server app运行托管
+    - framework app开发框架
+    - ui-console 运维
+    - cli 开发工具
+
+![](/assets/img/js/node-micro.jpg)
+
 ## 微服务架构
 
 - 微服务
