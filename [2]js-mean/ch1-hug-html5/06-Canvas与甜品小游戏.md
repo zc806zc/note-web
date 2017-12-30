@@ -10,6 +10,11 @@
   - Canvas是非保留性的绘图界面 记录 交互性 - save() 和 restore()
 
 - svg基础 <http://www.cnblogs.com/yizihan/p/4585396.html>
+- svg与canvas的区别
+
+  - SVG 是一种使用 XML 描述 2D 图形的语言、Canvas 通过 JavaScript 来绘制 2D 图形。
+
+- HTML5 MathML
 
 - HTML5 Canvas核心技术 <https://github.com/corehtml5canvas/code>)
 

@@ -145,8 +145,7 @@ navigator.onLine // online| offline
 
 # Web Socket-服务器通信
 
-- 相对而言最需要花时间关注
-
+- pywebsocket 支持 WebSocket 的服务
 - 通信方式
 
   - 服务器放送事件
@@ -196,6 +195,8 @@ clearPosition()
 
   - 通过下载数据
   - 利用WW执行周期性任务
+
+- HTML5 服务器发送事件(Server-Sent Events)  
 
 # 历史管理
 

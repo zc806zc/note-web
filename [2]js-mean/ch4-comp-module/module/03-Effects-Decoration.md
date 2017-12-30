@@ -8,6 +8,7 @@
   - 阿里矢量图标库 <http://www.iconfont.cn/>
   - svg <https://icons8.com/preloaders/en/free>
   - google图标 <https://github.com/google/material-design-icons>
+  - <http://cssicon.space/#/>
 
 - 动画
 

@@ -6,6 +6,8 @@
   - 关于head <http://www.css88.com/archives/6410>
 
 ```javascript
+<meta http-equiv="refresh" content="30"> // 每30秒中刷新当前页面:
+
 <meta charset="UTF-8">
 
 <!-- 视图窗口，移动端特属的标签。 -->
@@ -180,6 +182,8 @@ accesskey // 按键紊乱
 input和textarea 的autofocus required placeholder
 <script> type="application/xml"
 <html lang="en"> // 方便屏幕阅读器
+
+<map><area> http://www.runoob.com/try/try.php?filename=tryhtml_areamap
 ```
 
 ![](/assets/h5-grammar755.png)

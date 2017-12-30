@@ -1,6 +1,14 @@
 # CSS布局基础与CSS3
 
 - CSS布局基础
+
+  - 速查表 <http://www.css88.com/book/css/>
+
+  - 伪类与伪元素
+
+    - 伪类 <http://www.runoob.com/css/css-pseudo-classes.html>
+    - 伪元素 <http://www.runoob.com/css/css-pseudo-elements.html>
+
 - CSS3
 
   - 背景边框
