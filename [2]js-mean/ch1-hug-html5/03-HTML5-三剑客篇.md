@@ -1,27 +1,52 @@
 # Web Storage-数据/离线存储
 
-- store.js
-
-  - <https://github.com/marcuswestin/store.js>
-
-- <https://github.com/localForage/localForage>
-
 - 原理：（AppCache）从浏览器的缓存中分出来的一块缓存区，与传统的客户端应用同场竞技
 
 - 存储类型
 
-  - localStorage 本地存储 上限5M
-  - sessionStorage
-  - 两者的区别，以及为什么cookie可能会挂
-  - 尽量不要在客户端存储敏感信息, 因为数据缓存不会加密
-  - HTTP 专有 cookie 可以从浏览器或者服务器设置，但是只能从服务器端读取
+  - localStorage 上限5M
+  - sessionStorage 会话级
+  - cookie, 关注两者与cookie之间的区别
+
+    - 大小限制, 使用子cookie
+
+  - IndexedDB
 
 ```javascript
-// cookie
-大小限制 存储大量数据是低效的
+// globalStorage
+globalStorage[location.host].name = "Nicholas";
+var book = globalStorage[location.host].getItem("book");
+```
 
-// 子cookie
+- 注意
 
+  - 尽量不要在客户端存储敏感信息, 因为数据缓存不会加密
+  - HTTP专有cookie可以从浏览器或者服务器设置，这样就只能从服务器端读取
+
+- 第三方封装库
+
+  - store.js <https://github.com/marcuswestin/store.js>
+  - localForage <https://github.com/localForage/localForage>
+
+- 离线存储的优点
+
+  - 创建离线应用 离线访问
+  - 超级定制缓存 性能优化
+  - 改进本地存储 简单快捷
+
+- PWA
+
+- manifest file
+
+  - CACHE | NETWORK（总是服务器获取）
+  - FALLBACK 是否在线而互换
+  - SETTING:（prefer-online）
+  - 注意
+
+    - 不要缓存有查询（字符串）的页面
+    - 描述文件更新 加注释版本号
+
+```javascript
 // IE用户数据 userData 行为
 getAttribute()
 setAttribute()
@@ -29,6 +54,7 @@ removeAttribute()
 
 // cookie工具
 var CookieUtil = {
+    // 获取
     get: function(name) {
         var cookieName = encodeURIComponent(name) + "=",
             cookieStart = document.cookie.indexOf(cookieName),
@@ -43,13 +69,14 @@ var CookieUtil = {
         }
         return cookieValue;
     },
+    // 设置
     set: function(name, value, expires, path, domain, secure) {
         var cookieText = encodeURIComponent(name) + "=" +
             encodeURIComponent(value);
-        if (expires instanceof Date) {
+        if (expires instanceof Date) { // 是Date类型
             cookieText += "; expires=" + expires.toGMTString();
         }
-        if (path) {
+        if (path) { // 有这个值就进行设置
             cookieText += "; path=" + path;
         }
         if (domain) {
@@ -60,38 +87,48 @@ var CookieUtil = {
         }
         document.cookie = cookieText;
     },
+    // 重置
     unset: function(name, path, domain, secure) {
         this.set(name, "", new Date(0), path, domain, secure);
     }
 };
 
-//设置 cookie
 CookieUtil.set("name", "Nicholas");
 CookieUtil.set("book", "Professional JavaScript");
-
-//读取 cookie 的值
-alert(CookieUtil.get("name")); //"Nicholas"
-alert(CookieUtil.get("book")); //"Professional JavaScript"
-
-//删除 cookie
+console.log(CookieUtil.get("name")); //"Nicholas"
+console.log(CookieUtil.get("book")); //"Professional JavaScript"
 CookieUtil.unset("name");
 CookieUtil.unset("book");
 
 //设置 cookie，包括它的路径、域、失效日期
-CookieUtil.set("name", "Nicholas", "/books/projs/", "www.wrox.com",
-new Date("January 1, 2010"));
-
-//删除刚刚设置的 cookie
+CookieUtil.set("name", "Nicholas", "/books/projs/", "www.wrox.com", new Date("January 1, 2010"));
 CookieUtil.unset("name", "/books/projs/", "www.wrox.com");
-
-//设置安全的 cookie
 CookieUtil.set("name", "Nicholas", null, null, null, true);
+```
 
-// globalStorage
-globalStorage[location.host].name = "Nicholas";
-var book = globalStorage[location.host].getItem("book");
+- IndexDB
 
-// indexDB简单示例
+  - 从气质上讲，"关系型数据库"稳重持久，"非关系型数据库"迅速灵动
+  - 代替已经废弃但还健在的Web SQL Database
+  - <https://juejin.im/entry/599b8867518825241f787cae>
+  - MDN <https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API>
+  - 特点
+
+    - 对象存储空间，而不是存储在表里
+    - 支持异步API
+    - 解决并发问题
+
+  - 兼容
+
+    - IndexedDBShim <https://github.com/axemclion/IndexedDBShim>
+
+- IndexedDB限制
+
+  - 同源
+  - 磁盘占用问题
+  - 当浏览器中仅有一个标签页使用数据库的情况下调用 setVersion() 才能完成操作
+
+```javascript
 request.onsuccess = function(event) {
     var cursor = event.target.result;
     if (cursor) { //必须要检查
@@ -103,44 +140,6 @@ request.onsuccess = function(event) {
         console.log("Done!");
     }
 };
-```
-
-- IndexDB
-
-  - <https://juejin.im/entry/599b8867518825241f787cae?utm\_source=gold\_browser\_extension>
-  - 从气质上讲，"关系型数据库"稳重持久，"非关系型数据库"迅速灵动
-  - MDN文档 <https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB\_API>
-  - 代替已经废弃但还健在的Web SQL Database
-  - IndexedDBShim <https://github.com/axemclion/IndexedDBShim>
-
-```javascript
-// IndexDB
-对象存储空间，而不是存储在表里
-支持异步API
-解决并发问题
-
-// IndexDB限制:
-要求同源
-磁盘占用问题
-以及只有当浏览器中仅有一个标签页使用数据库的情况下调用 setVersion() 才能完成操作
-```
-
-- 离线存储的优点
-
-  - 创建离线应用 离线访问
-  - 超级定制缓存 性能优化
-  - 改进本地存储 简单快捷
-
-- 离线存储注意
-
-  - manifest file 描述文件
-  - CACHE | NETWORK（总是服务器获取） | FALLBACK 是否在线而互换 | SETTING:（prefer-online）
-  - 不要缓存有查询（字符串）的页面
-  - 描述文件更新 加注释版本号
-
-```javascript
-// 进行离线检测
-navigator.onLine // online| offline
 ```
 
 # Web Socket-服务器通信
@@ -196,7 +195,7 @@ clearPosition()
   - 通过下载数据
   - 利用WW执行周期性任务
 
-- HTML5 服务器发送事件(Server-Sent Events)  
+- HTML5 服务器发送事件(Server-Sent Events)
 
 # 历史管理
 
