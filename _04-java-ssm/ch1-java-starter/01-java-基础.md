@@ -1,5 +1,10 @@
 # Java基础
 
+- IDE
+
+  - IntelliJ IDEA
+  - NetBeans | Eclipse
+
 - 资源
 
   - [资源1](http://droidyue.com/blog/2014/11/30/java-programmer-must-read-these-9-books/) | [资源-知乎](https://www.zhihu.com/question/19848946?rf=19752221)

@@ -64,6 +64,9 @@ Atom的autocomplete-jsp插件
 
 # JSP基础
 
+- [孤傲苍狼-javaweb学习小结](http://www.cnblogs.com/xdp-gacl/category/574705.html)
+- <http://www.yiibai.com/spring/>
+
 ```java
 // java server page
 jsp 是另一种形式的servlet
