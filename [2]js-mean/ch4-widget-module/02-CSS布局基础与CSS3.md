@@ -1,73 +1,32 @@
-# CSS module
+# CSS布局基础与CSS3
 
-- <https://github.com/ruanyf/css-modules-demos> 示例
-- <https://github.com/css-modules/css-modules/blob/master/docs/get-started.md>
-- <https://github.com/ruanyf/webpack-demos> (webpack教程)
+- CSS布局基础
+- CSS3
 
-```javascript
-// 并不想多出一门编程语言
+  - 背景边框
+  - 形状/视觉效果
+  - 字体排版
+  - 用户体验
 
-从最早的Less、SASS
-到后来的 PostCSS
-再到最近的 CSS in JS
+- 响应式布局
+- CSS模块化
 
-Webpack 的css-loader插件
+# CSS实用工具集
 
-// 局部作用域
-<h1 class="_3zyde4l1yATCOkgn-DBWEL"> // 编译成一个哈希字符串
-  Hello World
-</h1>
+- Bulma
+- 常用CSS集 <https://github.com/asd0102433/blog/blob/master/前端/css有用的收集.md>
+- <https://juejin.im/entry/59af8eb8f265da247a15c27f?utm_source=gold_browser_extension>
 
-._3zyde4l1yATCOkgn-DBWEL {
-  color: red;
-}
+  - Shed.css
+  - Tachyons 快速加载，高可读性，和100%响应式界面
+  - Basscss 人性化命名
+  - Beard 具有争议的helper类
 
-// 全局作用域
-.title {
-  color: red;
-}
+- 小型CSS库
 
-:global(.title) {
-  color: green;
-}
+  - <https://juejin.im/post/5a31f53f51882555cc41deda>
 
-// 定制哈希类名
-
-// Class 的组合
-.className {
-  background-color: blue;
-}
-
-.title {
-  composes: className;
-  color: red;
-}
-
-<h1 class="_2DHwuiHWMnKTOYG45T0x34 _10B-buq6_BEOTOl9urIjf8">
-
-// 输入其他模块
-.title {
-  composes: className from './another.css';
-  color: red;
-}
-
-// 输入变量
-npm install --save postcss-loader postcss-modules-values
-
-@value blue: #0c77f8;
-@value red: #ff0000;
-@value green: #aaf200;
-
-@value colors: "./colors.css";
-@value blue, red, green from colors;
-
-.title {
-  color: red;
-  background-color: blue;
-}
-```
-
-# CSS学习资源
+# CSS布局基础
 
 - <https://segmentfault.com/a/1190000006689923>
 - 打印优化
@@ -91,10 +50,6 @@ content: 与:before 及:after 伪元素配合使用，来插入生成内容。
 ```
 
 > 前端最难的不是JS，果然还是CSS...
-
-# CSS3
-
-> 限制住自己的不是自己而是想象力
 
 # 结构与布局
 
@@ -175,7 +130,77 @@ overflow: hidden; // 触发生成BFC,使浮动元素也参与计算
   - flex <http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool>)
   - demo <http://www.ruanyifeng.com/blog/2015/07/flex-examples.html>)
 
-# 背景与边框
+# 响应式布局
+
+- 阈值
+
+```html
+<!-- Bootstrap -->
+(xs) 超小屏幕手机，小于 768px // 没有任何媒体查询相关的代码，因为这在 Bootstrap 中是默认的（移动优先）
+sm 小屏幕\平板，大于等于 768px
+md 中等屏幕|桌面显示器，大于等于 992px
+lg 大屏幕|大桌面显示器，大于等于 1200px
+
+<!-- UIkit 偏向web  -->
+.uk-align-left@s
+.uk-align-right@s    Only affects device widths of 640px and higher.
+.uk-align-left@m
+.uk-align-right@m    Only affects device widths of 960px and higher.
+.uk-align-left@l
+.uk-align-right@l    Only affects device widths of 1200px and higher.
+.uk-align-left@xl
+.uk-align-right@xl    Only affects device widths of 1600px and higher.
+```
+
+- 流式布局 = 等比例缩放 + 百分比
+
+  - 流式图片
+
+- 内外边距问题视口
+
+- 媒体查询
+
+- 20个响应式网页设计中的"神话"误区 <https://www.yrucd.com/25813.html>
+
+  - 响应式网页设计 = 移动端优化
+  - 不是每个人都看到了响应式网页设计的价值
+  - SEO对响应式网页的支持非常好，很多搜索引擎发现你的网站没有针对手机优化，就降低你的网站排名
+
+# CSS3
+
+> 限制住自己的不是技术而是想象力
+
+- 皮卡丘 <http://www.jq22.com/webqd660>
+- 仿真笔记本 <http://www.jq22.com/webqd113>
+
+- [10个优秀的CSS和JS Logo动画示例](https://zhuanlan.zhihu.com/p/26155443) | [纯CSS制作各种图案](https://segmentfault.com/a/1190000002780453)
+
+- [小丑汽车技术](https://github.com/estelle/clowncar) 把多张大图片装进一个svg
+
+- CSS3 - 把下一代CSS试验性地拆分成一组组独立的标准模块，并且是还在试验和反馈的循环
+
+- 查看兼容现状 <http://tinyurl.com/css3-stages>
+
+  - Modernizr 检测支持情况
+
+  - -prefix-free自动添加前缀 <http://leaverou.github.io/prefixfree>
+
+  - 用浏览器支持的交集
+
+- 动画
+
+- 移动性能 - 标准反模式
+
+- Web字体
+
+  - Font Squirrel <http://www.fontsquirrel.com> 推荐Callographic,Novelty,Retro
+  - Webfont Generator
+
+  - Google Fonts <http://www.google.com/fonts>
+
+  - 还面临的问题 打印优化问题 + 版权问题
+
+# CSS3背景与边框
 
 - Web标准
 - CSS编码技巧
@@ -184,7 +209,14 @@ overflow: hidden; // 触发生成BFC,使浮动元素也参与计算
 
 - 灵活的背景定位/条纹背景/复杂的背景图案/伪随机背景
 
-# 形状/视觉效果
+- 网站背景
+
+  - <https://juejin.im/entry/5a33232451882561a20a8273>
+  - 产品宣传随着滚动的背景 <https://codepen.io/randseay/pen/bVWEPJ>
+  - <https://codepen.io/zrichard/pen/wEFBd>
+  - <https://codepen.io/MKasio/pen/kEypt>
+
+# CSS3形状/视觉效果
 
 - 自适应的椭圆/平行四边形/菱形图片
 
@@ -233,7 +265,7 @@ overflow: hidden; // 触发生成BFC,使浮动元素也参与计算
 }
 ```
 
-# 字体排版
+# CSS3字体排版
 
 - 连字符断行/插入换行/调整tab的宽度
 
@@ -270,7 +302,7 @@ div {
 }
 ```
 
-# 用户体验
+# CSS3用户体验
 
 - 适合的鼠标光标
 - 扩大可点击区域
@@ -284,94 +316,92 @@ div {
 
 - 交互式的图片对比控件
 
-# CSS3
+# CSS module
 
-- [10个优秀的CSS和JS Logo动画示例](https://zhuanlan.zhihu.com/p/26155443) | [纯CSS制作各种图案](https://segmentfault.com/a/1190000002780453)
-
-- [小丑汽车技术](https://github.com/estelle/clowncar) 把多张大图片装进一个svg
-
-- CSS3 - 把下一代CSS试验性地拆分成一组组独立的标准模块，并且是还在试验和反馈的循环
-
-- 查看兼容现状 <http://tinyurl.com/css3-stages>
-
-  - Modernizr 检测支持情况
-
-  - -prefix-free自动添加前缀 <http://leaverou.github.io/prefixfree>
-
-  - 用浏览器支持的交集
-
-- 动画
-
-- 移动性能 - 标准反模式
-
-- Web字体
-
-  - Font Squirrel <http://www.fontsquirrel.com> 推荐Callographic,Novelty,Retro
-  - Webfont Generator
-
-  - Google Fonts <http://www.google.com/fonts>
-
-  - 还面临的问题 打印优化问题 + 版权问题
-
-## 响应式布局
-
-- 阈值
-
-```html
-<!-- Bootstrap -->
-(xs) 超小屏幕手机，小于 768px // 没有任何媒体查询相关的代码，因为这在 Bootstrap 中是默认的（移动优先）
-sm 小屏幕\平板，大于等于 768px
-md 中等屏幕|桌面显示器，大于等于 992px
-lg 大屏幕|大桌面显示器，大于等于 1200px
-
-<!-- UIkit 偏向web  -->
-.uk-align-left@s
-.uk-align-right@s	Only affects device widths of 640px and higher.
-.uk-align-left@m
-.uk-align-right@m	Only affects device widths of 960px and higher.
-.uk-align-left@l
-.uk-align-right@l	Only affects device widths of 1200px and higher.
-.uk-align-left@xl
-.uk-align-right@xl	Only affects device widths of 1600px and higher.
-```
-
-
-- 流式布局 = 等比例缩放 + 百分比
-
-  - 流式图片
-
-- 内外边距问题视口
-
-- 媒体查询
-
-- 20个响应式网页设计中的"神话"误区 <https://www.yrucd.com/25813.html>
-
-  - 响应式网页设计 = 移动端优化
-  - 不是每个人都看到了响应式网页设计的价值
-  - SEO对响应式网页的支持非常好，很多搜索引擎发现你的网站没有针对手机优化，就降低你的网站排名 -
-
-## 实用工具集
-
-- Bulma
-- 常用CSS集 <https://github.com/asd0102433/blog/blob/master/前端/css有用的收集.md>
-- <https://juejin.im/entry/59af8eb8f265da247a15c27f?utm_source=gold_browser_extension>
-
-  - Shed.css
-  - Tachyons 快速加载，高可读性，和100%响应式界面
-  - Basscss 人性化命名
-  - Beard 具有争议的helper类
-
-# 小型CSS库
-
-- <https://juejin.im/post/5a31f53f51882555cc41deda>
-
-## 书单
+- <https://github.com/ruanyf/css-modules-demos> 示例
+- <https://github.com/css-modules/css-modules/blob/master/docs/get-started.md>
+- <https://github.com/ruanyf/webpack-demos> (webpack教程)
 
 ```javascript
-CSS揭秘
+// 并不想多出一门编程语言
+
+从最早的Less、SASS
+到后来的 PostCSS
+再到最近的 CSS in JS
+
+Webpack 的css-loader插件
+
+// 局部作用域
+<h1 class="_3zyde4l1yATCOkgn-DBWEL"> // 编译成一个哈希字符串
+  Hello World
+</h1>
+
+._3zyde4l1yATCOkgn-DBWEL {
+  color: red;
+}
+
+// 全局作用域
+.title {
+  color: red;
+}
+
+:global(.title) {
+  color: green;
+}
+
+// 定制哈希类名
+
+// Class 的组合
+.className {
+  background-color: blue;
+}
+
+.title {
+  composes: className;
+  color: red;
+}
+
+<h1 class="_2DHwuiHWMnKTOYG45T0x34 _10B-buq6_BEOTOl9urIjf8">
+
+// 输入其他模块
+.title {
+  composes: className from './another.css';
+  color: red;
+}
+
+// 输入变量
+npm install --save postcss-loader postcss-modules-values
+
+@value blue: #0c77f8;
+@value red: #ff0000;
+@value green: #aaf200;
+
+@value colors: "./colors.css";
+@value blue, red, green from colors;
+
+.title {
+  color: red;
+  background-color: blue;
+}
 ```
 
-# CSS最佳实践
+# CSS3最佳实践
+
+- 资源
+
+  - CSS3兼容查看: caniuse.com | CSS3 Click Chart | [CSS contents and browser compatibility](http://www.quirksmode.org/css/contents.html)
+  - 添加浏览器前缀
+
+    - 在线： Prefixr
+    - Autoprefixer (灵活度更高 -> sublime插件)
+    - cssFx, CSS Agent, -prefix-tree
+    - sass, less 的 模板功能
+
+```javascript
+// 优雅降级或兼容处理
+JS实现，例框架Modernizr
+HTML5建议网站: html5please
+```
 
 - CSS-高维护性
 
@@ -461,34 +491,8 @@ p.reader-title {
 避免使用IE浏览器的图片滤镜和CSS表达式
 ```
 
-# CSS3最佳实践
-
-- 资源
-
-  - CSS3兼容查看: caniuse.com | CSS3 Click Chart | [CSS contents and browser compatibility](http://www.quirksmode.org/css/contents.html)
-  - 添加浏览器前缀
-
-    - 在线： Prefixr
-    - Autoprefixer (灵活度更高 -> sublime插件)
-    - cssFx, CSS Agent, -prefix-tree
-    - sass, less 的 模板功能
+# 参考
 
 ```javascript
-// 优雅降级或兼容处理
-JS实现，例框架Modernizr
-HTML5建议网站: html5please
+CSS揭秘
 ```
-
-# CSS3作图
-
-- 皮卡丘 <http://www.jq22.com/webqd660>
-- 仿真笔记本 <http://www.jq22.com/webqd113>
-
-# 其他
-
-- 网站背景
-
-  - <https://juejin.im/entry/5a33232451882561a20a8273>
-  - 产品宣传随着滚动的背景 <https://codepen.io/randseay/pen/bVWEPJ>
-  - <https://codepen.io/zrichard/pen/wEFBd>
-  - <https://codepen.io/MKasio/pen/kEypt>
