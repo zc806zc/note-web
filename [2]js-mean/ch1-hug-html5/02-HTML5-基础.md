@@ -118,6 +118,8 @@ f: !!str true
   - <https://github.com/h5bp/html5-boilerplate>
   - A professional front-end template for building fast, robust, and adaptable web apps or sites.
 
+- <http://www.html5tricks.com/>
+
 - HTML5秘籍
 
   - <http://www.prosetech.com/html5>
@@ -137,6 +139,7 @@ f: !!str true
   - 浏览器市场占有率 <http://gs.statcounter.com>
 
   - Can I use
+
   - 腻子脚本
 
     - <https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills>
@@ -407,7 +410,7 @@ designMode // 编辑页面
   - videojs.com 换肤定制 | Handbrake 转码
   - 视频完全方案 HTML5 + Flash + link
   - 视频自适应 <https://alistapart.com/article/creating-intrinsic-ratios-for-video>
-  - https://github.com/Chimeejs/chimee
+  - <https://github.com/Chimeejs/chimee>
 
 ```javascript
 // HTML5不行还用成熟的Flash

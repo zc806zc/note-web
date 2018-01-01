@@ -2,7 +2,8 @@
 
 - 网站
 
-  - 插件库 <http://www.jq22.com>
+  - 插件库
+    - jq22 <http://www.jq22.com> | <http://www.htmleaf.com>
   - jquery官网 <http://jquery.com>
   - 选择器手册 <http://www.runoob.com/jquery/jquery-ref-selectors.html>
   - <http://hemin.cn/jq/>
