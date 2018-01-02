@@ -455,18 +455,25 @@ if (window.FileReader) {
 
 # 表格
 
-- 固定表头
-- 固定表格列和表格头部内容可拖拽 <http://www.jq22.com/webqd1769>
-- 可滚动的tbody <http://www.jq22.com/webqd3098>
-- 表格 <https://colorlib.com/wp/css3-table-templates/>
+- 最好看的表格 <https://colorlib.com/wp/css3-table-templates/>
 
   - Crisp table <http://codepen.io/stursby/pen/HdiJh>
   - heavy table <http://codepen.io/victordarras/pen/hJHAm?editors=0110>
+
+- 固定
+  - 固定表格列和表格头部内容可拖拽 <http://www.jq22.com/webqd1769>
+  - 可滚动的tbody <http://www.jq22.com/webqd3098>
+
+- HTML5响应式表格
+
+  - CSS简单实现 <http://www.jq22.com/jquery-info6700>
+  - 好看一点的样式 <http://www.jq22.com/jquery-info1372>
 
 ```javascript
 第一步是：设置 tbody 为 display:block ，以便我们可以应用 height 和 overflow 属性。
 下一步将是：设置thead 中的 tr元素设置为 display:block。
 ```
+
 
 - 筛选排序
 
@@ -504,7 +511,7 @@ rows.sort(function(a,b){
 
 # 图表
 
-- 见可视化章节笔记
+- 在可视化章节
 
 # 其他组件
 
