@@ -319,7 +319,7 @@
 # Desktop Development 桌面开发
 
 - awt
-- Applet
+- Applet 
 - swing
 - Netbeans Platform
 - JavaFX
