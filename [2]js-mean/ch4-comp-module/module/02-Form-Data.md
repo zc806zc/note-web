@@ -37,7 +37,7 @@
     - js-xlsx <https://github.com/SheetJS/js-xlsx>
     - 网页表格导出excel格式 <http://www.jq22.com/webqd2279>
 
-- 模板渲染引擎
+- 模板|渲染引擎
 
   - artTemplate
 
@@ -143,11 +143,6 @@ new Date().Format("yyyy-MM-dd E HH:mm:ss")
 - 其他组件
 
 - 其他功能类
-
-```javascript
-// 参考
-jq22.com
-```
 
 # 按钮
 
@@ -461,6 +456,7 @@ if (window.FileReader) {
   - heavy table <http://codepen.io/victordarras/pen/hJHAm?editors=0110>
 
 - 固定
+
   - 固定表格列和表格头部内容可拖拽 <http://www.jq22.com/webqd1769>
   - 可滚动的tbody <http://www.jq22.com/webqd3098>
 
@@ -473,7 +469,6 @@ if (window.FileReader) {
 第一步是：设置 tbody 为 display:block ，以便我们可以应用 height 和 overflow 属性。
 下一步将是：设置thead 中的 tr元素设置为 display:block。
 ```
-
 
 - 筛选排序
 
@@ -673,3 +668,8 @@ function Trim(str) {
 - 进度条 progress
 
   - nprogress <https://github.com/rstacruz/nprogress>
+
+# 懒加载与瀑布流
+
+- 懒加载
+- 瀑布流
