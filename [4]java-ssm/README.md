@@ -42,9 +42,9 @@
     - StringBuffer and StringBuilder
     - Regular Expression
 
-  - java.lang.
+  - java.lang.*
 
-  - java.util.
+  - java.util.*
 
     - Collections Framework
     - Concurrency Framework
@@ -56,14 +56,14 @@
 
     - Miscellaneous Utilities
 
-  - java.io.
+  - java.io.*
 
-  - java.nio.
+  - java.nio.*
 
-  - java.net.
-  - java.rmi.
-  - java.sql.
-  - javax.sql.
+  - java.net.*
+  - java.rmi.*
+  - java.sql.*
+  - javax.sql.*
 
 # Algorithms & Data Structure 算法与数据结构
 
@@ -84,7 +84,7 @@
 
 - Computer Architecture 计算机科学
 
-  - Memory Hierarchy 存储？
+  - Memory Hierarchy 存储
   - Parallelism
   - Multiprocessor Systems
 
@@ -121,19 +121,19 @@
 
 - Java Commonly-used 3rd-party Libraries
 
-  - Logging
+  - Logging 日志
 
-    - log4j
+    - log4j | log4j2
     - slf4j
     - logback
 
-  - Unit Test
+  - Unit Test 单元测试
 
     - Junit
     - Mockito
     - TestNG
 
-  - Code Coverage
+  - Code Coverage 代码覆盖率
 
     - jacoco
     - Clover
@@ -167,7 +167,7 @@
     - git
     - svn
 
-  - UML
+  - UML ?? 画图
 
 # Back-end Development(Server side) 服务端
 
@@ -242,7 +242,8 @@
 
 - MessageQueue 消息队列
 
-  - AMQP - RabbitMQ
+  - AMQP
+  - RabbitMQ
   - Apache ActiveMQ
   - Apache Kafka
 
@@ -276,7 +277,7 @@
 
   - Apache Storm
 
-- Cloud
+- Cloud  云应用
 
   - Scalable Architecture
 
@@ -296,7 +297,7 @@
       - S3
       - DynamoDB
 
-- JVM-based Programming Language
+- JVM-based Programming Language 基于虚拟机的语言
 
   - Scala
   - Groovy
@@ -305,15 +306,15 @@
   - <http://www.oracle.com/technetwork/articles/java/architect-languages-2266279.html>
 
 
-# Typical Java Applications
+# Typical Java Applications 典型应用
 
-- Online Chatting (Web/Desktop System)
-- Library Management System (Web System)
-- Ticket Booking System(RESTful Web Service)
-- HTTP File Downloader (Console / Desktop)
-- P2P File Sharing (Console / Desktop)
-- Blogging System (Web / REST)
-- RDBMS UI Toolkit (Web /Desktop)
+- Online Chatting (Web/Desktop System) 在线聊天
+- Library Management System (Web System) 图书管理系统
+- Ticket Booking System(RESTful Web Service) 订票系统
+- HTTP File Downloader (Console / Desktop) 文件系统
+- P2P File Sharing (Console / Desktop) ????
+- Blogging System (Web / REST) 博客
+- RDBMS UI Toolkit (Web /Desktop) 关系数据库管理系统
 
 # Desktop Development 桌面开发
 
