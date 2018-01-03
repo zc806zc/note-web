@@ -465,6 +465,10 @@ if (window.FileReader) {
   - CSS简单实现 <http://www.jq22.com/jquery-info6700>
   - 好看一点的样式 <http://www.jq22.com/jquery-info1372>
 
+- 自动生成表格
+
+  - <http://www.jq22.com/jquery-info3656>
+
 ```javascript
 第一步是：设置 tbody 为 display:block ，以便我们可以应用 height 和 overflow 属性。
 下一步将是：设置thead 中的 tr元素设置为 display:block。

@@ -53,7 +53,8 @@ Vue.js 也使用了 Virtual DOM、Reactive 及组件化的思想，
 
 # 按需加载
 
-- loadCSS https://github.com/filamentgroup/loadCSS
+- loadCSS <https://github.com/filamentgroup/loadCSS>
+
   - 异步加载CSS
 
 # 前端模板引擎
@@ -161,11 +162,15 @@ Ajax 使用HTML5 History API
 
 # 前后端渲染的区别
 
+- JSP等渲染
+- freemarker | thmyleaf
+- 前端模板渲染
 - 服务端渲染 SSR
 
 # 前端路由库
 
-- <https://github.com/browserstate/history.js>
+- history.js <https://github.com/browserstate/history.js>
+- director <https://github.com/flatiron/director>
 - 前端路由的两种实现原理
 
   - <https://segmentfault.com/a/1190000007238999>
