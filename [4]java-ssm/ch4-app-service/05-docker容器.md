@@ -1,6 +1,7 @@
 # Docker
 
 - 安装
+
 - management UI
 
   - <https://github.com/portainer/portainer>
@@ -68,31 +69,16 @@ VMware
 
 - Docker镜像使用
 
-````go
-```
 
 - Docker 安装 Nginx/Apache/Tomcat
 
-```go
-````
+
 
 - Docker安装 PHP
 
-````go
-```
 
 - Docker安装Python
 
-```go
-````
+
 
 - Docker安装 MYSQL/MongoDB/Redis
-
-````go
-```
-
-- 参考
-
-```go
-菜鸟教程
-````
