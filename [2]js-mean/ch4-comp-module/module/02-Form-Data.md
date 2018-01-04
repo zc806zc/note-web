@@ -4,7 +4,8 @@
 
 - 按钮
 
-  - loading按钮
+  - loading按钮(提交按钮)
+  - 查询按钮(是否是最新搜索结果)
 
 - 表单
 
@@ -674,6 +675,8 @@ function Trim(str) {
 - 进度条 | progress
 
   - nprogress <https://github.com/rstacruz/nprogress>
+
+- 超链接悬浮上去时, 打开新窗口图标提示  
 
 # 懒加载与瀑布流
 
