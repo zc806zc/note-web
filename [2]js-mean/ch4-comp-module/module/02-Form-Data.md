@@ -4,7 +4,8 @@
 
 - 按钮
 
-  - loading按钮
+  - loading按钮(提交按钮)
+  - 查询按钮(是否是最新搜索结果)
 
 - 表单
 
@@ -42,6 +43,7 @@
   - artTemplate
 
 ```javascript
+// 导出
 var daochu = (function() {
     var uri = 'data:application/vnd.ms-excel;base64,',
         template = template = '<html 字数限制省略属性><meta http-equiv="Content-Type" charset=utf-8"><head><!--[if gte mso 9]> <head><!--[if gte mso 9]><xml><x:ExcelWorkbook><x:ExcelWorksheets><x:ExcelWorksheet><x:Name>{worksheet}</x:Name><x:WorksheetOptions><x:DisplayGridlines/></x:WorksheetOptions></x:ExcelWorksheet></x:ExcelWorksheets></x:ExcelWorkbook></xml><![endif]--></head><body><table>{table}</table></body></html>',
@@ -53,6 +55,7 @@ var daochu = (function() {
                 return c[p];
             })
         }
+
     return function(table, name) {
         if (!table.nodeType) table = document.getElementById(table)
         var ctx = {
@@ -138,7 +141,7 @@ Date.prototype.Format = function(fmt) {
 new Date().Format("yyyy-MM-dd E HH:mm:ss")
 ```
 
-- 图表(详见在可视化章节笔记)
+- 图表
 
 - 其他组件
 
@@ -669,9 +672,11 @@ function Trim(str) {
 
 # 提示
 
-- 进度条 progress
+- 进度条 | progress
 
   - nprogress <https://github.com/rstacruz/nprogress>
+
+- 超链接悬浮上去时, 打开新窗口图标提示  
 
 # 懒加载与瀑布流
 
