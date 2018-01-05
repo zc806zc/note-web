@@ -433,6 +433,11 @@ if (window.FileReader) {
 
 # 表单校验
 
+- superstruct
+
+  - <https://github.com/ianstormtaylor/superstruct>
+  - A simple and composable way to validate data in Javascript.
+
 - cleave.js
 
   - <https://github.com/nosir/cleave.js>
@@ -676,7 +681,7 @@ function Trim(str) {
 
   - nprogress <https://github.com/rstacruz/nprogress>
 
-- 超链接悬浮上去时, 打开新窗口图标提示  
+- 超链接悬浮上去时, 打开新窗口图标提示
 
 # 懒加载与瀑布流
 

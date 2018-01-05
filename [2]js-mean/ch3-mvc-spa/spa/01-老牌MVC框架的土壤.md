@@ -69,3 +69,5 @@ var vm = avalon.define({
 - Yesod
 
 - Immutant
+
+> vanilla.js是世界上最轻量的JS框架(qishijiushiyuansheng)
