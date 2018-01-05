@@ -200,6 +200,8 @@ function click(name,box) {
 }
 ```
 
+- 占位元素
+
 - 选项卡
 
 ```javascript

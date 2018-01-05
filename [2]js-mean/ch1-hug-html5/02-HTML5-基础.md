@@ -187,6 +187,25 @@ input和textarea 的autofocus required placeholder
 <html lang="en"> // 方便屏幕阅读器
 
 <map><area> http://www.runoob.com/try/try.php?filename=tryhtml_areamap
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document</title> 
+
+  <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+
+</body>
+</html>
 ```
 
 ![](/assets/h5-grammar755.png)
