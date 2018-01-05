@@ -86,6 +86,8 @@ content: 与:before 及:after 伪元素配合使用，来插入生成内容。
 
 - 清除浮动 <http://www.cnblogs.com/dolphinX/p/3508869.html>
 
+- 元素溢出
+
 - 自适应布局
 
   - <https://juejin.im/post/5a22d0086fb9a0451a7631ee>

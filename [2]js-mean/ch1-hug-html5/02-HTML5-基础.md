@@ -1,9 +1,9 @@
 # HTML
 
 - HTML标记争论的论坛 <http://html5doctor.com>
-- 移动meta标记
+- meta
 
-  - 关于head <http://www.css88.com/archives/6410>
+  - <http://www.css88.com/archives/6410>
 
 ```javascript
 <meta http-equiv="refresh" content="30"> // 每30秒中刷新当前页面:
@@ -67,7 +67,7 @@
 - YAML
 
   - <http://www.ruanyifeng.com/blog/2016/07/yaml.html>
-  - <https://github.com/nodeca/js-yaml> ([JS-YAML](https://github.com/nodeca/js-yaml)库 把函数和正则表达式转为字符串)
+  - JS-YAML <https://github.com/nodeca/js-yaml> 把函数和正则表达式转为字符串)
 
 ```javascript
 YAML 是专门用来写配置文件的语言，非常简洁和强大
@@ -194,7 +194,7 @@ input和textarea 的autofocus required placeholder
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Document</title> 
+  <title>Document</title>
 
   <!--[if lt IE 9]>
     <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -204,6 +204,34 @@ input和textarea 的autofocus required placeholder
 </head>
 <body>
 
+</body>
+</html>
+
+
+// 终极完美结构
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Faster</title>
+  <link rel="dns-prefetch" href="//cdn.cn/">
+
+  <link rel="preload" href="//cdn.cn/webfont.woff2" as="font">
+  <link rel="preload" href="//cdn.cn/Page1-A.js" as="script">
+  <link rel="preload" href="//cdn.cn/Page1-B.js" as="script">
+
+  <link rel="prefetch" href="//cdn.cn/Page2.js">
+  <link rel="prefetch" href="//cdn.cn/Page3.js">
+  <link rel="prefetch" href="//cdn.cn/Page4.js">
+
+  <style type="text/css">
+    /* 首页用到的CSS内联 */
+  </style>
+</head>
+<body>
+
+<script type="text/javascript" src="//cdn.cn/Page1-A.js" defer></script>
+<script type="text/javascript" src="//cdn.cn/Page1-B.js" defer></script>
 </body>
 </html>
 ```
