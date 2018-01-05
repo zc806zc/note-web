@@ -1,13 +1,3 @@
-# Idea
-
-- <https://github.com/judasn/IntelliJ-IDEA-Tutorial>
-
-```javascript
-// idea 内存溢出问题
-http://blog.csdn.net/fyqcdbdx/article/details/46788915
--server -XX:PermSize=128M -XX:MaxPermSize=256m
-```
-
 # JSP-开发环境搭建
 
 - [JSP环境搭建](http://www.jianshu.com/p/5b022371de26)
@@ -149,7 +139,7 @@ contentType要一直，否则报错
 
 # JSP生命周期
 
-```
+```java
 jspService()是用来处理客户端请求的，
 对于每一个请求，服务器会创建一个新的线程来处理该请求。
 以多线程方式执行大大降低对系统的资源需求，
@@ -276,8 +266,7 @@ exception exception.getMessage()
 
 - [当Java遇见HTML](http://www.jianshu.com/p/c7260f7588c5)
 
-````
-```
+
 
 # JSP开发基础
 
@@ -369,7 +358,7 @@ valuebean
 
 # Servlet
 
-```java
+```xml
 主要用于B/S结构,用来充当一个请求控制处理的角色
 
 // Servlet使用
@@ -628,9 +617,8 @@ BodyTag接口
 或者在web.xml中配置
 ```
 
-# 日志/参考
+# 参考
 
 ```java
-// JSP程序设计 第2版 郭珍 王国辉 // 我们的教材，略有错漏，但相对还好
 Java Web开发实践教程 王占中 崔志刚 // 感觉略厚
 ```
