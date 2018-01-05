@@ -7,3 +7,5 @@
 http://blog.csdn.net/fyqcdbdx/article/details/46788915
 -server -XX:PermSize=128M -XX:MaxPermSize=256m
 ```
+
+# 与WebStorm的区别
