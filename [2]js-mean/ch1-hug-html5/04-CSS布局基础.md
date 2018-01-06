@@ -24,7 +24,7 @@
 
 - 常用CSS集 <https://github.com/asd0102433/blog/blob/master/前端/css有用的收集.md>
 - 20个CSS高级技巧汇总 <https://juejin.im/entry/5a1b93ee6fb9a044fa1993f2>
-- 助手类CSS <https://juejin.im/entry/59af8eb8f265da247a15c27f?utm_source=gold_browser_extension>
+- 助手类CSS <https://juejin.im/entry/59af8eb8f265da247a15c27f>
 
   - Shed.css
   - Tachyons 快速加载，高可读性，和100%响应式界面
@@ -54,7 +54,7 @@
 
 - 伪元素
 
-  - <https://juejin.im/post/5a0029a45188254dd935cc40?utm_source=gold_browser_extension>
+  - <https://juejin.im/post/5a0029a45188254dd935cc40>
   - 计数器
   - 梯形标签页 <http://dabblet.com/gist/1345dc9399dc8e794502>
 
@@ -125,9 +125,9 @@ overflow: hidden; // 触发生成BFC,使浮动元素也参与计算
 
 - 负值之美(将一个元素的margin设置为负值，元素将会变大) <http://www.cnblogs.com/jscode/archive/2012/08/28/2660078.html>
 
-- CSS清单 <https://juejin.im/post/59ae076b6fb9a0248e5ce689?utm_source=gold_browser_extension>
+- CSS清单 <https://juejin.im/post/59ae076b6fb9a0248e5ce689>
 
-  - 抖动分析 <https://juejin.im/entry/59ae15126fb9a0247d4f6d16?utm_source=gold_browser_extension>
+  - 抖动分析 <https://juejin.im/entry/59ae15126fb9a0247d4f6d16>
   - A Cross-end HTML5 Game <https://github.com/hiloteam/Hilo>
 
 - 自适应内部元素

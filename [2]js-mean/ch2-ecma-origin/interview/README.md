@@ -6,7 +6,7 @@
 
 - JS实现链表
 
-- 数据结构 <https://juejin.im/post/594dfe795188250d725a220a?utm_source=gold_browser_extension>
+- 数据结构 <https://juejin.im/post/594dfe795188250d725a220a>
 - 排序算法 <https://juejin.im/post/57dcd394a22b9d00610c5ec8>
 
   - 快排

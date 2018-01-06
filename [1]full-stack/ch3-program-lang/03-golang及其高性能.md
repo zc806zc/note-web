@@ -2,7 +2,7 @@
 
 - 并发与并行
 
-  - <https://juejin.im/entry/59c645be6fb9a00a4636fec8?utm_source=gold_browser_extension>
+  - <https://juejin.im/entry/59c645be6fb9a00a4636fec8>
   - 并行:以可独立执行的进程集合的方式编程
   - 并发:以可同时执行的（可能相关的）计算指令方式编程
 

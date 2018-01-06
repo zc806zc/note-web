@@ -74,7 +74,7 @@ TCP/IP 协议的应用层协议
 不执行限制选项，只是记录违反限制的行为
 ```
 
-- <https://juejin.im/post/5a030e326fb9a0450a66c8ea?utm_source=gold_browser_extension>
+- <https://juejin.im/post/5a030e326fb9a0450a66c8ea>
 - 握手挥手...
 
 - HTTPS是运行在SSL/TLS之上的HTTP协议，SSL/TLS运行在TCP之上。所有传输的内容都经过加密，加密采用对称加密，但对称加密的密钥用服务器方的证书进行了非对称加密

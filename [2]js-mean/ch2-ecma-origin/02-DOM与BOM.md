@@ -82,7 +82,7 @@ child.parentNode.removeChild(child); // 确定父子关系才能删除的
 
 # DOM优化
 
-- <https://juejin.im/entry/59ae19666fb9a024903aceae?utm_source=gold_browser_extension>
+- <https://juejin.im/entry/59ae19666fb9a024903aceae>
 
 - DOM 性能优化
 

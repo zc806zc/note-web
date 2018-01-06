@@ -63,7 +63,7 @@ kill -9 pid
 
 - 常用命令
 
-  - <https://juejin.im/entry/599b9e07f265da246d6af09f?utm_source=gold_browser_extension>
+  - <https://juejin.im/entry/599b9e07f265da246d6af09f>
 
 - 常用软件
 

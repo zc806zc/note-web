@@ -1,16 +1,16 @@
 # vue资源整理
 
 - <https://vuefe.cn/v2/guide/>
-- vue面试题 <https://juejin.im/post/59ffb4b66fb9a04512385402?utm_source=gold_browser_extension>
+- vue面试题 <https://juejin.im/post/59ffb4b66fb9a04512385402>
 - 前端每周清单半年盘点之 Vue.js 篇
 
-<https://juejin.im/post/59928d55518825486f1e8369?utm_source=gold_browser_extension>
+<https://juejin.im/post/59928d55518825486f1e8369>
 
 - <https://github.com/jsfront/src/blob/master/vuejs.md>
 - API <https://vuejs-tips.github.io/cheatsheet/>
-- vue入门到放弃 <https://juejin.im/post/59aa1248518825392656a86a?utm_source=gold_browser_extension>
-- 父子组件之间传值 <https://juejin.im/post/59ec95006fb9a0451c398b1a?utm_source=gold_browser_extension>
-- <https://juejin.im/post/59fa9257f265da43062a1b0e?utm_source=gold_browser_extension>
+- vue入门到放弃 <https://juejin.im/post/59aa1248518825392656a86a>
+- 父子组件之间传值 <https://juejin.im/post/59ec95006fb9a0451c398b1a>
+- <https://juejin.im/post/59fa9257f265da43062a1b0e>
 
   - vuex的用户信息为什么还要存一遍在浏览器里?
   - 首屏加载比较慢

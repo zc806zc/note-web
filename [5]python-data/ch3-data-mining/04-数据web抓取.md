@@ -1,6 +1,6 @@
 # 数据抓取
 
-- 反击爬虫，前端工程师的脑洞可以有多大？ <https://juejin.im/entry/59deb55951882578c2084a63?utm_source=gold_browser_extension>
+- 反击爬虫，前端工程师的脑洞可以有多大？ <https://juejin.im/entry/59deb55951882578c2084a63>
   - 爬虫是可以无限逼近于真人的
     - chrome headless或phantomjs来模拟浏览器环境
     - tesseract识别验证码

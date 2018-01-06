@@ -236,7 +236,7 @@ Flux 的最大特点，就是数据的"单向流动"
 
 # Preact
 
-- <https://juejin.im/post/5a0191f25188254de1699b0b?utm_source=gold_browser_extension>
+- <https://juejin.im/post/5a0191f25188254de1699b0b>
 - component
 - h函数
 - render
