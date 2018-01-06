@@ -52,6 +52,10 @@
 /* put this class into your main.css file with "display:none;" */
 ```
 
+- 双飞翼布局
+
+  - <https://juejin.im/post/5a09570c6fb9a045167caf21>
+
 - 伪元素
 
   - <https://juejin.im/post/5a0029a45188254dd935cc40>
