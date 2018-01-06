@@ -263,6 +263,7 @@ history.replaceState({name:"Greg"}, "Greg's page");
 
 - File API - 操作文件
 
+  - 前端本地文件操作与上传 <https://juejin.im/post/5a193b4bf265da43052e528a>
   - FileReader - 异步文件读取机制
   - 能读取拖放上来的文件 实现拖放上传功能
   - 使用XHR上传文件

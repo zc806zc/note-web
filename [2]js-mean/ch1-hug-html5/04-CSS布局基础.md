@@ -23,6 +23,7 @@
 # CSS实用工具集
 
 - 常用CSS集 <https://github.com/asd0102433/blog/blob/master/前端/css有用的收集.md>
+- 20个CSS高级技巧汇总 <https://juejin.im/entry/5a1b93ee6fb9a044fa1993f2>
 - 助手类CSS <https://juejin.im/entry/59af8eb8f265da247a15c27f?utm_source=gold_browser_extension>
 
   - Shed.css
