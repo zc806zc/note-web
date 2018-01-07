@@ -6,8 +6,14 @@
 
   - <https://github.com/balderdashy/sails>
 
-- <https://github.com/browserify/browserify>
-- <https://github.com/caolan/async>
+- browserify <https://github.com/browserify/browserify>
+
+- async <https://github.com/caolan/async>
+
+- nw.js
+
+  - <https://github.com/nwjs/nw.js>
+  - Call all Node.js modules directly from DOM/WebWorker and enable a new way of writing applications with all Web technologies.
 
 - hackathon-starter <https://github.com/sahat/hackathon-starter>
 
