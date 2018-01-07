@@ -59,6 +59,10 @@ Vue.js 也使用了 Virtual DOM、Reactive 及组件化的思想，
 
 # 前端模板引擎
 
+- 字符串模板浅析
+
+  - <https://juejin.im/post/5a373e096fb9a044fc44d4c9>
+
 - 性能对比
 
   - <https://www.cnblogs.com/guohu/p/3870677.html>
