@@ -2,7 +2,9 @@
 
 - 开发
 
-  - 浏览器插件 Batarang
+  - 浏览器插件
+    - Batarang
+    - ng-inspector for AngularJS
 
 - 基础
 
