@@ -1,12 +1,19 @@
-# 组件BUG
+# 文件BUG
 
-- line-hight影响子元素
+- 网上直接拷贝下来的可能有隐藏字符
+
+# 组件BUG
 
 - <http://www.w3help.org/zh-cn/kb/>
 
-- 既悬浮又点击导航
+- line-hight的影响
 
-- 下拉菜单 连续触发BUG <https://www.youyong.top/article/11592663d6394>
+- 既悬浮又点击
+
+- 悬浮下拉菜单连续触发BUG
+
+  - <https://www.youyong.top/article/11592663d6394>
+  - filter(':not(:animated)')
 
 ```javascript
 $("td").hover(
