@@ -14,9 +14,3 @@
   - 二分查找
 
 ![排序-复杂度分析](https://user-gold-cdn.xitu.io/2016/11/29/4abde1748817d7f35f2bf8b6a058aa40)
-
-- flexbox
-- React Vue等的常识
-- MySQL事务、索引、主从复制
-- BootStrap模态框等的源码实现
-- 数据库

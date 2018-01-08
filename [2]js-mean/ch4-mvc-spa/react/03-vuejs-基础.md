@@ -8,7 +8,6 @@
 - 资源
 
   - 前端每周清单半年盘点之 Vue.js 篇 <https://juejin.im/post/59928d55518825486f1e8369>
-  - <https://github.com/jsfront/src/blob/master/vuejs.md>
   - vue入门到放弃 <https://juejin.im/post/59aa1248518825392656a86a>
 
 - vue面试题
@@ -35,10 +34,16 @@
   - vue sytnax hightlight
 
 - 性能优化
+
   - bigpipe | bigrender
 
-# Vue语法
+- IDEA
 
+  - 下载gitignore等
+  - 下载Vue相关插件
+  - language设为ECMA6
+
+# Vue语法
 
 - 语法
 
@@ -101,7 +106,6 @@ vm.$watch('a', function (newVal, oldVal) {
 函数总会重新调用执行
 ```
 
-
 - 组件 prop
 
 ```javascript
@@ -123,8 +127,7 @@ componentUpdated // 被绑定元素所在模板完成一次更新周期时调用
 
 # Vue内置路由
 
-- 路由演示 https://github.com/chrisvfritz/vue-2.0-simple-routing-example
-
+- 路由演示 <https://github.com/chrisvfritz/vue-2.0-simple-routing-example>
 
 # Axios封装
 
