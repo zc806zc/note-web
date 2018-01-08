@@ -243,10 +243,8 @@ npm install --save postcss-loader postcss-modules-values
 - 常用CSS集
 
   - 148个资源让你成为CSS专家 <https://segmentfault.com/a/1190000006689923>
-  - <https://github.com/asd0102433/blog/blob/master/前端/css有用的收集.md>
   - 月报常用CSS <https://github.com/jsfront/src/blob/master/css.md>
   - 小型CSS库 <https://juejin.im/post/5a31f53f51882555cc41deda>
-  - 20个CSS高级技巧汇总 <https://juejin.im/entry/5a1b93ee6fb9a044fa1993f2>
   - CSS清单 <https://juejin.im/post/59ae076b6fb9a0248e5ce689>
 
     - 抖动分析 <https://juejin.im/entry/59ae15126fb9a0247d4f6d16>
