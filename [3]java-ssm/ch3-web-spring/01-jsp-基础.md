@@ -1,13 +1,13 @@
-# JSP-开发环境搭建
+# JSP时代
 
-- [JSP环境搭建](http://www.jianshu.com/p/5b022371de26)
 
-  - [JDK环境变量配置](http://jingyan.baidu.com/article/6dad5075d1dc40a123e36ea3.html) | [云盘下载 密码vipr](http://pan.baidu.com/s/1o7pUJOm)
-  - [ECLIPSE - 新建JSP模板](http://blog.csdn.net/peixuh/article/details/12623547) | [Eclipse支持HTML自动提示](http://www.cnblogs.com/zhuawang/p/5596455.html)
-  - [使用IntelliJ IDEA开发JavaWeb项目](http://youthlin.com/20151128.html)
-  - [Idea导出war](http://blog.csdn.net/thehide/article/details/52042487) | [Tomcat-IDEA虚拟目录](http://www.cnblogs.com/zhuiyi/p/5900092.html)| [JavaBean classes路径调整](http://www.itnose.net/detail/6272750.html)
+- JSP开发环境搭建
 
-```javascript
+  - JDK环境变量配置 <http://jingyan.baidu.com/article/6dad5075d1dc40a123e36ea3.html>
+  - 云盘下载 密码vipr <http://pan.baidu.com/s/1o7pUJOm>
+  - <http://www.jianshu.com/p/5b022371de26>
+
+```java
 // 准备环境
 JDK
 Eclipse Java EE
@@ -23,8 +23,14 @@ eclipse与tomcat的绑定  window|preferences
 netstat -ano
 找到对应端口的pid
 再到 任务管理器 去结束进程
+```
 
+- Eclipse
 
+  - ECLIPSE - 新建JSP模板 <http://blog.csdn.net/peixuh/article/details/12623547>
+  - Eclipse支持HTML自动提示 <http://www.cnblogs.com/zhuawang/p/5596455.html>
+
+```java
 // 新建工程文件
 File|New|Dynamic Web Project
 WebContent下new JSP file
@@ -35,16 +41,20 @@ charset 与 pageEncoding建议都改成UTF-8
 包括 浏览器上页面的显示编码
 文件的存储编码
 还有在编辑器上的显示编码
+```
 
+- IDEA(推荐)
 
+  - 使用IntelliJ IDEA开发JavaWeb项目 <http://youthlin.com/20151128.html>
+  - Idea导出war <http://blog.csdn.net/thehide/article/details/52042487>
+  - Tomcat-IDEA虚拟目录 <http://www.cnblogs.com/zhuiyi/p/5900092.html>
+  - JavaBean classes路径调整 <http://www.itnose.net/detail/6272750.html>
 
-// 编辑器/IDE
-// (首选) Intellij IDEA
+```javascript
 注意选择Java Enterprise栏的 Web Application
 JSP模板设置 http://www.phperz.com/article/15/0923/159051.html
 
-// 记得及时刷新
-因为Java不是解释型的 千万别被这个反复坑到...
+记得及时刷新缓存
 
 // (次次选)Atom + Eclipse
 Atom的autocomplete-jsp插件
@@ -54,13 +64,16 @@ Atom的autocomplete-jsp插件
 
 # JSP基础
 
-- [孤傲苍狼-javaweb学习小结](http://www.cnblogs.com/xdp-gacl/category/574705.html)
-- <http://www.yiibai.com/spring/>
+> jsp(java server page) 是另一种形式的servlet
+
+- JSP程序设计 http://download.csdn.net/detail/gaoyuyihao/9249135
+
+- 动作标识与指令标识
+
+  - 动作标识是在请求处理阶段按照在页面中出现的顺序被执行的,只有在它们被执行的时候才会去执行自己所具有的的功能
+  - 而指令标识,在JSP页面被执行是首先进入翻译阶段,程序会先查找页面的指令标识并将它们转换成servlet,所以这些指令标识会首先执行，从而设置整个JSP页面
 
 ```java
-// java server page
-jsp 是另一种形式的servlet
-
 // 指令
 page指令： 通常位于jsp页面的顶端，同一个页面可以有多个page指令。
 include指令：将一个外部文件嵌入到jsp文件中。
@@ -71,14 +84,6 @@ taglib指令 ：使用标签定义新的自定义标签。
 
 // include动作
 <jsp:include page="url" flush="true"/>
-
-// 动作标识与指令标识
-动作标识是在请求处理阶段按照在页面中出现的顺序被执行的
-只有在它们被执行的时候才会去执行自己所具有的的功能
-而指令标识
-在JSP页面被执行是首先进入翻译阶段
-程序会先查找页面的指令标识并将它们转换成servlet
-所以这些指令标识会首先执行，从而设置整个JSP页面
 
 // 转发请求 request对象会保留并带到目标页面
 // 不同于请求重定向
@@ -160,7 +165,7 @@ servlet是常驻在服务器内存中。
     - session httpSession.getAttribute()
     - application 只要没有关闭服务器就会一直存在
 
-```java
+```html
 当程序执行<jsp:setProperty>标识时，
 会按照page request session application的顺序来查找Bean示例
 
@@ -211,7 +216,7 @@ getProperty
       <%
          request.getRequestDispatcher("testScope.jsp").forward(request, response);
       %>
-  </body>
+</body>
 ```
 
 # cookie
@@ -262,16 +267,11 @@ pageContext 获取会话范围  // 集大成者，通过它可以访问其他所
 exception exception.getMessage()
 ```
 
-# 参考
+# 参考文档
 
-- [当Java遇见HTML](http://www.jianshu.com/p/c7260f7588c5)
-
-
+- 当Java遇见HTML <http://www.jianshu.com/p/c7260f7588c5>
 
 # JSP开发基础
-
-- [JSP程序设计-code-dl](http://download.csdn.net/detail/gaoyuyihao/9249135)
-- Java
 
 ```java
 // Java里，类是最小单位，
@@ -285,7 +285,7 @@ exception exception.getMessage()
 可以方便地对集合内的数据进行curd
 
 // throw throws
-````
+```
 
 - JSP
 
@@ -519,12 +519,7 @@ JNDI Jav命名与目录接口
 // String name = request.getParameter("name");
 // out.println("姓名" + new String(name.getBytes("iso-8859-1"),"utf-8"));
 
-// 浏览器兼容
-使用AJAX框架 // 对象封装 避免大量重写
 
-// 客户端更多的压力 // 性能问题
-优化for循环
-将DOM结点附加到文档上
 减少 . 操作符的使用
 
 // AJAX实现注册时用户名的查重
