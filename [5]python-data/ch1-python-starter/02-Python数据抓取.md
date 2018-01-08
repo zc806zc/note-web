@@ -1,6 +1,6 @@
 # 示例开火
 
-- 32个Python爬虫项目让你一次吃到撑 <https://juejin.im/entry/59a8b449f265da248535eba1?utm\_source=gold\_browser\_extension>
+- 32个Python爬虫项目让你一次吃到撑 <https://juejin.im/entry/59a8b449f265da248535eba1>
 
 # 字符串解析
 

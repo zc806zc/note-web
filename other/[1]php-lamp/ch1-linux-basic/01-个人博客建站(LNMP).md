@@ -67,7 +67,7 @@ kill -9 pid
 
 - 常用软件
 
-<https://juejin.im/entry/599bdfb8f265da24722fb77d?utm\_source=gold\_browser\_extension\#%E9%9F%B3%E9%A2%91>
+<https://juejin.im/entry/599bdfb8f265da24722fb77d\#%E9%9F%B3%E9%A2%91>
 
 - 安装
 

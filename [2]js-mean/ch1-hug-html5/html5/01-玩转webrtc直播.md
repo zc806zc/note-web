@@ -9,7 +9,7 @@
 - 音频回声抵消
 - getUserMadia
 
-- <https://juejin.im/entry/599657196fb9a0249e3b2062?utm\_source=gold\_browser\_extension>
+- <https://juejin.im/entry/599657196fb9a0249e3b2062>
 
 - HLS 啥都好，就是延迟性太大了，估计苹果一开始设计的时候，并不在乎它的延时性
 

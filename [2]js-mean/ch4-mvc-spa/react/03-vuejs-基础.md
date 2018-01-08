@@ -1,54 +1,44 @@
-# vue资源整理
+# Vue.js
 
-- <https://vuefe.cn/v2/guide/>
-- vue面试题 <https://juejin.im/post/59ffb4b66fb9a04512385402>
-- 前端每周清单半年盘点之 Vue.js 篇
+- API
 
-<https://juejin.im/post/59928d55518825486f1e8369>
+  - <https://vuefe.cn/v2/guide/>
+  - <https://vuejs-tips.github.io/cheatsheet/>
 
-- <https://github.com/jsfront/src/blob/master/vuejs.md>
-- API <https://vuejs-tips.github.io/cheatsheet/>
-- vue入门到放弃 <https://juejin.im/post/59aa1248518825392656a86a>
-- 父子组件之间传值 <https://juejin.im/post/59ec95006fb9a0451c398b1a>
-- <https://juejin.im/post/59fa9257f265da43062a1b0e>
+- 资源
 
-  - vuex的用户信息为什么还要存一遍在浏览器里?
-  - 首屏加载比较慢
-  - SSR(服务端渲染就能满足你的需求),因为请求回来就是一个处理完毕的 html
-  - 写小程序 wepy
-  - mock
-  - 页面拦截 <https://router.vuejs.org/zh-cn/advanced/navigation-guards.html>
+  - 前端每周清单半年盘点之 Vue.js 篇 <https://juejin.im/post/59928d55518825486f1e8369>
+  - <https://github.com/jsfront/src/blob/master/vuejs.md>
+  - vue入门到放弃 <https://juejin.im/post/59aa1248518825392656a86a>
 
-- 首屏加载
+- vue面试题
 
-  - <https://juejin.im/post/5a291092518825293b50366d>
+  - <https://juejin.im/post/59ffb4b66fb9a04512385402>
 
-- vue UI
+- UI框架
 
   - element | iview | vux
   - Vuetify <https://github.com/vuetifyjs/vuetify>
 
-- Vue Admin
+  - Vue Admin
 
-  - <https://github.com/PanJiaChen/vue-element-admin>
-  - quasar <https://github.com/quasarframework/quasar>
+    - <https://github.com/PanJiaChen/vue-element-admin>
+    - quasar <https://github.com/quasarframework/quasar>
 
-    - 利用 Vue，通过一套代码搞定响应式网站、PWA、hybrid 移动应用以及 Electron app。
+      - 利用 Vue，通过一套代码搞定响应式网站、PWA、hybrid 移动应用以及 Electron app
 
-# vue语法
+# 开发环境配置
 
-- computed vs methods
+- vue-cli插件
 
-```javascript
-我们可以使用 methods 来替代 computed，
-效果上两个都是一样的
-但是 computed 是基于它的依赖缓存，
-只有相关依赖发生改变时才会重新取值。
+  - vue
+  - vue sytnax hightlight
 
-而使用 methods
-在重新渲染的时候
-函数总会重新调用执行
-```
+- 性能优化
+  - bigpipe | bigrender
+
+# Vue语法
+
 
 - 语法
 
@@ -98,6 +88,20 @@ vm.$watch('a', function (newVal, oldVal) {
 })
 ```
 
+- computed vs methods
+
+```javascript
+我们可以使用 methods 来替代 computed，
+效果上两个都是一样的
+但是 computed 是基于它的依赖缓存，
+只有相关依赖发生改变时才会重新取值。
+
+而使用 methods
+在重新渲染的时候
+函数总会重新调用执行
+```
+
+
 - 组件 prop
 
 ```javascript
@@ -117,27 +121,14 @@ update
 componentUpdated // 被绑定元素所在模板完成一次更新周期时调用
 ```
 
-- 路由 [路由演示](https://github.com/chrisvfritz/vue-2.0-simple-routing-example)
-- 与Riot、Backbone.js等框架的比较
-- v-if与v-show的比较 P18
-- debounce 最小延迟 更新高耗 P22
-- v-cloak 保持元素直到关联实例结束编译
+# Vue内置路由
 
-# 开发环境配置
+- 路由演示 https://github.com/chrisvfritz/vue-2.0-simple-routing-example
 
-- vue-cli插件
-
-  - vue | vue sytnax hightlight
-
-- vue + scrat.js的移动开发解决方案
-
-- 性能优化：bigpipe | bigrender
-
-- 要去学习源码
 
 # Axios封装
 
-- <https://juejin.im/post/59a22e71518825242c422604?utm\_source=gold\_browser\_extension>
+- <https://juejin.im/post/59a22e71518825242c422604>
 
 ```javascript
 const Axios = axios.create({
@@ -255,7 +246,11 @@ export default {
 };
 ```
 
-## 服务端渲染 ssr
+# 父子组件之间传值
+
+- <https://juejin.im/post/59ec95006fb9a0451c398b1a>
+
+# 服务端渲染 ssr
 
 - <https://ssr.vuejs.org/zh/>
 - 处理 Vue 单页面 SEO 的另一种思路
@@ -283,3 +278,16 @@ export default {
   }
 </script>
 ```
+
+- <https://juejin.im/post/59fa9257f265da43062a1b0e>
+
+  - vuex的用户信息为什么还要存一遍在浏览器里?
+  - 首屏加载比较慢
+  - SSR(服务端渲染就能满足你的需求),因为请求回来就是一个处理完毕的 html
+  - 写小程序 wepy
+  - mock
+  - 页面拦截 <https://router.vuejs.org/zh-cn/advanced/navigation-guards.html>
+
+- 首屏加载
+
+  - <https://juejin.im/post/5a291092518825293b50366d>

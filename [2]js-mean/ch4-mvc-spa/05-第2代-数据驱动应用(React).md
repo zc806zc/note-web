@@ -20,7 +20,7 @@
 
 - vscode插件
 
-  - <https://juejin.im/entry/599d4cb96fb9a024a27bf090?utm\_source=gold\_browser\_extension>
+  - <https://juejin.im/entry/599d4cb96fb9a024a27bf090>
 
 - 网站
 
