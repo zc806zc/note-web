@@ -159,6 +159,16 @@ lg 大屏幕|大桌面显示器，大于等于 1200px
 - postcss -> css in js
 - sass | less
 
+  - sass与scss <http://sass.bootcss.com/docs/scss-for-sass-users/>
+
+```javascript
+SCSS 是 Sass 3 引入新的语法，
+其语法完全兼容 CSS3，并且继承了 Sass 的强大功能。
+也就是说，任何标准的 CSS3 样式表都是具有相同语义的有效的 SCSS 文件。
+另外，SCSS 还能识别大部分 CSS hacks（一些 CSS 小技巧）和特定于浏览器的语法，
+例如：古老的 IE filter 语法。
+```
+
 # CSS模块化
 
 - styled-components
