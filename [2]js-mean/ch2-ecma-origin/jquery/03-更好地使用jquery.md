@@ -57,7 +57,7 @@ for (let i = 0; i < 1e7; i++) {}
 - <http://www.jb51.net/article/47639.htm>
 - 规范
 
-  - 定义jQuery变量是添加$符号
+  - 定义jQuery变量时添加$符号
   - 尽量使用.on方法
   - 尽量使用最新版本的jQuery
   - 尽量使用原生Javascript
@@ -112,8 +112,9 @@ var menu = header.find('.menu');
 var menu = $('.menu', header);
 
 
-var linkContacts = $('.contact-links div.side-wrapper');
-var linkContacts = $('a.contact-links .side-wrapper'); // better
+var linkContacts = $('a.contact-links .side-wrapper');
+var linkContacts = $('.contact-links div.side-wrapper'); // better
+
 
 // 使用find
 var divs = $('.testdiv', '#pageBody'); // 2353 on Firebug 3.6
