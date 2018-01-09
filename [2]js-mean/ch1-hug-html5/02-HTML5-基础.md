@@ -4,7 +4,7 @@
 - Head
 
   - meta <http://www.css88.com/archives/6410>
-  - <https://juejin.im/entry/5a5395d76fb9a01c9e45d027?utm_source=gold_browser_extension>
+  - <https://juejin.im/entry/5a5395d76fb9a01c9e45d027>
 
 ```javascript
 <meta http-equiv="refresh" content="30"> // 每30秒中刷新当前页面:
