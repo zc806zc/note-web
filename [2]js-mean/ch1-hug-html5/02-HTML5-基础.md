@@ -1,14 +1,13 @@
 # HTML
 
 - HTML标记争论的论坛 <http://html5doctor.com>
-- meta
+- Head
 
-  - <http://www.css88.com/archives/6410>
+  - meta <http://www.css88.com/archives/6410>
+  - <https://juejin.im/entry/5a5395d76fb9a01c9e45d027?utm_source=gold_browser_extension>
 
 ```javascript
 <meta http-equiv="refresh" content="30"> // 每30秒中刷新当前页面:
-
-<meta charset="UTF-8">
 
 <!-- 视图窗口，移动端特属的标签。 -->
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
@@ -34,23 +33,17 @@
 <!-- 微软的老式浏览器 -->
 <meta name="MobileOptimized" content="320">
 
-<!-- uc强制竖屏 -->
-<meta name="screen-orientation" content="portrait">
+<!-- 强制竖屏 -->
+<meta name="screen-orientation" content="portrait"> <!-- uc强制竖屏 -->
+<meta name="x5-orientation" content="portrait"> <!-- QQ强制竖屏 -->
 
-<!-- QQ强制竖屏 -->
-<meta name="x5-orientation" content="portrait">
+<!-- 强制全屏 -->
+<meta name="full-screen" content="yes"> <!-- UC强制全屏 -->
+<meta name="x5-fullscreen" content="true"> <!-- QQ强制全屏 -->
 
-<!-- UC强制全屏 -->
-<meta name="full-screen" content="yes">
-
-<!-- QQ强制全屏 -->
-<meta name="x5-fullscreen" content="true">
-
-<!-- UC应用模式 -->
-<meta name="browsermode" content="application">
-
-<!-- QQ应用模式 -->
-<meta name="x5-page-mode" content="app">
+<!-- 应用模式 -->
+<meta name="browsermode" content="application"> <!-- UC应用模式 -->
+<meta name="x5-page-mode" content="app"> <!-- QQ应用模式 -->
 
 <!-- windows phone 点击无高光 -->
 <meta name="msapplication-tap-highlight" content="no">
@@ -104,30 +97,22 @@ f: !!str true
 // 锚点&和别名*，可以用来引用
 ```
 
-- 浏览器内核与渲染引擎
+- 浏览器内核
+- 渲染引擎
+
+  - Pug
 
 > 浏览器会思考，而且经常会取笑我们
 
 # 积极拥抱HTML5
 
-> 开发人员就不要说H5了,不然会显得自己很low, HTML5 ≠ 那些个酷炫的页面, HTML5更多的是新标准而不是新技术
+- HTML5.2 <https://bitsofco.de/whats-new-in-html-5-2>
+- HTML5让你惊艳的 demo <https://www.zhihu.com/question/24398907>
 
-- HTML5 有哪些让你惊艳的 demo？ <https://www.zhihu.com/question/24398907>
-- html5-boilerplate
+- 资源
 
-  - <https://github.com/h5bp/html5-boilerplate>
-  - A professional front-end template for building fast, robust, and adaptable web apps or sites.
-
-- <http://www.html5tricks.com/>
-
-- HTML5秘籍
-
-  - <http://www.prosetech.com/html5>
-
-- HTML5移动开发
-
-  - <http://www.oreilly.com/pub/missingmanuals/html5tmm2e>
-  - <http://www.standardista.com/mobile/>
+  - HTML5秘籍 <http://www.prosetech.com/html5>
+  - <http://www.html5tricks.com/>
 
 - 渐近增强|优雅降级
 
