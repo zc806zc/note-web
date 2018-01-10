@@ -1,8 +1,47 @@
-# JSON优雅地封装
+# JSON
 
-- 拦截
+- 解析与序列化
 
 ```javascript
+// 序列化选项  过滤
+var book = {
+  "title": "Professional JavaScript",
+  "authors": [
+    "Nicholas C. Zakas"
+  ],
+  edition: 3,
+  year: 2011
+};
+var jsonText = JSON.stringify(book, ["title", "edition"]);
+// {"title":"Professional JavaScript","edition":3}
+```
+
+# JSON和Ajax
+
+- 工具
+
+  - 校验工具 JSONLint http://www.jsonlint.com/
+  - 构建JSON逻辑模型 JSON Editor Online http://jsoneditoronline.org/
+  - JSON→CSV https://github.com/konklone/json
+  - 用 前端助手chrome扩展 格式化
+
+- JSON
+
+- AJAX
+
+  - Ajax的核心： XMLHttpRequest
+  - 普通网页流程 处理 - 等待 - 处理 -等待
+  - Asynchronous Javascript And XML
+  - 按需获取数据, 减少冗余请求和响应, 减轻服务器负担,节省带宽，
+  - 用户体验,不刷新页面的情况下与服务器进行通信
+
+
+# 优雅封装JSON
+
+- 添加拦截, 处理后台发过来数据
+
+```javascript
+//
 const apiService = new Proxy(axios, {
   get (target, propKey, receiver) {
     return function (...args) {
@@ -27,205 +66,9 @@ apiService.get('/user/12345')
     });
 ```
 
-# JSON
-
-- JSON 字符串必须使用双引号
-- JSON 中的对象要求给属性加引号
-- 没有末尾的分号
-- 解析与序列化
-
-  - toJSON() 可以作为函数过滤器的补充
-
-```javascript
-// json示例
-[
-    {
-        "title": "Professional JavaScript",
-        "authors": [
-            "Nicholas C. Zakas"
-        ],
-        edition: 3,
-        year: 2011
-    },
-    {
-        "title": "Professional JavaScript",
-        "authors": [
-            "Nicholas C. Zakas"
-        ],
-        edition: 2,
-        year: 2009
-    },
-    {
-        "title": "Professional Ajax",
-        "authors": [
-            "Nicholas C. Zakas",
-            "Jeremy McPeak",
-            "Joe Fawcett"
-        ],
-        edition: 2,
-        year: 2008
-    },
-    {
-        "title": "Professional Ajax",
-        "authors": [
-            "Nicholas C. Zakas",
-            "Jeremy McPeak",
-            "Joe Fawcett"
-        ],
-        edition: 1,
-        year: 2007
-    },
-    {
-        "title": "Professional JavaScript",
-        "authors": [
-            "Nicholas C. Zakas"
-        ],
-        edition: 1,
-        year: 2006
-    }
-]
-
-// 序列化选项  过滤
-var book = {
-"title": "Professional JavaScript",
-"authors": [
-"Nicholas C. Zakas"
-],
-edition: 3,
-year: 2011
-};
-var jsonText = JSON.stringify(book, ["title", "edition"]);
-// result:
-// {"title":"Professional JavaScript","edition":3}
-```
-
-# JavaScript 与 XML
-
-- DOMParser 类型
-- XMLSerializer 类型
-- 浏览器对 XPath 的支持
-
-  - Xpath : 设计用来在 DOM 文档中查找节点的一种手段
-
-- 浏览器对 XSLT 的支持
-
-  - XSLT:利用 XPath 将文档从一种表现形式转换成另一种表现形式
-  - XSLTProcessor 类型
-
-```javascript
-var parser = new DOMParser();
-var xmldom = parser.parseFromString("<root><child/></root>", "text/xml");
-alert(xmldom.documentElement.tagName); //"root"
-alert(xmldom.documentElement.firstChild.tagName); //"child"
-var anotherChild = xmldom.createElement("child");
-xmldom.documentElement.appendChild(anotherChild);
-var children = xmldom.getElementsByTagName("child");
-alert(children.length); //2
-
-var serializer = new XMLSerializer();
-var xml = serializer.serializeToString(xmldom);
-alert(xml);
-
-// 以异步方式加载 XML 文件的典型模式如下
-// 注意要使用 XML 文档变量的名称（xmldom），不能使用 this 对象。
-// 原因是 ActiveX 控件为预防安全问题不允许使用 this 对象。
-// 虽然可以通过XML DOM文档对象加载XML文件，
-// 但公认的还是使用 XMLHttp-Request 对象比较好。
-var xmldom = createDocument();
-xmldom.async = true;
-xmldom.onreadystatechange = function () {
-    if (xmldom.readyState == 4) {
-        if (xmldom.parseError != 0) {
-            alert("An error occurred:\nError Code: " + xmldom.parseError.errorCode + "\n" + "Line: " + xmldom.parseError
-                .line + "\n" + "Line Pos: " + xmldom.parseError.linepos + "\n" + "Reason: " + xmldom.parseError.reason);
-        } else {
-            alert(xmldom.documentElement.tagName); //"root"
-            alert(xmldom.documentElement.firstChild.tagName); //"child"
-            var anotherChild = xmldom.createElement("child");
-            xmldom.documentElement.appendChild(anotherChild);
-            var children = xmldom.getElementsByTagName("child");
-            alert(children.length); //2
-            alert(xmldom.xml);
-        }
-    }
-};
-xmldom.load("example.xml");
-```
-
-# JSON和Ajax
-
-- 工具
-
-  - 校验工具 [JSONLint](http://www.jsonlint.com/)
-  - 构建JSON逻辑模型 [JSON Editor Online](http://jsoneditoronline.org/)
-  - [JSON→CSV](https://github.com/konklone/json)
-  - [JSON格式化工具](http://www.runoob.com/jsontool)
-
-- 常识
-
-```javascript
-// JSON
-JavaScript Object Notation
-JavaScript 对象表示法
-
-对象 + 数组形式
-主要是JS和PHP中的JSON
-
-// AJAX
-Asynchronous Javascript And XML
-
-普通网页流程 处理 - 等待 - 处理 -等待
-Ajax  按需 获取数据
-减少冗余请求和响应, 减轻服务器负担,节省带宽，
-数据加载 用户体验 减少等待时间
-不刷新页面的情况下与服务器进行通信
-
-AJAX引擎
-
-Ajax的核心： XMLHttpRequest
-xhr  
-
-// XML
-Extensible Markup Language
-可自定义
-描述 和存储数据
-
-// Ajax对象的创建过程
-声名对象
-var xhr = new XMLHttpRequest();
-
-发送请求
-open
-send
-使用GET方式传递 要使用
-encodeURIComponent 处理
-防止中文乱码
-
-接收返回信息
-readyState onreadystatechange事件
-status状态码
-200 ?
-403 被禁止访问
-404
-503 服务不可用
-
-获取响应信息
-responseText
-responseBody
-responseXM
-
-// 使用jQuery操作ajax
-$.get()
-$.post()
-$.ajax()
-```
-
 # JSONP
 
 ```javascript
-通过PHP跨域请求
-通过JSONP跨域请求
-
 // jQuery获取json
 $(".message").html(JSON.stringify(json));
 $.getJSON(‘http://example/service/addresses/home/1’,
@@ -301,7 +144,7 @@ String addrJsonStr =
 Address addrIn = mapper.readValue(addrJsonStr, Address.class);
 ```
 
-# E4X
+# E4X(废弃)
 
 ```javascript
 E4X 本身不是一门语言，它只是 ECMAScript 语言的可选扩展
@@ -346,7 +189,7 @@ Ajax与comet的安全问题
 // JSONP示例
 
 function handleResponse(response) {
-    alert("You’re at IP address " + response.ip + ", which is in " +
+    console.log("You’re at IP address " + response.ip + ", which is in " +
         response.city + ", " + response.region_name);
 }
 var script = document.createElement("script");
@@ -375,20 +218,72 @@ function createStreamingClient(url, progress, finished) {
     return xhr;
 }
 var client = createStreamingClient("streaming.php", function (data) {
-    alert("Received: " + data);
+    console.log("Received: " + data);
 }, function (data) {
-    alert("Done!");
+    console.log("Done!");
 });
 
 // WebSocket简单示例
 var socket = new WebSocket("ws://www.example.com/server.php");
 socket.onopen = function () {
-    alert("Connection established.");
+    console.log("Connection established.");
 };
 socket.onerror = function () {
-    alert("Connection error.");
+    console.log("Connection error.");
 };
 socket.onclose = function () {
-    alert("Connection closed.");
+    console.log("Connection closed.");
 };
+```
+
+# XML(废弃)
+
+- DOMParser 类型
+- XMLSerializer 类型
+- 浏览器对 XPath 的支持
+- 浏览器对 XSLT 的支持
+
+```javascript
+// XML
+Extensible Markup Language
+可自定义
+描述 和存储数据
+
+var parser = new DOMParser();
+var xmldom = parser.parseFromString("<root><child/></root>", "text/xml");
+console.log(xmldom.documentElement.tagName); //"root"
+console.log(xmldom.documentElement.firstChild.tagName); //"child"
+var anotherChild = xmldom.createElement("child");
+xmldom.documentElement.appendChild(anotherChild);
+var children = xmldom.getElementsByTagName("child");
+console.log(children.length); //2
+
+var serializer = new XMLSerializer();
+var xml = serializer.serializeToString(xmldom);
+console.log(xml);
+
+// 以异步方式加载 XML 文件的典型模式如下
+// 注意要使用 XML 文档变量的名称（xmldom），不能使用 this 对象。
+// 原因是 ActiveX 控件为预防安全问题不允许使用 this 对象。
+// 虽然可以通过XML DOM文档对象加载XML文件，
+// 但公认的还是使用 XMLHttp-Request 对象比较好。
+var xmldom = createDocument();
+xmldom.async = true;
+xmldom.onreadystatechange = function () {
+    if (xmldom.readyState == 4) {
+        if (xmldom.parseError != 0) {
+            console.log("An error occurred:\nError Code: " + xmldom.parseError.errorCode + "\n" + "Line: " + xmldom.parseError
+                .line + "\n" + "Line Pos: " + xmldom.parseError.linepos + "\n" + "Reason: " + xmldom.parseError.reason);
+        } else {
+            console.log(xmldom.documentElement.tagName); //"root"
+            console.log(xmldom.documentElement.firstChild.tagName); //"child"
+            var anotherChild = xmldom.createElement("child");
+            xmldom.documentElement.appendChild(anotherChild);
+            var children = xmldom.getElementsByTagName("child");
+            console.log(children.length); //2
+            console.log(xmldom.xml);
+        }
+    }
+};
+xmldom.load("example.xml");
 ```
