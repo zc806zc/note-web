@@ -2,7 +2,7 @@
 
 # echarts3知识点与升级注意
 
-- 有精简版等3类,注意加载
+- 有精简版等版本,注意加载需要
 - 使用 Canvas 或者 SVG 渲染
 
   - 在另一些数据量较大或者有图表交互动画的场景中，目前的 SVG 渲染器的性能还比不过 Canvas 渲染器
@@ -140,6 +140,8 @@ $.get('data.json').done(function (data) {
   - 数据区域缩放组件 dataZoom
   - 时间线组件 timeline
 
+    - <http://www.echartsjs.com/gallery/editor.html?c=doc-example/bar-media-timeline>
+
 - 移动端
 
 - 视觉映射
@@ -147,3 +149,5 @@ $.get('data.json').done(function (data) {
 - 事件行为
 
 - 富文本标签
+
+# echart3会超神吗

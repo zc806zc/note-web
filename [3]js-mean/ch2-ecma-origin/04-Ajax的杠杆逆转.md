@@ -20,9 +20,9 @@ var jsonText = JSON.stringify(book, ["title", "edition"]);
 
 - 工具
 
-  - 校验工具 JSONLint http://www.jsonlint.com/
-  - 构建JSON逻辑模型 JSON Editor Online http://jsoneditoronline.org/
-  - JSON→CSV https://github.com/konklone/json
+  - 校验工具 JSONLint <http://www.jsonlint.com/>
+  - 构建JSON逻辑模型 JSON Editor Online <http://jsoneditoronline.org/>
+  - JSON→CSV <https://github.com/konklone/json>
   - 用 前端助手chrome扩展 格式化
 
 - JSON
@@ -34,7 +34,6 @@ var jsonText = JSON.stringify(book, ["title", "edition"]);
   - Asynchronous Javascript And XML
   - 按需获取数据, 减少冗余请求和响应, 减轻服务器负担,节省带宽，
   - 用户体验,不刷新页面的情况下与服务器进行通信
-
 
 # 优雅封装JSON
 
@@ -144,25 +143,6 @@ String addrJsonStr =
 Address addrIn = mapper.readValue(addrJsonStr, Address.class);
 ```
 
-# E4X(废弃)
-
-```javascript
-E4X 本身不是一门语言，它只是 ECMAScript 语言的可选扩展
-几个新的全局类型
-    XML ：XML 结构中的任何一个独立的部分。
-    XMLList ：XML 对象的集合。
-    Namespace ：命名空间前缀与命名空间 URI 之间的映射。
-    QName ：由内部名称和命名空间 URI 组成的一个限定名
-其内部机制是将每一种类型（特别是XML 和 XMLList ）都映射为多个 DOM 类型
-for-each-in 循环
-使用两个点（ .. ）表示要匹配所有后代元素，
-使用 @ 字符表示应该返回一或多个特性。
-星号字符（ * ）是一个通配符，可以匹配任意类型的节点。
-所有这些查询都可以通过一组执行相同操作的方法来实现。
-
-<script type="text/javascript;e4x=1" src="e4x_file.js"></script>
-```
-
 # Ajax 与 Comet
 
 ```javascript
@@ -234,6 +214,27 @@ socket.onerror = function () {
 socket.onclose = function () {
     console.log("Connection closed.");
 };
+```
+
+# 多个Ajax, 异步
+
+# E4X(废弃)
+
+```javascript
+E4X 本身不是一门语言，它只是 ECMAScript 语言的可选扩展
+几个新的全局类型
+    XML ：XML 结构中的任何一个独立的部分。
+    XMLList ：XML 对象的集合。
+    Namespace ：命名空间前缀与命名空间 URI 之间的映射。
+    QName ：由内部名称和命名空间 URI 组成的一个限定名
+其内部机制是将每一种类型（特别是XML 和 XMLList ）都映射为多个 DOM 类型
+for-each-in 循环
+使用两个点（ .. ）表示要匹配所有后代元素，
+使用 @ 字符表示应该返回一或多个特性。
+星号字符（ * ）是一个通配符，可以匹配任意类型的节点。
+所有这些查询都可以通过一组执行相同操作的方法来实现。
+
+<script type="text/javascript;e4x=1" src="e4x_file.js"></script>
 ```
 
 # XML(废弃)
