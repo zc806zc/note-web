@@ -218,6 +218,19 @@ socket.onclose = function () {
 
 # 多个Ajax, 异步
 
+```javascript
+// jquery解决方案
+alert("setp 1");
+$.ajax({
+	  url: "admin/PfmOptionRuleItem.do",
+	  async: false, // 加上这个
+	  success: function(data){
+		  alert("hello ajax"); //①
+	  }
+});
+alert("setp 2"); //②
+```
+
 # E4X(废弃)
 
 ```javascript
