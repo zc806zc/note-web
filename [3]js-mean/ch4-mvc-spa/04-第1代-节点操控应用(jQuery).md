@@ -1,12 +1,13 @@
-# jQuery基础
+# jQuery
 
-> jQuery在渐渐退出历史舞台，因为它已然成了规范的一部分, 同样Spring也正在被规范吸容
+> jQuery在渐渐退出历史舞台，因为它已然成了规范的一部分
 
 - 网站
 
   - jquery官网 <http://jquery.com>
-  - 选择器手册 <http://www.runoob.com/jquery/jquery-ref-selectors.html>
-  - <http://hemin.cn/jq/>
+  - 选择器手册
+    - <http://www.runoob.com/jquery/jquery-ref-selectors.html>
+    - <http://hemin.cn/jq/>
 
 - 插件库
 
