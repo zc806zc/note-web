@@ -36,7 +36,7 @@
 
 - npm
 
-- node-interview <https://github.com/ElemeFE/node-interview>
+- node面试 <https://github.com/ElemeFE/node-interview>
 
   - How to pass the Node.js interview of ElemeFE
 
