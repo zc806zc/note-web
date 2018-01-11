@@ -1,7 +1,7 @@
 # JavaScript框架设计
 
 - 2017-09
-- 司徒正美
+- 司徒正美(男的~~)
 
 # 种子模块
 
@@ -19,7 +19,7 @@
 - P.js
 - JS.Class
 - simple-inheritance
-- def.js(体现JavaScript灵活性) 
+- def.js(体现JavaScript灵活性)
 
 # 选择器引擎 | 节点模块
 

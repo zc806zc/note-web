@@ -1,30 +1,29 @@
-# layui
+# Layui - 贤心
 
-- 因为layer关注
-- 设计缺陷
+- 贤心是男的......
 
-  - 表格行内编辑还不支持填充数据与更新
-  - 表格不完全支持resize, f12以后分页会消失
+- 优点
+
+  - 因为layer组件开始关注, 弹框组件非常好
+  - 表格组件整体的设计极其优雅
+  - 几乎自成体系
+  - 社区
+
+- 组件设计缺陷与建议
+
+  - 表格行内编辑还不支持填充数据与动态更新
+  - 表格不完全支持resize, f12以后分页会消失(估计已解决)
   - 弹框不支持滚动条，目前提供的参数是 是否屏蔽浏览器滚动条
-
-# jquery ui
-
-- <http://www.css88.com/jquery-ui-api/accordion/>
-
-# ejs
-
-- <https://naver.github.io/egjs/>
-- egjs is Javascript components group that brings easiest and fastest way to build a web application in your way.
-
-# cheerio
-
-- <https://github.com/cheeriojs/cheerio>
-- Fast, flexible, and lean implementation of core jQuery designed specifically for the server.
+  - 表格组件数据格式封装过于死板
+  - 自成一家的模块化系统有点尴尬
+  - 模板渲染引擎也有点尴尬
+  - 校验规则变来变去的...  
 
 # jQuery UI
 
 - 基础
 
+  - <http://www.css88.com/jquery-ui-api/accordion/>
   - [主题下载](http://jqueryui.com/themeroller/)
   - [upgrade-guide](http://jqueryui.com/upgrade-guide/)
   - [手册](http://www.runoob.com/jqueryui/jqueryui-api.html)
