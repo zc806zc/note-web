@@ -1,9 +1,12 @@
 # Angular2+
 
+- NiceFish 大漠穷秋 <https://gitee.com/mumu-osc/NiceFish>
 - ngx-admin
- - https://github.com/akveo/ngx-admin
+
+  - <https://github.com/akveo/ngx-admin>
 
 - [Code-download](https://github.com/mgechev/switching-to-angular2) | [angular2文档](https://angular.io/docs/ts/latest/quickstart.html)
+
 - 学习清单 <https://juejin.im/post/599e4ad151882524417ac921>
 
 ```
@@ -137,6 +140,7 @@ traceur // ES6转码器，将ES6代码转换为当前浏览器支持的ES5代码
 - 配置注射器
 
 - 定义实例化服务的工厂
+
 - 子注射器及其可见性
 
 ## 路由和表单
@@ -252,4 +256,4 @@ fax 引用了 input 元素，并将value传递给事件句柄
 # Aurelia
 
 - Angular 2.0的开发者之一创建了新的框架Aurelia
-- https://www.zhihu.com/question/28735192?sort=created
+- <https://www.zhihu.com/question/28735192?sort=created>
