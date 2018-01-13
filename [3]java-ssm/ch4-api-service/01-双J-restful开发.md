@@ -2,6 +2,8 @@
 
 - <https://segmentfault.com/a/1190000006735330>
 
+- <https://zhuanlan.zhihu.com/p/21644769>
+
 ```javascript
 Representational State Transfer
 一组架构约束条件和原则

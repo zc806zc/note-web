@@ -1,6 +1,9 @@
 # Java学习计划
 
 - <https://github.com/TeamStuQ/skill-map/blob/master/data/map-DevLang-Java.md>
+- Java学习路线
+
+  - 成神之路 <http://www.hollischuang.com/archives/489>
 
 # Core Java
 
@@ -61,6 +64,7 @@
   - java.nio.*
 
   - java.net.*
+
   - java.rmi.*
   - java.sql.*
   - javax.sql.*
@@ -212,6 +216,7 @@
   - SpringMVC
 
   - Hibernate/JPA (Data Persistency)
+
   - MyBatis
 
 - Java Performance Tuning
@@ -277,7 +282,7 @@
 
   - Apache Storm
 
-- Cloud  云应用
+- Cloud 云应用
 
   - Scalable Architecture
 
@@ -305,7 +310,6 @@
   - Kotlin
   - <http://www.oracle.com/technetwork/articles/java/architect-languages-2266279.html>
 
-
 # Typical Java Applications 典型应用
 
 - Online Chatting (Web/Desktop System) 在线聊天
@@ -319,7 +323,7 @@
 # Desktop Development 桌面开发
 
 - awt
-- Applet 
+- Applet
 - swing
 - Netbeans Platform
 - JavaFX
