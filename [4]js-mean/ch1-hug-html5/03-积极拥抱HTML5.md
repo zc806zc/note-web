@@ -1,134 +1,34 @@
-# HTML
-
-- HTML标记争论的论坛 <http://html5doctor.com>
-- Head
-
-  - meta <http://www.css88.com/archives/6410>
-  - <https://juejin.im/entry/5a5395d76fb9a01c9e45d027>
-
-```javascript
-<meta http-equiv="refresh" content="30"> // 每30秒中刷新当前页面:
-
-<!-- 视图窗口，移动端特属的标签。 -->
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
-
-<!-- 是否启动webapp功能，会删除默认的苹果工具栏和菜单栏。 -->
-<meta name="apple-mobile-web-app-capable" content="yes">
-
-<!-- 这个主要是根据实际的页面设计的主体色为搭配来进行设置。 -->
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-
-<!-- 忽略页面中的数字识别为电话号码,email识别 -->
-<meta name="format-detection" content="telephone=no, email=no">
-
-<!-- 启用360浏览器的极速模式(webkit) -->
-<meta name="renderer" content="webkit">
-
-<!-- 避免IE使用兼容模式 -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
-<meta name="HandheldFriendly" content="true">
-
-<!-- 微软的老式浏览器 -->
-<meta name="MobileOptimized" content="320">
-
-<!-- 强制竖屏 -->
-<meta name="screen-orientation" content="portrait"> <!-- uc强制竖屏 -->
-<meta name="x5-orientation" content="portrait"> <!-- QQ强制竖屏 -->
-
-<!-- 强制全屏 -->
-<meta name="full-screen" content="yes"> <!-- UC强制全屏 -->
-<meta name="x5-fullscreen" content="true"> <!-- QQ强制全屏 -->
-
-<!-- 应用模式 -->
-<meta name="browsermode" content="application"> <!-- UC应用模式 -->
-<meta name="x5-page-mode" content="app"> <!-- QQ应用模式 -->
-
-<!-- windows phone 点击无高光 -->
-<meta name="msapplication-tap-highlight" content="no">
-
-<!-- pc端调整页面兼容代码 -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="renderer" content="webkit|ie-comp|ie-stand">
-
-// 移动厂商特有的值
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="format-detection" content="telephone=no">
-```
-
-- YAML
-
-  - <http://www.ruanyifeng.com/blog/2016/07/yaml.html>
-  - JS-YAML <https://github.com/nodeca/js-yaml> 把函数和正则表达式转为字符串)
-
-```javascript
-YAML 是专门用来写配置文件的语言，非常简洁和强大
-远比 JSON 格式方便
-
-一种通用的数据串行化格式
-只允许使用空格
-
-// 支持的数据结构
-对象
-数组
-纯量（scalars） // 单个的、不可再分的值
-
-hash: { name: Steve, foo: bar }
-// { hash: { name: 'Steve', foo: 'bar' } } // JS
-
--
- - Cat
- - Dog
- - Goldfish
-// [ [ 'Cat', 'Dog', 'Goldfish' ] ] // JS
-
-// 复合结构
-
-// 纯量
-parent: ~
-// { parent: null } // JS
-
-e: !!str 123
-f: !!str true
-// { e: '123', f: 'true' } // 强调数据类型转化
-
-// | > + -
-// 锚点&和别名*，可以用来引用
-```
-
-- 浏览器内核
-- 渲染引擎
-
-  - Pug
-
-> 浏览器会思考，而且经常会取笑我们
-
 # 积极拥抱HTML5
-
-- HTML5.2 <https://bitsofco.de/whats-new-in-html-5-2>
-- HTML5让你惊艳的 demo <https://www.zhihu.com/question/24398907>
 
 - 资源
 
   - HTML5秘籍 <http://www.prosetech.com/html5>
   - <http://www.html5tricks.com/>
 
-- 渐近增强|优雅降级
+# HTML5.2
 
-  - 浏览器与设备兼容
-  - Modernizer | html5shiv/html5.js
+- <https://bitsofco.de/whats-new-in-html-5-2>
 
-    - <https://github.com/Modernizr/Modernizr>
+# 让你惊艳的 HTML5 demo
 
-  - 浏览器市场占有率 <http://gs.statcounter.com>
+- <http://eyehere.net/2011/21-html5-demo/>
+- <https://www.zhihu.com/question/24398907>
 
-  - Can I use
+# 渐近增强|优雅降级
 
-  - 腻子脚本
+- 浏览器与设备兼容
+- Modernizer | html5shiv/html5.js
 
-    - <https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills>
-    - 腻子脚本 通过 createElement('header')的方式 让IE支持HTML5
+  - <https://github.com/Modernizr/Modernizr>
+
+- 浏览器市场占有率 <http://gs.statcounter.com>
+
+- Can I use
+
+- 腻子脚本
+
+  - <https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills>
+  - 腻子脚本 通过 createElement('header')的方式 让IE支持HTML5
 
 ```javascript
 // 在IE上进行js测试
@@ -242,7 +142,7 @@ input和textarea 的autofocus required placeholder
   - 使阅读源代码的人更容易将网站分块，便于阅读、维护和理解
   - 搜索引擎的爬虫也依赖于HTML标记来确定上下文和各个关键字的权重，有利于SEO
 
-```javascript
+```html
 <a>里可以放置任何东西了
 <a href="tel:16505551212">xxx</a>
 // href也不是必需的了
@@ -300,10 +200,10 @@ details[open] * {display: auto; }
 // <menu><menuitem> // 类似右键菜单 支持不好
 ```
 
-- HTML校验
+# HTML校验
 
-  - w3c的W3Validator
-  - ff插件：HTML Validator // 基于HTML Tidy,可以美化代码
+- w3c的W3Validator
+- ff插件：HTML Validator // 基于HTML Tidy,可以美化代码
 
 - 生成HTML5纲要
 
@@ -322,9 +222,9 @@ figure,details 会产生自己的纲要
 可以自己写 section / div 代替 aside
 ```
 
-- HTML5的SEO
+# HTML5的SEO
 
-```css
+```html
 // data-*  
 // jq已经封装
 不至于与未来的属性相冲突
@@ -436,13 +336,14 @@ contenteditable // 编辑元素
 designMode // 编辑页面
 ```
 
-- HTML5音频和视频
+# HTML5音频和视频
 
-  - 工具 Amaya | Inkspace
-  - videojs.com 换肤定制 | Handbrake 转码
-  - 视频完全方案 HTML5 + Flash + link
-  - 视频自适应 <https://alistapart.com/article/creating-intrinsic-ratios-for-video>
-  - <https://github.com/Chimeejs/chimee>
+- 工具 Amaya | Inkspace
+- videojs.com 换肤定制 | Handbrake 转码
+- 视频完全方案 HTML5 + Flash + link
+- 视频自适应 <https://alistapart.com/article/creating-intrinsic-ratios-for-video>
+- <https://github.com/Chimeejs/chimee>
+- Captionator.js // 适时抓取文本
 
 ```javascript
 // HTML5不行还用成熟的Flash
@@ -523,7 +424,7 @@ WebVTT（一致支持） 和 TTML（成熟但复杂）
 <track>,kind属性
 subtitles(外语片)和 captains(静音)
 
-Captionator.js // 适时抓取文本
+
 
 <!-- 嵌入视频 -->
 <video id="myVideo">
