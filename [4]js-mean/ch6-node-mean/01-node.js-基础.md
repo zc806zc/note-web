@@ -1,4 +1,4 @@
-# Node.js安装与基础
+# Node.js
 
 > Using Node.js as service
 
@@ -105,6 +105,10 @@ for (; index < length; index++) {
     console.log(process.argv[index]);
 }
 ```
+
+# 为什么要使用Node.js
+
+- <https://juejin.im/post/57b54f151532bc0063ebfe31>
 
 # 构建工具及自动化
 

@@ -1,56 +1,8 @@
-# Java
+# 你真的会写java吗
 
-- IDE
+- <https://juejin.im/entry/59ae07d9f265da249600f0ec>
 
-  - IntelliJ IDEA
-  - NetBeans | Eclipse
-  - eclipse color theme <http://download.csdn.net/download/knockheart/6690825>
-
-- 资源
-
-  - <http://droidyue.com/blog/2014/11/30/java-programmer-must-read-these-9-books>
-  - <https://www.zhihu.com/question/19848946?rf=19752221>
-  - 你真的会写java吗 <https://juejin.im/entry/59ae07d9f265da249600f0ec>
-
-- 网站
-
-  - [并发编程指南](http://ifeve.com/java-7-concurrency-cookbook/)
-  - [100问](https://github.com/giantray/stackoverflow-java-top-qa)
-  - [ConcretePage](http://www.concretepage.com/) Java 资源类网站，可以找到各种 Java 框架及相关教程
-
-- 书单
-
-  - 源码圈 365 胖友 <https://juejin.im/post/59c2f3e16fb9a00a600f6a5c>
-
-```java
-// 入门
-《Head First Java》
-《Java 核心技术》两卷
-
-// 进阶  
-《Java 编程思想(第4版)》  
-《Head First 设计模式》   
-《Effective Java 中文版(第2版)》  
-《重构:改善既有代码的设计》  
-《Java Concurrency in Practice》Java并发编程实战
-
-// 高级  
-《深入理解Java 虚拟机》  
-《Java 虚拟机规范(Java SE 7版)》
-
-// J2EE  
-《分布式 Java 应用：基础与实践》  
- 《企业应用架构模式 》
-
-// 数据结构  
-《Java数据结构和算法》
-
-// 算法  
-《算法》  
-《算法设计与分析》王晓东
-```
-
-- 基础
+# 基础
 
 ```java
 Java程序的执行模式是 半编译半解释
@@ -193,9 +145,3 @@ System.out.println( result);<br>
 # 图形绘制技术
 
 # 常用工具类
-
-# 数据库编程
-
-- 快递打印系统
-- 软件注册程序
-- 决策分析程序

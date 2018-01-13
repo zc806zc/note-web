@@ -1,6 +1,14 @@
+# IDE
+
+- IntelliJ IDEA
+- NetBeans | Eclipse
+- eclipse color theme <http://download.csdn.net/download/knockheart/6690825>
+
 # IDEA
 
 - <https://github.com/judasn/IntelliJ-IDEA-Tutorial>
+
+- 正确使用 IntelliJ IDEA 的方式 <https://juejin.im/post/590050f98d6d810058afc85f>
 
 ```javascript
 // idea 内存溢出问题
@@ -13,6 +21,7 @@ http://blog.csdn.net/fyqcdbdx/article/details/46788915
 - <http://www.open-open.com/lib/view/open1396578860887.html>
 
 - 结构排版
+
   - Ctrl+D，复制行
   - Ctrl+E，最近的文件
   - Ctrl+Shift+E，最近更改的文件
@@ -28,8 +37,8 @@ http://blog.csdn.net/fyqcdbdx/article/details/46788915
   - Ctrl+Shift+J，整合两行
   - Ctrl+Enter，上插一行
   - Shift+Enter，向下插入新行
-  - Ctrl+”+/-”，当前方法展开、折叠
-  - Ctrl+Shift+”+/-”，全部展开、折叠
+  - Ctrl+"+/-"，当前方法展开、折叠
+  - Ctrl+Shift+"+/-"，全部展开、折叠
 
 - 功能
 
