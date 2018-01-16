@@ -16,6 +16,11 @@ http://blog.csdn.net/fyqcdbdx/article/details/46788915
 -server -XX:PermSize=128M -XX:MaxPermSize=256m
 ```
 
+# jRabel 热部署插件(节约生命)
+
+- twitter激活
+- https://zeroturnaround.com/software/jrebel/quickstart/intellij/
+
 # 常用快捷键
 
 - <http://www.open-open.com/lib/view/open1396578860887.html>
