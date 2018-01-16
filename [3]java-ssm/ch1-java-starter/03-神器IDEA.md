@@ -19,7 +19,7 @@ http://blog.csdn.net/fyqcdbdx/article/details/46788915
 # jRabel 热部署插件(节约生命)
 
 - twitter激活
-- https://zeroturnaround.com/software/jrebel/quickstart/intellij/
+- <https://zeroturnaround.com/software/jrebel/quickstart/intellij/>
 
 # 常用快捷键
 
@@ -58,6 +58,39 @@ http://blog.csdn.net/fyqcdbdx/article/details/46788915
   - Alt+F7，查找整个工程中使用地某一个类、方法或者变量的位置
   - Ctrl+Alt+Y，同步
 
-# 快捷键冲突
+# 处理快捷键冲突
 
 # 与WebStorm的区别
+
+# Spring Boot配置
+
+- https://github.com/chenfromsz/spring-boot-hello 配置演示
+- JDK要求1.8以上的版本，Tomcat必须是8.0以上的版本
+- RUN配置的是spring boot 不是tomcat
+- 打包成jar
+
+```xml
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>repackage</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+    </plugins>
+</build>
+
+
+<!--  运行jar包 -->
+右键mvn package
+cd target
+java -jar spring-boot-hello-1.0-SNAPSHOT.jar
+```
+
+- application.yml <https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html>
