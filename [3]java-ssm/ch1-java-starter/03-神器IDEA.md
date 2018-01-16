@@ -121,6 +121,7 @@ common-utils
 
 - 注意
 
+  - 父项目必须为pom
   - xxx-parent文件结构是否包含这些模块
   - 删除父项目的src
   - Mark As Source Root
