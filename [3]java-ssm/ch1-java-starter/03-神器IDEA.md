@@ -21,6 +21,8 @@ http://blog.csdn.net/fyqcdbdx/article/details/46788915
 - twitter激活
 - <https://zeroturnaround.com/software/jrebel/quickstart/intellij/>
 
+- SpringBoot项目使用JRebel热部署 <http://blog.csdn.net/qq_31230915/article/details/78069148>
+
 # 常用快捷键
 
 - <http://www.open-open.com/lib/view/open1396578860887.html>
@@ -64,7 +66,7 @@ http://blog.csdn.net/fyqcdbdx/article/details/46788915
 
 # Spring Boot配置
 
-- https://github.com/chenfromsz/spring-boot-hello 配置演示
+- <https://github.com/chenfromsz/spring-boot-hello> 配置演示
 - JDK要求1.8以上的版本，Tomcat必须是8.0以上的版本
 - RUN配置的是spring boot 不是tomcat
 - 打包成jar
@@ -94,3 +96,31 @@ java -jar spring-boot-hello-1.0-SNAPSHOT.jar
 ```
 
 - application.yml <https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html>
+
+# 多模块 + spring boot
+
+- IDEA创建多个模块MavenSpringBoot项目
+
+  - <https://segmentfault.com/a/1190000011367492>
+  - <http://blog.csdn.net/willjgl/article/details/77773634>
+  - <http://blog.csdn.net/Message_lx/article/details/54632947>
+  - 示例 <https://github.com/williamHappy/tao-shopping-mall>
+
+- 基于maven使用IDEA创建多模块项目 <http://blog.csdn.net/williamhappy/article/details/54376855>
+
+- 模块
+
+```java
+common-utils
+```
+
+- 热部署 spring-boot-devtools
+
+  - <https://www.cnblogs.com/bingshu/p/6876030.html>
+  - jRabel
+
+- 注意
+
+  - xxx-parent文件结构是否包含这些模块
+  - 删除父项目的src
+  - Mark As Source Root
