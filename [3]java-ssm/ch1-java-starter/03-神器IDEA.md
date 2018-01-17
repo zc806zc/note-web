@@ -116,7 +116,8 @@ common-utils
 
 - 热部署 spring-boot-devtools
 
-  - <https://www.cnblogs.com/bingshu/p/6876030.html>
+  - (推荐) <https://www.cnblogs.com/bingshu/p/6876030.html>
+  - <http://blog.csdn.net/isea533/article/details/70495714>
   - jRabel
 
 - 注意
