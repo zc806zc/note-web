@@ -10,10 +10,19 @@
 
 - 正确使用 IntelliJ IDEA 的方式 <https://juejin.im/post/590050f98d6d810058afc85f>
 
+- idea 内存溢出问题
+
 ```javascript
-// idea 内存溢出问题
+
 http://blog.csdn.net/fyqcdbdx/article/details/46788915
 -server -XX:PermSize=128M -XX:MaxPermSize=256m
+```
+
+# 使用正则表达式进行搜索替换
+
+```html
+tppabs="h[^"]*"
+/\*tpa=.*\*/
 ```
 
 # jRabel 热部署插件(节约生命)
