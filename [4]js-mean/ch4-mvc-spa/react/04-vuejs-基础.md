@@ -7,6 +7,7 @@
 
 - 资源
 
+  - Vue学习看这篇就够 <https://juejin.im/entry/5a54b747518825734216c3df>
   - 前端每周清单半年盘点之 Vue.js 篇 <https://juejin.im/post/59928d55518825486f1e8369>
   - vue入门到放弃 <https://juejin.im/post/59aa1248518825392656a86a>
 
