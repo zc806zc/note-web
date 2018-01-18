@@ -54,6 +54,7 @@ for (let i = 0; i < 1e7; i++) {}
 
 > DOM操作其实是非常消耗资源的一个过程，而往往很多人都喜欢错误地使用jQuery
 
+- jQuery的编码标准和最佳实践 <http://www.css88.com/archives/4836>
 - <http://www.jb51.net/article/47639.htm>
 - 规范
 
@@ -87,7 +88,7 @@ if(string.length){...}
   - 注意class选择器最慢!!!!
   - 继承法则: 总是从#id选择器来继承
   - 使用子查询, 缓存父对象
-  - 优化选择器以适用Sizzle的“从右至左”模型, 确保最右的选择器具体些，而左边的选择器选择范围较宽泛些
+  - 优化选择器以适用Sizzle的"从右至左"模型, 确保最右的选择器具体些，而左边的选择器选择范围较宽泛些
   - 采用find()，而不使用上下文查找
   - 采用jQuery的内部函数data()来存储状态
 
@@ -123,11 +124,12 @@ var divs = $('#pageBody .testdiv'); // 2469 on Firebug 3.6
 ```
 
 - 性能
+
   - 字符串拼接
   - 使用Event Delegation
   - 如果给15个以上的元素加样式时，直接给DOM元素添加style标签(维护?)
 
-```js
+```javascript
 //  ok
 var menu = '<ul id="menu">';
 for (var i = 1; i < 100; i++) {
