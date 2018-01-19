@@ -4,6 +4,7 @@
 - 学习目录 <https://www.jianshu.com/p/9a08417e4e84>
 - <https://github.com/yizhiwazi/springboot-socks>
 
+
 # 界面设计
 
 - Thymeleaf模板(首选)
@@ -27,3 +28,7 @@ th:value="${movie.createDate} ? ${#dates.format(movie.createDate, 'yyyy-MM-dd')}
   - 客户端API
   - 支持动态扩展
   - Tracker Server
+
+# 权限控制 结合 Vue
+
+- https://juejin.im/entry/5a60611b6fb9a01cb0495fcb 
