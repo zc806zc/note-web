@@ -48,6 +48,13 @@
 
   - OpenCC <https://github.com/BYVoid/OpenCC>
 
+# 浏览器信息
+
+- <http://www.jq22.com/webqd77>
+- feature.js
+
+  - <https://github.com/viljamis/feature.js>
+
 # 富文本编辑器
 
 - (首选) brackets <https://github.com/adobe/brackets>
