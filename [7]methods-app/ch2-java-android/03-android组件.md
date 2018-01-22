@@ -1,6 +1,7 @@
 # Android组件
 
 - <https://github.com/googlesamples/android-architecture-components>
+- <https://github.com/Blankj/AndroidUtilCode>
 
 # Android UI库
 
@@ -55,5 +56,3 @@
   - <https://github.com/Wechat-Group/weixin-java-tools>
 
 - <https://github.com/vondear/RxTools>
-
-- <https://github.com/Blankj/AndroidUtilCode>
