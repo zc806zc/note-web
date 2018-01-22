@@ -2,7 +2,7 @@
 
 - Scala 运行在Java虚拟机上，并兼容现有的Java程序
 
-```js
+```javascript
 object Hello{
     def main(args: Array[String]) {
         println("Hello World!")
@@ -18,3 +18,9 @@ public final class Hello
   }
 }
 ```
+
+# playframework
+
+- build scalable web applications with Java and Scala
+- <https://github.com/playframework/playframework>
+- <https://playframework.com/documentation/2.6.x/Home>

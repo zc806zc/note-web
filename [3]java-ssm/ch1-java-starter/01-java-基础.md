@@ -1,8 +1,6 @@
-# 你真的会写java吗
+# Java基础
 
-- <https://juejin.im/entry/59ae07d9f265da249600f0ec>
-
-# 基础
+- LearningNotes <https://github.com/francistao/LearningNotes>
 
 ```java
 Java程序的执行模式是 半编译半解释
@@ -18,6 +16,10 @@ System不是关键字<br>
 加号 + 的优先级大于 =<br>
 java.lang包中的所有类是隐式导入的
 ```
+
+# 你真的会写Java吗
+
+- <https://juejin.im/entry/59ae07d9f265da249600f0ec>
 
 # 异常
 

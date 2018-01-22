@@ -18,6 +18,10 @@
 
   - <https://github.com/scwang90/SmartRefreshLayout>
 
+- BottomBar <https://github.com/roughike/BottomBar>
+
+- MaterialViewPager <https://github.com/florent37/MaterialViewPager>
+
 # 表单 | 数据
 
 - 图表
