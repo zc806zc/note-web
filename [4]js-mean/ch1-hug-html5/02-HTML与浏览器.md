@@ -1,10 +1,21 @@
-# HTML
+# HTML标签
 
-- HTML标记争论的论坛 <http://html5doctor.com>
+- html5doctor HTML争论的论坛 <http://html5doctor.com>
+
+# Meta
+
 - Head
 
   - meta <http://www.css88.com/archives/6410>
   - <https://juejin.im/entry/5a5395d76fb9a01c9e45d027>
+
+```javascript
+// 移动厂商特有的值
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+```
+
+# 常用Meta
 
 ```javascript
 <meta http-equiv="refresh" content="30"> // 每30秒中刷新当前页面:
@@ -51,16 +62,12 @@
 <!-- pc端调整页面兼容代码 -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="renderer" content="webkit|ie-comp|ie-stand">
-
-// 移动厂商特有的值
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="format-detection" content="telephone=no">
 ```
 
-- YAML
+# YAML
 
-  - <http://www.ruanyifeng.com/blog/2016/07/yaml.html>
-  - JS-YAML <https://github.com/nodeca/js-yaml> 把函数和正则表达式转为字符串)
+- <http://www.ruanyifeng.com/blog/2016/07/yaml.html>
+- JS-YAML <https://github.com/nodeca/js-yaml> 把函数和正则表达式转为字符串)
 
 ```javascript
 YAML 是专门用来写配置文件的语言，非常简洁和强大
@@ -100,6 +107,23 @@ f: !!str true
 - 浏览器内核
 - 渲染引擎
 
-  - Pug
-
 > 浏览器会思考，而且经常会取笑我们
+
+# Pug
+
+```javascript
+不太提倡
+```
+
+# HTML技巧
+
+- chrome添加语音搜索
+
+```html
+<!--  x-webkit-speech -->
+<input type="text" class="box" name="s" id="s" class="inputText" placeholder="输入关键词"  x-webkit-speech>
+```
+
+# 浏览器渲染
+
+- 渲染引擎
