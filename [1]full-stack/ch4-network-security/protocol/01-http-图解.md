@@ -46,22 +46,21 @@ TCP/IP 协议的应用层协议
 默认使用80端口
 
 // HTTP/2 // 没有子版本
-`
 ```
 
 - Content Security Policy
 
   - <http://www.ruanyifeng.com/blog/2016/09/csp.html>
 
-```javascript
+```html
 // 跨域脚本攻击 XSS
 
 能不能根本上解决问题，浏览器自动禁止外部注入恶意脚本
 // 网页安全政策 CSP
 实质就是白名单制度 // 列入可信主机
 
-1\. 通过 HTTP 头信息的Content-Security-Policy的字段
-2\. <meta http-equiv="Content-Security-Policy"
+1 通过 HTTP 头信息的Content-Security-Policy的字段
+2 <meta http-equiv="Content-Security-Policy"
          content="script-src 'self';
          object-src 'none';  // <object>标签：不信任任何URL，即不加载任何资源
          style-src cdn.example.org third-party.org;
@@ -311,7 +310,7 @@ Nginx是Apache服务器不错的替代品
 
 # 网络工程验收与维护
 
-# 1\. 网络单机
+# 网络单机
 
 - 计算机硬件基础/计算机组装技术
 
@@ -319,7 +318,7 @@ Nginx是Apache服务器不错的替代品
 
 - 计算机故障处理
 
-# 3\. 网络设备
+# 网络设备
 
 - 网络传输介质
 
@@ -329,7 +328,7 @@ Nginx是Apache服务器不错的替代品
 
 - 三层设备--路由器
 
-# 4\. 网络组建
+# 网络组建
 
 - 组建局域网
 
@@ -341,7 +340,7 @@ Nginx是Apache服务器不错的替代品
 
 - 局域网的优化与升级
 
-# 5\. 网络应用
+# 网络应用
 
 - Windows Server 2008为例
 
@@ -355,7 +354,7 @@ Nginx是Apache服务器不错的替代品
 
 - NAS网络存储应用
 
-# 6\. 网络安全
+#  网络安全
 
 - 网络安全管理体系
 
@@ -363,7 +362,7 @@ Nginx是Apache服务器不错的替代品
 
 - 黑客入侵防范
 
-# 7\. 网络维护
+# 网络维护
 
 - 网络管理工具
 
@@ -371,6 +370,6 @@ Nginx是Apache服务器不错的替代品
 
 - 预防数据丢失与恢复
 
-# 8\. 虚拟应用篇
+# 虚拟应用篇
 
 - VMware虚拟机
