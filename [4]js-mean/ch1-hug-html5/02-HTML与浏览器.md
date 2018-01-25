@@ -2,6 +2,62 @@
 
 - html5doctor HTML争论的论坛 <http://html5doctor.com>
 
+# HTML结构
+
+- 正式体
+
+```html
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document</title>
+
+  <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+
+</body>
+</html>
+```
+
+- 究极完美体
+
+```html
+//
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Faster</title>
+  <link rel="dns-prefetch" href="//cdn.cn/">
+
+  <link rel="preload" href="//cdn.cn/webfont.woff2" as="font">
+  <link rel="preload" href="//cdn.cn/Page1-A.js" as="script">
+  <link rel="preload" href="//cdn.cn/Page1-B.js" as="script">
+
+  <link rel="prefetch" href="//cdn.cn/Page2.js">
+  <link rel="prefetch" href="//cdn.cn/Page3.js">
+  <link rel="prefetch" href="//cdn.cn/Page4.js">
+
+  <style type="text/css">
+    /* 首页用到的CSS内联 */
+  </style>
+</head>
+<body>
+
+<script type="text/javascript" src="//cdn.cn/Page1-A.js" defer></script>
+<script type="text/javascript" src="//cdn.cn/Page1-B.js" defer></script>
+</body>
+</html>
+```
+
 # Meta
 
 - Head
@@ -112,7 +168,7 @@ f: !!str true
 # Pug
 
 ```javascript
-不太提倡
+不提倡 over
 ```
 
 # HTML技巧
@@ -124,6 +180,6 @@ f: !!str true
 <input type="text" class="box" name="s" id="s" class="inputText" placeholder="输入关键词"  x-webkit-speech>
 ```
 
-# 浏览器渲染
+# 浏览器渲染原理
 
 - 渲染引擎

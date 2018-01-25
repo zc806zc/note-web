@@ -9,12 +9,12 @@
 
 - <https://bitsofco.de/whats-new-in-html-5-2>
 
-# 让你惊艳的 HTML5 demo
+# 惊艳的 HTML5 DEMOssss....
 
 - <http://eyehere.net/2011/21-html5-demo/>
 - <https://www.zhihu.com/question/24398907>
 
-# 渐近增强|优雅降级
+# 渐近增强 优雅降级
 
 - 浏览器与设备兼容
 - Modernizer | html5shiv/html5.js
@@ -35,11 +35,9 @@
 saved from url=(0014)about:internet
 ```
 
-# HTML5语义化
+# 元素更迭史
 
-- 元素更迭史
-
-  - <https://www.w3.org/TR/html5-diff>
+- <https://www.w3.org/TR/html5-diff>
 
 ```javascript
 <nobr>  // 被css white-space: nowrap 代替
@@ -72,69 +70,22 @@ input和textarea 的autofocus required placeholder
 <html lang="en"> // 方便屏幕阅读器
 
 <map><area> http://www.runoob.com/try/try.php?filename=tryhtml_areamap
-
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Document</title>
-
-  <!--[if lt IE 9]>
-    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-  <![endif]-->
-
-</head>
-<body>
-
-</body>
-</html>
-
-
-// 终极完美结构
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Faster</title>
-  <link rel="dns-prefetch" href="//cdn.cn/">
-
-  <link rel="preload" href="//cdn.cn/webfont.woff2" as="font">
-  <link rel="preload" href="//cdn.cn/Page1-A.js" as="script">
-  <link rel="preload" href="//cdn.cn/Page1-B.js" as="script">
-
-  <link rel="prefetch" href="//cdn.cn/Page2.js">
-  <link rel="prefetch" href="//cdn.cn/Page3.js">
-  <link rel="prefetch" href="//cdn.cn/Page4.js">
-
-  <style type="text/css">
-    /* 首页用到的CSS内联 */
-  </style>
-</head>
-<body>
-
-<script type="text/javascript" src="//cdn.cn/Page1-A.js" defer></script>
-<script type="text/javascript" src="//cdn.cn/Page1-B.js" defer></script>
-</body>
-</html>
 ```
 
 ![](/assets/h5-grammar755.png)
 
-- 语义化
+# HTML5语义化
 
-  - 再没有内联元素块元素的概念了，因为那是外观定义不是语义定义
-  - 分类
+- 再没有内联元素块元素的概念了，因为那是外观定义不是语义定义
+- 分类
 
-    - 短语元素 段落 img span
-    - 区段元素 章式 article nav aside
-    - heading 标题 h6 hgroup
-    - metadata 元数据 link meta base...
-    - flow流元素 span div
-    - 嵌入式embedd元素 iframe svg
-    - 交互式interactive元素 a button input select
+  - 短语元素 段落 img span
+  - 区段元素 章式 article nav aside
+  - heading 标题 h6 hgroup
+  - metadata 元数据 link meta base...
+  - flow流元素 span div
+  - 嵌入式embedd元素 iframe svg
+  - 交互式interactive元素 a button input select
 
 - 语义化的优势
 
