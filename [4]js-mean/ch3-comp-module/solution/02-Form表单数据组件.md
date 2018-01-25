@@ -228,6 +228,8 @@ function praise(num, obj) {
 
 - 上传
 
+  - jQuery-File-Upload <https://github.com/blueimp/jQuery-File-Upload>
+
 ```javascript
 function slide(range, conSlide, obj) {
      var rangeValue;
@@ -297,6 +299,7 @@ function slide(range, conSlide, obj) {
 
     - niceSelect
     - select2
+    - chosen <https://github.com/harvesthq/chosen>
     - jquery.sumoselect
 
       - A jQuery Single/Multi Select plugin which can be used on almost any device

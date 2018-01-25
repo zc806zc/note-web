@@ -55,6 +55,10 @@
 
   - <https://github.com/viljamis/feature.js>
 
+# 阅读器
+
+- pdf.js
+
 # 富文本编辑器
 
 - (首选) brackets <https://github.com/adobe/brackets>

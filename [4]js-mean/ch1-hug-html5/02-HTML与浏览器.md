@@ -72,6 +72,8 @@
 
 # 常用Meta
 
+- <https://github.com/joshbuchea/HEAD>
+
 ```html
 <!-- 每30秒中刷新当前页面 -->
 <meta http-equiv="refresh" content="30">
