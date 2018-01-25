@@ -30,7 +30,6 @@
 - 究极完美体
 
 ```html
-//
 <!DOCTYPE html>
 <html>
 <head>
@@ -73,57 +72,55 @@
 
 # 常用Meta
 
-```javascript
-<meta http-equiv="refresh" content="30"> // 每30秒中刷新当前页面:
+```html
+<!-- 每30秒中刷新当前页面 -->
+<meta http-equiv="refresh" content="30">
 
+<!-- 渲染模式 ========= -->
+<!-- 启用360浏览器的极速模式(webkit) -->
+<meta name="renderer" content="webkit">
+<!-- 避免IE使用兼容模式 -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <!-- 视图窗口，移动端特属的标签。 -->
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
 
+<!-- pc端调整页面兼容代码 -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+
+<!-- 微软的老式浏览器 -->
+<meta name="MobileOptimized" content="320">
+
+
+<!-- IOS相关 ====== -->
 <!-- 是否启动webapp功能，会删除默认的苹果工具栏和菜单栏。 -->
 <meta name="apple-mobile-web-app-capable" content="yes">
-
 <!-- 这个主要是根据实际的页面设计的主体色为搭配来进行设置。 -->
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
 <!-- 忽略页面中的数字识别为电话号码,email识别 -->
 <meta name="format-detection" content="telephone=no, email=no">
-
-<!-- 启用360浏览器的极速模式(webkit) -->
-<meta name="renderer" content="webkit">
-
-<!-- 避免IE使用兼容模式 -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
 <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
 <meta name="HandheldFriendly" content="true">
-
-<!-- 微软的老式浏览器 -->
-<meta name="MobileOptimized" content="320">
-
-<!-- 强制竖屏 -->
-<meta name="screen-orientation" content="portrait"> <!-- uc强制竖屏 -->
-<meta name="x5-orientation" content="portrait"> <!-- QQ强制竖屏 -->
-
-<!-- 强制全屏 -->
-<meta name="full-screen" content="yes"> <!-- UC强制全屏 -->
-<meta name="x5-fullscreen" content="true"> <!-- QQ强制全屏 -->
-
-<!-- 应用模式 -->
-<meta name="browsermode" content="application"> <!-- UC应用模式 -->
-<meta name="x5-page-mode" content="app"> <!-- QQ应用模式 -->
 
 <!-- windows phone 点击无高光 -->
 <meta name="msapplication-tap-highlight" content="no">
 
-<!-- pc端调整页面兼容代码 -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<!-- 强制竖屏 -->
+<meta name="screen-orientation" content="portrait"> <!-- uc强制竖屏 -->
+<meta name="x5-orientation" content="portrait"> <!-- QQ强制竖屏 -->
+<!-- 强制全屏 -->
+<meta name="full-screen" content="yes"> <!-- UC强制全屏 -->
+<meta name="x5-fullscreen" content="true"> <!-- QQ强制全屏 -->
+<!-- 应用模式 -->
+<meta name="browsermode" content="application"> <!-- UC应用模式 -->
+<meta name="x5-page-mode" content="app"> <!-- QQ应用模式 -->
 ```
 
 # YAML
 
 - <http://www.ruanyifeng.com/blog/2016/07/yaml.html>
-- JS-YAML <https://github.com/nodeca/js-yaml> 把函数和正则表达式转为字符串)
+- JS-YAML <https://github.com/nodeca/js-yaml> 把函数和正则表达式转为字符串
 
 ```javascript
 YAML 是专门用来写配置文件的语言，非常简洁和强大
@@ -163,12 +160,10 @@ f: !!str true
 - 浏览器内核
 - 渲染引擎
 
-> 浏览器会思考，而且经常会取笑我们
-
 # Pug
 
 ```javascript
-不提倡 over
+不提倡 game over
 ```
 
 # HTML技巧
@@ -183,3 +178,5 @@ f: !!str true
 # 浏览器渲染原理
 
 - 渲染引擎
+
+> 浏览器会思考，而且经常会取笑我们
