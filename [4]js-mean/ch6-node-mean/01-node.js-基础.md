@@ -21,6 +21,7 @@
 
 - 资源
 
+  - <https://www.awesomes.cn/repos/NodeJS/Frameworks>
   - <https://github.com/sindresorhus/awesome-nodejs>
   - <https://github.com/alsotang/node-lessons>
 

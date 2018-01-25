@@ -5,57 +5,49 @@
 ```java
 Java程序的执行模式是 半编译半解释
 
-虚拟机可以用硬件实现，<br>
+虚拟机可以用硬件实现
 字节代码是虚拟机的机器码
+```
 
-只能有一个main方法<br>
-main方法只能是一个public静态方法<br>
-一个源程序文件中最多只能有一个`public`类，其他类的个数不限
+- 注意
 
-System不是关键字<br>
-加号 + 的优先级大于 =<br>
-java.lang包中的所有类是隐式导入的
+```java
+System不是关键字
+
+只能有一个main方法
+main方法只能是一个public静态方法
+一个源程序文件中最多只能有一个public类，其他类的个数不限
 ```
 
 # 你真的会写Java吗
 
 - <https://juejin.im/entry/59ae07d9f265da249600f0ec>
+- eclipse -> IDEA
+- com.xxx.domain -> com.xxx.entity
+- 在做DTO转化的时候一直使用set进行属性赋值时, 使用BeanUtils.copyProperties浅拷贝方法
 
-# 异常
-
-```java
-
-用户输入了非法数据
-
-要打开的文件不存在<br>
-网络通信时连接中断，或者JVM内存溢出
-
-可控式异常 IOException<br>
-运行时异常
-```
 
 # 输入输出
 
 ```java
-
 long = int + float 赋值会出错
 
-控制double输出精度的方法<br>
-(int)(26.3456*100)/100 --小数点后两位<br>
-System.out.print("%.3f",item);<br>
+控制double输出精度的方法
+(int)(26.3456*100)/100 --小数点后两位
+System.out.print("%.3f",item);
 format
 
-Scanner kb = new Scanner(System.in);<br>
+Scanner kb = new Scanner(System.in);
 int i = kb.nextInt() % 4;
 
-import java.text.DecimalFormat;<br>
-DecimalFormat df = new DecimalFormat( "0.00");<br>
+import java.text.DecimalFormat;
+DecimalFormat df = new DecimalFormat( "0.00");
 System.out.println("Accumulated value is "+df.format(futureInvestment));
 
-// 输出结果 1.0<br>
-int a = 5, b = 4;<br>
-double d;<br>
-d = a / b;<br>
+// 输出结果 1.0
+int a = 5, b = 4;
+double d;
+d = a / b;
 System.out.println(d);
 ```
 
@@ -63,7 +55,7 @@ System.out.println(d);
 
 ```java
 
-if(3) { printf("hello wo"); }<br>
+if(3) { printf("hello wo"); }
 if(3) { System.out.println("je"); } // required: boolean
 ```
 
@@ -71,25 +63,38 @@ if(3) { System.out.println("je"); } // required: boolean
 
 ```java
 
-int i = 1, j = 1, k =1;<br>
-if(i > j)<br>
-if( j > k)<br>
-System.out.print("A");<br>
-else<br>
+int i = 1, j = 1, k =1;
+if(i > j)
+if( j > k)
+System.out.print("A");
+else
 System.out.print("B"); // 所以什么也不输出
 ```
 
 - instanceof判断对象类型
 
 ```java
-class Vehicle {}<br>
-public class Car extends Vehicle {<br>
-public static void main(String args[]) {<br>
-Vehicle a = new Car();<br>
-boolean result = a instanceof Car;<br>
-System.out.println( result);<br>
-}<br>
+class Vehicle {}
+public class Car extends Vehicle {
+public static void main(String args[]) {
+Vehicle a = new Car();
+boolean result = a instanceof Car;
+System.out.println( result);
 }
+}
+```
+
+# 异常
+
+```java
+
+用户输入了非法数据
+
+要打开的文件不存在
+网络通信时连接中断，或者JVM内存溢出
+
+可控式异常 IOException
+运行时异常
 ```
 
 # 流程控制
@@ -147,3 +152,5 @@ System.out.println( result);<br>
 # 图形绘制技术
 
 # 常用工具类
+
+# Bean
