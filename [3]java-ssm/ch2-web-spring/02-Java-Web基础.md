@@ -86,3 +86,19 @@ public class DOM4jModifyXMLDemo {
    }    
 }
 ```
+
+# JSON
+
+- 偏前端内容在ECMA篇...
+- JSON框架模式
+
+  - <http://www.yiibai.com/json/json_schema.html>
+  - JSON模式验证库
+
+- 各种语言交互
+
+  - PHP
+  - Perl
+  - Python
+  - Ruby
+  - Java

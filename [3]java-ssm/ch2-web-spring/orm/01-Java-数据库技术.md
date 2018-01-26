@@ -1,5 +1,7 @@
 # JDBC
 
+- <http://www.yiibai.com/jdbc/>
+
 # 联表查询
 
 # 数据库连接池
@@ -31,4 +33,9 @@
 - iBATIS动态SQL
 
 - iBATIS OGNL 表达式
-- iBATIS调试 -
+
+- iBATIS调试
+
+# JPA
+
+- <http://www.yiibai.com/jpa/>
