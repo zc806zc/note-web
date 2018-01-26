@@ -18,7 +18,10 @@
 
 # Mybatis
 
+- <https://github.com/mybatis/mybatis-3>
+
 - 关联映射与动态SQL
+
 - 事务管理与缓存机制
 - 注解配置
 

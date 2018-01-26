@@ -2,10 +2,6 @@
 
 - Java Web技术总结 <https://www.jianshu.com/p/539bdb7d6cfa>
 
-# Maven
-
-- <https://juejin.im/post/5a4a5e2bf265da4322418d7f>
-
 # 你真的会写Java吗
 
 - <https://juejin.im/entry/59ae07d9f265da249600f0ec>
