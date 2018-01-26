@@ -2,9 +2,9 @@
 
 - 安装
 
-  - [heidiSQL-dl](https://www.heidisql.com/download.php)
+  - heidiSQL 图形化工具 <https://www.heidisql.com/download.php>
 
-```javascript
+```html
 // MYSQL安装
 
 // 数据库管理/图形化工具
@@ -21,7 +21,7 @@ HeidiSQL 访问速度略快，但界面一般
   - 常用函数
   - 常用命令
 
-```php
+```html
 mysql (-h localhost) -u root -p // 访问数据库,回车输命令
 
 // set names gbk; // 仅本次访问有效
@@ -217,7 +217,4 @@ b - BLOB（binary large object:二进制大对象）
 $stmt->bind_param("sss", $firstname, $lastname, $email);
 
 // PDO 中的预处理语句
-`
 ```
-
-- MariaDB

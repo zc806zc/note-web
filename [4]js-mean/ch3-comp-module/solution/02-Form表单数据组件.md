@@ -229,6 +229,7 @@ function praise(num, obj) {
 - 上传
 
   - jQuery-File-Upload <https://github.com/blueimp/jQuery-File-Upload>
+  - Uploadify
 
 ```javascript
 function slide(range, conSlide, obj) {

@@ -1,6 +1,8 @@
 # Memcached
 
-- 安装与运行
+- <http://www.yiibai.com/memcached/>
+
+- 安装配置
 
 ```javascript
 // ubuntu
@@ -157,9 +159,10 @@ echo $get_value;
 
 # Redis
 
+- <http://www.yiibai.com/redis/>
 - 安装
 
-  - [redis-win-dl](https://github.com/MSOpenTech/redis/releases)
+  - <https://github.com/MSOpenTech/redis/releases>
 
 ```javascript
 // win

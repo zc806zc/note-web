@@ -1,5 +1,6 @@
 # Scala
 
+- <http://www.yiibai.com/scala/>
 - Scala 运行在Java虚拟机上，并兼容现有的Java程序
 
 ```javascript

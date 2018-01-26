@@ -26,6 +26,7 @@
 
 - MVC
 - <https://github.com/jashkenas/backbone>
+- <http://www.yiibai.com/backbonejs/>
 
 # Ember
 

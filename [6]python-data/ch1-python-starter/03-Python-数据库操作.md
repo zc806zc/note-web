@@ -2,9 +2,9 @@
 
 - MySQL
 
-  - [PyMySQL](https://github.com/PyMySQL/PyMySQL)
+  - PyMySQL <https://github.com/PyMySQL/PyMySQL>
 
-```
+```python
 
 PyMySQL 连接数据库
 包含了 pure-Python MySQL 客户端库

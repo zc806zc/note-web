@@ -8,13 +8,7 @@
 
 - <https://github.com/kennethreitz/python-guide>
 
-- 第三方库
 
-```python
-numpy
-
-python -m pip install xxx // memeryerror 因为32bit的python 使用内存超过2G就会报错
-```
 
 # Python安装
 

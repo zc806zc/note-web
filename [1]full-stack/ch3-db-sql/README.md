@@ -1,7 +1,7 @@
 # 常见数据库
 
 - PostgreSQL
-- pouchdb <https://github.com/pouchdb/pouchdb>
+- pouchdb
 - Neo4j
 
 - Oracle
@@ -13,11 +13,18 @@
 系统维具有很高的性能
 ```
 
-- SQL Server2008 Access
+- SQL Server2008 Access <http://www.yiibai.com/access/>
 - Sybase
 - DB2
 
 # 数据库基础
+
+- <http://www.yiibai.com/html/database/>
+- <http://www.yiibai.com/sql/>
+
+# SQL
+
+- <http://www.yiibai.com/plsql/>
 
 # 如果有人问你数据库的原理，叫他看这篇文章
 
