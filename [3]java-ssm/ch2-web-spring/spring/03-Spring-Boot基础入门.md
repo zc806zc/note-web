@@ -31,4 +31,4 @@ th:value="${movie.createDate} ? ${#dates.format(movie.createDate, 'yyyy-MM-dd')}
 
 # 权限控制 结合 Vue
 
-- https://juejin.im/entry/5a60611b6fb9a01cb0495fcb 
+- https://juejin.im/entry/5a60611b6fb9a01cb0495fcb

@@ -47,7 +47,10 @@
 
   - java.lang.*
 
-  - java.util.*
+    - <http://www.yiibai.com/java/lang/>
+    - java.lang.reflect <http://www.yiibai.com/javareflect/>
+
+  - java.util.* <http://www.yiibai.com/java/util/>
 
     - Collections Framework
     - Concurrency Framework
@@ -59,15 +62,22 @@
 
     - Miscellaneous Utilities
 
-  - java.io.*
+  - 输入输出
 
-  - java.nio.*
+    - java.io.* <http://www.yiibai.com/java/io/>
+    - java.nio.*
 
-  - java.net.*
+  - SQL
 
-  - java.rmi.*
-  - java.sql.*
-  - javax.sql.*
+    - java.sql.*
+    - javax.sql.*
+
+  - 网络
+
+    - java.net.*
+    - java.rmi.*
+
+  - Java.math <http://www.yiibai.com/java/math/>
 
 # Algorithms & Data Structure 算法与数据结构
 
