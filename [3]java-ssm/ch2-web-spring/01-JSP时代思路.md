@@ -416,17 +416,12 @@ Common-FileUpload // 需要commons-io包的支持
 // enctype="multipart/form-data"
 实现限制上传文件的类型
 不使用组件实现 上传下载
-
-// Java Mail发送E-mail
-// JSP动态图表 JFreeChat
-// JSP报表
-
-// XML操作
-DOM解析器
-SAX解析器
-DOM4J
-JDOM
 ```
+
+- XML操作
+- Java Mail发送E-mail
+- JSP动态图表 JFreeChat
+- JSP报表
 
 # 数据库操作
 
