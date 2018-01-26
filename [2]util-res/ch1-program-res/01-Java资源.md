@@ -8,7 +8,9 @@
 - blogjava <http://www.blogjava.net/>
 
 - 博之阅 <http://www.bozhiyue.com/index.html>
+
 - Tim Yang <https://timyang.net/>
+
 - 张开涛 <http://www.iteye.com/blogs/subjects/kaitao-springmvc>
 - 孤傲苍狼 <http://www.cnblogs.com/xdp-gacl/category/574705.html>
 - cmsblogs <http://cmsblogs.com/>
@@ -47,6 +49,7 @@
 
 - 其他
 
+  - 编程学习网 <http://www.phpxs.com/>
   - cjsdn <http://www.cjsdn.net/index.html>
   - Java中文站 <http://www.java-cn.com/index.html>
   - dzone <https://dzone.com/links>
