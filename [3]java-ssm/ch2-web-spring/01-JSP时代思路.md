@@ -1,11 +1,10 @@
 # JSP时代
 
+# JSP开发环境搭建
 
-- JSP开发环境搭建
-
-  - JDK环境变量配置 <http://jingyan.baidu.com/article/6dad5075d1dc40a123e36ea3.html>
-  - 云盘下载 密码vipr <http://pan.baidu.com/s/1o7pUJOm>
-  - <http://www.jianshu.com/p/5b022371de26>
+- JDK环境变量配置 <http://jingyan.baidu.com/article/6dad5075d1dc40a123e36ea3.html>
+- 云盘下载 密码vipr <http://pan.baidu.com/s/1o7pUJOm>
+- <http://www.jianshu.com/p/5b022371de26>
 
 ```java
 // 准备环境
@@ -62,11 +61,11 @@ Atom的autocomplete-jsp插件
 
 ![](/assets/idea-refresh978.png) ![](/assets/auto453.png)![](/assets/webroot-add899.png)![](/assets/classes-path785.png)![](/assets/artifacts-setting432.png)
 
-# JSP基础
+# JSP开发基础
 
 > jsp(java server page) 是另一种形式的servlet
 
-- JSP程序设计 http://download.csdn.net/detail/gaoyuyihao/9249135
+- JSP程序设计 <http://download.csdn.net/detail/gaoyuyihao/9249135>
 
 - 动作标识与指令标识
 
@@ -94,6 +93,54 @@ taglib指令 ：使用标签定义新的自定义标签。
 plugin fallback param
 codebase属性
 ```
+
+- 基础
+
+```java
+// Java里，类是最小单位，
+// 不允许在类外面定义变量和方法
+// 没有 全局变量 的概念 方法属性的权限修饰特点
+// 析构方法 finalize()
+// 强制类型转换 高级数据类型赋值给低级类型变量
+
+// Vector类
+一元集合，可以加入重复数据，
+可以方便地对集合内的数据进行curd
+
+// throw throws
+```
+
+- JSP
+
+```java
+// Serlet
+是服务端Java // 继承自javax.servlet.http.HttpServlet类
+
+// JavaBean
+独立的组件 // 分可视化与不可视化
+
+// 为什么使用JSP 2点
+1\. JSP 安全性相对更高 // 跨平台... 那谁不跨平台的?扯淡
+
+2\. 预编译, JSP页面在被服务器执行前, 都是已经编译好的，
+并且通常只进行一次编译,所以相对执行速度也快? // 若没修改过，直接调用编译好的
+
+// JSP的处理过程...
+
+// 与其他语言的比较
+// CGI PHP
+// ASP COM组件 但有平台限制 // IIS
+ASP.NET Web Form 强大的窗体
+
+// JSP程序开发模式
+纯JSP ->  JSP + JavaBean(可重用) -> JSP + Servlet(类似分发器,逻辑更好) + JavaBean
+-> Struts等代表的框架模式 // MVC +  准备好的实用程序
+-> J2EE // 大型网站 业务逻辑更复杂 EJB 难测试
+
+// EJB
+```
+
+# ![](/assets/j2ee-structure77283.png)
 
 # 注释与脚本标识
 
@@ -153,17 +200,50 @@ jspService()是用来处理客户端请求的，
 servlet是常驻在服务器内存中。
 ```
 
+# JSP内置对象
+
+```java
+// BS进行交互通信的控制
+request 获取客户端的请求
+response 对客户端进行响应
+session
+// HTTP是一种无状态协议
+// session对象是BS的连接一直保持下去
+// 销毁session invalidate()
+// 会话超时管理
+
+// 设置HTTP头可实现禁用缓存功能
+要在没有任何输出发送到客户端前使用
+<%response.setHeader("Cache-Control","no-store");
+response.setDateHeader("Expires",0); %>
+
+// application
+WEB-INF/web.xml
+
+// out
+// flush() 刷新流
+// isAutoFlush()
+
+pageContext 获取会话范围  // 集大成者，通过它可以访问其他所有对象
+
+// config 读取web.xml配置信息
+// page 应答或请求
+
+exception exception.getMessage()
+```
+
 # Javaben的使用
 
 - 像普通的java类一样，创建javabean;
 
   - 在jsp使用动作标签来使用 javaben
-  - 四大作用域
 
-    - page ，仅当前页面有效
-    - request ,通过httpRequest.getAttribute()获取jvabean对象
-    - session httpSession.getAttribute()
-    - application 只要没有关闭服务器就会一直存在
+- 四大作用域
+
+  - page ，仅当前页面有效
+  - request ,通过httpRequest.getAttribute()获取jvabean对象
+  - session httpSession.getAttribute()
+  - application 只要没有关闭服务器就会一直存在
 
 ```html
 当程序执行<jsp:setProperty>标识时，
@@ -219,119 +299,7 @@ getProperty
 </body>
 ```
 
-# cookie
-
-```java
-// 创建使用与读取
-Cookie cookie=new Cookie(String ,Object);
-response.addCookie(cookie);
-Cookie[] cookies=request.getCookies();
-
-// cookie的常用方法
-setMaxAge();
-setValue();
-getName();
-getValue();
-getMaxAge();
-```
-
-# JSP内置对象
-
-```java
-// BS进行交互通信的控制
-request 获取客户端的请求
-response 对客户端进行响应
-session
-// HTTP是一种无状态协议
-// session对象是BS的连接一直保持下去
-// 销毁session invalidate()
-// 会话超时管理
-
-// 设置HTTP头可实现禁用缓存功能
-要在没有任何输出发送到客户端前使用
-<%response.setHeader("Cache-Control","no-store");
-response.setDateHeader("Expires",0); %>
-
-// application
-WEB-INF/web.xml
-
-// out
-// flush() 刷新流
-// isAutoFlush()
-
-pageContext 获取会话范围  // 集大成者，通过它可以访问其他所有对象
-
-// config 读取web.xml配置信息
-// page 应答或请求
-
-exception exception.getMessage()
-```
-
-# 参考文档
-
-- 当Java遇见HTML <http://www.jianshu.com/p/c7260f7588c5>
-
-# JSP开发基础
-
-```java
-// Java里，类是最小单位，
-// 不允许在类外面定义变量和方法
-// 没有 全局变量 的概念 方法属性的权限修饰特点
-// 析构方法 finalize()
-// 强制类型转换 高级数据类型赋值给低级类型变量
-
-// Vector类
-一元集合，可以加入重复数据，
-可以方便地对集合内的数据进行curd
-
-// throw throws
-```
-
-- JSP
-
-```java
-// Serlet
-是服务端Java // 继承自javax.servlet.http.HttpServlet类
-
-// JavaBean
-独立的组件 // 分可视化与不可视化
-
-// 为什么使用JSP 2点
-1\. JSP 安全性相对更高 // 跨平台... 那谁不跨平台的?扯淡
-
-2\. 预编译, JSP页面在被服务器执行前, 都是已经编译好的，
-并且通常只进行一次编译,所以相对执行速度也快? // 若没修改过，直接调用编译好的
-
-// JSP的处理过程...
-
-// 与其他语言的比较
-// CGI PHP
-// ASP COM组件 但有平台限制 // IIS
-ASP.NET Web Form 强大的窗体
-
-// JSP程序开发模式
-纯JSP ->  JSP + JavaBean(可重用) -> JSP + Servlet(类似分发器,逻辑更好) + JavaBean
--> Struts等代表的框架模式 // MVC +  准备好的实用程序
--> J2EE // 大型网站 业务逻辑更复杂 EJB 难测试
-
-// EJB
-```
-
-# ![](/assets/j2ee-structure77283.png)
-
-# JSP语法/内置对象
-
-```java
-// request/response
-获取客户端信息
-获取HTTP Headers // setHeader
-重定向
-
-// session
-在线考试系统
-```
-
-# JavaBean
+- JavaBean
 
 ```java
 // JavaBean
@@ -358,7 +326,7 @@ valuebean
 
 # Servlet
 
-```xml
+```html
 主要用于B/S结构,用来充当一个请求控制处理的角色
 
 // Servlet使用
@@ -421,16 +389,33 @@ HttpServletResponse接口
 // Servlet监听器 // 实现同一用户只能有一个在线
 ```
 
-# JSP实用组件
+# Cookie
 
-- [Common-FileUpload](http://commons.apache.org/proper/commons-fileupload/)
+```java
+// 创建使用与读取
+Cookie cookie=new Cookie(String ,Object);
+response.addCookie(cookie);
+Cookie[] cookies=request.getCookies();
+
+// cookie的常用方法
+setMaxAge();
+setValue();
+getName();
+getValue();
+getMaxAge();
+```
+
+# 实用组件
+
+- Common-FileUpload <http://commons.apache.org/proper/commons-fileupload/>
 
 ```java
 // JSP文件操作
 Common-FileUpload // 需要commons-io包的支持
+
 // enctype="multipart/form-data"
-1\. 实现限制上传文件的类型
-2\. 不使用组件实现 上传下载
+实现限制上传文件的类型
+不使用组件实现 上传下载
 
 // Java Mail发送E-mail
 // JSP动态图表 JFreeChat
@@ -443,22 +428,12 @@ DOM4J
 JDOM
 ```
 
-# JSP数据库
+# 数据库操作
 
-- [JSP连接JSTL-MySQL](http://www.runoob.com/jsp/jsp-database-access.html)
+- JSP连接JSTL-MySQL <http://www.runoob.com/jsp/jsp-database-access.html>
+- JDBC
 
 ```java
-// SQL Server2008  Access
-// MySQL  关系型数据库
-
-// Oracle
-以RDBMS为核心的一批软件产品
-分布式结构
-支持大数据库、多用户的高性能的事务处理
-系统维具有很高的性能
-
-// 其他 Sybase PostgreSQL DB2
-
 // JDBC
 驱动程序接口Driver
 java.sql.Driver
@@ -492,7 +467,11 @@ JDBC-middleware
 
 Pure JDBC Driver
 专用
+```
 
+- 连接池
+
+```java
 // 连接池技术
 预先先建立好一定数量的数据库连接
 模拟存放在一个连接池中
@@ -514,16 +493,13 @@ JNDI Jav命名与目录接口
 
 # JSP与AJAX
 
+- AJAX实现注册时用户名的查重
+- AJAX级联
+
 ```java
 // 中文乱码 utf-8
-// String name = request.getParameter("name");
-// out.println("姓名" + new String(name.getBytes("iso-8859-1"),"utf-8"));
-
-
-减少 . 操作符的使用
-
-// AJAX实现注册时用户名的查重
-// AJAX级联
+String name = request.getParameter("name");
+out.println("姓名" + new String(name.getBytes("iso-8859-1"),"utf-8"));
 ```
 
 # JSTL/EL
@@ -537,7 +513,6 @@ web.xml
 
 // EL输出数组
 // EL获取表单 session JavaBean属性...
-
 // EL函数
 
 // JSTL
@@ -545,8 +520,6 @@ web.xml
 <c:import>
 <c:url>
 <c:redirect>
-
-// JSTL实现用户登录(表单)
 
 // EL表达式及标签
 Expression Language 表达式语言
@@ -612,7 +585,9 @@ BodyTag接口
 或者在web.xml中配置
 ```
 
-# 参考
+# 参考文献
+
+- 当Java遇见HTML <http://www.jianshu.com/p/c7260f7588c5>
 
 ```java
 Java Web开发实践教程 王占中 崔志刚 // 感觉略厚
