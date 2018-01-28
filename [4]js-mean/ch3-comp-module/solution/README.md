@@ -16,15 +16,19 @@
   - Heading
   - Section
   - Comment
-  - Divider
+  - Divider 分割线
   - Marker(Create a marker icon that can be displayed on top of images.)
   - Overlay(Create an image overlay, which comes in different styles.)
 
-- Card (卡片)
+- Card 卡片
 
-- Icon/Font(图标字体)
+  - 导航卡片
+  - 名片
+  - 价格卡片
 
-- Animation(动画)
+- Icon/Font 图标字体
+
+- Animation 动画
 
   - Toggle
   - Transition(Create smooth transitions between two states when hovering an element.)
@@ -35,7 +39,7 @@
 
 # Layout 布局组件
 
-- Layout(布局)
+- Layout 布局 
 
   - Width Height 长宽
   - Visibility 可见性
@@ -59,7 +63,7 @@
   - Scroll
 
     - Scroll
-    - Totop(Create a simple to-top scroller.)
+    - Totop | BackTop  返回顶部
 
 - Nav(导航)
 
@@ -67,11 +71,15 @@
 
     - Navbar
     - Pagination 分页
-    - Dotnav Iconnav
+    - Dotnav | Iconnav
     - Slidenav
     - Thumbnav
+    - Nav
     - Subnav(Defines different styles for a sub navigation.)
     - Breadcrumb 面包屑
+    - Affix 固钉
+    - Anchor 锚点
+    - Steps 步骤条
 
   - Tab
 
@@ -88,9 +96,9 @@
   - Gallery
 
 ```html
-1.布局
-2.导航
-3.面板 = 模态框 + 轮播 + ...
+布局
+导航
+面板 = 模态框 + 轮播 + ...
 ```
 
 # Data 数据组件
@@ -146,5 +154,6 @@
 
 ```javascript
 uikit
+ant design
 bulma
 ```
