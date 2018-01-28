@@ -10,6 +10,7 @@
   - Vue学习看这篇就够 <https://juejin.im/entry/5a54b747518825734216c3df>
   - 前端每周清单半年盘点之 Vue.js 篇 <https://juejin.im/post/59928d55518825486f1e8369>
   - vue入门到放弃 <https://juejin.im/post/59aa1248518825392656a86a>
+  - A curated list of awesome things related to Vue.js <https://github.com/vuejs/awesome-vue>
 
 - vue面试题
 
@@ -26,6 +27,11 @@
     - quasar <https://github.com/quasarframework/quasar>
 
       - 利用 Vue，通过一套代码搞定响应式网站、PWA、hybrid 移动应用以及 Electron app
+
+- 阅读Vue源码
+
+  - <https://github.com/answershuto/learnVue>
+  - <https://github.com/balancelove/SimpleVue>
 
 # 开发环境配置
 
