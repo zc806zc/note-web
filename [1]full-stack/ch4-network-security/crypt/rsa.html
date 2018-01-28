@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+
+<!--     
+    Author    :骆金参(Luo_0412)
+    BuildDate :2016-4-29
+    Version   :2.0
+    Function  :RSA加解密（数字版）
+-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RSA加解密（数字版）</title>
+    <link href="../src/css/libs/bootstrap.min.css" rel="stylesheet">
+    <style>
+        #RSA {
+            margin-top: 10px;
+        }
+/*        #sKey {
+            margin-bottom: 35px;
+        }*/
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div id="RSA"> 
+
+      <!-- 保密区：明文 + 3个密钥 -->
+      <div class="row" id="sKey">
+          <form class="form-inline" id ="sKey">
+            <div class="form-group col-md-2">
+              <label class="sr-only" for="sKey_p">密钥 p</label>
+              <div class="input-group">
+                <div class="input-group-addon">密钥 p</div>
+                <input type="" class="form-control" id="sKey_p" value="5" placeholder="">
+              </div>
+            </div>
+            <div class="form-group col-md-2">
+              <label class="sr-only" for="sKey_q">密钥 q</label>
+              <div class="input-group">
+                <div class="input-group-addon">密钥 q</div>
+                <input type="" class="form-control" id="sKey_q" value="7" placeholder="">
+              </div>
+            </div>
+            <div class="form-group col-md-2">
+              <label class="sr-only" for="sKey_d">密钥 d</label>
+              <div class="input-group">
+                <div class="input-group-addon">密钥 d</div>
+                <input type="" class="form-control" id="sKey_d" value="5" placeholder="">
+              </div>
+            </div>
+          </form>
+      </div>
+
+      <div class="row">
+          <form class="form">
+            <div class="form-group col-md-7">
+              <label class="sr-only" for="plaintext">明文M</label>
+              <div class="input-group col-lg-12">
+                <div class="input-group-addon">明文M</div>
+                <textarea name="" id="plaintext" class="form-control" rows="5" 
+                placeholder="(1)p, q是两个不同的奇素数 (2) d 和 (p-1)*(q-1)互质 (3) 加密数小于N"></textarea>
+              </div>
+            </div>
+            <div class="form-group col-md-5">
+              <label class="sr-only" for="clear_Btn">清空</label>
+              <div class="input-group">
+                <button type="button" class="btn btn-default" id="clear_Btn">
+                   <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> 清空M
+                </button>
+              </div>
+            </div>
+            <div class="form-group col-md-5">
+              <label class="sr-only" for="pKey_getBtn">获取公钥</label>
+              <div class="input-group">
+                <button type="button" class="btn btn-default" id="pKey_getBtn">
+                   <span class="glyphicon glyphicon-send" aria-hidden="true"></span> 发布P
+                </button>
+              </div>
+            </div>
+          </form>
+      </div>
+
+
+      
+
+      <!-- 保密区 结束 -->
+      
+
+
+      <!-- 加密区：公布的公钥 + 发布的密文 -->
+      <div class="row">
+          <form class="form-inline">
+            <div class="form-group col-md-2">
+              <label class="sr-only" for="pKey_e">公钥 e</label>
+              <div class="input-group">
+                <div class="input-group-addon">公钥 e</div>
+                <input type="" class="form-control" id="pKey_e" value="" placeholder="">
+              </div>
+            </div>
+            <div class="form-group col-md-2">
+              <label class="sr-only" for="pKey_N">公钥N</label>
+              <div class="input-group">
+                <div class="input-group-addon">公钥N</div>
+                <input type="" class="form-control" id="pKey_N" value="" placeholder="">
+              </div>
+            </div>
+            <div class="form-group col-md-8">
+              <label class="sr-only" for="encrypt_btn">加密</label>
+              <div class="input-group">
+                <button type="button" class="btn btn-default" id="encrypt_btn">
+                   <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span> 加密
+                </button>
+              </div>
+            </div>
+          </form>
+      </div>
+
+      <div class="row">
+          <form class="form">
+            <div class="form-group col-md-12 col-xs-12 col-lg-12 col-sm-12">
+              <label class="sr-only" for="ciphertext">密文C</label>
+              <div class="input-group col-lg-8">
+                <div class="input-group-addon">密文C</div>
+                <textarea name="" id="ciphertext" class="form-control" rows="5" placeholder=""></textarea>
+              </div>
+            </div>
+          </form>
+      </div>
+      <!-- 加密区 结束-->
+
+      <!-- 解密区：输入密钥d 获取明文M -->
+      <div class="row">
+          <form class="form-inline">
+            <div class="form-group col-md-2">
+              <label class="sr-only" for="testKey_d">输入 d</label>
+              <div class="input-group">
+                <div class="input-group-addon">输入 d</div>
+                <input type="" class="form-control" id="testKey_d" value="" placeholder="">
+              </div>
+            </div>
+            <div class="form-group col-md-8">
+              <label class="sr-only" for="decrypt_btn">解密</label>
+              <div class="input-group">
+                <button type="button" class="btn btn-default" id="decrypt_btn">
+                   <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> 解密
+                </button>
+              </div>
+            </div>
+          </form>
+      </div>
+
+      <div class="row">
+          <form class="form">
+            <div class="form-group col-md-12 col-xs-12 col-lg-12 col-sm-12">
+              <label class="sr-only" for="testPlaintext">获取M</label>
+              <div class="input-group col-lg-8">
+                <div class="input-group-addon">获取M</div>
+                <textarea name="" id="testPlaintext" class="form-control" rows="5" placeholder=""></textarea>
+              </div>
+            </div>
+          </form>
+      </div>
+      <!-- 解密区 结束-->
+
+    </div>
+    
+</div>
+    
+
+    <!-- <script src="bootstrap/js/jquery-1.11.3.js"></script> -->
+    <!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
+    <script>
+
+    //获取所有id
+    var sKey_p = document.getElementById("sKey_p");
+    var sKey_q = document.getElementById("sKey_q");
+    var sKey_d = document.getElementById("sKey_d");
+    var pKey_e = document.getElementById("pKey_e");
+    var pKey_N = document.getElementById("pKey_N");
+    var testKey_d = document.getElementById("testKey_d");
+
+    var plaintext  = document.getElementById("plaintext");
+    var ciphertext = document.getElementById("ciphertext");
+    var testPlaintext = document.getElementById("testPlaintext");
+
+    var pKey_getBtn = document.getElementById("pKey_getBtn");
+    var encrypt_btn = document.getElementById("encrypt_btn");
+    var decrypt_btn = document.getElementById("decrypt_btn");
+    var clear_Btn = document.getElementById("clear_Btn");
+
+    // 声明全局变量
+    var inverseElement;  //逆元
+    var numStr = new Array();
+    var numStr_length = 0;
+    var numStr2 = new Array();
+    var numStr2_length = 0;
+
+    plaintext.value = "12 15 22 5";
+    
+
+    // 函数区
+    function pKey_getBtnFunc () {
+        pKey_N.value = sKey_p.value * sKey_q.value;  //注意Key的K大写
+        var FN = (sKey_p.value-1) * (sKey_q.value-1);
+        Euclidean(sKey_d.value, FN);
+        pKey_e.value = inverseElement;
+    }
+
+
+    //函数：加密
+    function encrypt () {
+        ciphertext.value = " ";
+        var en = new Array(), SecCode = new Array();
+        var i = 0;
+        numStr_length = 0;
+        numStr = new Array();
+        var tempStr = "";
+        for(i=0; i<plaintext.value.length; i++) {
+            if(i==0) {
+                numStr[numStr_length] = (plaintext.value[i].charCodeAt() - 48);
+            }
+            else if(plaintext.value[i] === " " && plaintext.value[i-1] != " ") {
+                numStr_length++;
+            }
+            else if(plaintext.value[i] === " " && plaintext.value[i-1] === " ") {
+                // numStr_length++;
+            }
+            else if(plaintext.value[i-1] === " " && plaintext.value[i] != " ") {
+                numStr[numStr_length] = plaintext.value[i].charCodeAt() - 48;
+            }
+            else if(plaintext.value[i-1] !=  " " && plaintext.value[i] != " ") {
+                numStr[numStr_length] *= 10;
+                numStr[numStr_length] += (plaintext.value[i].charCodeAt() - 48);  //字符串内容是数字
+                if(i === plaintext.value.length) numStr_length++; 
+            }
+
+        }
+
+        for(i=0; i<numStr.length; i++) {
+                en[i] = Math.pow( numStr[i], pKey_e.value);
+                SecCode[i] = en[i] % pKey_N.value;
+                tempStr += SecCode[i];
+                tempStr += " ";  
+        }
+        ciphertext.value = tempStr;
+
+    }
+
+
+    //函数：解密
+    function decrypt () {
+        testPlaintext.value = " ";
+        var de = new Array(), PubCode = new Array();
+        var i = 0;
+        numStr2_length = 0;
+        numStr2 = new Array();
+        var tempStr = "";
+        for(i=0; i<ciphertext.value.length; i++) {
+            if(i==0) {
+                numStr2[numStr2_length] = (ciphertext.value[i].charCodeAt() - 48);
+            }
+            else if(ciphertext.value[i] === " " && ciphertext.value[i-1] != " ") {
+                numStr2_length++;
+            }
+            else if(ciphertext.value[i] === " " && ciphertext.value[i-1] === " ") {
+                // numStr_length++;
+            }
+            else if(ciphertext.value[i-1] === " " && ciphertext.value[i] != " ") {
+                numStr2[numStr2_length] = ciphertext.value[i].charCodeAt() - 48;
+            }
+            else if(ciphertext.value[i-1] !=  " " && ciphertext.value[i] != " ") {
+                numStr2[numStr2_length] *= 10;
+                numStr2[numStr2_length] += (ciphertext.value[i].charCodeAt() - 48);  //字符串内容是数字
+                if(i === ciphertext.value.length) numStr2_length++; 
+            }
+               
+        }
+
+        for(i=0; i<numStr2.length; i++) {
+                de[i] = Math.pow(numStr2[i], testKey_d.value);
+                PubCode[i] = de[i] % pKey_N.value;
+                tempStr += PubCode[i];
+                tempStr += " ";  
+        }
+
+        testPlaintext.value = tempStr;
+    }
+
+
+    //函数：求逆元
+    function Euclidean(r, t) {
+        var x = 0, y = 1;
+        var temp = y;
+        var count, q;
+        inverseElement = t;
+        while (r != 1 && t != 1)
+        {
+          count = parseInt(t/r);
+          q = t%r;
+          t = r;
+          r = q;
+          y = x - y*count;
+          x = temp;
+          temp = y;
+        }
+        y = y % inverseElement;
+        if (y<0) inverseElement += y;
+        else     inverseElement = y;
+    }
+    
+    // 注册按钮事件
+    pKey_getBtn.addEventListener("click", pKey_getBtnFunc ,false);
+    encrypt_btn.addEventListener("click", encrypt ,false);
+    decrypt_btn.addEventListener("click", decrypt ,false);
+    clear_Btn.addEventListener("click", function () { plaintext.value= ""; } ,false);
+    
+    </script>
+    
+</body>
+</html>

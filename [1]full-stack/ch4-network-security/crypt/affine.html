@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+
+<!--     
+    Author    :骆金参(Luo_0412)
+    BuildDate :2016-4-26
+    Version   :1.0
+    Function  :仿射加解密(增强版)
+-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>仿射加解密(增强版)</title>
+    <link href="../src/css/libs/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="css/count.css"> -->
+    <style>
+        #affine {
+            margin-top:30px;
+        }
+    </style>
+
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+<div class="container">
+
+    <div id="affine"> 
+      
+      <form class="form-inline">
+        <div class="form-group">
+          <label class="sr-only" for="plaintext">明文</label>
+          <div class="input-group">
+            <div class="input-group-addon">明文</div>
+            <textarea name="" id="plaintext" class="form-control " rows="4" placeholder="明文 小写"></textarea>
+          </div>
+          <button type="button" class="btn btn-default" id="clear_btn1">
+             <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+          </button>
+        </div>
+      </form>
+
+      <form class="form-inline">
+        <div class="form-group">
+          <label class="sr-only" for="plaintextNum"></label>
+          <div class="input-group">
+            <div class="input-group-addon">明文数字</div>
+            <input type="textarea" class="form-control" id="plaintextNum" value="" placeholder="明文数字">
+          </div>
+          <button type="button" class="btn btn-default" id="get_btn1">
+             <span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="btn btn-default" id="clear_btn2">
+             <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+          </button>
+        </div>
+      </form>
+
+      <form class="form-inline">
+        <div class="form-group">
+          <label class="sr-only" for="key1">key1</label>
+          <div class="input-group">
+            <div class="input-group-addon">key1</div>
+            <input type="textarea" class="form-control" id="key1" value="" placeholder="k1">
+          </div>
+        </div>
+      </form>
+
+      <form class="form-inline">
+        <div class="form-group">
+          <label class="sr-only" for="key2">key2</label>
+          <div class="input-group">
+            <div class="input-group-addon">key2</div>
+            <input type="textarea" class="form-control" id="key2" value="" placeholder="k2">
+          </div>
+          <button type="button" class="btn btn-default" id="start_btn">
+             <span class="glyphicon glyphicon-sort" aria-hidden="true"></span> 加解密
+          </button>
+        </div>
+      </form>
+
+      <form class="form-inline">
+        <div class="form-group">
+          <label class="sr-only" for="ciphertext"></label>
+          <div class="input-group">
+            <div class="input-group-addon">密文</div>
+            <textarea name="" id="ciphertext" class="form-control " rows="4" placeholder="密文 大写"></textarea>
+          </div>
+          <button type="button" class="btn btn-default" id="clear_btn3">
+             <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+          </button>
+        </div>
+      </form>
+
+      <form class="form-inline">
+        <div class="form-group">
+          <label class="sr-only" for="ciphertextNum"></label>
+          <div class="input-group">
+            <div class="input-group-addon">密文数字</div>
+            <input type="textarea" class="form-control" id="ciphertextNum" value="" placeholder="密文数字">
+          </div>
+          <button type="button" class="btn btn-default" id="get_btn2">
+             <span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="btn btn-default" id="clear_btn4">
+             <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+          </button>
+        </div>
+      </form>
+
+    </div>
+</div>
+    
+    <!-- <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script> -->
+<!--      <script src="bootstrap/js/jquery-1.11.3.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script> -->
+    <script>
+      //声明所有的变量
+      var plaintext  = document.getElementById("plaintext");
+      var ciphertext = document.getElementById("ciphertext");
+      var plaintextNum   = document.getElementById("plaintextNum");
+      var ciphertextNum  = document.getElementById("ciphertextNum");
+      var clear_btn1 = document.getElementById("clear_btn1");
+      var clear_btn2 = document.getElementById("clear_btn2");
+      var clear_btn3 = document.getElementById("clear_btn3");
+      var clear_btn4 = document.getElementById("clear_btn4");
+      var get_btn1 = document.getElementById("get_btn1");
+      var get_btn2 = document.getElementById("get_btn2");
+      var start_btn  = document.getElementById("start_btn");
+      var key1 = document.getElementById("key1");
+      var key2 = document.getElementById("key2");
+      var res;
+
+
+      //函数：求逆元
+      function Euclidean(r, t)
+      {
+          var x = 0, y = 1;
+          var temp = y;
+          var count, q;
+          res = t;
+          while (r != 1 && t != 1)
+          {
+            count = parseInt(t/r);
+            // alert(count);
+            q = t%r;
+            t = r;
+            r = q;
+            y = x - y*count;
+            x = temp;
+            temp = y;
+          }
+          y = y % res;
+          if (y<0) res += y;
+          else     res = y;
+      }
+
+      //注册4个清空按钮事件
+      clear_btn1.addEventListener("click",function(){
+          plaintext.value = "";
+          },false);
+      clear_btn2.addEventListener("click",function(){
+          plaintextNum.value = "";
+          },false);
+      clear_btn3.addEventListener("click",function(){
+          ciphertext.value = "";
+          },false);
+      clear_btn4.addEventListener("click",function(){
+          ciphertextNum.value = "";
+          },false);
+
+      //注册2个获取数字段事件
+        get_btn1.addEventListener("click",
+            function(){
+                var length = plaintext.value.length;
+                var i = 0;
+                var code; //逐个读取英文段的临时变量
+                var resultStr = "";
+
+                while(i<length) {
+                  code = plaintext.value[i].charCodeAt();
+                  if(code >= 97 && code <= 122) {
+                      resultStr += code-97;
+                      resultStr += " ";
+                  }
+                  i++;
+                }
+                plaintextNum.value = resultStr;
+            },false);
+        get_btn2.addEventListener("click",
+            function(){
+                var length = ciphertext.value.length;
+                var i = 0;
+                var code; //逐个读取英文段的临时变量
+                var resultStr = "";
+
+                while(i<length) {
+                  code = ciphertext.value[i].charCodeAt();
+                  if(code>=65 && code <=97) {
+                      resultStr += code-65;
+                      resultStr += " ";
+                  }
+                  i++;
+                }
+                ciphertextNum.value = resultStr;
+            },false);
+
+        //注册加解密按钮事件
+        start_btn.addEventListener("click",
+            function() {
+                var k1;
+                var k2;
+                var i = 0;
+                var code;
+                var resultStr = "";
+                var length;
+                if(ciphertext.value == "") {
+                    length = plaintext.value.length;
+                    k1 = key1.value;
+                    k2 = key2.value;
+                    for(i=0; i<length; i++) { 
+                      code = plaintext.value[i].charCodeAt();
+                      if(code>=97 && code <=122) {
+                          code = code - 97;
+                          code = k1 * code;
+                          while(k2--) {
+                            code++;  //变量加法出问题了，为什么智能自增
+                          }
+                          k2 = key2.value;
+                          code = code % 26;
+                          resultStr += String.fromCharCode(code+65);
+                      }
+                    }
+                    ciphertext.value = resultStr;
+                }
+                else {
+                    length = ciphertext.value.length;
+                    Euclidean(key1.value, 26);
+                    k1 = res;
+                    k2 = (-res * key2.value)%26;
+                    if(k2 < 0)  k2 = k2+26;
+                    var temp = k2;
+                    for(i=0; i<length; i++) { 
+                      code = ciphertext.value[i].charCodeAt();
+                      if(code>=65 && code <=90) {
+                          code = code - 65;
+                          code = k1 * code;
+                          while(k2--) {
+                            code++;  //变量加法出问题了，为什么智能自增
+                          }
+                          k2 = temp;
+                          code = code % 26;
+                          resultStr += String.fromCharCode(code+97);
+                      }
+                    }
+                    plaintext.value = resultStr;
+                }
+
+            },false); 
+    </script>
+    
+</body>
+</html>

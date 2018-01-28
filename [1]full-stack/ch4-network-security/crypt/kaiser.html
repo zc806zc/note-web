@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+
+<!--     
+    Author    :骆金参(Luo_0412)
+    BuildDate :2016-4-26
+    Version   :1.0
+    Function  :凯撒加解密(增强版)，用多个k，分段加密 
+-->
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>凯撒加解密（增强版）</title>
+    <link href="../src/css/libs/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="css/caser.css"> -->
+    <style>
+      #caser {
+        margin-top:100px;
+      }
+
+    </style>
+
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+<div class="container">
+
+    <div id="caser"> 
+      <form class="form-inline">
+        <div class="form-group col-md-12 col-xs-12 col-lg-12">
+          <label class="sr-only" for="plaintext">明文</label>
+          <div class="input-group">
+            <div class="input-group-addon">明文</div>
+            <input type="text" class="form-control" id="plaintext" value="" placeholder="及时清空密文">
+          </div>
+          <button type="button" class="btn btn-default" id="clear_btn1">
+             <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+          </button>
+        </div>
+      </form>
+     
+      <form class="form-inline">
+        <div class="form-group col-md-12 col-xs-12 col-lg-12">
+          <label class="sr-only" for="offset1">密钥</label>
+          <div class="input-group">
+            <div class="input-group-addon">偏移1(奇数位)</div>
+            <input type="text" class="form-control" id="offset1" value="" placeholder="填写 整数1">
+          </div>
+        </div>
+      </form>  
+
+      <form class="form-inline">
+        <div class="form-group col-md-12 col-xs-12 col-lg-12">
+          <label class="sr-only" for="offset2">密钥</label>
+          <div class="input-group">
+            <div class="input-group-addon">偏移2(偶数位)</div>
+            <input type="text" class="form-control" id="offset2" value="" placeholder="填写 整数2">
+          </div>
+          <button type="button" class="btn btn-default" id="caser_btn">
+              <span class="glyphicon glyphicon-sort" aria-hidden="true"></span>
+          </button>
+        </div>
+      </form>  
+
+
+
+      <form class="form-inline">
+        <div class="form-group col-md-12 col-xs-12 col-lg-12">
+          <label class="sr-only" for="ciphertext">密文1</label>
+          <div class="input-group">
+            <div class="input-group-addon">密文1</div>
+            <input type="text" class="form-control" id="ciphertext" value="" placeholder="及时清空明文">
+          </div>
+          <button type="button" class="btn btn-default" id="clear_btn2">
+              <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+          </button>
+        </div>
+      </form> 
+    </div>
+     
+
+
+    <div id="again">
+
+
+      <form class="form-inline">
+        <div class="form-group col-md-12 col-xs-12 col-lg-12">
+          <label class="sr-only" for="offset3">偏移3</label>
+          <div class="input-group">
+            <div class="input-group-addon">偏移3(再次加密)</div>
+            <input type="text" class="form-control" id="offset3" value="" placeholder="填写 整数2">
+          </div>
+          <button type="button" class="btn btn-default" id="caser_btn2">
+              <span class="glyphicon glyphicon-sort" aria-hidden="true"></span>
+          </button>
+        </div>
+      </form> 
+
+      <form class="form-inline">
+        <div class="form-group col-md-12 col-xs-12 col-lg-12">
+          <label class="sr-only" for="ciphertext_again">密文2</label>
+          <div class="input-group">
+            <div class="input-group-addon">密文2</div>
+            <input type="text" class="form-control" id="ciphertext_again" value="" placeholder="及时清空明文">
+          </div>
+          <button type="button" class="btn btn-default" id="clear_btn3">
+              <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+          </button>
+        </div>
+      </form>  
+
+    </div>
+    
+</div>
+    
+    <!-- <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script> -->
+     <!-- <script src="bootstrap/js/jquery-1.11.3.js"></script> -->
+    <!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
+    <script>
+        var  plaintext  = document.getElementById("plaintext");
+        var  ciphertext = document.getElementById("ciphertext");
+        var  ciphertext_again = document.getElementById("ciphertext_again");
+        var  offset1    = document.getElementById("offset1");
+        var  offset2    = document.getElementById("offset2");
+        var  caser_btn  = document.getElementById("caser_btn");
+        var  caser_btn2  = document.getElementById("caser_btn2");
+        var  clear_btn1  = document.getElementById("clear_btn1");
+        var  clear_btn2  = document.getElementById("clear_btn2");
+        var  clear_btn3  = document.getElementById("clear_btn3");
+        
+
+        caser_btn.addEventListener("click",
+            function () { 
+                var flag = 1; 
+                var length = 0; 
+                var offsetNum1 = Math.abs(offset1.value) % 26;
+                var offsetNum2 = Math.abs(offset2.value) % 26;
+                var num = 0; //offsetNum1或2的临时变量
+                var i = 0;
+                var code = 0;
+                var result = ""; 
+                
+                if(plaintext.value == "" )  {
+                    length = ciphertext.value.length;
+                    judge(flag,i,length,num,code,offsetNum1,offsetNum2,result);
+                }
+                else  {
+                    length = plaintext.value.length;
+                    judge(flag,i,length,num,code,offsetNum1,offsetNum2,result);
+                }
+
+            },false);
+
+        caser_btn2.addEventListener("click",
+            function () { 
+                var flag = 1; 
+                var length = 0; 
+                var offsetNum3 = Math.abs(offset3.value) % 26;
+                var num = 0; //offsetNum1或2的临时变量
+                var i = 0;
+                var code = 0;
+                var result = "";
+                if(offset3.value < 0)       flag = -1;   //偏移量若为负数，则为-1) 
+                if(ciphertext.value == "" )  {
+                    length = ciphertext_again.value.length;
+                }
+                else  {
+                    length = ciphertext.value.length;
+                }
+                judge2(flag,i,length,num,code,offsetNum3,result);
+            },false);
+
+        clear_btn1.addEventListener("click",
+            function () { 
+                plaintext.value = "";
+            },false);
+
+        clear_btn2.addEventListener("click",
+            function () { 
+                ciphertext.value = "";
+            },false);
+        clear_btn3.addEventListener("click",
+            function () { 
+                ciphertext_again.value = "";
+            },false);
+
+        
+
+        function judge(flag,i,length,num,code,offsetNum1,offsetNum2,result) {
+            while (i<length) {
+                flag = 1;
+                if(plaintext.value == "" )  
+                    code = ciphertext.value[i].charCodeAt();
+                else 
+                    code = plaintext.value[i].charCodeAt();
+                if (code >= 97 && code <= 122) {
+                    if(i%2==0)  {
+                      num = offsetNum1;
+                      if(offset1.value < 0)       flag = -1;   //偏移量若为负数，则为-1)
+                    }
+                    else  {
+                      num = offsetNum2;
+                      if(offset2.value < 0)       flag = -1;   //偏移量若为负数，则为-1)
+                    }
+                    while (num--) {
+                        if(plaintext.value == "" ) code -= flag;
+                        else                       code += flag;
+                    }
+                    if(code > 122)      code = (code-122) + 96;
+                    else if(code < 97)  code = 123 - (97- code);
+                }
+                else if (code >= 65 && code <= 90) {
+                  if(i%2==0)  {
+                    num = offsetNum1;
+                    if(offset1.value < 0)       flag = -1;   //偏移量若为负数，则为-1)
+                  }
+                  else  {
+                    num = offsetNum2;
+                    if(offset2.value < 0)       flag = -1;   //偏移量若为负数，则为-1)
+                  }
+                    while (num--) {
+                        if(plaintext.value == "")  code -= flag;
+                        else                       code += flag;
+                    }
+                    if(code > 90)       code = (code-90) + 64;
+                    else if(code < 65)  code = 91 - (65- code);
+                }
+                result += String.fromCharCode(code);
+                i++;
+            }
+            if(plaintext.value == "" )  plaintext.value = result;
+            else                        ciphertext.value = result;
+        }
+
+
+        function judge2(flag,i,length,num,code,offsetNum3,result) {
+            while (i<length) {
+                if(ciphertext.value == "" )  
+                    code = ciphertext_again.value[i].charCodeAt();
+                else 
+                    code = ciphertext.value[i].charCodeAt();
+                if (code >= 97 && code <= 122) {
+                    num = offsetNum3;  
+                    while (num--) {
+                        if(ciphertext.value == "" ) code -= flag;
+                        else                        code += flag;
+                    }
+                    if(code > 122)      code = (code-122) + 96;
+                    else if(code < 97)  code = 123 - (97- code);
+                }
+                else if (code >= 65 && code <= 90) {
+                    num = offsetNum3;
+                    while (num--) {
+                      if(ciphertext.value == "" ) code -= flag;
+                      else                       code += flag;
+                    }
+                    if(code > 90)       code = (code-90) + 64;
+                    else if(code < 65)  code = 91 - (65- code);
+                }
+                result += String.fromCharCode(code);
+                i++;
+            }
+            if(ciphertext.value == "" )  ciphertext.value = result;
+            else                         ciphertext_again.value = result;
+        }
+
+
+    </script>
+    
+</body>
+</html>

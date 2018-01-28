@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+
+<!--     
+    Author    :骆金参(Luo_0412)
+    BuildDate :2016-4-26
+    Version   :2.0
+    Function  :统计英文字段（增强版）
+    Update    ：1.基于仿射密码，蛮力求解
+                2.密文大写，明文小写
+                3.可选最高频率字母，例如“E”.
+                4.还是人眼识别的
+-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>统计英文字段(增强版)</title>
+    <link href="../src/css/libs/bootstrap.min.css" rel="stylesheet">
+    <style>
+        #count {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div id="count"> 
+      <form class="form-inline">
+        <div class="form-group col-md-12 col-xs-12 col-lg-12">
+          <label class="sr-only" for="ciphertext">统计</label>
+          <div class="input-group">
+            <div class="input-group-addon">密文文件</div>
+            <input type="" class="form-control" id="ciphertext" value="" placeholder="越多越准">
+          </div>
+          <button type="button" class="btn btn-default" id="count_btn">
+             <span class="glyphicon glyphicon-sort-by-alphabet" aria-hidden="true"></span>  字母排序
+          </button>
+          <button type="button" class="btn btn-default" id="sort_btn">
+             <span class="glyphicon glyphicon-sort-by-order" aria-hidden="true"></span>  频率排序 
+          </button>
+        </div>
+      </form>
+
+      <form class="form-inline">
+        <div class="form-group col-md-12 col-xs-12 col-lg-12">
+          <label class="sr-only" for="maxCh">首频字母</label>
+          <div class="input-group">
+            <div class="input-group-addon">首频字母</div>
+            <input type="" class="form-control" id="maxCh" value="E" placeholder="最高频字母 默认 E">
+          </div>
+          <button type="button" class="btn btn-default" id="possible_btn">
+             <span class="glyphicon glyphicon-send" aria-hidden="true"></span>  可能明文
+          </button>
+        </div>
+      </form>
+     
+
+      <form class="form">
+        <div class="form-group col-md-12 col-xs-12 col-lg-12 col-sm-12">
+          <label class="sr-only" for="result">结果</label>
+          <div class="input-group">
+            <div class="input-group-addon">统计结果</div>
+            <textarea name="" id="result" class="form-control " rows="5" placeholder="【说明】仅统计功能不区分大小写字母"></textarea>
+          </div>
+        </div>
+      </form>
+
+      <form class="form">
+        <div class="form-group col-md-12 col-xs-12 col-lg-12 col-sm-12">
+          <label class="sr-only" for="possibleText">可能明文</label>
+          <div class="input-group">
+            <div class="input-group-addon">可能明文</div>
+            <textarea name="" id="possibleText" class="form-control " rows="10" placeholder="【说明】 基于频率排序，使用此功能，密文规定为大写字母。"></textarea>
+          </div>
+        </div>
+      </form>
+
+      <form class="form">
+        <div class="form-group col-md-12 col-xs-12 col-lg-12 col-sm-12">
+          <label class="sr-only" for="addition">附件</label>
+          <div class="input-group">
+            <div class="input-group-addon">频率参考</div>
+            <textarea name="" id="addition" class="form-control " rows="5"></textarea>
+          </div>
+        </div>
+      </form>
+
+
+    </div>
+    
+</div>
+    
+
+<!--      <script src="bootstrap/js/jquery-1.11.3.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script> -->
+
+    <script>
+      //获取id值
+    	var count_btn  = document.getElementById("count_btn");
+      var sort_btn   = document.getElementById("sort_btn");      
+    	var ciphertext = document.getElementById("ciphertext");
+    	var result     = document.getElementById("result");
+      var possible_btn = document.getElementById("possible_btn");  
+      var possibleText = document.getElementById("possibleText");
+      var maxCh = document.getElementById("maxCh");
+      var addition = document.getElementById("addition");
+
+      //声明全局变量
+      var array = new Array(
+                                  0,0,0,0,0,0,0,0,0,0,0,0,0,
+                                  0,0,0,0,0,0,0,0,0,0,0,0,0,
+                                  0,0,0,0,0,0,0,0,0,0,0,0,0,
+                                  0,0,0,0,0,0,0,0,0,0,0,0,0
+                            );
+      var sortedArray = new Array(
+                                  0,0,0,0,0,0,0,0,0,0,0,0,0,
+                                  0,0,0,0,0,0,0,0,0,0,0,0,0,
+                                  0,0,0,0,0,0,0,0,0,0,0,0,0,
+                                  0,0,0,0,0,0,0,0,0,0,0,0,0
+                            );
+      var gcdFlag = 0;  //判断是否互素
+      var key2;         
+      var res;
+      var tempStr = "";
+
+      addition.value = "[1] E\n[2] T A O I N S H R\n[3] D L\n[4] C U M W F G Y P B\n[5] V K J X Q Z\n"
+
+
+
+      
+
+      //函数：判断两个数的是否互素（最大公约数是否为1）
+      function gcdJudge(n,m) {
+          var r;
+          while(m!=0)
+          {
+            r=n%m;
+            n=m;
+            m=r;
+          }
+          if(n==1)  gcdFlag = 1;
+          else      gcdFlag = 0;
+      }
+
+      //函数：已知k1求k2
+      function computeK2(key1, chNum) {
+          var k2 = 0;
+          k2 = chNum - ((maxCh.value.charCodeAt() - 65) * key1)%26;
+          if(k2<0) k2 = k2 + 26;
+          key2 = k2;
+      }
+
+
+      //函数：求逆元
+      function Euclidean(r, t)
+      {
+          var x = 0, y = 1;
+          var temp = y;
+          var count, q;
+          res = t;
+          while (r != 1 && t != 1)
+          {
+            count = parseInt(t/r);
+            // alert(count);
+            q = t%r;
+            t = r;
+            r = q;
+            y = x - y*count;
+            x = temp;
+            temp = y;
+          }
+          y = y % res;
+          if (y<0) res += y;
+          else     res = y;
+      }
+      
+
+
+
+
+      //函数：已知k1,k2，给密文解密
+      function decode (key1,key2) {
+          var length = ciphertext.value.length;
+          Euclidean(key1, 26);
+          k1 = res;
+          k2 = (-k1 * key2)%26;
+          if(k2 < 0)  k2 = k2+26;
+          var temp = k2;
+          tempStr = "";
+          for(i=0; i<length; i++) { 
+            code = ciphertext.value[i].charCodeAt();
+            if(code>=65 && code <=90) {
+                code = code - 65;
+                code = k1 * code;
+                while(k2--) {
+                  code++;  //变量加法出问题了，为什么智能自增
+                }
+                k2 = temp;
+                code = code % 26;
+                tempStr += String.fromCharCode(code+97);
+            }
+          }
+      }
+
+
+
+    	count_btn.addEventListener("click",
+    	    function countFunc () {
+            // if(possibleText.value != "") possibleFunc();
+            possibleText.value = "";
+    	    	array = new Array(
+    	    		                  0,0,0,0,0,0,0,0,0,0,0,0,0,
+    	    		                  0,0,0,0,0,0,0,0,0,0,0,0,0,
+    	    		                  0,0,0,0,0,0,0,0,0,0,0,0,0,
+    	    		                  0,0,0,0,0,0,0,0,0,0,0,0,0
+    	    		               );
+    	     	var length = ciphertext.value.length;
+    	     	var i = 0;
+    	     	var resultStr = "";
+    	     	var code;
+    	     	var countNum = 0;
+    
+    	     	while (i<length) {
+    	     	    code = ciphertext.value[i].charCodeAt();
+                    if(code >= 65 && code <= 90) {
+                    	array[code-65]++;
+                    	countNum++;
+                    }
+                    else if(code >= 97 && code <= 122) {
+                    	array[code-71]++;
+                    	countNum++;
+                    }
+                    i++;
+    	     	}
+
+
+                i = 0;
+    	     	while (i < 52) {
+    	     		if(array[i] != 0) {
+                        resultStr += "[";
+    	     			if(i<26) resultStr += String.fromCharCode(i+65);
+    	     			else     resultStr += String.fromCharCode(i+71);
+    	     			resultStr += "]  ";
+    	     			resultStr += array[i];
+    	     			resultStr += "    ";
+    	     			resultStr += array[i]/countNum;
+    	     			resultStr += " \n";
+    	     		}
+    	     		i++;
+    	     	}
+    	     	result.value = resultStr; 
+
+    	    },false);
+
+        sort_btn.addEventListener("click",
+            function sortFunc () {
+                // if(possibleText.value != "") possibleFunc(); 
+                possibleText.value = "";
+                var max = array[0];
+                array = new Array(
+                                      0,0,0,0,0,0,0,0,0,0,0,0,0,
+                                      0,0,0,0,0,0,0,0,0,0,0,0,0,
+                                      0,0,0,0,0,0,0,0,0,0,0,0,0,
+                                      0,0,0,0,0,0,0,0,0,0,0,0,0
+                                     );
+                var length = ciphertext.value.length;
+                var i = 0;
+                var resultStr = "";
+                var code;
+                var countNum = 0;
+                var countFlag = 0;
+    
+                while (i<length) {
+                    code = ciphertext.value[i].charCodeAt();
+                    if(code >= 65 && code <= 90) {
+                        array[code-65]++;
+                        countNum++;
+                    }
+                    else if(code >= 97 && code <= 122) {
+                        array[code-71]++;
+                        countNum++;
+                    }
+                    i++;
+                }
+
+                for(var i=1;i<array.length;i++){ 
+                    if(max<array[i])  
+                        max = array[i];
+                }
+
+                while(max--) {
+                    i = 0;
+                    for(i=0; i<52; i++) {
+                        if(array[i]==max+1 && array[i] >0) {
+                            countFlag++;
+                            sortedArray[countFlag-1] = i;
+                            resultStr += "[";
+                            resultStr += countFlag;
+                            resultStr += " -> ";
+                            if(i<26) resultStr += String.fromCharCode(i+65);
+                            else     resultStr += String.fromCharCode(i+71);
+                            resultStr += "  ]";
+                            resultStr += "  ";
+                            resultStr += array[i];
+                            resultStr += "      ";
+                            resultStr += array[i]/countNum;
+                            resultStr += " \n";
+                        }
+                    }
+                }
+                result.value = resultStr;
+
+
+
+            },false);
+
+
+        possible_btn.addEventListener("click",
+            function possibleFunc() { 
+                sort_btn.click();
+                if(result.value != "")  {
+
+                if(maxCh.value == "")  maxCh.value = "E";
+                var keyTemp1;
+                var keyTemp2;
+                var possibleStr = "";
+                var i;
+                for(i = 2; i < 26; i++) {
+                  
+                  gcdJudge(i,26);
+                  if(gcdFlag==1) {
+                    possibleStr += "k1 =";
+                    possibleStr += i;
+                    possibleStr += "   k2 =";
+
+                    
+                    if(sortedArray[0]>25)
+                        computeK2(i,sortedArray[0]-26);
+                    else 
+                        computeK2(i,sortedArray[0]);
+
+                    possibleStr += key2;
+
+                    possibleStr += "  ";
+                    keyTemp1 = i;
+                    keyTemp2 = key2;
+                    decode(keyTemp1,keyTemp2);
+                    possibleStr += tempStr;
+                    possibleStr += "\n"
+                  }
+
+                }
+                possibleText.value = possibleStr;
+            }
+
+            },false);
+
+
+
+    </script>
+    
+</body>
+</html>

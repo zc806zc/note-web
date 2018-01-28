@@ -1,0 +1,66 @@
+# 语境限制型应用
+
+- 并没有这种框架，我随便写写而已
+
+- 语境
+
+  - 一个要维护的配置文件，但这个是框架自带的
+  - 能够集成所有的UI库
+  - 不需要开发人员去命名组件
+
+    - project name -> widget name
+
+```javascript
+首先起码要抛弃div + css的这种思路
+组件并不是你一笔一画创造出来的
+只是规定了要有这么一个表单组合，但至于这个表单具体怎么样都不管，
+只要不影响到数据交互就行
+```
+
+- 快速开发
+
+  - 并不适合什么美的事务
+  - 分模块
+  - 模板
+
+- 最大限度的解除共性的东西，只写特性的内容
+
+```html
+注册form
+
+// meta.js
+form  
+  - id (唯一性, 可能就是网址)
+  - name (声名的时候的名字)
+  - url/ip (null)
+  - ui
+  - child(null)
+    - btn
+    - input
+  - data
+    - input 例如有三个
+      - json data structure
+    - tranfer 转化
+    - output
+
+<form>
+
+  <!-- 自动生成的 -->
+  <input></input>
+  <input></input>
+  <input></input>
+  <btn>
+  <!-- 自动生成的 -->
+
+</form>
+
+组价的写法可能类似
+
+<!-- 网址，也说明已经有人写过这个内容了,直接搬来 -->
+<form url="172.168.11.168/form">
+<form url="form.xyz.com">
+
+ui样式会在上下文语境确定显示
+```
+
+- 安全问题
