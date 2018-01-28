@@ -1,3 +1,8 @@
+# RPC
+
+- 面向动作
+- <https://segmentfault.com/q/1010000003049016>
+
 # RESTful
 
 - <https://segmentfault.com/a/1190000006735330>
