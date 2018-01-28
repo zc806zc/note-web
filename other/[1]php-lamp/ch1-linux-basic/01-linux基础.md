@@ -2,7 +2,6 @@
 
 - linux学习资源整理 <https://zhuanlan.zhihu.com/p/22654634>
 
-# Linux
 
 - 常用命令
 
