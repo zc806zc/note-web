@@ -1,62 +1,66 @@
 # Layout/Panel
 
-- 布局
+# 布局
 
-  - 栅格布局
-  - 网格布局
-  - muuri
+# 栅格布局
 
-    - <https://github.com/haltu/muuri>
-    - Responsive, sortable, filterable and draggable grid layouts
+# 网格布局
 
-  - masonry
+# 布局引擎
 
-    - Cascading grid layout library
-    - <https://github.com/desandro/masonry>
+- muuri
 
-  - neat
+  - <https://github.com/haltu/muuri>
+  - Responsive, sortable, filterable and draggable grid layouts
 
-    - <https://github.com/thoughtbot/neat>
+- masonry
 
-  - 全屏
+  - Cascading grid layout library
+  - <https://github.com/desandro/masonry>
 
-    - fullPage
+- neat
 
-      - <https://github.com/alvarotrigo/fullPage.js>
+  - <https://github.com/thoughtbot/neat>
 
-    - 全屏视频
+# 全屏
 
-      - FitVids.js <https://github.com/davatron5000/FitVids.js>
+- fullPage
 
-        - A lightweight, easy-to-use jQuery plugin for fluid width video embeds.
+  - <https://github.com/alvarotrigo/fullPage.js>
 
-  - 拖拽
+- 全屏视频
 
-    - dragula <https://github.com/bevacqua/dragula>
+  - FitVids.js <https://github.com/davatron5000/FitVids.js>
 
-  - 滚动条
+    - A lightweight, easy-to-use jQuery plugin for fluid width video embeds.
 
-    - scrollreveal
+# 拖拽
 
-      - <https://github.com/jlmakes/scrollreveal>
+- dragula <https://github.com/bevacqua/dragula>
 
-    - jquery.slimScroll
+# 滚动条
 
-    - scrollama <https://github.com/russellgoldenberg/scrollama>
+- scrollreveal
 
-      - Scrollytelling with IntersectionObserver
+  - <https://github.com/jlmakes/scrollreveal>
 
-    - jquery.nicescroll
+- jquery.slimScroll
 
-    - JS自定义 <http://www.jq22.com/webqd2618> | <http://www.jq22.com/webqd1910>
+- scrollama <https://github.com/russellgoldenberg/scrollama>
 
-  - 元素定位
+  - Scrollytelling with IntersectionObserver
 
-    - 页脚置底 <http://liaokeyu.com/%E6%8A%80%E6%9C%AF/2017/01/06/%E8%AF%91-CSS%E4%BA%94%E7%A7%8D%E6%96%B9%E5%BC%8F%E5%AE%9E%E7%8E%B0Footer%E7%BD%AE%E5%BA%95.html>
-    - 固定在浏览器顶部 <http://www.jq22.com/webqd2646>
-    - 返回顶部
+- jquery.nicescroll
 
-      - <http://www.jq22.com/webqd2804>
+- JS自定义 <http://www.jq22.com/webqd2618> | <http://www.jq22.com/webqd1910>
+
+# 元素定位
+
+- 页脚置底 <http://liaokeyu.com/%E6%8A%80%E6%9C%AF/2017/01/06/%E8%AF%91-CSS%E4%BA%94%E7%A7%8D%E6%96%B9%E5%BC%8F%E5%AE%9E%E7%8E%B0Footer%E7%BD%AE%E5%BA%95.html>
+- 固定在浏览器顶部 <http://www.jq22.com/webqd2646>
+- 返回顶部
+
+  - <http://www.jq22.com/webqd2804>
 
 ```javascript
 $(function() {
@@ -76,53 +80,51 @@ $(function() {
 });
 ```
 
-- 导航
+# 锚点跳转
 
-  - 锚点跳转
+- <http://www.jq22.com/webqd2418>
 
-    - <http://www.jq22.com/webqd2418>
-
-  ```javascript
+```javascript
   $(window).ready(function() {
-      $('#nav > .menu').on('click', function() {
-          var $this = $(this);
-          $this.addClass('active').siblings('.menu').removeClass('active');
-          $("html,body").animate({
-              scrollTop: $("#main > .box").eq($this.index() - 1).offset().top // 这一句
-          }, 300);
-          $("#bar").animate({
-              left: $this.offset().left
-          }, 300);
-      });
+    $('#nav > .menu').on('click', function() {
+        var $this = $(this);
+        $this.addClass('active').siblings('.menu').removeClass('active');
+        $("html,body").animate({
+            scrollTop: $("#main > .box").eq($this.index() - 1).offset().top // 这一句
+        }, 300);
+        $("#bar").animate({
+            left: $this.offset().left
+        }, 300);
+    });
   });
-  ```
+```
 
-- 弹框
+# 弹框
 
-  - 纯css模拟 <https://github.com/drublic/css-modal>
-  - layer
-  - sweetalert
+- 纯css模拟 <https://github.com/drublic/css-modal>
+- layer
+- sweetalert
 
-    - <https://github.com/t4t5/sweetalert>
-    - <https://github.com/limonte/sweetalert2>
+  - <https://github.com/t4t5/sweetalert>
+  - <https://github.com/limonte/sweetalert2>
 
-  - izimodal <https://github.com/dolce/iziModal>
+- izimodal <https://github.com/dolce/iziModal>
 
-  - Waypoints
+- Waypoints
 
-  - cbpGridGallery.js
+- cbpGridGallery.js
 
-  - Magnific Popup
+- Magnific Popup
 
-- 相册
+# 相册
 
-  - gif预览
+- gif预览
 
-    - jqGifPreview <https://github.com/SodhanaLibrary/jqGifPreview>
-    - lightbox
-    - prettyPhoto
+  - jqGifPreview <https://github.com/SodhanaLibrary/jqGifPreview>
+  - lightbox
+  - prettyPhoto
 
-      - <http://www.jq22.com/jquery-info255>
+    - <http://www.jq22.com/jquery-info255>
 
 - 全屏/放大
 
@@ -137,27 +139,6 @@ function autoHeight() {
     } else {
         $("left").style.height = $("right").offsetHeight + "px";
     }
-}
-```
-
-- 文本截断
-
-  - css
-  - js <http://www.jq22.com/webqd2751>
-  - 插件 <https://dollarshaveclub.github.io/shave/>
-
-```javascript
-var shortName = "我和我好朋友写代码的照片.jpg".replace(/^(^.{8})(.+)(.{2}\.+\w+$)$/g, "$1...$3");
-document.getElementById('output').append(shortName);
-
-// 多行
-p {
-  display:-webkit-box;
-  -webkit-box-orient:vertical;
-  -webkit-line-clamp:5;
-  overflow:hidden;
-  width:200px;
-  margin:50px;
 }
 ```
 
@@ -183,10 +164,10 @@ $(".cf_listATitle").on("click", function() {
 });
 ```
 
-- 点击空白处关闭弹窗
+# 点击空白处关闭弹窗
 
-  - document加阻止冒泡 两个点击事件
-  - <http://www.jq22.com/webqd2693>
+- document加阻止冒泡 两个点击事件
+- <http://www.jq22.com/webqd2693>
 
 ```javascript
 click("box","box");
@@ -200,15 +181,15 @@ function click(name,box) {
 }
 ```
 
-- 占位元素
+# 占位元素
 
-- 选项卡
+# 选项卡
 
 ```javascript
 $("#" + wrapId).find("div").eq(index).show().siblings().hide();  // 显示自己隐藏兄弟
 ```
 
-- 关于jquery实现px转换为rem代码
+# 关于jquery实现px转换为rem代码
 
 ```javascript
 var deviceWidth = document.documentElement.clientWidth;
@@ -232,13 +213,17 @@ window.onresize = function() {
 }
 ```
 
-- 下拉菜单
+# 下拉菜单
 
-  - css实现 <http://www.jq22.com/webqd3033>
+- css实现 <http://www.jq22.com/webqd3033>
 
-- jQuery弹出窗口可移动、缩放 <http://www.jq22.com/webqd3029>
+# jQuery弹出窗口可移动、缩放
 
-- 网页标签页消息提示 <http://www.jq22.com/webqd1653>
+- <http://www.jq22.com/webqd3029>
+
+# 网页标签页消息提示
+
+- <http://www.jq22.com/webqd1653>
 
 ```javascript
 (function(){
@@ -272,11 +257,11 @@ message=$.mengfan.show('新消息');
 },10000);
 ```
 
-- 浏览器调整
+# 浏览器调整
 
-- 贴边停靠 <http://www.jq22.com/webqd2141>
+# 贴边停靠 <http://www.jq22.com/webqd2141>
 
-- 下拉加载更多 <http://www.jq22.com/webqd2043>
+# 下拉加载更多 <http://www.jq22.com/webqd2043>
 
 ```javascript
 $(window).scroll(function() {
@@ -292,62 +277,62 @@ $(window).scroll(function() {
 });
 ```
 
-- 视频背景
+# 视频背景
 
-  - bideo.js
+- bideo.js
 
-    - <https://github.com/rishabhp/bideo.js>
-    - Fullscreen HTML5 Background Video for the Web
+  - <https://github.com/rishabhp/bideo.js>
+  - Fullscreen HTML5 Background Video for the Web
 
-- 单页面
+# 单页面
 
-  - senna.js
+- senna.js
 
-    - <https://github.com/liferay/senna.js/>
-    - A blazing-fast Single Page Application engine
+  - <https://github.com/liferay/senna.js/>
+  - A blazing-fast Single Page Application engine
 
-- 轮播图
+# 轮播
 
-  - (首选) slick <https://github.com/kenwheeler/slick>
+- (首选) slick <https://github.com/kenwheeler/slick>
 
-    - the last carousel you'll ever need
+  - the last carousel you'll ever need
 
-  - (推荐) superslide
+- (推荐) superslide
 
-  - 轻量级
+- 轻量级
 
-    - unslider
-    - siema <https://github.com/pawelgrzybek/siema>
+  - unslider
+  - siema <https://github.com/pawelgrzybek/siema>
 
-  - 传统
+- 传统
 
-    - myfocus(jquery)
+  - myfocus(jquery)
 
-  - Camera slideshow <https://www.pixedelic.com/plugins/camera/>
+- Camera slideshow <https://www.pixedelic.com/plugins/camera/>
 
-  - fancybox
+- fancybox
 
-  - jquery.flexisel.js
+- jquery.flexisel.js
 
-  - Nivo Slider
+- Nivo Slider
 
-    - The Most Awesome jQuery Image Slider
+  - The Most Awesome jQuery Image Slider
 
-  - FlexSlider 2
+- FlexSlider 2
 
-    - The best responsive slider. Period.
+  - The best responsive slider. Period.
 
-  - bxslider-4
+- bxslider-4
 
-    - Responsive jQuery content slider
+  - Responsive jQuery content slider
 
-  - 切割轮播图 <http://www.jq22.com/webqd2833>
+- 切割轮播图 <http://www.jq22.com/webqd2833>
 
-  - 全屏垂直滚动 <http://www.jq22.com/webqd1991>
+- 全屏垂直滚动 <http://www.jq22.com/webqd1991>
 
-  - CSS3轮播 <http://www.jq22.com/webqd2427>
+- CSS3轮播 <http://www.jq22.com/webqd2427>
 
-  - 渐隐效果仿dribble <http://www.jq22.com/webqd2023>
+- 渐隐效果仿dribble <http://www.jq22.com/webqd2023>
 
 ```css
 #photos {
@@ -377,30 +362,31 @@ $(window).scroll(function() {
 
 > 轮播图: 获取1% 的用户点击却占用了页面一半甚至更多的位置
 
-- 对话框和灯箱
-- 弹出层与工具提示(也可以属于tool)
+# 对话框和灯箱
 
-  - layer 推荐
-  - tecent artDialog
-  - 传统 lhgdialog
-  - JS简单 <http://www.jq22.com/webqd2525>
-  - <http://www.jq22.com/webqd2001>
-  - 弹出层提取理念
+# 弹出层与工具提示(也可以属于tool)
 
-    - lhgdialog会销毁之前提取的内容, 这种处理似乎不太合适
+- layer 推荐
+- tecent artDialog
+- 传统 lhgdialog
+- JS简单 <http://www.jq22.com/webqd2525>
+- <http://www.jq22.com/webqd2001>
+- 弹出层提取理念
 
-- 布局
+  - lhgdialog会销毁之前提取的内容, 这种处理似乎不太合适
 
-  - 图片瀑布流 <http://www.jq22.com/webqd2082>
+# 布局
 
-- Tabs
+- 图片瀑布流 <http://www.jq22.com/webqd2082>
 
-- 导航
+# Tabs
 
-  - 水平导航
+# 导航
 
-    - 旋转显示 <http://www.jq22.com/webqd2435>
-    - 立体导航 <http://www.jq22.com/webqd1907>
+# 水平导航
+
+- 旋转显示 <http://www.jq22.com/webqd2435>
+- 立体导航 <http://www.jq22.com/webqd1907>
 
 ```javascript
 // 立体导航
@@ -417,18 +403,18 @@ ul li:hover .center {
 }
 ```
 
-- 垂直导航
+# 垂直导航
 
-- 微信底部菜单 <http://www.jq22.com/webqd487>
+# 微信底部菜单 <http://www.jq22.com/webqd487>
 
-- 文件树
+# 文件树
 
-  - 简易 <http://www.jq22.com/webqd2457>
+- 简易 <http://www.jq22.com/webqd2457>
 
-- 手风琴导航
+# 手风琴导航
 
-- 分页
+# 分页
 
-  - 简单分页 <http://www.jq22.com/webqd1246>
+- 简单分页 <http://www.jq22.com/webqd1246>
 
-- 其他导航
+# 其他导航

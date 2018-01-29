@@ -1,9 +1,11 @@
 # Spring Boot
 
-- <https://github.com/chenfromsz?tab=repositories>
+- <https://github.com/JeffLi1993/springboot-learning-example>
+- springboot 深入实践图书源码 <https://github.com/chenfromsz?tab=repositories>
 - 学习目录 <https://www.jianshu.com/p/9a08417e4e84>
-- <https://github.com/yizhiwazi/springboot-socks>
+- 其他
 
+  - <https://github.com/yizhiwazi/springboot-socks>
 
 # 界面设计
 
@@ -31,4 +33,4 @@ th:value="${movie.createDate} ? ${#dates.format(movie.createDate, 'yyyy-MM-dd')}
 
 # 权限控制 结合 Vue
 
-- https://juejin.im/entry/5a60611b6fb9a01cb0495fcb
+- <https://juejin.im/entry/5a60611b6fb9a01cb0495fcb>

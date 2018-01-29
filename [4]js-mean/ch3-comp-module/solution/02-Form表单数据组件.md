@@ -439,6 +439,10 @@ if (window.FileReader) {
 }
 ```
 
+- 标签输入框
+
+  - <https://github.com/bootstrap-tagsinput/bootstrap-tagsinput>
+
 # 表单校验
 
 - superstruct

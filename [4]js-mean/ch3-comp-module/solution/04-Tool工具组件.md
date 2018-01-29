@@ -1,52 +1,30 @@
-# Tool
+# Tool 工具类组件
 
-主要包括以下几类
+# 弹幕 | 字幕
 
-- 富文本编辑器
-- 放大镜 | 截图 | 裁剪
-- 弹幕 | 字幕
-- 聊天
-- 地图
-- 视频
-- 音频
-- 邮件
-- 文件格式转化
+# 网页打印
 
-  - xlsx
+# 网站标签页
 
-- 网页打印
+# 客服反馈
 
-- 用户操作导航
+# 代码格式化
 
-- 购物车
+# 广告
 
-- 网站标签页
+# 选座位
 
-- 客服反馈
+# 计算器
 
-- 打印
+# 倒计时 | 计时器
 
-- 抽奖 | 摇号
+# 代码编辑器
 
-- 代码格式化
+- codemirror
 
-- 广告
+# 繁简字转化
 
-- 选座位
-
-- 计算器
-
-- 倒计时 | 计时器
-
-- 代码编辑器
-
-  - codemirror
-
-- 分享
-
-- 繁简字转化
-
-  - OpenCC <https://github.com/BYVoid/OpenCC>
+- OpenCC <https://github.com/BYVoid/OpenCC>
 
 # 浏览器信息
 
@@ -82,7 +60,8 @@
 
 # 放大镜 | 截图
 
-- <https://github.com/jwagner/smartcrop.js>
+- jcrop <http://www.bootcdn.cn/jquery-jcrop/>
+- smartcrop <https://github.com/jwagner/smartcrop.js>
 - <https://github.com/niklasvh/html2canvas>
 
 - jfMagnify <https://github.com/fonstok/jfMagnify>
@@ -90,8 +69,6 @@
 - jquery.etalage.min.js
 
 - 精简版JS <http://www.jq22.com/webqd2110>
-
-- <http://www.jq22.com/webqd643>
 
 - 裁剪
 
@@ -101,15 +78,19 @@
 
   - 图片转css
 
+- 其他
+
+  - <http://www.jq22.com/webqd643>
+
 # 聊天
 
-- <https://github.com/RocketChat/Rocket.Chat>
+- Rocket.Chat <https://github.com/RocketChat/Rocket.Chat>
 
 - 聊天室 <http://www.jq22.com/webqd2560>
 
 # 地图
 
-- <https://github.com/Leaflet/Leaflet>
+- Leaflet <https://github.com/Leaflet/Leaflet>
 
 # 视频
 
@@ -122,11 +103,13 @@
 
   - <https://github.com/Bilibili/flv.js>
 
-- plyr <https://github.com/sampotts/plyr>
+- plyr
+
+  - <https://github.com/sampotts/plyr>
 
 # 音频
 
-- <https://github.com/goldfire/howler.js>
+- howler <https://github.com/goldfire/howler.js>
 
 # 文件格式转化
 
@@ -368,7 +351,7 @@ function stopFun() {
   - marquee(过时) <http://www.jq22.com/webqd2575>
   - JS <http://www.jq22.com/webqd2444> | <http://www.jq22.com/webqd2391>
 
-```javascript
+```html
 spanDom.stop().animate({
     "right": pageW + 300
 }, 10000, "linear", function() {

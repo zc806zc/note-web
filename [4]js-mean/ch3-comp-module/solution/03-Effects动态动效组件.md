@@ -1,36 +1,34 @@
 # Effect/Animate/Decoration
 
-主要分为以下几类
+# 图标|字体
 
-- 图标|字体
+- font-awesome
+- 阿里矢量图标库 <http://www.iconfont.cn/>
+- svg <https://icons8.com/preloaders/en/free>
+- google图标 <https://github.com/google/material-design-icons>
+- <http://cssicon.space/#/>
 
-  - font-awesome
-  - 阿里矢量图标库 <http://www.iconfont.cn/>
-  - svg <https://icons8.com/preloaders/en/free>
-  - google图标 <https://github.com/google/material-design-icons>
-  - <http://cssicon.space/#/>
+# 动画
 
-- 动画
+- 网站
 
-  - 网站
+  - jq22
+  - <http://www.17sucai.com/>
+  - <http://microjs.com/>
 
-    - jq22
-    - <http://www.17sucai.com/>
-    - <http://microjs.com/>
+- Hover.css
 
-  - Hover.css
+  - <https://github.com/IanLunn/Hover>
 
-    - <https://github.com/IanLunn/Hover>
+- 粒子效果
 
-  - 粒子效果
+  - create.js
 
-    - create.js
+- 一组简单可爱的css动效 <https://github.com/jonsuh/hamburgers>
 
-  - 一组简单可爱的css动效 <https://github.com/jonsuh/hamburgers>
+- SuperSlide v2.1.1 <http://www.SuperSlide2.com/>
 
-  - SuperSlide v2.1.1 <http://www.SuperSlide2.com/>
-
-  - jquery.easing <https://github.com/gdsmith/jquery.easing>
+- jquery.easing <https://github.com/gdsmith/jquery.easing>
 
 ```javascript
 // 动画 ====================
@@ -50,29 +48,29 @@ Filterizr is a jQuery plugin that sorts, shuffles and applies stunning filters o
 responsive galleries using CSS3 transitions and custom CSS effects.
 ```
 
-- 交互
+# 交互
 
-  - interact.js <https://github.com/taye/interact.js>
+- interact.js <https://github.com/taye/interact.js>
 
-    - <http://www.jq22.com/yanshi17203>
+  - <http://www.jq22.com/yanshi17203>
 
-- 色彩
+# 色彩
 
-  - 配色方案
-  - 分析网页主色/配色方案
+- 配色方案
+- 分析网页主色/配色方案
 
-    - <http://www.jq22.com/jquery-info235>
+  - <http://www.jq22.com/jquery-info235>
 
-  - 取色器
+- 取色器
 
-  - 渐变背景色
+- 渐变背景色
 
-  - 换肤
+- 换肤
 
 # 图标库
 
 - 手摸手，带你优雅的使用 icon <https://juejin.im/post/59bb864b5188257e7a427c09>
-  
+
 - feather
 
   - <https://github.com/feathericons/feather>
@@ -421,3 +419,24 @@ DragDrop.prototype.mouseMove = function(e, obj) {
 - mocka <https://github.com/Chalarangelo/mocka>
 
   - Simple, elegant content placeholder
+
+# 文本截断
+
+- css
+- js <http://www.jq22.com/webqd2751>
+- 插件 <https://dollarshaveclub.github.io/shave/>
+
+```javascript
+var shortName = "我和我好朋友写代码的照片.jpg".replace(/^(^.{8})(.+)(.{2}\.+\w+$)$/g, "$1...$3");
+document.getElementById('output').append(shortName);
+
+// 多行
+p {
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:5;
+  overflow:hidden;
+  width:200px;
+  margin:50px;
+}
+```
