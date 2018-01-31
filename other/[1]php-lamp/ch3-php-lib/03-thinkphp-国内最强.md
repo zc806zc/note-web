@@ -1,4 +1,4 @@
-**ThinkPHP3使用**
+# ThinkPHP3使用
 
 - 资源
 
@@ -45,3 +45,7 @@ U('Admin/User/select');
 // 跳转方法
 $this->success('用户登录操作成功，正在跳转，请稍后...', U('Admin/index'), 5);
 ```
+
+# 项目
+
+- tplay <https://github.com/tingyuu/tplay>

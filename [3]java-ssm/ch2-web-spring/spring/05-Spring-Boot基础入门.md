@@ -5,7 +5,7 @@
 - 学习目录 <https://www.jianshu.com/p/9a08417e4e84>
 - 其他
 
-  - <https://github.com/yizhiwazi/springboot-socks>
+  - springboot-socks <https://github.com/yizhiwazi/springboot-socks>
 
 # 界面设计
 
@@ -34,3 +34,7 @@ th:value="${movie.createDate} ? ${#dates.format(movie.createDate, 'yyyy-MM-dd')}
 # 权限控制 结合 Vue
 
 - <https://juejin.im/entry/5a60611b6fb9a01cb0495fcb>
+
+# Layui + springboot
+
+- lenosp <https://gitee.com/bweird/lenosp>
