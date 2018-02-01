@@ -1,6 +1,13 @@
 # 数据类组件
 
-# CRUD的权限分配机制
+```shell
+表格表单
+```
+
+# 权限分配机制
+
+- 弹框模式
+- CURD
 
 # 按钮
 
@@ -140,7 +147,6 @@ Date.prototype.Format = function(fmt) {
 new Date().Format("yyyy-MM-dd E HH:mm:ss")
 ```
 
-# 图表
 
 # 按钮
 
@@ -154,11 +160,14 @@ new Date().Format("yyyy-MM-dd E HH:mm:ss")
 
 ![](/assets/import-double-submit.png)
 
-# 表单
+# 通用输入
 
-- 单选复选框优化 <http://www.jq22.com/webqd2718>
+- 密码框
 
-  - jquery-labelauty
+# 单选复选框优化
+
+- <http://www.jq22.com/webqd2718>
+- jquery-labelauty
 
 ```html
 <span class="radio_box">
@@ -168,37 +177,42 @@ new Date().Format("yyyy-MM-dd E HH:mm:ss")
 </span>
 ```
 
-- 通用输入
-- 拾色器
+# 拾色器
 
-  - 兼容性好 <http://www.jq22.com/jquery-info367>
+- 兼容性好 <http://www.jq22.com/jquery-info367>
+- colors <https://github.com/mrmrs/colors>
+- color-thief
 
-- 时间日期
+  - <https://github.com/lokesh/color-thief>
+  - 利用 javascript 和 canvas 抓取一张图片中的主要颜色
 
-  - moment.js
-  - 时间日期处理 <https://github.com/datejs/Datejs>
-  - <https://github.com/uxsolutions/bootstrap-datepicker>
-  - 日历一览 <http://www.jq22.com/webqd2183>
-  - fullcalender | my97
-  - 农历 <https://github.com/zzyss86/LunarCalendar>
-  - <https://github.com/dangrossman/bootstrap-daterangepicker>
-  - pickadate.js <https://github.com/amsul/pickadate.js>
+# 时间日期
 
-- 自动完成
+- moment.js
+- flatpickr <https://github.com/chmln/flatpickr>
+- 时间日期处理 <https://github.com/datejs/Datejs>
+- date-fns <https://github.com/date-fns/date-fns>
+- bootstrap-datepicker <https://github.com/uxsolutions/bootstrap-datepicker>
+- bootstrap-datetimepicker<https://github.com/Eonasdan/bootstrap-datetimepicker>
+- 日历一览 <http://www.jq22.com/webqd2183>
+- fullcalender | my97
+- 农历 <https://github.com/zzyss86/LunarCalendar>
+- <https://github.com/dangrossman/bootstrap-daterangepicker>
+- pickadate.js <https://github.com/amsul/pickadate.js>
 
-- 密码框
+# 自动完成
 
-- 投票率
+# 投票率
 
-- 进度条
+# 进度条
 
-  - <http://www.jq22.com/webqd1913>
-  - css3进度条 <http://www.jq22.com/webqd1062>
+- <http://www.jq22.com/webqd1913>
+- css3进度条 <http://www.jq22.com/webqd1062>
 
-- 星级评分
+# 星级评分
 
-  - <http://www.jq22.com/webqd3035>
-  - CSS实现 <http://www.jq22.com/webqd1144>
+- <http://www.jq22.com/webqd3035>
+- CSS实现 <http://www.jq22.com/webqd1144>
 
 ```javascript
 function praise(num, obj) {
@@ -209,18 +223,16 @@ function praise(num, obj) {
 }
 ```
 
-- 选择框
+# 快捷键
 
-- 快捷键
+# 触摸
 
-- 触摸
+# 丰富的输入
 
-- 丰富的输入
+# 上传
 
-- 上传
-
-  - jQuery-File-Upload <https://github.com/blueimp/jQuery-File-Upload>
-  - Uploadify
+- jQuery-File-Upload <https://github.com/blueimp/jQuery-File-Upload>
+- Uploadify
 
 ```javascript
 function slide(range, conSlide, obj) {
@@ -285,7 +297,7 @@ function slide(range, conSlide, obj) {
 
 # 穿梭框
 
-# 下拉框
+# 下拉框 | 选择框
 
 - 插件
 
@@ -396,6 +408,10 @@ function xiaolong(json) {
 - dropzone
 
   - <https://github.com/enyo/dropzone>
+
+- fine-uploader
+
+  - <https://github.com/FineUploader/fine-uploader>
 
 - 本地input选择图片实时显示
 
@@ -524,11 +540,11 @@ rows.sort(function(a,b){
 
 - 在可视化章节
 
-# 其他组件
+# 云标签
 
-- 云标签
+- <http://www.jq22.com/webqd1921>
 
-  - <http://www.jq22.com/webqd1921>
+# 标签输入框
 
 - jquery-tags-input
 
@@ -615,7 +631,9 @@ $("input").on("input propertychange", function() {
 });
 ```
 
-# 输入框输入字数限制 <http://www.jq22.com/webqd2084>
+# 输入框输入字数限制
+
+- <http://www.jq22.com/webqd2084>
 
 # 银行卡号空格
 
@@ -647,10 +665,10 @@ $(function() {
 })
 ```
 
-- 表单输入
+# 表单输入
 
-  - 文本框自动跳转下一个 <http://www.jq22.com/webqd2809>
-  - <http://www.jq22.com/webqd2468>
+- 文本框自动跳转下一个 <http://www.jq22.com/webqd2809>
+- <http://www.jq22.com/webqd2468>
 
 ```javascript
 $(function() {
@@ -672,17 +690,6 @@ $(function() {
 });
 ```
 
-- 去除空格
-
-```javascript
-function Trim(str) {
-    var result;
-    result = str.replace(/(^\s+)|(\s+$)/g, "");
-    result = result.replace(/\s/g, "");
-    return result;
-}
-```
-
 # 提示
 
 - 进度条 | progress
@@ -690,8 +697,3 @@ function Trim(str) {
   - nprogress <https://github.com/rstacruz/nprogress>
 
 - 超链接悬浮上去时, 打开新窗口图标提示
-
-# 懒加载与瀑布流
-
-- 懒加载
-- 瀑布流

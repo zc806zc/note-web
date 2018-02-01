@@ -1,5 +1,3 @@
-# Tool 工具类组件
-
 # 弹幕 | 字幕
 
 # 网页打印
@@ -41,6 +39,7 @@
 
 - (首选) brackets <https://github.com/adobe/brackets>
 - quill <https://github.com/quilljs/quill>
+- ace <https://github.com/ajaxorg/ace>
 - draft-js <https://github.com/facebook/draft-js>
 - ueditor | wangeditor
 - 经典 ckeditor | kindeditor
@@ -49,7 +48,7 @@
 
   - jquery
 
-- medium-editor <https://github.com/yabwe/medium-editor>
+- medium-editor 原生JS IE兼容 <https://github.com/yabwe/medium-editor>
 
 - stackedit <https://github.com/benweet/stackedit>
 

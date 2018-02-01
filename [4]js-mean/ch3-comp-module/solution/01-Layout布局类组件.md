@@ -1,5 +1,11 @@
 # Layout/Panel
 
+```shell
+布局
+弹框
+幻灯片
+```
+
 # 布局
 
 # 栅格布局
@@ -21,6 +27,11 @@
 - neat
 
   - <https://github.com/thoughtbot/neat>
+
+# 懒加载与瀑布流
+
+- 懒加载
+- 瀑布流
 
 # 全屏
 

@@ -1,5 +1,7 @@
 # Spring Boot
 
+- 翟永超 <http://blog.didispace.com/Spring-Boot%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/>
+- 纯洁的微笑 <http://www.ityouknow.com/>
 - <https://github.com/JeffLi1993/springboot-learning-example>
 - springboot 深入实践图书源码 <https://github.com/chenfromsz?tab=repositories>
 - 学习目录 <https://www.jianshu.com/p/9a08417e4e84>
