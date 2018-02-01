@@ -24,10 +24,8 @@
 
 # 网站
 
-- 讨论
-
-  - 网站推荐 <http://www.siteboxs.com/siteBox/tag/tname/java.html>
-  - <https://www.zhihu.com/question/23496750>
+- 网站推荐 <http://www.siteboxs.com/siteBox/tag/tname/java.html>
+- <https://www.zhihu.com/question/23496750>
 
 - 国内经典
 
@@ -132,7 +130,7 @@
 《算法》
 ```
 
-# 开源代码
+# 开源
 
 - github
 - 开源中国 <http://www.oschina.net/project/lang/19/java>

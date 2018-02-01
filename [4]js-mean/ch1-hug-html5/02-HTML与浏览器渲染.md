@@ -29,6 +29,8 @@
 
 - 究极完美体
 
+  - oreload与prefetch <https://www.w3cplus.com/performance/reloading/preload-prefetch-and-priorities-in-chrome.html>
+
 ```html
 <!DOCTYPE html>
 <html>

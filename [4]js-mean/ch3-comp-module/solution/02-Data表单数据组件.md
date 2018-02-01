@@ -1,6 +1,5 @@
 # 数据类组件
 
-
 # CRUD的权限分配机制
 
 # 按钮
@@ -486,17 +485,18 @@ if (window.FileReader) {
 下一步将是：设置thead 中的 tr元素设置为 display:block。
 ```
 
-- 筛选排序
+# 筛选排序
 
-  - jquery.isotope
+- sortable <https://www.awesomes.cn/repo/RubaXa/sortable>
+- jquery.isotope
 
-    - Filter & sort magical layouts GPL
+  - Filter & sort magical layouts GPL
 
-  - 时间正序排序
+- 时间正序排序
 
-  - 表格排序
+- 表格排序
 
-    - <http://www.jq22.com/webqd2793>
+  - <http://www.jq22.com/webqd2793>
 
 ```javascript
 var data = {
