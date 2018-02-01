@@ -26,6 +26,8 @@
 # 表单校验
 
 - 用户编辑后离开前的保存校验
+- jquery-validation
+- Parsley.js <https://github.com/guillaumepotier/Parsley.js>
 
 # 提示标签
 
@@ -147,7 +149,6 @@ Date.prototype.Format = function(fmt) {
 new Date().Format("yyyy-MM-dd E HH:mm:ss")
 ```
 
-
 # 按钮
 
 - btn-css-generator <http://www.bestcssbuttongenerator.com/#/8>
@@ -162,7 +163,7 @@ new Date().Format("yyyy-MM-dd E HH:mm:ss")
 
 # 通用输入
 
-- 密码框
+- 密码框 zxcvbn <https://github.com/dropbox/zxcvbn>
 
 # 单选复选框优化
 
@@ -200,7 +201,13 @@ new Date().Format("yyyy-MM-dd E HH:mm:ss")
 - <https://github.com/dangrossman/bootstrap-daterangepicker>
 - pickadate.js <https://github.com/amsul/pickadate.js>
 
-# 自动完成
+# 自动完成 | autocomplete
+
+- typeahead.js <https://github.com/twitter/typeahead.js>
+- Fuse <https://github.com/krisk/Fuse>
+- At.js <https://github.com/ichord/At.js>
+- bootstrap-typeahead
+- awesomplete <https://github.com/LeaVerou/awesomplete>
 
 # 投票率
 
@@ -304,6 +311,7 @@ function slide(range, conSlide, obj) {
   - niceSelect
   - select2
   - chosen <https://github.com/harvesthq/chosen>
+  - selectize-js <https://www.awesomes.cn/repo/selectize/selectize-js>
   - jquery.sumoselect
 
     - A jQuery Single/Multi Select plugin which can be used on almost any device
@@ -550,7 +558,11 @@ rows.sort(function(a,b){
 
   - <http://xoxco.com/projects/code/tagsinput/>
 
-# 功能类
+# 邮箱
+
+- mailcheck <https://github.com/mailcheck/mailcheck>
+
+  - Reduce misspelled email addresses in your web apps
 
 - 邮箱自动加上@后面内容 <http://www.jq22.com/webqd2374>
 
