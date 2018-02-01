@@ -1,4 +1,4 @@
-# Effect/Animate/Decoration
+# 动效类组件
 
 # 图标|字体
 

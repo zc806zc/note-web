@@ -1,50 +1,46 @@
-# Form/Data/Button
+# 数据类组件
 
-主要分为以下几类
 
-- CRUD的权限分配
-- 按钮
+# CRUD的权限分配机制
 
-  - loading按钮(提交按钮)
-  - 查询按钮(是否是最新搜索结果)
+# 按钮
 
-- 表单
+- loading按钮(提交按钮)
+- 查询按钮(是否是最新搜索结果)
 
-  - 下拉框
-  - 搜索
-  - 验证(滑动验证)
-  - 行内编辑
-  - 联动
-  - 上传
+# 表单
 
-- 表单校验
+- 下拉框
+- 搜索
+- 验证(滑动验证)
+- 行内编辑
+- 联动
+- 上传
 
-  - 用户编辑后离开前的保存校验
+# 表单校验
 
-- 提示标签
+- 用户编辑后离开前的保存校验
 
-  - popper.js <https://github.com/FezVrasta/popper.js>
+# 提示标签
 
-- 表格
+- popper.js <https://github.com/FezVrasta/popper.js>
 
-  - 筛选排序
-  - dataTables | bootstrap-table
+# 表格
 
-    - <https://github.com/wenzhixin/bootstrap-table>
+- 筛选排序
+- dataTables | bootstrap-table
 
-  - 商业
+  - <https://github.com/wenzhixin/bootstrap-table>
 
-    - handsontable <https://handsontable.com/>
+- layui table
 
-  - 导入导出
+# 商业
 
-    - CSV parser <https://github.com/mholt/PapaParse>
-    - js-xlsx <https://github.com/SheetJS/js-xlsx>
-    - 网页表格导出excel格式 <http://www.jq22.com/webqd2279>
+- handsontable <https://handsontable.com/>
 
-- 模板|渲染引擎
+# 模板引擎 | 渲染引擎
 
-  - artTemplate
+- artTemplate
 
 ```javascript
 // 导出
@@ -71,31 +67,31 @@ var daochu = (function() {
 })()
 ```
 
-- 传输数据格式
+# 传输数据格式
 
-  - normalizr(json)
+- normalizr(json)
 
-    - <https://github.com/paularmstrong/normalizr>
+  - <https://github.com/paularmstrong/normalizr>
 
-  - 货币处理
+- 货币处理
 
-    - currency.js
-    - js数字金额大写转换
+  - currency.js
+  - js数字金额大写转换
 
-      - <http://www.jq22.com/webqd3030>
-      - <http://www.jq22.com/webqd1708>
+    - <http://www.jq22.com/webqd3030>
+    - <http://www.jq22.com/webqd1708>
 
-- md5
+# md5
 
-  - md5.js | jquery-md5
-  - <http://www.jq22.com/webqd1506>
+- md5.js | jquery-md5
+- <http://www.jq22.com/webqd1506>
 
-- 时间
+# 时间
 
-  - 周显示 <http://www.jq22.com/webqd2426>
-  - luxon | moment.js
+- 周显示 <http://www.jq22.com/webqd2426>
+- luxon | moment.js
 
-    - <https://github.com/moment/luxon>
+  - <https://github.com/moment/luxon>
 
 ```javascript
 Date.prototype.Format = function(fmt) {
@@ -145,11 +141,7 @@ Date.prototype.Format = function(fmt) {
 new Date().Format("yyyy-MM-dd E HH:mm:ss")
 ```
 
-- 图表
-
-- 其他组件
-
-- 其他功能类
+# 图表
 
 # 按钮
 
@@ -267,23 +259,23 @@ function slide(range, conSlide, obj) {
  }
 ```
 
-- 联动
+# 联动
 
-  - 省市下拉框联动
+- 省市下拉框联动
 
-    - (推荐) 传统类型 <http://www.jq22.com/jquery-info8054>
-    - 同一下拉框内三次点击 <http://www.jq22.com/jquery-info16612>
+  - (推荐) 传统类型 <http://www.jq22.com/jquery-info8054>
+  - 同一下拉框内三次点击 <http://www.jq22.com/jquery-info16612>
 
-    - 原生JS
+  - 原生JS
 
-      - 0_27_12拼接 <http://www.jq22.com/jquery-info448>
+    - 0_27_12拼接 <http://www.jq22.com/jquery-info448>
 
-  - 省市区面板点击
+- 省市区面板点击
 
-    - (推荐) <http://www.jq22.com/jquery-info7095>
-    - 仿京东 <http://www.jq22.com/jquery-info9397>
-    - 较全面 <http://www.jq22.com/jquery-info13655>
-    - 字母点击 移动端 <http://www.jq22.com/webqd2257>
+  - (推荐) <http://www.jq22.com/jquery-info7095>
+  - 仿京东 <http://www.jq22.com/jquery-info9397>
+  - 较全面 <http://www.jq22.com/jquery-info13655>
+  - 字母点击 移动端 <http://www.jq22.com/webqd2257>
 
 - 验证块
 
@@ -292,30 +284,30 @@ function slide(range, conSlide, obj) {
 
     - 简单滑动验证 <http://www.jq22.com/webqd1933>
 
-- 穿梭框
+# 穿梭框
 
-- 下拉框
+# 下拉框
 
-  - 插件
+- 插件
 
-    - niceSelect
-    - select2
-    - chosen <https://github.com/harvesthq/chosen>
-    - jquery.sumoselect
+  - niceSelect
+  - select2
+  - chosen <https://github.com/harvesthq/chosen>
+  - jquery.sumoselect
 
-      - A jQuery Single/Multi Select plugin which can be used on almost any device
+    - A jQuery Single/Multi Select plugin which can be used on almost any device
 
-    - Superfish
+  - Superfish
 
-      - It is a jQuery plugin that adds usability enhancements to existing multi-level drop-down menus.
+    - It is a jQuery plugin that adds usability enhancements to existing multi-level drop-down menus.
 
-  - 模拟下拉框 <http://www.jq22.com/webqd2375> | 可多选 <http://www.jq22.com/webqd933>
+- 模拟下拉框 <http://www.jq22.com/webqd2375> | 可多选 <http://www.jq22.com/webqd933>
 
-  - 简单自动义 <http://www.jq22.com/webqd1696>
+- 简单自动义 <http://www.jq22.com/webqd1696>
 
-  - 可编辑下拉框 <http://www.jq22.com/webqd1511>
+- 可编辑下拉框 <http://www.jq22.com/webqd1511>
 
-  - 标签 <http://www.jq22.com/webqd462>
+- 标签 <http://www.jq22.com/webqd462>
 
 ```javascript
 // 外面嵌套一层
@@ -327,9 +319,9 @@ function slide(range, conSlide, obj) {
 </div>
 ```
 
-- 行内编辑
+# 行内编辑
 
-  - <http://www.jq22.com/webqd1430>
+- <http://www.jq22.com/webqd1430>
 
 ```javascript
 $('tr td').on('click', function() {
@@ -352,13 +344,13 @@ $('tr td').on('click', function() {
 })
 ```
 
-- 搜索
+# 搜索
 
-  - 百度搜索结果 <http://www.jq22.com/webqd2961>
+- 百度搜索结果 <http://www.jq22.com/webqd2961>
 
-  - 豆瓣图书搜索功能 <http://www.jq22.com/webqd2702>
+- 豆瓣图书搜索功能 <http://www.jq22.com/webqd2702>
 
-  - 搜索 <http://www.jq22.com/webqd1354>
+- 搜索 <http://www.jq22.com/webqd1354>
 
 ```javascript
 /*
@@ -395,24 +387,24 @@ function xiaolong(json) {
 }
 ```
 
-- 上传
+# 上传
 
-  - jQuery-File-Upload | fex webuploader(兼容性好)
+- jQuery-File-Upload | fex webuploader(兼容性好)
 
-    - <https://blueimp.github.io/jQuery-File-Upload/>
-    - <http://fex.baidu.com/webuploader/>
+  - <https://blueimp.github.io/jQuery-File-Upload/>
+  - <http://fex.baidu.com/webuploader/>
 
-  - dropzone
+- dropzone
 
-    - <https://github.com/enyo/dropzone>
+  - <https://github.com/enyo/dropzone>
 
-  - 本地input选择图片实时显示
+- 本地input选择图片实时显示
 
-    - createObjectURL <http://www.jq22.com/webqd2884>
-    - FileReader <http://www.jq22.com/webqd2885>
-    - 转base64显示 <http://www.jq22.com/webqd2806>
-    - 使用ie滤镜实现ie低版本图片预览功能 <http://www.jq22.com/webqd2344>
-    - 带剪裁 <http://www.jq22.com/webqd1198>
+  - createObjectURL <http://www.jq22.com/webqd2884>
+  - FileReader <http://www.jq22.com/webqd2885>
+  - 转base64显示 <http://www.jq22.com/webqd2806>
+  - 使用ie滤镜实现ie低版本图片预览功能 <http://www.jq22.com/webqd2344>
+  - 带剪裁 <http://www.jq22.com/webqd1198>
 
 ```javascript
 $('.a').change(function(e) {
@@ -439,9 +431,9 @@ if (window.FileReader) {
 }
 ```
 
-- 标签输入框
+# 标签输入框
 
-  - <https://github.com/bootstrap-tagsinput/bootstrap-tagsinput>
+- bootstrap-tagsinput <https://github.com/bootstrap-tagsinput/bootstrap-tagsinput>
 
 # 表单校验
 
@@ -611,9 +603,11 @@ window.onload = function() {
 }
 ```
 
-- 点赞 <http://www.jq22.com/webqd2408>
+# 点赞
 
-- 表单输入实时监听
+- <http://www.jq22.com/webqd2408>
+
+# 表单输入实时监听
 
 ```javascript
 $("input").on("input propertychange", function() {
@@ -621,9 +615,11 @@ $("input").on("input propertychange", function() {
 });
 ```
 
-- 输入框输入字数限制 <http://www.jq22.com/webqd2084>
+# 输入框输入字数限制 <http://www.jq22.com/webqd2084>
 
-- 银行卡号空格 <http://www.jq22.com/webqd1489>
+# 银行卡号空格
+
+- <http://www.jq22.com/webqd1489>
 
 ```javascript
 $(function() {

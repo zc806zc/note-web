@@ -111,12 +111,18 @@
 
 - howler <https://github.com/goldfire/howler.js>
 
-# 文件格式转化
+# 格式转化 | 导入导出
 
 - pdf2htmlEX
 
   - <https://github.com/coolwanglu/pdf2htmlEX>
   - Convert PDF to HTML without losing text or format.
+
+- 导入导出
+
+  - CSV parser <https://github.com/mholt/PapaParse>
+  - js-xlsx <https://github.com/SheetJS/js-xlsx>
+  - 网页表格导出excel格式 <http://www.jq22.com/webqd2279>
 
 # 邮件
 
