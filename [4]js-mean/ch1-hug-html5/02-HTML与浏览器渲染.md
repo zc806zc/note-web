@@ -72,9 +72,7 @@
 <meta name="format-detection" content="telephone=no">
 ```
 
-# 常用Meta
-
-- <https://github.com/joshbuchea/HEAD>
+- 常用META <https://github.com/joshbuchea/HEAD>
 
 ```html
 <!-- 每30秒中刷新当前页面 -->
@@ -183,4 +181,71 @@ f: !!str true
 
 - 渲染引擎
 
+```shell
+解析html建立dom树
+
+解析css构建render树（将CSS代码解析成树形的数据结构，然后结合DOM合并成render树）
+
+布局render树（Layout/reflow），负责各元素尺寸、位置的计算
+
+绘制render树（paint），绘制页面像素信息
+
+浏览器会将各层的信息发送给GPU，GPU会将各层合成（composite），显示在屏幕上。
+```
+
 > 浏览器会思考，而且经常会取笑我们
+
+# 浏览器解析与性能优化
+
+- <http://blog.codingplayboy.com/2017/03/29/webpage_render/>
+- <https://juejin.im/post/5a3522f2f265da431440c632>
+- 深入解析浏览器的幕后工作原理 <https://juejin.im/entry/5a43430151882527a13dc5b1>
+
+- 浏览器| 渲染引擎 用来查询及操作渲染引擎的接口
+
+- JS解释器(V8)
+
+- 解析过程
+
+  - 解析html构建dom树
+  - 构建render树
+  - 布局render树
+  - 绘制render树
+  
+# JS运行机制
+
+- JS运行机制最全面的一次梳理 <https://juejin.im/post/5a6547d0f265da3e283a1df7>
+- 进程与线程
+
+  - 进程是cpu资源分配的最小单位
+  - 线程是cpu调度的最小单位
+  - 浏览器是多进程的 每打开一个Tab页，就相当于创建了一个独立的浏览器进程
+  - 浏览器的渲染进程是多线程的
+
+- GUI渲染线程
+
+```shell
+GUI渲染线程与JS引擎线程是互斥的,
+当JS引擎执行时GUI线程会被挂起（相当于被冻结了），
+GUI更新会被保存在一个队列中等到JS引擎空闲时立即被执行。
+```
+
+- JS引擎线程
+- 事件触发线程
+
+  - 归属于浏览器而不是JS引擎
+  - 由于JS的单线程关系，所以这些待处理队列中的事件都得排队等待JS引擎处理（当JS引擎空闲时才会去执行）
+
+- 定时触发器线程
+
+- 异步http请求线程
+
+  - 在XMLHttpRequest在连接后是通过浏览器新开一个线程请求
+  - 将检测到状态变更时，如果设置有回调函数，异步线程就产生状态变更事件，将这个回调再放入事件队列中。再由JavaScript引擎执行。
+
+![](https://user-gold-cdn.xitu.io/2018/1/21/1611938b2d39a5b2?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+
+- Worker可以理解是浏览器给JS引擎开的外挂，专门用来解决那些大量计算问题
+- WebWorker与SharedWorker
+- DOMContentLoaded与onload
+- css加载不会阻塞DOM树解析,但会阻塞render树渲染
