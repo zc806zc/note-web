@@ -6,6 +6,10 @@
 
   - <http://www.css88.com/book/css/>
 
+- 查漏补缺
+
+  - <https://segmentfault.com/a/1190000006242814>
+
 - 关于权重
 
   - id声明会覆盖class
@@ -46,7 +50,11 @@
 
   - BFC有何用
 
-    - 清除浮动 <http://www.cnblogs.com/dolphinX/p/3508869.html>
+    - 清除浮动
+
+      - <http://www.cnblogs.com/dolphinX/p/3508869.html>
+      - <https://rainylog.com/post/what-methods-of-clearfix-can-i-use/>
+
     - 防止 margin 重叠
     - 多栏布局的一种方式
 
