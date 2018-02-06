@@ -1,7 +1,3 @@
-# Java WEB
-
-- Java Web技术总结 <https://www.jianshu.com/p/539bdb7d6cfa>
-
 # 你真的会写Java吗
 
 - <https://juejin.im/entry/59ae07d9f265da249600f0ec>

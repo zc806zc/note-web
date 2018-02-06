@@ -11,11 +11,14 @@
 
 # 界面设计
 
+- <https://www.tianmaying.com/tutorial/using-thymeleaf>
 - Thymeleaf模板(首选)
 
   - 标签语言与函数
   - 与前端模板的区别
   - 如果前后端分离
+
+- JSP、Velocity和FreeMarker，是上一代的模板引擎
 
 ```java
 // demo

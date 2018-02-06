@@ -12,14 +12,19 @@
 - Tim Yang <https://timyang.net/>
 
 - 张开涛 <http://www.iteye.com/blogs/subjects/kaitao-springmvc>
+
 - 孤傲苍狼 <http://www.cnblogs.com/xdp-gacl/category/574705.html>
+
 - cmsblogs <http://cmsblogs.com/>
+
 - chenssy <http://blog.csdn.net/chenssy>
+
+- 杜琪 <https://www.jianshu.com/u/28d7875c78df>
 - 其他
 
   - 海子 看初学基础 <http://www.cnblogs.com/dolphin0520/>
   - 曹胜欢 <http://blog.csdn.net/csh624366188/>
-  - 杜琪 <https://www.jianshu.com/u/28d7875c78df>
+
   - 骆昊 <http://blog.csdn.net/jackfrued>
 
 # 网站
@@ -57,6 +62,7 @@
   - 100问 <https://github.com/giantray/stackoverflow-java-top-qa>
   - ConcretePage Java (资源类网站，可以找到各种 Java 框架及相关教程) <http://www.concretepage.com/>
   - 泡在网上的日子 <http://jcodecraeer.com/>
+  - 实验楼 <https://www.shiyanlou.com/courses/>
   - 灰狐 <http://www.huihoo.com/>
 
 # 教程 && 资源
@@ -80,8 +86,10 @@
 - oracle <http://www.oracle.com/technetwork/java/index.html>
 - IBM
 
-  - <https://www.ibm.com/developerworks/learn/java/index.html>
-  - <https://www.ibm.com/developerworks/cn/java/>
+  - (Nice) <https://www.ibm.com/developerworks/cn/>
+
+    - <https://www.ibm.com/developerworks/learn/java/index.html>
+    - <https://www.ibm.com/developerworks/cn/java/>
 
 # 社区
 
@@ -128,6 +136,14 @@
 
 // 算法  
 《算法》
+```
+
+- spring
+
+```shell
+《Spring揭秘》(最佳)
+《Spring实战 第4版》 (适合入门)
+《Spring技术内幕》
 ```
 
 # 开源

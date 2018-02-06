@@ -1,25 +1,53 @@
+# Linux安装
+
+```shell
+将下载的Linux系统刻录成光盘或U盘
+
+救援模式rescue
+忘记密码 可使用单用户模式更改密码
+```
+
+# Vim
+
+- 史上最全vim快捷键 <http://www.runoob.com/w3cnote/all-vim-cheatsheat.html>
+
+```shell
+# vi/vim
+命令模式 Command mode
+插入模式 Insert mode // i 切换到插入模式，以输入字符 x 删除当前光标所在处的字符
+底线命令模式 Last line mode // esc q 退出程序 w 保存文件 :wq
+
+# : 切换到底线命令模式，以在最底一行输入命令
+```
+
 # Linux基础
 
-- linux学习资源整理 <https://zhuanlan.zhihu.com/p/22654634>
+- 学习网站
 
+  - Linux中国 <https://linux.cn/>
+  - 实验楼 <https://www.shiyanlou.com/courses/>
+
+- linux学习资源
+
+  - 鸟哥的linux私房菜 <http://linux.vbird.org/>
+  - 中科大-yum <https://lug.ustc.edu.cn/wiki/mirrors/help/centos>
+  - linux学习资源整理 <https://zhuanlan.zhihu.com/p/22654634>
+  - Linux探索之旅-谢恩铭 <https://juejin.im/post/58de122244d904006d050466>
 
 - 常用命令
 
   - <https://juejin.im/entry/599b9e07f265da246d6af09f>
+  - <https://juejin.im/post/58cd11915c497d0057bf3829>
+  - linux命令大全 <http://www.runoob.com/linux/linux-command-manual.html>
 
 - 常用软件
 
-<https://juejin.im/entry/599bdfb8f265da24722fb77d\#%E9%9F%B3%E9%A2%91>
+  - <https://juejin.im/entry/599bdfb8f265da24722fb77d\#%E9%9F%B3%E9%A2%91>
 
-- 安装
+- 文件结构
 
 ```javascript
-// 将下载的Linux系统刻录成光盘或U盘
-
-// 救援模式rescue
-// 忘记密码 可使用单用户模式更改密码
-
-// centos系统目录结构
+// centos
 /bin    // Binary, 最经常使用的命令
 /boot   // 启动
 /dev    // Device
@@ -46,19 +74,14 @@
 
 - 基础
 
-  - 鸟哥的linux私房菜
-  - [中科大-yum](https://lug.ustc.edu.cn/wiki/mirrors/help/centos) | [史上最全vim快捷键](http://www.runoob.com/w3cnote/all-vim-cheatsheat.html) | [linux命令大全](http://www.runoob.com/linux/linux-command-manual.html)
-  - [Linux探索之旅-谢恩铭](https://juejin.im/post/58de122244d904006d050466)
-
 ```javascript
 Linus Torvalds
+
 基于POSIX和UNIX的
 多用户、多任务、 支持多线程和多CPU的 操作系统
-// 性能稳定的多用户网络操作系统
+性能稳定的多用户网络操作系统
 
-// 发行版
-Ubuntu、RedHat、CentOS、Debain、Fedora、SuSE、OpenSUSE
-// TurboLinux、BluePoint、RedFlag、Xterm、SlackWare
+
 
 目前国内Linux更多的是应用于服务器上
 而桌面操作系统更多使用的是Window
@@ -85,12 +108,6 @@ yum search <keyword>
 
 // 备份
 mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup
-
-// vi/vim
-命令模式 Command mode
-插入模式 Insert mode // i 切换到插入模式，以输入字符 x 删除当前光标所在处的字符
-底线命令模式 Last line mode // esc q 退出程序 w 保存文件 :wq
-// : 切换到底线命令模式，以在最底一行输入命令
 ```
 
 - 文件
@@ -187,3 +204,10 @@ mkfs -t ext3 /dev/hdc6
 // 磁盘检验
 // 磁盘挂载与卸除
 ```
+
+# Linux 发行版
+
+- 发行版
+
+  - Ubuntu、RedHat、CentOS、Debain、Fedora、SuSE、OpenSUSE
+  - TurboLinux、BluePoint、RedFlag、Xterm、SlackWare

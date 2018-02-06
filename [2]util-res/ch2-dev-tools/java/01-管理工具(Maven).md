@@ -11,6 +11,12 @@
 Maven的主要好处是它的生命周期。虽然接连的多个项目生命周期相同，这是以灵活性为代价的
 ```
 
+- 关键词区别
+
+  - test 单元测试场景使用
+  - provided 容器或者JDK已经提供该依赖，打包时不需要打包入war
+  - compile
+
 # Gradle
 
 - 安装 <http://www.yiibai.com/gradle/how-install-gradle-windows.html>
@@ -51,9 +57,3 @@ gradle -q tasks --all
 - 创建Gradle Java Web应用程序并在Tomcat上运行
 
 - 使用Gradle构建多模块项目
-
-# lombok
-
-- 一个可以通过简单的注解形式来帮助我们简化消除一些必须有但显得很臃肿的Java代码的工具
-- 注解文档 <https://projectlombok.org/features/all>
-- IDEA要安装lombok插件

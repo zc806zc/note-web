@@ -18,6 +18,8 @@
   - 集群
   - 监听器和插件
 
+- Spring 调度工具Quartz cron 表达式的格式 <http://blog.csdn.net/limenghua9112/article/details/45242239>
+
 # 实例
 
 - SimpleTrigger
