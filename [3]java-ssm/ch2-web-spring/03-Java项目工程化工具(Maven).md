@@ -51,3 +51,9 @@ gradle -q tasks --all
 - 创建Gradle Java Web应用程序并在Tomcat上运行
 
 - 使用Gradle构建多模块项目
+
+# lombok
+
+- 一个可以通过简单的注解形式来帮助我们简化消除一些必须有但显得很臃肿的Java代码的工具
+- 注解文档 <https://projectlombok.org/features/all>
+- IDEA要安装lombok插件

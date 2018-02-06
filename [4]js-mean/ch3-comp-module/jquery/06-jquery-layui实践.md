@@ -22,3 +22,124 @@
 # 改进
 
 - jqadmin <https://gitee.com/jqcool/jqadmin>
+
+# 写弹框
+
+```javascript
+/*------------------------------------------------*/
+/* 审核通过弹框
+/*------------------------------------------------*/
+var layerCheckPassed = {
+
+    // 弹框选项
+    options: {
+        mode: null, // 弹框类型
+        title: '审核通过确认',
+        layerIndex: null,
+        $tmplId: '#tmpl_layer_check_passed',
+        $layerId: '#layer_check_passed',
+        tableIndex: null,
+        $tableId: '#table_check_passed',
+
+        // 填报ID
+        fillInId: null
+    },
+
+    // 接口常量
+    url: {
+        listVerifyHistory: '/quote/getVerifyHistory', // 获取审核记录
+    },
+
+
+    // 入口
+    ready: function (options) {
+        // 覆盖传参配置
+        this.options = $.extend(this.options, options);
+
+        // 事件初始化
+        this.bindEvent();
+    },
+
+    // 绑定初始化事件
+    bindEvent: function () {
+
+        // 显示弹框
+        this.showLayer();
+    },
+
+    // 显示弹框
+    showLayer: function () {
+        var that = this;
+
+        var title = that.options.title,
+            $tmplId = that.options.$tmplId,
+            tmpl = $($tmplId).html();
+
+        that.options.layerIndex = layer.open({
+            type: 1,
+            title: title,
+            shadeClose: true,
+            maxmin: false,
+            content: tmpl,
+            area: ['750px', '450px'],
+            success: function () {
+
+                // 初始化表格
+                that.updateTable();
+
+                // 关闭
+                that.bindCancel();
+            }
+        });
+    },
+
+
+    // 关闭
+    bindCancel: function () {
+        var that = this;
+
+        $(that.options.$layerId).find('.js-layer-cancel').on('click', function () {
+            layer.close(that.options.layerIndex);
+        });
+    },
+
+    // 更新表格
+    updateTable: function () {
+        var that = this;
+
+        // 表格查询参数
+        var cols = [],
+            $tableId = that.options.$tableId,
+            url = that.url['listVerifyHistory'],
+            param = {
+                fillinId: that.options.fillinId
+            };
+
+        // 初始化表格头
+        cols = [
+            [
+                {field: 'apply_user', title: '申请人', width: 150},
+                {field: 'review_status_view', title: '审核状态', width: 100},
+                {field: 'review_comment', title: '审核意见', width: 150},
+            ]
+        ];
+
+        // 表格渲染
+        that.tableIndex = table.render({
+            elem: $tableId,
+            url: url,
+            where: param,
+            cols: cols,
+            height: 330,
+            skin: 'row',
+            even: true,
+            page: {
+                groups: 8
+            },
+            limit: 10,   // 每页默认显示数量
+            limits: [10, 50, 100]
+        });
+    }
+
+};
+```

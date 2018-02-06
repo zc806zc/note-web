@@ -102,3 +102,8 @@ public class DOM4jModifyXMLDemo {
   - Python
   - Ruby
   - Java
+
+# Java术语
+
+- http://blog.csdn.net/gaoyunpeng/article/details/2093211  
+- PO/POJO/VO/BO/DAO/DTO
