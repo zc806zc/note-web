@@ -10,6 +10,8 @@
 
   - <https://github.com/brianway/springmvc-mybatis-learning>
 
+- 快速理解 <https://juejin.im/post/59f3ef5c51882534aa0691b2>
+
 # Java EE
 
 # Spring MVC
