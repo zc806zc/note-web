@@ -16,10 +16,6 @@
 - RTMP 内部是借由 TCP 长连接协议传输相关数据，所以，它的延时性非常低
 
 ```javascript
-// Expose the browser-specific versions of the getUserMedia() method through the standard
-// method name. If the standard name is already supported in the browser (as it is in Opera),
-// use that, otherwise fall back to Mozilla's, Google's or Microsoft's implementations as
-// appropriate for the current browser
 navigator.getUserMedia = navigator.getUserMedia || navigator.mozGetUserMedia ||
 navigator.webkitGetUserMedia || navigator.msGetUserMedia;
 ```
@@ -27,77 +23,52 @@ navigator.webkitGetUserMedia || navigator.msGetUserMedia;
 - 访问网络摄像头和麦克风
 
 ```javascript
-// Define a function to execute if we are successfully able to access the user's webcam and
-// microphone
+
 function onSuccess() {
-alert("Successful connection made to access webcam and microphone");
+    alert("Successful connection made to access webcam and microphone");
 }
 
-// Define a function to execute if we are unable to access the user's webcam and microphone -
-// either because the user denied access or because of a technical error
 function onError() {
-throw new Error("There has been a problem accessing the webcam and microphone");
+    throw new Error("There has been a problem accessing the webcam and microphone");
 }
 
-// Using the polyfill from Listing 12-1, we know the getUserMedia() method is supported in the
-// browser if the method exists
 if (navigator.getUserMedia) {
 
-// We can now execute the getUserMedia() method, passing in an object telling the browser
-// which form of media we wish to access ("video" for the webcam, "audio" for the
-// microphone). We pass in a reference to the onSuccess() and onError() functions which
-// will be executed based on whether the user grants us access to the requested media types
-navigator.getUserMedia({
-video: true,
-audio: true
-}, onSuccess, onError);
+    navigator.getUserMedia({
+        video: true,
+        audio: true
+    }, onSuccess, onError);
 } else {
 
-// Throw an error if the getUserMedia() method is unsupported by the user's browser
-throw new Error("Sorry, getUserMedia() is not supported in your browser");
+    throw new Error("Sorry, getUserMedia() is not supported in your browser");
 }
 ```
 
 - 把网络摄像头和麦克风的数据内容回拨给用户
 
 ```javascript
-// Use the getUserMedia() polyfill from Listing 12-1 for best cross-browser support
-
-// Define a function to execute if we are successfully able to access the user's webcam and
-// microphone, taking the stream of data provided and passing it as the "src" attribute of a
-// new <video> element, which is then placed onto the current HTML page, relaying back to the
-// user the output from theirwebcam and microphone
 function onSuccess(stream) {
 
-// Create a new <video> element
-var video = document.createElement("video"),
+    var video = document.createElement("video"),
+        videoSource = window.URL.createObjectURL(stream);
 
-// Get the browser to create a unique URL to reference the binary data directly from
-// the provided stream, as it is not a file with a fixed URL
-videoSource = window.URL.createObjectURL(stream);
+    video.autoplay = true;
+    video.src = videoSource;
 
-// Ensure the <video> element start playing the video immediately
-video.autoplay = true;
-
-// Point the "src" attribute of the <video> element to the generated stream URL, to relay
-// the data from the webcam and microphone back to the user
-video.src = videoSource;
-
-// Add the <video> element to the end of the current page
-document.body.appendChild(video);
+    document.body.appendChild(video);
 }
 
 function onError() {
-throw new Error("There has been a problem accessing the webcam and microphone");
+    throw new Error("There has been a problem accessing the webcam and microphone");
 }
 
 if (navigator.getUserMedia) {
-navigator.getUserMedia({
-video: true,
-audio: true
-}, onSuccess, onError);
+    navigator.getUserMedia({
+        video: true,
+        audio: true
+    }, onSuccess, onError);
 } else {
-throw new Error("Sorry, getUserMedia() is not supported in your browser");
+    throw new Error("Sorry, getUserMedia() is not supported in your browser");
 }
 ```
 
@@ -125,3 +96,7 @@ throw new Error("Sorry, getUserMedia() is not supported in your browser");
   - WebSocket
 
 ![](/assets/video-audio-standard.png)
+
+# 如何实现1080P延迟低于500ms的实时超清直播传输技术
+
+- [http://mp.weixin.qq.com/s?__biz=MzAwMDU1MTE1OQ==∣=2653547697&idx=1&sn=acc748b7fcf0058b58e244970e51eabc](http://mp.weixin.qq.com/s?__biz=MzAwMDU1MTE1OQ==&mid=2653547697&idx=1&sn=acc748b7fcf0058b58e244970e51eabc)

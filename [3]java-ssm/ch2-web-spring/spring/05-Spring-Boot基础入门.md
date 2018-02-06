@@ -7,6 +7,7 @@
 - 学习目录 <https://www.jianshu.com/p/9a08417e4e84>
 - 其他
 
+  - 重拾后端之Spring Boot <https://juejin.im/post/5953bc2c5188250d8d141362>
   - springboot-socks <https://github.com/yizhiwazi/springboot-socks>
 
 # 界面设计
@@ -43,3 +44,7 @@ th:value="${movie.createDate} ? ${#dates.format(movie.createDate, 'yyyy-MM-dd')}
 # Layui + springboot
 
 - lenosp <https://gitee.com/bweird/lenosp>
+
+# 练手学习项目
+
+- spring-boot-api-project-seed <https://github.com/lihengming/spring-boot-api-project-seed>

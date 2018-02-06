@@ -1,10 +1,11 @@
 # Java基础
 
 - LearningNotes <https://github.com/francistao/LearningNotes>
+- JAVA学习的方法和过程-知乎 <https://www.zhihu.com/question/29581524/answer/44872235>
+- 博客分享 <https://juejin.im/post/586603be1b69e60063d08b7a>
 
 ```java
 Java程序的执行模式是 半编译半解释
-
 虚拟机可以用硬件实现
 字节代码是虚拟机的机器码
 ```
@@ -18,6 +19,8 @@ System不是关键字
 main方法只能是一个public静态方法
 一个源程序文件中最多只能有一个public类，其他类的个数不限
 ```
+
+- Java语法清单 <https://zhuanlan.zhihu.com/p/25578170>
 
 # 输入输出
 

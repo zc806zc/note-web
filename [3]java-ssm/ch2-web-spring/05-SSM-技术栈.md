@@ -4,6 +4,12 @@
 - 2017-03
 - 图书代码 <http://www.broadview.com.cn/book/51>
 
+# SSM
+
+- 教程
+
+  - <https://github.com/brianway/springmvc-mybatis-learning>
+
 # Java EE
 
 # Spring MVC
@@ -32,3 +38,9 @@
 # SSM整合
 
 # 人事管理系统
+
+# SSM与SSH的比较
+
+- <http://blog.csdn.net/sinat_26841049/article/details/52971705>
+- SSH = Spring + Struts2 + Hibernate
+- SSM = Spring + SpringMVC + MyBatis
