@@ -20,8 +20,8 @@ http://blog.csdn.net/fyqcdbdx/article/details/46788915
 
 # IDEA常用插件
 
-- Maven Helper，用于分析jar包冲突
-
+- Maven Helper 用于分析jar包冲突
+- check-style 代码质量
 
 # 使用正则表达式进行搜索替换
 

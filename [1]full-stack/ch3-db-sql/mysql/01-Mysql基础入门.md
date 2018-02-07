@@ -1,5 +1,9 @@
 # MySQL
 
+- 教程
+
+  - MySQL总结 <http://novoland.github.io/%E6%95%B0%E6%8D%AE%E5%BA%93/2014/07/26/MySQL%E6%80%BB%E7%BB%93.html>
+
 - 图形化工具
 
   - heidiSQL 但界面一般 <https://www.heidisql.com/download.php>
