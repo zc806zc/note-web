@@ -240,3 +240,13 @@ core
 persistent
 util
 ```
+
+# 信息管理系统
+
+- 使用SpringMVC+Spring+Hibernate开发人员信息管理功能 <https://www.imooc.com/video/9338>
+- 学生信息管理系统 <https://www.imooc.com/video/9020>
+
+# 基于SSH实现员工管理系统
+
+- <https://www.imooc.com/video/12474>
+- <https://www.imooc.com/video/12461>

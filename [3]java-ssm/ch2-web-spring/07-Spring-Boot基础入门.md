@@ -10,6 +10,10 @@
   - 重拾后端之Spring Boot <https://juejin.im/post/5953bc2c5188250d8d141362>
   - springboot-socks <https://github.com/yizhiwazi/springboot-socks>
 
+# 多模块
+
+- <https://www.imooc.com/video/16354>
+
 # 界面设计
 
 - <https://www.tianmaying.com/tutorial/using-thymeleaf>
