@@ -232,3 +232,11 @@ select * from User user where user.id > 10 order by user.id desc
 动态赋值 // ? 与 :infoId
 分页查询
 ```
+
+# SSH工程结构
+
+```shell
+core
+persistent
+util
+```

@@ -41,6 +41,14 @@
 
 # 人事管理系统
 
+# SSM工程结构
+
+```shell
+core
+persistent
+util
+```
+
 # SSM与SSH的比较
 
 - <http://blog.csdn.net/sinat_26841049/article/details/52971705>
