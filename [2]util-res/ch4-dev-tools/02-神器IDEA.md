@@ -18,6 +18,11 @@ http://blog.csdn.net/fyqcdbdx/article/details/46788915
 -server -XX:PermSize=128M -XX:MaxPermSize=256m
 ```
 
+# IDEA常用插件
+
+- Maven Helper，用于分析jar包冲突
+
+
 # 使用正则表达式进行搜索替换
 
 ```html
@@ -68,6 +73,7 @@ tppabs="h[^"]*"
   - Ctrl+Alt+Space，类名自动完成
   - Alt+F7，查找整个工程中使用地某一个类、方法或者变量的位置
   - Ctrl+Alt+Y，同步
+  - Alt + Enter
 
 # 处理快捷键冲突
 
