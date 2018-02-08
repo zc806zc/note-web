@@ -29,7 +29,7 @@
 # 懒加载与瀑布流
 
 - 懒加载
-- 瀑布流
+- 瀑布流 <https://www.imooc.com/learn/101>
 - 图片预加载 <https://www.imooc.com/video/14430>
 
 # 全屏
@@ -193,6 +193,7 @@ $("#" + wrapId).find("div").eq(index).show().siblings().hide();  // 显示自己
 # 下拉菜单
 
 - css实现 <http://www.jq22.com/webqd3033>
+- 形形色色的下拉菜单 <https://www.imooc.com/learn/12>
 
 # 无延迟菜单
 
@@ -376,6 +377,7 @@ $(window).scroll(function() {
 # 导航 | 侧边栏
 
 - 侧栏工具条开发 <https://www.imooc.com/learn/425>
+- 导航条菜单的制作 <https://www.imooc.com/learn/6>
 
 # 水平导航
 
@@ -415,3 +417,7 @@ ul li:hover .center {
 
 - 抽屉式
 - XY轴
+
+# 可调大小面板
+
+- <https://www.imooc.com/learn/193>

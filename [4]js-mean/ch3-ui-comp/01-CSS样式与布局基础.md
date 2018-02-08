@@ -65,19 +65,20 @@
 
   - 元素溢出问题的解决
 
-- 布局
+# 布局
 
-  - 圣杯布局
-  - 双飞翼布局
+- 企业网站综合布局实战 <https://www.imooc.com/learn/147>
+- 圣杯布局
+- 双飞翼布局
 
-    - <https://juejin.im/post/5a09570c6fb9a045167caf21>
+  - <https://juejin.im/post/5a09570c6fb9a045167caf21>
 
-  - 自适应布局
+- 自适应布局
 
-    - <https://juejin.im/post/5a22d0086fb9a0451a7631ee>
-    - 使用IE盒模型box-sizing: border-box
+  - <https://juejin.im/post/5a22d0086fb9a0451a7631ee>
+  - 使用IE盒模型box-sizing: border-box
 
-  - 响应式布局
+- 响应式布局
 
 ```javascript
 counter-reset: 属性创建或者重置一个或多个计数器；

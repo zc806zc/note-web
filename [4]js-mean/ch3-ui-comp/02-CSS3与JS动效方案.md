@@ -316,6 +316,10 @@ img {
 }
 ```
 
+# JS动画
+
+- <https://www.imooc.com/learn/167>
+
 # 帧动画
 
 - 原生 JS 实现帧动画库 <https://www.imooc.com/learn/659>

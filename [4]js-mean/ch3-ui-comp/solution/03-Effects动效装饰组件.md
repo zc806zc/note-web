@@ -5,6 +5,10 @@
 装饰
 ```
 
+# 基础样式
+
+- 表单美化 <https://www.imooc.com/learn/42>
+
 # 图标|字体
 
 - font-awesome
@@ -115,7 +119,7 @@ responsive galleries using CSS3 transitions and custom CSS effects.
 
 - 按钮变化
 
-  - =变× <http://www.jq22.com/webqd2638>
+  - 汉堡按钮变形 <http://www.jq22.com/webqd2638>
 
 ```javascript
 <div class="wrap">
@@ -445,3 +449,36 @@ p {
   margin:50px;
 }
 ```
+
+# 慕课网装饰方案
+
+- 按钮特效 <https://www.imooc.com/learn/5>
+- CSS圆角进化论 <https://www.imooc.com/learn/118>
+- SVG实现Tooltip气泡效果 <https://www.imooc.com/learn/402>
+
+# 慕课网特效方案
+
+- 网页定位导航特效 <https://www.imooc.com/learn/56>
+- 展开收缩动画 <https://www.imooc.com/learn/90>
+- 倒计时效果 <https://www.imooc.com/learn/59>
+- 弹出层效果 <https://www.imooc.com/learn/58>
+- 固定边栏滚动特效 <https://www.imooc.com/learn/52>
+- 侧边栏信息展示效果 <https://www.imooc.com/learn/74>
+- 图片展示特效 <https://www.imooc.com/learn/31>
+- 信息滚动效果制作 <https://www.imooc.com/learn/17>
+- 焦点图轮播特效 <https://www.imooc.com/learn/18>
+- 鼠标悬浮效果 <https://www.imooc.com/learn/91>
+- 用JS实现放大镜特效 <https://www.imooc.com/learn/32>
+- 用JavaScript实现图片缓慢缩放效果 <https://www.imooc.com/learn/80>
+- 回到顶部 <https://www.imooc.com/learn/65>
+- 手风琴效果 <https://www.imooc.com/learn/72>
+- 鼠标拖拽效果 <https://www.imooc.com/learn/60>
+- QQ空间时光轴特效 <https://www.imooc.com/learn/114>
+- Tooltip浮动提示框效果 <https://www.imooc.com/learn/120>
+- 用JS实现购物车特效 <https://www.imooc.com/learn/34>
+- 信息排列效果 <https://www.imooc.com/learn/62>
+- 用JavaScript实现图片剪切效果 <https://www.imooc.com/learn/144>
+- css3实现网页平滑过渡效果 <https://www.imooc.com/learn/252>
+- 全屏切换效果 <https://www.imooc.com/learn/374>
+- 网页广告特效 <https://www.imooc.com/learn/22>
+- 商城分类导航效果 <https://www.imooc.com/learn/174>

@@ -1,6 +1,7 @@
 # kissy
 
 - <http://docs.kissyui.com/>
+- 玩转KISSY框架 <https://www.imooc.com/learn/191>
 
 # ejs
 
@@ -13,3 +14,8 @@
 - Fast, flexible, and lean implementation of core jQuery designed specifically for the server.
 
 # EXT
+
+# FIS
+
+- <http://fis.baidu.com/fis3/index.html>
+- https://www.imooc.com/video/4666

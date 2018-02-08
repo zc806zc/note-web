@@ -77,6 +77,7 @@ Vue.js 也使用了 Virtual DOM、Reactive 及组件化的思想，
 - pug.js
 
   - <https://github.com/pugjs/pug>
+  - 带你学习Jade模板引擎 <https://www.imooc.com/learn/259>
 
 - <https://www.zhihu.com/question/32524504>
 

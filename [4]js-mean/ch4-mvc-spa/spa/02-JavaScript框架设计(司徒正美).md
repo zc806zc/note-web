@@ -1,7 +1,11 @@
 # JavaScript框架设计
 
 - 2017-09
-- 司徒正美(男的~~)
+- 司徒正美
+
+# Avalon
+
+- Avalon探索之旅基础教程 <https://www.imooc.com/comment/270>
 
 # 种子模块
 

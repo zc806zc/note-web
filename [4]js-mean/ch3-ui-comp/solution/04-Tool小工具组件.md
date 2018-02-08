@@ -132,6 +132,7 @@
 
 # 用户操作导航
 
+- 如何实现"新手引导"效果 <https://www.imooc.com/learn/14>
 - intro.js
 
   - <https://github.com/usablica/intro.js>
@@ -391,4 +392,8 @@ img {
 # 分享
 
 - 百度分享 <http://share.baidu.com/>
-- 常见 jiathis <http://jiathis.com/>
+- jiathis <http://jiathis.com/>
+
+# 评论
+
+- 人人网评论功能 <https://www.imooc.com/learn/81>
