@@ -227,12 +227,8 @@ console.log(a.ago); // 1360 weeks ago
 了不起的Node.js开发
 ```
 
-# Node.js
 
-- [ ] 用上MongoDB的一个项目
-- [ ] Node基础整理
-
-# Node.js实战-读后感
+# Node.js实战
 
 - 实战第1季
 

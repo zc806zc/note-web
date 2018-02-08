@@ -1,3 +1,7 @@
+# CSS
+
+![](/assets/img/css/css-books.jpg)
+
 # CSS布局基础
 
 > CSS是前端抵挡后台的最后一道防线，然而现在也挡住了前端
@@ -56,6 +60,7 @@
       - <https://rainylog.com/post/what-methods-of-clearfix-can-i-use/>
 
     - 防止 margin 重叠
+
     - 多栏布局的一种方式
 
   - 元素溢出问题的解决
@@ -162,12 +167,13 @@ lg 大屏幕|大桌面显示器，大于等于 1200px
   - 不是每个人都看到了响应式网页设计的价值
   - SEO对响应式网页的支持非常好，很多搜索引擎发现你的网站没有针对手机优化，就降低你的网站排名
 
-# CSS预处理|后处理语言
+# CSS 预处理与后处理语言
 
 - postcss -> css in js
 - sass | less
 
   - sass与scss <http://sass.bootcss.com/docs/scss-for-sass-users/>
+  - sass进阶 <https://www.imooc.com/learn/436>
 
 ```javascript
 SCSS 是 Sass 3 引入新的语法，

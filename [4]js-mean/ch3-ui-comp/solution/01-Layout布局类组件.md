@@ -145,6 +145,11 @@ $(function() {
 
 - jQuery段实现左右div自适应相同高度
 
+- LightBox插件开发
+
+  - <https://www.imooc.com/learn/454>
+  - <https://www.imooc.com/learn/459>
+
 ```javascript
 function autoHeight() {
     if ($("left").offsetHeight >= $("right").offsetHeight) {
@@ -177,53 +182,12 @@ $(".cf_listATitle").on("click", function() {
 });
 ```
 
-# 点击空白处关闭弹窗
-
-- document加阻止冒泡 两个点击事件
-- <http://www.jq22.com/webqd2693>
-
-```javascript
-click("box","box");
-function click(name,box) {
-    $(document).on("click", function(e) {
-        var _conss = $('.'+name);//点击的容器范围
-        if (!_conss.is(e.target) && _conss.has(e.target).length === 0) {
-            $("."+box).hide();//选择要关闭的容器
-        }
-    });
-}
-```
-
 # 占位元素
 
 # 选项卡
 
 ```javascript
 $("#" + wrapId).find("div").eq(index).show().siblings().hide();  // 显示自己隐藏兄弟
-```
-
-# 关于jquery实现px转换为rem代码
-
-```javascript
-var deviceWidth = document.documentElement.clientWidth;
-if (deviceWidth > 640) {
-    deviceWidth = 640;
-}
-if (deviceWidth < 320) {
-    deviceWidth = 320;
-}
-document.documentElement.style.fontSize = deviceWidth / 3.75 + 'px';
-//此部分是设计稿宽度为375px的，这边设置为3.75  页面调用时，如果实际设计稿为760px，那边这边的3.75数值改为7.60
-window.onresize = function() {
-    var deviceWidth = document.documentElement.clientWidth;
-    if (deviceWidth > 640) {
-        deviceWidth = 640;
-    }
-    if (deviceWidth < 320) {
-        deviceWidth = 320;
-    }
-    document.documentElement.style.fontSize = deviceWidth / 3.75 + 'px';
-}
 ```
 
 # 下拉菜单
@@ -386,16 +350,20 @@ $(window).scroll(function() {
   <https: 9="" 70="" www.imooc.com="" learn="">
   </https:>
 
-# 弹出层与工具提示(也可以属于tool)
+# 弹出层
 
-- layer 推荐
-- tecent artDialog
+- layer (国内最广泛)
+- artDialog
 - 传统 lhgdialog
 - JS简单 <http://www.jq22.com/webqd2525>
 - <http://www.jq22.com/webqd2001>
+
 - 弹出层提取理念
 
-  - lhgdialog会销毁之前提取的内容, 这种处理似乎不太合适
+  - lhgdialog会销毁之前提取的内容, 这种处理不合理
+  - layer这种复制比较好
+
+# 工具提示
 
 # 布局
 
@@ -405,7 +373,9 @@ $(window).scroll(function() {
 
 - Tab插件开发 <https://www.imooc.com/video/14627>
 
-# 导航
+# 导航 | 侧边栏
+
+- 侧栏工具条开发 <https://www.imooc.com/learn/425>
 
 # 水平导航
 
@@ -431,9 +401,9 @@ ul li:hover .center {
 
 # 微信底部菜单 <http://www.jq22.com/webqd487>
 
-# 文件树
+# 文件树导航
 
-- 简易 <http://www.jq22.com/webqd2457>
+- 简易实现 <http://www.jq22.com/webqd2457>
 
 # 手风琴导航
 
@@ -442,3 +412,6 @@ ul li:hover .center {
 - 简单分页 <http://www.jq22.com/webqd1246>
 
 # 其他导航
+
+- 抽屉式
+- XY轴
