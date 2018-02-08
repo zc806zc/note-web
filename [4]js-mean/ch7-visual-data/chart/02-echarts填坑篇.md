@@ -1,5 +1,7 @@
 # echarts
 
+- Echarts3.0入门基础与实战 <https://www.imooc.com/learn/687>
+
 # echarts3知识点与升级注意
 
 - 有精简版等版本,注意加载需要

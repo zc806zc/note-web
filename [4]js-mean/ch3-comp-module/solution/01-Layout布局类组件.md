@@ -6,11 +6,14 @@
 幻灯片
 ```
 
-# 布局
-
 # 栅格布局
 
 # 网格布局
+
+- masonry
+
+  - Cascading grid layout library
+  - <https://github.com/desandro/masonry>
 
 # 布局引擎
 
@@ -18,11 +21,6 @@
 
   - <https://github.com/haltu/muuri>
   - Responsive, sortable, filterable and draggable grid layouts
-
-- masonry
-
-  - Cascading grid layout library
-  - <https://github.com/desandro/masonry>
 
 - neat
 
@@ -56,15 +54,18 @@
 
   - <https://github.com/jlmakes/scrollreveal>
 
-- jquery.slimScroll
+- jquery.slimScroll | jquery.nicescroll
 
-- scrollama <https://github.com/russellgoldenberg/scrollama>
+- scrollama
 
+  - <https://github.com/russellgoldenberg/scrollama>
   - Scrollytelling with IntersectionObserver
 
-- jquery.nicescroll
+- 自定义实现
 
-- JS自定义 <http://www.jq22.com/webqd2618> | <http://www.jq22.com/webqd1910>
+  - jQuery实现自定义滚动条 <https://www.imooc.com/learn/675>
+  - <http://www.jq22.com/webqd2618>
+  - <http://www.jq22.com/webqd1910>
 
 # 元素定位
 
@@ -379,6 +380,11 @@ $(window).scroll(function() {
 > 轮播图: 获取1% 的用户点击却占用了页面一半甚至更多的位置
 
 # 对话框和灯箱
+
+- 移动端Web组件-Dialog对话框
+
+  <https: 9="" 70="" www.imooc.com="" learn="">
+  </https:>
 
 # 弹出层与工具提示(也可以属于tool)
 
