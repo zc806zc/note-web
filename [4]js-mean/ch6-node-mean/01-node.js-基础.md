@@ -107,82 +107,11 @@ for (; index < length; index++) {
 }
 ```
 
+![](/assets/img/nodejs/node-jm.jpg)
+
 # 为什么要使用Node.js
 
 - <https://juejin.im/post/57b54f151532bc0063ebfe31>
-
-# 构建工具及自动化
-
-- 自动化构建解决日复一日的工作流程
-
-  - 资源管理 : 图像压缩
-  - 代码编写（JS静态代码分析，单元测试，代码缩编， 利用sass处理css）
-  - 改进工作流，创建生产就绪的代码
-  - 确保版本号
-
-- [gulpjs](http://gulpjs.com) | [grunt使用示例](http://developer.51cto.com/art/201506/479127.htm) | [grunt插件](http://www.gruntjs.net/plugins)
-
-- gulp较grunt的优势
-
-  - 利用Node.js的Stream,使得一个任务的输出可以进行feed和pipe，而成为另一个任务的输入不 需要一个在硬盘写入临时文件的中途步骤，更高效
-  - 配置信息不再是一个独立的很大的配置对象，而是链式调用
-  - 专门设计成细分化的任务
-
-- [yaml.org](http://yaml.org)
-
-  - 更容易被人类阅读的语言格式
-  - file.readYAML()
-
-- webpack | prepack
-
-- bower <http://bower.io>
-
-  - <https://github.com/timmywil/grunt-bowercopy>
-  - <https://github.com/zont/gulp-bower>
-
-- 其他
-
-  - spm
-  - component
-  - Jam
-
-- gulp/webpack/bower等工具的差别
-
-- 使用示例
-
-```javascript
-// gulp
-npm install -g gulp
-npm install gulp --save-dev
-npm install gulp-jshint --save-dev
-gulp
-
-// grunt工作流
-npm install grunt --save-dev
-npm install grunt-contrib-jshint --save-dev // 校验
-npm install grunt-contrib-connect --save-dev
-npm install grunt-contrib-watch --save-dev
-npm install grunt-contrib-clean --save-dev
-npm install grunt-contrib-copy --save-dev
-npm install grunt-contrib-jasmine --save-dev // 单元测试
-npm install grunt-template-jasmine-istanbul --save-dev
-npm install grunt-contrib-concat --save-dev
-npm install grunt-contrib-uglify --save-dev // 代码缩编
-npm install grunt-contrib-yuidoc --save-dev // 生成API
-
-// Gulp工作流
-npm install gulp --save-dev
-npm install gulp-jshint --save-dev
-npm install gulp-connect --save-dev
-npm install gulp-clean --save-dev
-npm install gulp-jasmine --save-dev
-npm install gulp-istanbul --save-dev
-npm install gulp-concat --save-dev
-npm install gulp-uglify --save-dev
-npm install gulp-yuidoc --save-dev
-npm install gulp-rename --save-dev
-npm install gulp-header --save-dev // 没有watch, 已经在API里
-```
 
 # JavaScript概览
 
@@ -506,7 +435,7 @@ CircleCI
 
   - [51degrees.node](https://github.com/51Degrees/51degrees.node)
 
-```javascript
+```shell
 // 远程工作
 将一个已有的C/C++代码库扩展到Node.js平台上使用
 

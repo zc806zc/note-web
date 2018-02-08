@@ -12,6 +12,10 @@
   - <https://juejin.im/post/5a439fd7518825455f2f91a7?utm_medium=fe&utm_source=weixinqun>
   - parcel
 
+- 教程
+
+  - webpack深入与实战 <https://www.imooc.com/learn/802>
+
 - commonJS AMD/CMD 代码迁移
 
   - 替代部分 grunt/gulp 的工作，比如打包、压缩混淆、图片转base64等
@@ -23,7 +27,7 @@
 
   - tree-shaking 通过静态分析 es6 的语法，可以删除没有被使用的模块
 
-```javascript
+```
 var someModule = require("someModule");
     var anotherModule = require("anotherModule");    
 
@@ -158,3 +162,7 @@ gulp.task("webpack", function(callback) {
     });
 });
 ```
+
+# Webpack + Vue打造简单的todo
+
+- <https://www.imooc.com/video/16412>

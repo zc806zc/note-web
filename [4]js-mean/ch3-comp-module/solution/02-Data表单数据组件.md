@@ -200,6 +200,7 @@ new Date().Format("yyyy-MM-dd E HH:mm:ss")
 - 农历 <https://github.com/zzyss86/LunarCalendar>
 - <https://github.com/dangrossman/bootstrap-daterangepicker>
 - pickadate.js <https://github.com/amsul/pickadate.js>
+- DatePicker开发 <https://www.imooc.com/video/14520>
 
 # 自动完成 | autocomplete
 
@@ -218,6 +219,7 @@ new Date().Format("yyyy-MM-dd E HH:mm:ss")
 
 # 星级评分
 
+- 策略模式实现星级评分 <https://www.imooc.com/video/15115>
 - <http://www.jq22.com/webqd3035>
 - CSS实现 <http://www.jq22.com/webqd1144>
 

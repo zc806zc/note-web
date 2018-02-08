@@ -32,6 +32,7 @@
 
 - 懒加载
 - 瀑布流
+- 图片预加载 <https://www.imooc.com/video/14430>
 
 # 全屏
 
@@ -228,6 +229,10 @@ window.onresize = function() {
 
 - css实现 <http://www.jq22.com/webqd3033>
 
+# 无延迟菜单
+
+- JS实现京东无延迟菜单效果 <https://www.imooc.com/video/14777>
+
 # jQuery弹出窗口可移动、缩放
 
 - <http://www.jq22.com/webqd3029>
@@ -391,6 +396,8 @@ $(window).scroll(function() {
 - 图片瀑布流 <http://www.jq22.com/webqd2082>
 
 # Tabs
+
+- Tab插件开发 <https://www.imooc.com/video/14627>
 
 # 导航
 

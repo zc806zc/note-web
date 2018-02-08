@@ -80,31 +80,9 @@ var child = document.getElementById("p1");
 child.parentNode.removeChild(child); // 确定父子关系才能删除的
 ```
 
-# DOM优化
-
-- <https://juejin.im/entry/59ae19666fb9a024903aceae>
-
-- DOM 性能优化
-
-  - 网络消耗
-  - DOM 在浏览器的初始化
-  - DOM 的结构和动态操作
-  - JS 业务逻辑
-
-- 简化 HTML 结构
-
-  - 减少不必要的嵌套, 尽量扁平化、语义化
-  - 用DIV + CSS 替代 Table布局
-  - 多使用Flex Box
-  - 用border-bottom代替
-
-- 避免重绘与回流
-
-  - 回流可能导致整个 DOM 树的重新构造, 所以是性能的一大杀手
-  - 不要对元素进行 JS 动画流操作, 尽量使用 CSS 动画属性，以减少回流的 Render Tree 的规模
-
 # 窗口与尺寸
 
+- JS/jQuery宽高的理解和应用 <https://www.imooc.com/learn/608>
 - window
 
   - open() close()
@@ -113,11 +91,7 @@ child.parentNode.removeChild(child); // 确定父子关系才能删除的
 
 - screen
 
-- 弹窗
-
-  - alert
-  - confirm
-  - prompt("sometext","defaultvalue")
+- 弹窗 alert | confirm | prompt("sometext","defaultvalue")
 
 - 各种尺寸
 

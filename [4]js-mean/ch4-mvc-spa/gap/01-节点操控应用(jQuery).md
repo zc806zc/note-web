@@ -1,6 +1,6 @@
 # jQuery
 
-> jQuery在渐渐退出历史舞台，因为它已然成了规范的一部分
+> jQuery在渐渐退出历史舞台，因为它已然成了规范的一部分，功成身退
 
 - 网站
 
@@ -14,6 +14,10 @@
 
   - jq22 <http://www.jq22.com>
   - <http://www.htmleaf.com>
+
+- 教程
+
+  - Ajax应用与常用插件 <https://www.imooc.com/learn/762>
 
 - 内容
 
