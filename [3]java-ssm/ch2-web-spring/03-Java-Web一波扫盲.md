@@ -33,5 +33,29 @@
 - 别返回null值
 
 ```java
-当一个方法返回Collection集合的时候，不要返回null，如果没有结果则返回空的集合（例如：Collections.emptyList();），这样该方法的客户就不需要判断null的逻辑。这就是Java开发中的特例模式的应用。
+当一个方法返回Collection集合的时候，不要返回null，
+如果没有结果则返回空的集合（例如：Collections.emptyList();），
+这样该方法的客户就不需要判断null的逻辑。
+这就是Java开发中的特例模式的应用。
+```
+
+- 在通过URL参数传入时间时，后台可考虑使用InitBinder自动将时间字符串转换成Date对象，并绑定到Controller的入参
+
+```java
+//the parameter was converted in initBinder
+@RequestMapping("/date")
+public String date(Date date){
+ System.out.println(date); return "hello";
+}
+
+//At the time of initialization,convert the type "String" to type "date" @InitBinder
+public void initBinder(ServletRequestDataBinder binder){
+  binder.registerCustomEditor(Date.class, new CustomDateEditor(new SimpleDateFormat("yyyy-MM-dd"), true));
+}
+```
+
+- 只要涉及到字符串，就要明确该字符串用什么编码，要显式指明！不要相信默认值
+
+```shell
+IOUtils.toString(in, Charset.forName("UTF-8"));
 ```

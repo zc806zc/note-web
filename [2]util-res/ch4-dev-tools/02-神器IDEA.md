@@ -1,22 +1,37 @@
-# IDE
+# Java IDE
 
 - IntelliJ IDEA
 - NetBeans | Eclipse
-- eclipse color theme <http://download.csdn.net/download/knockheart/6690825>
+
+  - eclipse color theme <http://download.csdn.net/download/knockheart/6690825>
 
 # IDEA
 
-- <https://github.com/judasn/IntelliJ-IDEA-Tutorial>
+- IntelliJ-IDEA-Tutorial <https://github.com/judasn/IntelliJ-IDEA-Tutorial>
+- IDEA神器 - mooc
+
+  - 界面介绍 <https://www.imooc.com/video/16215>
+  - 无处不在的跳转
+
+    - 打开最近的文件
+    - 书签
+    - emacsIDEAs插件
 
 - 正确使用 IntelliJ IDEA 的方式 <https://juejin.im/post/590050f98d6d810058afc85f>
 
-- idea 内存溢出问题
+# 常见问题
+
+- IDEA 内存溢出问题
 
 ```javascript
-
 http://blog.csdn.net/fyqcdbdx/article/details/46788915
 -server -XX:PermSize=128M -XX:MaxPermSize=256m
 ```
+
+# IDEA常用插件
+
+- Maven Helper 用于分析jar包冲突
+- check-style 代码质量
 
 # 使用正则表达式进行搜索替换
 
@@ -58,6 +73,7 @@ tppabs="h[^"]*"
 
 - 功能
 
+  - Ctrl + SHift + A
   - Ctrl+Alt+Y，(Maven)同步
   - Alt+F8，计算变量值
   - Ctrl+Enter，导入包，自动修正
@@ -68,8 +84,13 @@ tppabs="h[^"]*"
   - Ctrl+Alt+Space，类名自动完成
   - Alt+F7，查找整个工程中使用地某一个类、方法或者变量的位置
   - Ctrl+Alt+Y，同步
+  - Alt + Enter
 
-# 处理快捷键冲突
+- 其他
+
+  - alt + num 打开侧边栏
+
+    # 处理快捷键冲突
 
 # 与WebStorm的区别
 

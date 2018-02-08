@@ -28,3 +28,14 @@
 # 终极装备 - 安全协议
 
 # 量体裁衣
+
+# Java加解密
+
+- Java Base64 <https://www.imooc.com/video/5824>
+- Java数字签名 <https://www.imooc.com/video/6153>
+
+- Java非对称加密 <https://www.imooc.com/video/6276>
+
+- Java对称加密 <https://www.imooc.com/video/5839>
+
+- Java消息摘要算法加密 <https://www.imooc.com/video/5830>
