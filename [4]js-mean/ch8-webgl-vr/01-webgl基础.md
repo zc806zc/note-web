@@ -144,3 +144,14 @@ WebGL可以为HTML5 Canvas提供硬件3D加速渲染，
 可被用于创建具有复杂3D结构的网站页面，
 甚至可以用来设计3D网页游戏等等。
 ```
+
+# Web VR
+
+- three.js
+- Babylon.js <https://github.com/BabylonJS/Babylon.js>
+- pixi.js <https://github.com/pixijs/pixi.js>
+- <http://www.ibiblio.org/e-notes/webgl/models.htm#tex>
+
+# 图像处理
+
+- [6 款 Javascript 的图像处理库 - Tine](https://juejin.im/post/58c0edac0ce4630054592a78)
