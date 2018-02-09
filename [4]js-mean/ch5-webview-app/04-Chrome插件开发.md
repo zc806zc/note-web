@@ -1,15 +1,4 @@
-# wke
-
-# electron
-
-- <https://github.com/trazyn/ieaseMusic> 自称最好网易云
-- electron-vue
-
-  - <https://github.com/SimulatedGREG/electron-vue>
-
-- <https://github.com/oldj/SwitchHosts>
-
-## 浏览器插件学习
+# 浏览器插件学习
 
 - [推荐工具 - toolbox](https://github.com/phodal/toolbox)
 - [Mastering The Developer Tools Console](http://blog.teamtreehouse.com/mastering-developer-tools-console)

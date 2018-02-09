@@ -289,3 +289,18 @@ npm install --save postcss-loader postcss-modules-values
   - bourbon <https://github.com/thoughtbot/bourbon>
 
     - A Lightweight Sass Tool Set
+
+# CSS命名法
+
+- BEM
+
+```javascript
+// BEM
+<div class="media">
+  <img src="logo.png" alt="Foo Corp logo" class="media__img--rev">
+  <div class="media__body">
+    <h3 class="alpha">Welcome to Foo Corp</h3>
+    <p class="lede">Foo Corp is the best, seriously!</p>
+  </div>
+</div>
+```
