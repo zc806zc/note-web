@@ -159,7 +159,7 @@ new Date().Format("yyyy-MM-dd E HH:mm:ss")
   - <http://www.jq22.com/webqd1688>
   - <http://www.jq22.com/webqd114>
 
-![](/assets/import-double-submit.png)
+![](/assets/img/other/import-double-submit.png)
 
 # 通用输入
 

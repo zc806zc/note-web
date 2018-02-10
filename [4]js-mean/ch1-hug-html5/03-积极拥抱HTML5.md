@@ -72,7 +72,7 @@ input和textarea 的autofocus required placeholder
 <map><area> http://www.runoob.com/try/try.php?filename=tryhtml_areamap
 ```
 
-![](/assets/h5-grammar755.png)
+![](/assets/img/other/h5-grammar755.png)
 
 # HTML5语义化
 

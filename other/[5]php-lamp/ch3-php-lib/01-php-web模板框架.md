@@ -58,7 +58,7 @@ MVC体系
 // 搜索引擎友好的URL 灵活的URI路由
 ```
 
-![](/assets/codeIgniter-structure89213.png)
+![](/assets/img/other/codeIgniter-structure89213.png)
 
 # Yii 2
 
@@ -104,7 +104,7 @@ webroot // 用户应用的根目录
 vender // 应用依赖
 ```
 
-![](/assets/cakephp-structure782.png) ![](/assets/cakephp-webroot2357.png) ![](/assets/cakephp-src9632.png)
+![](/assets/img/other/cakephp-structure782.png) ![](/assets/img/other/cakephp-webroot2357.png) ![](/assets/img/other/cakephp-src9632.png)
 
 # Zend Framework
 
@@ -159,7 +159,7 @@ caching, and many others
 PHPLIB // 用模板代替变量实现有限格式化
 ```
 
-![](/assets/smarty-structure3442.png)
+![](/assets/img/php/smarty-structure3442.png)
 
 - 小结
 

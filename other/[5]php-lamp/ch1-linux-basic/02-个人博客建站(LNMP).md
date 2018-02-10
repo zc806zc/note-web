@@ -162,7 +162,7 @@ location ~ \.php(.*)$ {
 }
 ```
 
-![](/assets/https-aliyun-1.jpg)
+![](/assets/img/other/https-aliyun-1.jpg)
 
 # 建站小结
 

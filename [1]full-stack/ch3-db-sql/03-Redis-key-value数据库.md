@@ -155,4 +155,4 @@ $get_value = $memcache->get('key');
 echo $get_value;
 ```
 
-![](/assets/memcache-successed.jpg)
+![](/assets/img/other/memcache-successed.jpg)
