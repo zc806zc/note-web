@@ -2,15 +2,15 @@
 
 - 翟永超 <http://blog.didispace.com/Spring-Boot%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/>
 - 纯洁的微笑 <http://www.ityouknow.com/>
-- <https://github.com/JeffLi1993/springboot-learning-example>
+- springboot-learning-example <https://github.com/JeffLi1993/springboot-learning-example>
 - springboot 深入实践图书源码 <https://github.com/chenfromsz?tab=repositories>
-- 学习目录 <https://www.jianshu.com/p/9a08417e4e84>
+- spring boot学习目录 <https://www.jianshu.com/p/9a08417e4e84>
 - 其他
 
   - 重拾后端之Spring Boot <https://juejin.im/post/5953bc2c5188250d8d141362>
   - springboot-socks <https://github.com/yizhiwazi/springboot-socks>
 
-# 多模块
+# 多模块配置
 
 - <https://www.imooc.com/video/16354>
 
