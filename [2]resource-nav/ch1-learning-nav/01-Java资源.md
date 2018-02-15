@@ -175,6 +175,4 @@
 
 - 高级语言虚拟机 <http://hllvm.group.iteye.com/>
 
-# 用 Java 实现的博客系统
 
-- solo <https://github.com/b3log/solo>
