@@ -1,18 +1,8 @@
 # CSS
 
-![](/assets/img/css/css-books.jpg)
+- API速查表 <http://www.css88.com/book/css/>
 
-# CSS布局基础
-
-> CSS是前端抵挡后台的最后一道防线，然而现在也挡住了前端
-
-- API速查表
-
-  - <http://www.css88.com/book/css/>
-
-- 查漏补缺
-
-  - <https://segmentfault.com/a/1190000006242814>
+- CSS查漏补缺 <https://segmentfault.com/a/1190000006242814>
 
 - 关于权重
 
@@ -42,34 +32,42 @@
 
   - 滚动条
 
-- BFC(Block formatting context 块级格式化上下文)
+![](/assets/img/css/css-books.jpg)
 
-  - 哪些元素会生成BFC
+# BFC
 
-    - 根元素
-    - float属性不为none
-    - position为absolute或fixed
-    - display为inline-block, table-cell, table-caption, flex, inline-flex
-    - overflow不为visible
+- Block formatting context 块级格式化上下文
 
-  - BFC有何用
+- BFC与IFC <https://segmentfault.com/a/1190000012993668>
 
-    - 清除浮动
+- 哪些元素会生成BFC
 
-      - <http://www.cnblogs.com/dolphinX/p/3508869.html>
-      - <https://rainylog.com/post/what-methods-of-clearfix-can-i-use/>
+  - 根元素
+  - float属性不为none
+  - position为absolute或fixed
+  - display为inline-block, table-cell, table-caption, flex, inline-flex
+  - overflow不为visible
 
-    - 防止 margin 重叠
+- BFC有何用
 
-    - 多栏布局的一种方式
+  - 清除浮动
 
-  - 元素溢出问题的解决
+    - <http://www.cnblogs.com/dolphinX/p/3508869.html>
+    - <https://rainylog.com/post/what-methods-of-clearfix-can-i-use/>
+
+  - 防止 margin 重叠
+
+  - 多栏布局的一种方式
+
+- 元素溢出问题的解决
 
 # 布局
 
 - 企业网站综合布局实战 <https://www.imooc.com/learn/147>
-- 圣杯布局
-- 双飞翼布局
+- 圣杯与双飞翼
+
+  - 圣杯 中间栏为两边腾开位置
+  - 双飞翼布局反之
 
   - <https://juejin.im/post/5a09570c6fb9a045167caf21>
 
@@ -110,7 +108,13 @@ hgroup
 overflow: hidden; // 触发生成BFC,使浮动元素也参与计算
 ```
 
-# 样式控制
+# 移动布局方案
+
+- <https://juejin.im/post/5a8c12935188257a6049a0a4>
+
+# 样式控制 | 节流与去抖
+
+- <https://juejin.im/post/5a813b4a5188257a6854d26e>
 
 - 自适应内部元素
 
@@ -168,7 +172,7 @@ lg 大屏幕|大桌面显示器，大于等于 1200px
   - 不是每个人都看到了响应式网页设计的价值
   - SEO对响应式网页的支持非常好，很多搜索引擎发现你的网站没有针对手机优化，就降低你的网站排名
 
-# CSS 预处理与后处理语言
+# 预处理与后处理语言
 
 - postcss -> css in js
 - sass | less
@@ -262,33 +266,6 @@ npm install --save postcss-loader postcss-modules-values
   background-color: blue;
 }
 ```
-
-# CSS实用工具集
-
-- 常用CSS集
-
-  - 148个资源让你成为CSS专家 <https://segmentfault.com/a/1190000006689923>
-  - 月报常用CSS <https://github.com/jsfront/src/blob/master/css.md>
-  - 小型CSS库 <https://juejin.im/post/5a31f53f51882555cc41deda>
-  - CSS清单 <https://juejin.im/post/59ae076b6fb9a0248e5ce689>
-
-    - 抖动分析 <https://juejin.im/entry/59ae15126fb9a0247d4f6d16>
-    - A Cross-end HTML5 Game <https://github.com/hiloteam/Hilo>
-
-- 助手类CSS
-
-  - <https://juejin.im/entry/59af8eb8f265da247a15c27f>
-  - Shed.css
-  - Tachyons 快速加载，高可读性，和100%响应式界面
-  - Basscss 人性化命名
-  - Beard 具有争议的helper类
-
-- sass样式库
-
-  - sassCore <https://github.com/marvin1023/sassCore>
-  - bourbon <https://github.com/thoughtbot/bourbon>
-
-    - A Lightweight Sass Tool Set
 
 # CSS命名法
 

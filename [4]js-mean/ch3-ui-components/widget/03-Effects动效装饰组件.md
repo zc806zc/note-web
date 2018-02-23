@@ -1,33 +1,46 @@
-# 动效类组件
-
-```shell
-动画
-装饰
-```
-
-# 基础样式
+# 基础样式 | 表单元素梅花
 
 - 表单美化 <https://www.imooc.com/learn/42>
 
-# 图标|字体
+# 图标 | 字体 | ICON
 
-- font-awesome
-- 阿里矢量图标库 <http://www.iconfont.cn/>
-- svg <https://icons8.com/preloaders/en/free>
-- google图标 <https://github.com/google/material-design-icons>
-- <http://cssicon.space/#/>
+- 方案
+
+  - font-awesome <https://github.com/FortAwesome/Font-Awesome>
+  - 阿里矢量图标库 <http://www.iconfont.cn/>
+  - svg <https://icons8.com/preloaders/en/free>
+  - google图标 <https://github.com/google/material-design-icons>
+  - <http://cssicon.space/#/>
+  - svg4everybody <https://github.com/jonathantneal/svg4everybody>
+  - feather <https://github.com/feathericons/feather>
+
+  - Snap.svg
+
+    - <https://github.com/adobe-webplatform/Snap.svg>
+    - 一个操纵 SVG 节点/制作 SVG 动画的框架
+    - <https://aotu.io/notes/2017/01/22/snapsvg/index.html>
+
+  - 大量象形文字 <https://github.com/ryanoasis/nerd-fonts>
+
+- 使用 SVG 打造一个高质量的 ICON 系统 <http://svgtrick.com/tricks/fefc144c481dde654be5455e8e34a6e1>
+
+- 手摸手，带你优雅的使用 icon <https://juejin.im/post/59bb864b5188257e7a427c09>
 
 # 动画
+
+- 方案
+
+  - animate.css
+  - jquery.easing <https://github.com/gdsmith/jquery.easing>
+  - wow.js
+  - Hover.css <https://github.com/IanLunn/Hover>
+  - quicksand (jQuery plugin. Reorder and filter items with a nice shuffling animation.)
 
 - 网站
 
   - jq22
   - <http://www.17sucai.com/>
-  - <http://microjs.com/>
-
-- Hover.css
-
-  - <https://github.com/IanLunn/Hover>
+  - microjs <http://microjs.com/>
 
 - 粒子效果
 
@@ -35,32 +48,11 @@
 
 - 一组简单可爱的css动效 <https://github.com/jonsuh/hamburgers>
 
-- SuperSlide v2.1.1 <http://www.SuperSlide2.com/>
-
-- jquery.easing <https://github.com/gdsmith/jquery.easing>
-
-```javascript
-// 动画 ====================
-quicksand
-jQuery plugin. Reorder and filter items with a nice shuffling animation.
-
-// create a smooth jump to sub navigational menu in one JS call
-jumpto
-
-// wow.js
-Reveal Animations When You Scroll. Very Animate.css Friend :-)
-Easily customize animation settings: style, delay, length, offset, iterations...
-
-
-// 效果
-Filterizr is a jQuery plugin that sorts, shuffles and applies stunning filters over
-responsive galleries using CSS3 transitions and custom CSS effects.
-```
-
 # 交互
 
-- interact.js <https://github.com/taye/interact.js>
+- interact.js
 
+  - <https://github.com/taye/interact.js>
   - <http://www.jq22.com/yanshi17203>
 
 # 色彩
@@ -76,24 +68,6 @@ responsive galleries using CSS3 transitions and custom CSS effects.
 
 - 换肤
 
-# 图标库
-
-- 手摸手，带你优雅的使用 icon <https://juejin.im/post/59bb864b5188257e7a427c09>
-
-- feather
-
-  - <https://github.com/feathericons/feather>
-
-- Snap.svg
-
-  - <https://github.com/adobe-webplatform/Snap.svg>
-  - 一个操纵 SVG 节点/制作 SVG 动画的框架
-  - <https://aotu.io/notes/2017/01/22/snapsvg/index.html>
-
-- <https://github.com/FortAwesome/Font-Awesome>
-
-- 大量象形文字 <https://github.com/ryanoasis/nerd-fonts>
-
 # 动画
 
 - 插件
@@ -108,8 +82,6 @@ responsive galleries using CSS3 transitions and custom CSS effects.
   - popmotion <https://github.com/Popmotion/popmotion>
 
     - Create unique animations and interactions with tweens, physics and input tracking.
-
-# 交互
 
 # 色彩
 
@@ -347,6 +319,7 @@ function show() {
   - 图片 <http://www.jq22.com/webqd2950>
   - 支持排序 <http://www.jq22.com/webqd2944>
   - HTML5拖拽 <http://www.jq22.com/webqd2072>
+  - 支付宝价格拖放 <https://segmentfault.com/a/1190000013266172>
 
 ```javascript
 // 图片拖放

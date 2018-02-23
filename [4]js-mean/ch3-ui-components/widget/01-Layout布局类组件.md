@@ -73,6 +73,8 @@
 - 固定在浏览器顶部 <http://www.jq22.com/webqd2646>
 - 返回顶部
 
+  - jumpto (create a smooth jump to sub navigational menu in one JS call)
+
   - <http://www.jq22.com/webqd2804>
 
 ```javascript
@@ -279,7 +281,7 @@ $(window).scroll(function() {
 
   - the last carousel you'll ever need
 
-- (推荐) superslide
+- (推荐) superslide <http://www.SuperSlide2.com/>
 
 - 轻量级
 

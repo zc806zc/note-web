@@ -28,11 +28,6 @@
 
   - Vuetify <https://github.com/vuetifyjs/vuetify>
 
-- 阅读源码
-
-  - learnVue <https://github.com/answershuto/learnVue>
-  - SimpleVue <https://github.com/balancelove/SimpleVue>
-
 # 开发环境配置
 
 - vue-cli插件

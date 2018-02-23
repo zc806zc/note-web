@@ -74,10 +74,11 @@ console.log(veggies.join(" and "));
 tmpStr = str.replace(/[\W_]/g,"").toLowerCase();
 ```
 
-# JS算法基础
-
+# JavaScript算法基础
 
 - 数组
+
+  - 尾调用优化 <https://github.com/andy2046/blog/issues/7>
 
 ```javascript
 map | filter
@@ -130,7 +131,6 @@ console.log("王7王： " + checkChineseName("王7王"));    // false
   - 二分查找
 
 ![排序-复杂度分析](https://user-gold-cdn.xitu.io/2016/11/29/4abde1748817d7f35f2bf8b6a058aa40)
-
 
 # 参考
 

@@ -1,11 +1,11 @@
+# 第三方组件推荐
 
-# 行政规划数据
+- 行政规划数据 <https://github.com/modood/Administrative-divisions-of-China>
 
-- <https://github.com/modood/Administrative-divisions-of-China>
+# 实战学习项目
 
-# 使用vue2.0实现购物车和地址选配功能
-
-- <https://www.imooc.com/video/14039>
+- 使用vue2.0实现购物车和地址选配功能 <https://www.imooc.com/video/14039>
+- 今日头条 <https://github.com/cd-dongzi/vue-project>
 
 # Axios封装
 
@@ -127,9 +127,18 @@ export default {
 };
 ```
 
-# 服务端渲染 ssr
+# 服务端渲染
 
 - <https://ssr.vuejs.org/zh/>
+- <https://juejin.im/post/59fa9257f265da43062a1b0e>
+
+  - vuex的用户信息为什么还要存一遍在浏览器里?
+  - 首屏加载比较慢
+  - SSR(服务端渲染就能满足你的需求),因为请求回来就是一个处理完毕的 html
+  - 写小程序 wepy
+  - mock
+  - 页面拦截 <https://router.vuejs.org/zh-cn/advanced/navigation-guards.html>
+
 - 处理 Vue 单页面 SEO 的另一种思路
 
   - preRender + metaInfo <https://github.com/declandewet/vue-meta>
@@ -155,15 +164,6 @@ export default {
   }
 </script>
 ```
-
-- <https://juejin.im/post/59fa9257f265da43062a1b0e>
-
-  - vuex的用户信息为什么还要存一遍在浏览器里?
-  - 首屏加载比较慢
-  - SSR(服务端渲染就能满足你的需求),因为请求回来就是一个处理完毕的 html
-  - 写小程序 wepy
-  - mock
-  - 页面拦截 <https://router.vuejs.org/zh-cn/advanced/navigation-guards.html>
 
 - 首屏加载
 
