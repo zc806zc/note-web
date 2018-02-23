@@ -4,7 +4,7 @@
 
 # HTML结构
 
-- 正式体
+- 普通模式(HTML5)
 
 ```html
 <!DOCTYPE html>
@@ -29,9 +29,15 @@
 
 - 究极完美体
 
-  - oreload与prefetch <https://www.w3cplus.com/performance/reloading/preload-prefetch-and-priorities-in-chrome.html>
+  - preload与prefetch
+
+    - 可以在 PC 中使用 preload 来刷新资源的缓存，但在移动端则需要特别慎重，因为可能会浪费用户的带宽。
+    - preload 加载页面必需的资源如 CDN 上的字体文件，与 prefetch 预测加载下一屏数据，兴许是个不错的组合。
+    - <https://juejin.im/post/5a7fb09bf265da4e8e785c38>
+    - <https://www.w3cplus.com/performance/reloading/preload-prefetch-and-priorities-in-chrome.html>
 
 ```html
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -40,6 +46,7 @@
   <link rel="dns-prefetch" href="//cdn.cn/">
 
   <link rel="preload" href="//cdn.cn/webfont.woff2" as="font">
+  <link rel="preload" as="font" crossorigin href="https://at.alicdn.com/t/font_zck90zmlh7hf47vi.woff">
   <link rel="preload" href="//cdn.cn/Page1-A.js" as="script">
   <link rel="preload" href="//cdn.cn/Page1-B.js" as="script">
 
@@ -58,6 +65,8 @@
 </body>
 </html>
 ```
+
+![](https://user-gold-cdn.xitu.io/2018/2/11/16182c9d3ff9f3c2?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
 
 # Meta
 
@@ -211,7 +220,7 @@ f: !!str true
   - 构建render树
   - 布局render树
   - 绘制render树
-  
+
 # JS运行机制
 
 - JS运行机制最全面的一次梳理 <https://juejin.im/post/5a6547d0f265da3e283a1df7>
