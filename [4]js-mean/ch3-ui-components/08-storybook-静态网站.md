@@ -1,3 +1,0 @@
-# storybook
-
-- UI Development Environment

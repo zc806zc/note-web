@@ -1,3 +1,7 @@
+# Webpack + Vue打造简单的todo
+
+- <https://www.imooc.com/video/16412>
+
 # Webpack
 
 - 简介
@@ -27,7 +31,7 @@
 
   - tree-shaking 通过静态分析 es6 的语法，可以删除没有被使用的模块
 
-```
+```shell
 var someModule = require("someModule");
     var anotherModule = require("anotherModule");    
 
@@ -162,7 +166,3 @@ gulp.task("webpack", function(callback) {
     });
 });
 ```
-
-# Webpack + Vue打造简单的todo
-
-- <https://www.imooc.com/video/16412>
