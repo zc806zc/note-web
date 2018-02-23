@@ -1,11 +1,20 @@
 # 第三方组件推荐
 
 - 行政规划数据 <https://github.com/modood/Administrative-divisions-of-China>
+- 可拖拽树 <https://github.com/ltaoo/vue-draggable-tree>
 
 # 实战学习项目
 
 - 使用vue2.0实现购物车和地址选配功能 <https://www.imooc.com/video/14039>
 - 今日头条 <https://github.com/cd-dongzi/vue-project>
+- 基于vue的简单流程图开发
+
+  - <https://juejin.im/post/59e719746fb9a044fa18f2f2>
+  - <https://github.com/leer0911/vue-FlowChart>
+
+# 基于Vue的多项目整合实践
+
+- <https://juejin.im/post/59e379586fb9a0450670a902>
 
 # Axios封装
 

@@ -14,6 +14,7 @@
 
   - jq22 <http://www.jq22.com>
   - <http://www.htmleaf.com>
+  - jqueryscript https://www.jqueryscript.net/
 
 - 教程
 
