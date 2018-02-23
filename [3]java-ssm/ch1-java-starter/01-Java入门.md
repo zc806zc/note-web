@@ -1,18 +1,19 @@
-# Java基础
+# Java入门学习
 
 - LearningNotes <https://github.com/francistao/LearningNotes>
 - JAVA学习的方法和过程-知乎 <https://www.zhihu.com/question/29581524/answer/44872235>
 - 博客分享 <https://juejin.im/post/586603be1b69e60063d08b7a>
+- Java 后端自学之路 <https://juejin.im/entry/5a7a9a13f265da4e865a578c>
+
+![](https://user-gold-cdn.xitu.io/2018/2/7/1616ee9f71973a2e?imageslim)
+
+# Java知识点
 
 ```java
 Java程序的执行模式是 半编译半解释
 虚拟机可以用硬件实现
 字节代码是虚拟机的机器码
-```
 
-- 知识点
-
-```java
 System不是关键字
 
 只能有一个main方法
