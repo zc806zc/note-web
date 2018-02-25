@@ -127,7 +127,7 @@ overflow: hidden; // 触发生成BFC,使浮动元素也参与计算
 
 - 满幅的背景 定宽的内容
 
-- 垂直居中
+- 垂直居中 <https://www.w3.org/Style/Examples/007/center>
 
 - 紧贴底部的页脚
 
