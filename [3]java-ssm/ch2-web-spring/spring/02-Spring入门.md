@@ -6,6 +6,12 @@
 
 > Developing Java Applications for the Enterprise
 
+- Spring实战
+
+  - <https://github.com/habuma/SpringInActionExamples->
+  - 有博主改进 <https://github.com/guoxiaoxu/SpringInActionPractice>
+  - <https://juejin.im/post/5a8bef5c6fb9a06350151fa3>
+
 # Spring Data
 
 - <https://www.imooc.com/video/14540>

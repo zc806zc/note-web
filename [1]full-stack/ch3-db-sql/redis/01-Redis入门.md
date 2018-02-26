@@ -3,6 +3,7 @@
 - 教程
 
   - <http://www.yiibai.com/redis/>
+  - Redis从入门到实践 <https://juejin.im/post/5a912b3f5188257a5c608729>
 
 - 安装
 
