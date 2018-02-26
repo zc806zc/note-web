@@ -1,10 +1,3 @@
-# Java IDE
-
-- IntelliJ IDEA
-- NetBeans | Eclipse
-
-  - eclipse color theme <http://download.csdn.net/download/knockheart/6690825>
-
 # IDEA
 
 - IntelliJ-IDEA-Tutorial <https://github.com/judasn/IntelliJ-IDEA-Tutorial>

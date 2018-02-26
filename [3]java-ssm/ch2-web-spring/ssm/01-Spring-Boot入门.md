@@ -12,7 +12,15 @@
 
 # Spring boot多模块部署
 
-- <https://www.imooc.com/video/16354>
+- Springboot 初探 @小马哥 <https://www.imooc.com/video/16354>
+
+  - 单模块重构成多模块
+  - 三种运行方式
+    - IDEA  -> 开发
+    - JAR/WAR -> 生产
+    - MAVEN mvn:spring-boot:run
+  - 响应式编程 Spring Boot特性等  
+
 - IDEA创建多个模块MavenSpringBoot项目
 
   - <https://segmentfault.com/a/1190000011367492>
