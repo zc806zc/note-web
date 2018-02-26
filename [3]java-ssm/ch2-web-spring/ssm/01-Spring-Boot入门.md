@@ -10,9 +10,36 @@
   - 重拾后端之Spring Boot <https://juejin.im/post/5953bc2c5188250d8d141362>
   - springboot-socks <https://github.com/yizhiwazi/springboot-socks>
 
-# 多模块配置
+# Spring boot多模块部署
 
 - <https://www.imooc.com/video/16354>
+- IDEA创建多个模块MavenSpringBoot项目
+
+  - <https://segmentfault.com/a/1190000011367492>
+  - <http://blog.csdn.net/willjgl/article/details/77773634>
+  - <http://blog.csdn.net/Message_lx/article/details/54632947>
+  - 示例 <https://github.com/williamHappy/tao-shopping-mall>
+
+- 基于maven使用IDEA创建多模块项目 <http://blog.csdn.net/williamhappy/article/details/54376855>
+
+- 模块
+
+```java
+common-utils
+```
+
+- 热部署 spring-boot-devtools
+
+  - (推荐) <https://www.cnblogs.com/bingshu/p/6876030.html>
+  - <http://blog.csdn.net/isea533/article/details/70495714>
+  - jRabel
+
+- 注意
+
+  - 父项目必须为pom
+  - xxx-parent文件结构是否包含这些模块
+  - 删除父项目的src
+  - Mark As Source Root
 
 # 界面设计
 
