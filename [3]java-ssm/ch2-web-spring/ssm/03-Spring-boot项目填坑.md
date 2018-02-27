@@ -1,6 +1,7 @@
 # 学习项目
 
 - spring-boot-api-project-seed <https://github.com/lihengming/spring-boot-api-project-seed>
+- Spring Boot使用Redis提升天气预报应用的并发访问能力 http://www.imooc.com/article/23435
 
 # 搭建微信小程序
 

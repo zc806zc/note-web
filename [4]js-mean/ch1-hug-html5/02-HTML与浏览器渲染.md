@@ -4,6 +4,7 @@
 
 # HTML结构
 
+- <https://segmentfault.com/a/1190000011577248>
 - 普通模式(HTML5)
 
 ```html
@@ -29,12 +30,12 @@
 
 - 究极完美体
 
-  - preload与prefetch
+- preload与prefetch
 
-    - 可以在 PC 中使用 preload 来刷新资源的缓存，但在移动端则需要特别慎重，因为可能会浪费用户的带宽。
-    - preload 加载页面必需的资源如 CDN 上的字体文件，与 prefetch 预测加载下一屏数据，兴许是个不错的组合。
-    - <https://juejin.im/post/5a7fb09bf265da4e8e785c38>
-    - <https://www.w3cplus.com/performance/reloading/preload-prefetch-and-priorities-in-chrome.html>
+  - 可以在 PC 中使用 preload 来刷新资源的缓存，但在移动端则需要特别慎重，因为可能会浪费用户的带宽。
+  - preload 加载页面必需的资源如 CDN 上的字体文件，与 prefetch 预测加载下一屏数据，兴许是个不错的组合。
+  - <https://juejin.im/post/5a7fb09bf265da4e8e785c38>
+  - <https://www.w3cplus.com/performance/reloading/preload-prefetch-and-priorities-in-chrome.html>
 
 ```html
 

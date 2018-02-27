@@ -1,7 +1,3 @@
-# Webpack + Vue打造简单的todo
-
-- <https://www.imooc.com/video/16412>
-
 # Webpack
 
 - 优化整理 <http://www.cnblogs.com/yexiaochai/p/3759959.html>
@@ -32,7 +28,7 @@
 
   - tree-shaking 通过静态分析 es6 的语法，可以删除没有被使用的模块
 
-```shell
+```
 var someModule = require("someModule");
     var anotherModule = require("anotherModule");    
 
@@ -167,3 +163,14 @@ gulp.task("webpack", function(callback) {
     });
 });
 ```
+
+# 练手项目
+
+- Webpack + Vue打造简单的todo <https://www.imooc.com/video/16412>
+
+# Webpack多页面
+
+- 基于 Webpack 开发和构建多页面站点
+
+  - <https://juejin.im/post/5a9358d76fb9a0633c662f17>
+  - <https://github.com/zhaotoday/webpack-multi-page>

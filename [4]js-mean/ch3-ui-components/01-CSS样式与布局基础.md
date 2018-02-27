@@ -269,6 +269,7 @@ npm install --save postcss-loader postcss-modules-values
 
 # CSS命名法
 
+- css常见样式命名思想 <https://juejin.im/post/5a79545a5188257a7924875d>
 - BEM
 
 ```javascript

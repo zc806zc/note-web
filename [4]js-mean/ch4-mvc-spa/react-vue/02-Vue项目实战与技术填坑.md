@@ -1,7 +1,9 @@
 # 第三方组件推荐
 
+- 组件方案 <https://github.com/opendigg/awesome-github-vue>
 - 行政规划数据 <https://github.com/modood/Administrative-divisions-of-China>
 - 可拖拽树 <https://github.com/ltaoo/vue-draggable-tree>
+- vue-3d-model <https://github.com/hujiulong/vue-3d-model>
 
 # 实战学习项目
 
