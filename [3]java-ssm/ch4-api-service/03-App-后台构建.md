@@ -1,3 +1,7 @@
+# App后端开发
+
+- APP后端开发杂谈 <https://juejin.im/post/5a8eaee96fb9a0634417f4bf>
+
 # App后台/后台技术
 
 - APP后台与Web后台的区别
@@ -51,6 +55,7 @@
 - 高效更新数据
 
 - 图片处理
+
 - 视频处理
 - 获取APK和IPA文件里的资源
 - 文件系统
