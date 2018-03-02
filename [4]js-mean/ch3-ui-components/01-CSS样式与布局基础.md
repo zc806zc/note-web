@@ -4,6 +4,8 @@
 
 - CSS查漏补缺 <https://segmentfault.com/a/1190000006242814>
 
+- 12个HTML和CSS必须知道的重点难点问题 <https://juejin.im/post/5a954add6fb9a06348538c0d>
+
 - 关于权重
 
   - id声明会覆盖class
@@ -75,6 +77,7 @@
 
   - <https://juejin.im/post/5a22d0086fb9a0451a7631ee>
   - 使用IE盒模型box-sizing: border-box
+  - 垂直自适应 <https://www.cnblogs.com/qingkong/p/4448945.html>
 
 - 响应式布局
 
@@ -269,6 +272,7 @@ npm install --save postcss-loader postcss-modules-values
 
 # CSS命名法
 
+- css常见样式命名思想 <https://juejin.im/post/5a79545a5188257a7924875d>
 - BEM
 
 ```javascript

@@ -1,7 +1,9 @@
 # 第三方组件推荐
 
+- 组件方案 <https://github.com/opendigg/awesome-github-vue>
 - 行政规划数据 <https://github.com/modood/Administrative-divisions-of-China>
 - 可拖拽树 <https://github.com/ltaoo/vue-draggable-tree>
+- vue-3d-model <https://github.com/hujiulong/vue-3d-model>
 
 # 实战学习项目
 
@@ -15,6 +17,11 @@
 # 基于Vue的多项目整合实践
 
 - <https://juejin.im/post/59e379586fb9a0450670a902>
+
+# Vue权限控制
+
+- 权限控制 结合 Vue <https://juejin.im/entry/5a60611b6fb9a01cb0495fcb>
+- 简单实现权限控制 <https://github.com/mgbq/vue-permission>
 
 # Axios封装
 

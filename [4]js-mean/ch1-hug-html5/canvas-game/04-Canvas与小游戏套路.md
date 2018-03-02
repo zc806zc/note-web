@@ -102,3 +102,7 @@ function create5star(context, sx, sy, radius, color, rotato) {
 # HTML5小游戏---爱心鱼
 
 - <https://www.imooc.com/learn/516>
+
+# javascript高仿热血传奇游戏
+
+- <https://juejin.im/post/5a8d85506fb9a0634417f120>
