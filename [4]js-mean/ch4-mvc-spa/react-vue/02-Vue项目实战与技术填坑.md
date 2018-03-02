@@ -18,6 +18,11 @@
 
 - <https://juejin.im/post/59e379586fb9a0450670a902>
 
+# Vue权限控制
+
+- 权限控制 结合 Vue <https://juejin.im/entry/5a60611b6fb9a01cb0495fcb>
+- 简单实现权限控制 <https://github.com/mgbq/vue-permission>
+
 # Axios封装
 
 - <https://juejin.im/post/59a22e71518825242c422604>
