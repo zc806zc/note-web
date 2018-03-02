@@ -31,4 +31,4 @@
   - 声音大不代表有理，拳头大才是。
   - 愿有趣与创意成为人生的两大标杆！
 
-![](/assets/img/index/xiong.gif)
+![](/static/img/index/xiong.gif)

@@ -34,7 +34,7 @@
 
   - 滚动条
 
-![](/assets/img/css/css-books.jpg)
+![](/static/img/css/css-books.jpg)
 
 # BFC
 

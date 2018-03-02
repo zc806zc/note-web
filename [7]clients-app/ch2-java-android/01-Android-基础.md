@@ -88,7 +88,7 @@ android:label="@string/app_name" >
 
   - LinearLayout(线性布局): weight权重属性, android:divider绘制下划线
   - RelativeLayout(相对布局，推荐,margin,padding)：尽量使用RelativeLayout + LinearLayout的weight属性搭配使用
-  - TableLayout(表格布局) ![](/assets/Android 开发必备神器之Android Studio .png)
+  - TableLayout(表格布局) ![](/static/Android 开发必备神器之Android Studio .png)
   - FrameLayout(帧布局)
   - AbsoluteLayout(绝对布局)
   - GridLayout(网格布局)

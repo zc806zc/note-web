@@ -1,4 +1,4 @@
-// const clown = require('../../assets/js/clown.js');
+// const clown = require('../../static/js/clown.js');
 
 /**
  * @method:

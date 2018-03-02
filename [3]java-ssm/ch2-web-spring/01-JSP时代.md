@@ -59,7 +59,7 @@ JSP模板设置 http://www.phperz.com/article/15/0923/159051.html
 Atom的autocomplete-jsp插件
 ```
 
-![](/assets/img/other/idea-refresh978.png) ![](/assets/img/other/auto453.png)![](/assets/img/other/webroot-add899.png)![](/assets/img/other/classes-path785.png)![](/assets/img/other/artifacts-setting432.png)
+![](/static/img/other/idea-refresh978.png) ![](/static/img/other/auto453.png)![](/static/img/other/webroot-add899.png)![](/static/img/other/classes-path785.png)![](/static/img/other/artifacts-setting432.png)
 
 # JSP开发基础
 
@@ -140,7 +140,7 @@ ASP.NET Web Form 强大的窗体
 // EJB
 ```
 
-# ![](/assets/img/java/j2ee-structure77283.png)
+# ![](/static/img/java/j2ee-structure77283.png)
 
 # 注释与脚本标识
 

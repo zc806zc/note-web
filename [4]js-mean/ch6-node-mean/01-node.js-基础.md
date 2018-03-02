@@ -107,7 +107,7 @@ for (; index < length; index++) {
 }
 ```
 
-![](/assets/img/nodejs/node-jm.jpg)
+![](/static/img/nodejs/node-jm.jpg)
 
 # 为什么要使用Node.js
 

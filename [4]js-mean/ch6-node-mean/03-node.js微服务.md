@@ -9,7 +9,7 @@
     - ui-console 运维
     - cli 开发工具
 
-![](/assets/img/js/node-micro.jpg)
+![](/static/img/js/node-micro.jpg)
 
 ## 微服务架构
 

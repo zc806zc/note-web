@@ -21,4 +21,4 @@
 // 图片来源 http://www.ruanyifeng.com/blog/2017/03/gartner-hype-cycle.html
 ```
 
-![](/assets/img/other/jieduan.png)
+![](/static/img/other/jieduan.png)

@@ -174,7 +174,7 @@ export default {
       }]
       link: [{                 // set link
         rel: 'asstes',
-        href: 'https://assets-cdn.github.com/'
+        href: 'https://static-cdn.github.com/'
       }]
     }
   }

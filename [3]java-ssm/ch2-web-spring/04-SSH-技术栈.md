@@ -81,7 +81,7 @@ web.xml
 应用数据/控制/表单标签
 ```
 
-![](/assets/img/java/structs-structure3453.png) ![](/assets/img/java/struts2-lib23784.png)
+![](/static/img/java/structs-structure3453.png) ![](/static/img/java/struts2-lib23784.png)
 
 # Hibernate
 

@@ -95,7 +95,7 @@ if (navigator.getUserMedia) {
   - EventSource API
   - WebSocket
 
-![](/assets/img/js/video-audio-standard.png)
+![](/static/img/js/video-audio-standard.png)
 
 # 如何实现1080P延迟低于500ms的实时超清直播传输技术
 
