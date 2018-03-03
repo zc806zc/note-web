@@ -1,21 +1,12 @@
 # 博客专家
 
-- 讨论推荐
-
-  - 网站排名 <http://www.techug.com/post/github-china-100.html>
-  - 讨论 <https://www.zhihu.com/question/50203775/answer/119850003>
-
-- blogjava <http://www.blogjava.net/>
-
-- 博之阅 <http://www.bozhiyue.com/index.html>
-
 - Tim Yang <https://timyang.net/>
 
 - 张开涛 <http://www.iteye.com/blogs/subjects/kaitao-springmvc>
 
-- 孤傲苍狼 <http://www.cnblogs.com/xdp-gacl/category/574705.html>
+- 翟永超
 
-- cmsblogs <http://cmsblogs.com/>
+- 孤傲苍狼 <http://www.cnblogs.com/xdp-gacl/category/574705.html>
 
 - chenssy <http://blog.csdn.net/chenssy>
 
@@ -26,12 +17,22 @@
   - 书海陶然 <https://www.jianshu.com/u/657c611b2e07>
   - 海子 看初学基础 <http://www.cnblogs.com/dolphin0520/>
   - 曹胜欢 <http://blog.csdn.net/csh624366188/>
-
   - 骆昊 <http://blog.csdn.net/jackfrued>
 
-# 网站
+# 网站|博客
+
+- 讨论推荐
+
+  - 网站排名 <http://www.techug.com/post/github-china-100.html>
+  - 讨论 <https://www.zhihu.com/question/50203775/answer/119850003>
+
+- cmsblogs <http://cmsblogs.com/>
+- blogjava <http://www.blogjava.net/>
+
+- 博之阅 <http://www.bozhiyue.com/index.html>
 
 - 网站推荐 <http://www.siteboxs.com/siteBox/tag/tname/java.html>
+
 - <https://www.zhihu.com/question/23496750>
 
 - 国内经典
@@ -174,5 +175,3 @@
 # 虚拟机
 
 - 高级语言虚拟机 <http://hllvm.group.iteye.com/>
-
-

@@ -1,5 +1,14 @@
 # IDEA
 
+- IntelliJ IDEA 从入门到上瘾 <https://www.jianshu.com/p/9c65b7613c30>
+  - 没有工作空间的概念
+  - 自动编译
+
+```shell
+File ->Other Settings -> Default Settings -> Auto Import
+Ctrl+Shift+F9
+```
+
 - IntelliJ-IDEA-Tutorial <https://github.com/judasn/IntelliJ-IDEA-Tutorial>
 - IDEA神器 - mooc
 
@@ -20,6 +29,10 @@
 http://blog.csdn.net/fyqcdbdx/article/details/46788915
 -server -XX:PermSize=128M -XX:MaxPermSize=256m
 ```
+
+# 多模块打包
+
+- 见springboot处
 
 # IDEA常用插件
 
@@ -65,7 +78,7 @@ tppabs="h[^"]*"
   - Ctrl+Shift+"+/-"，全部展开、折叠
 
 - 功能
-
+  - Ctrl+右键 直接打开实现类
   - Ctrl + SHift + A
   - Ctrl+Alt+Y，(Maven)同步
   - Alt+F8，计算变量值

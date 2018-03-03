@@ -10,16 +10,21 @@
   - 重拾后端之Spring Boot <https://juejin.im/post/5953bc2c5188250d8d141362>
   - springboot-socks <https://github.com/yizhiwazi/springboot-socks>
 
+![](https://upload-images.jianshu.io/upload_images/8069210-b2aacf9a3d7dae47.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/342)
+
 # Spring boot多模块部署
 
+- SpringBoot 多模块项目实践 <https://www.jianshu.com/p/59ceea4f029d>
 - Springboot 初探 @小马哥 <https://www.imooc.com/video/16354>
 
   - 单模块重构成多模块
   - 三种运行方式
-    - IDEA  -> 开发
+
+    - IDEA -> 开发
     - JAR/WAR -> 生产
     - MAVEN mvn:spring-boot:run
-  - 响应式编程 Spring Boot特性等  
+
+  - 响应式编程 Spring Boot特性等
 
 - IDEA创建多个模块MavenSpringBoot项目
 
