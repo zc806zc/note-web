@@ -11,6 +11,7 @@
   - background偏移，显示不同字符
 
   - 字符穿插式
+
   - 伪元素
   - 异步加载
   - 字符集替换式
@@ -18,3 +19,4 @@
 ![](https://user-gold-cdn.xitu.io/2017/10/12/90932709c87fa832d262dd7b21d4a615?imageView2/0/w/1280/h/960/ignore-error/1)
 
 - 爬虫学习资源整理 <https://zhuanlan.zhihu.com/p/25250739>
+- 网络爬虫项目大全 <http://blog.csdn.net/hp910315/article/details/53517399>

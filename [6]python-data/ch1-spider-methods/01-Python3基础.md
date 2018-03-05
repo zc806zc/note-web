@@ -1,18 +1,17 @@
-# Python语法
+# Python
 
-- [网络爬虫项目大全](http://blog.csdn.net/hp910315/article/details/53517399)
-- [Python教程-廖雪峰](http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000)
-- awesome-python
+- Python教程-廖雪峰 <http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000>
+- awesome-python <https://github.com/vinta/awesome-python>
 
-  - <https://github.com/vinta/awesome-python>
+- python-guide <https://github.com/kennethreitz/python-guide>
 
-- <https://github.com/kennethreitz/python-guide>
+- 草根学 Python <https://github.com/TwoWater/Python>
 
+# 安装
 
-
-# Python安装
-
-- [Python](https://www.python.org/downloads/windows/) | [第三方库-非官方](http://www.lfd.uci.edu/~gohlke/pythonlibs/) | [Python编译系统配置](http://blog.csdn.net/tstbdt/article/details/44490061)
+- Python <https://www.python.org/downloads/windows/>)
+- 第三方库-非官方 <http://www.lfd.uci.edu/~gohlke/pythonlibs/>
+- Python编译系统配置 <http://blog.csdn.net/tstbdt/article/details/44490061>
 - windows安装注意
 
   - 选择可执行版本
@@ -20,20 +19,19 @@
   - add to path
 
 ```python
-// 安装第三方库
+# 安装第三方库
 cd /d folder
 pip install xxx.whl
 
-pip3 freeze // 此命令显示安装过哪些
+pip3 freeze # 此命令显示安装过哪些
 ```
 
-- [Sublime Text 3 python 配置](http://www.cnblogs.com/waising/articles/3466120.html)
-- [pylinter下载](https://github.com/biermeester/Pylinter) | [pylinter路径问题](https://www.baidu.com/link?url=yEoP4X-gVdIPEvq6qV_qvkOpBUCcl2lFFq-Ivn4mn4vlAqmv5DtHYWbJgZG-VxY981sMt7z3Vp2pKpdulS6i7a&wd=&eqid=c46c4cf000149f3a0000000458b16c19)(还是失败)
 - IDE/编辑器
 
   - ipython notebook 在web浏览器运行
   - Sublime
   - pyCharm
+  - Sublime Text 3 python 配置 <http://www.cnblogs.com/waising/articles/3466120.html>
 
 ```python
 // pyCharm
@@ -47,6 +45,9 @@ pylinter
 SublimeCodeIntel
 Python PEP8 Autoformat // 自动格式化 CTRL+SHIFT+R
 ```
+
+- pylinter下载 <https://github.com/biermeester/Pylinter>
+- pylinter路径问题 <https://www.baidu.com/link?url=yEoP4X-gVdIPEvq6qV_qvkOpBUCcl2lFFq-Ivn4mn4vlAqmv5DtHYWbJgZG-VxY981sMt7z3Vp2pKpdulS6i7a&wd=&eqid=c46c4cf000149f3a0000000458b16c19>
 
 # Python语言基础
 
@@ -118,7 +119,7 @@ input("按enter后退出")
 
   - pickle 模块
 
-## 数据类型
+# 数据类型
 
 - List[ ] 列表 可修改
 
@@ -290,7 +291,7 @@ What is your quest?  It is the holy grail.
 What is your favorite color?  It is blue.
 ```
 
-### 字符串
+# 字符串
 
 - 字符串是不可变的
 - 一个字符就是长度为1的字符串
@@ -342,7 +343,7 @@ c = a // 即c = c  a
   - iter() 和 next()
   - 使用了 yield 的函数被称为生成器，生成器就是一个迭代器
 
-### 函数
+# 函数
 
 - 函数
 
@@ -397,7 +398,7 @@ raise NameError('HiThere')
 with语句
 ```
 
-#### Python基础2
+# Python基础2
 
 - 模块
 
