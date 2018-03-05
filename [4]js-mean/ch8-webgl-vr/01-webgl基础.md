@@ -1,38 +1,3 @@
-# 虚拟现实
-
-- VR
-- AR
-
-- 基础知识
-
-  - 图形管线
-  - 顶点 图元 片元 像素
-  - OpenGL
-  - 几何建模
-  - 线框模型
-  - 三角风格
-  - 参数曲面(自由曲面)
-  - 隐式曲面
-  - 点云
-  - 计算几何算法
-  - 空间划分
-  - 碰撞检测
-  - 层次细节(LOD)
-  - 层次包围盒
-
-- 硬件
-
-  - 立体显示原理
-  - 人机交互技术
-  - 触觉设备
-  - 自然接口设备
-  - 人机交互算法
-
-- 其他
-
-  - 计算机动画
-  - 三维游戏 游戏引擎Unity3D
-
 # WebGL
 
 - 针对 Canvas 的 3D 上下文
@@ -111,6 +76,7 @@ webVR = web + VR
   - Learning Three.js:The JavaScript 3D Library for WebGL
 
 - 网站
+
 - 入门博客 <http://blog.csdn.net/lijunfan1994/article/details/52370629>
 - 官方示例 <https://threejs.org/examples/>
 - Three.js入门教程 <http://www.cnblogs.com/yiyezhai/category/447410.html>
@@ -145,13 +111,4 @@ WebGL可以为HTML5 Canvas提供硬件3D加速渲染，
 甚至可以用来设计3D网页游戏等等。
 ```
 
-# Web VR
-
-- three.js
-- Babylon.js <https://github.com/BabylonJS/Babylon.js>
-- pixi.js <https://github.com/pixijs/pixi.js>
-- <http://www.ibiblio.org/e-notes/webgl/models.htm#tex>
-
-# 图像处理
-
-- [6 款 Javascript 的图像处理库 - Tine](https://juejin.im/post/58c0edac0ce4630054592a78)
+# 着色语言

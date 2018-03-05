@@ -1,4 +1,4 @@
-# 三足鼎立
+# 2016年确立的三足鼎立
 
 - React
 - Vue
@@ -12,7 +12,13 @@
 
   - <https://github.com/kriasoft/react-starter-kit>
 
-- https://github.com/markerikson/react-redux-links  
+- <https://github.com/markerikson/react-redux-links>
+
+- React与Redux开发实例精解
+
+  - <https://github.com/lewis617/react-redux-tutorial>
+  - <https://github.com/lewis617/react-redux-book>
+  - <https://github.com/lewis617/react-redux-heroku>
 
 - 后台框架
 

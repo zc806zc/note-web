@@ -67,6 +67,19 @@
   - <http://www.jq22.com/webqd2618>
   - <http://www.jq22.com/webqd1910>
 
+  - 滚动条
+
+- animatescroll.js <http://plugins.compzets.com/animatescroll/>
+
+```javascript
+<a onclick="$('.detail').animatescroll({padding:71});">Screens</a>
+```
+
+- 放手机里的滚屏实现
+
+  - !important是CSS1就定义的语法，作用是提高指定样式规则的应用优先权 但最好不要用
+  - background-size: cover; 把背景图像扩展至足够大，以使背景图像完全覆盖背景区域。
+
 # 元素定位
 
 - 页脚置底 <http://liaokeyu.com/%E6%8A%80%E6%9C%AF/2017/01/06/%E8%AF%91-CSS%E4%BA%94%E7%A7%8D%E6%96%B9%E5%BC%8F%E5%AE%9E%E7%8E%B0Footer%E7%BD%AE%E5%BA%95.html>

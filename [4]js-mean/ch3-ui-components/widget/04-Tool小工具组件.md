@@ -14,6 +14,16 @@
 
 # 计算器
 
+# 图像处理
+
+- 6 款 Javascript 的图像处理库 <https://juejin.im/post/58c0edac0ce4630054592a78>
+
+- device-pixel-ratio
+
+  - <http://www.zhangxinxu.com/wordpress/2012/08/window-devicepixelratio/>
+
+- 视网膜类似设备 retina.js
+
 # 倒计时 | 计时器
 
 # 代码编辑器
