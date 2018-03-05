@@ -1,6 +1,8 @@
 # 注解
 
-```
+```shell
+@Transient 并非一个到数据库表的字段的映射,ORM框架将忽略该属性
+
 @Autowired
 获取类型T的所有实例，并存放在一个Map中
 
@@ -10,6 +12,6 @@
 
 # 标签
 
-``
+```shell
 <task:executor/>
 ```
