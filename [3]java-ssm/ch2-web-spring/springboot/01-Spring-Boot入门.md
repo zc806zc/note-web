@@ -38,7 +38,15 @@
 - 模块
 
 ```java
-common-utils
+persistence
+model
+(tkgen)
+
+common
+core
+utils
+
+web
 ```
 
 - 热部署 spring-boot-devtools
