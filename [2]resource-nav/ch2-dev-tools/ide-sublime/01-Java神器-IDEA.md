@@ -1,6 +1,7 @@
 # IDEA
 
 - IntelliJ IDEA 从入门到上瘾 <https://www.jianshu.com/p/9c65b7613c30>
+
   - 没有工作空间的概念
   - 自动编译
 
@@ -21,6 +22,11 @@ Ctrl+Shift+F9
 
 - 正确使用 IntelliJ IDEA 的方式 <https://juejin.im/post/590050f98d6d810058afc85f>
 
+# IDEA常用插件
+
+- Maven Helper 用于分析jar包冲突
+- check-style 代码质量
+
 # 常见问题
 
 - IDEA 内存溢出问题
@@ -30,15 +36,6 @@ http://blog.csdn.net/fyqcdbdx/article/details/46788915
 -server -XX:PermSize=128M -XX:MaxPermSize=256m
 ```
 
-# 多模块打包
-
-- 见springboot处
-
-# IDEA常用插件
-
-- Maven Helper 用于分析jar包冲突
-- check-style 代码质量
-
 # 使用正则表达式进行搜索替换
 
 ```html
@@ -46,8 +43,9 @@ tppabs="h[^"]*"
 /\*tpa=.*\*/
 ```
 
-# jRabel 热部署插件(节约生命)
+# jrabel 热部署插件
 
+- 节约生命
 - twitter激活
 - <https://zeroturnaround.com/software/jrebel/quickstart/intellij/>
 
@@ -78,6 +76,7 @@ tppabs="h[^"]*"
   - Ctrl+Shift+"+/-"，全部展开、折叠
 
 - 功能
+
   - Ctrl+右键 直接打开实现类
   - Ctrl + SHift + A
   - Ctrl+Alt+Y，(Maven)同步
@@ -96,39 +95,6 @@ tppabs="h[^"]*"
 
   - alt + num 打开侧边栏
 
-    # 处理快捷键冲突
+# 处理快捷键冲突
 
 # 与WebStorm的区别
-
-# Spring Boot配置
-
-- <https://github.com/chenfromsz/spring-boot-hello> 配置演示
-- JDK要求1.8以上的版本，Tomcat必须是8.0以上的版本
-- RUN配置的是spring boot 不是tomcat
-- 打包成jar
-
-```xml
-<build>
-    <plugins>
-        <plugin>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-maven-plugin</artifactId>
-            <executions>
-                <execution>
-                    <goals>
-                        <goal>repackage</goal>
-                    </goals>
-                </execution>
-            </executions>
-        </plugin>
-    </plugins>
-</build>
-
-
-<!--  运行jar包 -->
-右键mvn package
-cd target
-java -jar spring-boot-hello-1.0-SNAPSHOT.jar
-```
-
-- application.yml <https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html>

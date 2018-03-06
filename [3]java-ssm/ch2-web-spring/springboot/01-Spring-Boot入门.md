@@ -3,6 +3,39 @@
 - 翟永超博客 <http://blog.didispace.com/Spring-Boot%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/>
 - 纯洁的微笑 <http://www.ityouknow.com/>
 
+# Spring Boot配置
+
+- <https://github.com/chenfromsz/spring-boot-hello> 配置演示
+- JDK要求1.8以上的版本，Tomcat必须是8.0以上的版本
+- spring boot内置了tomcat等不需要单独配置
+- 打包成jar
+
+```xml
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>repackage</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+    </plugins>
+</build>
+
+
+<!--  运行jar包 -->
+右键mvn package
+cd target
+java -jar spring-boot-hello-1.0-SNAPSHOT.jar
+```
+
+- application.yml <https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html>
+
 # Spring boot多模块部署
 
 - SpringBoot 多模块项目实践 <https://www.jianshu.com/p/59ceea4f029d>
@@ -82,3 +115,5 @@ th:value="${movie.createDate} ? ${#dates.format(movie.createDate, 'yyyy-MM-dd')}
   - 客户端API
   - 支持动态扩展
   - Tracker Server
+
+# 
