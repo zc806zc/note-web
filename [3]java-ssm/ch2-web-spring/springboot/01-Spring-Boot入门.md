@@ -1,17 +1,7 @@
 # Spring Boot
 
-- 翟永超 <http://blog.didispace.com/Spring-Boot%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/>
+- 翟永超博客 <http://blog.didispace.com/Spring-Boot%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/>
 - 纯洁的微笑 <http://www.ityouknow.com/>
-- springboot-learning-example <https://github.com/JeffLi1993/springboot-learning-example>
-- Spring Boot 2精髓：从构建小系统到架构分布式大系统 <http://www.broadview.com.cn/book/4931>
-- springboot 深入实践图书源码 <https://github.com/chenfromsz?tab=repositories>
-- spring boot学习目录 <https://www.jianshu.com/p/9a08417e4e84>
-- 其他
-
-  - 重拾后端之Spring Boot <https://juejin.im/post/5953bc2c5188250d8d141362>
-  - springboot-socks <https://github.com/yizhiwazi/springboot-socks>
-
-![](https://upload-images.jianshu.io/upload_images/8069210-b2aacf9a3d7dae47.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/342)
 
 # Spring boot多模块部署
 
