@@ -57,6 +57,16 @@ drop database `itcast`;
 order by ...
 ```
 
+# 引擎
+
+- innodb
+- myisam
+- mysql 中 myisam innodb 的区别有哪些？ <https://www.zhihu.com/question/20596402>
+
+# 联结
+
+- SQL的几种连接：内连接、左联接、右连接、全连接、交叉连接 <http://www.cnblogs.com/zxlovenet/p/4005256.html>
+
 # 索引和视图
 
 - 索引
@@ -205,7 +215,3 @@ mysql -uroot -p -e "d:\log\log.txt" // 多次执行合并
 ```
 
 - 使用MySQL扩展
-
-# 联结
-
-- SQL的几种连接：内连接、左联接、右连接、全连接、交叉连接 <http://www.cnblogs.com/zxlovenet/p/4005256.html>

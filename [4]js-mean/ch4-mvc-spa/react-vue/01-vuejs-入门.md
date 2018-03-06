@@ -136,7 +136,7 @@ componentUpdated // 被绑定元素所在模板完成一次更新周期时调用
 
 # Vue引入jquery
 
-- nice
+- 可以宽容
 
 # 父子组件之间传值
 

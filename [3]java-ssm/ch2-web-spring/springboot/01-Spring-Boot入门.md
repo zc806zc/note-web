@@ -37,16 +37,19 @@
 
 - 模块
 
-```java
+```shell
 persistence
 model
-(tkgen)
+(tkMybatis)
 
 common
 core
 utils
 
 web
+  - aspect(LogAspect...)
+  - handler
+  - security
 ```
 
 - 热部署 spring-boot-devtools

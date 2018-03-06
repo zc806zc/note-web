@@ -1,5 +1,6 @@
 # Log4j
 
+- Log4j,Log4j2,logback,slf4j日志学习 <http://blog.csdn.net/xudan1010/article/details/52890102>
 - 教程
 
   - <http://www.yiibai.com/log4j/>
@@ -15,7 +16,8 @@
 
 - 日志分析和数据统计
 - 教程
-  - https://coolshell.cn/articles/9070.html
+
+  - <https://coolshell.cn/articles/9070.html>
 
 ```java
 awk -F '[:,]' '{s[$4] += $6; a[$4] += $8}END{for(i in s){print i, s[i], a[i]}}' OFS="\t" odsToolResBak
