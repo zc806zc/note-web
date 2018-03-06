@@ -3,6 +3,7 @@
 - 翟永超 <http://blog.didispace.com/Spring-Boot%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/>
 - 纯洁的微笑 <http://www.ityouknow.com/>
 - springboot-learning-example <https://github.com/JeffLi1993/springboot-learning-example>
+- Spring Boot 2精髓：从构建小系统到架构分布式大系统 <http://www.broadview.com.cn/book/4931>
 - springboot 深入实践图书源码 <https://github.com/chenfromsz?tab=repositories>
 - spring boot学习目录 <https://www.jianshu.com/p/9a08417e4e84>
 - 其他
