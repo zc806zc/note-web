@@ -1,8 +1,12 @@
-# 项目结构
+# Vue项目组织结构
 
 ```shell
 tool
 ```
+
+# 学习项目
+
+- VueStudyDemos <https://github.com/violetjack/VueStudyDemos>
 
 # 第三方组件推荐
 
@@ -10,6 +14,14 @@ tool
 - 行政规划数据 <https://github.com/modood/Administrative-divisions-of-China>
 - 可拖拽树 <https://github.com/ltaoo/vue-draggable-tree>
 - vue-3d-model <https://github.com/hujiulong/vue-3d-model>
+
+# Vue组件封装学习
+
+- 侧滑菜单 <https://github.com/hjl19911127/vue-drawer-layout/>
+- 如何用vue制作一个探探滑动组件
+
+  - <https://juejin.im/post/5a9cf13851882555845377f6>
+  - <https://github.com/warpcgd/vue-tantan-stack>
 
 # 实战学习项目
 
