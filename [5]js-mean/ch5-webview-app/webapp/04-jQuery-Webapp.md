@@ -138,7 +138,7 @@ foundContacts = function(matches){ //
 
   - 使用mailto连接, 快速打电话发短信
 
-```javascript
+```html
 <a href="tel:1-406-666-xxxx">1-406-666-xxxx</a>
 ```
 

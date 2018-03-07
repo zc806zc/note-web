@@ -8,11 +8,11 @@
 
 # React资源
 
-- react-starter-kit
+- react-starter-kit <https://github.com/kriasoft/react-starter-kit>
 
-  - <https://github.com/kriasoft/react-starter-kit>
+- react-redux-links <https://github.com/markerikson/react-redux-links>
 
-- <https://github.com/markerikson/react-redux-links>
+- 深入 React 技术栈 <https://github.com/arcthur/react-book-examples>
 
 - React与Redux开发实例精解
 
@@ -32,14 +32,6 @@
 
   - 一个收集react的网站 <https://react.parts/native>
   - <https://github.com/react-native-material-design/react-native-material-design>
-
-  - Mobx
-
-    - <http://cn.mobx.js.org/>
-
-  - Redux
-
-    - <http://www.redux.org.cn/>
 
 # React
 
@@ -194,7 +186,7 @@ ReactDOM.render(myElement, document.getElementById('example'));
   - <http://blog.andrewray.me/flux-for-stupid-people/>
   - <http://www.ruanyifeng.com/blog/2016/01/flux.html>
 
-```javascript
+```shell
 Flux 的最大特点，就是数据的"单向流动"
 ```
 
@@ -216,6 +208,14 @@ Flux 的最大特点，就是数据的"单向流动"
   - 不足
 
 # 深入Redux应用架构
+
+- Mobx
+
+  - <http://cn.mobx.js.org/>
+
+- Redux
+
+  - <http://www.redux.org.cn/>
 
 - Redux
 

@@ -1,12 +1,13 @@
 # Weex
 
-- https://juejin.im/post/5a2a730cf265da431f4afd35
+- <https://juejin.im/post/5a2a730cf265da431f4afd35>
 - 结构
+
   - Native UI
   - JavaScript
   - Device Power
 
-```js
+```shell
 // Weex 页面结构
 界面展示、逻辑处理、设备能力使用、生命周期管理等部分。
 
@@ -23,20 +24,23 @@ Weex 页面中的组件会按照一定的布局规范来进行排布，我们这
 Weex 提供了非常丰富的系统功能 API，包括弹出存储、网络、导航、弹对话框和 toast 等，开发者可以在 Weex 页面通过获取一个 native module 的方式引入并调用这些客户端功能 API。
 生命周期
 每个 Weex 页面都有其自身的生命周期，页面从开始被创建到最后被销毁，会经历到整个过程。这是通过对 Weex 页面的创建和销毁，在路由中通过 SDK 自行定义并实现的。
-```  
+```
 
 ![](https://user-gold-cdn.xitu.io/2017/12/8/16035d040cbe5288?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
 
 - Native 接入
 - 跳转规则
 - 配置平台
+
   - appType
   - preTest
   - appVersion
+
 - 支持相对地址
+
 - 预加载方案
 
-```js
+```shell
 方案设计如下：
 
 1）每次更新完配置文件，遍历，check pagename.js文件的md5
@@ -56,10 +60,14 @@ Weex 提供了非常丰富的系统功能 API，包括弹出存储、网络、�
 
 一致就加载
 不一致就用配置里的remote url
-```  
+```
 
 - Native-JS通信
 - 错误监控
 - 页面传参
 - 降级方案
 - 屏幕适配
+
+# Weex实战项目
+
+...
