@@ -1,6 +1,6 @@
 # Git
 
-- git较svn的优势
+- Git较svn的优势
 
   - <http://blog.jobbole.com/31444/>
   - git是分布式 比方没网的时候
@@ -9,17 +9,40 @@
   - 版本号
   - 内容完整性 SHA-1哈希算法
 
-- git四种分支
+- Git四种分支
 
   - master
   - feature
   - hotfix
   - release
 
+# SVN
+
+...
+
 # git冲突合并
 
 - <https://github.com/woai30231/webDevDetails/tree/master/13>
 - git merge使用不当引发的代码丢失血案 <https://juejin.im/post/5a0bdd335188254dd935f008>
+- 解决因为本地代码和远程代码冲突，导致git pull无法拉取远程代码的问题 <https://www.cnblogs.com/huanyou/p/6654813.html>
+
+```shell
+# 查看冲突文件
+git status -uno
+
+# 将本地代码stash到仓库中
+git stash
+git pull
+git stash pop # 将仓库中的代码合到本地最新代码中
+
+# 可能存在多次stash的操作
+git stash list
+git stash pop stash@{Number}
+
+#  显示stash合并到本地代码后，哪些文件会修改，以及修改的概述
+git stash show
+git stash show -p stash@{0} # 显示修改的详细内容
+```
 
 # github
 
