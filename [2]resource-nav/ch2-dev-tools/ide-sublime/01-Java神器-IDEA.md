@@ -22,10 +22,25 @@ Ctrl+Shift+F9
 
 - 正确使用 IntelliJ IDEA 的方式 <https://juejin.im/post/590050f98d6d810058afc85f>
 
+- 右键将文件标记为source root
+
 # IDEA常用插件
 
 - Maven Helper 用于分析jar包冲突
 - check-style 代码质量
+
+# 导入Eclipse
+
+- Java SE
+
+  - 指定JDK
+  - 指定out目录
+
+- IDEA导入Eclipse Java Web项目
+
+  - 超详细 <http://blog.csdn.net/github_34123799/article/details/71699203>
+  - Librarie -> 上面绿色加号→Java
+  - Facets -> Put into Output Root
 
 # 常见问题
 
