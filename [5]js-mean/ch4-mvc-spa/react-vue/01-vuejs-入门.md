@@ -15,21 +15,15 @@
 
   - vuejs心法和技法 <http://www.cnblogs.com/kidsitcn/p/5409994.html>
 
-- 面试
-
   - Vue面试题 <https://juejin.im/post/59ffb4b66fb9a04512385402>
 
-- UI框架
+# 学习项目
 
-  - 后台
-
-    - element UI | iview | vux
-    - vue-element-admin <https://github.com/PanJiaChen/vue-element-admin>
-    - quasar <https://github.com/quasarframework/quasar> 利用 Vue，通过一套代码搞定响应式网站、PWA、hybrid 移动应用以及 Electron app
-
-  - 手机
-
-  - Vuetify <https://github.com/vuetifyjs/vuetify>
+- VueStudyDemos <https://github.com/violetjack/VueStudyDemos>
+- todo-list <https://github.com/Konata9/EasyTodoList>
+- 富文本编辑器Ueditor如何在Vue中使用？ <https://www.jianshu.com/p/8c43636c6c47>
+- 用webpack（2.x语法）手动搭建Vue项目 <https://www.jianshu.com/p/a87dee15e6c3>
+- 全面解析vue-cli生成的项目中使用其他库（js库、css库）<https://www.jianshu.com/p/a2fc286cb8ab>
 
 # 开发环境配置
 
