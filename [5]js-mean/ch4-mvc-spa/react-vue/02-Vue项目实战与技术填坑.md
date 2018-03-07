@@ -7,6 +7,10 @@ tool
 # 学习项目
 
 - VueStudyDemos <https://github.com/violetjack/VueStudyDemos>
+- 富文本编辑器Ueditor如何在Vue中使用？ <https://www.jianshu.com/p/8c43636c6c47>
+- 用webpack（2.x语法）手动搭建Vue项目 <https://www.jianshu.com/p/a87dee15e6c3>
+- 全面解析vue-cli生成的项目中使用其他库（js库、css库）<https://www.jianshu.com/p/a2fc286cb8ab>
+
 
 # 第三方组件方案
 

@@ -10,6 +10,9 @@
   - Vue学习看这篇就够 <https://juejin.im/entry/5a54b747518825734216c3df>
   - 前端每周清单半年盘点之 Vue.js <https://juejin.im/post/59928d55518825486f1e8369>
   - vue入门到放弃 <https://juejin.im/post/59aa1248518825392656a86a>
+
+    - 其中推荐的学习顺序
+
   - vuejs心法和技法 <http://www.cnblogs.com/kidsitcn/p/5409994.html>
 
 - 面试
@@ -98,7 +101,6 @@ vm.$watch('a', function (newVal, oldVal) {
   // 这个回调将在 `vm.a`  改变后调用
 })
 </script>
-
 ```
 
 - computed vs methods
@@ -140,6 +142,7 @@ componentUpdated // 被绑定元素所在模板完成一次更新周期时调用
 # Vuex
 
 - <https://vuex.vuejs.org/zh-cn/api.html>
+- Vuex从入门到熟练使用 <https://www.jianshu.com/p/0fcdf380afe7>
 
 # Vue引入jquery
 
