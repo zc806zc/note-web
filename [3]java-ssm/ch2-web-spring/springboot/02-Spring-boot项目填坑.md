@@ -30,6 +30,7 @@
 
 # 应用场景
 
+- any-video (springboot + semantic UI) <https://github.com/ChinaSilence/any-video>
 - Spring Boot使用Redis提升天气预报应用的并发访问能力 <http://www.imooc.com/article/23435>
 
 - 搭建微信小程序 商城 spring boot + mybatis
