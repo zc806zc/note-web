@@ -16,6 +16,22 @@
   - hotfix
   - release
 
+```shell
+# 常用操作
+git init
+git remote add origin xxx
+git pull origin master
+
+# 本地修改
+git add -A
+git status
+git commit -m "first commit"
+git push -u origin master
+
+# clone
+git clone -b master xxx
+```
+
 # SVN
 
 ...

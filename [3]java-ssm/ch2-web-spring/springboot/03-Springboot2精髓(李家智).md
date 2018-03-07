@@ -1,3 +1,9 @@
+# SpringBoot2 精髓
+
+- 闲.大赋 <https://gitee.com/xiandafu>
+- 图书源码 <https://gitee.com/xiandafu/Spring-Boot-2.0-Samples>
+- 开发平台 <https://gitee.com/xiandafu/springboot-plus>
+
 # Java EE
 
 # Spring Boot
