@@ -6,6 +6,20 @@
 幻灯片
 ```
 
+# 布局
+
+- 斑马线产品展示
+- 卡片布局导航
+
+  - <http://destinesia.io>
+  - <http://www.ghostchina.com>
+  - <http://www.yuehetong.com>
+  - <http://micourse.net>
+
+![](http://img.blog.csdn.net/20160624152857803)
+
+![](http://img.blog.csdn.net/20160624152937022)
+
 # 栅格布局
 
 # 网格布局
@@ -144,6 +158,13 @@ $(function() {
 
 - Magnific Popup
 
+- 弹框设计
+
+  - 如何支持alert()这样的阻塞
+  - 与其他组件之间的异步问题 setTimeout(fn, 0);
+  - 弹框上的下拉框内容是否允许溢出弹框 select下拉选项不确定
+  - 是否允许浏览器滚动条滚动
+
 # 相册
 
 - gif预览
@@ -209,6 +230,21 @@ $("#" + wrapId).find("div").eq(index).show().siblings().hide();  // 显示自己
 
 - css实现 <http://www.jq22.com/webqd3033>
 - 形形色色的下拉菜单 <https://www.imooc.com/learn/12>
+
+- <https://zoom.us/>
+
+- 滑过显示比点击显示贴心
+
+- 下拉框
+
+  - 一般要模拟下拉框，保持浏览器的一致表现
+  - 不要忘记判断向上或向下拉伸
+
+```javascript
+.nav > li:hover .dropdown-menu {display: block;}
+```
+
+![](http://img.blog.csdn.net/20160624142445478)
 
 # 无延迟菜单
 
@@ -276,10 +312,28 @@ $(window).scroll(function() {
 
 # 视频背景
 
+- <https://wiffinity.com/>
+
+- <http://www.diobox.com>
+
+![](http://img.blog.csdn.net/20160624155047365)
+
 - bideo.js
 
   - <https://github.com/rishabhp/bideo.js>
   - Fullscreen HTML5 Background Video for the Web
+
+- 局部视频背景
+
+  - <http://www.ottoradio.com/>
+
+![](http://img.blog.csdn.net/20160624154346497)
+
+# 长图背景
+
+- <http://www.desk.com/>
+
+![](http://img.blog.csdn.net/20160624155146593)
 
 # 单页面
 
@@ -290,6 +344,7 @@ $(window).scroll(function() {
 
 # 轮播
 
+- 别再使用轮播图了 <https://juejin.im/post/599cf1596fb9a02481205803>
 - (首选) slick <https://github.com/kenwheeler/slick>
 
   - the last carousel you'll ever need
@@ -359,6 +414,14 @@ $(window).scroll(function() {
 
 > 轮播图: 获取1% 的用户点击却占用了页面一半甚至更多的位置
 
+# 斑马条里的滚屏
+
+![](http://img.blog.csdn.net/20160624153124710)
+
+- <http://www.desk.com/>
+
+![](http://img.blog.csdn.net/20160624155403048)
+
 # 对话框和灯箱
 
 - 移动端Web组件-Dialog对话框
@@ -394,6 +457,47 @@ $(window).scroll(function() {
 - 侧栏工具条开发 <https://www.imooc.com/learn/425>
 - 导航条菜单的制作 <https://www.imooc.com/learn/6>
 
+# 导航分类
+
+- 右手习惯导航
+
+  - <https://zoom.us/>
+
+- 变形导航
+
+  - <http://www.mahindra.com/>
+
+- xy轴导航
+
+  - <http://echarts.baidu.com/examples.html>
+
+- 巨幕导航
+
+  - <http://www.desk.com>
+
+  - <https://www.daocloud.io>
+
+  - <http://www.oneapm.com>
+
+- 侧边缩放菜单导航
+
+  - <https://connect.barackobama.com>
+  - <https://togetherjs.com/>
+
+![](http://img.blog.csdn.net/20160624152458692)
+
+![](http://img.blog.csdn.net/20160624152509423)
+
+![](http://img.blog.csdn.net/20160624152637269)
+
+![](http://img.blog.csdn.net/20160624152733021)
+
+![](http://img.blog.csdn.net/20160624155626143)
+
+![](http://img.blog.csdn.net/20160624155637847)
+
+![](http://img.blog.csdn.net/20160624153645587)
+
 # 水平导航
 
 - 旋转显示 <http://www.jq22.com/webqd2435>
@@ -428,6 +532,20 @@ ul li:hover .center {
 
 - 简单分页 <http://www.jq22.com/webqd1246>
 
+- 与数据表格关联的分页删除数据时注意加载最适合的一页，因为可能删除了所在页的最后一条数据
+
+- <http://wenda.ghostchina.com/>
+
+- <http://www.howzhi.com/channel/photography?page=20>
+
+- <http://www.agoda.com/city/hong-kong-hk.html>
+
+![](http://img.blog.csdn.net/20160624154003214)
+
+![](http://img.blog.csdn.net/20160624154018542)
+
+![](http://img.blog.csdn.net/20160624154027476)
+
 # 其他导航
 
 - 抽屉式
@@ -436,3 +554,17 @@ ul li:hover .center {
 # 可调大小面板
 
 - <https://www.imooc.com/learn/193>
+
+# 页脚
+
+- 连贯占一屏 大气 没有给人边角料的感觉
+- <http://www.yuewen.com/>
+- <http://www.admaster.com.cn/>
+
+![](http://img.blog.csdn.net/20160624155612482)
+
+# 分支日记
+
+- <http://www.sydjs.com/meetups>
+
+![](http://img.blog.csdn.net/20160624155217312)

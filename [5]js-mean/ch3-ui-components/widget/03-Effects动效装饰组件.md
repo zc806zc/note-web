@@ -278,6 +278,10 @@ img:hover {
   - 简单 <http://www.jq22.com/webqd2098>
   - css3 <http://www.jq22.com/webqd1444>
 
+  - 宣传的话用 <https://www.wpcom.cn/>
+
+![](http://img.blog.csdn.net/20160624154959099)
+
 ```javascript
 // 思路
 var zi = "这是个神奇的网站！";
@@ -423,35 +427,76 @@ p {
 }
 ```
 
-# 慕课网装饰方案
 
-- 按钮特效 <https://www.imooc.com/learn/5>
-- CSS圆角进化论 <https://www.imooc.com/learn/118>
-- SVG实现Tooltip气泡效果 <https://www.imooc.com/learn/402>
 
-# 慕课网特效方案
 
-- 网页定位导航特效 <https://www.imooc.com/learn/56>
-- 展开收缩动画 <https://www.imooc.com/learn/90>
-- 倒计时效果 <https://www.imooc.com/learn/59>
-- 弹出层效果 <https://www.imooc.com/learn/58>
-- 固定边栏滚动特效 <https://www.imooc.com/learn/52>
-- 侧边栏信息展示效果 <https://www.imooc.com/learn/74>
-- 图片展示特效 <https://www.imooc.com/learn/31>
-- 信息滚动效果制作 <https://www.imooc.com/learn/17>
-- 焦点图轮播特效 <https://www.imooc.com/learn/18>
-- 鼠标悬浮效果 <https://www.imooc.com/learn/91>
-- 用JS实现放大镜特效 <https://www.imooc.com/learn/32>
-- 用JavaScript实现图片缓慢缩放效果 <https://www.imooc.com/learn/80>
-- 回到顶部 <https://www.imooc.com/learn/65>
-- 手风琴效果 <https://www.imooc.com/learn/72>
-- 鼠标拖拽效果 <https://www.imooc.com/learn/60>
-- QQ空间时光轴特效 <https://www.imooc.com/learn/114>
-- Tooltip浮动提示框效果 <https://www.imooc.com/learn/120>
-- 用JS实现购物车特效 <https://www.imooc.com/learn/34>
-- 信息排列效果 <https://www.imooc.com/learn/62>
-- 用JavaScript实现图片剪切效果 <https://www.imooc.com/learn/144>
-- css3实现网页平滑过渡效果 <https://www.imooc.com/learn/252>
-- 全屏切换效果 <https://www.imooc.com/learn/374>
-- 网页广告特效 <https://www.imooc.com/learn/22>
-- 商城分类导航效果 <https://www.imooc.com/learn/174>
+# 悬停时 鼓动别人做出选择
+
+- 卡片的弹起 <https://haobtc.com/>
+
+```javascript
+body {
+background-color: #F5F5F5;
+}
+
+img {
+box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+margin-top:40px;
+}
+
+img:hover {
+box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.1);
+-moz-transform: scale(1.1, 1.1);
+-o-transform: scale(1.1, 1.1);
+-webkit-transform: scale(1.1, 1.1);
+-moz-transform: translate(0px, -6px);
+-o-transform: translate(0px, -6px);
+-webkit-transform: translate(0px, -6px);
+/*transition: transform 0.2s linear 0s; */
+transition: 0.15s ease-in-out;
+}
+```
+
+![](http://img.blog.csdn.net/20160624145302114)
+
+# 翻牌
+
+- <http://zarget.com/>
+
+![](http://img.blog.csdn.net/20160624151017937)
+
+# 点亮灰暗的图标
+
+- <http://www.bootcdn.cn/>
+
+![](http://img.blog.csdn.net/20160624151525285)
+
+- 数字跳动
+
+  - <https://haobtc.com/>
+
+![](http://img.blog.csdn.net/20160624153323805)
+
+- 页脚动画
+
+  - <http://www.ottoradio.com/>
+
+![](http://img.blog.csdn.net/20160624154431215)
+
+- 等待动画与加载动画
+
+  - <http://truthlabs.com>
+
+![](http://img.blog.csdn.net/20160624152030917)
+
+- 顶部加载条显示网页的加载进度
+
+  - <https://ingworld.ing.com/en/2015-1Q>
+
+![](http://img.blog.csdn.net/20160624152117988)
+
+- 用于定位的标签 这张页面做的比较长，导航处的标签选项只是用于定位。
+
+  - <https://swite.com/en/>
+
+![](http://img.blog.csdn.net/20160624153506874)

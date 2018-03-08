@@ -13,6 +13,17 @@
 
 - loading按钮(提交按钮)
 - 查询按钮(是否是最新搜索结果)
+- 双杠响应，而按钮要有被按得凹陷的感觉
+
+  - photoshoot网
+
+- 大播放按钮，可以引起冲动
+
+  - <https://asciinema.org/>
+
+![](http://img.blog.csdn.net/20160624150523029)
+
+![](http://img.blog.csdn.net/20160624150558076)
 
 # 表单
 
@@ -410,6 +421,18 @@ function xiaolong(json) {
 }
 ```
 
+- 标签页搜索
+
+  - <http://www.51jingying.com/>
+
+  - <http://www.shanghai.gov.cn/>
+
+- 大搜索框和注册框
+
+  - <https://botlist.co/>
+
+![](http://img.blog.csdn.net/20160624154656266)
+
 # 上传
 
 - jQuery-File-Upload | fex webuploader(兼容性好)
@@ -635,9 +658,11 @@ window.onload = function() {
 }
 ```
 
-# 点赞
+# 关注 | 点赞
 
 - <http://www.jq22.com/webqd2408>
+
+- 单向关注有效性，不要因为开了多个页面多次关注而状态发生toggle，也就是说关注到的是 unstar -> star的这种状态
 
 # 表单输入实时监听
 
@@ -713,3 +738,55 @@ $(function() {
   - nprogress <https://github.com/rstacruz/nprogress>
 
 - 超链接悬浮上去时, 打开新窗口图标提示
+
+# 登录注册
+
+- 登录
+
+  - <https://profile.freepik.com/login>
+  - 复位这个按钮几乎永远都不会帮助到用户
+  - 用户很可能不愿意填写表单
+
+    - 逻辑分组
+    - 重视交互，做有意思的设计
+
+- 优化建议
+
+  - 用户在输入手机号时，如果能以3 4 4的方式显示，用户看起来会轻松很多
+  - 邮箱登陆注册时智能显示后缀
+  - 账号或者密码错误
+  - 滑动验证
+  - 分步注册，减少注册心理负担
+
+![](/static/img/other/login-sample-23.png)
+
+> 所有抛开产品本身谈登陆注册的行为都是耍流氓
+
+<https://juejin.im/entry/5993b3bef265da24874ced54>
+
+```javascript
+A产品竟然支持邮箱注册，邮箱注册这种方式主要是PC端时盛行的，现在手机号注册收验证码多方便，这种方式不好；
+B产品竟然不能设置密码，每次登陆都要手机验证码，这万一手机没信号收不到验证码怎么办，这种方式不好；
+C产品我用第三方登陆了，竟然还让我绑定手机号，这不是欺骗用户么，太不要脸了，这种方式不好；
+```
+
+# 加载等待
+
+- 用加载等待与页面刷新照顾用户心理
+
+  - <https://juejin.im/entry/598d130e6fb9a03c445de7e7>
+
+```javascript
+// 暗示
+我知道你很着急，但是我也很努力的在刷新
+
+你看，这只骆驼走路好萌啊，我都不好意思生气了。
+
+// bilibili
+松手：够了啦，松开人家嘛（下拉至一定位置后出现）
+有个小姐姐很悲伤，而这和用户的情感是相符合的
+```
+
+![](/static/img/other/camel-loading.png)
+
+![](/static/img/other/jiaohu-tip.png)
