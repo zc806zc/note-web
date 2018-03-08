@@ -1,7 +1,41 @@
 # Vue项目组织结构
 
-```shell
-tool
+```
+├─build
+├─config
+├─src
+│  ├─assets
+│  │  ├─icon-font
+│  │  ├─img
+│  │  └─scss 公用样式
+│  │      └─theme
+│  ├─components
+│  │  ├─appContent
+│  │  │  └─src
+│  ├─directives 自定义指令(drag)
+│  ├─filter
+│  ├─nodeTalk
+│  ├─router
+│  │  ├─子系统1
+│  │  └─子系统2
+│  │  └─...
+│  ├─store
+│  │  └─modules
+│  │      ├─design
+│  │      │  ├─get
+│  │      │  ├─set
+│  │      │  └─sub
+│  │      ├─global
+│  ├─tool
+│  │  └─browser
+│  └─views
+│      ├─common
+│      │  ├─approve
+│      │  ├─borrow
+│      ├─consult
+└─static
+    ├─face
+    └─image
 ```
 
 # UI框架
@@ -14,6 +48,53 @@ tool
   - 利用 Vue，通过一套代码搞定响应式网站、PWA、hybrid 移动应用以及 Electron app
 
 - Vuetify <https://github.com/vuetifyjs/vuetify>
+
+# 一般要用到的组件
+
+```shell
+areaPicker
+autoComplete
+
+back 返回按钮
+chat 聊天的输入框
+
+cropper 图片裁剪
+datepicker
+
+
+dialog
+
+editor
+IndexedDB
+
+layout 24分栏
+
+loading
+message
+
+pagination
+pdf
+preview
+
+qrcode
+
+retrive # 检索 弹出弹框搜索
+
+table
+tree
+
+upload
+video
+
+
+...
+
+# 占位元素
+开发中
+暂无评论
+
+
+````
 
 # 第三方组件方案
 

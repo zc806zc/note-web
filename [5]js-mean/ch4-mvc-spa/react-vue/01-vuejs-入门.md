@@ -88,7 +88,7 @@
 <a @click="doSomething"></a> <!-- 缩写 -->
 
 <!-- 暴露 -->
-<script type="text/javascript">
+<script>
 var data = { a: 1 }
 var vm = new Vue({
   el: '#example',

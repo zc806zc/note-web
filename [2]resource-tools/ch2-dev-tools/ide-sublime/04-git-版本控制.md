@@ -60,6 +60,10 @@ git stash show
 git stash show -p stash@{0} # 显示修改的详细内容
 ```
 
+# 分支操作
+
+...
+
 # github
 
 - <https://juejin.im/entry/59c47971f265da065a63c50a>
@@ -139,3 +143,25 @@ Solution
 - A markdown parser and compiler. Built for speed. <https://github.com/chjj/marked>
 - <https://github.com/jgthms/wysiwyg.css> A tiny CSS for generated HTML or Markdown content
 - Markdown不支持的可以写HTML
+
+# 花式操作
+
+- widows的tree命令
+
+```shell
+tree > README.md
+
+app
+   |__dist
+   |   |__styles
+   |   |__js
+   |       |__bundle.js
+   |   |__index.html
+   |__src
+   |   |__styles
+   |   |__js
+   |       |__index.js
+   |__node_modules
+   |__package.json
+   |__webpack.config.js
+````

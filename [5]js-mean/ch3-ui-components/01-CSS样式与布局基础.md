@@ -1,6 +1,16 @@
 # CSS
 
 - API速查表 <http://www.css88.com/book/css/>
+- [译]这些 CSS 命名规范将省下你大把调试时间 <https://juejin.im/post/5a6c5881518825733201daf7>
+
+  - 不要用数据属性（data attributes）作为 JavaScript 钩子
+
+```html
+<div class="site-navigation" rel="js-site-navigation"></div>
+<script type="text/javascript">
+const nav = document.querySelector("[rel='js-site-navigation']")  
+</script>
+```
 
 - CSS查漏补缺 <https://segmentfault.com/a/1190000006242814>
 
@@ -8,11 +18,6 @@
 
   - height line-height
   - position: relative absolute
-
-- 关于权重
-
-  - id声明会覆盖class
-  - class中的排序不重要,表中的顺序很重要
 
 - 负值之美(将一个元素的margin设置为负值，元素将会变大) <http://www.cnblogs.com/jscode/archive/2012/08/28/2660078.html>
 
@@ -32,12 +37,20 @@
 /* put this class into your main.css file with "display:none;" */
 ```
 
-- 盒模型 display + position + float
-- 理解多层嵌套div
-
-  - 滚动条
-
 ![](/static/img/css/css-books.jpg)
+
+# 盒模型
+
+- display + position + float
+
+# 理解多层嵌套div
+
+- 滚动条
+
+# CSS权重
+
+- id声明会覆盖class
+- class中的排序不重要,表中的顺序很重要
 
 # BFC
 
@@ -65,6 +78,8 @@
   - 多栏布局的一种方式
 
 - 元素溢出问题的解决
+
+![](https://user-gold-cdn.xitu.io/2018/1/27/161373686b854aac?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
 
 # 布局
 
@@ -273,18 +288,41 @@ npm install --save postcss-loader postcss-modules-values
 }
 ```
 
+# POSTCSS
+
+- <https://www.postcss.com.cn/>
+
 # CSS命名法
 
 - css常见样式命名思想 <https://juejin.im/post/5a79545a5188257a7924875d>
 - BEM
 
-```javascript
-// BEM
-<div class="media">
-  <img src="logo.png" alt="Foo Corp logo" class="media__img--rev">
-  <div class="media__body">
-    <h3 class="alpha">Welcome to Foo Corp</h3>
-    <p class="lede">Foo Corp is the best, seriously!</p>
-  </div>
-</div>
+```shell
+<nav class="nav">
+  <a href="#" class="nav__item nav__item--normal">正常状态</a>
+  <a href="#" class="nav__item nav__item--active">当前状态</a>
+  <a href="#" class="nav__item nav__item--hover">鼠标移上时的状态</a>
+</nav>
+
+.nav {
+  &__item {
+    &--normal {
+    }
+    &--active {
+    }
+    &--hover {
+    }
+  }
+}
+
+@include b(nav) {
+  @include e(item) {
+    @include m(normal) {
+    }
+    @include m(active) {
+    }
+    @include m(hover) {
+    }
+  }
+}
 ```

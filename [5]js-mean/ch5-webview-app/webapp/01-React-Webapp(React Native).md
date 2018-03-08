@@ -5,6 +5,7 @@
 - React Native指南汇 <https://github.com/reactnativecn/react-native-guide>
 
 - React Native移动开发实战 <http://box.ptpress.com.cn/y/978-7-115-47096-6>
+
 - 缺点
 
   - 不支持热更新
@@ -21,4 +22,5 @@
 
 # 实战项目
 
+- React-Native从零搭建App <https://juejin.im/post/5a9f93d96fb9a028d2077c19>
 - <https://github.com/netyouli/react-native-whcapp>

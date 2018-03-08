@@ -297,7 +297,9 @@ $(function() {
 # 弹框
 
 - 纯css模拟 <https://github.com/drublic/css-modal>
-- layer
+- layer (国内最广泛)
+- artDialog
+- 传统 lhgdialog
 - sweetalert
 
   - <https://github.com/t4t5/sweetalert>
@@ -319,6 +321,21 @@ $(function() {
   - 是否允许浏览器滚动条滚动
 
 - jQuery弹出窗口可移动、缩放 <http://www.jq22.com/webqd3029>
+
+- JS简单 <http://www.jq22.com/webqd2525>
+- <http://www.jq22.com/webqd2001>
+
+- 弹出层提取理念
+
+  - lhgdialog会销毁之前提取的内容, 这种处理不合理
+  - layer这种复制比较好
+
+# 对话框和灯箱
+
+- 移动端Web组件-Dialog对话框
+
+  <https: 9="" 70="" www.imooc.com="" learn="">
+  </https:>
 
 # 相册
 
@@ -476,26 +493,6 @@ $(".cf_listATitle").on("click", function() {
 ```
 
 > 轮播图: 获取1% 的用户点击却占用了页面一半甚至更多的位置
-
-# 对话框和灯箱
-
-- 移动端Web组件-Dialog对话框
-
-  <https: 9="" 70="" www.imooc.com="" learn="">
-  </https:>
-
-# 弹出层
-
-- layer (国内最广泛)
-- artDialog
-- 传统 lhgdialog
-- JS简单 <http://www.jq22.com/webqd2525>
-- <http://www.jq22.com/webqd2001>
-
-- 弹出层提取理念
-
-  - lhgdialog会销毁之前提取的内容, 这种处理不合理
-  - layer这种复制比较好
 
 # 斑马条里的滚屏
 
