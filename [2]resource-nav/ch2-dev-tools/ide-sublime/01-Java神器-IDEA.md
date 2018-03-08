@@ -23,6 +23,7 @@ Ctrl+Shift+F9
 - 正确使用 IntelliJ IDEA 的方式 <https://juejin.im/post/590050f98d6d810058afc85f>
 
 - 右键将文件标记为source root
+- 右键add as library
 
 # IDEA常用插件
 
