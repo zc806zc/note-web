@@ -790,3 +790,21 @@ C产品我用第三方登陆了，竟然还让我绑定手机号，这不是欺�
 ![](/static/img/other/camel-loading.png)
 
 ![](/static/img/other/jiaohu-tip.png)
+
+# 分页
+
+- 简单分页 <http://www.jq22.com/webqd1246>
+
+- 与数据表格关联的分页删除数据时注意加载最适合的一页，因为可能删除了所在页的最后一条数据
+
+- <http://wenda.ghostchina.com/>
+
+- <http://www.howzhi.com/channel/photography?page=20>
+
+- <http://www.agoda.com/city/hong-kong-hk.html>
+
+![](http://img.blog.csdn.net/20160624154003214)
+
+![](http://img.blog.csdn.net/20160624154018542)
+
+![](http://img.blog.csdn.net/20160624154027476)

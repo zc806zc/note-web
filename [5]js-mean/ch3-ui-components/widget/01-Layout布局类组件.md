@@ -1,12 +1,4 @@
-# Layout/Panel
-
-```shell
-布局
-弹框
-幻灯片
-```
-
-# 布局
+# 布局 | 产品宣传页布局
 
 - 斑马线产品展示
 - 卡片布局导航
@@ -20,9 +12,7 @@
 
 ![](http://img.blog.csdn.net/20160624152937022)
 
-# 栅格布局
-
-# 网格布局
+# 栅格布局 | 网格布局
 
 - masonry
 
@@ -40,13 +30,43 @@
 
   - <https://github.com/thoughtbot/neat>
 
-# 懒加载与瀑布流
+# 贴边停靠
+
+- <http://www.jq22.com/webqd2141>
+
+--------------------------------------------------------------------------------
+
+# 懒加载 | 瀑布流
 
 - 懒加载
 - 瀑布流 <https://www.imooc.com/learn/101>
 - 图片预加载 <https://www.imooc.com/video/14430>
 
-# 全屏
+- 图片瀑布流 <http://www.jq22.com/webqd2082>
+
+# 占位元素
+
+...
+
+# 下拉加载更多 <http://www.jq22.com/webqd2043>
+
+```javascript
+$(window).scroll(function() {
+    //当时滚动条离底部60px时开始加载下一页的内容
+    if (($(window).height() + $(window).scrollTop() + 60) >= $(document).height()) {
+        clearTimeout(timers);
+        timers = setTimeout(function() {
+            page++;
+            console.log("第" + page + "页");
+            LoadingDataFn();
+        }, 300);
+    }
+});
+```
+
+--------------------------------------------------------------------------------
+
+# 全屏背景
 
 - fullPage
 
@@ -58,9 +78,51 @@
 
     - A lightweight, easy-to-use jQuery plugin for fluid width video embeds.
 
+# 视频背景
+
+- <https://wiffinity.com/>
+
+- <http://www.diobox.com>
+
+![](http://img.blog.csdn.net/20160624155047365)
+
+- bideo.js
+
+  - <https://github.com/rishabhp/bideo.js>
+  - Fullscreen HTML5 Background Video for the Web
+
+- 局部视频背景
+
+  - <http://www.ottoradio.com/>
+
+![](http://img.blog.csdn.net/20160624154346497)
+
+# 长图背景
+
+- <http://www.desk.com/>
+
+![](http://img.blog.csdn.net/20160624155146593)
+
+# 单页面
+
+- senna.js
+
+  - <https://github.com/liferay/senna.js/>
+  - A blazing-fast Single Page Application engine
+
+--------------------------------------------------------------------------------
+
 # 拖拽
 
 - dragula <https://github.com/bevacqua/dragula>
+
+# 浏览器调整
+
+# 可调大小面板
+
+- <https://www.imooc.com/learn/193>
+
+--------------------------------------------------------------------------------
 
 # 滚动条
 
@@ -93,6 +155,12 @@
 
   - !important是CSS1就定义的语法，作用是提高指定样式规则的应用优先权 但最好不要用
   - background-size: cover; 把背景图像扩展至足够大，以使背景图像完全覆盖背景区域。
+
+--------------------------------------------------------------------------------
+
+# 页面导航
+
+...
 
 # 元素定位
 
@@ -141,6 +209,8 @@ $(function() {
   });
 ```
 
+--------------------------------------------------------------------------------
+
 # 弹框
 
 - 纯css模拟 <https://github.com/drublic/css-modal>
@@ -164,6 +234,8 @@ $(function() {
   - 与其他组件之间的异步问题 setTimeout(fn, 0);
   - 弹框上的下拉框内容是否允许溢出弹框 select下拉选项不确定
   - 是否允许浏览器滚动条滚动
+
+- jQuery弹出窗口可移动、缩放 <http://www.jq22.com/webqd3029>
 
 # 相册
 
@@ -218,13 +290,11 @@ $(".cf_listATitle").on("click", function() {
 });
 ```
 
-# 占位元素
+--------------------------------------------------------------------------------
 
-# 选项卡
+# 菜单
 
-```javascript
-$("#" + wrapId).find("div").eq(index).show().siblings().hide();  // 显示自己隐藏兄弟
-```
+...
 
 # 下拉菜单
 
@@ -250,97 +320,7 @@ $("#" + wrapId).find("div").eq(index).show().siblings().hide();  // 显示自己
 
 - JS实现京东无延迟菜单效果 <https://www.imooc.com/video/14777>
 
-# jQuery弹出窗口可移动、缩放
-
-- <http://www.jq22.com/webqd3029>
-
-# 网页标签页消息提示
-
-- <http://www.jq22.com/webqd1653>
-
-```javascript
-(function(){
-    $.extend({
-        mengfan:{
-            show:function(str){
-                var step=0,title=document.title;
-                var timer=setInterval(function(){
-                    step++;
-                    if(step==3){step=1};
-                    if(step==1){document.title=title};
-                    if(step==2){document.title='【'+str+'】'+title};
-                },500);
-                return [timer,title];
-            },
-            clear:function(timerarr){
-                if(timerarr){
-                clearInterval(timerarr[0]);
-                document.title=timerarr[1];
-                };
-
-            }
-        }
-    });
-})(jQuery)
-
-
-message=$.mengfan.show('新消息');
-    setTimeout(function(){
-        $.mengfan.clear(message);
-},10000);
-```
-
-# 浏览器调整
-
-# 贴边停靠 <http://www.jq22.com/webqd2141>
-
-# 下拉加载更多 <http://www.jq22.com/webqd2043>
-
-```javascript
-$(window).scroll(function() {
-    //当时滚动条离底部60px时开始加载下一页的内容
-    if (($(window).height() + $(window).scrollTop() + 60) >= $(document).height()) {
-        clearTimeout(timers);
-        timers = setTimeout(function() {
-            page++;
-            console.log("第" + page + "页");
-            LoadingDataFn();
-        }, 300);
-    }
-});
-```
-
-# 视频背景
-
-- <https://wiffinity.com/>
-
-- <http://www.diobox.com>
-
-![](http://img.blog.csdn.net/20160624155047365)
-
-- bideo.js
-
-  - <https://github.com/rishabhp/bideo.js>
-  - Fullscreen HTML5 Background Video for the Web
-
-- 局部视频背景
-
-  - <http://www.ottoradio.com/>
-
-![](http://img.blog.csdn.net/20160624154346497)
-
-# 长图背景
-
-- <http://www.desk.com/>
-
-![](http://img.blog.csdn.net/20160624155146593)
-
-# 单页面
-
-- senna.js
-
-  - <https://github.com/liferay/senna.js/>
-  - A blazing-fast Single Page Application engine
+--------------------------------------------------------------------------------
 
 # 轮播
 
@@ -414,14 +394,6 @@ $(window).scroll(function() {
 
 > 轮播图: 获取1% 的用户点击却占用了页面一半甚至更多的位置
 
-# 斑马条里的滚屏
-
-![](http://img.blog.csdn.net/20160624153124710)
-
-- <http://www.desk.com/>
-
-![](http://img.blog.csdn.net/20160624155403048)
-
 # 对话框和灯箱
 
 - 移动端Web组件-Dialog对话框
@@ -442,15 +414,27 @@ $(window).scroll(function() {
   - lhgdialog会销毁之前提取的内容, 这种处理不合理
   - layer这种复制比较好
 
-# 工具提示
+# 斑马条里的滚屏
 
-# 布局
+![](http://img.blog.csdn.net/20160624153124710)
 
-- 图片瀑布流 <http://www.jq22.com/webqd2082>
+- <http://www.desk.com/>
 
-# Tabs
+![](http://img.blog.csdn.net/20160624155403048)
+
+--------------------------------------------------------------------------------
+
+# Tab | 选项卡
 
 - Tab插件开发 <https://www.imooc.com/video/14627>
+
+```javascript
+$("#" + wrapId).find("div").eq(index).show().siblings().hide();  // 显示自己隐藏兄弟
+```
+
+# 响应式选项卡
+
+--------------------------------------------------------------------------------
 
 # 导航 | 侧边栏
 
@@ -483,6 +467,10 @@ $(window).scroll(function() {
 
   - <https://connect.barackobama.com>
   - <https://togetherjs.com/>
+
+- 抽屉式
+
+- XY轴
 
 ![](http://img.blog.csdn.net/20160624152458692)
 
@@ -528,32 +516,7 @@ ul li:hover .center {
 
 # 手风琴导航
 
-# 分页
-
-- 简单分页 <http://www.jq22.com/webqd1246>
-
-- 与数据表格关联的分页删除数据时注意加载最适合的一页，因为可能删除了所在页的最后一条数据
-
-- <http://wenda.ghostchina.com/>
-
-- <http://www.howzhi.com/channel/photography?page=20>
-
-- <http://www.agoda.com/city/hong-kong-hk.html>
-
-![](http://img.blog.csdn.net/20160624154003214)
-
-![](http://img.blog.csdn.net/20160624154018542)
-
-![](http://img.blog.csdn.net/20160624154027476)
-
-# 其他导航
-
-- 抽屉式
-- XY轴
-
-# 可调大小面板
-
-- <https://www.imooc.com/learn/193>
+--------------------------------------------------------------------------------
 
 # 页脚
 
@@ -562,6 +525,8 @@ ul li:hover .center {
 - <http://www.admaster.com.cn/>
 
 ![](http://img.blog.csdn.net/20160624155612482)
+
+--------------------------------------------------------------------------------
 
 # 分支日记
 
