@@ -1,7 +1,40 @@
-# 权限分配机制
+# 登录注册
 
-- 弹框模式
-- CURD
+- 登录
+
+  - <https://profile.freepik.com/login>
+  - 复位这个按钮几乎永远都不会帮助到用户
+  - 用户很可能不愿意填写表单
+
+    - 逻辑分组
+    - 重视交互，做有意思的设计
+
+- 优化建议
+
+  - 用户在输入手机号时，如果能以3 4 4的方式显示，用户看起来会轻松很多
+  - 邮箱登陆注册时智能显示后缀
+  - 账号或者密码错误
+  - 滑动验证
+  - 分步注册，减少注册心理负担
+
+![](/static/img/other/login-sample-23.png)
+
+> 所有抛开产品本身谈登陆注册的行为都是耍流氓
+
+<https://juejin.im/entry/5993b3bef265da24874ced54>
+
+```javascript
+A产品竟然支持邮箱注册，邮箱注册这种方式主要是PC端时盛行的，现在手机号注册收验证码多方便，这种方式不好；
+B产品竟然不能设置密码，每次登陆都要手机验证码，这万一手机没信号收不到验证码怎么办，这种方式不好；
+C产品我用第三方登陆了，竟然还让我绑定手机号，这不是欺骗用户么，太不要脸了，这种方式不好；
+```
+
+# 验证块
+
+- <http://www.jq22.com/webqd2853> - 滑动验证
+- 简单滑动验证 <http://www.jq22.com/webqd1933>
+
+--------------------------------------------------------------------------------
 
 # 按钮
 
@@ -28,17 +61,187 @@
 - 联动
 - 上传
 
-# 表单校验
+# 按钮
 
-- 用户编辑后离开前的保存校验
-- jquery-validation
-- Parsley.js <https://github.com/guillaumepotier/Parsley.js>
+- btn-css-generator <http://www.bestcssbuttongenerator.com/#/8>
+- 防止表单重复提交的loading
+- 悬浮
 
-# 提示标签
+  - <http://www.jq22.com/webqd1687>
+  - <http://www.jq22.com/webqd1688>
+  - <http://www.jq22.com/webqd114>
 
-- popper.js <https://github.com/FezVrasta/popper.js>
+![](/static/img/other/import-double-submit.png)
+
+# 通用输入
+
+- 密码框 zxcvbn <https://github.com/dropbox/zxcvbn>
+
+# 单选复选框优化
+
+- <http://www.jq22.com/webqd2718>
+- jquery-labelauty
+
+```html
+<span class="radio_box">
+ <input type="radio" id="radio_1" name="radio" checked="">
+ <label for="radio_1"></label>
+ <em>选项1</em>
+</span>
+```
+
+# 自动完成 | autocomplete
+
+- typeahead.js <https://github.com/twitter/typeahead.js>
+- Fuse <https://github.com/krisk/Fuse>
+- At.js <https://github.com/ichord/At.js>
+- bootstrap-typeahead
+- awesomplete <https://github.com/LeaVerou/awesomplete>
+
+# 星级评分 | 投票率
+
+- 策略模式实现星级评分 <https://www.imooc.com/video/15115>
+- <http://www.jq22.com/webqd3035>
+- CSS实现 <http://www.jq22.com/webqd1144>
+
+```javascript
+function praise(num, obj) {
+    obj.prevAll().attr('class', 'xx-star');
+    obj.attr('class', 'xx-star');
+    obj.nextAll().attr('class', 'xx-star2');
+    $(".display-star").html(num + '星');
+}
+```
+
+# 关注 | 点赞
+
+- <http://www.jq22.com/webqd2408>
+
+- 单向关注有效性，不要因为开了多个页面多次关注而状态发生toggle，也就是说关注到的是 unstar -> star的这种状态
+
+# 拾色器
+
+- 兼容性好 <http://www.jq22.com/jquery-info367>
+- colors <https://github.com/mrmrs/colors>
+- color-thief
+
+  - <https://github.com/lokesh/color-thief>
+  - 利用 javascript 和 canvas 抓取一张图片中的主要颜色
+
+# 穿梭框
+
+# 下拉框 | 选择框
+
+- 插件
+
+  - niceSelect
+  - select2
+  - chosen <https://github.com/harvesthq/chosen>
+  - selectize-js <https://www.awesomes.cn/repo/selectize/selectize-js>
+  - jquery.sumoselect
+
+    - A jQuery Single/Multi Select plugin which can be used on almost any device
+
+  - Superfish
+
+    - It is a jQuery plugin that adds usability enhancements to existing multi-level drop-down menus.
+
+- 模拟下拉框 <http://www.jq22.com/webqd2375> | 可多选 <http://www.jq22.com/webqd933>
+
+- 简单自动义 <http://www.jq22.com/webqd1696>
+
+- 可编辑下拉框 <http://www.jq22.com/webqd1511>
+
+- 标签 <http://www.jq22.com/webqd462>
+
+```javascript
+// 外面嵌套一层
+<div class="select">
+  <select name="slct" id="slct">
+    <option>Choose an option</option>
+    <option value="1">Pure CSS</option>
+  </select>
+</div>
+```
+
+# 云标签
+
+- <http://www.jq22.com/webqd1921>
+
+# 标签输入框
+
+- jquery-tags-input
+
+  - <http://xoxco.com/projects/code/tagsinput/>
+
+- bootstrap-tagsinput <https://github.com/bootstrap-tagsinput/bootstrap-tagsinput>
+
+--------------------------------------------------------------------------------
+
+# 时间日期
+
+- moment.js
+- flatpickr <https://github.com/chmln/flatpickr>
+- 时间日期处理 <https://github.com/datejs/Datejs>
+- date-fns <https://github.com/date-fns/date-fns>
+- bootstrap-datepicker <https://github.com/uxsolutions/bootstrap-datepicker>
+- bootstrap-datetimepicker<https://github.com/Eonasdan/bootstrap-datetimepicker>
+- 日历一览 <http://www.jq22.com/webqd2183>
+- fullcalender | my97
+- 农历 <https://github.com/zzyss86/LunarCalendar>
+- <https://github.com/dangrossman/bootstrap-daterangepicker>
+- pickadate.js <https://github.com/amsul/pickadate.js>
+- DatePicker开发 <https://www.imooc.com/video/14520>
+
+--------------------------------------------------------------------------------
+
+# 联动
+
+- 省市下拉框联动
+
+  - (推荐) 传统类型 <http://www.jq22.com/jquery-info8054>
+  - 同一下拉框内三次点击 <http://www.jq22.com/jquery-info16612>
+  - 原生JS
+
+    - 0_27_12拼接 <http://www.jq22.com/jquery-info448>
+
+    - 省市区面板点击
+
+      - (推荐) <http://www.jq22.com/jquery-info7095>
+      - 仿京东 <http://www.jq22.com/jquery-info9397>
+      - 较全面 <http://www.jq22.com/jquery-info13655>
+
+    - 字母点击 移动端 <http://www.jq22.com/webqd2257>
+
+--------------------------------------------------------------------------------
 
 # 表格
+
+- 最好看的表格 <https://colorlib.com/wp/css3-table-templates/>
+
+  - Crisp table <http://codepen.io/stursby/pen/HdiJh>
+  - heavy table <http://codepen.io/victordarras/pen/hJHAm?editors=0110>
+
+- 固定
+
+  - 固定表格列和表格头部内容可拖拽 <http://www.jq22.com/webqd1769>
+  - 可滚动的tbody <http://www.jq22.com/webqd3098>
+
+- HTML5响应式表格
+
+  - CSS简单实现 <http://www.jq22.com/jquery-info6700>
+  - 好看一点的样式 <http://www.jq22.com/jquery-info1372>
+
+- 自动生成表格
+
+  - <http://www.jq22.com/jquery-info3656>
+
+```javascript
+第一步是：设置 tbody 为 display:block ，以便我们可以应用 height 和 overflow 属性。
+下一步将是：设置thead 中的 tr元素设置为 display:block。
+```
+
+# 数据表格
 
 - 筛选排序
 - dataTables | bootstrap-table
@@ -49,9 +252,31 @@
 
 - Filterizr (a jQuery plugin that sorts, shuffles and applies stunning filters over responsive galleries using CSS3 transitions and custom CSS effects)
 
-# 商业
+# 商业表格($)
 
 - handsontable <https://handsontable.com/>
+
+--------------------------------------------------------------------------------
+
+# 分页
+
+- 简单分页 <http://www.jq22.com/webqd1246>
+
+- 与数据表格关联的分页删除数据时注意加载最适合的一页，因为可能删除了所在页的最后一条数据
+
+- <http://wenda.ghostchina.com/>
+
+- <http://www.howzhi.com/channel/photography?page=20>
+
+- <http://www.agoda.com/city/hong-kong-hk.html>
+
+![](http://img.blog.csdn.net/20160624154003214)
+
+![](http://img.blog.csdn.net/20160624154018542)
+
+![](http://img.blog.csdn.net/20160624154027476)
+
+--------------------------------------------------------------------------------
 
 # 模板引擎 | 渲染引擎
 
@@ -82,6 +307,8 @@ var daochu = (function() {
 })()
 ```
 
+--------------------------------------------------------------------------------
+
 # 传输数据格式
 
 - normalizr(json)
@@ -96,10 +323,14 @@ var daochu = (function() {
     - <http://www.jq22.com/webqd3030>
     - <http://www.jq22.com/webqd1708>
 
+--------------------------------------------------------------------------------
+
 # md5
 
 - md5.js | jquery-md5
 - <http://www.jq22.com/webqd1506>
+
+--------------------------------------------------------------------------------
 
 # 时间
 
@@ -156,94 +387,14 @@ Date.prototype.Format = function(fmt) {
 new Date().Format("yyyy-MM-dd E HH:mm:ss")
 ```
 
-# 按钮
+--------------------------------------------------------------------------------
 
-- btn-css-generator <http://www.bestcssbuttongenerator.com/#/8>
-- 防止表单重复提交的loading
-- 悬浮
+# 权限
 
-  - <http://www.jq22.com/webqd1687>
-  - <http://www.jq22.com/webqd1688>
-  - <http://www.jq22.com/webqd114>
+- 弹框模式
+- CURD
 
-![](/static/img/other/import-double-submit.png)
-
-# 通用输入
-
-- 密码框 zxcvbn <https://github.com/dropbox/zxcvbn>
-
-# 单选复选框优化
-
-- <http://www.jq22.com/webqd2718>
-- jquery-labelauty
-
-```html
-<span class="radio_box">
- <input type="radio" id="radio_1" name="radio" checked="">
- <label for="radio_1"></label>
- <em>选项1</em>
-</span>
-```
-
-# 拾色器
-
-- 兼容性好 <http://www.jq22.com/jquery-info367>
-- colors <https://github.com/mrmrs/colors>
-- color-thief
-
-  - <https://github.com/lokesh/color-thief>
-  - 利用 javascript 和 canvas 抓取一张图片中的主要颜色
-
-# 时间日期
-
-- moment.js
-- flatpickr <https://github.com/chmln/flatpickr>
-- 时间日期处理 <https://github.com/datejs/Datejs>
-- date-fns <https://github.com/date-fns/date-fns>
-- bootstrap-datepicker <https://github.com/uxsolutions/bootstrap-datepicker>
-- bootstrap-datetimepicker<https://github.com/Eonasdan/bootstrap-datetimepicker>
-- 日历一览 <http://www.jq22.com/webqd2183>
-- fullcalender | my97
-- 农历 <https://github.com/zzyss86/LunarCalendar>
-- <https://github.com/dangrossman/bootstrap-daterangepicker>
-- pickadate.js <https://github.com/amsul/pickadate.js>
-- DatePicker开发 <https://www.imooc.com/video/14520>
-
-# 自动完成 | autocomplete
-
-- typeahead.js <https://github.com/twitter/typeahead.js>
-- Fuse <https://github.com/krisk/Fuse>
-- At.js <https://github.com/ichord/At.js>
-- bootstrap-typeahead
-- awesomplete <https://github.com/LeaVerou/awesomplete>
-
-# 投票率
-
-# 进度条
-
-- <http://www.jq22.com/webqd1913>
-- css3进度条 <http://www.jq22.com/webqd1062>
-
-# 星级评分
-
-- 策略模式实现星级评分 <https://www.imooc.com/video/15115>
-- <http://www.jq22.com/webqd3035>
-- CSS实现 <http://www.jq22.com/webqd1144>
-
-```javascript
-function praise(num, obj) {
-    obj.prevAll().attr('class', 'xx-star');
-    obj.attr('class', 'xx-star');
-    obj.nextAll().attr('class', 'xx-star2');
-    $(".display-star").html(num + '星');
-}
-```
-
-# 快捷键
-
-# 触摸
-
-# 丰富的输入
+--------------------------------------------------------------------------------
 
 # 上传
 
@@ -286,66 +437,7 @@ function slide(range, conSlide, obj) {
  }
 ```
 
-# 联动
-
-- 省市下拉框联动
-
-  - (推荐) 传统类型 <http://www.jq22.com/jquery-info8054>
-  - 同一下拉框内三次点击 <http://www.jq22.com/jquery-info16612>
-
-  - 原生JS
-
-    - 0_27_12拼接 <http://www.jq22.com/jquery-info448>
-
-- 省市区面板点击
-
-  - (推荐) <http://www.jq22.com/jquery-info7095>
-  - 仿京东 <http://www.jq22.com/jquery-info9397>
-  - 较全面 <http://www.jq22.com/jquery-info13655>
-  - 字母点击 移动端 <http://www.jq22.com/webqd2257>
-
-- 验证块
-
-  - <http://www.jq22.com/webqd2853>
-  - 滑动验证
-
-    - 简单滑动验证 <http://www.jq22.com/webqd1933>
-
-# 穿梭框
-
-# 下拉框 | 选择框
-
-- 插件
-
-  - niceSelect
-  - select2
-  - chosen <https://github.com/harvesthq/chosen>
-  - selectize-js <https://www.awesomes.cn/repo/selectize/selectize-js>
-  - jquery.sumoselect
-
-    - A jQuery Single/Multi Select plugin which can be used on almost any device
-
-  - Superfish
-
-    - It is a jQuery plugin that adds usability enhancements to existing multi-level drop-down menus.
-
-- 模拟下拉框 <http://www.jq22.com/webqd2375> | 可多选 <http://www.jq22.com/webqd933>
-
-- 简单自动义 <http://www.jq22.com/webqd1696>
-
-- 可编辑下拉框 <http://www.jq22.com/webqd1511>
-
-- 标签 <http://www.jq22.com/webqd462>
-
-```javascript
-// 外面嵌套一层
-<div class="select">
-  <select name="slct" id="slct">
-    <option>Choose an option</option>
-    <option value="1">Pure CSS</option>
-  </select>
-</div>
-```
+--------------------------------------------------------------------------------
 
 # 行内编辑
 
@@ -371,6 +463,8 @@ $('tr td').on('click', function() {
     })
 })
 ```
+
+--------------------------------------------------------------------------------
 
 # 搜索
 
@@ -427,6 +521,8 @@ function xiaolong(json) {
 
 ![](http://img.blog.csdn.net/20160624154656266)
 
+--------------------------------------------------------------------------------
+
 # 上传
 
 - jQuery-File-Upload | fex webuploader(兼容性好)
@@ -475,9 +571,7 @@ if (window.FileReader) {
 }
 ```
 
-# 标签输入框
-
-- bootstrap-tagsinput <https://github.com/bootstrap-tagsinput/bootstrap-tagsinput>
+--------------------------------------------------------------------------------
 
 # 表单校验
 
@@ -504,80 +598,11 @@ if (window.FileReader) {
 
   - card <https://github.com/jessepollak/card>
 
-# 表格
+# 表单校验设计
 
-- 最好看的表格 <https://colorlib.com/wp/css3-table-templates/>
-
-  - Crisp table <http://codepen.io/stursby/pen/HdiJh>
-  - heavy table <http://codepen.io/victordarras/pen/hJHAm?editors=0110>
-
-- 固定
-
-  - 固定表格列和表格头部内容可拖拽 <http://www.jq22.com/webqd1769>
-  - 可滚动的tbody <http://www.jq22.com/webqd3098>
-
-- HTML5响应式表格
-
-  - CSS简单实现 <http://www.jq22.com/jquery-info6700>
-  - 好看一点的样式 <http://www.jq22.com/jquery-info1372>
-
-- 自动生成表格
-
-  - <http://www.jq22.com/jquery-info3656>
-
-```javascript
-第一步是：设置 tbody 为 display:block ，以便我们可以应用 height 和 overflow 属性。
-下一步将是：设置thead 中的 tr元素设置为 display:block。
-```
-
-# 筛选排序
-
-- sortable <https://www.awesomes.cn/repo/RubaXa/sortable>
-- jquery.isotope
-
-  - Filter & sort magical layouts GPL
-
-- 时间正序排序
-
-- 表格排序
-
-  - <http://www.jq22.com/webqd2793>
-
-```javascript
-var data = {
-    "rows": [{
-        "name": "张三",
-        "time": "2011-4-1 0:00:00",
-    },{
-        "name": "李四",
-        "time": "2015-5-6 12:30:00",
-    },{
-        "name": "王五",
-        "time": "2012-10-1 22:10:00",
-    },{
-        "name": "赵六",
-        "time": "2011-9-1 22:10:00",
-    }]
-};
-var rows = data.rows;
-rows.sort(function(a,b){
-    return Date.parse(a.time) - Date.parse(b.time);//时间正序
-});
-```
-
-# 图表
-
-- 在可视化章节
-
-# 云标签
-
-- <http://www.jq22.com/webqd1921>
-
-# 标签输入框
-
-- jquery-tags-input
-
-  - <http://xoxco.com/projects/code/tagsinput/>
+- 用户编辑后离开前的保存校验
+- jquery-validation
+- Parsley.js <https://github.com/guillaumepotier/Parsley.js>
 
 # 邮箱
 
@@ -652,12 +677,6 @@ window.onload = function() {
 }
 ```
 
-# 关注 | 点赞
-
-- <http://www.jq22.com/webqd2408>
-
-- 单向关注有效性，不要因为开了多个页面多次关注而状态发生toggle，也就是说关注到的是 unstar -> star的这种状态
-
 # 表单输入实时监听
 
 ```javascript
@@ -725,44 +744,64 @@ $(function() {
 });
 ```
 
-# 提示
+--------------------------------------------------------------------------------
+
+# 筛选排序
+
+- sortable <https://www.awesomes.cn/repo/RubaXa/sortable>
+- jquery.isotope
+
+  - Filter & sort magical layouts GPL
+
+- 时间正序排序
+
+- 表格排序
+
+  - <http://www.jq22.com/webqd2793>
+
+```javascript
+var data = {
+    "rows": [{
+        "name": "张三",
+        "time": "2011-4-1 0:00:00",
+    },{
+        "name": "李四",
+        "time": "2015-5-6 12:30:00",
+    },{
+        "name": "王五",
+        "time": "2012-10-1 22:10:00",
+    },{
+        "name": "赵六",
+        "time": "2011-9-1 22:10:00",
+    }]
+};
+var rows = data.rows;
+rows.sort(function(a,b){
+    return Date.parse(a.time) - Date.parse(b.time);//时间正序
+});
+```
+
+--------------------------------------------------------------------------------
+
+# 图表
+
+- 在可视化章节
+
+--------------------------------------------------------------------------------
+
+# 进度条
 
 - 进度条 | progress
 
   - nprogress <https://github.com/rstacruz/nprogress>
+  - <http://www.jq22.com/webqd1913>
+  - css3进度条 <http://www.jq22.com/webqd1062>
 
 - 超链接悬浮上去时, 打开新窗口图标提示
 
-# 登录注册
+# 提示标签 | Tooltip
 
-- 登录
-
-  - <https://profile.freepik.com/login>
-  - 复位这个按钮几乎永远都不会帮助到用户
-  - 用户很可能不愿意填写表单
-
-    - 逻辑分组
-    - 重视交互，做有意思的设计
-
-- 优化建议
-
-  - 用户在输入手机号时，如果能以3 4 4的方式显示，用户看起来会轻松很多
-  - 邮箱登陆注册时智能显示后缀
-  - 账号或者密码错误
-  - 滑动验证
-  - 分步注册，减少注册心理负担
-
-![](/static/img/other/login-sample-23.png)
-
-> 所有抛开产品本身谈登陆注册的行为都是耍流氓
-
-<https://juejin.im/entry/5993b3bef265da24874ced54>
-
-```javascript
-A产品竟然支持邮箱注册，邮箱注册这种方式主要是PC端时盛行的，现在手机号注册收验证码多方便，这种方式不好；
-B产品竟然不能设置密码，每次登陆都要手机验证码，这万一手机没信号收不到验证码怎么办，这种方式不好；
-C产品我用第三方登陆了，竟然还让我绑定手机号，这不是欺骗用户么，太不要脸了，这种方式不好；
-```
+- popper.js <https://github.com/FezVrasta/popper.js>
 
 # 加载等待
 
@@ -784,21 +823,3 @@ C产品我用第三方登陆了，竟然还让我绑定手机号，这不是欺�
 ![](/static/img/other/camel-loading.png)
 
 ![](/static/img/other/jiaohu-tip.png)
-
-# 分页
-
-- 简单分页 <http://www.jq22.com/webqd1246>
-
-- 与数据表格关联的分页删除数据时注意加载最适合的一页，因为可能删除了所在页的最后一条数据
-
-- <http://wenda.ghostchina.com/>
-
-- <http://www.howzhi.com/channel/photography?page=20>
-
-- <http://www.agoda.com/city/hong-kong-hk.html>
-
-![](http://img.blog.csdn.net/20160624154003214)
-
-![](http://img.blog.csdn.net/20160624154018542)
-
-![](http://img.blog.csdn.net/20160624154027476)
