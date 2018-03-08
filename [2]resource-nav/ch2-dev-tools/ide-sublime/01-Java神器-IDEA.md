@@ -22,8 +22,15 @@ Ctrl+Shift+F9
 
 - 正确使用 IntelliJ IDEA 的方式 <https://juejin.im/post/590050f98d6d810058afc85f>
 
+# 常用操作
+
+- dao | entity 右键自动生成(或者直接lombok)
 - 右键将文件标记为source root
 - 右键add as library
+
+# 常用配置
+
+- IntelliJ IDEA文件头注释模板 <http://blog.csdn.net/totally123/article/details/53466011>
 
 # IDEA常用插件
 
@@ -70,6 +77,10 @@ tppabs="h[^"]*"
 # 常用快捷键
 
 - <http://www.open-open.com/lib/view/open1396578860887.html>
+
+- 常用
+
+  - alt + insert 新建文件
 
 - 结构排版
 

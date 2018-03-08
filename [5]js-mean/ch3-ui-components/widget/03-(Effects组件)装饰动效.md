@@ -34,6 +34,11 @@
 
   - Simple, elegant content placeholder
 
+# 舒服的阅读配色
+
+- 易佰教程等教程类
+- kindle
+
 # 文本截断
 
 - css

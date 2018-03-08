@@ -9,6 +9,8 @@
 
 # Java知识点
 
+- Java语法清单 <https://zhuanlan.zhihu.com/p/25578170>
+
 ```java
 Java程序的执行模式是 半编译半解释
 虚拟机可以用硬件实现
@@ -20,8 +22,6 @@ System不是关键字
 main方法只能是一个public静态方法
 一个源程序文件中最多只能有一个public类，其他类的个数不限
 ```
-
-- Java语法清单 <https://zhuanlan.zhihu.com/p/25578170>
 
 # 输入输出
 
@@ -81,7 +81,16 @@ public class Car extends Vehicle {
 
 # 数据类型
 
-- <http://www.yiibai.com/java_data_type/>
+- 数据类型 <http://www.yiibai.com/java_data_type/>
+- Java 数据结构 <http://www.runoob.com/java/java-data-structures.html>
+
+  - ArrayList | Vector | Stack(后进先出的栈)
+  - Map | Dictionary | Hashtable | Properties
+  - BitSet
+
+- Java 集合框架 <http://www.runoob.com/java/java-collections.html>
+
+![](http://www.runoob.com/wp-content/uploads/2014/01/java-coll.png)
 
 # 流程控制
 
@@ -96,16 +105,6 @@ public class Car extends Vehicle {
 可控式异常 IOException
 运行时异常
 ```
-
-# 面向对象
-
-- 一个经典到影响整个编程界的面向对象体系
-
-> 站在Java的视角看待别的语言实现面向对象，总是不公平的....
-
-# 多线程
-
-- 见并发篇...
 
 # Java注解
 
