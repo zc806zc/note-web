@@ -6,6 +6,9 @@
 
 - 12个HTML和CSS必须知道的重点难点问题 <https://juejin.im/post/5a954add6fb9a06348538c0d>
 
+  - height line-height
+  - position: relative absolute
+
 - 关于权重
 
   - id声明会覆盖class
