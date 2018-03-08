@@ -19,6 +19,11 @@
 
 # 学习项目
 
+- vuejs2 官网讲解
+
+  - <https://github.com/bhnddowinf/vuejs2-learn>
+  - <https://github.com/bhnddowinf/vuejs-learn>
+
 - VueStudyDemos <https://github.com/violetjack/VueStudyDemos>
 - todo-list <https://github.com/Konata9/EasyTodoList>
 - 富文本编辑器Ueditor如何在Vue中使用？ <https://www.jianshu.com/p/8c43636c6c47>
