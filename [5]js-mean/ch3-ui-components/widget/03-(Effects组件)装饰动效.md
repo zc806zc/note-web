@@ -1,7 +1,3 @@
-# 基础样式 | 表单元素梅花
-
-- 表单美化 <https://www.imooc.com/learn/42>
-
 # 图标 | 字体 | ICON
 
 - 方案
@@ -26,6 +22,41 @@
 
 - 手摸手，带你优雅的使用 icon <https://juejin.im/post/59bb864b5188257e7a427c09>
 
+--------------------------------------------------------------------------------
+
+# 基础样式 | 表单元素梅花
+
+- 表单美化 <https://www.imooc.com/learn/42>
+
+# 文章
+
+- mocka <https://github.com/Chalarangelo/mocka>
+
+  - Simple, elegant content placeholder
+
+# 文本截断
+
+- css
+- js <http://www.jq22.com/webqd2751>
+- 插件 <https://dollarshaveclub.github.io/shave/>
+
+```javascript
+var shortName = "我和我好朋友写代码的照片.jpg".replace(/^(^.{8})(.+)(.{2}\.+\w+$)$/g, "$1...$3");
+document.getElementById('output').append(shortName);
+
+// 多行
+p {
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:5;
+  overflow:hidden;
+  width:200px;
+  margin:50px;
+}
+```
+
+--------------------------------------------------------------------------------
+
 # 动画
 
 - 方案
@@ -48,26 +79,6 @@
 
 - 一组简单可爱的css动效 <https://github.com/jonsuh/hamburgers>
 
-# 交互
-
-- interact.js
-
-  - <https://github.com/taye/interact.js>
-  - <http://www.jq22.com/yanshi17203>
-
-# 色彩
-
-- 配色方案
-- 分析网页主色/配色方案
-
-  - <http://www.jq22.com/jquery-info235>
-
-- 取色器
-
-- 渐变背景色
-
-- 换肤
-
 # 动画
 
 - 插件
@@ -82,6 +93,81 @@
   - popmotion <https://github.com/Popmotion/popmotion>
 
     - Create unique animations and interactions with tweens, physics and input tracking.
+
+--------------------------------------------------------------------------------
+
+# 交互
+
+- interact.js
+
+  - <https://github.com/taye/interact.js>
+  - <http://www.jq22.com/yanshi17203>
+
+- 图片响应模式
+
+  - 3D倾斜响应 <http://www.jq22.com/webqd2763>
+  - 放大(传统首选)
+  - 抖动 <http://www.jq22.com/webqd3242>
+  - 模仿小米 图片hover的阴影效果 <http://www.jq22.com/webqd1367>
+
+```less
+// 放大
+.pic-box {
+    width: 200px;
+    height:200px;
+    overflow: hidden; // 超出隐藏
+
+    img {
+        width: 100%;
+        transition: transform 1.6s; // 动画过渡
+
+        &:hover{
+          transform: scale(2.0);
+        }
+    }
+}
+
+// 抖动
+body{
+    padding:30px;
+}
+img:hover {
+    -webkit-animation:sucaijiayuan 1s .1s ease both;
+    -moz-animation:tada 1s .1s ease both;
+}
+@-webkit-keyframes sucaijiayuan {
+    0% {
+         -webkit-transform:scale(1)
+  }
+  10%,20% {
+         -webkit-transform:scale(0.8) rotate(-2deg)
+  }
+   30%,50%,70%,90% {
+        -webkit-transform:scale(1.1) rotate(2deg)
+  }
+  40%,60%,80% {
+         -webkit-transform:scale(1.1) rotate(-2deg)
+  }
+  100% {
+          -webkit-transform:scale(1) rotate(0)
+  }
+}
+```
+
+--------------------------------------------------------------------------------
+
+# 色彩方案
+
+- 配色方案
+- 分析网页主色/配色方案
+
+  - <http://www.jq22.com/jquery-info235>
+
+- 取色器
+
+- 渐变背景色
+
+- 换肤
 
 # 色彩
 
@@ -136,6 +222,10 @@ span:nth-child(2) {
 }
 ```
 
+--------------------------------------------------------------------------------
+
+# 特效
+
 - 数字滚动显示
 
   - <http://www.jq22.com/webqd2739>
@@ -183,57 +273,6 @@ $("ul>li").hover(function() {
 }
 ```
 
-- 图片响应模式
-
-  - 3D倾斜响应 <http://www.jq22.com/webqd2763>
-  - 放大(传统首选)
-  - 抖动 <http://www.jq22.com/webqd3242>
-  - 模仿小米 图片hover的阴影效果 <http://www.jq22.com/webqd1367>
-
-```less
-// 放大
-.pic-box {
-    width: 200px;
-    height:200px;
-    overflow: hidden; // 超出隐藏
-
-    img {
-        width: 100%;
-        transition: transform 1.6s; // 动画过渡
-
-        &:hover{
-          transform: scale(2.0);
-        }
-    }
-}
-
-// 抖动
-body{
-    padding:30px;
-}
-img:hover {
-    -webkit-animation:sucaijiayuan 1s .1s ease both;
-    -moz-animation:tada 1s .1s ease both;
-}
-@-webkit-keyframes sucaijiayuan {
-    0% {
-         -webkit-transform:scale(1)
-  }
-  10%,20% {
-         -webkit-transform:scale(0.8) rotate(-2deg)
-  }
-   30%,50%,70%,90% {
-        -webkit-transform:scale(1.1) rotate(2deg)
-  }
-  40%,60%,80% {
-         -webkit-transform:scale(1.1) rotate(-2deg)
-  }
-  100% {
-          -webkit-transform:scale(1) rotate(0)
-  }
-}
-```
-
 - 饿了么添加菜品小球动画
 
   - <http://www.jq22.com/webqd2892>
@@ -241,10 +280,6 @@ img:hover {
 - 卷轴动画
 
   - <http://www.jq22.com/webqd790>
-
-- 代码高亮
-
-  - <https://asvd.github.io/microlight/>
 
 - 对勾 <http://www.jq22.com/webqd1741>
 
@@ -317,119 +352,6 @@ function show() {
 
 - 图片炸裂 <http://www.jq22.com/webqd3028>
 
-- 拖放
-
-  - draggable <https://github.com/Shopify/draggable>
-  - 图片 <http://www.jq22.com/webqd2950>
-  - 支持排序 <http://www.jq22.com/webqd2944>
-  - HTML5拖拽 <http://www.jq22.com/webqd2072>
-  - 支付宝价格拖放 <https://segmentfault.com/a/1190000013266172>
-
-```javascript
-// 图片拖放
-<div id="wrap2" class="wrap" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
-
-function drop(ev) {
-    ev.preventDefault();
-    var data = ev.dataTransfer.getData("Img");
-    ev.target.appendChild(document.getElementById(data));
-}
-
-// 拖拽排序
-function DragDrop(id) {
-    this.parentBox = document.getElementById(id)
-    this.editSwith = this.parentBox.querySelector('.editOrder');
-    this.save = this.parentBox.querySelector('.save');
-    this.list = this.parentBox.querySelector('.list');
-    this.li = this.list.querySelectorAll('li');
-    this.aPosXY = []; //原始位置
-    this.aPosXYClone = [];
-    this.moveStatus = false; //移动状态
-    this.editAble = false; //编辑状态
-    this.dashedBox = null;
-    this.moveItem = null;
-    this.moveItemH = null;
-    this.mouseDownPos = [];
-    this.inScope = false;
-}
-
-//鼠标移动
-DragDrop.prototype.mouseMove = function(e, obj) {
-
-    var relativeListX = e.pageX - this.list.offsetLeft; //鼠标相对ul的位置 x
-    var relativeListY = e.pageY - this.list.offsetTop; //鼠标相对ul的位置 y
-    var objIndex = obj.getAttribute('data-index'); //获取当前选中元素的下标
-    var objLeft = this.aPosXY[objIndex].x;
-    var objTop = this.aPosXY[objIndex].y; //根据下标获取当前选中元素 固定的时候的定位 x,y;
-    //      console.log('objLeft：'+objLeft+'  objTop：'+objTop); //  objLeft：10px  objTop：10px
-    var relativeObjX = this.mouseDownPos.x - parseInt(objLeft); //鼠标按下时鼠标相对于选中元素的位置x
-    var relativeObjY = this.mouseDownPos.y - parseInt(objTop); //鼠标按下时鼠标相对于选中元素的位置y
-    var objMoveX = relativeListX - relativeObjX;
-    var objMoveY = relativeListY - relativeObjY;
-    //      console.log(objMoveX +'  '+objMoveY)
-    //      console.log('x:'+relativeListX+' y:'+relativeListY);
-    //      console.log('x:'+relativeObjX+' y:'+relativeObjY);
-    setCss(obj, {
-        'left': objMoveX + 'px',
-        'top': objMoveY + 'px'
-    });
-    for (var i = 0; i < this.aPosXYClone.length; i++) {
-        if (!(i == objIndex)) {
-            if (objMoveY + obj.offsetHeight >= parseInt(this.aPosXYClone[i].y) + this.li[i].offsetHeight / 2 && objMoveY + obj.offsetHeight < parseInt(this.aPosXYClone[i].y) + this.li[i].offsetHeight || objMoveY >= parseInt(this.aPosXYClone[i].y) && objMoveY < parseInt(this.aPosXYClone[i].y) + this.li[i].offsetHeight / 2) {
-                //            console.log(i);
-                var ts = [];
-                ts.x = this.dashedBox.style.left;
-                ts.y = this.dashedBox.style.top;
-                this.aPosXYClone[objIndex] = this.aPosXYClone[i];
-                this.aPosXYClone[i] = ts;
-                setCss(this.dashedBox, {
-                    'left': this.aPosXYClone[objIndex].x,
-                    'top': this.aPosXYClone[objIndex].y
-                });
-                setCss(this.li[i], {
-                    'left': ts.x,
-                    'top': ts.y
-                });
-                //            console.log(this.aPosXYClone)
-                //            console.log(this.aPosXY)
-                return false;
-            }
-        }
-    }
-
-}
-```
-
-# 文章
-
-- mocka <https://github.com/Chalarangelo/mocka>
-
-  - Simple, elegant content placeholder
-
-# 文本截断
-
-- css
-- js <http://www.jq22.com/webqd2751>
-- 插件 <https://dollarshaveclub.github.io/shave/>
-
-```javascript
-var shortName = "我和我好朋友写代码的照片.jpg".replace(/^(^.{8})(.+)(.{2}\.+\w+$)$/g, "$1...$3");
-document.getElementById('output').append(shortName);
-
-// 多行
-p {
-  display:-webkit-box;
-  -webkit-box-orient:vertical;
-  -webkit-line-clamp:5;
-  overflow:hidden;
-  width:200px;
-  margin:50px;
-}
-```
-
-
-
-
 # 悬停时 鼓动别人做出选择
 
 - 卡片的弹起 <https://haobtc.com/>
@@ -482,18 +404,6 @@ transition: 0.15s ease-in-out;
   - <http://www.ottoradio.com/>
 
 ![](http://img.blog.csdn.net/20160624154431215)
-
-- 等待动画与加载动画
-
-  - <http://truthlabs.com>
-
-![](http://img.blog.csdn.net/20160624152030917)
-
-- 顶部加载条显示网页的加载进度
-
-  - <https://ingworld.ing.com/en/2015-1Q>
-
-![](http://img.blog.csdn.net/20160624152117988)
 
 - 用于定位的标签 这张页面做的比较长，导航处的标签选项只是用于定位。
 

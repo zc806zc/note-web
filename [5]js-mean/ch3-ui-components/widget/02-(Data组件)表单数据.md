@@ -823,3 +823,15 @@ rows.sort(function(a,b){
 ![](/static/img/other/camel-loading.png)
 
 ![](/static/img/other/jiaohu-tip.png)
+
+- 等待动画与加载动画
+
+  - <http://truthlabs.com>
+
+![](http://img.blog.csdn.net/20160624152030917)
+
+- 顶部加载条显示网页的加载进度
+
+  - <https://ingworld.ing.com/en/2015-1Q>
+
+![](http://img.blog.csdn.net/20160624152117988)

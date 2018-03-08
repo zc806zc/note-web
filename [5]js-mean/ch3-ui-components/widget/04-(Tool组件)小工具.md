@@ -1,18 +1,10 @@
-# 弹幕 | 字幕
+
 
 # 网页打印
 
-# 网站标签页
+- jqprint <http://www.jq22.com/jquery-info347>
 
-# 客服反馈
 
-# 代码格式化
-
-# 广告
-
-# 选座位
-
-# 计算器
 
 # 图像处理
 
@@ -26,13 +18,13 @@
 
 # 倒计时 | 计时器
 
-# 代码编辑器
 
-- codemirror
 
 # 繁简字转化
 
 - OpenCC <https://github.com/BYVoid/OpenCC>
+
+---
 
 # 浏览器信息
 
@@ -41,9 +33,13 @@
 
   - <https://github.com/viljamis/feature.js>
 
+---
+
 # 阅读器
 
 - pdf.js
+
+---
 
 # 富文本编辑器
 
@@ -66,6 +62,8 @@
 
   - summernote <https://github.com/summernote/summernote>
   - wysiwyg <https://github.com/mindmup/bootstrap-wysiwyg/>
+
+---
 
 # 放大镜 | 截图
 
@@ -91,15 +89,21 @@
 
   - <http://www.jq22.com/webqd643>
 
+---
+
 # 聊天
 
 - Rocket.Chat <https://github.com/RocketChat/Rocket.Chat>
 
 - 聊天室 <http://www.jq22.com/webqd2560>
 
+---
+
 # 地图
 
 - Leaflet <https://github.com/Leaflet/Leaflet>
+
+---
 
 # 视频
 
@@ -120,6 +124,8 @@
 
 - howler <https://github.com/goldfire/howler.js>
 
+---
+
 # 格式转化 | 导入导出
 
 - pdf2htmlEX
@@ -133,12 +139,16 @@
   - js-xlsx <https://github.com/SheetJS/js-xlsx>
   - 网页表格导出excel格式 <http://www.jq22.com/webqd2279>
 
+---
+
 # 邮件
 
 - foundation-emails
 
   - <https://github.com/zurb/foundation-emails>
   - Quickly create responsive HTML emails that work on any device and client. Even Outlook
+
+---
 
 # 用户操作导航
 
@@ -147,6 +157,8 @@
 
   - <https://github.com/usablica/intro.js>
   - A better way for new feature introduction and step-by-step users guide for your website and project.
+
+---
 
 # 购物车
 
@@ -187,6 +199,8 @@ function MoveBox(obj) {
 }
 ```
 
+---
+
 # 网站标签页
 
 - I-Miss-You
@@ -194,7 +208,9 @@ function MoveBox(obj) {
   - <https://github.com/Bahlaouane-Hamza/I-Miss-You>
   - jQuery plugin to change the title & favicon of the page when the user is not viewing your website
 
-# 客服反馈
+
+
+---
 
 # 代码格式化
 
@@ -202,9 +218,22 @@ function MoveBox(obj) {
 
 - 正则表达式
 
+
+# 代码高亮
+
+- <https://asvd.github.io/microlight/>
+
+# 代码编辑器
+
+- codemirror
+
+---
+
 # 选座位
 
 - canvas选座位 <http://www.jq22.com/webqd3040>
+
+---
 
 # 广告
 
@@ -267,9 +296,7 @@ $(function() {
 $("#imgDiv").draggable();
 ```
 
-# 打印
-
-- jqprint <http://www.jq22.com/jquery-info347>
+---
 
 # 计算器
 
@@ -338,6 +365,8 @@ function countDown(count) {
 }
 ```
 
+---
+
 # 抽奖 | 摇号
 
 - <http://www.jq22.com/webqd2292>
@@ -357,6 +386,8 @@ function stopFun() {
 }
 ```
 
+---
+
 # 弹幕 | 字幕
 
 - <http://www.jq22.com/webqd2447>
@@ -367,7 +398,7 @@ function stopFun() {
   - marquee(过时) <http://www.jq22.com/webqd2575>
   - JS <http://www.jq22.com/webqd2444> | <http://www.jq22.com/webqd2391>
 
-```html
+```
 spanDom.stop().animate({
     "right": pageW + 300
 }, 10000, "linear", function() {
@@ -399,6 +430,8 @@ img {
 }
 ```
 
+---
+
 # 分享
 
 - 百度分享 <http://share.baidu.com/>
@@ -407,6 +440,12 @@ img {
 # 评论
 
 - 人人网评论功能 <https://www.imooc.com/learn/81>
+
+# 围观吃瓜的群众
+
+- <http://www.oneapm.com/>
+
+![](http://img.blog.csdn.net/20160624155304657)
 
 # 右下角组件
 
@@ -420,11 +459,10 @@ img {
 
 ![](http://img.blog.csdn.net/20160624152340562)
 
-# 围观吃瓜的群众
 
-- <http://www.oneapm.com/>
+# 客服反馈
 
-![](http://img.blog.csdn.net/20160624155304657)
+---
 
 # 问卷调查
 
