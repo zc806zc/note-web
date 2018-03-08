@@ -13,28 +13,28 @@
 │  │  ├─appContent
 │  │  │  └─src
 │  ├─directives 自定义指令(drag)
-│  ├─filter
-│  ├─nodeTalk
+│  ├─filter 格式过滤转化(日期格式)
+│  ├─nodeTalk (socket.io)
 │  ├─router
 │  │  ├─子系统1
 │  │  └─子系统2
 │  │  └─...
-│  ├─store
+│  ├─store  (actions mutation...)
 │  │  └─modules
 │  │      ├─design
 │  │      │  ├─get
 │  │      │  ├─set
 │  │      │  └─sub
 │  │      ├─global
-│  ├─tool
-│  │  └─browser
+│  ├─tool 常用方法
+│  │  └─browser (IE版本)
 │  └─views
-│      ├─common
+│      ├─common (由组件构成的公共页)
 │      │  ├─approve
 │      │  ├─borrow
-│      ├─consult
-└─static
-    ├─face
+│      ├─consult (不同业务来划分)
+└─static 静态资源 (socket.io)
+    ├─face (emoji的小图)
     └─image
 ```
 
