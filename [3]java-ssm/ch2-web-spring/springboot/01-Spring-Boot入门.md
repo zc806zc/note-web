@@ -1,7 +1,12 @@
 # Spring Boot
 
 - 翟永超博客 <http://blog.didispace.com/Spring-Boot%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/>
-- 纯洁的微笑 <http://www.ityouknow.com/>
+- 纯洁的微笑
+
+  - <http://www.ityouknow.com/>
+  - <https://juejin.im/user/57280c611532bc0062874823>
+
+- 启动 banner 定制 <https://juejin.im/post/5a9ff0576fb9a028d4442330>
 
 # Spring Boot配置
 
@@ -116,4 +121,7 @@ th:value="${movie.createDate} ? ${#dates.format(movie.createDate, 'yyyy-MM-dd')}
   - 支持动态扩展
   - Tracker Server
 
-# 
+# Spring Boot 2.0
+
+- Spring Boot 2.0 新特性详解 <https://juejin.im/post/5aa128dc6fb9a028b54777e1>
+- Spring Boot 2.0 迁移指南 <https://juejin.im/post/5aa1293df265da23826d8f4a>

@@ -1,5 +1,6 @@
 # 学习项目
 
+- Spring Boot 开源项目 <https://juejin.im/post/5a9c8b93518825557a2e6f89>
 - SpringBootBucket <https://github.com/yidao620c/SpringBootBucket>
 - spring-boot-api-project-seed <https://github.com/lihengming/spring-boot-api-project-seed>
 - springboot-learning-example <https://github.com/JeffLi1993/springboot-learning-example>

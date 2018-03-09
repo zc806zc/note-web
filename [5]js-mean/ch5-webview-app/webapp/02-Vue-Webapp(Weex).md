@@ -68,6 +68,10 @@ Weex 提供了非常丰富的系统功能 API，包括弹出存储、网络、�
 - 降级方案
 - 屏幕适配
 
+# Weex BindingX
+
+- Weex BindingX 尝鲜 https://juejin.im/post/5aa12ae5518825557207f0c1
+
 # Weex实战项目
 
-...
+- 网易严选 App https://github.com/zwwill/yanxuan-weex-demo
