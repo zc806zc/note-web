@@ -50,6 +50,9 @@ Ctrl+Shift+F9
   - Librarie -> 上面绿色加号→Java
   - Facets -> Put into Output Root
 
+- 非法字符: '\ufeff' <http://blog.csdn.net/qq55214/article/details/50478081>
+- IntelliJ IDEA里缺少javax.servlet IntelliJ IDEA里缺少javax.servlet (add lib)
+
 # 常见问题
 
 - IDEA 内存溢出问题
