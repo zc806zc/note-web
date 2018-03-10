@@ -5,6 +5,8 @@
 
   - 成神之路 <http://www.hollischuang.com/archives/489>
 
+![](http://www.yiibai.com/uploads/images/201702/2802/686140245_35550.jpg)
+
 # Core Java
 
 - Basic Language Characteristics 语法特征
