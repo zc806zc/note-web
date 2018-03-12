@@ -10,6 +10,8 @@
 
 # 数据库连接池
 
+- C3P0
+- DBCP
 - druid
 
   - <https://github.com/alibaba/druid>
@@ -43,3 +45,5 @@
 # JPA
 
 - <http://www.yiibai.com/jpa/>
+
+# HikariCP

@@ -85,10 +85,10 @@ web
 
   - (推荐) <https://www.cnblogs.com/bingshu/p/6876030.html>
   - <http://blog.csdn.net/isea533/article/details/70495714>
-  - jRabel
+  - jRabel  
 
 - 注意
-
+  - ctrl + F9 刷新重构一下
   - 父项目必须为pom
   - xxx-parent文件结构是否包含这些模块
   - 删除父项目的src
