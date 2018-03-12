@@ -4,6 +4,9 @@
 - 自动化测试
 - 使用TypeScript
 - MPA
+
+  - <https://github.com/jarvan4dev/vue-multi-page>
+
 - Vue的异构
 - 服务端渲染
 - Vue的pre-render
