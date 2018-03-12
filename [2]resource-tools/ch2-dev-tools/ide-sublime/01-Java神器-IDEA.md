@@ -76,6 +76,12 @@ tppabs="h[^"]*"
 - <https://zeroturnaround.com/software/jrebel/quickstart/intellij/>
 
 - SpringBoot项目使用JRebel热部署 <http://blog.csdn.net/qq_31230915/article/details/78069148>
+- https://www.cnblogs.com/yjmyzz/p/use-devtools-of-spring-boot-framework.html
+
+```shell
+IDEA设置
+make project automatically
+```
 
 # 常用快捷键
 
