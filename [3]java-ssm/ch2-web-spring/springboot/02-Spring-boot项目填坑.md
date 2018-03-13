@@ -21,12 +21,13 @@
 - Spring Boot 开源项目 <https://juejin.im/post/5a9c8b93518825557a2e6f89>
 
 - 前后端分离的人力资源管理系统 SpringBoot+Vue <https://github.com/lenve/vhr>
+- solo <https://github.com/b3log/solo>
+- Java博客系统 Docker+SpringBoot+Mybatis+thymeleaf <https://github.com/ZHENFENG13/My-Blog>
 
 - 快速搭建企业后台管理系统 <https://github.com/hs-web/hsweb-framework>
 
 - 博客 Vue + Spring Boot <https://github.com/lenve/VBlog>
 
-- docker & springboot & thymeleaf & mybatis <https://github.com/ZHENFENG13/My-Blog>
 
 - springboot-plus(推荐) springboot + layui <https://gitee.com/xiandafu/springboot-plus>
 
@@ -42,9 +43,27 @@
 
 - springboot mybatis mysql后台商城 h5 小程序 <https://gitee.com/JiaGou-XiaoGe/webappchat>
 
+
 - 其他
 
   - Spring Boot + Hibernate + MySQL + Bootstrap4 <https://github.com/Raysmond/SpringBlog>
+
+# Java微信公众号开发
+
+- <https://www.imooc.com/video/7231>
+- 进阶 <https://www.imooc.com/video/7789>
+
+# Guns
+
+- guns <https://gitee.com/naan1993/guns>
+- <https://github.com/abel533/guns>
+- 基于SpringBoot的后台管理系统 <https://juejin.im/post/5a9cfc6851882555677e0666>
+
+# 电商
+
+- 商城生成静态页
+
+# 博客
 
 # 特定场景
 

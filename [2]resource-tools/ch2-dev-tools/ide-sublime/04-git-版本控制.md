@@ -43,6 +43,12 @@ git clone -b master xxx
 - 解决因为本地代码和远程代码冲突，导致git pull无法拉取远程代码的问题 <https://www.cnblogs.com/huanyou/p/6654813.html>
 
 ```shell
+# merge而不是直接pull
+git checkout -b feature-x develop # 新建  feature-x 分支
+git checkout develop # 切回develop
+git merge --no-ff feature-x # 合并 可以保存之前的分支历史。
+
+
 # 查看冲突文件
 git status -uno
 
