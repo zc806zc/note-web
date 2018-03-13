@@ -120,8 +120,3 @@ th:value="${movie.createDate} ? ${#dates.format(movie.createDate, 'yyyy-MM-dd')}
   - 客户端API
   - 支持动态扩展
   - Tracker Server
-
-# Spring Boot 2.0
-
-- Spring Boot 2.0 新特性详解 <https://juejin.im/post/5aa128dc6fb9a028b54777e1>
-- Spring Boot 2.0 迁移指南 <https://juejin.im/post/5aa1293df265da23826d8f4a>

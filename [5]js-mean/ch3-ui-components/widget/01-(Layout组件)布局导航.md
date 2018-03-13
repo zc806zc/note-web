@@ -323,6 +323,7 @@ $(function() {
 - jQuery弹出窗口可移动、缩放 <http://www.jq22.com/webqd3029>
 
 - JS简单 <http://www.jq22.com/webqd2525>
+
 - <http://www.jq22.com/webqd2001>
 
 - 弹出层提取理念
@@ -588,7 +589,9 @@ ul li:hover .center {
 
 # 垂直导航
 
-# 微信底部菜单 <http://www.jq22.com/webqd487>
+# 微信底部菜单
+
+- <http://www.jq22.com/webqd487>
 
 # 文件树导航
 
