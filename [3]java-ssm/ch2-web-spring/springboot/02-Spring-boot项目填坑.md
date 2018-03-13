@@ -34,8 +34,6 @@
 
 - any-video (springboot + semantic UI) <https://github.com/ChinaSilence/any-video>
 
-- Spring Boot使用Redis提升天气预报应用的并发访问能力 <http://www.imooc.com/article/23435>
-
 - 搭建微信小程序 商城 spring boot + mybatis
 
   - <https://www.imooc.com/video/16538>
@@ -52,6 +50,7 @@
 
 - 支付服务 <https://gitee.com/52itstyle/spring-boot-pay>
 - websocket技术实时输出系统日志 <https://gitee.com/kailing/boot-websocket-log>
+- Spring Boot使用Redis提升天气预报应用的并发访问能力 <http://www.imooc.com/article/23435>
 
 # layui前端系统优化建议
 
