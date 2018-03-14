@@ -1,5 +1,10 @@
 # JSP时代
 
+- html/xhtml/dhtml/shtml/jhtml的介绍和区别 <http://www.aiuxian.com/article/p-931946.html>
+
+  - Jsp是早期JHtml的加强版
+  - JHtml就是JSP的核心 两者互通，但也不可以说完全一样
+
 # JSP开发环境搭建
 
 - JDK环境变量配置 <http://jingyan.baidu.com/article/6dad5075d1dc40a123e36ea3.html>
@@ -581,7 +586,6 @@ BodyTag接口
 ```
 
 # JSP时代框架
-
 
 # 参考文献
 

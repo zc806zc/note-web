@@ -41,6 +41,11 @@ java -jar spring-boot-hello-1.0-SNAPSHOT.jar
 
 - application.yml <https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html>
 
+
+# 常见问题
+
+- 先确定java7 java8版本
+
 # Spring boot多模块部署
 
 - SpringBoot 多模块项目实践 <https://www.jianshu.com/p/59ceea4f029d>

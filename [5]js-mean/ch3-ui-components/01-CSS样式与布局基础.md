@@ -83,7 +83,7 @@ const nav = document.querySelector("[rel='js-site-navigation']")
 
 # 布局
 
-- CSS布局解决方案（终结版） https://juejin.im/entry/5aa0afd1f265da239c7aec81
+- CSS布局解决方案（终结版） <https://juejin.im/entry/5aa0afd1f265da239c7aec81>
 - 企业网站综合布局实战 <https://www.imooc.com/learn/147>
 - 圣杯与双飞翼
 
@@ -204,10 +204,13 @@ lg 大屏幕|大桌面显示器，大于等于 1200px
 - postcss -> css in js
 - sass | less
 
-  - sass与scss <http://sass.bootcss.com/docs/scss-for-sass-users/>
-  - sass进阶 <https://www.imooc.com/learn/436>
+# Sass方案
+
+- sass与scss <http://sass.bootcss.com/docs/scss-for-sass-users/>
+- sass进阶 <https://www.imooc.com/learn/436>
 
 ```javascript
+// scss 与sass
 SCSS 是 Sass 3 引入新的语法，
 其语法完全兼容 CSS3，并且继承了 Sass 的强大功能。
 也就是说，任何标准的 CSS3 样式表都是具有相同语义的有效的 SCSS 文件。
