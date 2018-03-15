@@ -83,6 +83,7 @@ const nav = document.querySelector("[rel='js-site-navigation']")
 
 # 布局
 
+- 各种常见布局实现+知名网站实例分析 <https://juejin.im/post/5aa252ac518825558001d5de>
 - CSS布局解决方案（终结版） <https://juejin.im/entry/5aa0afd1f265da239c7aec81>
 - 企业网站综合布局实战 <https://www.imooc.com/learn/147>
 - 圣杯与双飞翼

@@ -50,6 +50,9 @@
 # JS|HTML|CSS编程规范
 
 - airbnb(首选) <https://github.com/airbnb/javascript>
+
+  - 中文 <https://github.com/yuche/javascript>
+
 - code-guide(推荐) <https://github.com/mdo/code-guide>
 - standard(推荐) <https://github.com/standard/standard>
 - TGuide(全面) <http://tguide.qq.com/main/index.htm>
