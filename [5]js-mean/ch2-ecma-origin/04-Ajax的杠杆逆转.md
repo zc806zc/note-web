@@ -67,7 +67,7 @@ apiService.get('/user/12345')
 
 # JSONP
 
-```javascript
+```
 // jQuery获取json
 $(".message").html(JSON.stringify(json));
 $.getJSON(‘http://example/service/addresses/home/1’,
@@ -214,6 +214,21 @@ socket.onerror = function () {
 socket.onclose = function () {
     console.log("Connection closed.");
 };
+```
+
+# JSONP
+
+```js
+// demo
+$.ajax({
+  // async: false,
+  url: "http://www.runoob.com/try/ajax/jsonp.php?jsoncallback=?",
+  type: "GET",
+  dataType: "jsonp",
+  data: null,
+  success: function (json) {
+  }
+});
 ```
 
 # 多个Ajax, 异步

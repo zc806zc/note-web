@@ -7,6 +7,9 @@
   - <https://juejin.im/user/57280c611532bc0062874823>
 
 - 启动 banner 定制 <https://juejin.im/post/5a9ff0576fb9a028d4442330>
+  - http://network-science.de/ascii/
+  - http://www.ascii-art-generator.org/
+  - ...
 
 # Spring Boot配置
 

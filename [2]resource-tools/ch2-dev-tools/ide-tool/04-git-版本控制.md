@@ -30,6 +30,10 @@ git push -u origin master
 
 # clone
 git clone -b master xxx
+
+# 追加提交
+git add sample.txt
+git commit --amend
 ```
 
 # SVN
