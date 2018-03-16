@@ -27,6 +27,7 @@
   - 讨论 <https://www.zhihu.com/question/50203775/answer/119850003>
 
 - cmsblogs <http://cmsblogs.com/>
+
 - blogjava <http://www.blogjava.net/>
 
 - 博之阅 <http://www.bozhiyue.com/index.html>
@@ -70,6 +71,8 @@
 
 # 教程 && 资源
 
+- Java资源大全中文版 <https://github.com/jobbole/awesome-java-cn>
+- 各种资源收藏集的集合 - 纯洁的微笑 <https://gitee.com/ityouknow/awesome-list>
 - mkyong <http://www.mkyong.com/>
 - howtodoinjava <https://howtodoinjava.com/>
 - 易佰 <http://www.yiibai.com/spring/>

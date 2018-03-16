@@ -24,6 +24,7 @@
 
 # HTTP和HTTPS的差异
 
+- 浅谈推进全站HTTPS项目-工程篇 https://juejin.im/post/5aa7327051882510fd3f488a
 - 九个问题从入门到熟悉HTTPS
 
   - <https://juejin.im/post/5a2ff29c6fb9a045132aac5a>

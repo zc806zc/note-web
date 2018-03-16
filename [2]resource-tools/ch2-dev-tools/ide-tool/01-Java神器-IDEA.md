@@ -27,6 +27,7 @@ Ctrl+Shift+F9
 - dao | entity 右键自动生成(或者直接lombok)
 - 右键将文件标记为source root
 - 右键add as library
+- 将node_modules排除 https://www.cnblogs.com/chengwb/p/6183440.html
 
 # 常用配置
 
