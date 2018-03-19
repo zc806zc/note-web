@@ -1,7 +1,7 @@
 # 图书
 
 - @Author 吴亚峰 于复兴 索伊娜
-- 源码
+- 源码 链接：<http://pan.baidu.com/s/1c2im3RU> 密码：fkd0
 
 # 常见3D开发技巧
 

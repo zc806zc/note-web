@@ -6,6 +6,7 @@
 # 代码库
 
 - <https://github.com/PacktPublishing>
+- 开源中国GVP <https://gitee.com/gvp>
 
 # 学习库
 
