@@ -15,6 +15,11 @@
   - <http://codepen.io/wouterk21/pen/pggKNE>
   - <https://github.com/cssmagic/CSS-Secrets>
 
+- You-need-to-know-css(NICE) <https://github.com/l-hammer/You-need-to-know-css>
+
+  - CSS Tricks for web developer
+  - <https://l-hammer.github.io/You-need-to-know-css/>
+
 - you don't need js
 
   - <https://github.com/you-dont-need/You-Dont-Need-JavaScript>
@@ -105,7 +110,7 @@ rel='stylesheet' type='text/css'>
 
 # CSS3形状/视觉效果
 
-- 那些有趣的codepen项目 https://juejin.im/post/5aa24cd8f265da238532754c 
+- 那些有趣的codepen项目 <https://juejin.im/post/5aa24cd8f265da238532754c>
 - 自适应的椭圆/平行四边形/菱形图片
 
 - 切角效果/梯形标签页

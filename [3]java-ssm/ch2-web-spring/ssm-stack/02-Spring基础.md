@@ -22,3 +22,5 @@
 - Spring Data Redis
 
 # Spring生态圈
+
+- Spring Roo 快速生成项目原型和骨架

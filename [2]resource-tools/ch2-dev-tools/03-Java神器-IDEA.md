@@ -28,6 +28,8 @@ Ctrl+Shift+F9
 - 右键将文件标记为source root
 - 右键add as library
 - 将node_modules排除 https://www.cnblogs.com/chengwb/p/6183440.html
+- 设置为不提示Could not autowire (提示级别) https://www.cnblogs.com/jamieYu/p/5681886.html
+  - 将spring 的severity的值设置为"warning"
 
 # 常用配置
 
@@ -80,8 +82,8 @@ tppabs="h[^"]*"
 - https://www.cnblogs.com/yjmyzz/p/use-devtools-of-spring-boot-framework.html
 
 ```shell
-IDEA设置
-make project automatically
+IDEA设置 默认项一定要勾上此项，否则无效
+Build project automatically
 ```
 
 # 常用快捷键

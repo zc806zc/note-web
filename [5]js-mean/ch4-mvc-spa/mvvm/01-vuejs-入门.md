@@ -367,6 +367,11 @@ Nuxt 是一个基于 Vue 生态的更高层的框架，
 allowSyntheticDefaultImports // ES 模块语法
 ```
 
+# Vue渲染引擎
+
+- Vue 模板编译原理 https://juejin.im/post/5aaa506ff265da239236131b
+
+  - 模板字符串 -> element ASTs（解析器） -> 静态节点标记 -> 代码字符串化(代码生成)
 
 # 路由
 
