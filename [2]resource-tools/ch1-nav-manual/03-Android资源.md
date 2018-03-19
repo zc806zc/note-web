@@ -1,5 +1,7 @@
 # 安卓资源
 
+- <https://github.com/jobbole/awesome-android-cn>
+
 # Architect
 
 - <https://github.com/android10/Android-CleanArchitecture>

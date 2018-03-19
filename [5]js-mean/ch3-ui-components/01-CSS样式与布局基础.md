@@ -1,9 +1,14 @@
 # CSS
 
-- API速查表 <http://www.css88.com/book/css/>
-- [译]这些 CSS 命名规范将省下你大把调试时间 <https://juejin.im/post/5a6c5881518825733201daf7>
+- CSS-API速查表
 
-  - 不要用数据属性（data attributes）作为 JavaScript 钩子
+  - <http://www.css88.com/book/css/>
+
+- CSS规范
+
+  - 这些CSS 命名规范将省下你大把调试时间 <https://juejin.im/post/5a6c5881518825733201daf7>
+
+    - 不要用数据属性（data attributes）作为 JavaScript 钩子
 
 ```html
 <div class="site-navigation" rel="js-site-navigation"></div>
@@ -11,6 +16,8 @@
 const nav = document.querySelector("[rel='js-site-navigation']")  
 </script>
 ```
+
+# CSS基础
 
 - CSS查漏补缺 <https://segmentfault.com/a/1190000006242814>
 
@@ -25,32 +32,44 @@ const nav = document.querySelector("[rel='js-site-navigation']")
 
   - 伪类 <http://www.runoob.com/css/css-pseudo-classes.html>
   - 伪元素 <http://www.runoob.com/css/css-pseudo-elements.html>
-
-    - <https://juejin.im/post/5a0029a45188254dd935cc40>
-    - 计数器
-    - 梯形标签页 <http://dabblet.com/gist/1345dc9399dc8e794502>
-
-- 打印优化
-
-```javascript
-.page-break    { page-break-before: always; }
-/* put this class into your main.css file with "display:none;" */
-```
+  - <https://juejin.im/post/5a0029a45188254dd935cc40>
+  - 计数器
+  - 梯形标签页 <http://dabblet.com/gist/1345dc9399dc8e794502>
 
 ![](/static/img/css/css-books.jpg)
 
-# 盒模型
+# CSS实用工具集
 
-- display + position + float
+- 30-seconds-of-css <https://atomiks.github.io/30-seconds-of-css/#box-sizing-reset>
+- 常用CSS集
 
-# 理解多层嵌套div
+  - 148个资源让你成为CSS专家 <https://segmentfault.com/a/1190000006689923>
+  - 月报常用CSS <https://github.com/jsfront/src/blob/master/css.md>
+  - 小型CSS库 <https://juejin.im/post/5a31f53f51882555cc41deda>
+  - CSS清单 <https://juejin.im/post/59ae076b6fb9a0248e5ce689>
 
-- 滚动条
+    - 抖动分析 <https://juejin.im/entry/59ae15126fb9a0247d4f6d16>
+    - A Cross-end HTML5 Game <https://github.com/hiloteam/Hilo>
+
+- 助手类CSS
+
+  - <https://juejin.im/entry/59af8eb8f265da247a15c27f>
+  - Shed.css
+  - Tachyons 快速加载，高可读性，和100%响应式界面
+  - Basscss 人性化命名
+  - Beard 具有争议的helper类
+  - shards-ui <https://github.com/DesignRevision/shards-ui>
+
+    - 免费的现在UI工具包 Bootstrap 4 + SCSS
 
 # CSS权重
 
 - id声明会覆盖class
 - class中的排序不重要,表中的顺序很重要
+
+# 盒模型
+
+- display + position + float
 
 # BFC
 
@@ -80,6 +99,10 @@ const nav = document.querySelector("[rel='js-site-navigation']")
 - 元素溢出问题的解决
 
 ![](https://user-gold-cdn.xitu.io/2018/1/27/161373686b854aac?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+
+# 理解多层嵌套的div
+
+- 滚动条需求
 
 # 布局
 
@@ -159,6 +182,10 @@ overflow: hidden; // 触发生成BFC,使浮动元素也参与计算
 - <http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool>
 - <http://www.ruanyifeng.com/blog/2015/07/flex-examples.html>
 
+# Grid
+
+- 网格布局
+
 # 响应式布局
 
 - 阈值
@@ -197,18 +224,29 @@ lg 大屏幕|大桌面显示器，大于等于 1200px
 
 # 响应式布局再思考
 
-- 不见得比固定布局强
-- 有些方面绝对还是传统布局好
+- 响应式布局是有成本的，而且大多数时候不是必需的
+- 不见得比固定布局更好,有些方面绝对还是传统布局好
 
 # 预处理与后处理语言
 
 - postcss -> css in js
 - sass | less
 
+> 并不想多出一门CSS层面的编程语言
+
 # Sass方案
 
 - sass与scss <http://sass.bootcss.com/docs/scss-for-sass-users/>
 - sass进阶 <https://www.imooc.com/learn/436>
+
+- Sass和Compass必备技能之Compass(@deprecated) <https://www.imooc.com/learn/371>
+
+- sass样式库
+
+  - sassCore <https://github.com/marvin1023/sassCore>
+  - bourbon <https://github.com/thoughtbot/bourbon>
+
+    - A Lightweight Sass Tool Set
 
 ```javascript
 // scss 与sass
@@ -218,89 +256,6 @@ SCSS 是 Sass 3 引入新的语法，
 另外，SCSS 还能识别大部分 CSS hacks（一些 CSS 小技巧）和特定于浏览器的语法，
 例如：古老的 IE filter 语法。
 ```
-
-# CSS模块化
-
-- styled-components
-
-  - <https://www.styled-components.com/>
-
-- 开源库
-
-  - emotion <https://github.com/emotion-js/emotion>
-
-- web components <http://css-tricks.com/modular-future-web-components//>
-
-  - <https://github.com/ruanyf/css-modules-demos> 示例
-  - <https://github.com/css-modules/css-modules/blob/master/docs/get-started.md>
-  - <https://github.com/ruanyf/webpack-demos> (webpack教程)
-
-```javascript
-// 并不想多出一门编程语言
-
-从最早的Less、SASS
-到后来的 PostCSS
-再到最近的 CSS in JS
-
-Webpack 的css-loader插件
-
-// 局部作用域
-<h1 class="_3zyde4l1yATCOkgn-DBWEL"> // 编译成一个哈希字符串
-  Hello World
-</h1>
-
-._3zyde4l1yATCOkgn-DBWEL {
-  color: red;
-}
-
-// 全局作用域
-.title {
-  color: red;
-}
-
-:global(.title) {
-  color: green;
-}
-
-// 定制哈希类名
-
-// Class 的组合
-.className {
-  background-color: blue;
-}
-
-.title {
-  composes: className;
-  color: red;
-}
-
-<h1 class="_2DHwuiHWMnKTOYG45T0x34 _10B-buq6_BEOTOl9urIjf8">
-
-// 输入其他模块
-.title {
-  composes: className from './another.css';
-  color: red;
-}
-
-// 输入变量
-npm install --save postcss-loader postcss-modules-values
-
-@value blue: #0c77f8;
-@value red: #ff0000;
-@value green: #aaf200;
-
-@value colors: "./colors.css";
-@value blue, red, green from colors;
-
-.title {
-  color: red;
-  background-color: blue;
-}
-```
-
-# POSTCSS
-
-- <https://www.postcss.com.cn/>
 
 # CSS命名法
 
@@ -336,3 +291,41 @@ npm install --save postcss-loader postcss-modules-values
   }
 }
 ```
+
+# CSS模块化
+
+- Less、SASS -> PostCSS -> CSS in JS
+- styled-components
+
+  - <https://www.styled-components.com/>
+
+- 开源库
+
+  - emotion <https://github.com/emotion-js/emotion>
+
+- web components <http://css-tricks.com/modular-future-web-components//>
+
+  - <https://github.com/ruanyf/css-modules-demos> 示例
+  - <https://github.com/css-modules/css-modules/blob/master/docs/get-started.md>
+  - <https://github.com/ruanyf/webpack-demos> (webpack教程)
+
+```javascript
+// 局部作用域
+<h1 class="_3zyde4l1yATCOkgn-DBWEL">
+  Hello World
+</h1>
+
+._3zyde4l1yATCOkgn-DBWEL {
+  color: red;
+}
+```
+
+# POSTCSS
+
+- <https://www.postcss.com.cn/>
+
+# 封装样式库
+
+- <http://ghmagical.com/article/page/id/aqy7vR3DegbG>
+- 基于less <https://github.com/ecomfe/est>
+- 实用css库 <https://github.com/marvin1023/sassCore>

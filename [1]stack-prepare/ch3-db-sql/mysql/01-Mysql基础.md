@@ -1,8 +1,9 @@
 # MySQL
 
-- 教程
+- 学习资源
 
   - MySQL总结 <http://novoland.github.io/%E6%95%B0%E6%8D%AE%E5%BA%93/2014/07/26/MySQL%E6%80%BB%E7%BB%93.html>
+  - <https://github.com/jobbole/awesome-mysql-cn>
 
 - 图形化工具
 

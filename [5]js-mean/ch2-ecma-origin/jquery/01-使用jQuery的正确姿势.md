@@ -54,6 +54,7 @@ for (let i = 0; i < 1e7; i++) {}
 
 > DOM操作其实是非常消耗资源的一个过程，而往往很多人都喜欢错误地使用jQuery
 
+- 前端开发者都应知道的 jQuery 小技巧 <https://github.com/jobbole/jquery-tips-everyone-should-know>
 - jQuery的编码标准和最佳实践 <http://www.css88.com/archives/4836>
 - <http://www.jb51.net/article/47639.htm>
 - 规范

@@ -1,6 +1,7 @@
 # C++基础
 
 - <http://www.yiibai.com/cplusplus/>
+- <https://github.com/jobbole/awesome-cpp-cn>
 
 # C++与STL
 

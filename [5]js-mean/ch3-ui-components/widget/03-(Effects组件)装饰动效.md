@@ -39,6 +39,13 @@
 - 易佰教程等教程类
 - kindle
 
+# 打印优化
+
+```javascript
+.page-break    { page-break-before: always; }
+/* put this class into your main.css file with "display:none;" */
+```
+
 # 文本截断
 
 - css
