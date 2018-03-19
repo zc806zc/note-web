@@ -218,7 +218,7 @@ socket.onclose = function () {
 
 # JSONP
 
-```js
+```javascript
 // demo
 $.ajax({
   // async: false,
@@ -633,3 +633,9 @@ axios.get('/user/12345', {
 // cancel the request
 cancel();
 ```
+
+# rapid.js
+
+- <https://github.com/rapidjs/rapid.js>
+
+> An ORM-like Interface and a Router For Your API Requests

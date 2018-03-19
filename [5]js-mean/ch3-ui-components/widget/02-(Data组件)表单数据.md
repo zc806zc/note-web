@@ -34,6 +34,42 @@ C产品我用第三方登陆了，竟然还让我绑定手机号，这不是欺�
 - <http://www.jq22.com/webqd2853> - 滑动验证
 - 简单滑动验证 <http://www.jq22.com/webqd1933>
 
+```javascript
+function slide(range, conSlide, obj) {
+     var rangeValue;
+     var flag = false;
+     if (obj.max) {
+         range.max = obj.max;
+     }
+     range.onmousedown = function() {
+         flag = true;
+         if (flag) {
+             range.onmousemove = function() {
+                 rangeValue = range.value;
+                 conSlide.style.left = rangeValue + "px";
+             }
+         }
+     }
+
+     range.onmouseup = function() {
+         flag = false;
+         range.onmousemove = null;
+         if (obj.err) {
+             if (rangeValue >= (232 - obj.err) && rangeValue <= (232 + obj.err)) {
+                 alert("验证成功");
+             }
+         } else {
+             if (rangeValue >= 227 && rangeValue <= 237) {
+                 alert("验证成功");
+             }
+         }
+
+         conSlide.style.left = "0px";
+         range.value = 0;
+     }
+ }
+```
+
 --------------------------------------------------------------------------------
 
 # 按钮
@@ -51,17 +87,6 @@ C产品我用第三方登陆了，竟然还让我绑定手机号，这不是欺�
 ![](http://img.blog.csdn.net/20160624150523029)
 
 ![](http://img.blog.csdn.net/20160624150558076)
-
-# 表单
-
-- 下拉框
-- 搜索
-- 验证(滑动验证)
-- 行内编辑
-- 联动
-- 上传
-
-# 按钮
 
 - btn-css-generator <http://www.bestcssbuttongenerator.com/#/8>
 - 防止表单重复提交的loading
@@ -325,10 +350,14 @@ var daochu = (function() {
 
 --------------------------------------------------------------------------------
 
-# md5
+# 加密处理
 
-- md5.js | jquery-md5
+- md5.js | jquery-md5(@deprecated)
 - <http://www.jq22.com/webqd1506>
+
+- ccxt <https://github.com/ccxt/ccxt>
+
+> A JavaScript / Python / PHP cryptocurrency trading library with support for more than 90 bitcoin/altcoin exchanges
 
 --------------------------------------------------------------------------------
 
@@ -398,43 +427,59 @@ new Date().Format("yyyy-MM-dd E HH:mm:ss")
 
 # 上传
 
-- jQuery-File-Upload <https://github.com/blueimp/jQuery-File-Upload>
+- uppy(推荐) <https://github.com/transloadit/uppy>
+
+  - The next open source file uploader for web browsers
+
+- jQuery-File-Upload
+
 - Uploadify
 
+- jQuery-File-Upload | fex webuploader(兼容性好)
+
+  - <https://github.com/blueimp/jQuery-File-Upload>
+  - <https://blueimp.github.io/jQuery-File-Upload/>
+  - <http://fex.baidu.com/webuploader/>
+
+- dropzone
+
+  - <https://github.com/enyo/dropzone>
+
+- fine-uploader
+
+  - <https://github.com/FineUploader/fine-uploader>
+
+- 本地input选择图片实时显示
+
+  - createObjectURL <http://www.jq22.com/webqd2884>
+  - FileReader <http://www.jq22.com/webqd2885>
+  - 转base64显示 <http://www.jq22.com/webqd2806>
+  - 使用ie滤镜实现ie低版本图片预览功能 <http://www.jq22.com/webqd2344>
+  - 带剪裁 <http://www.jq22.com/webqd1198>
+
 ```javascript
-function slide(range, conSlide, obj) {
-     var rangeValue;
-     var flag = false;
-     if (obj.max) {
-         range.max = obj.max;
-     }
-     range.onmousedown = function() {
-         flag = true;
-         if (flag) {
-             range.onmousemove = function() {
-                 rangeValue = range.value;
-                 conSlide.style.left = rangeValue + "px";
-             }
-         }
-     }
+$('.a').change(function(e) {
+    var _URL = window.URL || window.webkitURL;
+    var file, img;
+    if ((file = this.files[0])) {
+        img = new Image();
+        img.onload = function() {
+            $('.img').attr('src', this.src);
+            console.log(this.width)
+        };
+        img.src = _URL.createObjectURL(file);
+    }
+})
 
-     range.onmouseup = function() {
-         flag = false;
-         range.onmousemove = null;
-         if (obj.err) {
-             if (rangeValue >= (232 - obj.err) && rangeValue <= (232 + obj.err)) {
-                 alert("验证成功");
-             }
-         } else {
-             if (rangeValue >= 227 && rangeValue <= 237) {
-                 alert("验证成功");
-             }
-         }
+if (window.FileReader) {
+    var reader = new FileReader();
+    var _file = this.files[0];
 
-         conSlide.style.left = "0px";
-         range.value = 0;
-     }
- }
+    reader.readAsDataURL(_file);
+    reader.onload = function() {
+        preImg.setAttribute('src', this.result);
+    }
+}
 ```
 
 --------------------------------------------------------------------------------
@@ -468,11 +513,17 @@ $('tr td').on('click', function() {
 
 # 搜索
 
-- 百度搜索结果 <http://www.jq22.com/webqd2961>
+- list.js <https://github.com/javve/list.js>
 
-- 豆瓣图书搜索功能 <http://www.jq22.com/webqd2702>
+> The perfect library for adding search, sort, filters and flexibility to tables, lists and various HTML elements. Built to be invisible and work on existing HTML.
 
-- 搜索 <http://www.jq22.com/webqd1354>
+- mark.js 正则高亮 <https://github.com/julmot/mark.js/>
+
+- 搜索示例
+
+  - 百度搜索结果 <http://www.jq22.com/webqd2961>
+  - 豆瓣图书搜索功能 <http://www.jq22.com/webqd2702>
+  - 搜索 <http://www.jq22.com/webqd1354>
 
 ```javascript
 /*
@@ -520,56 +571,6 @@ function xiaolong(json) {
   - <https://botlist.co/>
 
 ![](http://img.blog.csdn.net/20160624154656266)
-
---------------------------------------------------------------------------------
-
-# 上传
-
-- jQuery-File-Upload | fex webuploader(兼容性好)
-
-  - <https://blueimp.github.io/jQuery-File-Upload/>
-  - <http://fex.baidu.com/webuploader/>
-
-- dropzone
-
-  - <https://github.com/enyo/dropzone>
-
-- fine-uploader
-
-  - <https://github.com/FineUploader/fine-uploader>
-
-- 本地input选择图片实时显示
-
-  - createObjectURL <http://www.jq22.com/webqd2884>
-  - FileReader <http://www.jq22.com/webqd2885>
-  - 转base64显示 <http://www.jq22.com/webqd2806>
-  - 使用ie滤镜实现ie低版本图片预览功能 <http://www.jq22.com/webqd2344>
-  - 带剪裁 <http://www.jq22.com/webqd1198>
-
-```javascript
-$('.a').change(function(e) {
-    var _URL = window.URL || window.webkitURL;
-    var file, img;
-    if ((file = this.files[0])) {
-        img = new Image();
-        img.onload = function() {
-            $('.img').attr('src', this.src);
-            console.log(this.width)
-        };
-        img.src = _URL.createObjectURL(file);
-    }
-})
-
-if (window.FileReader) {
-    var reader = new FileReader();
-    var _file = this.files[0];
-
-    reader.readAsDataURL(_file);
-    reader.onload = function() {
-        preImg.setAttribute('src', this.result);
-    }
-}
-```
 
 --------------------------------------------------------------------------------
 

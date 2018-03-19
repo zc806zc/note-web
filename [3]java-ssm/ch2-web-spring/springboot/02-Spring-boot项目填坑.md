@@ -19,7 +19,9 @@
 # 开源项目
 
 - Spring Boot 开源项目 <https://juejin.im/post/5a9c8b93518825557a2e6f89>
-
+- guns <https://gitee.com/naan1993/guns>
+- iBase4J <https://gitee.com/iBase4J/iBase4J>
+- bootdo <https://gitee.com/lcg0124/bootdo>
 - 前后端分离的人力资源管理系统 SpringBoot+Vue <https://github.com/lenve/vhr>
 - solo <https://github.com/b3log/solo>
 - Java博客系统 Docker+SpringBoot+Mybatis+thymeleaf <https://github.com/ZHENFENG13/My-Blog>
@@ -27,7 +29,6 @@
 - 快速搭建企业后台管理系统 <https://github.com/hs-web/hsweb-framework>
 
 - 博客 Vue + Spring Boot <https://github.com/lenve/VBlog>
-
 
 - springboot-plus(推荐) springboot + layui <https://gitee.com/xiandafu/springboot-plus>
 
@@ -42,7 +43,6 @@
   - <https://github.com/coderjas/springboot-study>
 
 - springboot mybatis mysql后台商城 h5 小程序 <https://gitee.com/JiaGou-XiaoGe/webappchat>
-
 
 - 其他
 
