@@ -1,100 +1,22 @@
-# Vue项目组织结构
-
-```
-├─build
-├─config
-├─src
-│  ├─assets
-│  │  ├─icon-font
-│  │  ├─img
-│  │  └─scss 公用样式
-│  │      └─theme
-│  ├─components
-│  │  ├─appContent
-│  │  │  └─src
-│  ├─directives 自定义指令(drag)
-│  ├─filter 格式过滤转化(日期格式)
-│  ├─nodeTalk (socket.io)
-│  ├─router
-│  │  ├─子系统1
-│  │  └─子系统2
-│  │  └─...
-│  ├─store  (actions mutation...)
-│  │  └─modules
-│  │      ├─design
-│  │      │  ├─get
-│  │      │  ├─set
-│  │      │  └─sub
-│  │      ├─global
-│  ├─tool 常用方法
-│  │  └─browser (IE版本)
-│  └─views
-│      ├─common (由组件构成的公共页)
-│      │  ├─approve
-│      │  ├─borrow
-│      ├─consult (不同业务来划分)
-└─static 静态资源 (socket.io)
-    ├─face (emoji的小图)
-    └─image
-```
-
 # UI框架
 
 - 后台管理系统
 
-  - element UI | iview | vux
+  - element UI
+  - iview
   - vue-element-admin <https://github.com/PanJiaChen/vue-element-admin>
+
+- 移动端
+
+  - vux
+  - mintUI
+  - vant <https://github.com/youzan/vant>
+
 - quasar <https://github.com/quasarframework/quasar>
+
   - 利用 Vue，通过一套代码搞定响应式网站、PWA、hybrid 移动应用以及 Electron app
 
 - Vuetify <https://github.com/vuetifyjs/vuetify>
-
-# 一般要用到的组件
-
-```shell
-areaPicker
-autoComplete
-
-back 返回按钮
-chat 聊天的输入框
-
-cropper 图片裁剪
-datepicker
-
-
-dialog
-
-editor
-IndexedDB
-
-layout 24分栏
-
-loading
-message
-
-pagination
-pdf
-preview
-
-qrcode
-
-retrive # 检索 弹出弹框搜索
-
-table
-tree
-
-upload
-video
-
-
-...
-
-# 占位元素
-开发中
-暂无评论
-
-
-````
 
 # 第三方组件方案
 
@@ -114,6 +36,7 @@ video
 
 # 实战学习项目
 
+- vue-cnode <https://github.com/xjh22222228/vue-cnode>
 - 使用vue2.0实现购物车和地址选配功能 <https://www.imooc.com/video/14039>
 - 今日头条 <https://github.com/cd-dongzi/vue-project>
 - 基于vue的简单流程图开发
