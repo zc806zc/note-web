@@ -36,6 +36,7 @@
 
 # 实战学习项目
 
+- vue.js + bulma <https://github.com/vue-bulma/vue-admin>
 - vue-cnode <https://github.com/xjh22222228/vue-cnode>
 - 使用vue2.0实现购物车和地址选配功能 <https://www.imooc.com/video/14039>
 - 今日头条 <https://github.com/cd-dongzi/vue-project>

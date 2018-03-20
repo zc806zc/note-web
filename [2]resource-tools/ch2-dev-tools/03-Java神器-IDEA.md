@@ -24,12 +24,13 @@ Ctrl+Shift+F9
 
 # 常用操作
 
-- dao | entity 右键自动生成(或者直接lombok)
+- dao | entity 右键自动生成 (或者直接lombok)
 - 右键将文件标记为source root
 - 右键add as library
 - 将node_modules排除 https://www.cnblogs.com/chengwb/p/6183440.html
 - 设置为不提示Could not autowire (提示级别) https://www.cnblogs.com/jamieYu/p/5681886.html
   - 将spring 的severity的值设置为"warning"
+- maven修改一下settings.xml 因为IDEA有内置的
 
 # 常用配置
 
