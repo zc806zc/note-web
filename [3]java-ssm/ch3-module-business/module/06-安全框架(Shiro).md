@@ -1,15 +1,3 @@
-# 验证码
-
-- <https://www.imooc.com/video/5776>
-
-# 邮箱验证
-
-- <https://www.imooc.com/video/14263>
-
-# 微信授权登录
-
-- <https://www.imooc.com/video/14024>
-
 # 单点登录 SSO(Single Sign On)
 
 - <https://www.imooc.com/video/12079>
@@ -31,7 +19,26 @@
 
 - <http://www.yiibai.com/shiro/>
 
+  - 认证
+  - 授权
+  - 会话管理
+  - 加密
+
+![](http://www.yiibai.com/uploads/images/201703/1403/660170344_46272.png)
+
 # 权限管理
 
 - <https://www.imooc.com/video/11413>
 - <https://www.imooc.com/video/11427>
+
+# 验证码
+
+- <https://www.imooc.com/video/5776>
+
+# 邮箱验证
+
+- <https://www.imooc.com/video/14263>
+
+# 微信授权登录
+
+- <https://www.imooc.com/video/14024>
