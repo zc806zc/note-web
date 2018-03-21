@@ -1,8 +1,10 @@
 # AngularJS
 
+- awesome-angular <https://github.com/gdi2290/awesome-angular>
 - 开发
 
   - 浏览器插件
+
     - Batarang
     - ng-inspector for AngularJS
 

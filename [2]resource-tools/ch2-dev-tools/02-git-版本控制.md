@@ -76,6 +76,7 @@ git stash show -p stash@{0} # 显示修改的详细内容
 
 # github
 
+- github-cheat-sheet <https://github.com/tiimgreen/github-cheat-sheet>
 - <https://juejin.im/entry/59c47971f265da065a63c50a>
 - <https://juejin.im/entry/599eb3836fb9a024732193df>
 - github若干技巧 <https://juejin.im/entry/5a056dc8518825188e51646e>
@@ -174,4 +175,5 @@ app
    |__node_modules
    |__package.json
    |__webpack.config.js
-````
+`
+```

@@ -1,5 +1,6 @@
 # C++基础
 
+- awesome-cpp <https://github.com/fffaraz/awesome-cpp>
 - <http://www.yiibai.com/cplusplus/>
 - <https://github.com/jobbole/awesome-cpp-cn>
 

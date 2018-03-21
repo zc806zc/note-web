@@ -1,6 +1,8 @@
 # 安卓资源
 
+- Android_Data <https://github.com/Freelander/Android_Data>
 - <https://github.com/jobbole/awesome-android-cn>
+- awesome-android <https://github.com/JStumpp/awesome-android>
 
 # Architect
 

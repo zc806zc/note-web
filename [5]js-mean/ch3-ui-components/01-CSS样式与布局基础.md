@@ -40,6 +40,7 @@ const nav = document.querySelector("[rel='js-site-navigation']")
 
 # CSS实用工具集
 
+- css-protips <https://github.com/AllThingsSmitty/css-protips>
 - 30-seconds-of-css <https://atomiks.github.io/30-seconds-of-css/#box-sizing-reset>
 - 常用CSS集
 
