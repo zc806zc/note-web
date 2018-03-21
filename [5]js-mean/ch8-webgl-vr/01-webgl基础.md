@@ -14,8 +14,8 @@
 
 ```javascript
 // window的devicePixelRatio属性
-1表示标准显示屏幕
-2表示视网膜显示屏
+1 表示标准显示屏幕
+2 表示视网膜显示屏
 
 但这项技术只适合较少密集图形操作的时候
 
@@ -88,8 +88,8 @@ webVR = web + VR
 
 - 软件
 
-```javascript
-3Dmax 2009
+```
+3D max 2009
 ```
 
 - WebGL与Canvas的暧昧

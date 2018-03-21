@@ -91,8 +91,6 @@ p {
 
 - 一组简单可爱的css动效 <https://github.com/jonsuh/hamburgers>
 
-# 动画
-
 - 插件
 
   - animate.css | A+
@@ -105,6 +103,11 @@ p {
   - popmotion <https://github.com/Popmotion/popmotion>
 
     - Create unique animations and interactions with tweens, physics and input tracking.
+
+- 页面滚动效果
+
+  - wow
+  - aos <https://github.com/michalsnik/aos>
 
 --------------------------------------------------------------------------------
 
