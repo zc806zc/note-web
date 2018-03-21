@@ -81,10 +81,12 @@ gulp.task("webpack", function(callback) {
 
   - <https://www.imooc.com/article/12697>
 
+- <https://github.com/b5156/webpack-multiple-page-boilerplate>
+
 
 # neutrino-dev
 
 > Neutrino is a companion tool which lets you build web and Node.js applications with shared presets or configurations. It intends to make the process of initializing and building projects much simpler by providing minimal development dependencies.
 
-- https://github.com/mozilla-neutrino/neutrino-dev  
-- https://neutrino.js.org/
+- <https://github.com/mozilla-neutrino/neutrino-dev>
+- <https://neutrino.js.org/>
