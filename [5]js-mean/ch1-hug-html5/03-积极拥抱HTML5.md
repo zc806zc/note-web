@@ -27,7 +27,7 @@
 
 - 腻子脚本
 
-  - <https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills>
+  - 方案 <https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills>
   - 腻子脚本 通过 createElement('header')的方式 让IE支持HTML5
 
 ```javascript

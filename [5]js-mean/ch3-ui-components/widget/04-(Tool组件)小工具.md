@@ -36,6 +36,8 @@
 # 阅读器
 
 - pdf.js
+- <https://github.com/MrRio/jsPDF>
+- <https://github.com/devongovett/pdfkit>
 
 --------------------------------------------------------------------------------
 

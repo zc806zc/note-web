@@ -72,6 +72,12 @@ function slide(range, conSlide, obj) {
 
 --------------------------------------------------------------------------------
 
+# URL操作库
+
+- URI.js <https://github.com/medialize/URI.js/>
+
+--------------------------------------------------------------------------------
+
 # 按钮
 
 - loading按钮(提交按钮)
@@ -242,6 +248,10 @@ function praise(num, obj) {
 
 # 表格
 
+- 数据表格排行 <https://jspreadsheets.com/>
+- handsontable <https://github.com/handsontable/handsontable>
+- jsgrid <https://github.com/tabalinas/jsgrid>
+- dataTables
 - 最好看的表格 <https://colorlib.com/wp/css3-table-templates/>
 
   - Crisp table <http://codepen.io/stursby/pen/HdiJh>
@@ -300,6 +310,10 @@ function praise(num, obj) {
 ![](http://img.blog.csdn.net/20160624154018542)
 
 ![](http://img.blog.csdn.net/20160624154027476)
+
+# 时间轴
+
+- TimelineJS <https://github.com/NUKnightLab/TimelineJS>
 
 --------------------------------------------------------------------------------
 
