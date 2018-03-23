@@ -19,6 +19,7 @@
 # 开源项目
 
 - Spring Boot 开源项目 <https://juejin.im/post/5a9c8b93518825557a2e6f89>
+- paascloud-master: spring cloud + vue模拟商城(NICE) <https://github.com/paascloud/paascloud-master>
 - guns <https://gitee.com/naan1993/guns>
 - iBase4J <https://gitee.com/iBase4J/iBase4J>
 - bootdo <https://gitee.com/lcg0124/bootdo>
