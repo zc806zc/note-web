@@ -42,6 +42,7 @@ git commit --amend
 
 # git冲突合并
 
+- Git 常用操作总结 <https://juejin.im/post/5a2cdfe26fb9a0452936b07f>
 - <https://github.com/woai30231/webDevDetails/tree/master/13>
 - git merge使用不当引发的代码丢失血案 <https://juejin.im/post/5a0bdd335188254dd935f008>
 - 解决因为本地代码和远程代码冲突，导致git pull无法拉取远程代码的问题 <https://www.cnblogs.com/huanyou/p/6654813.html>
@@ -157,6 +158,7 @@ Solution
 
 # 花式操作
 
+- 如何写一个高逼格 README <https://juejin.im/post/5abc4c0d6fb9a028d3757884>
 - widows的tree命令
 
 ```shell
