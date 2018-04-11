@@ -27,9 +27,11 @@ Ctrl+Shift+F9
 - dao | entity 右键自动生成 (或者直接lombok)
 - 右键将文件标记为source root
 - 右键add as library
-- 将node_modules排除 https://www.cnblogs.com/chengwb/p/6183440.html
-- 设置为不提示Could not autowire (提示级别) https://www.cnblogs.com/jamieYu/p/5681886.html
+- 将node_modules排除 <https://www.cnblogs.com/chengwb/p/6183440.html>
+- 设置为不提示Could not autowire (提示级别) <https://www.cnblogs.com/jamieYu/p/5681886.html>
+
   - 将spring 的severity的值设置为"warning"
+
 - maven修改一下settings.xml 因为IDEA有内置的
 
 # 常用配置
@@ -55,6 +57,7 @@ Ctrl+Shift+F9
   - Facets -> Put into Output Root
 
 - 非法字符: '\ufeff' <http://blog.csdn.net/qq55214/article/details/50478081>
+
 - IntelliJ IDEA里缺少javax.servlet IntelliJ IDEA里缺少javax.servlet (add lib)
 
 # 常见问题
@@ -73,14 +76,19 @@ tppabs="h[^"]*"
 /\*tpa=.*\*/
 ```
 
-# jrabel 热部署插件
+# 热部署
 
-- 节约生命
+- 节约生命，使用热部署
+- <https://www.imooc.com/video/16066>
+
+- jRebel 热部署插件
+
 - twitter激活
 - <https://zeroturnaround.com/software/jrebel/quickstart/intellij/>
 
 - SpringBoot项目使用JRebel热部署 <http://blog.csdn.net/qq_31230915/article/details/78069148>
-- https://www.cnblogs.com/yjmyzz/p/use-devtools-of-spring-boot-framework.html
+
+- <https://www.cnblogs.com/yjmyzz/p/use-devtools-of-spring-boot-framework.html>
 
 ```shell
 IDEA设置 默认项一定要勾上此项，否则无效
