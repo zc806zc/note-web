@@ -328,5 +328,5 @@ SCSS 是 Sass 3 引入新的语法，
 # 封装样式库
 
 - <http://ghmagical.com/article/page/id/aqy7vR3DegbG>
-- 基于less <https://github.com/ecomfe/est>
+- 百度开源 基于less的mixin <https://github.com/ecomfe/est>
 - 实用css库 <https://github.com/marvin1023/sassCore>
