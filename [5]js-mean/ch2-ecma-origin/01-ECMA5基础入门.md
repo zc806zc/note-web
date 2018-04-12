@@ -18,7 +18,6 @@
 
   - JavaScript30 <https://github.com/wesbos/JavaScript30>
 
-  - 秘密花园 <http://bonsaiden.github.io/JavaScript-Garden/zh/#core.undefined>
 
   - 其他
 
