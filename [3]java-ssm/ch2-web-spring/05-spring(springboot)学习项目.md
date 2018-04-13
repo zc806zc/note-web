@@ -56,6 +56,9 @@
 
 - <https://www.imooc.com/video/7231>
 - 进阶 <https://www.imooc.com/video/7789>
+- FastBootWeixin <https://github.com/FastBootWeixin/FastBootWeixin>
+
+  - 基于SpringBoot的微信公众号快速开发框架，注解方式处理全部逻辑，重新定义公众号开发
 
 # Guns
 

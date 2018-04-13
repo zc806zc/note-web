@@ -29,6 +29,10 @@ B产品竟然不能设置密码，每次登陆都要手机验证码，这万一�
 C产品我用第三方登陆了，竟然还让我绑定手机号，这不是欺骗用户么，太不要脸了，这种方式不好；
 ```
 
+- 效果集
+
+  - 输密码遮眼睛 <https://codepen.io/dsenneff/pen/QajVxO>
+
 # 验证块
 
 - <http://www.jq22.com/webqd2853> - 滑动验证
@@ -850,3 +854,7 @@ rows.sort(function(a,b){
   - <https://ingworld.ing.com/en/2015-1Q>
 
 ![](http://img.blog.csdn.net/20160624152117988)
+
+- 效果集
+
+  - 小人转圈圈 NICE <https://codepen.io/flashingmoose/pen/vNQELw>

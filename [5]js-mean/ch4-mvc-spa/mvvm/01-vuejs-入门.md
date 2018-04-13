@@ -16,6 +16,7 @@
   - vuejs心法和技法 <http://www.cnblogs.com/kidsitcn/p/5409994.html>
 
   - Vue面试题 <https://juejin.im/post/59ffb4b66fb9a04512385402>
+  - 你应该要知道的Vue.js https://juejin.im/post/5ab2ff496fb9a028c06ab78f
 
 # 学习项目
 
