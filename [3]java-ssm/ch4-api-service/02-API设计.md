@@ -2,6 +2,7 @@
 
 - 中国大陆可用API合集 <https://juejin.im/entry/59e85ee1f265da433561dec0>
 - 免费 API 集合 <https://github.com/zhaotoday/free-apis>
+- public JSON APIs for use in web development. <https://github.com/toddmotto/public-apis>
 
 # 参考网址
 

@@ -18,6 +18,26 @@
   - Vue面试题 <https://juejin.im/post/59ffb4b66fb9a04512385402>
   - 你应该要知道的Vue.js https://juejin.im/post/5ab2ff496fb9a028c06ab78f
 
+# UI框架
+
+- 后台管理系统
+
+  - element UI
+  - iview
+  - vue-element-admin <https://github.com/PanJiaChen/vue-element-admin>
+
+- 移动端
+
+  - vux
+  - mintUI
+  - vant <https://github.com/youzan/vant>
+
+- quasar <https://github.com/quasarframework/quasar>
+
+  - 利用 Vue，通过一套代码搞定响应式网站、PWA、hybrid 移动应用以及 Electron app
+
+- Vuetify <https://github.com/vuetifyjs/vuetify>
+
 # 学习项目
 
 - vuejs2 官网讲解

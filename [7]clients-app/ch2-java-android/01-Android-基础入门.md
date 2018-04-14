@@ -37,7 +37,7 @@ setContentView(R.layout.activity_main);
 
 - 布局文件activity_main的感觉
 
-```java
+```xml
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
@@ -54,7 +54,7 @@ android:text="@string/hello_world" />
 
 - AndroidManifest.xml配置文件的感觉
 
-```java
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 package="jay.com.example.firstapp" >
