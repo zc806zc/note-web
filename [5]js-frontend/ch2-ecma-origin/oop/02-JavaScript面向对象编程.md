@@ -1,71 +1,14 @@
-# 创建对象
-
-```javascript
-var person= {}; // 少用new
-person.firstname="John";
-person.run  = function(){}; // 自动添加属性
-
-// 添加方法到对象
-function person(firstname,lastname,age,eyecolor) {
-  this.firstname=firstname;
-  this.lastname=lastname;
-  this.age=age;
-  this.eyecolor=eyecolor;
-
-  // 方法
-  this.changeName=changeName;
-  function changeName(name) {
-     this.lastname=name;
-  }
-
-}
-myFather = new person("John","Doe",50,"blue");
-myFather.changeName("Doe");
-```
-
-# 实现继承
-
-- 原型链
-- 函数伪装
-- 原型链 + 函数伪装(正确打开方式)
-
-```javascript
-// 第一部分
-function Parent(name){
-  this.color = ["red","blue"];
-  this.name = name;
-}
-Parent.prototype.talk = function(){
-  alert(this.name+"["+this.color+"]");
-}
-
-// 第二部分
-function Child(name,age){
-  //函数伪造继承
-  Parent.call(this,name);
-  this.age = age;
-}
-
-// 原型链继承
-Child.prototype = new Parent();
-
-Child.prototype.say = function(){
-  alert(this.name+","+this.color);
-}
-
-//第三部分
-var c1 = new Child("Leon",22);
-c1.color.push("green");
-c1.say();     // 输出：Leon[red,blue,green]
-var c2 = new Child("Ada",25);
-c2.say();     // 输出：Ada[red,blue]
-```
-
 # 面向对象编程指南
 
+- 摘自《javaScript面向对象编程指南(第2版)》chapter 6
 - <https://github.com/batmanimal/object-oriented-js>
+- <https://github.com/Lvqx/ooptest>
+- 分类方式
 
-- 博客 <http://www.cnblogs.com/zengFyzL/>
+  - 基于构造器或对象
+  - 是否使用原型或执行属性拷贝
+
+- <http://www.cnblogs.com/zengFyzL/>
 
 - 重新理解JS的6种继承方式 <https://www.cnblogs.com/ayqy/p/4471638.html>
 
@@ -104,24 +47,13 @@ var sub = new Sub();
 alert(sub.val);
 alert(sub.arr);
 ```
-
-
-# JS实现继承
-
-- 摘自《javaScript面向对象编程指南(第2版)》chapter 6
-- https://github.com/Lvqx/ooptest
-- 分类方式
-  - 基于构造器或对象
-  - 是否使用原型或执行属性拷贝
-
 # 原理实现(9种)
 
-
->  原型链法(仿传统) Child.prototype = new Parent();  
+> (第1种)原型链法(仿传统) Child.prototype = new Parent();
 
 - 把可重用部分迁移到原型链，不可重用部分设置为对象自身的属性
 
-```js
+```javascript
 function Shape() {
   this._final =  "final";
 }
@@ -150,13 +82,13 @@ var triangle = new Triangle(5,10);
 triangle.getArea();
 ```
 
-> 仅从原型继承法 Child.prototype = Parent.prototype;
+> (第2种)仅从原型继承法 Child.prototype = Parent.prototype;
 
 - 原型拷贝，不存在原型链，所有对象共享一个原型对象
 - 不用新建对象，效率更高
 - 缺点是对子对象的修改会影响到父对象
 
-```js
+```javascript
 function Shape() {}
 Shape.prototype.name = 'shap';
 Shape.prototype.toString = function() {
@@ -183,13 +115,13 @@ Triangle.prototype.getArea = function() {
 }
 ```
 
-> 临时构造器法 extend: new F() + uber
+> (第3种)临时构造器法 extend: new F() + uber
 
 - 基于构造器工作模式
 - 只继承父对象的原型属性，不继承父对象的自身属性(构造器this追加)
 - 使用uber方便访问父对象
 
-```js
+```javascript
 function Person () {}
 Person.prototype.name = 'person';
 Person.prototype.sleep = function() {
@@ -210,12 +142,12 @@ function extend(Child, Parent) {
 extend(Teacher,Person);
 ```
 
-> 原型属性拷贝法 extend2: for copy... + uber
+> (第4种)原型属性拷贝法 extend2: for copy... + uber
 
 - 无需为继承单独创建对象实例
 - 原型链相对更短
 
-```js
+```javascript
 function extend2(Child,Parent) {
   var p = Parent.prototype;
   var c= Child.prototype;
@@ -234,13 +166,13 @@ TwoDShape.prototype.name = '2D shape';
 extend2(TwoDShape,Shape);
 ```
 
-> 浅/深拷贝法(2种) extendCopy + return
+> (第5、6种)浅/深拷贝法(2种) extendCopy + return
 
 - 基于对象，拷贝属性
 - 浅拷贝 即属性全拷贝法
 - 区别于浅拷贝, 深拷贝遇到对象类型是重复调用拷贝(值传递)
 
-```js
+```javascript
 // 浅拷贝
 function extendCopy(p) {
   var c = {};
@@ -305,15 +237,14 @@ var parent = {
 // [1, 2, 3, 10]
 // mydeep.numbers
 // [1, 2, 3, 4, 5, 6]
-
 ```
 
-> 原型继承法 (F.prototype = o;) + return
+> (第7种)原型继承法 (F.prototype = o;) + return
 
 - 基于对象，直接在对象之间构建继承关系
 - 发挥原型固有优势
 
-```js
+```javascript
 function object(o) {
     var n;
     function F() {}
@@ -348,11 +279,11 @@ triangle.getArea = function() {
 }
 ```
 
-> 寄生继承法 that = object(victim) + return
+> (第10种)寄生继承法 that = object(victim) + return
 
 - 通过一个类似构造器的函数来创建对象
 
-```js
+```javascript
 var twoD = {
     name: '2D shape',
     dimensions: 2
@@ -388,12 +319,12 @@ function triangle(s, h) {
  */
 ```
 
-> 构造器借用法 Parent.apply(this,argument);
+> (第11种)构造器借用法 Parent.apply(this,argument);
 
 - 只继承父对象的自身属性
 - 可结合原型链法
 
-```js
+```javascript
 function Shape(id) {
    this.id = id;
 }
@@ -420,11 +351,11 @@ Triangle.prototype.name = 'Triangle';
 
 # 混合扩展实现 (3种)
 
-> 原型继承 + 属性拷贝
+> (第8种)原型继承 + 属性拷贝
 
 - 通过一个函数一次性完成对象的继承与扩展
 
-```js
+```javascript
 function objectPlus(o, stuff) {
     var n;
     function F() {}
@@ -458,11 +389,11 @@ var triangle = objectPlus(twoDee, {
 })
 ```
 
-> 构造器借用 + 属性拷贝法 parent.apply(this,arguments) + extend2
+> (第12种)构造器借用 + 属性拷贝法 parent.apply(this,arguments) + extend2
 
 - 允许我们在不重复调用父对象构造器的情况下同时继承其自身属性和原型属性
 
-```js
+```javascript
 function extend2(Child, Parent) {
     var p = Parent.prototype;
     var c = Child.prototype;
@@ -496,12 +427,12 @@ Triangle.prototype.name = 'Triangle';
 // "shape"
 ```
 
-> 多重继承
+> (第9种)多重继承
 
 - 一种混合式插入
 - 按照父对象的出现顺序依次对他们执行属性全拷贝
 
-```js
+```javascript
 function multi() {
   var n = {},stuff,j=0,len = arguments.length;
   for(j = 0;j<len;j++) {
