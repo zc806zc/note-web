@@ -64,10 +64,13 @@ Ctrl+Shift+F9
 
 - IDEA 内存溢出问题
 
-```javascript
+```
 http://blog.csdn.net/fyqcdbdx/article/details/46788915
 -server -XX:PermSize=128M -XX:MaxPermSize=256m
 ```
+
+- 找不到符号 -> utf-8统一编码
+
 
 # 使用正则表达式进行搜索替换
 
