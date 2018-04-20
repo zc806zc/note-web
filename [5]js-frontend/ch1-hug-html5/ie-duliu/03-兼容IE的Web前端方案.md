@@ -1,4 +1,4 @@
-# 兼容IE8
+# IE8前端兼容方案
 
 - san <https://github.com/baidu/san>
 
@@ -9,9 +9,10 @@
 
 - avalon <https://github.com/RubyLouvre/avalon>
 
-  - 好像已经有被放弃的趋势...
+  - 被弃前奏??
   - <http://avalonjs.coding.me/>
   - 基于 avalon2 的 SPA 脚手架 <https://github.com/xxapp/ms-bus>
+  - avalon2-mmRouter-starter <https://github.com/cbbfcd/avalon2-mmRouter-starter>
 
 ![](https://pic4.zhimg.com/80/v2-3ad18522a77e7e759c969efd6b130c7d_hd.jpg)
 
