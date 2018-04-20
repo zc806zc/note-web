@@ -1,16 +1,26 @@
 # 兼容IE8
 
-- avalon <http://avalonjs.coding.me/>
 - san <https://github.com/baidu/san>
+
+  - interlliJ idea 不识别文件类型 <https://blog.csdn.net/aaashen/article/details/46740817>
+  - 借用Vue IDEA插件语法高亮先
+
+- react
+
+- avalon <https://github.com/RubyLouvre/avalon>
+
+  - 好像已经有被放弃的趋势...
+  - <http://avalonjs.coding.me/>
+  - 基于 avalon2 的 SPA 脚手架 <https://github.com/xxapp/ms-bus>
 
 ![](https://pic4.zhimg.com/80/v2-3ad18522a77e7e759c969efd6b130c7d_hd.jpg)
 
-- react
-- angular1
 - regular <https://github.com/regularjs/regular>
 
   - regular-ui <https://github.com/regular-ui/regular-ui>
   - 后台管理系统前端开发方案，采用es6 + regular + gulp技术 <https://github.com/xuyanquan/es6-regular-gulp>
+
+- angular1
 
 - knockoutjs
 
