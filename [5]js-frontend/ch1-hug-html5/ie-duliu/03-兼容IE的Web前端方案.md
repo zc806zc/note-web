@@ -11,7 +11,11 @@
 
   - 被弃前奏??
   - <http://avalonjs.coding.me/>
-  - 基于 avalon2 的 SPA 脚手架 <https://github.com/xxapp/ms-bus>
+  - 基于 avalon2 的 SPA 脚手架
+
+    - <https://segmentfault.com/a/1190000009625441>
+    - <https://github.com/xxapp/ane>
+
   - avalon2-mmRouter-starter <https://github.com/cbbfcd/avalon2-mmRouter-starter>
 
 ![](https://pic4.zhimg.com/80/v2-3ad18522a77e7e759c969efd6b130c7d_hd.jpg)
