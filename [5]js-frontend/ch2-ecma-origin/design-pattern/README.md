@@ -50,8 +50,11 @@
 - 最少知识原则
 - 开放-封闭原则
 
-# 学习
+# 参考
 
 - JavaScript设计模式与开发实践 曾探 2015-05
 
-  - <https://github.com/AlloyTeam/StreetFighter>
+  - HTML5街头霸王 <https://github.com/AlloyTeam/StreetFighter>
+
+- JavaScript设计模式
+- 精通JavaScript开发 - 设计模式部分
