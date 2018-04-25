@@ -41,6 +41,10 @@
 
 # 打印优化
 
+- typo.css <https://github.com/sofish/typo.css>
+
+  - 中文网页重设与排版：一致化浏览器排版效果，构建最适合中文阅读的网页排版
+  
 ```javascript
 .page-break    { page-break-before: always; }
 /* put this class into your main.css file with "display:none;" */
