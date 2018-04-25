@@ -1,3 +1,7 @@
+# 基础算法
+
+- js算法集合 <https://fanerge.github.io/js%E7%AE%97%E6%B3%95%E9%9B%86%E5%90%88.html>
+
 # 1、 Reverse a String 翻转字符串
 
 ```javascript

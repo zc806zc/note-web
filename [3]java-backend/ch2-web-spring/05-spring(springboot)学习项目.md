@@ -22,6 +22,7 @@
 - paascloud-master: spring cloud + vue模拟商城(NICE) <https://github.com/paascloud/paascloud-master>
 - 商城 <https://github.com/linlinjava/litemall>
 - 权限管理系统 <https://github.com/wuyouzhuguli/FEBS>
+- 基于Spring Cloud、oAuth2.0开发基于Vue前后分离的开发平台 <https://github.com/pig4cloud/pig>
 - guns <https://gitee.com/naan1993/guns>
 - iBase4J <https://gitee.com/iBase4J/iBase4J>
 - bootdo <https://gitee.com/lcg0124/bootdo>
