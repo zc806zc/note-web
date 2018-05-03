@@ -40,6 +40,10 @@ Ctrl+Shift+F9
 
 # IDEA常用插件
 
+- Java程序员必备的Intellij插件 https://juejin.im/entry/5aea80346fb9a07ab9794f06
+  - FindBugs-IDEA
+  - GenerateAllSetter
+  - MyBatisCodeHelperPro
 - Maven Helper 用于分析jar包冲突
 - check-style 代码质量
 
