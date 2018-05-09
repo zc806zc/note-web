@@ -6,6 +6,8 @@
   - interlliJ idea 不识别文件类型 <https://blog.csdn.net/aaashen/article/details/46740817>
   - 借用Vue|HTML IDEA插件语法高亮下先
 
+![](https://pic4.zhimg.com/80/v2-3ad18522a77e7e759c969efd6b130c7d_hd.jpg)
+
 - anu.js <https://rubylouvre.github.io/anu/>
 
   - 兼容IE8的React(anu)开发脚手架 <https://gitee.com/menhal/React_IE8_boilerplate>
@@ -14,7 +16,7 @@
 
   - 京东 <https://nervjs.github.io/docs/>
   - 文档同框架搭建 <https://github.com/NervJS/nerv-website>
-  - 脚手架 https://github.com/NervJS/nerv-webpack-boilerplate
+  - 脚手架 <https://github.com/NervJS/nerv-webpack-boilerplate>
   - <https://github.com/NervJS/nerv-redux-todomvc>
   - A blazing fast React alternative, compatible with IE8 and React 16
   - 性能不错
@@ -29,8 +31,6 @@
     - (NICE) 由vue脚手架修改过来，适合vue开发者使用，采用类vue的单文件组件书写，异步、嵌套路由 <https://github.com/hmhao/avalon2-webpack2-spa>
     - <https://segmentfault.com/a/1190000009625441>
     - @deprecated <https://github.com/xxapp/ane>
-
-![](https://pic4.zhimg.com/80/v2-3ad18522a77e7e759c969efd6b130c7d_hd.jpg)
 
 - regular <https://github.com/regularjs/regular>
 
