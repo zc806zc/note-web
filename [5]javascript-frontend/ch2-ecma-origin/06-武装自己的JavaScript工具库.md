@@ -5,6 +5,7 @@
   - underscore
   - lodash <https://github.com/lodash/lodash>
   - ramda <https://github.com/ramda/ramda>
+  - licia 史上最全 <https://github.com/liriliri/licia>
 
 - 30-seconds-of-code
 

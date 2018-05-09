@@ -17,3 +17,10 @@
 # 游戏
 
 - react-game-kit <https://github.com/FormidableLabs/react-game-kit>
+
+# React图表
+
+- 甘特图图表
+
+  - <https://github.com/ProtoTeam/time-gantt>
+  - 简单绘制 <https://juejin.im/post/5ad076186fb9a028c813465b>

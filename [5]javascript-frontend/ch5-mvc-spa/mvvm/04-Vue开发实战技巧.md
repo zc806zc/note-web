@@ -43,7 +43,7 @@
 
   - preRender + metaInfo <https://github.com/declandewet/vue-meta>
 
-```javascript
+```html
 <template>
   ...
 </template>
@@ -68,3 +68,7 @@
 - 首屏加载
 
   - <https://juejin.im/post/5a291092518825293b50366d>
+
+# Vue源码分析
+
+- https://juejin.im/post/5ab07a63f265da2389258b12

@@ -1,3 +1,5 @@
+# 组件分类表，此目录内笔记着重于实现思路而已
+
 # Effects 动效组件
 
 - Theme/Base(基本样式)
@@ -39,7 +41,7 @@
 
 # Layout 布局组件
 
-- Layout 布局 
+- Layout 布局
 
   - Width Height 长宽
   - Visibility 可见性
@@ -57,13 +59,15 @@
   - Flex
 
   - Grid
+
   - Sticky(Make elements remain at the top of the viewport, like a sticky navigation.)
+
   - Sortable
   - Darggable
   - Scroll
 
     - Scroll
-    - Totop | BackTop  返回顶部
+    - Totop | BackTop 返回顶部
 
 - Nav(导航)
 
