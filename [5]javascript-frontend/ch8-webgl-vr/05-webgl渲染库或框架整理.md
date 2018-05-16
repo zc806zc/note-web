@@ -6,7 +6,7 @@
 - A-Frame <https://aframe.io/>
 - hightopo http://www.hightopo.com/cn-index.html
   - 构建先进2D和3D可视化所需要的一切
-- LayaAir
+- LayaAir | LayaBox
 - Egret3D
 
 # 一些DEMO

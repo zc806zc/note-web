@@ -1,19 +1,3 @@
-# HTML5 | JavaScript 3D游戏引擎和框架
-
-- <http://www.admin10000.com/document/6447.html>
-- Create.js
-- phaser
-
-  - <https://github.com/photonstorm/phaser>
-
-- cocos2d-x
-
-  - <https://github.com/cocos2d/cocos2d-x>
-
-    - Cocos2d-x is a suite of open-source, cross-platform, game-development tools used by millions of developers all over the world.
-
-- Hilo https://github.com/hiloteam/Hilo
-
 # Create.js
 
 - <https://createjs.com/demos/easeljs/draganddrop>
@@ -107,44 +91,3 @@ function tick(event) {
     }
 }
 ```
-
-# cocos2d-js
-
-- <http://www.cocos.com/docs/js/>
-
-```javascript
-var StartLayer = cc.Layer.extend({
-  ctor: function () {
-    this._super();
-
-    var size = cc.winSize;
-
-    var helloLabel = new cc.LabelTTF("Hello World", "", 38);
-    helloLabel.x = size.width / 2;
-    helloLabel.y = size.height / 2;
-    this.addChild(helloLabel);
-
-    return true;
-  }
-});
-
-var StartScene = cc.Scene.extend({
-  onEnter: function () {
-    this._super();
-    var layer = new StartLayer();
-    this.addChild(layer);
-  }
-});
-
-cc.LoaderScene.preload(g_resources, function () {
-  cc.director.runScene(new StartScene());
-}, this);
-```
-
-# LimeJS 在线游戏开发
-
-# 物理引擎
-
-- matter.js <https://github.com/liabru/matter-js>
-- PhysicsJS <https://github.com/wellcaffeinated/PhysicsJS>
-- verlet-js <https://github.com/subprotocol/verlet-js>
