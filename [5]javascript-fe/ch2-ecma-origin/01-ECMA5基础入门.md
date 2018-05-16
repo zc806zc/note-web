@@ -6,7 +6,6 @@
   - JS深入系列 <https://juejin.im/post/59278e312f301e006c2e1510>
   - 提升 <http://www.cnblogs.com/jikey/p/3613082.html>
   - <http://www.htmleaf.com/ziliaoku/qianduanjiaocheng/>
-  - clean-code-javascript <https://github.com/ryanmcdermott/clean-code-javascript>
 
   - js-stack-from-scratch <https://github.com/verekia/js-stack-from-scratch>
 
