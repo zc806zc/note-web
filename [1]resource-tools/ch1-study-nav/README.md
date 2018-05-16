@@ -11,6 +11,7 @@
 
 # 学习库
 
+- AWESOME专题 <https://github.com/topics/awesome>
 - be-a-professional-programmer <https://github.com/stanzhai/be-a-professional-programmer>
 - <https://github.com/sindresorhus/awesome>
 - 伯乐在线 <https://github.com/jobbole>
