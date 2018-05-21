@@ -17,6 +17,10 @@
   - release
 
 ```shell
+# 配置账号密码
+git config --global user.name [username]
+git config --global user.email [email]
+
 # 常用操作
 git init
 git remote add origin xxx
