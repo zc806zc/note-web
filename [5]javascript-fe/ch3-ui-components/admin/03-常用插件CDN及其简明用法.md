@@ -1,39 +1,6 @@
 # 常用CDN
 
-- 重置
-
-```html
-<!-- normalize -->
-<link href="https://cdn.bootcss.com/normalize/7.0.0/normalize.min.css" rel="stylesheet">
-
-<!-- reset -->
-<link href="https://cdn.bootcss.com/minireset.css/0.0.2/minireset.min.css" rel="stylesheet">
-<link href="https://cdn.bootcss.com/meyer-reset/2.0/reset.min.css" rel="stylesheet">
-```
-
-- 兼容
-
-```html
-<!--响应式兼容-->
-<!--[if lt IE 9]>
-<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
-
-<!--modernizr-->
-<script src="https://cdn.bootcss.com/modernizr/2.8.1/modernizr.min.js"></script>
-<script src="https://cdn.bootcss.com/modernizr/2010.07.06dev/modernizr.min.js"></script>
-
-<!-- classie -->
-<script src="https://cdn.staticfile.org/classie/1.0.1/classie.min.js"></script>
-
-<!-- IE8 | css3 -->
-<script src="https://cdn.staticfile.org/ie8/2.9.10/ie8.max.js"></script>
-<script src="https://cdn.staticfile.org/css3pie/2.0beta1/PIE_IE678.js"></script>
-<script src="https://cdn.staticfile.org/css3pie/2.0beta1/PIE_IE9.js"></script>
-```
-
-- jquery
+- jquery系列
 
 ```html
 <!-- jquery -->
@@ -67,7 +34,29 @@
 <script src="https://cdn.bootcss.com/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
 ```
 
-- bootstrap
+- 兼容
+
+```html
+<!--响应式兼容-->
+<!--[if lt IE 9]>
+<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!--modernizr-->
+<script src="https://cdn.bootcss.com/modernizr/2.8.1/modernizr.min.js"></script>
+<script src="https://cdn.bootcss.com/modernizr/2010.07.06dev/modernizr.min.js"></script>
+
+<!-- classie -->
+<script src="https://cdn.staticfile.org/classie/1.0.1/classie.min.js"></script>
+
+<!-- IE8 | css3 -->
+<script src="https://cdn.staticfile.org/ie8/2.9.10/ie8.max.js"></script>
+<script src="https://cdn.staticfile.org/css3pie/2.0beta1/PIE_IE678.js"></script>
+<script src="https://cdn.staticfile.org/css3pie/2.0beta1/PIE_IE9.js"></script>
+```
+
+- bootstrap系列
 
 ```html
 <!--bootstrap-->
@@ -82,25 +71,24 @@
 <script src="https://cdn.bootcss.com/bootstrap-filestyle/2.1.0/bootstrap-filestyle.min.js"></script>
 ```
 
-- 模块化
+- 常用样式库
 
 ```html
-<!-- sea.js -->
-<script src="https://cdn.bootcss.com/seajs/3.0.2/sea-debug.js"></script>
-<script src="https://cdn.bootcss.com/seajs/3.0.2/sea.js"></script>
+<!-- 重置 -->
+<!-- normalize -->
+<link href="https://cdn.bootcss.com/normalize/7.0.0/normalize.min.css" rel="stylesheet">
 
-<!-- require.js -->
-<script src="https://cdn.bootcss.com/require.js/2.3.5/require.min.js"></script>
-```
+<!-- reset -->
+<link href="https://cdn.bootcss.com/minireset.css/0.0.2/minireset.min.css" rel="stylesheet">
+<link href="https://cdn.bootcss.com/meyer-reset/2.0/reset.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 
-- 样式库
 
-```html
 <!-- pure.css -->
 <link href="https://cdn.bootcss.com/pure/1.0.0/pure-min.css" rel="stylesheet">
 ```
 
-- animate
+- 动画
 
 ```html
 <!--animate.css-->
@@ -138,6 +126,25 @@
 <script src="https://cdn.bootcss.com/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 ```
 
+- 模块化
+
+```html
+<!-- sea.js -->
+<script src="https://cdn.bootcss.com/seajs/3.0.2/sea-debug.js"></script>
+<script src="https://cdn.bootcss.com/seajs/3.0.2/sea.js"></script>
+
+<!-- require.js -->
+<script src="https://cdn.bootcss.com/require.js/2.3.5/require.min.js"></script>
+```
+
+- 模板引擎
+
+```html
+<!-- artTemplate -->
+<script src="https://cdn.staticfile.org/artTemplate.js/3.0.1/template.js"></script>
+```
+
+
 - 地图
 
 ```html
@@ -153,13 +160,6 @@
 <script src="https://cdn.bootcss.com/jqvmap/1.5.1/maps/continents/jquery.vmap.north-america.js"></script>
 <script src="https://cdn.bootcss.com/jqvmap/1.5.1/maps/continents/jquery.vmap.south-america.js"></script>
 <script src="https://cdn.bootcss.com/jqvmap/1.5.1/maps/jquery.vmap.usa.js"></script>
-```
-
-- 模板引擎
-
-```html
-<!-- artTemplate -->
-<script src="https://cdn.staticfile.org/artTemplate.js/3.0.1/template.js"></script>
 ```
 
 - 其他

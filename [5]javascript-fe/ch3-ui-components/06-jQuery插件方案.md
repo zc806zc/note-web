@@ -7,3 +7,10 @@
 - frontend-stuff <https://github.com/moklick/frontend-stuff>
 - 前端插件 <https://github.com/iamjoel/front-end-plugins#tool>
 - awesome-jquery <https://github.com/petk/awesome-jquery>
+
+# 万金油方案
+
+- jquery
+- handlebar/artTemplates
+- layer/artTemplates/sweetAlert
+- require.js/sea.js
