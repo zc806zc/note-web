@@ -74,7 +74,7 @@ http://blog.csdn.net/fyqcdbdx/article/details/46788915
 ```
 
 - 找不到符号 -> utf-8统一编码
-
+- 忽略node_modules https://www.cnblogs.com/chengwb/p/6183440.html
 
 # 使用正则表达式进行搜索替换
 
