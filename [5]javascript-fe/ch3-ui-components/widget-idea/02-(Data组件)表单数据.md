@@ -283,10 +283,12 @@ function praise(num, obj) {
 # 数据表格
 
 - 筛选排序
-- dataTables | bootstrap-table
+- dataTables | bootstrap-table | jqgrid
 
   - <https://github.com/wenzhixin/bootstrap-table>
+  - https://github.com/rstaib/jquery-bootgrid
 
+- stacktable.js 小屏幕排列  https://github.com/johnpolacek/stacktable.js/
 - layui table
 
 - Filterizr (a jQuery plugin that sorts, shuffles and applies stunning filters over responsive galleries using CSS3 transitions and custom CSS effects)

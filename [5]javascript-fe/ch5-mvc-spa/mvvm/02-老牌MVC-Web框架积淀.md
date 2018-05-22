@@ -35,6 +35,7 @@
 # Ember
 
 - <https://github.com/emberjs/ember.js>
+- awesome-ember https://github.com/nmec/awesome-ember
 
 # Avalon2
 

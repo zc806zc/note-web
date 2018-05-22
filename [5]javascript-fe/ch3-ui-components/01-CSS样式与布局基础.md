@@ -262,6 +262,7 @@ SCSS 是 Sass 3 引入新的语法，
 
 - css常见样式命名思想 <https://juejin.im/post/5a79545a5188257a7924875d>
 - BEM
+  - https://github.com/sturobson/BEM-resources
 
 ```shell
 <nav class="nav">
@@ -293,6 +294,8 @@ SCSS 是 Sass 3 引入新的语法，
 }
 ```
 
+- Atomic
+
 # CSS模块化
 
 - Less、SASS -> PostCSS -> CSS in JS
@@ -320,6 +323,10 @@ SCSS 是 Sass 3 引入新的语法，
   color: red;
 }
 ```
+
+# web components
+
+- webcomponents-the-right-way https://github.com/mateusortiz/webcomponents-the-right-way
 
 # POSTCSS
 
