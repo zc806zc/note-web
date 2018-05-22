@@ -30,7 +30,9 @@
 
 ...
 
-# 下拉加载更多 <http://www.jq22.com/webqd2043>
+# 下拉加载更多 
+
+- <http://www.jq22.com/webqd2043>
 
 ```javascript
 $(window).scroll(function() {
