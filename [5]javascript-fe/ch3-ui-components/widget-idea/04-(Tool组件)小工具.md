@@ -443,23 +443,6 @@ img {
 
 - 人人网评论功能 <https://www.imooc.com/learn/81>
 
-# 围观吃瓜的群众
-
-- <http://www.oneapm.com/>
-
-![](http://img.blog.csdn.net/20160624155304657)
-
-# 右下角组件
-
-- 返回顶部
-- 咨询
-- 本地目录 <https://elementor.com/>
-
-![](http://img.blog.csdn.net/20160624154208699)
-
-![](http://img.blog.csdn.net/20160624152302108)
-
-![](http://img.blog.csdn.net/20160624152340562)
 
 # 客服反馈
 

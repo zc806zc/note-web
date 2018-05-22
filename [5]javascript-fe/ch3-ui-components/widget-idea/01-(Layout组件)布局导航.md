@@ -1,25 +1,9 @@
-# 布局 | 产品宣传页布局
-
-- 斑马线产品展示
-- 卡片布局导航
-
-  - <http://destinesia.io>
-  - <http://www.ghostchina.com>
-  - <http://www.yuehetong.com>
-  - <http://micourse.net>
-
-![](http://img.blog.csdn.net/20160624152857803)
-
-![](http://img.blog.csdn.net/20160624152937022)
-
-# 栅格布局 | 网格布局
+# 布局引擎(栅格布局 | 网格布局)
 
 - masonry
 
   - Cascading grid layout library
   - <https://github.com/desandro/masonry>
-
-# 布局引擎
 
 - muuri
 
@@ -30,11 +14,9 @@
 
   - <https://github.com/thoughtbot/neat>
 
-# 贴边停靠
+- isotope($)
 
-- <http://www.jq22.com/webqd2141>
-
---------------------------------------------------------------------------------
+  - https://github.com/metafizzy/isotope
 
 # 懒加载 | 瀑布流
 
@@ -64,6 +46,10 @@ $(window).scroll(function() {
 });
 ```
 
+# 贴边停靠
+
+- <http://www.jq22.com/webqd2141>
+
 --------------------------------------------------------------------------------
 
 # 全屏背景
@@ -77,31 +63,10 @@ $(window).scroll(function() {
   - FitVids.js <https://github.com/davatron5000/FitVids.js>
 
     - A lightweight, easy-to-use jQuery plugin for fluid width video embeds.
+  - bideo.js
 
-# 视频背景
-
-- <https://wiffinity.com/>
-
-- <http://www.diobox.com>
-
-![](http://img.blog.csdn.net/20160624155047365)
-
-- bideo.js
-
-  - <https://github.com/rishabhp/bideo.js>
-  - Fullscreen HTML5 Background Video for the Web
-
-- 局部视频背景
-
-  - <http://www.ottoradio.com/>
-
-![](http://img.blog.csdn.net/20160624154346497)
-
-# 长图背景
-
-- <http://www.desk.com/>
-
-![](http://img.blog.csdn.net/20160624155146593)
+    - <https://github.com/rishabhp/bideo.js>
+    - Fullscreen HTML5 Background Video for the Web
 
 # 单页面
 
@@ -495,14 +460,6 @@ $(".cf_listATitle").on("click", function() {
 
 > 轮播图: 获取1% 的用户点击却占用了页面一半甚至更多的位置
 
-# 斑马条里的滚屏
-
-![](http://img.blog.csdn.net/20160624153124710)
-
-- <http://www.desk.com/>
-
-![](http://img.blog.csdn.net/20160624155403048)
-
 --------------------------------------------------------------------------------
 
 # Tab | 选项卡
@@ -522,50 +479,6 @@ $("#" + wrapId).find("div").eq(index).show().siblings().hide();  // 显示自己
 - 侧栏工具条开发 <https://www.imooc.com/learn/425>
 - 导航条菜单的制作 <https://www.imooc.com/learn/6>
 
-# 导航分类
-
-- 右手习惯导航
-
-  - <https://zoom.us/>
-
-- 变形导航
-
-  - <http://www.mahindra.com/>
-
-- xy轴导航
-
-  - <http://echarts.baidu.com/examples.html>
-
-- 巨幕导航
-
-  - <http://www.desk.com>
-
-  - <https://www.daocloud.io>
-
-  - <http://www.oneapm.com>
-
-- 侧边缩放菜单导航
-
-  - <https://connect.barackobama.com>
-  - <https://togetherjs.com/>
-
-- 抽屉式
-
-- XY轴
-
-![](http://img.blog.csdn.net/20160624152458692)
-
-![](http://img.blog.csdn.net/20160624152509423)
-
-![](http://img.blog.csdn.net/20160624152637269)
-
-![](http://img.blog.csdn.net/20160624152733021)
-
-![](http://img.blog.csdn.net/20160624155626143)
-
-![](http://img.blog.csdn.net/20160624155637847)
-
-![](http://img.blog.csdn.net/20160624153645587)
 
 # 水平导航
 
@@ -599,20 +512,3 @@ ul li:hover .center {
 
 # 手风琴导航
 
---------------------------------------------------------------------------------
-
-# 页脚
-
-- 连贯占一屏 大气 没有给人边角料的感觉
-- <http://www.yuewen.com/>
-- <http://www.admaster.com.cn/>
-
-![](http://img.blog.csdn.net/20160624155612482)
-
---------------------------------------------------------------------------------
-
-# 分支日记
-
-- <http://www.sydjs.com/meetups>
-
-![](http://img.blog.csdn.net/20160624155217312)

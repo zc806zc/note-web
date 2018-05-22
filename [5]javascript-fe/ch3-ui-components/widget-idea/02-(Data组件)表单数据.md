@@ -86,17 +86,6 @@ function slide(range, conSlide, obj) {
 
 - loading按钮(提交按钮)
 - 查询按钮(是否是最新搜索结果)
-- 双杠响应，而按钮要有被按得凹陷的感觉
-
-  - photoshoot网
-
-- 大播放按钮，可以引起冲动
-
-  - <https://asciinema.org/>
-
-![](http://img.blog.csdn.net/20160624150523029)
-
-![](http://img.blog.csdn.net/20160624150558076)
 
 - btn-css-generator <http://www.bestcssbuttongenerator.com/#/8>
 - 防止表单重复提交的loading
@@ -105,8 +94,6 @@ function slide(range, conSlide, obj) {
   - <http://www.jq22.com/webqd1687>
   - <http://www.jq22.com/webqd1688>
   - <http://www.jq22.com/webqd114>
-
-![](/static/img/other/import-double-submit.png)
 
 # 通用输入
 
@@ -216,6 +203,7 @@ function praise(num, obj) {
 # 时间日期
 
 - moment.js
+- day.js moment.js的轻量替换
 - flatpickr <https://github.com/chmln/flatpickr>
 - 时间日期处理 <https://github.com/datejs/Datejs>
 - date-fns <https://github.com/date-fns/date-fns>
@@ -242,7 +230,7 @@ function praise(num, obj) {
 
     - 省市区面板点击
 
-      - (推荐) <http://www.jq22.com/jquery-info7095>
+      - (NICE) <http://www.jq22.com/jquery-info7095>
       - 仿京东 <http://www.jq22.com/jquery-info9397>
       - 较全面 <http://www.jq22.com/jquery-info13655>
 
@@ -250,7 +238,7 @@ function praise(num, obj) {
 
 --------------------------------------------------------------------------------
 
-# 表格
+# 数据表格
 
 - 数据表格排行 <https://jspreadsheets.com/>
 - handsontable <https://github.com/handsontable/handsontable>
@@ -280,8 +268,6 @@ function praise(num, obj) {
 下一步将是：设置thead 中的 tr元素设置为 display:block。
 ```
 
-# 数据表格
-
 - 筛选排序
 - dataTables | bootstrap-table | jqgrid
 
@@ -293,9 +279,9 @@ function praise(num, obj) {
 
 - Filterizr (a jQuery plugin that sorts, shuffles and applies stunning filters over responsive galleries using CSS3 transitions and custom CSS effects)
 
-# 商业表格($)
+-  商业表格($)
 
-- handsontable <https://handsontable.com/>
+    - handsontable <https://handsontable.com/>
 
 --------------------------------------------------------------------------------
 
@@ -305,17 +291,6 @@ function praise(num, obj) {
 
 - 与数据表格关联的分页删除数据时注意加载最适合的一页，因为可能删除了所在页的最后一条数据
 
-- <http://wenda.ghostchina.com/>
-
-- <http://www.howzhi.com/channel/photography?page=20>
-
-- <http://www.agoda.com/city/hong-kong-hk.html>
-
-![](http://img.blog.csdn.net/20160624154003214)
-
-![](http://img.blog.csdn.net/20160624154018542)
-
-![](http://img.blog.csdn.net/20160624154027476)
 
 # 时间轴
 
@@ -580,17 +555,7 @@ function xiaolong(json) {
 }
 ```
 
-- 标签页搜索
 
-  - <http://www.51jingying.com/>
-
-  - <http://www.shanghai.gov.cn/>
-
-- 大搜索框和注册框
-
-  - <https://botlist.co/>
-
-![](http://img.blog.csdn.net/20160624154656266)
 
 --------------------------------------------------------------------------------
 
@@ -618,8 +583,6 @@ function xiaolong(json) {
 - 银行卡
 
   - card <https://github.com/jessepollak/card>
-
-# 表单校验设计
 
 - 用户编辑后离开前的保存校验
 - jquery-validation
@@ -823,39 +786,9 @@ rows.sort(function(a,b){
 # 提示标签 | Tooltip
 
 - popper.js <https://github.com/FezVrasta/popper.js>
+- tipsy IE兼容
 
 # 加载等待
-
-- 用加载等待与页面刷新照顾用户心理
-
-  - <https://juejin.im/entry/598d130e6fb9a03c445de7e7>
-
-```javascript
-// 暗示
-我知道你很着急，但是我也很努力的在刷新
-
-你看，这只骆驼走路好萌啊，我都不好意思生气了。
-
-// bilibili
-松手：够了啦，松开人家嘛（下拉至一定位置后出现）
-有个小姐姐很悲伤，而这和用户的情感是相符合的
-```
-
-![](/static/img/other/camel-loading.png)
-
-![](/static/img/other/jiaohu-tip.png)
-
-- 等待动画与加载动画
-
-  - <http://truthlabs.com>
-
-![](http://img.blog.csdn.net/20160624152030917)
-
-- 顶部加载条显示网页的加载进度
-
-  - <https://ingworld.ing.com/en/2015-1Q>
-
-![](http://img.blog.csdn.net/20160624152117988)
 
 - 效果集
 

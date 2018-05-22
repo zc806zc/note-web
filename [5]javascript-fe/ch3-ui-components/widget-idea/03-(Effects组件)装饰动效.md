@@ -400,32 +400,3 @@ transition: 0.15s ease-in-out;
 
 ![](http://img.blog.csdn.net/20160624145302114)
 
-# 翻牌
-
-- <http://zarget.com/>
-
-![](http://img.blog.csdn.net/20160624151017937)
-
-# 点亮灰暗的图标
-
-- <http://www.bootcdn.cn/>
-
-![](http://img.blog.csdn.net/20160624151525285)
-
-- 数字跳动
-
-  - <https://haobtc.com/>
-
-![](http://img.blog.csdn.net/20160624153323805)
-
-- 页脚动画
-
-  - <http://www.ottoradio.com/>
-
-![](http://img.blog.csdn.net/20160624154431215)
-
-- 用于定位的标签 这张页面做的比较长，导航处的标签选项只是用于定位。
-
-  - <https://swite.com/en/>
-
-![](http://img.blog.csdn.net/20160624153506874)
