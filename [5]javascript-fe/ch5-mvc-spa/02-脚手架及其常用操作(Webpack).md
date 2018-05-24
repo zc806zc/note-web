@@ -2,7 +2,10 @@
 
 - webpack | parcel
 - Gulp
-- fis3 <http://fis.baidu.com/fis3/docs/beginning/intro.html>
+- fis3 
+  - <http://fis.baidu.com/fis3/docs/beginning/intro.html>
+  - https://www.imooc.com/video/4666
+
 - Browserify
 - Yeoman
 
