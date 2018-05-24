@@ -93,6 +93,11 @@ input和textarea 的autofocus required placeholder
   - 使阅读源代码的人更容易将网站分块，便于阅读、维护和理解
   - 搜索引擎的爬虫也依赖于HTML标记来确定上下文和各个关键字的权重，有利于SEO
 
+- yaml.org http://yaml.org
+
+  - 更容易被人类阅读的语言格式
+  - file.readYAML()
+
 ```html
 <a>里可以放置任何东西了
 <a href="tel:16505551212">xxx</a>

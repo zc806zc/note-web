@@ -5,7 +5,7 @@
 ```html
 <!-- jquery -->
 <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="http://apps.bdimg.com/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/jquery-migrate/1.2.1/jquery-migrate.min.js"></script>
 <script src="https://cdn.bootcss.com/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
 

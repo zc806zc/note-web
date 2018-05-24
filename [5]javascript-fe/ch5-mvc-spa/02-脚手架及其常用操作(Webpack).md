@@ -1,12 +1,12 @@
 # 脚手架 | 构建工具
 
 - webpack | parcel
+- Gulp
 - fis3 <http://fis.baidu.com/fis3/docs/beginning/intro.html>
 - Browserify
-- Gulp
 - Yeoman
 
-# IDEA配置脚手架
+# IDEA快速配置(@deprecated)
 
 - sass | less
 
@@ -61,61 +61,20 @@ rmdir /s/q your_app_dir
 rm -f /node_modules
 ```
 
-- [yaml.org](http://yaml.org)
-
-  - 更容易被人类阅读的语言格式
-  - file.readYAML()
-
-- webpack | prepack
+- webpack | prepack | parcel
 
 - bower <http://bower.io>
 
   - <https://github.com/timmywil/grunt-bowercopy>
   - <https://github.com/zont/gulp-bower>
 
-- 其他
+- 其他替代(@deprecated)
 
   - spm
   - component
   - Jam
 
 - gulp/webpack/bower等工具的差别
-
-- 使用示例
-
-```javascript
-// gulp
-npm install -g gulp
-npm install gulp --save-dev
-npm install gulp-jshint --save-dev
-gulp
-
-// grunt工作流
-npm install grunt --save-dev
-npm install grunt-contrib-jshint --save-dev // 校验
-npm install grunt-contrib-connect --save-dev
-npm install grunt-contrib-watch --save-dev
-npm install grunt-contrib-clean --save-dev
-npm install grunt-contrib-copy --save-dev
-npm install grunt-contrib-jasmine --save-dev // 单元测试
-npm install grunt-template-jasmine-istanbul --save-dev
-npm install grunt-contrib-concat --save-dev
-npm install grunt-contrib-uglify --save-dev // 代码缩编
-npm install grunt-contrib-yuidoc --save-dev // 生成API
-
-// Gulp工作流
-npm install gulp --save-dev
-npm install gulp-jshint --save-dev
-npm install gulp-connect --save-dev
-npm install gulp-clean --save-dev
-npm install gulp-jasmine --save-dev
-npm install gulp-istanbul --save-dev
-npm install gulp-concat --save-dev
-npm install gulp-uglify --save-dev
-npm install gulp-yuidoc --save-dev
-npm install gulp-rename --save-dev
-npm install gulp-header --save-dev // 没有watch, 已经在API里
-```
 
 # gulp自动化构建方案
 
