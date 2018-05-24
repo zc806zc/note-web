@@ -42,7 +42,7 @@ git commit --amend
 
 # SVN
 
-...
+小乌龟:我能说什么...
 
 # git冲突合并
 
@@ -88,8 +88,15 @@ git stash show -p stash@{0} # 显示修改的详细内容
 - gitmoji <https://github.com/carloscuesta/gitmoji>
 - 仓库趋势排行 <https://microzz.com/github-ranking/>
 - <http://githubrank.com/>
-- github不能访问、加载css、js解决办法 <http://blog.csdn.net/lancees/article/details/21957673>
-- github下载慢 <http://blog.csdn.net/u013360850/article/details/77145661>
+- github不能访问、加载css、js解决办法|下载上传慢
+  - https://www.jianshu.com/p/704dc6b0bb18
+  - <http://blog.csdn.net/u013360850/article/details/77145661>
+  - <http://blog.csdn.net/lancees/article/details/21957673>
+
+```shell
+git remote set-url origin
+git remote -v
+```  
 
 - 链接到代码 <https://github.com/reading-digest/hello-angular/blob/9bd320d8b38daa9d56002de0830ffcf6753975e3/app/todo-list.html#L89-L109>
 
@@ -97,7 +104,7 @@ git stash show -p stash@{0} # 显示修改的详细内容
 javascript stars:>100
 ```
 
-- ssh
+# ssh配置
 
   - <https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/>
   - <https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/>
