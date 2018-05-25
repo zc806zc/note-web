@@ -48,11 +48,12 @@
   - <http://nej.netease.com/>
   - 快速入门 <http://nej.netease.com/course/quickStart>
 
-# 先扯jquery万金油方案
+# UI方案
 
-- require.js + handlebars|artTemplate(IE8+) + layer.js + ...
+- lulu (NICE) 眼下黑，真的很好用 几百star... https://github.com/yued-fe/lulu
 - LayUI
-- 轮子参考 flow-ui <http://flow-ui.refined-x.com/>
+- flow-ui <http://flow-ui.refined-x.com/>
+
 
 # 参考
 

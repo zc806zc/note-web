@@ -11,9 +11,9 @@
 # 万金油方案
 
 - jquery
-- handlebar/artTemplates
-- layer/artTemplates/sweetAlert
 - require.js/sea.js
+- handlebar(IE6+)/artTemplates(IE8+)
+- layer(IE6+)/artDialog/sweetAlert
 
 # jeesite
 
