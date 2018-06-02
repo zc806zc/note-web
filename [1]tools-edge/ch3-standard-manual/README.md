@@ -6,7 +6,6 @@
   - <http://devdocs.io/>
   - <http://overapi.com/>
 
-- 不喜欢用软件
 
 # 编程规范
 

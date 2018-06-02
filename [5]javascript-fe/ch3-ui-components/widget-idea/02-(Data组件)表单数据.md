@@ -143,6 +143,7 @@ function praise(num, obj) {
 
 # 拾色器
 
+- colorify.js http://colorify.rocks
 - 兼容性好 <http://www.jq22.com/jquery-info367>
 - colors <https://github.com/mrmrs/colors>
 - color-thief

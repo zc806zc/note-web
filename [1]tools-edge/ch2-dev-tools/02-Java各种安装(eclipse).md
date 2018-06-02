@@ -28,3 +28,7 @@ C:\Java\apache-tomcat-7.0.34\bin\
 # 运行
 shell>startup   
 ```
+
+# eclipse
+
+- 忽略node_modules https://blog.csdn.net/yzf913214/article/details/72872523

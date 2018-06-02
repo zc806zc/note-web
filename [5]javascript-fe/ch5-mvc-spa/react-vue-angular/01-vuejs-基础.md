@@ -495,3 +495,8 @@ video
 开发中
 暂无评论
 ```
+
+
+# 常识问题
+
+- assets与static文件夹的区别 https://segmentfault.com/q/1010000009842688
