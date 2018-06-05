@@ -188,5 +188,19 @@ app
    |__node_modules
    |__package.json
    |__webpack.config.js
-`
 ```
+
+# github API
+
+```js
+// https://api.github.com/repos/sentsin/layui
+  
+// 获取关注人数 
+var getStars = $('#getStars');
+if(getStars[0]){
+  $.get('https://api.github.com/repos/sentsin/layui', function(res){
+    getStars.html(res.stargazers_count);
+  }, 'json');
+}
+```
+
