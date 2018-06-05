@@ -33,7 +33,14 @@
 
 # 时间日历
 
-- 
+- vue-timeago https://github.com/egoist/vue-timeago
+- vuejs-countdown 倒计时 https://github.com/getanwar/vuejs-countdown
+- vue-fullcalendar https://github.com/Wanderxx/vue-fullcalendar
+- v-calendar NICE https://github.com/nathanreyes/v-calendar
+- vue2-calendar 支持农历 https://github.com/icai/vue2-calendar
+- vue-event-calendar https://github.com/GeoffZhu/vue-event-calendar
+- vue-lunar-calendar 农历 https://github.com/KimWooHyun/vue-lunar-calendar
+- vue-simple-calendar https://github.com/richardtallent/vue-simple-calendar
 
 ---
 
@@ -82,9 +89,22 @@
 # 常用工具类
 
 
+# 阅读器
+
+- vue-pdf https://github.com/FranckFreiburger/vue-pdf
 
 ---
 
-# 3d模型
+# 动画特效
+
+- vue2-animate https://github.com/asika32764/vue2-animate
+
+---
+
+# 3d模型 | webGL
 
 - vue-3d-model <https://github.com/hujiulong/vue-3d-model>
+- vue-pano https://github.com/ChiChou/vue-pano
+- vue-gl https://github.com/vue-gl/vue-gl
+- https://github.com/fritx/vue-threejs
+- https://github.com/imudin/vue-vr
