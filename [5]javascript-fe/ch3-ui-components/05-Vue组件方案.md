@@ -13,7 +13,7 @@
 
 - awesome-vue <https://github.com/vuejs/awesome-vue>
   - 组件 https://github.com/vuejs/awesome-vue#components--libraries
-- @deprecated 组件方案 中文 已不维护 <https://github.com/opendigg/awesome-github-vue>
+- @deprecated 组件方案 中文 已不活跃 <https://github.com/opendigg/awesome-github-vue>
 
 ---
 
