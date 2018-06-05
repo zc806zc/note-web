@@ -1,11 +1,3 @@
-# 第三方组件方案
-
-- awesome-vue <https://github.com/vuejs/awesome-vue>
-- 组件方案 <https://github.com/opendigg/awesome-github-vue>
-- 行政规划数据 <https://github.com/modood/Administrative-divisions-of-China>
-- 可拖拽树 <https://github.com/ltaoo/vue-draggable-tree>
-- vue-3d-model <https://github.com/hujiulong/vue-3d-model>
-
 # Vue组件封装学习
 
 - 侧滑菜单 <https://github.com/hjl19911127/vue-drawer-layout/>
@@ -14,3 +6,32 @@
   - <https://juejin.im/post/5a9cf13851882555845377f6>
   - <https://github.com/warpcgd/vue-tantan-stack>
 - 如何写一个拖拽日历组件（附源码） https://juejin.im/post/5ac322876fb9a028c71ea27e
+
+---
+
+# 第三方组件方案
+
+- awesome-vue <https://github.com/vuejs/awesome-vue>
+- 组件方案 <https://github.com/opendigg/awesome-github-vue>
+
+---
+
+# 布局类
+
+# 表单类
+
+- 行政规划数据 <https://github.com/modood/Administrative-divisions-of-China>
+
+# 树与树状图
+
+- 可拖拽树 <https://github.com/ltaoo/vue-draggable-tree>
+
+# 表格
+
+- vue-tables-2 https://github.com/matfish2/vue-tables-2
+
+---
+
+# 3d模型
+
+- vue-3d-model <https://github.com/hujiulong/vue-3d-model>
