@@ -5,7 +5,7 @@
 - fetool <https://github.com/nieweidong/fetool>
 
 - frontend-stuff <https://github.com/moklick/frontend-stuff>
-- 前端插件 <https://github.com/iamjoel/front-end-plugins#tool>
+- 前端插件 NICE <https://github.com/iamjoel/front-end-plugins#tool>
 - awesome-jquery <https://github.com/petk/awesome-jquery>
 
 # 万金油方案
