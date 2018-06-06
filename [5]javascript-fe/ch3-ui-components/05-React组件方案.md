@@ -3,6 +3,7 @@
 - React组件方案 <https://github.com/brillout/awesome-react-components>
 
 - react-bootstrap Bootstrap 3 components built with React <https://github.com/react-bootstrap/react-bootstrap>
+- React组件 <https://www.imooc.com/video/16514>
 
 # 弹框
 
