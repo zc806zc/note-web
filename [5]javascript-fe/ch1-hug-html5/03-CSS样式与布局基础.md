@@ -41,7 +41,9 @@ const nav = document.querySelector("[rel='js-site-navigation']")
 # CSS实用工具集
 
 - css-protips <https://github.com/AllThingsSmitty/css-protips>
-- 30-seconds-of-css <https://atomiks.github.io/30-seconds-of-css/#box-sizing-reset>
+- 30-seconds-of-css 
+  - <https://atomiks.github.io/30-seconds-of-css/#box-sizing-reset>
+  - https://github.com/atomiks/30-seconds-of-css
 - 常用CSS集
 
   - 148个资源让你成为CSS专家 <https://segmentfault.com/a/1190000006689923>

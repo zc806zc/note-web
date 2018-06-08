@@ -5,3 +5,7 @@
 - font-spider一波骚操作 
     - http://font-spider.org/
     - https://github.com/aui/font-spider
+
+# fontmin 
+
+- http://ecomfe.github.io/fontmin/en#feature    

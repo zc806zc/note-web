@@ -7,6 +7,7 @@
 - jquery
 - require.js/sea.js
 - handlebar(IE6+)/artTemplates(IE8+)
+    - handlebar的一些用法——个人使用总结 https://www.cnblogs.com/yldf55/p/5147996.html
 - layer(IE6+)/artDialog/sweetAlert
 
 # jeesite

@@ -1,6 +1,7 @@
 # Vue开发指南
 
 - 你或许不知道Vue的这些小技巧 https://juejin.im/post/5b1230c1f265da6e603933ad
+- Vue.js最佳实践（五招让你成为Vue.js大师） https://segmentfault.com/a/1190000014085613
 
 # Vue项目优化
 

@@ -1,6 +1,7 @@
 # Java学习计划
 
 - <https://github.com/TeamStuQ/skill-map/blob/master/data/map-DevLang-Java.md>
+- https://juejin.im/entry/5afb9b12518825428830d454
 - Java学习路线
 
   - 成神之路 <http://www.hollischuang.com/archives/489>
