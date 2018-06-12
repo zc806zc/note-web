@@ -26,6 +26,7 @@
 - 与其他框架的比较
 
   - 与React https://github.com/vuejs/vuejs.org/issues/364
+  - https://cn.vuejs.org/v2/guide/comparison.html
 
 # UI框架/生态圈
 
@@ -154,14 +155,6 @@ computed: {
 }
 ```
 
-- 组件 prop
-
-```shell
-是单向绑定的
-当父组件的属性变化时，
-将传导给子组件，但是不会反过来
-```
-
 - 指令
 
 ```shell
@@ -218,6 +211,21 @@ example1.items = example1.items.filter(function (item) {
 </script>
 ```
 
+- 表单
+
+```html
+<!-- 推荐像上面这样提供一个值为空的禁用选项。 -->
+<div id="example-5">
+  <select v-model="selected">
+    <option disabled value="">请选择</option>
+    <option>A</option>
+    <option>B</option>
+    <option>C</option>
+  </select>
+  <span>Selected: {{ selected }}</span>
+</div>
+```
+
 - 事件处理
 
   - 为什么要在HTML中监听事件 ?
@@ -242,35 +250,11 @@ methods: {
 <a v-on:click.once="doThis"></a> // 新增属性 事件只会触发触发一次
 ```
 
-- 组件
-
-  - slot
-
-```html
-<table>
-  <tr is="my-row"></tr>
-</table>
-
-// 作用域插槽
-// 用作（可以传入数据的）可重用模板,而不是已渲染元素
-
-<my-awesome-list :items="items">
-  <!-- 作用域插槽也可以被命名 -->
-  <template slot="item" scope="props">
-    <li class="my-fancy-item">{{ props.text }}</li>
-  </template>
-</my-awesome-list>
-
-<keep-alive>
-  <component :is="currentView">
-    <!-- 非活动组件将被缓存！ -->
-  </component>
-</keep-alive>
-
-v-once 低开销
-```
 
 - 响应式原理
+
+  - 非侵入性的响应式系统
+  - Vue.nextTick(callback)
 
 ```javascript
 Vue 不允许在已经创建的实例上动态添加新的根级响应式属性(root-level reactive property)。
@@ -384,6 +368,88 @@ it('updates the rendered message when vm.message updates', done => {
 
   - allowSyntheticDefaultImports // ES 模块语法
 
+# 组件基础
+
+- 父子组件之间传值 <https://juejin.im/post/59ec95006fb9a0451c398b1a>
+- 单向数据流
+  - 单向下行绑定 ：父级 prop 的更新会向下流动到子组件中，但是反过来则不行
+  - 对于一个数组或对象类型的 prop 来说，在子组件中改变这个对象或数组本身将会影响到父组件的状态
+
+- 禁用特性继承 inheritAttrs: false
+- 将原生事件绑定到组件
+- .sync 修饰符
+- 插槽
+- 动态组件与异步组件 
+  - keep-alive
+- 处理边界情况
+
+```html
+传入一个对象的所有属性
+post: {
+  id: 1,
+  title: 'My Journey with Vue'
+}
+<blog-post v-bind="post"></blog-post>
+<blog-post
+  v-bind:id="post.id"
+  v-bind:title="post.title"
+></blog-post>
+
+<!-- 插槽 -->
+<ul>
+  <li
+    v-for="todo in todos"
+    v-bind:key="todo.id"
+  >
+    <!-- 我们为每个 todo 准备了一个插槽，-->
+    <!-- 将 `todo` 对象作为一个插槽的 prop 传入。-->
+    <slot v-bind:todo="todo">
+      <!-- 回退的内容 -->
+      {{ todo.text }}
+    </slot>
+  </li>
+</ul>
+
+<todo-list v-bind:todos="todos">
+  <!-- 将 `slotProps` 定义为插槽作用域的名字 -->
+  <template slot-scope="slotProps">
+    <!-- 为待办项自定义一个模板，-->
+    <!-- 通过 `slotProps` 定制每个待办项。-->
+    <span v-if="slotProps.todo.isComplete">✓</span>
+    {{ slotProps.todo.text }}
+  </template>
+</todo-list>
+
+<todo-list v-bind:todos="todos">
+  <template slot-scope="{ todo }">
+    <span v-if="todo.isComplete">✓</span>
+    {{ todo.text }}
+  </template>
+</todo-list>
+
+
+
+
+<table>
+  <tr is="my-row"></tr>
+</table>
+
+<my-awesome-list :items="items">
+  <!-- 作用域插槽也可以被命名 -->
+  <template slot="item" scope="props">
+    <li class="my-fancy-item">{{ props.text }}</li>
+  </template>
+</my-awesome-list>
+
+<keep-alive>
+  <component :is="currentView">
+    <!-- 非活动组件将被缓存！ -->
+  </component>
+</keep-alive>
+
+v-once 低开销
+```
+
 # 路由
 
 - Vue内置路由 <https://github.com/chrisvfritz/vue-2.0-simple-routing-example>
@@ -392,11 +458,6 @@ it('updates the rendered message when vm.message updates', done => {
 
 - <https://vuex.vuejs.org/zh-cn/api.html>
 - Vuex从入门到熟练使用 <https://www.jianshu.com/p/0fcdf380afe7>
-
-
-# 父子组件之间传值
-
-- <https://juejin.im/post/59ec95006fb9a0451c398b1a>
 
 # 常识问题
 
@@ -415,3 +476,4 @@ vm.userProfile = Object.assign({}, vm.userProfile, {
 - 表单输入和应用状态之间的双向绑定 不代表数据的双向绑定
 - assets与static文件夹的区别 https://segmentfault.com/q/1010000009842688
 - Vue引入jquery -> 可以宽容(CDN处理)
+- 一个组件的 data 选项必须是一个函数
