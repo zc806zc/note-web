@@ -1,4 +1,11 @@
-# Vue组件封装学习
+# Vue组件
+
+- awesome-vue <https://github.com/vuejs/awesome-vue>
+  - 组件 https://github.com/vuejs/awesome-vue#components--libraries
+- @deprecated 组件方案 中文 已不活跃 <https://github.com/opendigg/awesome-github-vue>
+- Vue优选 https://curated.vuejs.org/
+
+# 封装学习
 
 - 侧滑菜单 <https://github.com/hjl19911127/vue-drawer-layout/>
 - 如何用vue制作一个探探滑动组件
@@ -56,13 +63,6 @@ video
 暂无评论
 ```
 
----
-
-# 第三方组件方案
-
-- awesome-vue <https://github.com/vuejs/awesome-vue>
-  - 组件 https://github.com/vuejs/awesome-vue#components--libraries
-- @deprecated 组件方案 中文 已不活跃 <https://github.com/opendigg/awesome-github-vue>
 
 ---
 

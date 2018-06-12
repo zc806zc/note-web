@@ -1,12 +1,21 @@
 # Vue.js
 
 - Vue官网 
+
   - https://cn.vuejs.org/
   - <https://vuefe.cn/v2/guide/>
-- Vue API <https://vuejs-tips.github.io/cheatsheet/>
+  - cookbook https://cn.vuejs.org/v2/cookbook/
+  - https://cn.vuejs.org/v2/examples/
+  - 风格指南 https://cn.vuejs.org/v2/style-guide/
 
-- 入门基础
+- Vue API 
+  - https://cn.vuejs.org/v2/api/
+  - <https://vuejs-tips.github.io/cheatsheet/>
 
+- 入门
+
+  - <https://github.com/bhnddowinf/vuejs2-learn>
+  - <https://github.com/bhnddowinf/vuejs-learn>
   - Vue学习看这篇就够 <https://juejin.im/entry/5a54b747518825734216c3df>
   - 前端每周清单半年盘点之 Vue.js <https://juejin.im/post/59928d55518825486f1e8369>
   - vue入门到放弃 参考推荐的学习顺序 <https://juejin.im/post/59aa1248518825392656a86a>
@@ -15,6 +24,7 @@
   - 你应该要知道的Vue.js https://juejin.im/post/5ab2ff496fb9a028c06ab78f
 
 - 与其他框架的比较
+
   - 与React https://github.com/vuejs/vuejs.org/issues/364
 
 # UI框架/生态圈
@@ -44,18 +54,13 @@
 
 # 学习项目
 
-- vuejs2 官网讲解
-
-  - <https://github.com/bhnddowinf/vuejs2-learn>
-  - <https://github.com/bhnddowinf/vuejs-learn>
-
 - VueStudyDemos <https://github.com/violetjack/VueStudyDemos>
 - todo-list <https://github.com/Konata9/EasyTodoList>
 - 富文本编辑器Ueditor如何在Vue中使用？ <https://www.jianshu.com/p/8c43636c6c47>
 - 用webpack（2.x语法）手动搭建Vue项目 <https://www.jianshu.com/p/a87dee15e6c3>
 - 全面解析vue-cli生成的项目中使用其他库（js库、css库）<https://www.jianshu.com/p/a2fc286cb8ab>
 
-# 开发环境配置
+# 开发环境
 
 - vue-cli插件
 
@@ -77,19 +82,20 @@
 
   - 修饰符
   - 按键
-  - 缩写
+  - 缩写 v-on v-bind
   - 暴露
 
 ```html
 <!-- 修饰符 -->
-<form v-on:submit.prevent="onSubmit"></form> <!-- 阻止浏览器默认行为 -->
-<a v-on:click.stop.prevent="doThat"></a> <!-- 可串联 -->
-
-<!-- .stop
+<!-- 阻止浏览器默认行为 -->
+<form v-on:submit.prevent="onSubmit"></form> 
+ <!-- 可串联 -->
+ <!-- .stop
 .prevent
 .capture
 .self
 .once -->
+<a v-on:click.stop.prevent="doThat"></a>
 
 <!-- 在change更新值 -->
 <input v-model.lazy="msg" >
@@ -368,35 +374,9 @@ it('updates the rendered message when vm.message updates', done => {
 })
 ```
 
-- 服务端渲染
-
-  - <https://ssr.vuejs.org/zh/> | <https://nuxtjs.org/>
-  - 更好的 SEO
-  - 更快的内容到达时间
-
-```javascript
-也可以将同一个组件渲染为服务器端的 HTML 字符串，
-将它们直接发送到浏览器，最后将静态标记"混合"为客户端上完全交互的应用程序。
-
-服务器渲染的 Vue.js 应用程序也可以被认为是"同构"或"通用"，
-因为应用程序的大部分代码都可以在服务器和客户端上运行。
-
-Nuxt 是一个基于 Vue 生态的更高层的框架，
-为开发服务端渲染的 Vue 应用提供了极其便利的开发体验。
-更酷的是，你甚至可以用它来做为静态站生成器
-```
-
 - TypeScript支持
 
-```javascript
-allowSyntheticDefaultImports // ES 模块语法
-```
-
-# Vue渲染引擎
-
-- Vue 模板编译原理 https://juejin.im/post/5aaa506ff265da239236131b
-
-  - 模板字符串 -> element ASTs（解析器） -> 静态节点标记 -> 代码字符串化(代码生成)
+  - allowSyntheticDefaultImports // ES 模块语法
 
 # 路由
 
@@ -407,9 +387,6 @@ allowSyntheticDefaultImports // ES 模块语法
 - <https://vuex.vuejs.org/zh-cn/api.html>
 - Vuex从入门到熟练使用 <https://www.jianshu.com/p/0fcdf380afe7>
 
-# Vue引入jquery
-
-- 可以宽容
 
 # 父子组件之间传值
 
@@ -417,4 +394,7 @@ allowSyntheticDefaultImports // ES 模块语法
 
 # 常识问题
 
+- 所有的 DOM 操作都由 Vue 来处理
+- 表单输入和应用状态之间的双向绑定 不代表数据的双向绑定
 - assets与static文件夹的区别 https://segmentfault.com/q/1010000009842688
+- Vue引入jquery -> 可以宽容(CDN处理)
