@@ -1,12 +1,13 @@
 # MVVM
 
+- 剖析 Vue.js 内部运行机制 https://juejin.im/book/5a36661851882538e2259c0f
 - 面试题：你能写一个Vue的双向数据绑定吗？ https://github.com/louzhedong/blog
 - 不好意思！耽误你的十分钟，让MVVM原理还给你 <https://juejin.im/post/5abdd6f6f265da23793c4458>
 - 你能写一个Vue的双向数据绑定吗 <https://juejin.im/post/5acc17cb51882555745a03f8>
 - 实现双向绑定Proxy比defineproperty优劣如何 https://juejin.im/post/5acd0c8a6fb9a028da7cdfaf
 - 利用 JavaScript 数据绑定实现一个简单的 MVVM 库 https://segmentfault.com/a/1190000004847657
 - 剖析vue实现原理，自己动手实现mvvm <https://github.com/DMQ/mvvm>
-- 原生JS数据绑定 [https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==∣=2651227803&idx=1&sn=aa90993cf4711f99f6f8203cf2fb4e6b&chksm=bd495f1f8a3ed60972c9f8e66c8405265ec3b86c128ba44ede405872d758642d0c5286e60502&mpshare=1&scene=1&srcid=0224bSSD795JDR60ZynlFPfr#rd](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651227803&idx=1&sn=aa90993cf4711f99f6f8203cf2fb4e6b&chksm=bd495f1f8a3ed60972c9f8e66c8405265ec3b86c128ba44ede405872d758642d0c5286e60502&mpshare=1&scene=1&srcid=0224bSSD795JDR60ZynlFPfr#rd)
+- 原生JS数据绑定 https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651227803&idx=1&sn=aa90993cf4711f99f6f8203cf2fb4e6b
 
 ```html
 <!DOCTYPE html>
