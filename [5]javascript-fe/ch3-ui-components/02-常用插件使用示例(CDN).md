@@ -1,6 +1,4 @@
-# 常用CDN
-
-- jquery系列
+# jQuery系列
 
 ```html
 <!-- jquery -->
@@ -20,6 +18,9 @@
 
 <!-- 表单校验 -->
 <script src="https://cdn.bootcss.com/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-validate/1.11.1/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/localization/messages_zh.min.js"></script>
+
 <script src="https://cdn.bootcss.com/jquery.form/4.2.2/jquery.form.min.js"></script>
 
 <!-- jquery ui -->
@@ -32,9 +33,24 @@
 
 <!-- jquery.mousewheel -->
 <script src="https://cdn.bootcss.com/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+
+<!-- tooltip -->
+<script src="https://cdn.bootcss.com/jquery.tipsy/1.0.3/jquery.tipsy.min.js"></script>
 ```
 
-- 兼容
+---
+
+# Vue系列
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<!-- 这个带提示 -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+```
+
+---
+
+# 兼容与嗅探
 
 ```html
 <!--响应式兼容-->
@@ -54,9 +70,14 @@
 <script src="https://cdn.staticfile.org/ie8/2.9.10/ie8.max.js"></script>
 <script src="https://cdn.staticfile.org/css3pie/2.0beta1/PIE_IE678.js"></script>
 <script src="https://cdn.staticfile.org/css3pie/2.0beta1/PIE_IE9.js"></script>
+
+<!-- placeholder -->
+<script src="https://cdn.bootcss.com/jquery-placeholder/2.3.1/jquery.placeholder.min.js"></script>
 ```
 
-- bootstrap系列
+---
+
+# bootstrap系列
 
 ```html
 <!--bootstrap-->
@@ -71,7 +92,9 @@
 <script src="https://cdn.bootcss.com/bootstrap-filestyle/2.1.0/bootstrap-filestyle.min.js"></script>
 ```
 
-- 常用样式库
+---
+
+# 常用样式
 
 ```html
 <!-- 重置 -->
@@ -88,7 +111,8 @@
 <link href="https://cdn.bootcss.com/pure/1.0.0/pure-min.css" rel="stylesheet">
 ```
 
-- 动画
+
+# 动画
 
 ```html
 <!--animate.css-->
@@ -101,7 +125,7 @@
 <script src="https://cdn.bootcss.com/dynamics.js/1.1.5/dynamics.min.js"></script>
 ```
 
-- 轮播 幻灯片
+# 轮播 幻灯片
 
 ```html
 <!-- slick -->
@@ -118,15 +142,20 @@
 <script src="https://cdn.staticfile.org/unslider/2.0.3/js/unslider-min.js"></script>
 ```
 
-- 弹框
+# 弹框
 
 ```html
 <!--magnific-popup-->
 <link href="https://cdn.bootcss.com/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet">
 <script src="https://cdn.bootcss.com/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+<!-- layer -->
+<script src="https://cdn.bootcss.com/layer/3.1.0/layer.js"></script>
 ```
 
-- 模块化
+---
+
+# 模块化
 
 ```html
 <!-- sea.js -->
@@ -137,13 +166,15 @@
 <script src="https://cdn.bootcss.com/require.js/2.3.5/require.min.js"></script>
 ```
 
-- 模板引擎
+# 模板引擎
 
 ```html
 <!-- artTemplate -->
 <script src="https://cdn.staticfile.org/artTemplate.js/3.0.1/template.js"></script>
-```
 
+<!-- handlebars -->
+<script src="https://cdn.bootcss.com/handlebars.js/4.0.11/handlebars.min.js"></script>
+```
 
 - 地图
 

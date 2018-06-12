@@ -10,6 +10,52 @@
 
   - <https://juejin.im/post/5aacd6d55188252c32197273>
 
+
+# 用到的组件
+
+```shell
+areaPicker
+autoComplete
+
+back 返回按钮
+chat 聊天的输入框
+
+cropper 图片裁剪
+datepicker
+
+
+dialog
+
+editor
+IndexedDB
+
+layout 24分栏
+
+loading
+message
+
+pagination
+pdf
+preview
+
+qrcode
+
+retrive # 检索 弹出弹框搜索
+
+table
+tree
+
+upload
+video
+
+
+...
+
+# 占位元素
+开发中
+暂无评论
+```
+
 ---
 
 # 第三方组件方案

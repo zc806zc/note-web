@@ -3,6 +3,47 @@
 - 你或许不知道Vue的这些小技巧 https://juejin.im/post/5b1230c1f265da6e603933ad
 - Vue.js最佳实践（五招让你成为Vue.js大师） https://segmentfault.com/a/1190000014085613
 
+# Vue项目组织结构讨论
+
+```
+├─build
+├─config
+├─src
+│  ├─assets
+│  │  ├─icon-font
+│  │  ├─img
+│  │  └─scss 公用样式
+│  │      └─theme
+│  ├─components
+│  │  ├─appContent
+│  │  │  └─src
+│  ├─directives 自定义指令(drag)
+│  ├─filter 格式过滤转化(日期格式)
+│  ├─nodeTalk (socket.io)
+│  ├─router
+│  │  ├─子系统1
+│  │  └─子系统2
+│  │  └─...
+│  ├─store  (actions mutation...)
+│  │  └─modules
+│  │      ├─design
+│  │      │  ├─get
+│  │      │  ├─set
+│  │      │  └─sub
+│  │      ├─global
+│  ├─tool 常用方法
+│  │  └─browser (IE版本)
+│  └─views
+│      ├─common (由组件构成的公共页)
+│      │  ├─approve
+│      │  ├─borrow
+│      ├─consult (不同业务来划分)
+└─static 静态资源 (socket.io)
+    ├─face (emoji的小图)
+    └─image
+```
+
+
 # Vue项目优化
 
 - 状态过渡

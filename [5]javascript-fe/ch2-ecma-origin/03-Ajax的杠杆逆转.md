@@ -1,5 +1,17 @@
 # XML
 
+```
+// XML
+Extensible Markup Language
+可自定义
+描述 和存储数据
+```
+
+- DOMParser 类型
+- XMLSerializer 类型
+- 浏览器对 XPath 的支持
+- 浏览器对 XSLT 的支持
+
 - 缺点 -> 冗余
 - XML解析器 <http://www.yiibai.com/java_xml/java_xml_parsers.html>
 
@@ -53,6 +65,46 @@ public class DOM4jModifyXMLDemo {
       }
    }    
 }
+
+
+// 
+var parser = new DOMParser();
+var xmldom = parser.parseFromString("<root><child/></root>", "text/xml");
+console.log(xmldom.documentElement.tagName); //"root"
+console.log(xmldom.documentElement.firstChild.tagName); //"child"
+var anotherChild = xmldom.createElement("child");
+xmldom.documentElement.appendChild(anotherChild);
+var children = xmldom.getElementsByTagName("child");
+console.log(children.length); //2
+
+var serializer = new XMLSerializer();
+var xml = serializer.serializeToString(xmldom);
+console.log(xml);
+
+// 以异步方式加载 XML 文件的典型模式如下
+// 注意要使用 XML 文档变量的名称（xmldom），不能使用 this 对象。
+// 原因是 ActiveX 控件为预防安全问题不允许使用 this 对象。
+// 虽然可以通过XML DOM文档对象加载XML文件，
+// 但公认的还是使用 XMLHttp-Request 对象比较好。
+var xmldom = createDocument();
+xmldom.async = true;
+xmldom.onreadystatechange = function () {
+    if (xmldom.readyState == 4) {
+        if (xmldom.parseError != 0) {
+            console.log("An error occurred:\nError Code: " + xmldom.parseError.errorCode + "\n" + "Line: " + xmldom.parseError
+                .line + "\n" + "Line Pos: " + xmldom.parseError.linepos + "\n" + "Reason: " + xmldom.parseError.reason);
+        } else {
+            console.log(xmldom.documentElement.tagName); //"root"
+            console.log(xmldom.documentElement.firstChild.tagName); //"child"
+            var anotherChild = xmldom.createElement("child");
+            xmldom.documentElement.appendChild(anotherChild);
+            var children = xmldom.getElementsByTagName("child");
+            console.log(children.length); //2
+            console.log(xmldom.xml);
+        }
+    }
+};
+xmldom.load("example.xml");
 ```
 
 # JSON
@@ -336,57 +388,6 @@ for-each-in 循环
 <script type="text/javascript;e4x=1" src="e4x_file.js"></script>
 ```
 
-# XML(废弃)
-
-- DOMParser 类型
-- XMLSerializer 类型
-- 浏览器对 XPath 的支持
-- 浏览器对 XSLT 的支持
-
-```javascript
-// XML
-Extensible Markup Language
-可自定义
-描述 和存储数据
-
-var parser = new DOMParser();
-var xmldom = parser.parseFromString("<root><child/></root>", "text/xml");
-console.log(xmldom.documentElement.tagName); //"root"
-console.log(xmldom.documentElement.firstChild.tagName); //"child"
-var anotherChild = xmldom.createElement("child");
-xmldom.documentElement.appendChild(anotherChild);
-var children = xmldom.getElementsByTagName("child");
-console.log(children.length); //2
-
-var serializer = new XMLSerializer();
-var xml = serializer.serializeToString(xmldom);
-console.log(xml);
-
-// 以异步方式加载 XML 文件的典型模式如下
-// 注意要使用 XML 文档变量的名称（xmldom），不能使用 this 对象。
-// 原因是 ActiveX 控件为预防安全问题不允许使用 this 对象。
-// 虽然可以通过XML DOM文档对象加载XML文件，
-// 但公认的还是使用 XMLHttp-Request 对象比较好。
-var xmldom = createDocument();
-xmldom.async = true;
-xmldom.onreadystatechange = function () {
-    if (xmldom.readyState == 4) {
-        if (xmldom.parseError != 0) {
-            console.log("An error occurred:\nError Code: " + xmldom.parseError.errorCode + "\n" + "Line: " + xmldom.parseError
-                .line + "\n" + "Line Pos: " + xmldom.parseError.linepos + "\n" + "Reason: " + xmldom.parseError.reason);
-        } else {
-            console.log(xmldom.documentElement.tagName); //"root"
-            console.log(xmldom.documentElement.firstChild.tagName); //"child"
-            var anotherChild = xmldom.createElement("child");
-            xmldom.documentElement.appendChild(anotherChild);
-            var children = xmldom.getElementsByTagName("child");
-            console.log(children.length); //2
-            console.log(xmldom.xml);
-        }
-    }
-};
-xmldom.load("example.xml");
-```
 
 # Axios封装
 
@@ -705,8 +706,15 @@ axios.get('/user/12345', {
 cancel();
 ```
 
-# rapid.js
+# 其他
 
-- <https://github.com/rapidjs/rapid.js>
+- mvc验证jquery.unobtrusive-ajax  https://www.cnblogs.com/Leo_wl/p/4886638.html
+  - 重点是Asynchronous 部分
+  - 没有一句是专门为某个特定的Web页面中的某个Html元素来编写的，即所有函数都是通用的
+  - Html.BeginForm() 
+
+- rapid.js <https://github.com/rapidjs/rapid.js>
 
 > An ORM-like Interface and a Router For Your API Requests
+
+

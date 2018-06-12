@@ -232,7 +232,7 @@ methods: {
 
   - slot
 
-```javascript
+```jhtml
 <table>
   <tr is="my-row"></tr>
 </table>
@@ -287,7 +287,7 @@ Vue.component('example', {
   - <https://jsfiddle.net/chrisvfritz/sLrhk1bc/>
   - 过渡状态
 
-```javascript
+```
 CSS 动画用法和 CSS 过渡相同，
 区别是在动画中 v-enter 类名在元素插入 DOM 后不会立即删除，
 而是在 animationend 事件触发时删除。
@@ -411,92 +411,6 @@ allowSyntheticDefaultImports // ES 模块语法
 # 父子组件之间传值
 
 - <https://juejin.im/post/59ec95006fb9a0451c398b1a>
-
-# Vue项目组织结构
-
-```
-├─build
-├─config
-├─src
-│  ├─assets
-│  │  ├─icon-font
-│  │  ├─img
-│  │  └─scss 公用样式
-│  │      └─theme
-│  ├─components
-│  │  ├─appContent
-│  │  │  └─src
-│  ├─directives 自定义指令(drag)
-│  ├─filter 格式过滤转化(日期格式)
-│  ├─nodeTalk (socket.io)
-│  ├─router
-│  │  ├─子系统1
-│  │  └─子系统2
-│  │  └─...
-│  ├─store  (actions mutation...)
-│  │  └─modules
-│  │      ├─design
-│  │      │  ├─get
-│  │      │  ├─set
-│  │      │  └─sub
-│  │      ├─global
-│  ├─tool 常用方法
-│  │  └─browser (IE版本)
-│  └─views
-│      ├─common (由组件构成的公共页)
-│      │  ├─approve
-│      │  ├─borrow
-│      ├─consult (不同业务来划分)
-└─static 静态资源 (socket.io)
-    ├─face (emoji的小图)
-    └─image
-```
-
-# 一般要用到的组件
-
-```shell
-areaPicker
-autoComplete
-
-back 返回按钮
-chat 聊天的输入框
-
-cropper 图片裁剪
-datepicker
-
-
-dialog
-
-editor
-IndexedDB
-
-layout 24分栏
-
-loading
-message
-
-pagination
-pdf
-preview
-
-qrcode
-
-retrive # 检索 弹出弹框搜索
-
-table
-tree
-
-upload
-video
-
-
-...
-
-# 占位元素
-开发中
-暂无评论
-```
-
 
 # 常识问题
 
