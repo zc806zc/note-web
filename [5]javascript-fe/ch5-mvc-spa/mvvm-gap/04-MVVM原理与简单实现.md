@@ -3,6 +3,7 @@
 - 不好意思！耽误你的十分钟，让MVVM原理还给你 <https://juejin.im/post/5abdd6f6f265da23793c4458>
 - 你能写一个Vue的双向数据绑定吗 <https://juejin.im/post/5acc17cb51882555745a03f8>
 - 实现双向绑定Proxy比defineproperty优劣如何 https://juejin.im/post/5acd0c8a6fb9a028da7cdfaf
+- 利用 JavaScript 数据绑定实现一个简单的 MVVM 库 https://segmentfault.com/a/1190000004847657
 
 ```html
 <!DOCTYPE html>

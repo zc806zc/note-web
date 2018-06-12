@@ -1,10 +1,12 @@
 # 设计模式
 
-> 如果你手中有一把锤子，一切都是钉子。。。
+> 如果你手中有一把锤子...
 
 - JS设计模式
 
   - <https://juejin.im/post/59df4f74f265da430f311909>
+  - https://github.com/MuYunyun/blog
+  - 设计模式资源大全 https://juejin.im/entry/5b1e6e5e5188257d5a30ccad
 
 - 设计模式的关注点
 
