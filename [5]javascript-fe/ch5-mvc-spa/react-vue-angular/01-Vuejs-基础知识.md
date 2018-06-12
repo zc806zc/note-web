@@ -20,7 +20,6 @@
   - 前端每周清单半年盘点之 Vue.js <https://juejin.im/post/59928d55518825486f1e8369>
   - vue入门到放弃 参考推荐的学习顺序 <https://juejin.im/post/59aa1248518825392656a86a>
   - vuejs心法和技法 <http://www.cnblogs.com/kidsitcn/p/5409994.html>
-  - Vue面试题 <https://juejin.im/post/59ffb4b66fb9a04512385402>
   - 你应该要知道的Vue.js https://juejin.im/post/5ab2ff496fb9a028c06ab78f
 
 - 与其他框架的比较

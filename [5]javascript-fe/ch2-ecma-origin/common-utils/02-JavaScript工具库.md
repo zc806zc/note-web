@@ -34,6 +34,7 @@
   - 简单收集 <https://github.com/jsfront/src/blob/master/js.md>
 
   - ES6常用片段 <http://www.css88.com/archives/8748>
+  - overwrite some javascript methods <https://github.com/xuqiang521/overwrite>
 
 ```javascript
 字符串操作 格式化|替换|大小写转换|去空格
