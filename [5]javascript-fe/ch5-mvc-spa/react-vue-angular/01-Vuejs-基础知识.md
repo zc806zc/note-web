@@ -34,7 +34,7 @@
   - element UI
   - iview
   - vue-element-admin <https://github.com/PanJiaChen/vue-element-admin>
-  - bulma
+  - vue-admin 结合bulma https://github.com/vue-bulma/vue-admin
   
 - 移动端
 
@@ -80,7 +80,7 @@
 
 - 语法
 
-  - 修饰符
+  - 修饰符 
   - 按键
   - 缩写 v-on v-bind
   - 暴露
@@ -90,12 +90,20 @@
 <!-- 阻止浏览器默认行为 -->
 <form v-on:submit.prevent="onSubmit"></form> 
  <!-- 可串联 -->
- <!-- .stop
+ <!-- 
+   .stop
 .prevent
 .capture
 .self
-.once -->
+.once
+.passive
+ -->
 <a v-on:click.stop.prevent="doThat"></a>
+
+v-on:click.prevent.self 会阻止所有的点击，
+而 v-on:click.self.prevent 只会阻止对元素自身的点击。
+
+.exact 修饰符
 
 <!-- 在change更新值 -->
 <input v-model.lazy="msg" >
@@ -134,16 +142,16 @@ vm.$watch('a', function (newVal, oldVal) {
 ```
 
 - computed vs methods
+  - 计算属性是基于它们的依赖进行缓存的，只有相关依赖发生改变时才会重新取值
+  - 而使用 methods 在重新渲染的时候 函数总会重新调用执行
 
-```shell
-我们可以使用 methods 来替代 computed，
-效果上两个都是一样的
-但是 computed 是基于它的依赖缓存，
-只有相关依赖发生改变时才会重新取值。
-
-而使用 methods
-在重新渲染的时候
-函数总会重新调用执行
+```js
+// 不会更新
+computed: {
+  now: function () {
+    return Date.now()
+  }
+}
 ```
 
 - 组件 prop
@@ -165,31 +173,18 @@ update
 componentUpdated // 被绑定元素所在模板完成一次更新周期时调用
 ```
 
-- 基础
+- 逻辑
 
-  - <https://github.com/keepfool/vue-tutorials>
+  - v-bind:style 自动添加前缀
+  - 尽可能在使用 v-for 时提供 key
+  - 2.2.0+ 的版本里，当在组件中使用 v-for 时，key 现在是必须的
+  - 变异方法
 
-```javascript
-// 表单使用
-遇到问题
-vue.min.js:7 TypeError: t.value.some is not a function
-暂时注释掉了select
-```
-
-- class-style绑定
-
-```javascript
-// 不会更新
-computed: {
-  now: function () {
-    return Date.now()
-  }
-}
-
+```html
 <div v-bind:class="classObject"></div>
 <div v-bind:style="{ color: activeColor, fontSize: fontSize + 'px' }"></div>
 
-// 条件渲染 唯一的key
+<!-- 条件渲染 唯一的key -->
 <template v-if="loginType === 'username'">
   <label>Username</label>
   <input placeholder="Enter your username" key="username-input">
@@ -199,7 +194,12 @@ computed: {
   <input placeholder="Enter your email address" key="email-input">
 </template>
 
-// v-for具有比v-if更高的优先级
+<!--
+v-for具有比v-if更高的优先级
+Object.keys()方式遍历
+不能保证它的结果在不同的 JavaScript 引擎下是一致的
+-->
+
 <li v-for="todo in todos" v-if="!todo.isComplete">
   {{ todo }}
 </li>
@@ -210,15 +210,20 @@ computed: {
   </li>
 </ul>
 
+<script>  
 // 重塑数组
 example1.items = example1.items.filter(function (item) {
   return item.message.match(/Foo/)
 })
+</script>
 ```
 
 - 事件处理
 
-  - 为什么要在HTML中listening <https://www.vuefe.cn/v2/guide/events.html#为什么在-HTML-中监听事件>
+  - 为什么要在HTML中监听事件 ?
+    - 和 关注点分离 争对的场景并不同，.vue单文件开发的时候就更突出了，这样无须在 JavaScript 里手动绑定事件
+    - 便于开发测试
+    - 当一个 ViewModel 被销毁时，所有的事件处理器都会自动被删除
 
 ```javascript
 // 可以用特殊变量 $event
@@ -241,13 +246,14 @@ methods: {
 
   - slot
 
-```jhtml
+```html
 <table>
   <tr is="my-row"></tr>
 </table>
 
 // 作用域插槽
 // 用作（可以传入数据的）可重用模板,而不是已渲染元素
+
 <my-awesome-list :items="items">
   <!-- 作用域插槽也可以被命名 -->
   <template slot="item" scope="props">
@@ -394,7 +400,18 @@ it('updates the rendered message when vm.message updates', done => {
 
 # 常识问题
 
-- 所有的 DOM 操作都由 Vue 来处理
+- 所有的 DOM 操作都由 Vue 来处理 $ref
+- Vue 为了使得 DOM 元素得到最大范围的重用而实现了一些智能的、启发式的方法，所以用一个含有相同元素的数组去替换原来的数组是非常高效的操作
+- 由于 JavaScript 的限制，Vue 不能检测一些变动的数组 -> vm.items.splice(indexOfItem, 1, newValue)
+- 同样由于 JavaScript 的限制，Vue 不能检测对象属性的添加或删除
+
+```js
+vm.userProfile = Object.assign({}, vm.userProfile, {
+  age: 27,
+  favoriteColor: 'Vue Green'
+})
+```
+
 - 表单输入和应用状态之间的双向绑定 不代表数据的双向绑定
 - assets与static文件夹的区别 https://segmentfault.com/q/1010000009842688
 - Vue引入jquery -> 可以宽容(CDN处理)
