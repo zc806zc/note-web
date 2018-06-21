@@ -1,18 +1,31 @@
 # Vue.js
 
 - Vue官网 
+
   - https://cn.vuejs.org/
   - <https://vuefe.cn/v2/guide/>
-- Vue API <https://vuejs-tips.github.io/cheatsheet/>
+  - cookbook https://cn.vuejs.org/v2/cookbook/
+  - https://cn.vuejs.org/v2/examples/
+  - 风格指南 https://cn.vuejs.org/v2/style-guide/
 
-- 入门基础
+- Vue API 
+  - https://cn.vuejs.org/v2/api/
+  - <https://vuejs-tips.github.io/cheatsheet/>
 
+- 入门
+
+  - <https://github.com/bhnddowinf/vuejs2-learn>
+  - <https://github.com/bhnddowinf/vuejs-learn>
   - Vue学习看这篇就够 <https://juejin.im/entry/5a54b747518825734216c3df>
   - 前端每周清单半年盘点之 Vue.js <https://juejin.im/post/59928d55518825486f1e8369>
   - vue入门到放弃 参考推荐的学习顺序 <https://juejin.im/post/59aa1248518825392656a86a>
   - vuejs心法和技法 <http://www.cnblogs.com/kidsitcn/p/5409994.html>
-  - Vue面试题 <https://juejin.im/post/59ffb4b66fb9a04512385402>
   - 你应该要知道的Vue.js https://juejin.im/post/5ab2ff496fb9a028c06ab78f
+
+- 与其他框架的比较
+
+  - 与React https://github.com/vuejs/vuejs.org/issues/364
+  - https://cn.vuejs.org/v2/guide/comparison.html
 
 # UI框架/生态圈
 
@@ -21,7 +34,7 @@
   - element UI
   - iview
   - vue-element-admin <https://github.com/PanJiaChen/vue-element-admin>
-  - bulma
+  - vue-admin 结合bulma https://github.com/vue-bulma/vue-admin
   
 - 移动端
 
@@ -41,18 +54,13 @@
 
 # 学习项目
 
-- vuejs2 官网讲解
-
-  - <https://github.com/bhnddowinf/vuejs2-learn>
-  - <https://github.com/bhnddowinf/vuejs-learn>
-
 - VueStudyDemos <https://github.com/violetjack/VueStudyDemos>
 - todo-list <https://github.com/Konata9/EasyTodoList>
 - 富文本编辑器Ueditor如何在Vue中使用？ <https://www.jianshu.com/p/8c43636c6c47>
 - 用webpack（2.x语法）手动搭建Vue项目 <https://www.jianshu.com/p/a87dee15e6c3>
 - 全面解析vue-cli生成的项目中使用其他库（js库、css库）<https://www.jianshu.com/p/a2fc286cb8ab>
 
-# 开发环境配置
+# 开发环境
 
 - vue-cli插件
 
@@ -72,21 +80,30 @@
 
 - 语法
 
-  - 修饰符
+  - 修饰符 
   - 按键
-  - 缩写
+  - 缩写 v-on v-bind
   - 暴露
 
 ```html
 <!-- 修饰符 -->
-<form v-on:submit.prevent="onSubmit"></form> <!-- 阻止浏览器默认行为 -->
-<a v-on:click.stop.prevent="doThat"></a> <!-- 可串联 -->
-
-<!-- .stop
+<!-- 阻止浏览器默认行为 -->
+<form v-on:submit.prevent="onSubmit"></form> 
+ <!-- 可串联 -->
+ <!-- 
+   .stop
 .prevent
 .capture
 .self
-.once -->
+.once
+.passive
+ -->
+<a v-on:click.stop.prevent="doThat"></a>
+
+v-on:click.prevent.self 会阻止所有的点击，
+而 v-on:click.self.prevent 只会阻止对元素自身的点击。
+
+.exact 修饰符
 
 <!-- 在change更新值 -->
 <input v-model.lazy="msg" >
@@ -125,24 +142,16 @@ vm.$watch('a', function (newVal, oldVal) {
 ```
 
 - computed vs methods
+  - 计算属性是基于它们的依赖进行缓存的，只有相关依赖发生改变时才会重新取值
+  - 而使用 methods 在重新渲染的时候 函数总会重新调用执行
 
-```shell
-我们可以使用 methods 来替代 computed，
-效果上两个都是一样的
-但是 computed 是基于它的依赖缓存，
-只有相关依赖发生改变时才会重新取值。
-
-而使用 methods
-在重新渲染的时候
-函数总会重新调用执行
-```
-
-- 组件 prop
-
-```shell
-是单向绑定的
-当父组件的属性变化时，
-将传导给子组件，但是不会反过来
+```js
+// 不会更新
+computed: {
+  now: function () {
+    return Date.now()
+  }
+}
 ```
 
 - 指令
@@ -156,31 +165,18 @@ update
 componentUpdated // 被绑定元素所在模板完成一次更新周期时调用
 ```
 
-- 基础
+- 逻辑
 
-  - <https://github.com/keepfool/vue-tutorials>
+  - v-bind:style 自动添加前缀
+  - 尽可能在使用 v-for 时提供 key
+  - 2.2.0+ 的版本里，当在组件中使用 v-for 时，key 现在是必须的
+  - 变异方法
 
-```javascript
-// 表单使用
-遇到问题
-vue.min.js:7 TypeError: t.value.some is not a function
-暂时注释掉了select
-```
-
-- class-style绑定
-
-```javascript
-// 不会更新
-computed: {
-  now: function () {
-    return Date.now()
-  }
-}
-
+```html
 <div v-bind:class="classObject"></div>
 <div v-bind:style="{ color: activeColor, fontSize: fontSize + 'px' }"></div>
 
-// 条件渲染 唯一的key
+<!-- 条件渲染 唯一的key -->
 <template v-if="loginType === 'username'">
   <label>Username</label>
   <input placeholder="Enter your username" key="username-input">
@@ -190,7 +186,12 @@ computed: {
   <input placeholder="Enter your email address" key="email-input">
 </template>
 
-// v-for具有比v-if更高的优先级
+<!--
+v-for具有比v-if更高的优先级
+Object.keys()方式遍历
+不能保证它的结果在不同的 JavaScript 引擎下是一致的
+-->
+
 <li v-for="todo in todos" v-if="!todo.isComplete">
   {{ todo }}
 </li>
@@ -201,15 +202,35 @@ computed: {
   </li>
 </ul>
 
+<script>  
 // 重塑数组
 example1.items = example1.items.filter(function (item) {
   return item.message.match(/Foo/)
 })
+</script>
+```
+
+- 表单
+
+```html
+<!-- 推荐像上面这样提供一个值为空的禁用选项。 -->
+<div id="example-5">
+  <select v-model="selected">
+    <option disabled value="">请选择</option>
+    <option>A</option>
+    <option>B</option>
+    <option>C</option>
+  </select>
+  <span>Selected: {{ selected }}</span>
+</div>
 ```
 
 - 事件处理
 
-  - 为什么要在HTML中listening <https://www.vuefe.cn/v2/guide/events.html#为什么在-HTML-中监听事件>
+  - 为什么要在HTML中监听事件 ?
+    - 和 关注点分离 争对的场景并不同，.vue单文件开发的时候就更突出了，这样无须在 JavaScript 里手动绑定事件
+    - 便于开发测试
+    - 当一个 ViewModel 被销毁时，所有的事件处理器都会自动被删除
 
 ```javascript
 // 可以用特殊变量 $event
@@ -228,34 +249,11 @@ methods: {
 <a v-on:click.once="doThis"></a> // 新增属性 事件只会触发触发一次
 ```
 
-- 组件
-
-  - slot
-
-```javascript
-<table>
-  <tr is="my-row"></tr>
-</table>
-
-// 作用域插槽
-// 用作（可以传入数据的）可重用模板,而不是已渲染元素
-<my-awesome-list :items="items">
-  <!-- 作用域插槽也可以被命名 -->
-  <template slot="item" scope="props">
-    <li class="my-fancy-item">{{ props.text }}</li>
-  </template>
-</my-awesome-list>
-
-<keep-alive>
-  <component :is="currentView">
-    <!-- 非活动组件将被缓存！ -->
-  </component>
-</keep-alive>
-
-v-once 低开销
-```
 
 - 响应式原理
+
+  - 非侵入性的响应式系统
+  - Vue.nextTick(callback)
 
 ```javascript
 Vue 不允许在已经创建的实例上动态添加新的根级响应式属性(root-level reactive property)。
@@ -287,7 +285,7 @@ Vue.component('example', {
   - <https://jsfiddle.net/chrisvfritz/sLrhk1bc/>
   - 过渡状态
 
-```javascript
+```
 CSS 动画用法和 CSS 过渡相同，
 区别是在动画中 v-enter 类名在元素插入 DOM 后不会立即删除，
 而是在 animationend 事件触发时删除。
@@ -365,35 +363,91 @@ it('updates the rendered message when vm.message updates', done => {
 })
 ```
 
-- 服务端渲染
-
-  - <https://ssr.vuejs.org/zh/> | <https://nuxtjs.org/>
-  - 更好的 SEO
-  - 更快的内容到达时间
-
-```javascript
-也可以将同一个组件渲染为服务器端的 HTML 字符串，
-将它们直接发送到浏览器，最后将静态标记"混合"为客户端上完全交互的应用程序。
-
-服务器渲染的 Vue.js 应用程序也可以被认为是"同构"或"通用"，
-因为应用程序的大部分代码都可以在服务器和客户端上运行。
-
-Nuxt 是一个基于 Vue 生态的更高层的框架，
-为开发服务端渲染的 Vue 应用提供了极其便利的开发体验。
-更酷的是，你甚至可以用它来做为静态站生成器
-```
-
 - TypeScript支持
 
-```javascript
-allowSyntheticDefaultImports // ES 模块语法
+  - allowSyntheticDefaultImports // ES 模块语法
+
+# 组件基础
+
+- 父子组件之间传值 <https://juejin.im/post/59ec95006fb9a0451c398b1a>
+- 单向数据流
+  - 单向下行绑定 ：父级 prop 的更新会向下流动到子组件中，但是反过来则不行
+  - 对于一个数组或对象类型的 prop 来说，在子组件中改变这个对象或数组本身将会影响到父组件的状态
+
+- 禁用特性继承 inheritAttrs: false
+- 将原生事件绑定到组件
+- .sync 修饰符
+- 插槽
+- 动态组件与异步组件 
+  - keep-alive
+- 处理边界情况
+
+```html
+传入一个对象的所有属性
+post: {
+  id: 1,
+  title: 'My Journey with Vue'
+}
+<blog-post v-bind="post"></blog-post>
+<blog-post
+  v-bind:id="post.id"
+  v-bind:title="post.title"
+></blog-post>
+
+<!-- 插槽 -->
+<ul>
+  <li
+    v-for="todo in todos"
+    v-bind:key="todo.id"
+  >
+    <!-- 我们为每个 todo 准备了一个插槽，-->
+    <!-- 将 `todo` 对象作为一个插槽的 prop 传入。-->
+    <slot v-bind:todo="todo">
+      <!-- 回退的内容 -->
+      {{ todo.text }}
+    </slot>
+  </li>
+</ul>
+
+<todo-list v-bind:todos="todos">
+  <!-- 将 `slotProps` 定义为插槽作用域的名字 -->
+  <template slot-scope="slotProps">
+    <!-- 为待办项自定义一个模板，-->
+    <!-- 通过 `slotProps` 定制每个待办项。-->
+    <span v-if="slotProps.todo.isComplete">✓</span>
+    {{ slotProps.todo.text }}
+  </template>
+</todo-list>
+
+<todo-list v-bind:todos="todos">
+  <template slot-scope="{ todo }">
+    <span v-if="todo.isComplete">✓</span>
+    {{ todo.text }}
+  </template>
+</todo-list>
+
+
+
+
+<table>
+  <tr is="my-row"></tr>
+</table>
+
+<my-awesome-list :items="items">
+  <!-- 作用域插槽也可以被命名 -->
+  <template slot="item" scope="props">
+    <li class="my-fancy-item">{{ props.text }}</li>
+  </template>
+</my-awesome-list>
+
+<keep-alive>
+  <component :is="currentView">
+    <!-- 非活动组件将被缓存！ -->
+  </component>
+</keep-alive>
+
+v-once 低开销
 ```
-
-# Vue渲染引擎
-
-- Vue 模板编译原理 https://juejin.im/post/5aaa506ff265da239236131b
-
-  - 模板字符串 -> element ASTs（解析器） -> 静态节点标记 -> 代码字符串化(代码生成)
 
 # 路由
 
@@ -404,100 +458,21 @@ allowSyntheticDefaultImports // ES 模块语法
 - <https://vuex.vuejs.org/zh-cn/api.html>
 - Vuex从入门到熟练使用 <https://www.jianshu.com/p/0fcdf380afe7>
 
-# Vue引入jquery
-
-- 可以宽容
-
-# 父子组件之间传值
-
-- <https://juejin.im/post/59ec95006fb9a0451c398b1a>
-
-# Vue项目组织结构
-
-```
-├─build
-├─config
-├─src
-│  ├─assets
-│  │  ├─icon-font
-│  │  ├─img
-│  │  └─scss 公用样式
-│  │      └─theme
-│  ├─components
-│  │  ├─appContent
-│  │  │  └─src
-│  ├─directives 自定义指令(drag)
-│  ├─filter 格式过滤转化(日期格式)
-│  ├─nodeTalk (socket.io)
-│  ├─router
-│  │  ├─子系统1
-│  │  └─子系统2
-│  │  └─...
-│  ├─store  (actions mutation...)
-│  │  └─modules
-│  │      ├─design
-│  │      │  ├─get
-│  │      │  ├─set
-│  │      │  └─sub
-│  │      ├─global
-│  ├─tool 常用方法
-│  │  └─browser (IE版本)
-│  └─views
-│      ├─common (由组件构成的公共页)
-│      │  ├─approve
-│      │  ├─borrow
-│      ├─consult (不同业务来划分)
-└─static 静态资源 (socket.io)
-    ├─face (emoji的小图)
-    └─image
-```
-
-# 一般要用到的组件
-
-```shell
-areaPicker
-autoComplete
-
-back 返回按钮
-chat 聊天的输入框
-
-cropper 图片裁剪
-datepicker
-
-
-dialog
-
-editor
-IndexedDB
-
-layout 24分栏
-
-loading
-message
-
-pagination
-pdf
-preview
-
-qrcode
-
-retrive # 检索 弹出弹框搜索
-
-table
-tree
-
-upload
-video
-
-
-...
-
-# 占位元素
-开发中
-暂无评论
-```
-
-
 # 常识问题
 
+- 所有的 DOM 操作都由 Vue 来处理 $ref
+- Vue 为了使得 DOM 元素得到最大范围的重用而实现了一些智能的、启发式的方法，所以用一个含有相同元素的数组去替换原来的数组是非常高效的操作
+- 由于 JavaScript 的限制，Vue 不能检测一些变动的数组 -> vm.items.splice(indexOfItem, 1, newValue)
+- 同样由于 JavaScript 的限制，Vue 不能检测对象属性的添加或删除
+
+```js
+vm.userProfile = Object.assign({}, vm.userProfile, {
+  age: 27,
+  favoriteColor: 'Vue Green'
+})
+```
+
+- 表单输入和应用状态之间的双向绑定 不代表数据的双向绑定
 - assets与static文件夹的区别 https://segmentfault.com/q/1010000009842688
+- Vue引入jquery -> 可以宽容(CDN处理)
+- 一个组件的 data 选项必须是一个函数

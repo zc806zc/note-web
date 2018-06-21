@@ -1,4 +1,11 @@
-# Vue组件封装学习
+# Vue组件
+
+- awesome-vue <https://github.com/vuejs/awesome-vue>
+  - 组件 https://github.com/vuejs/awesome-vue#components--libraries
+- @deprecated 组件方案 中文 已不活跃 <https://github.com/opendigg/awesome-github-vue>
+- Vue优选 https://curated.vuejs.org/
+
+# 封装学习
 
 - 侧滑菜单 <https://github.com/hjl19911127/vue-drawer-layout/>
 - 如何用vue制作一个探探滑动组件
@@ -10,13 +17,52 @@
 
   - <https://juejin.im/post/5aacd6d55188252c32197273>
 
----
 
-# 第三方组件方案
+# 用到的组件
 
-- awesome-vue <https://github.com/vuejs/awesome-vue>
-  - 组件 https://github.com/vuejs/awesome-vue#components--libraries
-- @deprecated 组件方案 中文 已不活跃 <https://github.com/opendigg/awesome-github-vue>
+```shell
+areaPicker
+autoComplete
+
+back 返回按钮
+chat 聊天的输入框
+
+cropper 图片裁剪
+datepicker
+
+
+dialog
+
+editor
+IndexedDB
+
+layout 24分栏
+
+loading
+message
+
+pagination
+pdf
+preview
+
+qrcode
+
+retrive # 检索 弹出弹框搜索
+
+table
+tree
+
+upload
+video
+
+
+...
+
+# 占位元素
+开发中
+暂无评论
+```
+
 
 ---
 

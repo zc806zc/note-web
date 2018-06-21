@@ -1,6 +1,8 @@
 # jquery前端组件方案
 
 - awesome-jquery <https://github.com/petk/awesome-jquery>
+- jq22
+- jquerycards https://www.jquerycards.com/
 
 # 万金油方案
 

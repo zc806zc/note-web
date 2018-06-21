@@ -520,6 +520,11 @@ function xiaolong(json) {
 
 --------------------------------------------------------------------------------
 
+# 表单 
+
+- 使用serialize() serializeArray()
+- eg. LayUI 会返回表单字段
+
 # 表单校验
 
 - superstruct

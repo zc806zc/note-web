@@ -16,14 +16,11 @@
   - 模板渲染引擎也有点尴尬
   - 校验规则变来变去的...
 
+- LayUI实际开发过程的细节点总结 http://fly.layui.com/jie/24673/
+
 # 二次开发项目
 
 - jqadmin <https://gitee.com/jqcool/jqadmin>
-
-
-# 改进
-
-- LayUI实际开发过程的细节点总结 http://fly.layui.com/jie/24673/
 
 
 # 写弹框
