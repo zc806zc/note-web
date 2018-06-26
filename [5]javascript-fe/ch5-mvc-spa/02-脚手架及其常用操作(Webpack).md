@@ -8,6 +8,7 @@
 
 - Browserify
 - Yeoman
+- brunch http://brunch.io/
 
 # IDEA快速配置(@deprecated)
 

@@ -2,11 +2,13 @@
 
 - awesome-vue <https://github.com/vuejs/awesome-vue>
   - 组件 https://github.com/vuejs/awesome-vue#components--libraries
-- @deprecated 组件方案 中文 已不活跃 <https://github.com/opendigg/awesome-github-vue>
+- 组件方案 中文 已不活跃 <https://github.com/opendigg/awesome-github-vue>
+- Vue组件 国外 https://vuejsexamples.com/
 - Vue优选 https://curated.vuejs.org/
 
 # 封装学习
 
+- Vue.js——60分钟组件快速入门（下篇） http://www.cnblogs.com/keepfool/p/5637834.html#h2_13
 - 侧滑菜单 <https://github.com/hjl19911127/vue-drawer-layout/>
 - 如何用vue制作一个探探滑动组件
 
@@ -16,7 +18,6 @@
 - VUI组件库学习 <https://github.com/Brickies/vui>
 
   - <https://juejin.im/post/5aacd6d55188252c32197273>
-
 
 # 用到的组件
 
@@ -137,6 +138,9 @@ video
 
 # 常用工具类
 
+# 二维码
+
+- vue-qr https://github.com/Binaryify/vue-qr
 
 # 阅读器
 

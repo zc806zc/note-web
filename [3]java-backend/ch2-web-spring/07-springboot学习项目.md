@@ -61,11 +61,6 @@
 
   - 基于SpringBoot的微信公众号快速开发框架，注解方式处理全部逻辑，重新定义公众号开发
 
-# Guns
-
-- guns <https://gitee.com/naan1993/guns>
-- <https://github.com/abel533/guns>
-- 基于SpringBoot的后台管理系统 <https://juejin.im/post/5a9cfc6851882555677e0666>
 
 # 电商
 
@@ -79,11 +74,6 @@
 - websocket技术实时输出系统日志 <https://gitee.com/kailing/boot-websocket-log>
 - Spring Boot使用Redis提升天气预报应用的并发访问能力 <http://www.imooc.com/article/23435>
 
-# layui前端系统优化建议
+# 其他
 
-- 关于前端文件组织(模块化)
-
-  - <https://github.com/layui/fly>
-  - <https://github.com/BrotherMa/layuiCMS>
-  - <https://gitee.com/xmmxjy/layuiAdmin>
-  - ...
+- 不明觉厉 https://github.com/LKG/heartwork

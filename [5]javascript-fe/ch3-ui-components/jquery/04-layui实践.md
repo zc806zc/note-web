@@ -18,6 +18,16 @@
 
 - LayUI实际开发过程的细节点总结 http://fly.layui.com/jie/24673/
 
+# layui前端系统优化建议
+
+- 关于前端文件组织(模块化)
+
+  - <https://github.com/layui/fly>
+  - <https://github.com/BrotherMa/layuiCMS>
+  - <https://gitee.com/xmmxjy/layuiAdmin>
+  - ...
+
+
 # 二次开发项目
 
 - jqadmin <https://gitee.com/jqcool/jqadmin>
