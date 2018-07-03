@@ -31,17 +31,21 @@
 
 - 后台管理系统
 
-  - element UI
-  - iview
+  - element
+  - iview 提供了iview-cli桌面工具，可视化生成
   - vue-element-admin <https://github.com/PanJiaChen/vue-element-admin>
   - vue-admin 结合bulma https://github.com/vue-bulma/vue-admin
   
 - 移动端
 
-  - vux
-  - mintUI
-  - vant <https://github.com/youzan/vant>
-  - OnsenUI https://github.com/OnsenUI/OnsenUI
+  - vux 按需加载 适合微信内嵌页面
+  - mintUI 按需加载 CSS3处理动效 but 组件偏少 可能要自己造轮子
+  - vant 
+    - <https://github.com/youzan/vant>
+  - OnsenUI 
+    - https://github.com/OnsenUI/OnsenUI
+    - 支持三大框架
+  - XCUI https://github.com/wmfe/xcui 
 
 - 跨三端
 
