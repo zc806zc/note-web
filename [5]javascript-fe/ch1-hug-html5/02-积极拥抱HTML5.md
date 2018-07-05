@@ -17,23 +17,10 @@
 # 渐近增强 优雅降级
 
 - 浏览器与设备兼容
-- Modernizer | html5shiv/html5.js
+- 浏览器市场占有率 
+  - <http://gs.statcounter.com>
+  - 国内 https://tongji.baidu.com/data/browser
 
-  - <https://github.com/Modernizr/Modernizr>
-
-- 浏览器市场占有率 <http://gs.statcounter.com>
-
-- Can I use
-
-- 腻子脚本
-
-  - 方案 <https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills>
-  - 腻子脚本 通过 createElement('header')的方式 让IE支持HTML5
-
-```javascript
-// 在IE上进行js测试
-saved from url=(0014)about:internet
-```
 
 # 元素更迭史
 
