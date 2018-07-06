@@ -21,11 +21,6 @@
 
 # 渐近增强 优雅降级
 
-- 浏览器与设备兼容
-- 浏览器市场占有率 
-  - <http://gs.statcounter.com>
-  - 国内 https://tongji.baidu.com/data/browser
-
 
 # 元素更迭史
 

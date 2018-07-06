@@ -192,6 +192,33 @@ overflow: hidden; // 触发生成BFC,使浮动元素也参与计算
 
 - <https://juejin.im/post/5a8c12935188257a6049a0a4>
 
+# 居中
+
+- 这15种CSS居中的方式，你都用过哪几种？ https://juejin.im/entry/5aead956f265da0ba76f9488
+  - 利用“精灵元素” -> 在父容器内放一个100%高度的伪元素，让文本和伪元素垂直对齐，从而达到垂直居中的目的
+  - http://www.42du.cn/run/64
+- 垂直居中 <https://www.w3.org/Style/Examples/007/center>
+- 兼容IE8 https://liyongleihf2006.github.io/center-box/
+
+```css
+/* 精灵元素 */
+.ghost-center {
+    position: relative;
+}
+.ghost-center::before {
+    content: " ";
+    display: inline-block;
+    height: 100%;
+    width: 1%;
+    vertical-align: middle;
+}
+.ghost-center p {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20rem;
+}
+```
+
 # 样式控制 | 节流与去抖
 
 - <https://juejin.im/post/5a813b4a5188257a6854d26e>
@@ -206,8 +233,6 @@ overflow: hidden; // 触发生成BFC,使浮动元素也参与计算
 - 根据兄弟元素的数量来设置样式
 
 - 满幅的背景 定宽的内容
-
-- 垂直居中 <https://www.w3.org/Style/Examples/007/center>
 
 - 紧贴底部的页脚
 
@@ -370,3 +395,4 @@ SCSS 是 Sass 3 引入新的语法，
 - <http://ghmagical.com/article/page/id/aqy7vR3DegbG>
 - 百度开源 基于less的mixin <https://github.com/ecomfe/est>
 - 实用css库 <https://github.com/marvin1023/sassCore>
+- 编写自己的代码库 https://juejin.im/post/5a0c18196fb9a045023b2ddf
