@@ -1,9 +1,4 @@
-# Vue开发指南
-
-- 你或许不知道Vue的这些小技巧 https://juejin.im/post/5b1230c1f265da6e603933ad
-- Vue.js最佳实践（五招让你成为Vue.js大师） https://segmentfault.com/a/1190000014085613
-
-# Vue项目组织结构讨论
+# Vue项目结构优化
 
 ```
 ├─build
@@ -43,6 +38,31 @@
     └─image
 ```
 
+# Vue前端开发规范
+
+- https://juejin.im/post/5ada9b586fb9a07aaf34c746
+
+# Vue开发指南
+
+- 你或许不知道Vue的这些小技巧 https://juejin.im/post/5b1230c1f265da6e603933ad
+- Vue.js最佳实践（五招让你成为Vue.js大师） https://segmentfault.com/a/1190000014085613
+- vue技术分享-你可能不知道的7个秘密 https://juejin.im/entry/5ae02151518825671a6371fa
+  - require.context
+  - 精简vuex的modules引入
+  - require('@views/admin').default 动态加载路由
+  - router key组件刷新 -> 给router-view添加一个唯一的key
+  - 组件包装、事件属性穿透问题
+- https://juejin.im/post/5ae02f39518825672f198ac2  
+- vue中需要注意的问题总结(上) https://juejin.im/post/5ad56d86518825556534ff4b
+
+
+# 实践
+
+- Vue+ElementUI实现表单动态渲染、可视化配置
+  - 参考表单写法
+  - https://juejin.im/post/5a9bc2676fb9a028d4440cfa
+  - https://github.com/bowencool/super-form
+
 # 组件开发
 
 - 整理 -> 组件篇
@@ -61,12 +81,23 @@
 - 服务端渲染
 - Vue的pre-render
 
+# 切换到typescript
+
+- Vue-TS-Boilerplate https://github.com/thundernet8/Vue-TS-Boilerplate
+
 # 原理解析
 
 - Virtual DOM原理
-- 响应式数据流
+- 响应式数据流 
+  - 当面试官问你Vue响应式原理，你可以这么回答他 https://juejin.im/post/5adf0085518825673123da9a
 - 源码解析
 - Vue-router原理
+
+# MPA多页面
+
+- vue多页面开发和打包的正确姿势 
+  - https://juejin.im/post/5a8e3f00f265da4e747fc700
+  - https://github.com/Faithree/multiple-vue-amazing
 
 # 基于Vue的多项目整合实践
 
@@ -76,6 +107,8 @@
 
 - 权限控制 结合 Vue <https://juejin.im/entry/5a60611b6fb9a01cb0495fcb>
 - 简单实现权限控制 <https://github.com/mgbq/vue-permission>
+- 关于 Vue 的路由权限管理 https://juejin.im/entry/5a9bfa206fb9a028e52d4f3c
+- https://juejin.im/post/5a97e41bf265da23a048fa20
 
 # 服务端渲染
 
@@ -115,7 +148,22 @@
 </script>
 ```
 
+
+- Vue 服务端渲染 https://juejin.im/post/5a9ca40b6fb9a028b77a4aac
+
+# 骨架屏
+
+- https://github.com/jrainlau/vue-skeleton
+- https://github.com/RThong/vue-skeleton
 - 首屏加载
 
   - <https://juejin.im/post/5a291092518825293b50366d>
 
+# PWA
+
+- https://github.com/nightzing/pwa-vue-template
+- https://juejin.im/post/5af264296fb9a07aa54248f9
+
+# 容器组件
+
+- 致敬 React: 为 Vue 引入容器组件和展示组件 https://juejin.im/post/5ae9a5545188256709610635

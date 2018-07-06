@@ -579,3 +579,11 @@ vm.userProfile = Object.assign({}, vm.userProfile, {
 - assets与static文件夹的区别 https://segmentfault.com/q/1010000009842688
 - Vue引入jquery -> 可以宽容(CDN处理)
 - 一个组件的 data 选项必须是一个函数
+
+# 高级用法
+
+- Vue.js中 watch 的高级用法 https://juejin.im/post/5ae91fa76fb9a07aa7677543
+  - immediate: true
+  - deep: true
+- Vue nextTick 机制
+  - https://juejin.im/post/5ae3f0956fb9a07ac90cf43e  
