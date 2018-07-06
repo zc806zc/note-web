@@ -77,6 +77,7 @@ const nav = document.querySelector("[rel='js-site-navigation']")
 # BFC
 
 - Block formatting context 块级格式化上下文
+- 它决定了元素如何对其内容进行定位,以及与其他元素的关系和相互作用
 
 - BFC与IFC <https://segmentfault.com/a/1190000012993668>
 
@@ -91,21 +92,28 @@ const nav = document.querySelector("[rel='js-site-navigation']")
 - BFC有何用
 
   - 清除浮动
-
-    - <http://www.cnblogs.com/dolphinX/p/3508869.html>
-    - <https://rainylog.com/post/what-methods-of-clearfix-can-i-use/>
-
   - 防止 margin 重叠
-
   - 多栏布局的一种方式
 
 - 元素溢出问题的解决
 
 ![](https://user-gold-cdn.xitu.io/2018/1/27/161373686b854aac?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
 
-# 理解多层嵌套的div
+# 清除浮动
+
+- <http://www.cnblogs.com/dolphinX/p/3508869.html>
+- <https://rainylog.com/post/what-methods-of-clearfix-can-i-use/>
+- 父级div定义height
+- clear:both
+- clearfix:after 和 zoom
+- overflow:hidden
+- 父级div也浮动，需要定义宽度
+- br + clear:both
+
+# 多层div
 
 - 滚动条需求
+- 性能考量 
 
 # 布局
 
@@ -118,6 +126,29 @@ const nav = document.querySelector("[rel='js-site-navigation']")
   - 双飞翼布局反之
 
   - <https://juejin.im/post/5a09570c6fb9a045167caf21>
+
+```html
+<!-- 流体 -->
+<div class="container">
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="main"></div>
+</div>
+
+<!-- 圣杯 -->
+<div class="container">
+    <div class="main"></div>
+    <div class="left"></div>
+    <div class="right"></div>
+</div>
+
+<!-- 双飞翼 -->
+<div class="content">
+    <div class="main"></div>
+</div>
+<div class="left"></div>
+<div class="right"></div>
+```
 
 - 自适应布局
 

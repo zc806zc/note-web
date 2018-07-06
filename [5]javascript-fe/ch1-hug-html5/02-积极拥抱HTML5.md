@@ -4,6 +4,8 @@
 
   - HTML5秘籍 <http://www.prosetech.com/html5>
   - <http://www.html5tricks.com/>
+  
+- HTML5 不基于 SGML，因此不需要对DTD进行引用，但是需要doctype来规范浏览器的行为
 
 # HTML5.2
 

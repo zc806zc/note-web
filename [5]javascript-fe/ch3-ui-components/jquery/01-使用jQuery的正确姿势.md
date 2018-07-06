@@ -11,6 +11,7 @@
   - 尽量使用.on方法
   - 尽量使用最新版本的jQuery
   - 尽量使用原生Javascript
+  - 采用jQuery的内部函数data()来存储数据
 
 ```javascript
 var $loading = $('#loading'); // 定义jquery变量
@@ -111,3 +112,27 @@ $('#myList).on('click', function(e){
 $('<style type="text/css"> div.class { color: red; } </style>')
 .appendTo('head');
 ```
+
+# 不为人知
+
+- 绑定多个事件
+
+```js
+$("#btn").on("mouseover mouseout", func);
+
+$("#btn").on({
+    mouseover: func1,
+    mouseout: func2,
+    click: func3
+});
+```
+
+- jQuery.extend 与 jQuery.fn.extend
+
+```js
+// 深浅拷贝
+var newObject = $.extend(true, {}, oldObject);
+var newObject = $.extend({}, oldObject);
+```
+
+- fire

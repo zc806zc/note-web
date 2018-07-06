@@ -86,3 +86,7 @@ class样式操作 // jquery
   content = content.replace(/<\/?[^>]*>/g, '')
   return content.replace(Reg, "<" + el + ">$1</" + el + ">");
 ```
+
+# 事件库封装
+
+- markyun.js https://github.com/markyun/Markyun.js/blob/master/markyunjs/WebContent/js/markyun.js

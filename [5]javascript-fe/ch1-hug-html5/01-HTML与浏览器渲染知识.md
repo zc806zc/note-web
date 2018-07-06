@@ -129,6 +129,13 @@
 <meta name="x5-page-mode" content="app"> <!-- QQ应用模式 -->
 ```
 
+# SEO
+
+- title > description > keywords
+- 重要内容HTML代码放在最前
+- 非装饰性图片必须加alt
+- 网站速度是搜索引擎排序的一个重要指标
+
 # YAML
 
 - <http://www.ruanyifeng.com/blog/2016/07/yaml.html>
@@ -188,6 +195,8 @@ f: !!str true
 ```
 
 # 浏览器渲染原理
+
+- 浏览器内核 -> 渲染引擎(layout engineer或Rendering Engine)和JS引擎
 
 - 渲染引擎
 

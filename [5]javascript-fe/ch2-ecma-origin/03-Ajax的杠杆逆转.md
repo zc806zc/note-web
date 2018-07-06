@@ -706,7 +706,11 @@ axios.get('/user/12345', {
 cancel();
 ```
 
-# 其他
+# Promise
+
+- ->> 异步编程
+
+# 其他黑科技
 
 - mvc验证jquery.unobtrusive-ajax  https://www.cnblogs.com/Leo_wl/p/4886638.html
   - 重点是Asynchronous 部分
