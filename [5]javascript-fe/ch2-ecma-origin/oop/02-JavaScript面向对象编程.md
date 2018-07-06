@@ -3,6 +3,7 @@
 - 摘自《javaScript面向对象编程指南(第2版)》chapter 6
 - <https://github.com/batmanimal/object-oriented-js>
 - <https://github.com/Lvqx/ooptest>
+- 深入JavaScript继承原理 https://juejin.im/post/5a96d78ef265da4e9311b4d8
 - 分类方式
 
   - 基于构造器或对象

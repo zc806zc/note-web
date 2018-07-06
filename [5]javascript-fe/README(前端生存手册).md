@@ -108,13 +108,25 @@
 
 > 当我们使用我们不需要的工具来解决根本就不存在的问题的时候，JavaScript 疲劳就出现了
 
+- 如何在疲劳的JS世界中持续学习 https://juejin.im/post/5ae97bd05188256719521ae0
+  - 关注大牛
+    - Addy Osmani
+    - Lea Verou
+    - Evan You
+    - Axel Rauschmayer
+    - Ben Alman
+    - Nicholas C. Zakas
+    - ...
+  - 探索新项目
+    - https://github.com/trending
+  - 资讯 ->> 资源章     
+
 # 如何防止被累死
 
 - 如何跟上时代脚步 <https://juejin.im/post/58e59a0aa0bb9f006906aea1>
 
   - 播客 [dotnetrocks.com](https://www.dotnetrocks.com/)
   - "适合"比"最好"更好
-
 - 程序员如何在技术浪潮的更迭中保持较高的成长速度
 
   - <https://juejin.im/post/5a4e296e51882573315c2917>

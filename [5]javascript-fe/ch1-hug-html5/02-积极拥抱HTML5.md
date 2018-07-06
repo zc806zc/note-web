@@ -10,6 +10,9 @@
 # HTML5.2
 
 - <https://bitsofco.de/whats-new-in-html-5-2>
+- 每个前端工程师都应该了解的HTML5.2 https://juejin.im/post/5a54cc75518825734107cd73
+  - dialog
+  - 支付请求API
 
 # 惊艳的 HTML5 DEMOssss....
 

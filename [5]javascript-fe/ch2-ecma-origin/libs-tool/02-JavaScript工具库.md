@@ -25,6 +25,13 @@
 
     - <http://muyunyun.cn/posts/4490810f/>
     - diana <https://github.com/MuYunyun/diana>
+  - 7种方法实现数组去重 https://juejin.im/post/5aed6110518825671b026bed
+    - [...new Set(arr)]
+    - Array.from(new Set(arr))
+    - 利用对象属性
+    - 排序->相邻元素
+    - indexOf x 2
+    - 循环
 
 - 常用片段
 
