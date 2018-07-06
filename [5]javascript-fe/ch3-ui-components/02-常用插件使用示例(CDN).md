@@ -1,3 +1,10 @@
+# CDN
+
+- http://cdn.code.baidu.com/
+- http://www.bootcdn.cn/
+- https://www.staticfile.org/
+- ...
+
 # jQuery系列
 
 ```html
