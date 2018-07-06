@@ -155,6 +155,9 @@ function praise(num, obj) {
 
 # 下拉框 | 选择框
 
+- 论如何实现一个完美的Select组件 https://juejin.im/post/5b02b960f265da0b9e655e61
+    - 一个相对定位的Selection + 一个绝对定位的DropdownMenu
+    - Selection与页面滚动
 - 插件
 
   - niceSelect
