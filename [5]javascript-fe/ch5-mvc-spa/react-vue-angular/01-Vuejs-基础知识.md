@@ -33,8 +33,6 @@
 
   - element
   - iview 提供了iview-cli桌面工具，可视化生成
-  - vue-element-admin <https://github.com/PanJiaChen/vue-element-admin>
-  - vue-admin 结合bulma https://github.com/vue-bulma/vue-admin
   
 - 移动端
 
