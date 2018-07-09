@@ -54,7 +54,7 @@
   - 组件包装、事件属性穿透问题
 - https://juejin.im/post/5ae02f39518825672f198ac2  
 - vue中需要注意的问题总结(上) https://juejin.im/post/5ad56d86518825556534ff4b
-
+- Vue 项目里戳中你痛点的问题及解决办法 https://juejin.im/post/5b174de8f265da6e410e0b4e
 
 # 实践
 

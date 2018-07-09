@@ -319,6 +319,8 @@ SCSS 是 Sass 3 引入新的语法，
 # CSS命名法
 
 - css常见样式命名思想 <https://juejin.im/post/5a79545a5188257a7924875d>
+- React拾遗：从10种现在流行的 CSS 解决方案谈谈我的最爱
+  - https://juejin.im/post/5b39e63ae51d4562aa017c81
 - BEM
   - https://github.com/sturobson/BEM-resources
 
@@ -352,7 +354,8 @@ SCSS 是 Sass 3 引入新的语法，
 }
 ```
 
-- Atomic
+- Atomic 原子
+  - tailwindcss https://tailwindcss.com/docs/installation
 
 # CSS模块化
 
