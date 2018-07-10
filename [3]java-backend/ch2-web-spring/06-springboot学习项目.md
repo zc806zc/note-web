@@ -18,6 +18,14 @@
 
 # 开源项目
 
+- Guns
+
+  - <https://www.imooc.com/video/16386>
+  - Spring Boot + mybatis-plus + Swagger + shiro + springMVC
+  - guns <https://gitee.com/naan1993/guns>
+  - <https://github.com/abel533/guns>
+  - 基于SpringBoot的后台管理系统 <https://juejin.im/post/5a9cfc6851882555677e0666>
+
 - Spring Boot 开源项目 <https://juejin.im/post/5a9c8b93518825557a2e6f89>
 - paascloud-master: spring cloud + vue模拟商城(NICE) <https://github.com/paascloud/paascloud-master>
 - 商城 <https://github.com/linlinjava/litemall>

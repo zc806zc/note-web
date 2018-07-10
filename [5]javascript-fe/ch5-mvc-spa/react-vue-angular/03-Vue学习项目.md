@@ -1,8 +1,12 @@
+# 基础
+
+- 分享手淘过年项目中采用到的前端技术 <https://juejin.im/entry/5a9d07b76fb9a028cb2d2032>
+- 实现基本的登录退出功能 基础 <https://github.com/lzxb/vue2-demo>
+
 # 实战学习项目
 
 - 基于 vue2 + vuex 构建一个具有 45 个页面的大型单页面应用 NICE <https://github.com/bailicangdu/vue2-elm>
 - Vue和Node.js实践 包含Vue写的天气APP <https://github.com/huang303513/NodejsVuePractice>
-- vue.js + bulma <https://github.com/vue-bulma/vue-admin>
 - vue-cnode <https://github.com/xjh22222228/vue-cnode>
 - 使用vue2.0实现购物车和地址选配功能 <https://www.imooc.com/video/14039>
 - 今日头条 <https://github.com/cd-dongzi/vue-project>
@@ -11,11 +15,7 @@
   - <https://juejin.im/post/59e719746fb9a044fa18f2f2>
   - <https://github.com/leer0911/vue-FlowChart>
 
-- 分享手淘过年项目中采用到的前端技术 <https://juejin.im/entry/5a9d07b76fb9a028cb2d2032>
-
 - 使用react、vue和koa开发的前后端分离的个人博客系统 <https://github.com/mvpzx/elapse>
-
-- 实现基本的登录退出功能 基础 <https://github.com/lzxb/vue2-demo>
 
 # 后台管理系统
 

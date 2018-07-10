@@ -58,6 +58,12 @@
   <style type="text/css">
     /* 首页用到的CSS内联 */
   </style>
+
+  <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
 </head>
 <body>
 
@@ -83,6 +89,7 @@
 ```
 
 - 常用META <https://github.com/joshbuchea/HEAD>
+  - 中文 https://github.com/Amery2010/HEAD
 
 ```html
 <!-- 每30秒中刷新当前页面 -->
