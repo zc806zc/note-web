@@ -10,7 +10,7 @@
 
 - heyui https://github.com/heyui/heyui
 - aurora https://github.com/MeiliFE/aurora
----
+- VUI组件库学习 <https://github.com/Brickies/vui>
 
 # 幻灯片
 
@@ -18,12 +18,9 @@
 
 # 弹框
 
----
-
 # 表单类
 
 - 行政规划数据 <https://github.com/modood/Administrative-divisions-of-China>
-
 
 # 表单校验 
 
@@ -48,8 +45,6 @@
 - vue-lunar-calendar 农历 https://github.com/KimWooHyun/vue-lunar-calendar
 - vue-simple-calendar https://github.com/richardtallent/vue-simple-calendar
 
----
-
 # 树与树状图
 
 - 可拖拽树 <https://github.com/ltaoo/vue-draggable-tree>
@@ -70,8 +65,6 @@
 
 - Dexie.js https://github.com/dfahlander/Dexie.js
 
----
-
 # 图表
 
 - Vue.js wrapper for Chart.js https://github.com/apertureless/vue-chartjs
@@ -84,19 +77,12 @@
 
 # 地图
 
-
----
-
 # 字体图标
 
 - vue-awesome https://github.com/Justineo/vue-awesome 
 
----
-
 # 多媒体
 
-
----
 
 # 二维码
 
@@ -106,13 +92,9 @@
 
 - vue-pdf https://github.com/FranckFreiburger/vue-pdf
 
----
-
 # 动画特效
 
 - vue2-animate https://github.com/asika32764/vue2-animate
-
----
 
 # 3d模型 | webGL
 
