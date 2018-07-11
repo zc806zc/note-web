@@ -95,6 +95,12 @@ function slide(range, conSlide, obj) {
   - <http://www.jq22.com/webqd1688>
   - <http://www.jq22.com/webqd114>
 
+
+# 表单统一与优化
+
+- 表单美化 <https://www.imooc.com/learn/42>
+
+
 # 通用输入
 
 - 密码框 zxcvbn <https://github.com/dropbox/zxcvbn>

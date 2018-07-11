@@ -18,15 +18,8 @@
 
   - 大量象形文字 <https://github.com/ryanoasis/nerd-fonts>
 
-- 使用 SVG 打造一个高质量的 ICON 系统 <http://svgtrick.com/tricks/fefc144c481dde654be5455e8e34a6e1>
-
-- 手摸手，带你优雅的使用 icon <https://juejin.im/post/59bb864b5188257e7a427c09>
-
 --------------------------------------------------------------------------------
 
-# 基础样式 | 表单元素梅花
-
-- 表单美化 <https://www.imooc.com/learn/42>
 
 # 文章
 
