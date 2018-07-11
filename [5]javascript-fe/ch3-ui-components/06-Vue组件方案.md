@@ -22,6 +22,10 @@
 
   - <https://juejin.im/post/5aacd6d55188252c32197273>
 
+# 组件库参考
+
+- heyui https://github.com/heyui/heyui
+
 # 用到的组件
 
 ```shell
