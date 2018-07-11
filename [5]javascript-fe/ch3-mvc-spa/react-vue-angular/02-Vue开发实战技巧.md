@@ -1,5 +1,6 @@
 # Vue前端开发规范
 
+- 风格指南 https://cn.vuejs.org/v2/style-guide/
 - https://juejin.im/post/5ada9b586fb9a07aaf34c746
 
 # Vue开发指南

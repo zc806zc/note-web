@@ -10,7 +10,6 @@
 
 - heyui https://github.com/heyui/heyui
 
-
 ---
 
 # 布局类
@@ -25,7 +24,7 @@
 # 表单校验 
 
 - vee-validate https://github.com/baianat/vee-validate 
-- vuelidate https://github.com/monterail/vuelidate
+- vuelidate https://github.com/monterail/vuelidatehttps://github.com/monterail/vuelidate
 
 # 富文本
 

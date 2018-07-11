@@ -3,10 +3,17 @@
 - Vue官网 
 
   - https://cn.vuejs.org/
-  - <https://vuefe.cn/v2/guide/>
-  - cookbook https://cn.vuejs.org/v2/cookbook/
-  - https://cn.vuejs.org/v2/examples/
-  - 风格指南 https://cn.vuejs.org/v2/style-guide/
+  - guide <https://vuefe.cn/v2/guide/>
+  - cookbook @NICE https://cn.vuejs.org/v2/cookbook/
+    - ScrollMagic 自定义滚动指令替代方案 https://github.com/janpaepke/ScrollMagic
+    - Vuetron 调试工具之一
+    - vscode调试配置
+    - fetch API https://developers.google.com/web/updates/2015/03/introduction-to-fetch
+    - 内存泄漏
+      - beforeDestroy
+      - keep-alive -> deactivated
+      - v-if
+  - examples https://cn.vuejs.org/v2/examples/
 
 - Vue API 
   - https://cn.vuejs.org/v2/api/
@@ -15,14 +22,14 @@
 - 入门
 
   - <https://github.com/bhnddowinf/vuejs2-learn>
-  - <https://github.com/bhnddowinf/vuejs-learn>
   - Vue学习看这篇就够 <https://juejin.im/entry/5a54b747518825734216c3df>
   - 前端每周清单半年盘点之 Vue.js <https://juejin.im/post/59928d55518825486f1e8369>
   - vue入门到放弃 参考推荐的学习顺序 <https://juejin.im/post/59aa1248518825392656a86a>
   - vuejs心法和技法 <http://www.cnblogs.com/kidsitcn/p/5409994.html>
   - 你应该要知道的Vue.js https://juejin.im/post/5ab2ff496fb9a028c06ab78f
+    - @deprecated <https://github.com/bhnddowinf/vuejs-learn>
 
-- 与其他框架的比较
+# Vue与其他框架的比较
 
   - 与React https://github.com/vuejs/vuejs.org/issues/364
   - https://cn.vuejs.org/v2/guide/comparison.html
@@ -228,14 +235,14 @@ example1.items = example1.items.filter(function (item) {
 </div>
 ```
 
-- 事件处理
+# 事件处理
 
-  - 为什么要在HTML中监听事件 ?
-    - 和 关注点分离 争对的场景并不同，.vue单文件开发的时候就更突出了，这样无须在 JavaScript 里手动绑定事件
-    - 便于开发测试
-    - 当一个 ViewModel 被销毁时，所有的事件处理器都会自动被删除
+- 为什么要在HTML中监听事件 ?
+  - 和 关注点分离 争对的场景并不同，.vue单文件开发的时候就更突出了，这样无须在 JavaScript 里手动绑定事件
+  - 便于开发测试
+  - 当一个 ViewModel 被销毁时，所有的事件处理器都会自动被删除
 
-```javascript
+```html
 // 可以用特殊变量 $event
 <button v-on:click="warn('Form cannot be submitted yet.', $event)">
   Submit
@@ -249,14 +256,14 @@ methods: {
   }
 }
 
-<a v-on:click.once="doThis"></a> // 新增属性 事件只会触发触发一次
+<a @click.once="doThis"></a> // 新增属性 事件只会触发触发一次
 ```
 
 
-- 响应式原理
+# 响应式原理
 
-  - 非侵入性的响应式系统
-  - Vue.nextTick(callback)
+- 非侵入性的响应式系统
+- Vue.nextTick(callback)
 
 ```javascript
 Vue 不允许在已经创建的实例上动态添加新的根级响应式属性(root-level reactive property)。
@@ -282,11 +289,11 @@ Vue.component('example', {
 })
 ```
 
-- 过渡效果
+# 过渡效果
 
-  - animate.css
-  - <https://jsfiddle.net/chrisvfritz/sLrhk1bc/>
-  - 过渡状态
+- animate.css
+- <https://jsfiddle.net/chrisvfritz/sLrhk1bc/>
+- 过渡状态
 
 ```
 CSS 动画用法和 CSS 过渡相同，
@@ -310,9 +317,9 @@ CSS 动画用法和 CSS 过渡相同，
 <transition-group> 组件
 ```
 
-- render函数
+# render函数
 
-  - 函数化组件
+- 函数化组件
 
 ```javascript
 render 函数，它比 template 更接近编译器
@@ -324,17 +331,19 @@ render 函数，它比 template 更接近编译器
 Vue 的模板实际是编译成了 render 函数
 ```
 
-- (自定义)指令
+# (自定义)指令
 
-  - 钩子函数
+- 钩子函数
 
-- 混合
+# 混合
 
 ```javascript
 一种灵活的分布式复用 Vue 组件的方式
 ```
 
-- 插件 <https://www.vuefe.cn/v2/guide/plugins.html>
+# 插件 
+
+- <https://www.vuefe.cn/v2/guide/plugins.html>
 
 ```javascript
 插件通常会为Vue添加全局功能
@@ -344,10 +353,9 @@ Vue.js 的插件应当有一个公开方法 install
 Vue.use 会自动阻止注册相同插件多次，届时只会注册一次该插件
 ```
 
-- 状态管理 vuex
-- 单元测试
+# 单元测试
 
-  - karma
+- karma
 
 ```javascript
 如果一个组件的渲染输出完全取决于它的 props，
@@ -366,9 +374,9 @@ it('updates the rendered message when vm.message updates', done => {
 })
 ```
 
-- TypeScript支持
+# TypeScript支持
 
-  - allowSyntheticDefaultImports // ES 模块语法
+- allowSyntheticDefaultImports 
 
 # 组件基础
 
@@ -429,9 +437,6 @@ post: {
   </template>
 </todo-list>
 
-
-
-
 <table>
   <tr is="my-row"></tr>
 </table>
@@ -452,7 +457,7 @@ post: {
 v-once 低开销
 ```
 
-# 路由
+# Vue Router | 路由
 
 - Vue内置路由 <https://github.com/chrisvfritz/vue-2.0-simple-routing-example>
 
@@ -461,29 +466,14 @@ v-once 低开销
 - <https://vuex.vuejs.org/zh-cn/api.html>
 - Vuex从入门到熟练使用 <https://www.jianshu.com/p/0fcdf380afe7>
 
-- 基础 https://vuex.vuejs.org/zh-cn/api.html
-
-  - state
-  - mutation
-  - getters
-  - action
+- 基础
+  - Vuex 的状态存储是响应式的
+  - 单一状态树
+  - 每个应用将仅仅包含一个 store 实例,在调试的过程中也能轻易地取得整个当前应用状态的快照
 
 ```javascript
-Vuex 的状态存储是响应式的
-
-单一状态树
-每个应用将仅仅包含一个 store 实例
-
-在调试的过程中也能轻易地取得整个当前应用状态的快照
-
-Vuex 通过 store 选项，
-提供了一种机制将状态从根组件『注入』到每一个子组件中（需调用 Vue.use(Vuex)）
-
 mapState 辅助函数
 帮助我们生成计算属性
-
-如果有些状态严格属于单个组件，最好还是作为组件的局部状态。
-你应该根据你的应用开发需要进行权衡和确定。
 
 更改 Vuex 的 store 中的状态的唯一方法是提交 mutation
 
@@ -507,10 +497,11 @@ mutation 必须是同步函数
 ```
 
 - Actions
+  - Action 提交的是 mutation，而不是直接变更状态。
+  - Action 可以包含任意异步操作。
 
 ```javascript
-Action 提交的是 mutation，而不是直接变更状态。
-Action 可以包含任意异步操作。
+
 
 // 通过 store.dispatch 方法触发
 // 以载荷形式分发
@@ -537,7 +528,6 @@ actions: {
 
 一个 store.dispatch 在不同模块中可以触发多个 action 函数。
 在这种情况下，只有当所有触发函数完成后，返回的 Promise 才会执行。
-
 ```
 
 - Modules
@@ -545,6 +535,9 @@ actions: {
 ```js
 Vuex 允许我们将 store 分割成模块
 你可以通过插件的参数对象来允许用户指定空间名称
+
+如果有些状态严格属于单个组件，最好还是作为组件的局部状态。
+你应该根据你的应用开发需要进行权衡和确定。
 ```
 
 - 严格模式
