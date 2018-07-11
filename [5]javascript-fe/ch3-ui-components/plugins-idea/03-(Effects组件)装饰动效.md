@@ -32,6 +32,12 @@
 - 易佰教程等教程类
 - kindle
 
+# 加载等待
+
+- 效果集
+
+  - 小人转圈圈 NICE <https://codepen.io/flashingmoose/pen/vNQELw>
+  
 # 打印优化
 
 - typo.css <https://github.com/sofish/typo.css>

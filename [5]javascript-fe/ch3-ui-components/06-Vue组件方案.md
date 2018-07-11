@@ -26,51 +26,6 @@
 
 - heyui https://github.com/heyui/heyui
 
-# 用到的组件
-
-```shell
-areaPicker
-autoComplete
-
-back 返回按钮
-chat 聊天的输入框
-
-cropper 图片裁剪
-datepicker
-
-
-dialog
-
-editor
-IndexedDB
-
-layout 24分栏
-
-loading
-message
-
-pagination
-pdf
-preview
-
-qrcode
-
-retrive # 检索 弹出弹框搜索
-
-table
-tree
-
-upload
-video
-
-
-...
-
-# 占位元素
-开发中
-暂无评论
-```
-
 
 ---
 
@@ -87,6 +42,13 @@ video
 
 - vee-validate https://github.com/baianat/vee-validate 
 - vuelidate https://github.com/monterail/vuelidate
+
+# 富文本
+
+- tinymce @NICE https://github.com/tinymce/tinymce
+- ckeditor https://github.com/galetahub/ckeditor
+
+# Markdown编辑器
 
 # 时间日历
 
@@ -114,6 +76,7 @@ video
 # 分页
 
 - vue-paginate https://github.com/TahaSh/vue-paginate
+- vue-multiselect https://github.com/shentao/vue-multiselect
 
 ---
 

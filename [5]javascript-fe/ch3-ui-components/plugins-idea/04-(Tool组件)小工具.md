@@ -37,30 +37,6 @@
 
 --------------------------------------------------------------------------------
 
-# 富文本编辑器
-
-- (首选) brackets <https://github.com/adobe/brackets>
-- quill <https://github.com/quilljs/quill>
-- ace <https://github.com/ajaxorg/ace>
-- draft-js <https://github.com/facebook/draft-js>
-- ueditor | wangeditor
-- 经典 ckeditor | kindeditor
-- pell
-- x-editable <https://github.com/vitalets/x-editable>
-
-  - jquery
-
-- medium-editor 原生JS IE兼容 <https://github.com/yabwe/medium-editor>
-
-- stackedit <https://github.com/benweet/stackedit>
-
-- 次选
-
-  - summernote <https://github.com/summernote/summernote>
-  - wysiwyg <https://github.com/mindmup/bootstrap-wysiwyg/>
-
---------------------------------------------------------------------------------
-
 # 放大镜 | 截图
 
 - jcrop <http://www.bootcdn.cn/jquery-jcrop/>
@@ -124,6 +100,9 @@
 
 # 格式转化 | 导入导出
 
+- 思路 https://stackoverflow.com/questions/14964035/how-to-export-javascript-array-info-to-csv-on-client-side
+    - data:text/csv;charset=utf-8
+    - encodeURI(csvContent)
 - pdf2htmlEX
 
   - <https://github.com/coolwanglu/pdf2htmlEX>

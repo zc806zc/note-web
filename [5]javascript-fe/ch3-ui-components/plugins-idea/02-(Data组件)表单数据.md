@@ -744,7 +744,7 @@ rows.sort(function(a,b){
 
 # 图表
 
-- 在可视化章节
+- ->> 可视化
 
 --------------------------------------------------------------------------------
 
@@ -758,13 +758,31 @@ rows.sort(function(a,b){
 
 - 超链接悬浮上去时, 打开新窗口图标提示
 
-# 提示标签 | Tooltip
+# 富文本编辑器
 
-- popper.js <https://github.com/FezVrasta/popper.js>
-- tipsy IE兼容
+- 为什么都说富文本编辑器是天坑？ https://www.zhihu.com/question/38699645
+    - DOM
+    - Range/Selection -> 但凡复杂的编辑器都是自己实现类似contentEditable功能的
+    - 编辑器本身 -> 撤回 | 重做
 
-# 加载等待
 
-- 效果集
+- 经典 ckeditor | kindeditor
+- ace <https://github.com/ajaxorg/ace>
+- editor https://github.com/ory/editor
+- draft-js @NICE  React <https://github.com/facebook/draft-js>
+- brackets @NICE <https://github.com/adobe/brackets>
+- quill 图片坑 <https://github.com/quilljs/quill>
+- 国内 ueditor | wangeditor
+- x-editable jquery考虑 <https://github.com/vitalets/x-editable>
+- medium-editor 原生JS IE兼容 <https://github.com/yabwe/medium-editor>
+- stackedit <https://github.com/benweet/stackedit>
+- 次选
 
-  - 小人转圈圈 NICE <https://codepen.io/flashingmoose/pen/vNQELw>
+  - summernote <https://github.com/summernote/summernote>
+  - wysiwyg <https://github.com/mindmup/bootstrap-wysiwyg/>
+  - sqire
+  - pell
+
+ # Markdown编辑器 | MD 
+
+ - simplemde-markdown-editor https://github.com/sparksuite/simplemde-markdown-editor

@@ -2,6 +2,7 @@
 
 - vue-element-admin <https://github.com/PanJiaChen/vue-element-admin>
 - vue-admin 结合bulma https://github.com/vue-bulma/vue-admin
+- vue-material https://github.com/vuematerial/vue-material
 - vue-manage-system https://github.com/lin-xin/vue-manage-system
 - NICE D2Admin
     - 不落俗套
@@ -26,7 +27,7 @@
 - token存到cookie -> 用token拉取user_info与role -> 路由(router.addRoutes) -> vuex渲染侧边
 - 页面刷新， vuex的数据也会丢失，要重复上述操作
 - token有效期： session与后台刷新
-- 前后端权限控制 都要做 但是不提倡后台去配置这个权限
+- 前后端权限控制 当然都要做 但不提倡后台吐出这个菜单(维护)
 - 按钮级别权限控制
     - 颗粒度
     - 先考虑页面设计是否合理

@@ -298,6 +298,11 @@ $(function() {
   - lhgdialog会销毁之前提取的内容, 这种处理不合理
   - layer这种复制比较好
 
+# 提示标签 | Tooltip
+
+- popper.js <https://github.com/FezVrasta/popper.js>
+- tipsy IE兼容
+
 # 对话框和灯箱
 
 - 移动端Web组件-Dialog对话框

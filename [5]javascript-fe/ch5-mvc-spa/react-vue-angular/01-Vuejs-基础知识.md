@@ -38,6 +38,7 @@
 
   - vux 按需加载 适合微信内嵌页面
   - mintUI 按需加载 CSS3处理动效 but 组件偏少 可能要自己造轮子
+  - Framework7-Vue https://github.com/framework7io/Framework7-Vue 路由坑
   - vant 
     - <https://github.com/youzan/vant>
   - OnsenUI 
