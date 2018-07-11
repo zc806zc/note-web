@@ -1,63 +1,61 @@
-# CDN
+# jquery组件方案
 
-- http://cdn.code.baidu.com/
-- http://www.bootcdn.cn/
-- https://www.staticfile.org/
-- ...
+- awesome-jquery <https://github.com/petk/awesome-jquery>
+- jq22
+- jquerycards https://www.jquerycards.com/
 
-# 流行框架
+# 传统万金油方案
 
-- tutorialzine <https://tutorialzine.com/>
-- awesomes.cn <https://www.awesomes.cn>
-- 王仕军 <https://juejin.im/user/57a7f634d342d300576b738d>
-- bestof.js.org <https://risingstars.js.org/2017/en/>
-- 统计网站 <http://www.javascripting.com/>
-- 推荐流行框架 <https://zhuanlan.zhihu.com/itlion114>
-- 流行框架 <http://www.javascript.fun/>
-- CDN <http://www.bootcdn.cn/all/>
-- github榜单 <https://github.com/trending>
-- jster 常用框架与组件 http://jster.net/
-  - 状态机 https://github.com/jakesgordon/javascript-state-machine
+- jquery
+- require.js/sea.js
+- handlebar(IE6+)/artTemplates(IE8+)
+    - handlebar的一些用法——个人使用总结 https://www.cnblogs.com/yldf55/p/5147996.html
+- layer(IE6+)/artDialog/sweetAlert
 
-# 组件 | 插件方案
+# jeesite
 
-- frontend-stuff NICE <https://github.com/moklick/frontend-stuff>
-- 伯乐在线awesome-javascript(NICE) <https://github.com/jobbole/awesome-javascript-cn>
-- fetool <https://github.com/nieweidong/fetool>
-- 前端插件 NICE <https://github.com/iamjoel/front-end-plugins#tool>
-- 前端编程之路 <http://project.giscafer.com/>
+- jeesite  <https://gitee.com/thinkgem/jeesite>
 
-# 时间轴
+- 后端
+    - 核心框架：Spring Framework 4.1
+    - 安全框架：Apache Shiro 1.2
+    - 视图框架：Spring MVC 4.1
+    - 服务端验证：Hibernate Validator 5.2
+    - 布局框架：SiteMesh 2.4
+    - 工作流引擎：Activiti 5.21
+    - 任务调度：Spring Task 4.1
+    - 持久层框架：MyBatis 3.2
+    - 数据库连接池：Alibaba Druid 1.0
+    - 缓存框架：Ehcache 2.6、Redis
+    - 日志管理：SLF4J 1.7、Log4j
+    - 工具类：Apache Commons、Jackson 2.2、Xstream 1.4、Dozer 5.3、POI 3.9
 
-- 2016 年的轻量级 JS 框架和库
+- 前端
+    - JS框架：jQuery 1.9
+    - CSS框架：Twitter Bootstrap 2.3.1
+    - 客户端验证：JQuery Validation Plugin 1.11
+    - 富文本在线编辑：CKEditor
+    - 在线文件管理：CKFinder
+    - 动态页签：Jerichotab
+    - 手机端框架：Jingle
+    - 数据表格：jqGrid https://github.com/tonytomov/jqGrid
+    - 对话框：jQuery jBox
+    - 下拉选择框：jQuery Select2
+    - 树结构控件：jQuery zTree
+    - 日期控件： My97DatePicker
 
-  - <https://zhuanlan.zhihu.com/p/24598210>
-  - <https://juejin.im/post/58c5e39c8ac24707200a6cff>
+- 平台
 
-- 2017年前端开发工具趋势 <http://www.cnblogs.com/powertoolsteam/p/front-end-tooling-trends-2017.html>
+```
+服务器中间件：在Java EE 5规范（Servlet 2.5、JSP 2.1）下开发，
+支持应用服务器中间件 有Tomcat 6+、Jboss 7+、WebLogic 10+、WebSphere 8+。
 
-  - 超过63％的开发者使用Sass，Sass是预处理首选者
-  - PostCSS + AutoPrefixer
-  - CSS最受欢迎的命名方式是BEM
+数据库支持：目前仅提供MySql和Oracle数据库的支持，
+但不限于数据库，平台留有其它数据库支持接口，
+你可以很方便的更改为其它数据库，如：SqlServer 2008、MySql 5.5、H2等
 
-    - <https://www.w3cplus.com/css/mindbemding-getting-your-head-round-bem-syntax.html>
-    - <https://en.bem.info/methodology/quick-start/>
-
-  - JavaScript的测试一直是个挑战
-
-  - 学习ES6，即便你一直工作在向后兼容的ES5项目中
-
-- 2017年崛起的JS项目 <https://juejin.im/post/5a633babf265da3e2a0dadcc>
-
-- 2017 前端技术发展回顾 <https://juejin.im/post/5aa094ca518825555c1d31a6>
-
-- 2018年展望 <https://juejin.im/entry/5a41b0a95188257c4d1b68aa>
-
-  - web3.js <https://github.com/ethereum/web3.js/>
-
-  - 2018 年最值得关注的 JavaScript 趋势 <https://juejin.im/entry/5a4cfecf6fb9a0450b66cabf>
-
-  - 2018 要学习的优秀 JavaScript 库与知识 <https://juejin.im/post/5a4e23f0f265da3e377bce4f>
+开发环境：Java、Eclipse Java EE 4.3、Maven 3.1、Git
+```
 
 # jQuery系列
 

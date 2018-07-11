@@ -163,8 +163,6 @@ Solution
 # 用Markdown记录
 
 - <https://guides.github.com/features/mastering-markdown/>
-- A markdown parser and compiler. Built for speed. <https://github.com/chjj/marked>
-- <https://github.com/jgthms/wysiwyg.css> A tiny CSS for generated HTML or Markdown content
 - Markdown不支持的可以写HTML
 
 # 花式操作

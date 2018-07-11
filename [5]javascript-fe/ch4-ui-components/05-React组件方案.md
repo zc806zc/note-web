@@ -5,6 +5,10 @@
 - react-bootstrap Bootstrap 3 components built with React <https://github.com/react-bootstrap/react-bootstrap>
 - React组件 <https://www.imooc.com/video/16514>
 
+# 表单
+
+- react-select https://github.com/JedWatson/react-select
+
 # 弹框
 
 - boron <https://github.com/yuanyan/boron>

@@ -712,7 +712,21 @@ cancel();
 
 # 其他黑科技
 
-- mvc验证jquery.unobtrusive-ajax  https://www.cnblogs.com/Leo_wl/p/4886638.html
+- jquery-pjax @deprecated https://github.com/defunkt/jquery-pjax
+
+> pushState + ajax = pjax
+
+```js
+if ($.support.pjax) {
+  $(document).on('click', 'a[data-pjax]', function(event) {
+    var container = $(this).closest('[data-pjax-container]')
+    var containerSelector = '#' + container.id
+    $.pjax.click(event, {container: containerSelector})
+  })
+}
+```
+
+- .net中 mvc验证jquery.unobtrusive-ajax  https://www.cnblogs.com/Leo_wl/p/4886638.html
   - 重点是Asynchronous 部分
   - 没有一句是专门为某个特定的Web页面中的某个Html元素来编写的，即所有函数都是通用的
   - Html.BeginForm() 
@@ -720,5 +734,3 @@ cancel();
 - rapid.js <https://github.com/rapidjs/rapid.js>
 
 > An ORM-like Interface and a Router For Your API Requests
-
-
