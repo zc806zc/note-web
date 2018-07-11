@@ -12,7 +12,7 @@
 
 ---
 
-# 布局类
+# 弹框
 
 ---
 
@@ -61,6 +61,10 @@
 - vue-paginate https://github.com/TahaSh/vue-paginate
 - vue-multiselect https://github.com/shentao/vue-multiselect
 
+# 本地缓存
+
+- Dexie.js https://github.com/dfahlander/Dexie.js
+
 ---
 
 # 图表
@@ -88,8 +92,6 @@
 
 
 ---
-
-# 常用工具类
 
 # 二维码
 

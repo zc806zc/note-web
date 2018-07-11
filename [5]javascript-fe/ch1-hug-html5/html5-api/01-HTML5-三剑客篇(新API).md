@@ -16,7 +16,7 @@
 
     - 大小限制, 使用子cookie
 
-  - IndexedDB
+  - IndexedDB(IE10+)
 
 ```javascript
 // globalStorage
@@ -161,11 +161,11 @@ request.onsuccess = function(event) {
 
 - 各种语言实现
 
-  - PHP | <http://code.google.com/p/phpwebsocket>
-  - Ruby | <http://github.com/igrigorik/em-websocket>
-  - Python | <http://code.google.com/p/pywebsocket>
-  - .NET | <http://superwebsocket.codeplex.com>
-  - Java | <http://jwebsocket.org/>
+  - PHP <http://code.google.com/p/phpwebsocket>
+  - Ruby  <http://github.com/igrigorik/em-websocket>
+  - Python  <http://code.google.com/p/pywebsocket>
+  - .NET <http://superwebsocket.codeplex.com>
+  - Java  <http://jwebsocket.org/>
   - Node.js <http://github.com/miksago/node-websocket-server>
   - Kaazing <http://kaazing.com/products/html5-edition.html>
 
