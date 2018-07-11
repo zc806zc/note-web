@@ -9,8 +9,12 @@
 # 组件库参考
 
 - heyui https://github.com/heyui/heyui
-
+- aurora https://github.com/MeiliFE/aurora
 ---
+
+# 幻灯片
+
+- eagle.js https://github.com/zulko/eagle.js
 
 # 弹框
 
@@ -55,6 +59,7 @@
 - vue-data-tables 基于element UI https://github.com/njleonzhang/vue-data-tables
 - vuetable-2 https://github.com/ratiw/vuetable-2
 - vue-tables-2 https://github.com/matfish2/vue-tables-2
+- vue-table-component https://github.com/spatie/vue-table-component
 
 # 分页
 

@@ -237,7 +237,7 @@
 <script src="https://cdn.bootcss.com/handlebars.js/4.0.11/handlebars.min.js"></script>
 ```
 
-- 地图
+# 地图
 
 ```html
 <!-- jquery.vmap -->
@@ -254,7 +254,7 @@
 <script src="https://cdn.bootcss.com/jqvmap/1.5.1/maps/jquery.vmap.usa.js"></script>
 ```
 
-- 其他
+# 其他
 
 ```html
 <!--smoothscroll-->

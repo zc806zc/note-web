@@ -24,6 +24,8 @@
 
 # 权限登录
 
+- vuejs2-authentication-tutorial https://auth0.com/blog/vuejs2-authentication-tutorial/
+  - https://github.com/manojkumar3692/Vuejs-Authentication
 - token存到cookie -> 用token拉取user_info与role -> 路由(router.addRoutes) -> vuex渲染侧边
 - 页面刷新， vuex的数据也会丢失，要重复上述操作
 - token有效期： session与后台刷新

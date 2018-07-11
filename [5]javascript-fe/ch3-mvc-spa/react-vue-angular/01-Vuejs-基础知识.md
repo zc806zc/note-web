@@ -21,20 +21,38 @@
 
 - 入门
 
-  - <https://github.com/bhnddowinf/vuejs2-learn>
-  - Vue学习看这篇就够 <https://juejin.im/entry/5a54b747518825734216c3df>
+  - 小凡 <https://github.com/bhnddowinf/vuejs2-learn>
+  - Vue学习看这篇就够 略碎 <https://juejin.im/entry/5a54b747518825734216c3df>
   - 前端每周清单半年盘点之 Vue.js <https://juejin.im/post/59928d55518825486f1e8369>
   - vue入门到放弃 参考推荐的学习顺序 <https://juejin.im/post/59aa1248518825392656a86a>
   - vuejs心法和技法 <http://www.cnblogs.com/kidsitcn/p/5409994.html>
   - 你应该要知道的Vue.js https://juejin.im/post/5ab2ff496fb9a028c06ab78f
     - @deprecated <https://github.com/bhnddowinf/vuejs-learn>
 
-# Vue与其他框架的比较
+# 展望
 
-  - 与React https://github.com/vuejs/vuejs.org/issues/364
-  - https://cn.vuejs.org/v2/guide/comparison.html
+- Vue 2017 现状与展望 https://mp.weixin.qq.com/s?__biz=MzUxMzcxMzE5Ng==&mid=2247485584&amp;idx=1&amp;sn=fee6a5d251e8a582bf72a4313e99176e&source=41#wechat_redirect
+  - 函数式组件改进  不再需要显示式 props
+  - vue-cli 3.0 -> PWA by default
+  - 异步组件改进 -> Loading / Error / Timeout Fallback
+
+![异步组件](http://mmbiz.qpic.cn/mmbiz_jpg/uMh5nccSicmILu2WJsqjtN2Na5pGqlOGBlnb7MyCdyT5tNXf5bFlLqWNibtAxdI6J0a4sEpQDIJ0nUWCkZ3BJGibg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1)  
 
 # UI框架/生态圈
+
+- A Comparison of Vue.js Frontend Frameworks https://matthiashager.com/vuejs-frontend-ui-frameworks-comparison
+
+```js  
+// Framework 7 
+relies on PhoneGap but aims to give a native feel to your mobile applications;  
+Yet it is one of the oldest and most complete frameworks here.
+
+// Keen UI
+be the most lightweight
+
+...
+
+```
 
 - 后台管理系统
 
@@ -94,6 +112,7 @@
   - 按键
   - 缩写 v-on v-bind
   - 暴露
+  - https://css-tricks.com/using-filters-vue-js/
 
 ```html
 <!-- 修饰符 -->
@@ -337,6 +356,8 @@ Vue 的模板实际是编译成了 render 函数
 
 # 混合
 
+- https://css-tricks.com/using-mixins-vue-js/
+
 ```javascript
 一种灵活的分布式复用 Vue 组件的方式
 ```
@@ -374,11 +395,10 @@ it('updates the rendered message when vm.message updates', done => {
 })
 ```
 
-# TypeScript支持
-
-- allowSyntheticDefaultImports 
 
 # 组件基础
+
+> Props向下传递，事件向上传递！
 
 - 父子组件之间传值 <https://juejin.im/post/59ec95006fb9a0451c398b1a>
 - 单向数据流

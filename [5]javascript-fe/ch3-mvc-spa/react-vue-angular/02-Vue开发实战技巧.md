@@ -1,5 +1,24 @@
 # Vue开发规范
 
+- Vue.js 组件编码规范 @NICE https://github.com/pablohpsilva/vuejs-component-style-guide/blob/master/README-CN.md
+  - 避免使用 this.$parent
+  - 避免那些“以后可能会有用”的组件污染你的项目,只在确认需要时创建组件
+  - 尽可能使用 mixins
+
+```html
+<!-- 避免 -->
+<btn-group></btn-group> <!-- 虽然简短但是可读性差. 使用 `button-group` 替代 -->
+<ui-slider></ui-slider> <!-- ui 前缀太过于宽泛，在这里意义不明确 -->
+<slider></slider> <!-- 与自定义元素规范不兼容 -->
+
+<style scoped>
+  /* 推荐 */
+  .MyExample { }
+  .MyExample li { }
+  .MyExample__item { }
+</style>
+```
+
 - 风格指南 https://cn.vuejs.org/v2/style-guide/
 - Vue前端开发规范 https://juejin.im/post/5ada9b586fb9a07aaf34c746
   - 总是用 key 配合 v-for
@@ -105,23 +124,24 @@ components/
 
 - 整理 -> 组件篇
 
+# Vue的异构
 
-# Vue项目优化
+- https://medium.com/js-dojo/how-to-safely-use-a-jquery-plugin-with-vue-js-786acdfb743b
+  - Pass config with props
+  - v-once
+  - Letting jQuery handle updates
+  - Passing data from jQuery to Vue
 
-- 状态过渡
-- 自动化测试
-- 使用TypeScript
-- MPA
+# 服务端渲染
 
-  - <https://github.com/jarvan4dev/vue-multi-page>
-
-- Vue的异构
-- 服务端渲染
+- ssr
 - Vue的pre-render
 
 # 切换到typescript
 
 - Vue-TS-Boilerplate https://github.com/thundernet8/Vue-TS-Boilerplate
+- https://alexjoverm.github.io/2017/06/28/Integrate-TypeScript-in-your-Vue-project/
+  - allowSyntheticDefaultImports 
 
 # 原理解析
 
@@ -136,6 +156,10 @@ components/
 - vue多页面开发和打包的正确姿势 
   - https://juejin.im/post/5a8e3f00f265da4e747fc700
   - https://github.com/Faithree/multiple-vue-amazing
+
+- MPA
+
+  - <https://github.com/jarvan4dev/vue-multi-page>
 
 # 基于Vue的多项目整合实践
 
