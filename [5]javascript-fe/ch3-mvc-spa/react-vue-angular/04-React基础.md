@@ -1,11 +1,3 @@
-# 2016年确立的三足鼎立
-
-- React
-- Vue
-- Angular
-- 前端编程之路 <http://project.giscafer.com/>
-- <https://juejin.im/post/5a0d5df1f265da43062a542f?utm_medium=fe&utm_source=weixinqun>
-
 # React资源
 
 - react-starter-kit <https://github.com/kriasoft/react-starter-kit>
