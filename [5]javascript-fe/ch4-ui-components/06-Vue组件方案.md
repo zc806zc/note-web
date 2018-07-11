@@ -6,22 +6,6 @@
 - Vue组件 国外 https://vuejsexamples.com/
 - Vue优选 https://curated.vuejs.org/
 
-# 封装学习
-
-- Vue组件开发姿势总结 https://juejin.im/entry/5a9a4fd3518825558251cbd4
-- Vue.js——60分钟组件快速入门（下篇） http://www.cnblogs.com/keepfool/p/5637834.html#h2_13
-- 侧滑菜单 <https://github.com/hjl19911127/vue-drawer-layout/>
-- 如何用vue制作一个探探滑动组件
-
-  - <https://juejin.im/post/5a9cf13851882555845377f6>
-  - <https://github.com/warpcgd/vue-tantan-stack>
-- Vue 仿QQ左滑删除组件 https://juejin.im/post/5aa3771af265da23771904d4 
-- Vue封装Swiper实现图片轮播 https://juejin.im/post/5a7957ed6fb9a0633d71bb94 
-- 如何写一个拖拽日历组件（附源码） https://juejin.im/post/5ac322876fb9a028c71ea27e
-- VUI组件库学习 <https://github.com/Brickies/vui>
-
-  - <https://juejin.im/post/5aacd6d55188252c32197273>
-
 # 组件库参考
 
 - heyui https://github.com/heyui/heyui
