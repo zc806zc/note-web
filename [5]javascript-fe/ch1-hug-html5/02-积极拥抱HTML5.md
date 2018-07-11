@@ -14,11 +14,6 @@
   - dialog
   - 支付请求API
 
-# 惊艳的 HTML5 DEMOssss....
-
-- <http://eyehere.net/2011/21-html5-demo/>
-- <https://www.zhihu.com/question/24398907>
-
 # 渐近增强 优雅降级
 
 

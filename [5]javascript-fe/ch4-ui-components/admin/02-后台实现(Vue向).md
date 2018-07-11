@@ -1,14 +1,14 @@
 # 基于Vue模板
 
 - vue-element-admin <https://github.com/PanJiaChen/vue-element-admin>
+  - 简化版本 vueAdmin-template https://github.com/PanJiaChen/vueAdmin-template
 - vue-admin 结合bulma https://github.com/vue-bulma/vue-admin
 - vue-material https://github.com/vuematerial/vue-material
 - vue-manage-system https://github.com/lin-xin/vue-manage-system
 - NICE D2Admin
-    - 不落俗套
+    - 不落俗套 兼容性不好
     - https://github.com/d2-projects/d2-admin-start-kit
     - https://github.com/d2-projects/d2-admin
-- vueAdmin-template https://github.com/PanJiaChen/vueAdmin-template
 - VueThink 后台是ThinkPHP5 <https://github.com/honraytech/VueThink>
 - element UI 毕设时抄的模板 <https://github.com/taylorchen709/vue-admin>
 - sls-admin-vue <https://github.com/sls-admin/sls-admin-vue>
