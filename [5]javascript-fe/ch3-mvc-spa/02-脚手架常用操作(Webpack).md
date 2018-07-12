@@ -125,7 +125,7 @@ gulp.task('watchLessCompile', function () {
 
 # Webpack
 
-- webpack详解 https://juejin.im/post/5aa3d2056fb9a028c36868aa
+- webpack详解 @NICE https://juejin.im/post/5aa3d2056fb9a028c36868aa
 - 简介
 
   - 模块加载器 兼打包工具
