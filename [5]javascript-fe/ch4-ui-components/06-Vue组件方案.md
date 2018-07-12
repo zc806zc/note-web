@@ -96,6 +96,10 @@
 
 - vue2-animate https://github.com/asika32764/vue2-animate
 
+# 截图
+
+- vue-cropper https://github.com/xyxiao001/vue-cropper
+
 # 3d模型 | webGL
 
 - vue-3d-model <https://github.com/hujiulong/vue-3d-model>

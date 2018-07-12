@@ -23,6 +23,7 @@
 
 # 社区聊天
 
+- vueblog https://github.com/wmui/vueblog
 - 基于vue.js重写Cnodejs.org社区的webapp <https://github.com/shinygang/Vue-cnodejs>
 - 仿TIM <https://github.com/beautifulBoys/vue-socket.io>
 

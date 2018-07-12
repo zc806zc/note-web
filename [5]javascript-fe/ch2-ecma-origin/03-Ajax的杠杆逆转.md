@@ -391,7 +391,8 @@ for-each-in 循环
 
 # Axios封装
 
-- <https://juejin.im/post/59a22e71518825242c422604>
+- 给axios做个挺靠谱的封装 <https://juejin.im/post/59a22e71518825242c422604>
+- Vue二次封装axios为插件使用 https://juejin.im/post/5ae432aaf265da0b9c1063c8
 
 ```javascript
 const Axios = axios.create({
