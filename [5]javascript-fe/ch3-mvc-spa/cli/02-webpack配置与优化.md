@@ -4,7 +4,7 @@
 
 # webpack优化
 
-
+- webpack 应用编译优化之路 https://juejin.im/post/59dc57f2f265da431d3ba2ef
 - 参考
     - webpack-study https://github.com/qq20004604/webpack-study
     - 静态站点 https://github.com/vhtml/webpack-MultiPage-static
@@ -53,4 +53,3 @@ const Article = () => import('@/components/Article') // 利用promise
 # webpack4
 
 - webpack4-用之初体验，一起敲它十一遍 https://juejin.im/post/5adea0106fb9a07a9d6ff6de
-    

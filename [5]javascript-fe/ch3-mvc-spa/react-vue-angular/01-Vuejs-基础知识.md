@@ -62,7 +62,9 @@ be the most lightweight
 - 移动端
 
   - vux 按需加载 适合微信内嵌页面
-  - mintUI 按需加载 CSS3处理动效 but 组件偏少 可能要自己造轮子
+  - mintUI 
+    - http://mint-ui.github.io/#!/en 
+    - 按需加载 CSS3处理动效 but 组件偏少 可能要自己造轮子
   - Framework7-Vue https://github.com/framework7io/Framework7-Vue 路由坑
   - vant 
     - <https://github.com/youzan/vant>
@@ -283,6 +285,7 @@ methods: {
 
 - 非侵入性的响应式系统
 - Vue.nextTick(callback)
+  - eg 有一个 jQuery 插件，希望在 DOM 元素中某些属性发生变化之后重新应用该插件，这时候就需要在 $nextTick 的回调函数中执行重新应用插件的方法
 
 ```javascript
 Vue 不允许在已经创建的实例上动态添加新的根级响应式属性(root-level reactive property)。
@@ -302,6 +305,7 @@ Vue.component('example', {
       console.log(this.$el.textContent) // => 'not updated'
       this.$nextTick(function () {
         console.log(this.$el.textContent) // => 'updated'
+        // this.msg2 = this.$refs.msgDiv.innerHTML
       })
     }
   }

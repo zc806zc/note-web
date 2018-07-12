@@ -9,6 +9,15 @@
 - Browserify
 - Yeoman
 - brunch http://brunch.io/
+- neutrino-dev
+    
+    - <https://github.com/mozilla-neutrino/neutrino-dev>
+    - <https://neutrino.js.org/>
+
+```
+Neutrino is a companion tool which lets you build web and Node.js applications with shared presets or configurations. It intends to make the process of initializing and building projects much simpler by providing minimal development dependencies.
+```
+
 
 # 包管理
 
@@ -199,13 +208,13 @@ gulp.task("webpack", function(callback) {
     - Parcel + React https://www.cnblogs.com/huanent/p/8331295.html    
     - Parcel + Vue https://github.com/p2yang/parcel-vue
 
-
 - Parcel VS Webpack 
     - https://github.com/gwuhaolin/parcel-vs-webpack
 
-# neutrino-dev
 
-> Neutrino is a companion tool which lets you build web and Node.js applications with shared presets or configurations. It intends to make the process of initializing and building projects much simpler by providing minimal development dependencies.
+# 多模块管理
 
-- <https://github.com/mozilla-neutrino/neutrino-dev>
-- <https://neutrino.js.org/>
+- lerna <https://github.com/lerna/lerna>
+
+  - A tool for managing JavaScript projects with multiple packages
+  - <https://github.com/LittleBreak/lerna-best-practices>
