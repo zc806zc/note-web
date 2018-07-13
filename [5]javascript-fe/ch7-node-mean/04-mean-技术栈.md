@@ -94,7 +94,7 @@ ref
 MEAN Web开发
 ```
 
-# ch3 使用Express开发Web应用
+# 使用Express开发Web应用
 
 ```javascript
 // 应用、请求和响应对象
@@ -109,7 +109,7 @@ MEAN Web开发
 配置会话
 ```
 
-# ch1-2 基础
+# 基础
 
 ```
 // Node.js-to-AngularJS套件
@@ -137,7 +137,7 @@ MEAN Web开发
 // 使用Node.js模块
 ```
 
-# ch11 NoSQL和MongoDB
+# NoSQL和MongoDB
 
 ```
 MongoDB
@@ -146,14 +146,14 @@ Node.js操作访问MongoDB文档
 高级MongoDB概念
 ```
 
-# ch12 使用Express
+# 使用Express
 
 ```
 Express
 实现Express中间件
 ```
 
-# ch13 学习AngularJS
+# 学习AngularJS
 
 ```
 AngularJS
@@ -164,7 +164,7 @@ AngularJS
 在Web应用程序中实现Angular服务
 ```
 
-# ch14 构建实用的Web应用程序组件
+# 构建实用的Web应用程序组件
 
 ```
 将用户账户添加到网站
@@ -173,7 +173,7 @@ AngularJS
 构建交互式的Web2.0应用程序组件
 ```
 
-# ch1 MEAN
+# MEAN
 
 - [Code-download](https://github.com/amoshaviv/mean-web-development)
 
@@ -189,7 +189,7 @@ MVC
 对JSON对象进行数据封装
 ```
 
-# ch2 Node.js
+# Node.js
 
 ```javascript
 // JavaScript时间驱动编程
@@ -207,19 +207,19 @@ CommonJS模块
 // Node.jsWeb应用开发
 ```
 
-# ch3 使用Express开发Web应用
+# 使用Express开发Web应用
 
 ```javascript
 记在express-basic
 ```
 
-# ch4-5 MongoDB/Mongoose
+# MongoDB/Mongoose
 
 ```javascript
 记在mongo 基础
 ```
 
-# ch6 使用Passport模块管理用户权限
+# 使用Passport模块管理用户权限
 
 ```javascript
 // Passport
@@ -235,13 +235,11 @@ Connect-Flash  存储临时消息
 //Passport的OAuth策略
 ```
 
-# ch7 AngualrJS入门
+# AngualrJS入门
 
-```javascript
-记在angular-basic
-```
+- ->>
 
-# ch8 创建MEAN的CURD模块
+# 创建MEAN的CURD模块
 
 ```javascript
 // CURD模块简介
@@ -261,7 +259,7 @@ Connect-Flash  存储临时消息
 编写AngularJS路由
 ```
 
-# ch9 基于Socket.io的实时通信
+# 基于Socket.io的实时通信
 
 ```javascript
 // WebSockets
@@ -280,7 +278,7 @@ Connect-Flash  存储临时消息
 // 创建聊天室
 ```
 
-# ch10 MEAN应用的测试
+# MEAN应用的测试
 
 ```javascript
 // JS测试
@@ -300,7 +298,7 @@ Jasmine
 E2E测试
 ```
 
-# ch11 MEAN应用的调试和自动化
+# MEAN应用的调试和自动化
 
 ```javascript
 // Grunt
