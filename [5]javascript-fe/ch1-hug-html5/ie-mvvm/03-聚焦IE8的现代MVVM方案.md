@@ -12,15 +12,6 @@
 
   - 兼容IE8的React(anu)开发脚手架 <https://gitee.com/menhal/React_IE8_boilerplate>
 
-- NervJS <https://github.com/NervJS/nerv>
-
-  - 京东 <https://nervjs.github.io/docs/>
-  - 文档同框架搭建 <https://github.com/NervJS/nerv-website>
-  - 脚手架 <https://github.com/NervJS/nerv-webpack-boilerplate>
-  - <https://github.com/NervJS/nerv-redux-todomvc>
-  - A blazing fast React alternative, compatible with IE8 and React 16
-  - 性能不错
-
 - avalon <https://github.com/RubyLouvre/avalon>
 
   - 被弃前奏??估计要凉透,如果兼容IE7还是要恬不知耻的考虑一下
@@ -37,23 +28,35 @@
   - regular-ui <https://github.com/regular-ui/regular-ui>
   - 后台管理系统前端开发方案，采用es6 + regular + gulp技术 <https://github.com/xuyanquan/es6-regular-gulp>
 
-- knockoutjs
+- 早期版本react0.x(可以考虑，或许regular更好，但是本来就熟react的话应该还不错)
 
-- 早期版本react(可以考虑，或许regular更好，但是本来就熟react的话应该还不错)
+- NervJS <https://github.com/NervJS/nerv>
 
-- angular1(Out,更迭快,学习门槛高，用过时的总会心理不平衡)
+  - 试了半天不知到怎么兼容到IE8+,但文档写着一句  A blazing fast React alternative, compatible with IE8 and React 16
+  - <https://nervjs.github.io/docs/>
+  - 文档同框架搭建 <https://github.com/NervJS/nerv-website>
+  - 脚手架 <https://github.com/NervJS/nerv-webpack-boilerplate>
+  - <https://github.com/NervJS/nerv-redux-todomvc>
+  - 性能不错
 
-- 网易Nec + Nej(Out) 但需要参考一下
+- knockoutjs @deprecated
 
+- angular1 @deprecated (更迭快,学习门槛高，用过时的总会心理不平衡)
+
+- 网易Nec + Nej @deprecated
+  - 参考一下理念
   - <http://nej.netease.com/>
   - 快速入门 <http://nej.netease.com/course/quickStart>
 
 # UI方案
 
-- lulu (NICE) 眼下黑，真的很好用 几百star... https://github.com/yued-fe/lulu
-- LayUI
+- lulu @NICE 眼下黑，真的很好用 几百star... https://github.com/yued-fe/lulu
+- LayUI 但官方写着IE9+, 悬了
 - flow-ui <http://flow-ui.refined-x.com/>
 
+# 栗子
+
+- https://github.com/HeavenSky/webpack-frames
 
 # 参考
 
