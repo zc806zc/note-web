@@ -1,19 +1,25 @@
 # 基于Vue模板
 
 - vue-element-admin <https://github.com/PanJiaChen/vue-element-admin>
+  - 基于element UI写的后台解决方案
   - 简化版本 vueAdmin-template https://github.com/PanJiaChen/vueAdmin-template
+- iview-admin https://github.com/iview/iview-admin  
 - vue-admin 结合bulma https://github.com/vue-bulma/vue-admin
 - vue-material https://github.com/vuematerial/vue-material
-- vue-manage-system https://github.com/lin-xin/vue-manage-system
-- NICE D2Admin
+- vuestic-admin 但好丑啊 https://github.com/epicmaxco/vuestic-admin
+- iview-admin https://github.com/iview/iview-admin
+- D2Admin @NICE 
     - 不落俗套 兼容性不好
     - https://github.com/d2-projects/d2-admin-start-kit
     - https://github.com/d2-projects/d2-admin
-- VueThink 后台是ThinkPHP5 <https://github.com/honraytech/VueThink>
-- element UI 毕设时抄的模板 <https://github.com/taylorchen709/vue-admin>
-- sls-admin-vue <https://github.com/sls-admin/sls-admin-vue>
-- 基于 vue-cli + iView 的 Vue js 后台管理系统，简洁易扩展 https://github.com/zhaotoday/iview  
-
+- sls-admin-vue <https://github.com/sls-admin/sls-admin-vue>    
+- 基于 vue-cli + iView 的 Vue js 后台管理系统，简洁易扩展 
+  - 参考一波, 没试通代码,希望能兼容IE9+
+  - https://github.com/zhaotoday/iview    
+  - https://github.com/zhaotoday/less.js 需要运行一下服务端koa环境
+- VueThink 后台是ThinkPHP5 @deprecated <https://github.com/honraytech/VueThink>
+- 毕设时抄的模板 @deprecated <https://github.com/taylorchen709/vue-admin>
+- vue-manage-system @deprecated https://github.com/lin-xin/vue-manage-system
 
 # 教程
 

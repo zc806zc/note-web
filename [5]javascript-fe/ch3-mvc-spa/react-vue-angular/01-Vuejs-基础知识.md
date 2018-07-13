@@ -56,8 +56,8 @@ be the most lightweight
 
 - 后台管理系统
 
-  - element
-  - iview 提供了iview-cli桌面工具，可视化生成
+  - element https://github.com/ElemeFE/element
+  - iview 提供了iview-cli桌面工具，可视化生成 https://github.com/iview/iview
   
 - 移动端
 

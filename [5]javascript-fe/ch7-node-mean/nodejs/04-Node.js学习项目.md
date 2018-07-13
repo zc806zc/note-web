@@ -1,5 +1,3 @@
-# Node.js学习项目
-
 # 博客
 
 - vue2, koa2 and mongodb 支持服务端渲染 <https://github.com/BUPT-HJM/vue-blog>
@@ -10,6 +8,7 @@
 
 # Node.js学习项目
 
+- node-elm https://github.com/bailicangdu/node-elm
 - ikcamp - Koa2搭建Node.js实战
 
   - <https://juejin.im/post/5a976a7a5188251c85639647>
@@ -22,4 +21,4 @@
 
 # 社区聊天
 
-- 简聊 coffeescript 不维护 <https://github.com/jianliaoim/talk-os>
+- 简聊 coffeescript 不维护 @deprecated <https://github.com/jianliaoim/talk-os>
