@@ -1,18 +1,19 @@
 # 基于Vue模板
 
+- 傲娇到干脆不兼容IE11，做的好！！！
 - vue-element-admin <https://github.com/PanJiaChen/vue-element-admin>
   - 基于element UI写的后台解决方案
   - 简化版本 vueAdmin-template https://github.com/PanJiaChen/vueAdmin-template
 - iview-admin https://github.com/iview/iview-admin  
+- D2Admin @NICE 
+    - 界面好看死了
+    - https://github.com/FairyEver
+    - https://github.com/d2-projects/d2-admin-start-kit
+    - https://github.com/d2-projects/d2-admin   
 - vue-admin 结合bulma https://github.com/vue-bulma/vue-admin
 - vue-material https://github.com/vuematerial/vue-material
 - vuestic-admin 但好丑啊 https://github.com/epicmaxco/vuestic-admin
-- iview-admin https://github.com/iview/iview-admin
-- D2Admin @NICE 
-    - 不落俗套 兼容性不好
-    - https://github.com/d2-projects/d2-admin-start-kit
-    - https://github.com/d2-projects/d2-admin
-- sls-admin-vue <https://github.com/sls-admin/sls-admin-vue>    
+- sls-admin-vue <https://github.com/sls-admin/sls-admin-vue> 
 - 基于 vue-cli + iView 的 Vue js 后台管理系统，简洁易扩展 
   - 参考一波, 没试通代码,希望能兼容IE9+
   - https://github.com/zhaotoday/iview    
