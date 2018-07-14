@@ -54,17 +54,6 @@ const nav = document.querySelector("[rel='js-site-navigation']")
     - 抖动分析 <https://juejin.im/entry/59ae15126fb9a0247d4f6d16>
     - A Cross-end HTML5 Game <https://github.com/hiloteam/Hilo>
 
-- 助手类CSS
-
-  - <https://juejin.im/entry/59af8eb8f265da247a15c27f>
-  - Shed.css
-  - Tachyons 快速加载，高可读性，和100%响应式界面
-  - Basscss 人性化命名
-  - Beard 具有争议的helper类
-  - shards-ui <https://github.com/DesignRevision/shards-ui>
-
-    - 免费的现在UI工具包 Bootstrap 4 + SCSS
-
 # CSS权重
 
 - id声明会覆盖class
