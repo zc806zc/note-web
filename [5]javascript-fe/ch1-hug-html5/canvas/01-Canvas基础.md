@@ -39,14 +39,12 @@
 
 - 使IE兼容Canvas
 
-  - ExplorerCanvas -> VML
+  - ExplorerCanvas 回退至VML
 
-    - <https://github.com/arv/explorercanvas>
+    - explorercanvas <https://github.com/arv/explorercanvas>
     - <http://blog.csdn.net/yuanxiaojiao0012/article/details/49801887>
 
-  - FlashCanvas （推荐）
-
-    - <https://github.com/stupidQ/flashcanvas>
+  - FlashCanvas https://github.com/sixtypride/flashcanvas
 
 ```html
 <script type="text/javascript" src="../html5.js"></script>

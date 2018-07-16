@@ -6,7 +6,8 @@
   - <http://www.html5tricks.com/>
   
 - HTML5 不基于 SGML，因此不需要对DTD进行引用，但是需要doctype来规范浏览器的行为
-
+- 网站 
+  - html5tricks https://www.html5tricks.com/
 # HTML5.2
 
 - <https://bitsofco.de/whats-new-in-html-5-2>

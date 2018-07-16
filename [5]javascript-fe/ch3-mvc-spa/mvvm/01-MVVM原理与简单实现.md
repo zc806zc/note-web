@@ -199,10 +199,10 @@
 </html>
 ```
 
-# 小型MVVM
+# 小型MVVM实现
 
 - sugar https://github.com/tangbc/sugar
-- yox.js 小型MVVM https://github.com/yoxjs/yox
+- yox.js 小型MVVM 兼容IE8 https://github.com/yoxjs/yox
 - way.js 轻量的双向绑定 <https://github.com/gwendall/way.js>
 - jsblocks <https://github.com/astoilkov/jsblocks>
 

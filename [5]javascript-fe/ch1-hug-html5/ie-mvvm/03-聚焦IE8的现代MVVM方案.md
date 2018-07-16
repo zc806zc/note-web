@@ -11,6 +11,7 @@
 - anu.js <https://rubylouvre.github.io/anu/>
 
   - 兼容IE8的React(anu)开发脚手架 <https://gitee.com/menhal/React_IE8_boilerplate>
+  - https://github.com/yunpengGit/anu-antd-axios-echarts-ie8
 
 - avalon <https://github.com/RubyLouvre/avalon>
 
@@ -23,12 +24,15 @@
     - <https://segmentfault.com/a/1190000009625441>
     - @deprecated <https://github.com/xxapp/ane>
 
+- 早期版本react0.x
+  - 兼容IE8措施 https://github.com/xcatliu/react-ie8
+  - https://github.com/HeavenSky/react-antd-ie8
+  - https://github.com/jaychsu/react-ie8-boilerplate
+
 - regular <https://github.com/regularjs/regular>
 
   - regular-ui <https://github.com/regular-ui/regular-ui>
   - 后台管理系统前端开发方案，采用es6 + regular + gulp技术 <https://github.com/xuyanquan/es6-regular-gulp>
-
-- 早期版本react0.x(可以考虑，或许regular更好，但是本来就熟react的话应该还不错)
 
 - NervJS <https://github.com/NervJS/nerv>
 
@@ -36,12 +40,14 @@
   - <https://nervjs.github.io/docs/>
   - 文档同框架搭建 <https://github.com/NervJS/nerv-website>
   - 脚手架 <https://github.com/NervJS/nerv-webpack-boilerplate>
+  - nerv-ie8-boilerplate https://github.com/saltyshiomix/nerv-ie8-boilerplate
   - <https://github.com/NervJS/nerv-redux-todomvc>
   - 性能不错
 
 - knockoutjs @deprecated
 
 - angular1 @deprecated (更迭快,学习门槛高，用过时的总会心理不平衡)
+  - ng-seed https://github.com/jm-team/ng-seed
 
 - 网易Nec + Nej @deprecated
   - 参考一下理念
