@@ -36,3 +36,4 @@
 # 一些DEMO
 
 - <http://www.ibiblio.org/e-notes/webgl/models.htm#tex>
+- Laya实战-打地鼠JS版本的ES6重构 https://juejin.im/post/5b4ad97fe51d4519076955e5
