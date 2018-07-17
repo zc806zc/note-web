@@ -57,6 +57,14 @@
 开发环境：Java、Eclipse Java EE 4.3、Maven 3.1、Git
 ```
 
+# CDN
+
+- http://cdn.code.baidu.com/
+- http://www.bootcdn.cn/
+- https://www.staticfile.org/
+- ...
+
+
 # jQuery系列
 
 ```html
