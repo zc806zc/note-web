@@ -1,33 +1,12 @@
 # CSS
 
-- CSS-API速查表
-
-  - <http://www.css88.com/book/css/>
-
-- CSS规范
-
-  - 这些CSS 命名规范将省下你大把调试时间 <https://juejin.im/post/5a6c5881518825733201daf7>
-
-    - 不要用数据属性（data attributes）作为 JavaScript 钩子
-
-```html
-<div class="site-navigation" rel="js-site-navigation"></div>
-<script type="text/javascript">
-const nav = document.querySelector("[rel='js-site-navigation']")  
-</script>
-```
-
-# CSS基础
-
+- CSS速查表 <http://www.css88.com/book/css/>
 - CSS查漏补缺 <https://segmentfault.com/a/1190000006242814>
-
 - 12个HTML和CSS必须知道的重点难点问题 <https://juejin.im/post/5a954add6fb9a06348538c0d>
 
   - height line-height
   - position: relative absolute
-
 - 负值之美(将一个元素的margin设置为负值，元素将会变大) <http://www.cnblogs.com/jscode/archive/2012/08/28/2660078.html>
-
 - 伪类与伪元素
 
   - 伪类 <http://www.runoob.com/css/css-pseudo-classes.html>
@@ -38,21 +17,65 @@ const nav = document.querySelector("[rel='js-site-navigation']")
 
 ![](/static/img/css/css-books.jpg)
 
-# CSS实用工具集
+# CSS资源
 
-- css-protips <https://github.com/AllThingsSmitty/css-protips>
-- 30-seconds-of-css 
+- css-protips @NICE <https://github.com/AllThingsSmitty/css-protips>
+- 30-seconds-of-css @NICE
   - <https://atomiks.github.io/30-seconds-of-css/#box-sizing-reset>
   - https://github.com/atomiks/30-seconds-of-css
-- 常用CSS集
+- 148个资源让你成为CSS专家 <https://segmentfault.com/a/1190000006689923>
 
-  - 148个资源让你成为CSS专家 <https://segmentfault.com/a/1190000006689923>
-  - 月报常用CSS <https://github.com/jsfront/src/blob/master/css.md>
-  - 小型CSS库 <https://juejin.im/post/5a31f53f51882555cc41deda>
-  - CSS清单 <https://juejin.im/post/59ae076b6fb9a0248e5ce689>
+# CSS规范与命名法
 
-    - 抖动分析 <https://juejin.im/entry/59ae15126fb9a0247d4f6d16>
-    - A Cross-end HTML5 Game <https://github.com/hiloteam/Hilo>
+- 这些CSS 命名规范将省下你大把调试时间 <https://juejin.im/post/5a6c5881518825733201daf7>
+
+  - 不要用数据属性（data attributes）作为 JavaScript 钩子
+
+```html
+<div class="site-navigation" rel="js-site-navigation"></div>
+<script type="text/javascript">
+const nav = document.querySelector("[rel='js-site-navigation']")  
+</script>
+```
+
+- css常见样式命名思想 <https://juejin.im/post/5a79545a5188257a7924875d>
+- React拾遗：从10种现在流行的 CSS 解决方案谈谈我的最爱
+  - https://juejin.im/post/5b39e63ae51d4562aa017c81
+- BEM
+  - https://github.com/sturobson/BEM-resources
+
+```shell
+<nav class="nav">
+  <a href="#" class="nav__item nav__item--normal">正常状态</a>
+  <a href="#" class="nav__item nav__item--active">当前状态</a>
+  <a href="#" class="nav__item nav__item--hover">鼠标移上时的状态</a>
+</nav>
+
+.nav {
+  &__item {
+    &--normal {
+    }
+    &--active {
+    }
+    &--hover {
+    }
+  }
+}
+
+@include b(nav) {
+  @include e(item) {
+    @include m(normal) {
+    }
+    @include m(active) {
+    }
+    @include m(hover) {
+    }
+  }
+}
+```
+
+- Atomic 原子
+  - tailwindcss https://tailwindcss.com/docs/installation
 
 # CSS权重
 
@@ -99,12 +122,11 @@ const nav = document.querySelector("[rel='js-site-navigation']")
 - 父级div也浮动，需要定义宽度
 - br + clear:both
 
-# 多层div
+# 关于div
 
-- 滚动条需求
-- 性能考量 
+- 多个div?? -> 结构考量 + 性能考量 
 
-# 布局
+# 常用布局
 
 - 各种常见布局实现+知名网站实例分析 <https://juejin.im/post/5aa252ac518825558001d5de>
 - CSS布局解决方案（终结版） <https://juejin.im/entry/5aa0afd1f265da239c7aec81>
@@ -177,7 +199,7 @@ hgroup
 overflow: hidden; // 触发生成BFC,使浮动元素也参与计算
 ```
 
-# 移动布局方案
+# 移动端布局
 
 - <https://juejin.im/post/5a8c12935188257a6049a0a4>
 
@@ -225,15 +247,6 @@ overflow: hidden; // 触发生成BFC,使浮动元素也参与计算
 
 - 紧贴底部的页脚
 
-# flex | flexbox
-
-- <http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool>
-- <http://www.ruanyifeng.com/blog/2015/07/flex-examples.html>
-
-# Grid
-
-- 网格布局
-
 # 响应式布局
 
 - 阈值
@@ -275,6 +288,16 @@ lg 大屏幕|大桌面显示器，大于等于 1200px
 - 响应式布局是有成本的，而且大多数时候不是必需的
 - 不见得比固定布局更好,有些方面绝对还是传统布局好
 
+
+# flex | flexbox
+
+- <http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool>
+- <http://www.ruanyifeng.com/blog/2015/07/flex-examples.html>
+
+# Grid
+
+- 网格布局
+
 # 预处理与后处理语言
 
 - postcss -> css in js
@@ -285,16 +308,14 @@ lg 大屏幕|大桌面显示器，大于等于 1200px
 # Sass方案
 
 - sass与scss <http://sass.bootcss.com/docs/scss-for-sass-users/>
-- sass进阶 <https://www.imooc.com/learn/436>
-
-- Sass和Compass必备技能之Compass(@deprecated) <https://www.imooc.com/learn/371>
-
+- Sass和Compass必备技能之Compass @deprecated <https://www.imooc.com/learn/371>
 - sass样式库
 
   - sassCore <https://github.com/marvin1023/sassCore>
   - bourbon <https://github.com/thoughtbot/bourbon>
 
     - A Lightweight Sass Tool Set
+- sass进阶 <https://www.imooc.com/learn/436>
 
 ```javascript
 // scss 与sass
@@ -304,47 +325,6 @@ SCSS 是 Sass 3 引入新的语法，
 另外，SCSS 还能识别大部分 CSS hacks（一些 CSS 小技巧）和特定于浏览器的语法，
 例如：古老的 IE filter 语法。
 ```
-
-# CSS命名法
-
-- css常见样式命名思想 <https://juejin.im/post/5a79545a5188257a7924875d>
-- React拾遗：从10种现在流行的 CSS 解决方案谈谈我的最爱
-  - https://juejin.im/post/5b39e63ae51d4562aa017c81
-- BEM
-  - https://github.com/sturobson/BEM-resources
-
-```shell
-<nav class="nav">
-  <a href="#" class="nav__item nav__item--normal">正常状态</a>
-  <a href="#" class="nav__item nav__item--active">当前状态</a>
-  <a href="#" class="nav__item nav__item--hover">鼠标移上时的状态</a>
-</nav>
-
-.nav {
-  &__item {
-    &--normal {
-    }
-    &--active {
-    }
-    &--hover {
-    }
-  }
-}
-
-@include b(nav) {
-  @include e(item) {
-    @include m(normal) {
-    }
-    @include m(active) {
-    }
-    @include m(hover) {
-    }
-  }
-}
-```
-
-- Atomic 原子
-  - tailwindcss https://tailwindcss.com/docs/installation
 
 # CSS模块化
 
@@ -384,7 +364,16 @@ SCSS 是 Sass 3 引入新的语法，
 
 # 封装样式库
 
-- <http://ghmagical.com/article/page/id/aqy7vR3DegbG>
 - 百度开源 基于less的mixin <https://github.com/ecomfe/est>
-- 实用css库 <https://github.com/marvin1023/sassCore>
+- sassCore 实用scss库 
+  - sandal https://github.com/marvin1023/sandal
+  - <https://github.com/marvin1023/sassCore>
 - 编写自己的代码库 https://juejin.im/post/5a0c18196fb9a045023b2ddf
+- CSS集
+
+  - 月报常用CSS <https://github.com/jsfront/src/blob/master/css.md>
+  - CSS常用Mixin封装 <https://juejin.im/post/5a31f53f51882555cc41deda>
+  - CSS清单 <https://juejin.im/post/59ae076b6fb9a0248e5ce689>
+
+    - 抖动分析 <https://juejin.im/entry/59ae15126fb9a0247d4f6d16>
+    - A Cross-end HTML5 Game <https://github.com/hiloteam/Hilo>
