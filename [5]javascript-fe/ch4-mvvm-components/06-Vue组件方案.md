@@ -1,4 +1,4 @@
-# Vue组件
+# Vue组件推荐
 
 - awesome-vue <https://github.com/vuejs/awesome-vue>
   - 组件 https://github.com/vuejs/awesome-vue#components--libraries
@@ -7,11 +7,7 @@
 - Vue组件 国外 https://vuejsexamples.com/
 - Vue优选 https://curated.vuejs.org/
 
-# 组件库参考
-
-- heyui https://github.com/heyui/heyui
-- aurora https://github.com/MeiliFE/aurora
-- VUI组件库学习 <https://github.com/Brickies/vui>
+---
 
 # 布局
 
