@@ -130,17 +130,17 @@ be the most lightweight
 
 ```html
 <!-- 修饰符 -->
-<!-- 阻止浏览器默认行为 -->
+
+<!-- 阻止浏览器默认行为 可串联 -->
 <form v-on:submit.prevent="onSubmit"></form> 
- <!-- 可串联 -->
- <!-- 
-   .stop
+  
+.stop
 .prevent
 .capture
 .self
 .once
 .passive
- -->
+
 <a v-on:click.stop.prevent="doThat"></a>
 
 v-on:click.prevent.self 会阻止所有的点击，
@@ -589,27 +589,25 @@ const store = new Vuex.Store({
 })
 ```
 
-# 常识问题
+# 注意点 | 常识 | 细节深入
 
 - 所有的 DOM 操作都由 Vue 来处理 $ref
 - Vue 为了使得 DOM 元素得到最大范围的重用而实现了一些智能的、启发式的方法，所以用一个含有相同元素的数组去替换原来的数组是非常高效的操作
-- 由于 JavaScript 的限制，Vue 不能检测一些变动的数组 -> vm.items.splice(indexOfItem, 1, newValue)
-- 同样由于 JavaScript 的限制，Vue 不能检测对象属性的添加或删除
+- 由于 JavaScript 的限制，Vue 不能检测一些变动的数组， 也不能检测对象属性的添加或删除
 
 ```js
+vm.items.splice(indexOfItem, 1, newValue)
+
 vm.userProfile = Object.assign({}, vm.userProfile, {
   age: 27,
   favoriteColor: 'Vue Green'
 })
 ```
 
-- 表单输入和应用状态之间的双向绑定 不代表数据的双向绑定
+- 有些不懂的人张口闭口Vue是双向绑定 -> 表单输入和应用状态之间的双向绑定 不代表这数据的双向绑定
 - assets与static文件夹的区别 https://segmentfault.com/q/1010000009842688
-- Vue引入jquery -> 可以宽容(CDN处理)
-- 一个组件的 data 选项必须是一个函数
-
-# 高级用法
-
+- 关于Vue中引入jquery -> 老项目中是应该宽容，因为时间不一定狗(CDN引入 + external配置)
+- 一个组件的 data 选项必须是一个函数？？
 - Vue.js中 watch 的高级用法 https://juejin.im/post/5ae91fa76fb9a07aa7677543
   - immediate: true
   - deep: true
