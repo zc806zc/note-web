@@ -414,7 +414,7 @@ it('updates the rendered message when vm.message updates', done => {
 
 # 组件基础
 
-> Props向下传递，事件向上传递！
+> Props向下传递，事件向上传递！！
 
 - 父子组件之间传值 <https://juejin.im/post/59ec95006fb9a0451c398b1a>
 - 单向数据流
@@ -604,6 +604,7 @@ vm.userProfile = Object.assign({}, vm.userProfile, {
 })
 ```
 
+- 在子组件中 获取参数的时候是$route.params 而不是$router 别被坑~~~
 - 有些不懂的人张口闭口Vue是双向绑定 -> 表单输入和应用状态之间的双向绑定 不代表这数据的双向绑定
 - assets与static文件夹的区别 https://segmentfault.com/q/1010000009842688
 - 关于Vue中引入jquery -> 老项目中是应该宽容，因为时间不一定狗(CDN引入 + external配置)
