@@ -215,17 +215,25 @@ components/
 
 # 骨架屏
 
+- vue-content-placeholders https://github.com/michalsnik/vue-content-placeholders
 - https://github.com/jrainlau/vue-skeleton
 - https://github.com/RThong/vue-skeleton
 - 首屏加载
 
-  - <https://juejin.im/post/5a291092518825293b50366d>
+  - Vue SPA 首屏加载优化实践 <https://juejin.im/post/5a291092518825293b50366d>
 
 # PWA
 
-- https://github.com/nightzing/pwa-vue-template
-- https://juejin.im/post/5af264296fb9a07aa54248f9
+- vue-storefront https://github.com/DivanteLtd/vue-storefront
+- 栗子
+  - https://github.com/nightzing/pwa-vue-template
+  - 当vue遇到pwa--vue+pwa移动端适配解决方案模板案例 https://juejin.im/post/5af264296fb9a07aa54248f9
 
 # 容器组件
 
 - 致敬 React: 为 Vue 引入容器组件和展示组件 https://juejin.im/post/5ae9a5545188256709610635
+
+# 增删改查 | CRUD
+
+- avue https://github.com/nmxiaowei/avue
+  - 一个类似 EasyUI 的 Vue 后台管理面板方案

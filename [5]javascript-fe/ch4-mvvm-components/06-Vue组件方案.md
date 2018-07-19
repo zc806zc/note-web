@@ -13,30 +13,49 @@
 - aurora https://github.com/MeiliFE/aurora
 - VUI组件库学习 <https://github.com/Brickies/vui>
 
-# 幻灯片
+# 布局
+
+- vue-grid-layout https://github.com/jbaysolutions/vue-grid-layout
+- vue-drawer-layout 类Android侧滑菜单 <https://github.com/hjl19911127/vue-drawer-layout/>
+
+# 幻灯片 | 轮播
 
 - eagle.js https://github.com/zulko/eagle.js
+- vue-awesome-swiper https://github.com/surmon-china/vue-awesome-swiper
 
 # 弹框
 
-# 表单类
+# 装饰 | 动画
+
+- 视频背景 https://github.com/pespantelis/vue-videobg
+- vue-lottie 基于 Bodymovin 的 Vue 动画效果库 https://github.com/chenqingspring/vue-lottie
+- vue-touch-ripple 点击元素泛起的涟漪效果 https://github.com/surmon-china/vue-touch-ripple
+
+# 表单
 
 - 行政规划数据 <https://github.com/modood/Administrative-divisions-of-China>
+- v-distpicker 一个灵活的，高可用的 vue 省市区选择插件(中国) https://github.com/jcc/v-distpicker
+- vue-area-linkage 基于 Element UI 的省市区街道联动选择组件 https://github.com/dwqs/vue-area-linkage
+- vue-core-image-upload 图片裁剪与上传 @NICE https://github.com/Vanthink-UED/vue-core-image-upload
+- vue-rate 评分 https://github.com/SinanMtl/vue-rate
 
 # 表单校验 
 
 - vee-validate https://github.com/baianat/vee-validate 
-- vuelidate https://github.com/monterail/vuelidatehttps://github.com/monterail/vuelidate
+- vuelidate https://github.com/monterail/vuelidate
 
-# 富文本
+# 富文本 | Markdown编辑器
 
 - tinymce @NICE https://github.com/tinymce/tinymce
 - ckeditor https://github.com/galetahub/ckeditor
+- vue-quill-editor https://github.com/surmon-china/vue-quill-editor
+- vue2-editor 基于quill https://github.com/davidroyer/vue2-editor
+- smeditor 基于 Vue.js 2.0+ 石墨文档样式的富文本编辑器 https://github.com/GeekPark/smeditor
 
-# Markdown编辑器
 
 # 时间日历
 
+- vue-datepicker @NICE https://github.com/hilongjw/vue-datepicker
 - vue-timeago https://github.com/egoist/vue-timeago
 - vuejs-countdown 倒计时 https://github.com/getanwar/vuejs-countdown
 - vue-fullcalendar https://github.com/Wanderxx/vue-fullcalendar
@@ -48,23 +67,26 @@
 
 # 树与树状图
 
-- 可拖拽树 <https://github.com/ltaoo/vue-draggable-tree>
+- vue-draggable-tree 可拖拽树 <https://github.com/ltaoo/vue-draggable-tree>
+- bosket 针对多个前端框架的树形列表组件 https://github.com/elbywan/bosket
 
 # 表格
 
-- vue-data-tables 基于element UI https://github.com/njleonzhang/vue-data-tables
+- vue-data-tables 基于element UI @NICE https://github.com/njleonzhang/vue-data-tables
 - vuetable-2 https://github.com/ratiw/vuetable-2
 - vue-tables-2 https://github.com/matfish2/vue-tables-2
 - vue-table-component https://github.com/spatie/vue-table-component
+- vue2-datatable https://github.com/OneWayTech/vue2-datatable
+- vue-good-table https://github.com/xaksis/vue-good-table
 
 # 分页
 
 - vue-paginate https://github.com/TahaSh/vue-paginate
 - vue-multiselect https://github.com/shentao/vue-multiselect
 
-# 本地缓存
+# 本地存储
 
-- Dexie.js https://github.com/dfahlander/Dexie.js
+- Dexie.js  Indexdb https://github.com/dfahlander/Dexie.js
 
 # 图表
 
@@ -78,12 +100,16 @@
 
 # 地图
 
+- vue-amap 高德地图 https://github.com/ElemeFE/vue-amap
+- vue-baidu-map 百度地图 https://github.com/Dafrok/vue-baidu-map 
+
 # 字体图标
 
 - vue-awesome https://github.com/Justineo/vue-awesome 
 
 # 多媒体
 
+- vue-aplayer 配置简便的 Vue 2.x 音乐播放器组件 https://github.com/SevenOutman/vue-aplayer
 
 # 二维码
 

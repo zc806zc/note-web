@@ -49,29 +49,41 @@ Yet it is one of the oldest and most complete frameworks here.
 
 // Keen UI
 be the most lightweight
-
-...
-
 ```
 
 - 后台管理系统
 
   - element https://github.com/ElemeFE/element
   - iview 提供了iview-cli桌面工具，可视化生成 https://github.com/iview/iview
+  - vue-beauty 基于 ant design 的漂亮的 vue 组件库 https://www.awesomes.cn/repo/FE-Driver/vue-beauty
+  - atui https://github.com/aliqin/atui
+    - 参考antd
+    - 兼容IE9+
+    - 这个名字好多人抢啊~~
+  - at-ui  https://github.com/AT-UI/at-ui
+    - 一款基于 Vue.js 2.0 的前端 UI 组件库，主要用于快速开发 PC 网站产品
+    - 好看 功能并不算全 没人关注
   
 - 移动端
 
-  - vux 按需加载 适合微信内嵌页面
-  - mintUI 
+  - vux https://github.com/airyland/vux
+    - 按需加载 
+    - 定位是微信的内嵌页面
+  - mintUI
     - http://mint-ui.github.io/#!/en 
-    - 按需加载 CSS3处理动效 but 组件偏少 可能要自己造轮子
-  - Framework7-Vue https://github.com/framework7io/Framework7-Vue 路由坑
+    - 按需加载 CSS3处理动效 
+    - 但是组件偏少 可能要自己造轮子
+  - Framework7-Vue https://github.com/framework7io/Framework7-Vue 
+    - 老牌UI
+    - 路由有坑 慎重！ 
   - vant 
+    - 有赞商城 @NICE
     - <https://github.com/youzan/vant>
   - OnsenUI 
     - https://github.com/OnsenUI/OnsenUI
     - 支持三大框架
-  - XCUI https://github.com/wmfe/xcui 
+  - KeenUI 中国人开来很丑 但很轻 https://github.com/JosephusPaye/Keen-UI
+  - XCUI @deprecated fis3技术栈 百度外卖 https://github.com/wmfe/xcui 
 
 - 跨三端
 
