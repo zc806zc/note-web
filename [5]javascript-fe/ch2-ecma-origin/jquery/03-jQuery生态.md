@@ -1,3 +1,9 @@
+# cheerio
+
+- <https://github.com/cheeriojs/cheerio>
+- Fast, flexible, and lean implementation of core jQuery designed specifically for the server.
+
+
 # jQuery UI
 
 - 一组用户界面交互、特效、小部件及主题

@@ -13,7 +13,7 @@
 - 插件库
 
   - jq22 <http://www.jq22.com>
-  - <http://www.htmleaf.com>
+  - htmleaf <http://www.htmleaf.com>
   - jqueryscript https://www.jqueryscript.net/
 
 - 教程

@@ -2,9 +2,9 @@
 
 - 优点
 
-  - layer弹框组件与表格组件
-  - 几乎自  成体系
-  - 社区
+  - layer与表格等特色鲜明的组件
+  - 自成体系
+  - 活跃社区
 
 - 缺陷与建议
 
@@ -16,10 +16,6 @@
   - 模板渲染引擎也有点尴尬
   - 校验规则变来变去的...
 
-- LayUI实际开发过程的细节点总结 http://fly.layui.com/jie/24673/
-
-# layui前端系统优化建议
-
 - 关于前端文件组织(模块化)
 
   - <https://github.com/layui/fly>
@@ -27,6 +23,13 @@
   - <https://gitee.com/xmmxjy/layuiAdmin>
   - ...
 
+# 开发细节
+
+- LayUI实际开发过程的细节点总结 http://fly.layui.com/jie/24673/
+
+# layui一些问题
+
+- IE有切换窗口的onblur,但是表格行内编辑没有处理这个问题
 
 # 二次开发项目
 

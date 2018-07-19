@@ -2,6 +2,7 @@
 
 - awesome-vue <https://github.com/vuejs/awesome-vue>
   - 组件 https://github.com/vuejs/awesome-vue#components--libraries
+- VUE组件 https://www.awesomes.cn/subject/vue  
 - 组件方案 中文 已不活跃 <https://github.com/opendigg/awesome-github-vue>
 - Vue组件 国外 https://vuejsexamples.com/
 - Vue优选 https://curated.vuejs.org/
