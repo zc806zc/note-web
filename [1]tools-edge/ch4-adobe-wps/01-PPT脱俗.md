@@ -26,6 +26,8 @@
 - 改变演示方式
 
   - 斧子演示 <http://www.axeslide.com/>
-  - 编程nodePPT | reveal.js | impress.js
-
-    - <https://github.com/hakimel/reveal.js/>
+  
+- 编程 
+  - nodePPT
+  - reveal.js <https://github.com/hakimel/reveal.js/>
+  - impress.js

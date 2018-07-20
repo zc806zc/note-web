@@ -4,6 +4,7 @@
 
 # webpack优化
 
+- awesome-webpack-cn https://github.com/webpack-china/awesome-webpack-cn
 - webpack 应用编译优化之路 https://juejin.im/post/59dc57f2f265da431d3ba2ef
 - 参考
     - webpack-study https://github.com/qq20004604/webpack-study
