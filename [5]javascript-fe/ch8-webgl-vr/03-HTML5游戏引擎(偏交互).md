@@ -19,7 +19,7 @@
 
     - Cocos2d-x is a suite of open-source, cross-platform, game-development tools used by millions of developers all over the world.
 
-- Hilo
+- Hilo HTML5 互动游戏引擎
   - <https://github.com/hiloteam/Hilo>
 
 - LimeJS @deprecated 在线游戏开发
