@@ -53,4 +53,5 @@ const Article = () => import('@/components/Article') // 利用promise
 
 # webpack4
 
+- awesome-webpack-4 https://github.com/valentinogagliardi/awesome-webpack-4
 - webpack4-用之初体验，一起敲它十一遍 https://juejin.im/post/5adea0106fb9a07a9d6ff6de
