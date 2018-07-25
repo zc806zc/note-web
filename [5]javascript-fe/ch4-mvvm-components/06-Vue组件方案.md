@@ -3,8 +3,8 @@
 - awesome-vue <https://github.com/vuejs/awesome-vue>
   - 组件 https://github.com/vuejs/awesome-vue#components--libraries
 - VUE组件 https://www.awesomes.cn/subject/vue  
-- 组件方案 中文 已不活跃 <https://github.com/opendigg/awesome-github-vue>
 - Vue组件 国外 https://vuejsexamples.com/
+- 组件方案 中文 已不活跃 <https://github.com/opendigg/awesome-github-vue>
 - Vue优选 https://curated.vuejs.org/
 
 ---
@@ -13,7 +13,7 @@
 
 - A Comparison of Vue.js Frontend Frameworks https://matthiashager.com/vuejs-frontend-ui-frameworks-comparison
 
-```js  
+```javascript  
 // Framework 7 
 relies on PhoneGap but aims to give a native feel to your mobile applications;  
 Yet it is one of the oldest and most complete frameworks here.
@@ -66,6 +66,12 @@ be the most lightweight
   - Vuetify <https://github.com/vuetifyjs/vuetify>
   - muse UI https://github.com/museui/muse-ui
 
+# Vue小型组件库
+
+- heyui https://github.com/heyui/heyui
+- aurora https://github.com/MeiliFE/aurora
+- VUI <https://github.com/Brickies/vui>
+
 ---
 
 # 布局
@@ -112,7 +118,8 @@ be the most lightweight
 
 - vue-datepicker @NICE https://github.com/hilongjw/vue-datepicker
 - vue-timeago https://github.com/egoist/vue-timeago
-- vuejs-countdown 倒计时 https://github.com/getanwar/vuejs-countdown
+- vuejs-countdown 日时分秒-倒计时 https://github.com/getanwar/vuejs-countdown
+- vue2-flip-countdown 翻日历倒计时 https://github.com/philipjkim/vue2-flip-countdown
 - vue-fullcalendar https://github.com/Wanderxx/vue-fullcalendar
 - v-calendar NICE https://github.com/nathanreyes/v-calendar
 - vue2-calendar 支持农历 https://github.com/icai/vue2-calendar
