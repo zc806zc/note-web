@@ -3,6 +3,15 @@
 - 分享手淘过年项目中采用到的前端技术 <https://juejin.im/entry/5a9d07b76fb9a028cb2d2032>
 - 实现基本的登录退出功能 基础 <https://github.com/lzxb/vue2-demo>
 
+# 学习项目
+
+- VueStudyDemos <https://github.com/violetjack/VueStudyDemos>
+- todo-list <https://github.com/Konata9/EasyTodoList>
+- 富文本编辑器Ueditor如何在Vue中使用？ <https://www.jianshu.com/p/8c43636c6c47>
+- 用webpack（2.x语法）手动搭建Vue项目 <https://www.jianshu.com/p/a87dee15e6c3>
+- 全面解析vue-cli生成的项目中使用其他库（js库、css库）<https://www.jianshu.com/p/a2fc286cb8ab>
+
+
 # 实战学习项目
 
 - 基于 vue2 + vuex 构建一个具有 45 个页面的大型单页面应用 NICE <https://github.com/bailicangdu/vue2-elm>

@@ -9,6 +9,65 @@
 
 ---
 
+# UI框架/生态圈
+
+- A Comparison of Vue.js Frontend Frameworks https://matthiashager.com/vuejs-frontend-ui-frameworks-comparison
+
+```js  
+// Framework 7 
+relies on PhoneGap but aims to give a native feel to your mobile applications;  
+Yet it is one of the oldest and most complete frameworks here.
+
+// Keen UI
+be the most lightweight
+```
+
+- 后台管理系统
+
+  - element https://github.com/ElemeFE/element
+  - iview 提供了iview-cli桌面工具，可视化生成 https://github.com/iview/iview
+  - vue-beauty 基于 ant design 的漂亮的 vue 组件库 https://www.awesomes.cn/repo/FE-Driver/vue-beauty
+  - bootstrap-vue https://github.com/bootstrap-vue/bootstrap-vue
+  - atui https://github.com/aliqin/atui
+    - 参考antd
+    - 兼容IE9+
+    - 这个名字好多人抢啊~~
+  - at-ui  https://github.com/AT-UI/at-ui
+    - 一款基于 Vue.js 2.0 的前端 UI 组件库，主要用于快速开发 PC 网站产品
+    - 好看 功能并不算全 没人关注
+  
+- 移动端
+
+  - vux https://github.com/airyland/vux
+    - 按需加载 
+    - 定位是微信的内嵌页面
+  - mintUI
+    - http://mint-ui.github.io/#!/en 
+    - 按需加载 CSS3处理动效 
+    - 但是组件偏少 可能要自己造轮子
+  - Framework7-Vue https://github.com/framework7io/Framework7-Vue 
+    - 老牌UI
+    - 路由有坑 慎重！ 
+  - vant 
+    - 有赞商城 @NICE
+    - <https://github.com/youzan/vant>
+  - OnsenUI 
+    - https://github.com/OnsenUI/OnsenUI
+    - 支持三大框架
+  - KeenUI 中国人开来很丑 但很轻 https://github.com/JosephusPaye/Keen-UI
+  - XCUI @deprecated fis3技术栈 百度外卖 https://github.com/wmfe/xcui 
+
+- 跨三端
+
+  - quasar <https://github.com/quasarframework/quasar>
+
+    - 利用 Vue，通过一套代码搞定响应式网站、PWA、hybrid 移动应用以及 Electron app
+
+  - Vuetify <https://github.com/vuetifyjs/vuetify>
+  - muse UI https://github.com/museui/muse-ui
+
+---
+
 # 布局
 
 - vue-grid-layout https://github.com/jbaysolutions/vue-grid-layout
