@@ -120,6 +120,7 @@ be the most lightweight
 - vue-timeago https://github.com/egoist/vue-timeago
 - vuejs-countdown 日时分秒-倒计时 https://github.com/getanwar/vuejs-countdown
 - vue2-flip-countdown 翻日历倒计时 https://github.com/philipjkim/vue2-flip-countdown
+- v-circle 圆环倒计时 https://github.com/qddegtya/v-circle
 - vue-fullcalendar https://github.com/Wanderxx/vue-fullcalendar
 - v-calendar NICE https://github.com/nathanreyes/v-calendar
 - vue2-calendar 支持农历 https://github.com/icai/vue2-calendar
