@@ -79,6 +79,11 @@ be the most lightweight
 - vue-grid-layout https://github.com/jbaysolutions/vue-grid-layout
 - vue-drawer-layout 类Android侧滑菜单 <https://github.com/hjl19911127/vue-drawer-layout/>
 
+# 滚动条
+
+- better-scroll https://github.com/ustbhuangyi/better-scroll
+- vue-happy-scroll https://github.com/happy-js/vue-happy-scroll
+
 # 幻灯片 | 轮播
 
 - eagle.js https://github.com/zulko/eagle.js
