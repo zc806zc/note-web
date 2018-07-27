@@ -1,5 +1,7 @@
 # 工具类
 
+> 在这些库变成你的拐杖之时，你也会随之“残废” -- DOM Scripting, 2nd
+
 - 经典工具库
 
   - underscore

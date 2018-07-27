@@ -26,6 +26,7 @@ be the most lightweight
 
   - element https://github.com/ElemeFE/element
   - iview 提供了iview-cli桌面工具，可视化生成 https://github.com/iview/iview
+  - Vue版ant-design https://github.com/vueComponent/ant-design
   - vue-beauty 基于 ant design 的漂亮的 vue 组件库 https://www.awesomes.cn/repo/FE-Driver/vue-beauty
   - bootstrap-vue https://github.com/bootstrap-vue/bootstrap-vue
   - atui https://github.com/aliqin/atui
@@ -81,6 +82,8 @@ be the most lightweight
 
 # 滚动条
 
+- perfect-scrollbar https://github.com/utatti/perfect-scrollbar
+- gemini-scrollbar https://github.com/noeldelgado/gemini-scrollbar
 - better-scroll https://github.com/ustbhuangyi/better-scroll
 - vue-happy-scroll https://github.com/happy-js/vue-happy-scroll
 
@@ -137,6 +140,7 @@ be the most lightweight
 
 - vue-draggable-tree 可拖拽树 <https://github.com/ltaoo/vue-draggable-tree>
 - bosket 针对多个前端框架的树形列表组件 https://github.com/elbywan/bosket
+- 基于vue.js实现树形表格的封装 https://juejin.im/post/5b568730f265da0fa1222a4c
 
 # 表格
 

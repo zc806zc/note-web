@@ -120,10 +120,6 @@ components/
   - https://juejin.im/post/5a9bc2676fb9a028d4440cfa
   - https://github.com/bowencool/super-form
 
-# 组件开发
-
-- 整理 -> 组件篇
-
 # Vue的异构
 
 - https://medium.com/js-dojo/how-to-safely-use-a-jquery-plugin-with-vue-js-786acdfb743b
@@ -132,13 +128,11 @@ components/
   - Letting jQuery handle updates
   - Passing data from jQuery to Vue
 
-# 服务端渲染
+# 切换到Typescript
 
-- ssr
-- Vue的pre-render
-
-# 切换到typescript
-
+- TypeScript + 大型项目实战 https://juejin.im/post/5b54886ce51d45198f5c75d7
+- 旧项目 TypeScript 改造问题与解决方案记 https://juejin.im/post/5b56c77e51882519d34671e3
+  - tsconfig.json配置alias
 - Vue-TS-Boilerplate https://github.com/thundernet8/Vue-TS-Boilerplate
 - https://alexjoverm.github.io/2017/06/28/Integrate-TypeScript-in-your-Vue-project/
   - allowSyntheticDefaultImports 
@@ -157,9 +151,7 @@ components/
   - https://juejin.im/post/5a8e3f00f265da4e747fc700
   - https://github.com/Faithree/multiple-vue-amazing
 
-- MPA
-
-  - <https://github.com/jarvan4dev/vue-multi-page>
+- vue-multi-page <https://github.com/jarvan4dev/vue-multi-page>
 
 # 基于Vue的多项目整合实践
 
@@ -174,6 +166,8 @@ components/
 
 # 服务端渲染
 
+- ssr
+- Vue的pre-render
 - <https://ssr.vuejs.org/zh/>
 - <https://juejin.im/post/59fa9257f265da43062a1b0e>
 
