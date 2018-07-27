@@ -360,6 +360,13 @@ it('updates the rendered message when vm.message updates', done => {
 - 禁用特性继承 inheritAttrs: false
 - 将原生事件绑定到组件
 - .sync 修饰符
+
+```html
+<comp :foo.sync="bar"></comp>
+<comp :foo="bar" @update:foo="val => bar = val"></comp>
+this.$emit('update:foo', newValue)
+```
+
 - 插槽
 - 动态组件与异步组件 
   - keep-alive
