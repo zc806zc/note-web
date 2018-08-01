@@ -28,7 +28,10 @@ be the most lightweight
   - iview 提供了iview-cli桌面工具，可视化生成 https://github.com/iview/iview
   - Vue版ant-design https://github.com/vueComponent/ant-design
   - vue-beauty 基于 ant design 的漂亮的 vue 组件库 https://www.awesomes.cn/repo/FE-Driver/vue-beauty
+  - antue
   - bootstrap-vue https://github.com/bootstrap-vue/bootstrap-vue
+  - vue-blu UI Component Library Base on Vue.js(2.x) and Bulma https://github.com/chenz24/vue-blu
+  - vue的官方UI 这个可能是灯下黑 https://github.com/vuejs/ui/
   - atui https://github.com/aliqin/atui
     - 参考antd
     - 兼容IE9+
@@ -52,10 +55,13 @@ be the most lightweight
   - vant 
     - 有赞商城 @NICE
     - <https://github.com/youzan/vant>
+  - mand-mobile https://github.com/didi/mand-mobile  
   - OnsenUI 
     - https://github.com/OnsenUI/OnsenUI
-    - 支持三大框架
-  - KeenUI 中国人开来很丑 但很轻 https://github.com/JosephusPaye/Keen-UI
+    - 支持三大框架  
+  - KeenUI 中国人看来是丑的 但很轻量 https://github.com/JosephusPaye/Keen-UI
+  - vue-ydui https://github.com/ydcss/vue-ydui
+  - museUI 
   - XCUI @deprecated fis3技术栈 百度外卖 https://github.com/wmfe/xcui 
 
 - 跨三端

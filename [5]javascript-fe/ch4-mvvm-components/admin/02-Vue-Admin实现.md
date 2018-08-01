@@ -1,5 +1,7 @@
 # 基于Vue模板
 
+
+- vue-enterprise-boilerplate https://github.com/chrisvfritz/vue-enterprise-boilerplate
 - 傲娇到干脆不兼容IE11，做的好！！！
 - vue-element-admin <https://github.com/PanJiaChen/vue-element-admin>
   - 基于element UI写的后台解决方案
