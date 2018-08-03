@@ -33,7 +33,10 @@ git commit -m "first commit"
 git push -u origin master
 
 # clone
-git clone -b master xxx
+git clone -b master https://xxx/android-app.git
+# 仅拷贝最近几版 @NICE
+git clone -b v2.8.1 --depth=1 https://github.com/natural-fe/natural-cli.git
+
 
 # 追加提交
 git add sample.txt
@@ -160,6 +163,9 @@ Solution
 
   - <https://juejin.im/entry/5a26465c6fb9a044ff31514a>
 
+- github里的提交
+  - settings > Collaborators & teams里邀请
+
 # 用Markdown记录
 
 - <https://guides.github.com/features/mastering-markdown/>
@@ -201,4 +207,3 @@ if(getStars[0]){
   }, 'json');
 }
 ```
-
