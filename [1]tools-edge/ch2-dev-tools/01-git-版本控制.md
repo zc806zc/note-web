@@ -16,6 +16,19 @@
   - hotfix
   - release
 
+# SVN
+
+小乌龟:我能说什么...
+
+# git常用操作与冲突合并
+
+- Git 常用操作总结 <https://juejin.im/post/5a2cdfe26fb9a0452936b07f>
+  - 分支操作
+- <https://github.com/woai30231/webDevDetails/tree/master/13>
+- git merge使用不当引发的代码丢失血案 <https://juejin.im/post/5a0bdd335188254dd935f008>
+- 解决因为本地代码和远程代码冲突，导致git pull无法拉取远程代码的问题 <https://www.cnblogs.com/huanyou/p/6654813.html>
+
+
 ```shell
 # 配置账号密码
 git config --global user.name [username]
@@ -34,27 +47,14 @@ git push -u origin master
 
 # clone
 git clone -b master https://xxx/android-app.git
-# 仅拷贝最近几版 @NICE
+# 仅拷贝最近几版 @deprecated 指定分支貌似有问题 看下面
 git clone -b v2.8.1 --depth=1 https://github.com/natural-fe/natural-cli.git
 
 
 # 追加提交
 git add sample.txt
 git commit --amend
-```
 
-# SVN
-
-小乌龟:我能说什么...
-
-# git冲突合并
-
-- Git 常用操作总结 <https://juejin.im/post/5a2cdfe26fb9a0452936b07f>
-- <https://github.com/woai30231/webDevDetails/tree/master/13>
-- git merge使用不当引发的代码丢失血案 <https://juejin.im/post/5a0bdd335188254dd935f008>
-- 解决因为本地代码和远程代码冲突，导致git pull无法拉取远程代码的问题 <https://www.cnblogs.com/huanyou/p/6654813.html>
-
-```shell
 # merge而不是直接pull
 git checkout -b feature-x develop # 新建  feature-x 分支
 git checkout develop # 切回develop
@@ -78,9 +78,14 @@ git stash show
 git stash show -p stash@{0} # 显示修改的详细内容
 ```
 
-# 分支操作
+- git clone --depth=1时的一些问题 https://www.jianshu.com/p/1031dd2a6c3a
 
-...
+```shell
+git clone --depth 1 git@github.com:natural-fe/natural-cli.git
+git remote set-branches origin topping
+git fetch --depth 1 origin topping
+git checkout topping
+```
 
 # github
 
