@@ -23,34 +23,11 @@
 - 懒加载
 - 瀑布流 <https://www.imooc.com/learn/101>
 - 图片预加载 <https://www.imooc.com/video/14430>
-
 - 图片瀑布流 <http://www.jq22.com/webqd2082>
 
 # 占位元素
 
 ...
-
-# 下拉加载更多 
-
-- <http://www.jq22.com/webqd2043>
-
-```javascript
-$(window).scroll(function() {
-    //当时滚动条离底部60px时开始加载下一页的内容
-    if (($(window).height() + $(window).scrollTop() + 60) >= $(document).height()) {
-        clearTimeout(timers);
-        timers = setTimeout(function() {
-            page++;
-            console.log("第" + page + "页");
-            LoadingDataFn();
-        }, 300);
-    }
-});
-```
-
-# 贴边停靠
-
-- <http://www.jq22.com/webqd2141>
 
 --------------------------------------------------------------------------------
 
@@ -213,7 +190,7 @@ DragDrop.prototype.mouseMove = function(e, obj) {
 
 ...
 
-# 元素定位
+# 元素定位 | 返回顶部 | 锚点跳转
 
 - 页脚置底 <http://liaokeyu.com/%E6%8A%80%E6%9C%AF/2017/01/06/%E8%AF%91-CSS%E4%BA%94%E7%A7%8D%E6%96%B9%E5%BC%8F%E5%AE%9E%E7%8E%B0Footer%E7%BD%AE%E5%BA%95.html>
 - 固定在浏览器顶部 <http://www.jq22.com/webqd2646>
@@ -241,9 +218,7 @@ $(function() {
 });
 ```
 
-# 锚点跳转
-
-- <http://www.jq22.com/webqd2418>
+- 锚点跳转 <http://www.jq22.com/webqd2418>
 
 ```javascript
   $(window).ready(function() {
@@ -262,24 +237,7 @@ $(function() {
 
 --------------------------------------------------------------------------------
 
-# 弹框
-
-- 纯css模拟 <https://github.com/drublic/css-modal>
-- layer (国内最广泛)
-- artDialog
-- 传统 lhgdialog
-- sweetalert
-
-  - <https://github.com/t4t5/sweetalert>
-  - <https://github.com/limonte/sweetalert2>
-
-- izimodal <https://github.com/dolce/iziModal>
-
-- Waypoints
-
-- cbpGridGallery.js
-
-- Magnific Popup
+# 弹框 | 相册 | 图片预览
 
 - 弹框设计
 
@@ -288,16 +246,31 @@ $(function() {
   - 弹框上的下拉框内容是否允许溢出弹框 select下拉选项不确定
   - 是否允许浏览器滚动条滚动
 
-- jQuery弹出窗口可移动、缩放 <http://www.jq22.com/webqd3029>
-
-- JS简单 <http://www.jq22.com/webqd2525>
-
-- <http://www.jq22.com/webqd2001>
-
 - 弹出层提取理念
 
   - lhgdialog会销毁之前提取的内容, 这种处理不合理
   - layer这种复制比较好
+
+- 推荐
+  - layer (国内最广泛)
+  - artDialog
+  - sweetalert
+    - <https://github.com/t4t5/sweetalert>
+    - <https://github.com/limonte/sweetalert2>
+  - Magnific Popup
+  - css-modal 纯css模拟 <https://github.com/drublic/css-modal>
+
+- 其他
+  - lhgdialog
+  - izimodal <https://github.com/dolce/iziModal>
+  - Waypoints
+  - cbpGridGallery.js
+
+- 栗子
+  - jQuery弹出窗口可移动、缩放 <http://www.jq22.com/webqd3029>
+  - JS简单 <http://www.jq22.com/webqd2525>
+  - <http://www.jq22.com/webqd2001>
+
 
 # 提示标签 | Tooltip
 
@@ -343,33 +316,7 @@ function autoHeight() {
 }
 ```
 
-- 仿淘宝页面点击元素收起或展开内容
-
-  - <http://www.jq22.com/webqd2760>
-
-```javascript
-<div class="cf_allGoods">
-    <div class="cf_listATitle"><i>-</i><span>查看所有商品</span></div>
-    <div class="cf_agClassFi"><a>按销量</a><a>按价格</a><a>按商品</a><a>按收藏</a></div>
-</div>
-
-$(".cf_listATitle").on("click", function() {
-    $(this).next().toggle(1000, function() {
-        console.log($(this).prev().find("i").text());
-        if ($(this).prev().find("i").text() == "-") {
-            $(this).prev().find("i").text("+");
-        } else {
-            $(this).prev().find("i").text("-");
-        }
-    });
-});
-```
-
 --------------------------------------------------------------------------------
-
-# 菜单
-
-...
 
 # 下拉菜单
 
@@ -391,47 +338,38 @@ $(".cf_listATitle").on("click", function() {
 
 ![](http://img.blog.csdn.net/20160624142445478)
 
-# 无延迟菜单
-
-- JS实现京东无延迟菜单效果 <https://www.imooc.com/video/14777>
+- 无延迟菜单
+  - JS实现京东无延迟菜单效果 <https://www.imooc.com/video/14777>
 
 --------------------------------------------------------------------------------
 
-# 轮播
+# 轮播 | 焦点图
 
 - 别再使用轮播图了 <https://juejin.im/post/599cf1596fb9a02481205803>
-- (首选) slick <https://github.com/kenwheeler/slick>
 
-  - the last carousel you'll ever need
+> 轮播图: 获取1% 的用户点击却占用了页面一半甚至更多的位置
 
-- (推荐) superslide <http://www.SuperSlide2.com/>
-
-- 考虑轻量级
+- 推荐
+  - (首选) slick -> the last carousel you'll ever need <https://github.com/kenwheeler/slick>
+  - (推荐) superslide <http://www.SuperSlide2.com/>
+  - fancybox
+- 轻量级
 
   - unslider
   - siema <https://github.com/pawelgrzybek/siema>
-
-- 考虑兼容性
-
+  
+- 兼容性
   - myfocus(jquery) 
 
-- Camera slideshow <https://www.pixedelic.com/plugins/camera/>
-
-- fancybox
-
-- jquery.flexisel.js
-
-- Nivo Slider
-
-  - The Most Awesome jQuery Image Slider
-
-- FlexSlider 2
-
-  - The best responsive slider. Period.
-
-- bxslider-4
-
-  - Responsive jQuery content slider
+- 其他
+  - Camera slideshow <https://www.pixedelic.com/plugins/camera/>
+  - jquery.flexisel.js
+  - Nivo Slider
+    - The Most Awesome jQuery Image Slider
+  - FlexSlider 2
+    - The best responsive slider. Period.
+  - bxslider-4
+    - Responsive jQuery content slider
 
 - 栗子
   - 切割轮播图 <http://www.jq22.com/webqd2833>
@@ -464,9 +402,6 @@ $(".cf_listATitle").on("click", function() {
   }
 }
 ```
-
-> 轮播图: 获取1% 的用户点击却占用了页面一半甚至更多的位置
-
 
 # Tab | 选项卡
 
@@ -515,6 +450,7 @@ ul li:hover .center {
 
 # 文件树导航
 
-- 简易实现 <http://www.jq22.com/webqd2457>
+- 栗子
+  - <http://www.jq22.com/webqd2457>
 
 # 手风琴导航
