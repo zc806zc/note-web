@@ -2,6 +2,10 @@
 
 - 一个 react + redux 的完整项目 和 个人总结 NICE <https://github.com/bailicangdu/react-pxq>
 
+# 资源
+
+- React 开源项目合集整理 <https://juejin.im/entry/5819987ca22b9d0067a32ab4>
+
 # CMS
 
 - relax <https://github.com/relax/relax>

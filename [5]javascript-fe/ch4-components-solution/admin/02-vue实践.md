@@ -1,5 +1,3 @@
-
-
 # 教程
 
 - 手摸手，带你用vue撸后台 @NICE https://juejin.im/post/59097cd7a22b9d0065fb61d2
@@ -9,6 +7,7 @@
 
 # 权限登录
 
+- vue权限路由实现方式总结 https://juejin.im/post/5b5bfd5b6fb9a04fdd7d687a
 - vuejs2-authentication-tutorial https://auth0.com/blog/vuejs2-authentication-tutorial/
   - https://github.com/manojkumar3692/Vuejs-Authentication
 - Vue-Access-Control https://github.com/tower1229/Vue-Access-Control

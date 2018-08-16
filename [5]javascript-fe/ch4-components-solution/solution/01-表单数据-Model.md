@@ -572,7 +572,7 @@ var queryString = $('#myFormId .specialFields').fieldSerialize();
   - <https://github.com/chriso/validator.js>
   - String validation
   - 提供了常用的校验方法 eg isAlpha isBase64 isEmail
-
+- v8n 常用校验 + 链式 https://github.com/imbrn/v8n
 
 - 格式处理
 

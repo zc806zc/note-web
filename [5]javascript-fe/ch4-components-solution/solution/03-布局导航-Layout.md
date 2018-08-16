@@ -260,6 +260,11 @@ $(function() {
   - Magnific Popup
   - css-modal 纯css模拟 <https://github.com/drublic/css-modal>
 
+- 图片预览
+  - viewer.js IE8+ 滚轮放大缩小 
+    - https://github.com/fengyuanchen/viewer
+    - http://www.jq22.com/jquery-info6536
+    
 - 其他
   - lhgdialog
   - izimodal <https://github.com/dolce/iziModal>
