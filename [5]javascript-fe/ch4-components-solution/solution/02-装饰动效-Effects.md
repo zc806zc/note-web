@@ -86,7 +86,7 @@ p {
   - <https://github.com/Popmotion/popmotion>
   - Create unique animations and interactions with tweens, physics and input tracking.
 - jquery.easing <https://github.com/gdsmith/jquery.easing>
-- Hover.css <https://github.com/IanLunn/Hover>
+- Hover.css @NICE <https://github.com/IanLunn/Hover>
 - quicksand (jQuery plugin. Reorder and filter items with a nice shuffling animation.)
 
 - 网站

@@ -123,6 +123,7 @@
 
 # 如何防止被累死
 
+- 如何跟上前端开发的最新前沿 @NICE 整张网站显示 https://uptodate.frontendrescue.org/zh/
 - 如何跟上时代脚步 <https://juejin.im/post/58e59a0aa0bb9f006906aea1>
 
   - 播客 [dotnetrocks.com](https://www.dotnetrocks.com/)
