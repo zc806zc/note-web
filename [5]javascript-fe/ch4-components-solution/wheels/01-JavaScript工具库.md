@@ -99,3 +99,9 @@ class样式操作 // jquery
 # 事件库封装
 
 - markyun.js https://github.com/markyun/Markyun.js/blob/master/markyunjs/WebContent/js/markyun.js
+
+# 回调处理
+
+- eventproxy https://github.com/JacksonTian/eventproxy 
+
+> An implementation of task/event based asynchronous pattern

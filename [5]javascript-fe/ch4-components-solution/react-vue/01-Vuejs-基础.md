@@ -29,6 +29,12 @@
   - 你应该要知道的Vue.js https://juejin.im/post/5ab2ff496fb9a028c06ab78f
     - @deprecated <https://github.com/bhnddowinf/vuejs-learn>
 
+```html
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<!-- 这个带提示 -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+```
+
 # 展望
 
 - Vue 2017 现状与展望 https://mp.weixin.qq.com/s?__biz=MzUxMzcxMzE5Ng==&mid=2247485584&amp;idx=1&amp;sn=fee6a5d251e8a582bf72a4313e99176e&source=41#wechat_redirect

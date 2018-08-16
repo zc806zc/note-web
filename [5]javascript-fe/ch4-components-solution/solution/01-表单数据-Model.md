@@ -248,19 +248,17 @@ function praise(num, obj) {
 
 --------------------------------------------------------------------------------
 
-# 数据表格
-
-
-- ->> 数据表格
-
---------------------------------------------------------------------------------
-
 # 分页
 
 - 简单分页 <http://www.jq22.com/webqd1246>
 
 - 与数据表格关联的分页删除数据时注意加载最适合的一页，因为可能删除了所在页的最后一条数据
 
+- 客户端分页 -> 数量较少，全部加载，前端控制显示
+- 与数据表格的结合
+    
+    - 滚动条
+    - 水平拉伸 与 省略号
 
 # 时间轴
 
@@ -383,10 +381,8 @@ new Date().Format("yyyy-MM-dd E HH:mm:ss")
 
 --------------------------------------------------------------------------------
 
-# 权限
+# 权限 |  CURD
 
-- 弹框模式
-- CURD
 
 --------------------------------------------------------------------------------
 
@@ -395,10 +391,6 @@ new Date().Format("yyyy-MM-dd E HH:mm:ss")
 - uppy(推荐) <https://github.com/transloadit/uppy>
 
   - The next open source file uploader for web browsers
-
-- jQuery-File-Upload
-
-- Uploadify
 
 - jQuery-File-Upload | fex webuploader(兼容性好)
 
@@ -409,6 +401,8 @@ new Date().Format("yyyy-MM-dd E HH:mm:ss")
 - dropzone
 
   - <https://github.com/enyo/dropzone>
+
+- Uploadify
 
 - fine-uploader
 
@@ -525,17 +519,54 @@ function xiaolong(json) {
 }
 ```
 
-
-
 --------------------------------------------------------------------------------
 
-# 表单 
+# 表单字段解析 | 表单提交 | ajax处理
 
 - 使用serialize() serializeArray()
-- eg. LayUI 会返回表单字段
+- LayUI -> 封装了方法会返回表单字段,但也不是很好用
+- jquery-form https://github.com/jquery-form/form
+    - ajaxForm
+    - ajaxSubmit
+
+```js
+// jquery-form栗子
+// https://www.cnblogs.com/liuhongfeng/p/5149419.html
+$('button').on('click', function() {
+
+    $('form').on('submit', function() {
+        var title = $('inpur[name=title]').val(),
+            content = $('textarea').val();
+
+        $(this).ajaxSubmit({
+            type: 'post', // 提交方式 get/post
+            url: 'your url', // 需要提交的 url
+            data: {
+                'title': title,
+                'content': content
+            },
+            success: function(data) { // data 保存提交后返回的数据，一般为 json 数据
+                // 此处可对 data 作相关处理
+                alert('提交成功！');
+            }
+            $(this).resetForm(); // 提交后重置表单
+        });
+        return false; // 阻止表单自动提交事件
+    });
+});
+
+$('#myFormId').clearForm();
+$('#myFormId .specialFields').clearFields();
+$('#myFormId').resetForm();
+var value = $('#myFormId :password').fieldValue();
+var queryString = $('#myFormId .specialFields').fieldSerialize();
+```
 
 # 表单校验
 
+- 用户编辑后离开前的保存校验 
+    - 是否修改过
+- jquery validate | jquery-validation https://github.com/jquery-validation/jquery-validation
 - superstruct
 
   - <https://github.com/ianstormtaylor/superstruct>
@@ -551,157 +582,21 @@ function xiaolong(json) {
   - <https://github.com/chriso/validator.js>
   - String validation
 
-- jquery validate
+- Parsley.js <https://github.com/guillaumepotier/Parsley.js>
 
-- jQuery-form
-
-- 银行卡
+- 银行卡格式处理
 
   - card <https://github.com/jessepollak/card>
 
-- 用户编辑后离开前的保存校验
-- jquery-validation
-- Parsley.js <https://github.com/guillaumepotier/Parsley.js>
+```js
+...
+```
 
 # 邮箱
 
 - mailcheck <https://github.com/mailcheck/mailcheck>
 
   - Reduce misspelled email addresses in your web apps
-
-- 邮箱自动加上@后面内容 <http://www.jq22.com/webqd2374>
-
-```javascript
-function $(id) {
-    return document.getElementById(id);
-}
-var lists;
-var len;
-window.onload = function() {
-    var objtxt = $("regemail");
-    var objlist = $("maillist");
-
-    lists = document.getElementsByTagName("li");
-    len = lists.length;
-
-    //给每一个li绑定一个鼠标点击事件
-    for (var i = 1; i < len; i++) {
-        lists[i].onmousedown = function() {
-            objtxt.value = this.textContent;
-            objlist.style.display = "none";
-        }
-    }
-
-    //计算这个下拉框的显示位置
-    //焦点选中时
-    objtxt.onfocus = function() {
-        objlist.style.display = "block";
-    }
-    //焦点移开时
-    objtxt.onblur = function() {
-        // objlist.style.display="none";
-    }
-
-    //输入过程中时
-    objtxt.onkeyup = function() {
-        //获取文本中的值
-        var txt = this.value;
-        var flag = "";
-        if (txt.indexOf("@") > 0) {
-            flag = txt.substring(txt.indexOf("@") - 1); //获取输入的@开始的内容
-            txt = txt.substring(0, txt.indexOf("@"));
-        } else {
-            flag = "";
-        }
-        var val = "";
-        //将这个值放到所有的li前面
-        for (var i = 1; i < len; i++) {
-            val = lists[i].textContent;
-            val = val.substring(val.indexOf("@"));
-            lists[i].textContent = txt + val;
-        }
-
-        //如果用户输入了@，则检查哪些是否满足条件的
-        if (flag != "") {
-            var reg = new RegExp(flag, "i");
-            for (var i = 1; i < len; i++) {
-                if (reg.test(lists[i].textContent)) {
-                    lists[i].style.display = "block";
-                } else {
-                    lists[i].style.display = "none";
-                }
-            }
-        }
-    }
-}
-```
-
-# 表单输入实时监听
-
-```javascript
-$("input").on("input propertychange", function() {
-    check("user", "pass", "btn", "orange");
-});
-```
-
-# 输入框输入字数限制
-
-- <http://www.jq22.com/webqd2084>
-
-# 银行卡号空格
-
-- <http://www.jq22.com/webqd1489>
-
-```javascript
-$(function() {
-    $('#kahao').on('keyup', function(e) {
-        //只对输入数字时进行处理
-        if ((e.which >= 48 && e.which <= 57) ||
-            (e.which >= 96 && e.which <= 105)) {
-            //获取当前光标的位置
-            var caret = this.selectionStart
-            //获取当前的value
-            var value = this.value
-            //从左边沿到坐标之间的空格数
-            var sp = (value.slice(0, caret).match(/\s/g) || []).length
-            //去掉所有空格
-            var nospace = value.replace(/\s/g, '')
-            //重新插入空格
-            var curVal = this.value = nospace.replace(/(\d{4})/g, "$1 ").trim()
-            //从左边沿到原坐标之间的空格数
-            var curSp = (curVal.slice(0, caret).match(/\s/g) || []).length
-            //修正光标位置
-            this.selectionEnd = this.selectionStart = caret + curSp - sp
-
-        }
-    })
-})
-```
-
-# 表单输入
-
-- 文本框自动跳转下一个 <http://www.jq22.com/webqd2809>
-- <http://www.jq22.com/webqd2468>
-
-```javascript
-$(function() {
-    var inputLength = $('input').length;
-    //$('input').keyup(function(){})
-    //使用jQuery事件代理的事件绑定方式，不需要对每个input进行事件绑定，有利于性能优化
-    $('#body').delegate('input', 'keyup', function() {
-        var _this = $(this),
-            valLength = _this.val().length,
-            index = _this.index();
-        if (valLength > 0) {
-            if ((index + 1) > inputLength) return false; //输入完成时进行操作
-            _this.attr('data-in', 'true').next().focus();
-        } else if (valLength == 0 && _this.attr('data-in') == 'true') {
-            if (index == 0) return false; //删除所有时进行操作
-            _this.attr('data-in', 'false').prev().focus();
-        }
-    });
-});
-```
 
 
 # 数据表格
@@ -801,10 +696,10 @@ rows.sort(function(a,b){
 
 # 进度条
 
-- 进度条 | progress
+- 进度条
 
-  - nprogress <https://github.com/rstacruz/nprogress>
-- pace https://github.com/HubSpot/pace
+    - nprogress <https://github.com/rstacruz/nprogress>
+    - pace https://github.com/HubSpot/pace
 
 - 栗子
   - <http://www.jq22.com/webqd1913>
@@ -861,3 +756,8 @@ map1.get('b') + " vs. " + map2.get('b') // 2 vs. 50
 ```
 
 - js-model
+
+# 复制粘贴
+
+- clipboard.js <https://github.com/zenorocha/clipboard.js>
+- zeroclipboard 兼容ie 用到flash https://github.com/zeroclipboard/zeroclipboard
