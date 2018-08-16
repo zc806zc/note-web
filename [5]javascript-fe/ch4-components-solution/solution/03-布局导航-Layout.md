@@ -275,7 +275,7 @@ $(function() {
 # 提示标签 | Tooltip
 
 - popper.js <https://github.com/FezVrasta/popper.js>
-- tipsy IE兼容
+- tipsy IE兼容 https://github.com/jaz303/tipsy
 
 # 对话框和灯箱 | Swiper | 幻灯片
 

@@ -16,7 +16,7 @@
 - jquery1.x -> 最终版本1.12.4 
 - bootstrap
 - require.js(IE6+)/sea.js(IE6+)
-- backbone
+- underscore | loadsh3.x compat(IE8+) -> 注意有些方法可能没有
 - handlebar(IE6+)/artTemplates(IE8+)
     - handlebar的一些用法——个人使用总结 https://www.cnblogs.com/yldf55/p/5147996.html
 - layer(IE6+)/artDialog(IE6+)/magnific-popup
@@ -37,7 +37,7 @@
 - 技术栈参考
 - jeesite  <https://gitee.com/thinkgem/jeesite>
 
-# jQuery系列
+# jQuery相关
 
 ```html
 <!-- jquery -->
@@ -79,6 +79,40 @@
 
 ---
 
+
+# 常用样式
+
+```html
+<!-- 重置 -->
+<!-- normalize -->
+<link href="https://cdn.bootcss.com/normalize/7.0.0/normalize.min.css" rel="stylesheet">
+
+<!-- reset -->
+<link href="https://cdn.bootcss.com/minireset.css/0.0.2/minireset.min.css" rel="stylesheet">
+<link href="https://cdn.bootcss.com/meyer-reset/2.0/reset.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+
+<!-- pure.css -->
+<link href="https://cdn.bootcss.com/pure/1.0.0/pure-min.css" rel="stylesheet">
+```
+
+
+# bootstrap系列
+
+```html
+<!--bootstrap-->
+<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!--font-awesome-->
+<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- bootstrap-filestyle -->
+<!-- a quick and simple plugin to help style your form's file upload inputs. -->
+<script src="https://cdn.bootcss.com/bootstrap-filestyle/2.1.0/bootstrap-filestyle.min.js"></script>
+```
+
 # 兼容与嗅探
 
 ```html
@@ -102,42 +136,6 @@
 
 <!-- placeholder -->
 <script src="https://cdn.bootcss.com/jquery-placeholder/2.3.1/jquery.placeholder.min.js"></script>
-```
-
----
-
-# bootstrap系列
-
-```html
-<!--bootstrap-->
-<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-<!--font-awesome-->
-<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
-<!-- bootstrap-filestyle -->
-<!-- a quick and simple plugin to help style your form's file upload inputs. -->
-<script src="https://cdn.bootcss.com/bootstrap-filestyle/2.1.0/bootstrap-filestyle.min.js"></script>
-```
-
----
-
-# 常用样式
-
-```html
-<!-- 重置 -->
-<!-- normalize -->
-<link href="https://cdn.bootcss.com/normalize/7.0.0/normalize.min.css" rel="stylesheet">
-
-<!-- reset -->
-<link href="https://cdn.bootcss.com/minireset.css/0.0.2/minireset.min.css" rel="stylesheet">
-<link href="https://cdn.bootcss.com/meyer-reset/2.0/reset.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-
-
-<!-- pure.css -->
-<link href="https://cdn.bootcss.com/pure/1.0.0/pure-min.css" rel="stylesheet">
 ```
 
 
@@ -182,8 +180,6 @@
 <script src="https://cdn.bootcss.com/layer/3.1.0/layer.js"></script>
 ```
 
----
-
 # 模块化
 
 ```html
@@ -220,6 +216,13 @@
 <script src="https://cdn.bootcss.com/jqvmap/1.5.1/maps/continents/jquery.vmap.north-america.js"></script>
 <script src="https://cdn.bootcss.com/jqvmap/1.5.1/maps/continents/jquery.vmap.south-america.js"></script>
 <script src="https://cdn.bootcss.com/jqvmap/1.5.1/maps/jquery.vmap.usa.js"></script>
+```
+
+# 工具
+
+```html
+
+<script src="https://cdn.bootcss.com/lodash-compat/3.10.2/lodash.min.js"></script>
 ```
 
 # 其他

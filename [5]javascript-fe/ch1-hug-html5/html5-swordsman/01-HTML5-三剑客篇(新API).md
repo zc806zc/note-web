@@ -29,10 +29,6 @@ var book = globalStorage[location.host].getItem("book");
   - 尽量不要在客户端存储敏感信息, 因为数据缓存不会加密
   - HTTP专有cookie可以从浏览器或者服务器设置，这样就只能从服务器端读取
 
-- 第三方封装库
-
-  - store.js <https://github.com/marcuswestin/store.js>
-  - localForage <https://github.com/localForage/localForage>
 
 - 离线存储的优点
 

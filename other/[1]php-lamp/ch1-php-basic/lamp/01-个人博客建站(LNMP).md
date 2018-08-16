@@ -125,7 +125,7 @@ ssl_prefer_server_ciphers on;
 // phpstudy nginx.conf配置
 server {
     listen 80;
-    server_name lcoalhost;
+    server_name localhost;
     index index.html index.htm index.php;
     return 301 https: //qmen.space$request_uri; // 重定向
 

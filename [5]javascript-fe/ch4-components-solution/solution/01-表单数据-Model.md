@@ -2,12 +2,12 @@
 
 - 登录
 
-  - <https://profile.freepik.com/login>
-  - 复位这个按钮几乎永远都不会帮助到用户
-  - 用户很可能不愿意填写表单
+  - 复位这个按钮几乎帮不到用户
+  - 用户不愿意填写表单 -> 逻辑分组 + 有意思的交互设计
+  - demo https://profile.freepik.com/login
+  - 输密码遮眼睛 <https://codepen.io/dsenneff/pen/QajVxO>
 
-    - 逻辑分组
-    - 重视交互，做有意思的设计
+![](/static/img/other/login-sample-23.png)
 
 - 优化建议
 
@@ -17,22 +17,15 @@
   - 滑动验证
   - 分步注册，减少注册心理负担
 
-![](/static/img/other/login-sample-23.png)
 
-> 所有抛开产品本身谈登陆注册的行为都是耍流氓
-
-<https://juejin.im/entry/5993b3bef265da24874ced54>
+- 所有抛开产品本身谈登陆注册的行为都是耍流氓
 
 ```javascript
 A产品竟然支持邮箱注册，邮箱注册这种方式主要是PC端时盛行的，现在手机号注册收验证码多方便，这种方式不好；
 B产品竟然不能设置密码，每次登陆都要手机验证码，这万一手机没信号收不到验证码怎么办，这种方式不好；
 C产品我用第三方登陆了，竟然还让我绑定手机号，这不是欺骗用户么，太不要脸了，这种方式不好；
 ```
-
-- 效果集
-
-  - 输密码遮眼睛 <https://codepen.io/dsenneff/pen/QajVxO>
-
+  
 # 验证块
 
 - <http://www.jq22.com/webqd2853> - 滑动验证
@@ -123,7 +116,7 @@ function slide(range, conSlide, obj) {
 - typeahead.js <https://github.com/twitter/typeahead.js>
 - Fuse <https://github.com/krisk/Fuse>
 - At.js <https://github.com/ichord/At.js>
-- bootstrap-typeahead
+- bootstrap-typeahead https://github.com/bassjobsen/Bootstrap-3-Typeahead
 - awesomplete <https://github.com/LeaVerou/awesomplete>
 
 # 星级评分 | 投票率
@@ -251,10 +244,15 @@ function praise(num, obj) {
 # 分页
 
 - 简单分页 <http://www.jq22.com/webqd1246>
-
+- paginationjs 基于jquery https://github.com/superRaytin/paginationjs
+- twbs-pagination https://github.com/josecebe/twbs-pagination
+- am-page 基于amazeUI https://github.com/lscho/am-page
 - 与数据表格关联的分页删除数据时注意加载最适合的一页，因为可能删除了所在页的最后一条数据
 
 - 客户端分页 -> 数量较少，全部加载，前端控制显示
+    - http://www.jq22.com/jquery-info13734
+    - 带页码跳转 http://www.jq22.com/jquery-info17447
+    - 自渲染分页 丑看原理 http://www.jq22.com/jquery-info13810
 - 与数据表格的结合
     
     - 滚动条
@@ -567,30 +565,23 @@ var queryString = $('#myFormId .specialFields').fieldSerialize();
 - 用户编辑后离开前的保存校验 
     - 是否修改过
 - jquery validate | jquery-validation https://github.com/jquery-validation/jquery-validation
-- superstruct
-
-  - <https://github.com/ianstormtaylor/superstruct>
-  - A simple and composable way to validate data in Javascript.
-
-- cleave.js
-
-  - <https://github.com/nosir/cleave.js>
-  - Format input text content when you are typing...
+- Parsley.js <https://github.com/guillaumepotier/Parsley.js>
 
 - validator.js
 
   - <https://github.com/chriso/validator.js>
   - String validation
+  - 提供了常用的校验方法 eg isAlpha isBase64 isEmail
 
-- Parsley.js <https://github.com/guillaumepotier/Parsley.js>
 
-- 银行卡格式处理
+- 格式处理
 
-  - card <https://github.com/jessepollak/card>
+  - card 银行卡 <https://github.com/jessepollak/card>
+  - cleave.js
 
-```js
-...
-```
+    - <https://github.com/nosir/cleave.js>
+    - Format input text content when you are typing...
+
 
 # 邮箱
 
@@ -744,7 +735,12 @@ rows.sort(function(a,b){
     - 兼容IE6+
     - 样式优化 http://www.jq22.com/jquery-info15563
 
-# 数据结构
+# 数据结构 | 格式校验
+
+- superstruct
+
+  - <https://github.com/ianstormtaylor/superstruct>
+  - A simple and composable way to validate data in Javascript.
 
 - immutable-js <https://github.com/facebook/immutable-js>
 
@@ -761,3 +757,9 @@ map1.get('b') + " vs. " + map2.get('b') // 2 vs. 50
 
 - clipboard.js <https://github.com/zenorocha/clipboard.js>
 - zeroclipboard 兼容ie 用到flash https://github.com/zeroclipboard/zeroclipboard
+
+# 本地存储
+
+
+- store.js <https://github.com/marcuswestin/store.js>
+- localForage <https://github.com/localForage/localForage>

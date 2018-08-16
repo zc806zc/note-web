@@ -5,7 +5,11 @@
 - 经典工具库
 
   - underscore
-  - lodash <https://github.com/lodash/lodash>
+    - https://github.com/jashkenas/underscore/
+    - 文档 http://www.css88.com/doc/underscore/
+  - lodash 
+    - <https://github.com/lodash/lodash>
+    - 文档 http://www.css88.com/doc/lodash/
   - ramda <https://github.com/ramda/ramda>
   - licia 史上最全 <https://github.com/liriliri/licia>
 
@@ -103,5 +107,11 @@ class样式操作 // jquery
 # 回调处理
 
 - eventproxy https://github.com/JacksonTian/eventproxy 
+  - 移除被广为诟病的深度callback嵌套问题
+  - 
 
 > An implementation of task/event based asynchronous pattern
+
+```js
+
+```
