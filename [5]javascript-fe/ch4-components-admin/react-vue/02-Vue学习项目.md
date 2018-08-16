@@ -66,5 +66,6 @@
 
 # 阅读咨询
 
+- vue-hackernews-2.0 https://github.com/vuejs/vue-hackernews-2.0
 - 追书神器 接口 <https://github.com/xiadd/zhuishushenqi>
 - 仿知乎日报 不维护 <https://github.com/hilongjw/vue-zhihu-daily>
