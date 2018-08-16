@@ -115,7 +115,7 @@
 - 导入导出
 
   - CSV parser <https://github.com/mholt/PapaParse>
-  - js-xlsx <https://github.com/SheetJS/js-xlsx>
+  - js-xlsx @NICE IE8+ <https://github.com/SheetJS/js-xlsx>
   - 网页表格导出excel格式 <http://www.jq22.com/webqd2279>
   - excellentexport JS导出EXCEL https://github.com/jmaister/excellentexport
 

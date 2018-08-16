@@ -598,6 +598,7 @@ var queryString = $('#myFormId .specialFields').fieldSerialize();
   - 原生版本 https://www.ag-grid.com/best-javascript-data-grid/
   - vue版本 https://www.ag-grid.com/best-vuejs-data-grid/
 - handsontable($) 
+    - 支持modern
     - <https://github.com/handsontable/handsontable>
     - <https://handsontable.com/>
 - jqGrid 
@@ -708,7 +709,7 @@ rows.sort(function(a,b){
 - 经典 ckeditor | kindeditor
 - ace <https://github.com/ajaxorg/ace>
 - editor https://github.com/ory/editor
-- draft-js @NICE  React <https://github.com/facebook/draft-js>
+- draft-js @NICE  基于React <https://github.com/facebook/draft-js>
 - quill 图片坑 <https://github.com/quilljs/quill>
 - 国内 ueditor | wangeditor
 - x-editable jquery考虑 <https://github.com/vitalets/x-editable>

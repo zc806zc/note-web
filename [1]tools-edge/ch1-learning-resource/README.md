@@ -17,13 +17,11 @@
 
 # 学习库
 
+- learn-anything https://github.com/learn-anything/learn-anything
 - be-a-professional-programmer <https://github.com/stanzhai/be-a-professional-programmer>
 - 伯乐在线 <https://github.com/jobbole>
 - papers-we-love <https://github.com/papers-we-love/papers-we-love>
 - creative-coding <https://github.com/terkelg/awesome-creative-coding>
-
-# 学习能力
-
 - build-your-own-x https://github.com/danistefanovic/build-your-own-x
 
 # 代码库

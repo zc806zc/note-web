@@ -89,7 +89,7 @@ const nav = document.querySelector("[rel='js-site-navigation']")
 # BFC
 
 - Block formatting context 块级格式化上下文
-- 它决定了元素如何对其内容进行定位,以及与其他元素的关系和相互作用
+- 它决定了元素如何对其内容进行定位,以及与其他元素的关系和相互作用，处于不同BFC中的元素是不会互相干扰的
 
 - BFC与IFC <https://segmentfault.com/a/1190000012993668>
 

@@ -166,7 +166,8 @@ components/
 
 # 服务端渲染
 
-- ssr
+- ssr <https://ssr.vuejs.org/zh/>
+- nuxt <https://nuxtjs.org/>
 - Vue的pre-render
 - <https://ssr.vuejs.org/zh/>
 - <https://juejin.im/post/59fa9257f265da43062a1b0e>

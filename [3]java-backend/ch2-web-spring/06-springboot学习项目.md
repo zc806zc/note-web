@@ -18,6 +18,13 @@
 
 # 开源项目
 
+# 系统
+
+- generator-jhipster
+
+  - Spring Boot + Angular projects
+  - <https://github.com/jhipster/generator-jhipster>
+  
 - Guns
 
   - <https://www.imooc.com/video/16386>

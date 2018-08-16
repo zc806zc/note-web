@@ -52,7 +52,11 @@
 - 最少知识原则
 - 开放-封闭原则
 
-# 参考
+# 资源
+
+- react-in-patterns React开发中的设计模式 https://github.com/krasimir/react-in-patterns
+
+# 项目
 
 - JavaScript设计模式与开发实践 曾探 2015-05
 

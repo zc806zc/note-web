@@ -63,6 +63,7 @@
 
 # 拖拽
 
+- Sortable https://github.com/RubaXa/Sortable
 - dragula @NICE <https://github.com/bevacqua/dragula>
 - draggable <https://github.com/Shopify/draggable>
 

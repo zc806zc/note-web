@@ -1,8 +1,9 @@
 # React资源
 
-- react-starter-kit <https://github.com/kriasoft/react-starter-kit>
+- awesome-react https://github.com/enaqx/awesome-react
 
 - react-redux-links <https://github.com/markerikson/react-redux-links>
+- react-boilerplate https://github.com/react-boilerplate/react-boilerplate
 
 - 深入 React 技术栈 <https://github.com/arcthur/react-book-examples>
 
@@ -12,10 +13,6 @@
   - <https://github.com/lewis617/react-redux-book>
   - <https://github.com/lewis617/react-redux-heroku>
 
-- 后台框架
-
-  - Ant Design <https://preview.pro.ant.design>
-
 - vscode插件
 
   - <https://juejin.im/entry/599d4cb96fb9a024a27bf090>
@@ -24,6 +21,7 @@
 
   - 一个收集react的网站 <https://react.parts/native>
   - <https://github.com/react-native-material-design/react-native-material-design>
+
 
 # React
 
