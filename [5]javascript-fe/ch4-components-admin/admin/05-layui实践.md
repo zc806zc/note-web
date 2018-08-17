@@ -2,15 +2,21 @@
 
 - 优点
 
-  - layer等组件
-  - 组件差不多能闭环，但不够强可以找jquery生态替换
+  - 主要原因 IE8+(官方说IE9+)
+  - layer等优秀组件
+  - 组件差不多能闭环，不够强倚靠jquery生态
   - 社区比较活跃
+
 - CDN
     - https://layui.hcwl520.com.cn/
 
 # layuiAdmin
 
-- 
+- http://www.layui.com/admin
+- IE8+ | 手机全屏响应式 | SPA  | $
+- 追加的内容
+    - ie8+ router
+    - 单页面的刷新按钮
 
 # 使用前要考虑的不足 | 发现的一些BUG
 
