@@ -12,6 +12,10 @@
 
   - 兼容IE8的React(anu)开发脚手架 <https://gitee.com/menhal/React_IE8_boilerplate>
   - https://github.com/yunpengGit/anu-antd-axios-echarts-ie8
+  - https://github.com/Levan-Du/anu-cli
+  - https://gitee.com/menhal/React_IE8_boilerplate
+  - https://github.com/magicapple/anujs-webpack4-ie7-8
+  - https://github.com/RubyLouvre/create-anu-app
 
 - avalon <https://github.com/RubyLouvre/avalon>
 

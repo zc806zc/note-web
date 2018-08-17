@@ -122,9 +122,9 @@ const nav = document.querySelector("[rel='js-site-navigation']")
 - 父级div也浮动，需要定义宽度
 - br + clear:both
 
-# 关于div
+# div + css
 
-- 多个div?? -> 结构考量 + 性能考量 
+- 多个div嵌套 -> 结构考量 + 性能考量 
 
 # 常用布局
 
@@ -251,22 +251,32 @@ overflow: hidden; // 触发生成BFC,使浮动元素也参与计算
 
 - 阈值
 
-```html
-<!-- Bootstrap -->
-(xs) 超小屏幕手机，小于 768px // 没有任何媒体查询相关的代码，因为这在 Bootstrap 中是默认的（移动优先）
-sm 小屏幕\平板，大于等于 768px
-md 中等屏幕|桌面显示器，大于等于 992px
-lg 大屏幕|大桌面显示器，大于等于 1200px
+```js
+// ant-design
+{
+  xs: '480px',
+  sm: '576px',
+  md: '768px',
+  lg: '992px',
+  xl: '1200px',
+  xxl: '1600px',
+}
 
-<!-- UIkit 偏向web  -->
-.uk-align-left@s
-.uk-align-right@s    Only affects device widths of 640px and higher.
-.uk-align-left@m
-.uk-align-right@m    Only affects device widths of 960px and higher.
-.uk-align-left@l
-.uk-align-right@l    Only affects device widths of 1200px and higher.
-.uk-align-left@xl
-.uk-align-right@xl    Only affects device widths of 1600px and higher.
+// Bootstrap
+{
+  xs, // 小屏幕手机
+  sm: '768px', // 小屏幕\平板
+  md: '992px', // 中等屏幕|桌面显示器
+  lg: '1200px' // 大屏幕|大桌面显示器
+}
+
+// UIkit
+{
+  s, '640px',
+  m: '960px',
+  l: '1200px',
+  xl: '1600px'
+}
 ```
 
 - 流式布局 = 等比例缩放 + 百分比
@@ -285,7 +295,7 @@ lg 大屏幕|大桌面显示器，大于等于 1200px
 
 # 响应式布局再思考
 
-- 响应式布局是有成本的，而且大多数时候不是必需的
+- 响应式布局是有成本的，而且大多数时候不需要
 - 不见得比固定布局更好,有些方面绝对还是传统布局好
 
 
