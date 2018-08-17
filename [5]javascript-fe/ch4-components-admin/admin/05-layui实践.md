@@ -125,8 +125,12 @@ layui.define(['jquery', 'jquery_cookie'], function (exports) {
         - https://gitee.com/whvse/treetable-lay
 
 - select 
-    - layui拓展之“下拉多选功能” http://fly.layui.com/jie/17065/
-    - https://gitee.com/layuicms/XiaLaDuoXuan/blob/master/layui/lay/modules/form.js
+    - layui拓展之“下拉多选功能” 
+        - http://fly.layui.com/jie/17065/
+        - https://gitee.com/layuicms/XiaLaDuoXuan/blob/master/layui/lay/modules/form.js
+    - 基于layui的无限级联选择器
+        - http://fly.layui.com/jie/30820/
+        - https://github.com/hsiangleev/layuiExtend
 - dropdown 
     - 扩展 layui 增加类似 bootstrap下拉菜单组件 http://fly.layui.com/jie/20494/
 - autocomplete
