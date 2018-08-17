@@ -2,31 +2,38 @@
 
 - 优点
 
-  - layer与表格等特色鲜明的组件
-  - 自成体系
-  - 活跃社区
+  - layer等组件
+  - 组件差不多能闭环，但不够强可以找jquery生态替换
+  - 社区比较活跃
+- CDN
+    - https://layui.hcwl520.com.cn/
 
-# 不支持的内容
+# layuiAdmin
 
-- 表格行内编辑还不支持填充数据与动态更新
+- 
+
+# 使用前要考虑的不足 | 发现的一些BUG
+
+- 表格和树不够强
+    - 表格行内编辑还不支持填充数据与动态更新
 - 表格不完全支持resize, f12以后分页会消失(估计已解决)
 - 弹框不支持滚动条，目前提供的参数是 是否屏蔽浏览器滚动条
 - 表格组件数据格式封装过于死板
 - 自成一家的模块化系统有点尴尬
 - 模板渲染引擎也有点尴尬
 - 校验规则变来变去的...
+- 表格行内编辑在IE浏览器的窗口切换时,onblur的时候不能相应时间 -> 暂时处理 编辑框自行生成然后监听
+
+# 自己的一些坚持
+
+- 不用iframe
+- 复杂表头也用js渲染 官方的栗子是html + js，这样视图和渲染分尸很不喜欢
 
 # 开发细节 | 开发优化
 
 - 年度精华 http://fly.layui.com/jie/30227/
 - LayUI实际开发过程的细节点总结 http://fly.layui.com/jie/24673/
-- 关于前端文件组织(模块化)
 
-  - <https://github.com/layui/fly>
-  - <https://github.com/BrotherMa/layuiCMS>
-  - <https://gitee.com/xmmxjy/layuiAdmin>
-  - ...
-  
 # 入坑问题
 
 - 为什么表单不显示 -> 依赖于form组件
@@ -57,13 +64,87 @@ layer.open({
 });
 ```
 
-# layui的一些BUG
+# 第三方组件
 
-- 表格行内编辑在IE浏览器的窗口切换时,onblur的时候不能相应时间 -> 暂时处理 编辑框自行生成然后监听
+- layui 封装第三方组件 http://fly.layui.com/jie/5080/
 
-# 二次开发项目模板
+```js
+(function (window, factory) {
+    if (typeof exports === 'object') {
+        // 支持 CommonJS
+        module.exports = factory();
+    } else if (typeof define === 'function' && define.amd) {
+        // 支持 AMD
+        define(factory);
+    } else if (window.layui && layui.define) {
+        // layui加载
+        layui.define(function (exports) {
+          exports('fullPage', factory());
+        });
+    } else {
+        window.eventUtil = factory();
+    }
+})(this, function () {
+    // 模块源代码
+    //module ...
+});
+```
 
+- 加载第三方jQuery插件
+    - 直接用
+    - Layui完美加载第三方jQuery插件的正确姿势 http://fly.layui.com/jie/11259/
+
+```js
+layui.config({base: 'js/'}).extend({
+    // 默认寻找base也就是js/index.js模块导入
+    jquery_cookie: 'extends/jquery.cookie' 
+}).use('index');
+
+layui.define(['jquery', 'jquery_cookie'], function (exports) {
+    var $ = layui.jquery;  
+
+    // 可能需要导入多个扩展插件
+    $ = layui.jquery_cookie($);
+
+    // 尝试使用jquery.cookie.js
+    $.cookie('name', 'limanman');
+
+    alert($.cookie('name'));
+
+    // 作为入口无需注册模块,所以直接null
+    exports('index', null);
+});
+```
+
+- table
+    - 基于 layui 的 treeGrid 插件
+        - http://fly.layui.com/jie/23618/
+        - https://gitee.com/lrd110/tree_table_treegrid_based_on_layui/blob/master/web/design/lay/modules/treeGrid.js
+    - 实现layui的树形表格treeTable，对layui数据表格进行扩展
+        - layui树形表格treeTable http://fly.layui.com/jie/30625/
+        - https://gitee.com/whvse/treetable-lay
+
+- select 
+    - layui拓展之“下拉多选功能” http://fly.layui.com/jie/17065/
+    - https://gitee.com/layuicms/XiaLaDuoXuan/blob/master/layui/lay/modules/form.js
+- dropdown 
+    - 扩展 layui 增加类似 bootstrap下拉菜单组件 http://fly.layui.com/jie/20494/
+- autocomplete
+    - 扩展 layui 的 autocomplete 插件 http://fly.layui.com/jie/24072/
+
+- 省市区三级联动 
+
+# 二次开发项目 | 模板
+
+- 案例 http://fly.layui.com/case/2018/
+- 关于前端文件组织(模块化)
+
+  - <https://github.com/layui/fly>
+  - <https://github.com/BrotherMa/layuiCMS>
+  - <https://gitee.com/xmmxjy/layuiAdmin>
+  - ...
 - jqadmin <https://gitee.com/jqcool/jqadmin>
+- 一个轻量，简约，包含丰富模块化前端框架 ，帮您快速构建网站  https://gitee.com/bambi008/Simple
 
 ---
 
