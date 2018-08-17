@@ -6,34 +6,66 @@
   - 自成体系
   - 活跃社区
 
-- 缺陷与建议
+# 不支持的内容
 
-  - 表格行内编辑还不支持填充数据与动态更新
-  - 表格不完全支持resize, f12以后分页会消失(估计已解决)
-  - 弹框不支持滚动条，目前提供的参数是 是否屏蔽浏览器滚动条
-  - 表格组件数据格式封装过于死板
-  - 自成一家的模块化系统有点尴尬
-  - 模板渲染引擎也有点尴尬
-  - 校验规则变来变去的...
+- 表格行内编辑还不支持填充数据与动态更新
+- 表格不完全支持resize, f12以后分页会消失(估计已解决)
+- 弹框不支持滚动条，目前提供的参数是 是否屏蔽浏览器滚动条
+- 表格组件数据格式封装过于死板
+- 自成一家的模块化系统有点尴尬
+- 模板渲染引擎也有点尴尬
+- 校验规则变来变去的...
 
+# 开发细节 | 开发优化
+
+- 年度精华 http://fly.layui.com/jie/30227/
+- LayUI实际开发过程的细节点总结 http://fly.layui.com/jie/24673/
 - 关于前端文件组织(模块化)
 
   - <https://github.com/layui/fly>
   - <https://github.com/BrotherMa/layuiCMS>
   - <https://gitee.com/xmmxjy/layuiAdmin>
   - ...
+  
+# 入坑问题
 
-# 开发细节
+- 为什么表单不显示 -> 依赖于form组件
+- 动态追加的表单元素不生效 -> form.render
+- 页面一打开就执行layer.open/alert/msg时，为何有时大有时小 -> 放入 layer.ready
 
-- LayUI实际开发过程的细节点总结 http://fly.layui.com/jie/24673/
+# 一些操作
 
-# layui一些问题
+- 弹框回车关闭
 
-- IE有切换窗口的onblur,但是表格行内编辑没有处理这个问题
+```js
+layer.open({
+  title: '回车关闭测试'
+  ,content: '我是内容'
+  ,btn: ['确认','关闭']
+  ,success: function(layero, index){
+    this.enterEsc = function(event){
+      if(event.keyCode === 13){
+        layer.close(index);
+        return false; //阻止系统默认回车事件
+      }
+    };
+    $(document).on('keydown', this.enterEsc);	//监听键盘事件，关闭层
+  }
+  ,end: function(){
+    $(document).off('keydown', this.enterEsc);	//解除键盘关闭事件
+  }
+});
+```
 
-# 二次开发项目
+# layui的一些BUG
+
+- 表格行内编辑在IE浏览器的窗口切换时,onblur的时候不能相应时间 -> 暂时处理 编辑框自行生成然后监听
+
+# 二次开发项目模板
 
 - jqadmin <https://gitee.com/jqcool/jqadmin>
+
+---
 
 
 # 写弹框
