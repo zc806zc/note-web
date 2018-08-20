@@ -1,19 +1,15 @@
 # 博客专家
 
 - Tim Yang <https://timyang.net/>
-
 - 张开涛 <http://www.iteye.com/blogs/subjects/kaitao-springmvc>
-
 - 翟永超
-
-- 孤傲苍狼 <http://www.cnblogs.com/xdp-gacl/category/574705.html>
-
 - chenssy <http://blog.csdn.net/chenssy>
-
 - 杜琪 <https://www.jianshu.com/u/28d7875c78df>
+- 纯洁的微笑 
 
 - 其他
 
+  - 孤傲苍狼 <http://www.cnblogs.com/xdp-gacl/category/574705.html>
   - 书海陶然 <https://www.jianshu.com/u/657c611b2e07>
   - 海子 看初学基础 <http://www.cnblogs.com/dolphin0520/>
   - 曹胜欢 <http://blog.csdn.net/csh624366188/>
@@ -26,26 +22,34 @@
   - 网站排名 <http://www.techug.com/post/github-china-100.html>
   - 讨论 <https://www.zhihu.com/question/50203775/answer/119850003>
 
-- cmsblogs <http://cmsblogs.com/>
 
-- blogjava <http://www.blogjava.net/>
+- 网站推荐 
+  - <http://www.siteboxs.com/siteBox/tag/tname/java.html>
+  - 学习Java应该关注哪些网站？ <https://www.zhihu.com/question/23496750>
 
-- 博之阅 <http://www.bozhiyue.com/index.html>
+- 中国十大社区 https://juejin.im/post/5b417a12e51d451962728acf
+  - CSDN www.csdn.net/
+  - 博客园 www.cnblogs.com/
+  - SegmentFault segmentfault.com/
+  - V2EX www.v2ex.com/
+  - 开源中国 www.oschina.net/
+  - W3School www.w3school.com.cn
+  - 51CTO www.51cto.com
+  - ChinaUnix www.chinaunix.net/
+  - 伯乐在线 www.jobbole.com/
+  - ITEye @deprecated www.iteye.com/
+  - 掘金 juejin.im
+  - 开发者头条 toutiao.io/
+  - GitChat https://gitbook.cn/
 
-- 网站推荐 <http://www.siteboxs.com/siteBox/tag/tname/java.html>
-
-- <https://www.zhihu.com/question/23496750>
-
-- 国内经典
-
+- 经典Java
+  - cmsblogs <http://cmsblogs.com/>
+  - blogjava <http://www.blogjava.net/>
+  - 博之阅 <http://www.bozhiyue.com/index.html>
   - importnew <http://www.importnew.com/>
-  - CSDN
-  - iteye <http://www.iteye.com/>
   - segmentfault <https://segmentfault.com/t/java>
   - infoq <http://www.infoq.com/cn/>
-  - 博客园 <https://www.cnblogs.com/>
   - 伯乐在线 <http://top.jobbole.com/tag/java/?sort=latest>
-  - 51cto <http://www.51cto.com/>
   - 并发编程 <http://ifeve.com/java-7-concurrency-cookbook/>
   - programcreek <https://www.programcreek.com/>
   - ...
