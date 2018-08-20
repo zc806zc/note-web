@@ -21,7 +21,7 @@
   - Range | Slider 滑动输入条
   - Upload
   - Placeholder (Create a placeholder space that can be used for uploading files via drag and drop.)
-  - Tag
+  - Tag | TagsInput
   - DatePicker | TimePicker | Calendar
   - mention
   - Rate 评分
