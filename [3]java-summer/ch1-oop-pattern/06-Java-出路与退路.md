@@ -1,3 +1,10 @@
+# Java学习计划
+
+- 后端技术概览 https://juejin.im/entry/5afb9b12518825428830d454
+- Java学习路线
+
+  - 成神之路 <http://www.hollischuang.com/archives/489>
+
 # Java出路
 
 - Kotlin喧嚣过后，谈谈Java程序员未来的出路 <http://mp.weixin.qq.com/s/NIn2hOUZDAq4sdA4TsSNYg>

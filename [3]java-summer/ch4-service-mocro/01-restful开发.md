@@ -55,7 +55,14 @@
 
 - <https://segmentfault.com/a/1190000006735330>
 
-- <https://zhuanlan.zhihu.com/p/21644769>
+- RESTful Web 服务：教程 <https://zhuanlan.zhihu.com/p/21644769>
+  - 模型表示（Representations）
+  - 消息（Messages）
+  - URIs
+  - 一致接口（Uniform interface）
+  - （无状态）Stateless
+  - 资源之间的链接（Links between resources）
+  - 缓存（Caching）
 
 - RESTful 架构风格概述 <https://juejin.im/post/57d0db282e958a0054496596>
 

@@ -1,12 +1,6 @@
-# Java学习计划
+# README
 
-- <https://github.com/TeamStuQ/skill-map/blob/master/data/map-DevLang-Java.md>
-- 后端技术概览 https://juejin.im/entry/5afb9b12518825428830d454
-- Java学习路线
-
-  - 成神之路 <http://www.hollischuang.com/archives/489>
-
-![](http://www.yiibai.com/uploads/images/201702/2802/686140245_35550.jpg)
+- 技能谱图 <https://github.com/TeamStuQ/skill-map/blob/master/data/map-DevLang-Java.md>
 
 # Core Java
 
@@ -346,3 +340,5 @@
 
 - Android
 - JavaME 机顶盒、移动电话和PDA之类嵌入式消费电子设备提供的Java语言平台
+
+![](http://www.yiibai.com/uploads/images/201702/2802/686140245_35550.jpg)
