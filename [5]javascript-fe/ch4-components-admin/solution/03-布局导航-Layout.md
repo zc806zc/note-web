@@ -459,4 +459,8 @@ ul li:hover .center {
 - 栗子
   - <http://www.jq22.com/webqd2457>
 
-# 手风琴导航
+# 手风琴 | Collapse
+
+# 文字省略号
+
+- shave 设定最大行高 https://github.com/dollarshaveclub/shave/
