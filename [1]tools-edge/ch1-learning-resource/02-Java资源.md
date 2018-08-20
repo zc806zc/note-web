@@ -164,12 +164,6 @@
 
 - 开源中国 <http://tool.oschina.net/>
 
-# 面试
-
-- itmian4 <http://www.itmian4.com/>
-- <https://github.com/kdn251/interviews>
-- https://github.com/crossoverJie/Java-Interview
-
 # 服务器
 
 - 阿里云
