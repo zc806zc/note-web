@@ -26,7 +26,7 @@
 
 - <http://www.yiibai.com/plsql/>
 
-# 如果有人问你数据库的原理，叫他看这篇文章
+# 基础
 
-- <http://blog.jobbole.com/100349/>
+- 如果有人问你数据库的原理，叫他看这篇文章 <http://blog.jobbole.com/100349/>
 - 数据库面试题 <https://juejin.im/post/5a9ca0d6518825555c1d1acd>
