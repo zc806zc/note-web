@@ -8,6 +8,7 @@
 
 # Java面试题
 
+- 【Java】留下没有基础眼泪的面试题 https://juejin.im/post/5b737671518825612a227e91
 - 面试过阿里等互联网大公司，我知道了这些套路 https://juejin.im/post/59bd64c4f265da066d33333d
 - 最近5年133个Java面试问题列表 <http://www.importnew.com/17232.html>
 - 如何准备BAT技术面试答案(汇总版) <https://www.jianshu.com/p/1f1d3193d9e3>
