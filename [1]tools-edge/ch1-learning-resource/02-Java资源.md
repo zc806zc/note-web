@@ -1,19 +1,19 @@
-# 博客专家
+# 教程 && 资源
 
-- Tim Yang <https://timyang.net/>
-- 张开涛 <http://www.iteye.com/blogs/subjects/kaitao-springmvc>
-- 翟永超
-- chenssy <http://blog.csdn.net/chenssy>
-- 杜琪 <https://www.jianshu.com/u/28d7875c78df>
-- 纯洁的微笑 
-
+- Java资源大全中文版 <https://github.com/jobbole/awesome-java-cn>
+- 各种资源收藏集的集合 - 纯洁的微笑 <https://gitee.com/ityouknow/awesome-list>
+- mkyong <http://www.mkyong.com/>
+- howtodoinjava <https://howtodoinjava.com/>
+- 易佰 <http://www.yiibai.com/spring/>
+- 程序园 <http://www.voidcn.com/course>
+- awesome-java <https://github.com/akullpp/awesome-java>
+- Java综合讨论 <http://www.iteye.com/forums/tag_good/Java%E7%BB%BC%E5%90%88>
+- Jboss团队 <http://in.relation.to/>
+- javaspecialists <https://www.javaspecialists.eu/>
 - 其他
 
-  - 孤傲苍狼 <http://www.cnblogs.com/xdp-gacl/category/574705.html>
-  - 书海陶然 <https://www.jianshu.com/u/657c611b2e07>
-  - 海子 看初学基础 <http://www.cnblogs.com/dolphin0520/>
-  - 曹胜欢 <http://blog.csdn.net/csh624366188/>
-  - 骆昊 <http://blog.csdn.net/jackfrued>
+  - hellojavacases微信 <http://hellojava.info/>
+  - codefollower <https://github.com/codefollower>
 
 # 网站|博客
 
@@ -21,10 +21,7 @@
 
   - 网站排名 <http://www.techug.com/post/github-china-100.html>
   - 讨论 <https://www.zhihu.com/question/50203775/answer/119850003>
-
-
-- 网站推荐 
-  - <http://www.siteboxs.com/siteBox/tag/tname/java.html>
+  - 网站推荐  <http://www.siteboxs.com/siteBox/tag/tname/java.html>
   - 学习Java应该关注哪些网站？ <https://www.zhihu.com/question/23496750>
 
 - 中国十大社区 https://juejin.im/post/5b417a12e51d451962728acf
@@ -43,10 +40,10 @@
   - GitChat https://gitbook.cn/
 
 - 经典Java
+  - importnew @NICE <http://www.importnew.com/>
   - cmsblogs <http://cmsblogs.com/>
   - blogjava <http://www.blogjava.net/>
   - 博之阅 <http://www.bozhiyue.com/index.html>
-  - importnew <http://www.importnew.com/>
   - segmentfault <https://segmentfault.com/t/java>
   - infoq <http://www.infoq.com/cn/>
   - 伯乐在线 <http://top.jobbole.com/tag/java/?sort=latest>
@@ -73,22 +70,23 @@
   - 实验楼 <https://www.shiyanlou.com/courses/>
   - 灰狐 <http://www.huihoo.com/>
 
-# 教程 && 资源
+# 博客专家
 
-- Java资源大全中文版 <https://github.com/jobbole/awesome-java-cn>
-- 各种资源收藏集的集合 - 纯洁的微笑 <https://gitee.com/ityouknow/awesome-list>
-- mkyong <http://www.mkyong.com/>
-- howtodoinjava <https://howtodoinjava.com/>
-- 易佰 <http://www.yiibai.com/spring/>
-- 程序园 <http://www.voidcn.com/course>
-- awesome-java <https://github.com/akullpp/awesome-java>
-- Java综合讨论 <http://www.iteye.com/forums/tag_good/Java%E7%BB%BC%E5%90%88>
-- Jboss团队 <http://in.relation.to/>
-- javaspecialists <https://www.javaspecialists.eu/>
+- AdamBien https://twitter.com/AdamBien/
+- Tim Yang <https://timyang.net/>
+- 张开涛 <http://www.iteye.com/blogs/subjects/kaitao-springmvc>
+- 翟永超
+- chenssy <http://blog.csdn.net/chenssy>
+- 杜琪 <https://www.jianshu.com/u/28d7875c78df>
+- 纯洁的微笑 
+
 - 其他
 
-  - hellojavacases微信 <http://hellojava.info/>
-  - codefollower <https://github.com/codefollower>
+  - 孤傲苍狼 <http://www.cnblogs.com/xdp-gacl/category/574705.html>
+  - 书海陶然 <https://www.jianshu.com/u/657c611b2e07>
+  - 海子 看初学基础 <http://www.cnblogs.com/dolphin0520/>
+  - 曹胜欢 <http://blog.csdn.net/csh624366188/>
+  - 骆昊 <http://blog.csdn.net/jackfrued>
 
 # 文档
 
