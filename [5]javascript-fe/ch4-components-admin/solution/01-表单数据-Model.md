@@ -72,6 +72,7 @@ function slide(range, conSlide, obj) {
 # URL操作库
 
 - URI.js <https://github.com/medialize/URI.js/>
+- domurl https://github.com/Mikhus/domurl
 
 --------------------------------------------------------------------------------
 
@@ -560,10 +561,20 @@ var value = $('#myFormId :password').fieldValue();
 var queryString = $('#myFormId .specialFields').fieldSerialize();
 ```
 
+# 数字
+
+- Numeral-js https://github.com/adamwdraper/Numeral-js
+- accounting.js https://github.com/wjcrowcroft/accounting.js
+- money.js 货币转换库 https://github.com/wjcrowcroft/money.js
+- Fraction.js https://github.com/infusion/Fraction.js
+- Complex.js 复数项 https://github.com/infusion/Complex.js
+- 多项式 https://github.com/infusion/Polynomial.js
+
 # 表单校验
 
 - 用户编辑后离开前的保存校验 
     - 是否修改过
+
 - jquery validate | jquery-validation https://github.com/jquery-validation/jquery-validation
 - Parsley.js <https://github.com/guillaumepotier/Parsley.js>
 

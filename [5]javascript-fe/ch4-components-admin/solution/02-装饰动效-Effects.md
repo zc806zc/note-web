@@ -246,6 +246,7 @@ span:nth-child(2) {
 
 # 特效
 
+- odometer https://github.com/HubSpot/odometer
 - 数字滚动显示 | 倒计时
 
   - countUp.js https://github.com/inorganik/countUp.js
