@@ -153,3 +153,6 @@ Build project automatically
 # 处理快捷键冲突
 
 # 与WebStorm的区别
+
+- 超集 
+- 如果同时也要写后台用IDEA
