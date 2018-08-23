@@ -1,30 +1,35 @@
 # MongoDB
 
-- <http://www.yiibai.com/mongodb/>
-- <https://github.com/linnovate/mean>
-- 安装
+- mongo教程 <http://www.yiibai.com/mongodb/>
+- 下载 https://www.mongodb.com/download-center#community
+- 系统服务方式运行 https://docs.mongodb.com/manual/reference/configuration-options
+- 安装教程 <http://www.runoob.com/mongodb/mongodb-window-install.html>
 
-  - [MongoDB-dl](https://www.mongodb.com/download-center#community) | [文档-系统服务方式运行](https://docs.mongodb.com/manual/reference/configuration-options/)
-  - 安装教程 <http://www.runoob.com/mongodb/mongodb-window-install.html>
+- windows安装
+    - 配置环境变量!!
+    - mongodb是没有系统依赖的
 
 ```javascript
-// Mongo在win10环境下的安装
-在C盘自己创建mongo,data两个文件夹
-下载msi版本 解压到C://mongo路径下
-
+// C盘创建mongo,data两个文件夹
 md data\db // 指定数据文件存储目录路径
---dbpath
 
-// mongodb是没有系统依赖的
+// 执行命令
+mongod --dbpath C:\mongodb\data
 
-c:\mongodb\bin\mongod.exe //启动服务
-c:\mongodb\bin\mongo.exe  // MongoDB命令行工具
+// 启动服务
+c:\mongodb\bin\mongod.exe
+// MongoDB命令行工具
+c:\mongodb\bin\mongo.exe  
 
 // 测试安装是否成功
 db.articles.insert({ title:"hello mongo"} )
 db.articles.find()
 { "_id" : ObjectId("5870f0ef40d2a61007a9e062"), "title" : "hello mongo" }
+```
 
+- 安装成windows服务 @deprecated
+
+```js
 // win配置成服务
 // 实现失败，还需解决
 // 注意等号之后有一个空格，要以管理员身份运行
@@ -102,7 +107,7 @@ db.posts.find({ commentsCount ：{ $gt : 10 } } );
 通过查询路由服务进行
 ```
 
-- MongoDB增删改查
+- 增删改查
 
 ```javascript
 use mean // 新建或切换至数据库 db没有创建语句
