@@ -18,6 +18,16 @@ Maven的主要好处是它的生命周期。虽然接连的多个项目生命周
   - compile
 
 - 配置镜像
+  - maven常用镜像仓库 https://blog.csdn.net/thebigdipperbdx/article/details/81261614
+
+```xml
+<mirror>
+    <id>nexus-aliyun</id>
+    <name>Nexus aliyun</name>
+    <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+    <mirrorOf>central</mirrorOf>
+</mirror>
+```
 
 # Gradle
 
