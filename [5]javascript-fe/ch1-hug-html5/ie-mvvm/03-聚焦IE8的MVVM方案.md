@@ -1,4 +1,4 @@
-# IE8前端兼容方案
+# IE8-MV* 兼容方案
 
 - san <https://github.com/baidu/san>
 
@@ -58,10 +58,12 @@
   - <http://nej.netease.com/>
   - 快速入门 <http://nej.netease.com/course/quickStart>
 
-# UI方案
+# 基于jquery的兼容 IE8+
 
-- lulu @NICE 眼下黑，真的很好用 几百star... https://github.com/yued-fe/lulu
+- lulu @NICE 眼下黑 https://github.com/yued-fe/lulu
 - LayUI 但官方写着IE9+, 悬了
+- ZUI https://gitee.com/wwccss/zui
+- ligerUI @deprecated http://www.ligerui.com/
 - flow-ui <http://flow-ui.refined-x.com/>
 
 # 栗子
