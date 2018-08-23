@@ -1,8 +1,3 @@
-# NoSQL
-
-- Cassandra <http://www.yiibai.com/cassandra/>
-- CouchDB <http://www.yiibai.com/couchdb/>
-
 # MongoDB
 
 - <http://www.yiibai.com/mongodb/>
@@ -43,8 +38,11 @@ binPath= "\"C:\mongodb\bin\mongod.exe\"
 DisplayName= "MongoDB"
 start= "auto"
 password= ""
+```
 
+- Ubuntu安装
 
+```js
 // ubuntu-install
 官网下载 / curl -O https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-3.0.6.tgz    
 tar -zxvf mongodb-linux-x86_64-3.0.6.tgz                                   
@@ -62,9 +60,9 @@ http://localhost:28017
 // It looks like you are trying to access MongoDB over HTTP on the native drive
 ```
 
-- MongoDB基础
+# MongoDB基础
 
-  - [副本集](https://docs.mongodb.com/manual/replication/)
+- 副本集 https://docs.mongodb.com/manual/replication
 
 ```javascript
 // NoSQL迎合的趋势
@@ -161,4 +159,6 @@ JSON / XML
 规模
 ```
 
-# Cassandra
+# 可视化客户端
+
+- mongodbmanager https://www.mongodbmanager.com/download
