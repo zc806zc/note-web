@@ -87,3 +87,8 @@ public void initBinder(ServletRequestDataBinder binder){
 ```shell
 IOUtils.toString(in, Charset.forName("UTF-8"));
 ```
+
+# 分页
+
+- <https://www.imooc.com/video/4553>
+- <https://www.imooc.com/video/10001>
