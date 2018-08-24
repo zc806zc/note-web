@@ -2,7 +2,7 @@
 
 - <http://www.yiibai.com/spring/>
 - mooc <https://www.imooc.com/video/3662>
-- Spring4 <https://github.com/spring-projects/spring-framework>
+- Spring4框架 <https://github.com/spring-projects/spring-framework>
 
 > Developing Java Applications for the Enterprise
 

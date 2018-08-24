@@ -75,7 +75,3 @@
 # mithril
 
 - mithril https://github.com/MithrilJS/mithril.js
-
-# 状态机
-
--  javascript-state-machine https://github.com/jakesgordon/javascript-state-machine
