@@ -42,20 +42,3 @@ var vm = avalon.define({
 <div>{{@aaa}}</div>
 </body>
 ```
-
-
-# 7周7web框架
-
-- Sinatra
-
-- CanJS
-
-- AngularJS
-
-- Ring
-
-- Webmacchine
-
-- Yesod
-
-- Immutant
