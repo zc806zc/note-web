@@ -1,9 +1,9 @@
 # java设计模式
 
-- <https://github.com/iluwatar/java-design-patterns>
-- <https://www.programcreek.com/java-design-patterns-in-stories/>
+- java-design-patterns <https://github.com/iluwatar/java-design-patterns>
+- java-design-patterns-in-stories <https://www.programcreek.com/java-design-patterns-in-stories/>
 
-- <http://www.yiibai.com/design_pattern/>
+- 易佰-设计模式 <http://www.yiibai.com/design_pattern/>
 
 # 23种设计模式全解析
 
