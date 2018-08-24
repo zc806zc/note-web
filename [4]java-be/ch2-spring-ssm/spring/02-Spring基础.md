@@ -6,8 +6,6 @@
 
 > Developing Java Applications for the Enterprise
 
-- The "REST With Spring" Course@NICE <https://github.com/eugenp/tutorials>
-
 - Spring实战
 
   - <https://github.com/habuma/SpringInActionExamples->
