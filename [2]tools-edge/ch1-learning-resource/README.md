@@ -23,6 +23,7 @@
 - papers-we-love <https://github.com/papers-we-love/papers-we-love>
 - creative-coding <https://github.com/terkelg/awesome-creative-coding>
 - build-your-own-x https://github.com/danistefanovic/build-your-own-x
+- 各种资源收藏集的集合 - 纯洁的微笑 <https://gitee.com/ityouknow/awesome-list>
 
 # 代码库
 

@@ -1,17 +1,12 @@
 # 教程 && 资源
 
-- Java资源大全中文版 <https://github.com/jobbole/awesome-java-cn>
-- 各种资源收藏集的集合 - 纯洁的微笑 <https://gitee.com/ityouknow/awesome-list>
-- mkyong <http://www.mkyong.com/>
-- howtodoinjava <https://howtodoinjava.com/>
-- 易佰 <http://www.yiibai.com/spring/>
-- 程序园 <http://www.voidcn.com/course>
 - awesome-java <https://github.com/akullpp/awesome-java>
+- Java资源大全中文版 <https://github.com/jobbole/awesome-java-cn>
+- howtodoinjava <https://howtodoinjava.com/>
 - Java综合讨论 <http://www.iteye.com/forums/tag_good/Java%E7%BB%BC%E5%90%88>
-- Jboss团队 <http://in.relation.to/>
-- javaspecialists <https://www.javaspecialists.eu/>
 - 其他
 
+  - javaspecialists <https://www.javaspecialists.eu/>
   - hellojavacases微信 <http://hellojava.info/>
   - codefollower <https://github.com/codefollower>
 
@@ -57,6 +52,8 @@
 
 - 其他
 
+  - 易佰 <http://www.yiibai.com/spring/>
+  - 程序园 <http://www.voidcn.com/course>
   - 编程学习网 <http://www.phpxs.com/>
   - cjsdn <http://www.cjsdn.net/index.html>
   - Java中文站 <http://www.java-cn.com/index.html>
@@ -68,10 +65,11 @@
   - ConcretePage Java (资源类网站，可以找到各种 Java 框架及相关教程) <http://www.concretepage.com/>
   - 泡在网上的日子 <http://jcodecraeer.com/>
   - 实验楼 <https://www.shiyanlou.com/courses/>
-  - 灰狐 <http://www.huihoo.com/>
+
 
 # 博客专家
 
+- Jboss团队 <http://in.relation.to/>
 - AdamBien https://twitter.com/AdamBien/
 - Tim Yang <https://timyang.net/>
 - 张开涛 <http://www.iteye.com/blogs/subjects/kaitao-springmvc>
@@ -79,7 +77,7 @@
 - chenssy <http://blog.csdn.net/chenssy>
 - 杜琪 <https://www.jianshu.com/u/28d7875c78df>
 - 纯洁的微笑 
-
+- mkyong <http://www.mkyong.com/>
 - 其他
 
   - 孤傲苍狼 <http://www.cnblogs.com/xdp-gacl/category/574705.html>
@@ -88,13 +86,15 @@
   - 曹胜欢 <http://blog.csdn.net/csh624366188/>
   - 骆昊 <http://blog.csdn.net/jackfrued>
 
+  - 灰狐 <http://www.huihoo.com/>
+
 # 文档
 
 - SE文档 <http://www.oracle.com/technetwork/cn/java/javase/documentation/api-jsp-136079-zhs.html>
 - oracle <http://www.oracle.com/technetwork/java/index.html>
 - IBM
 
-  - (Nice) <https://www.ibm.com/developerworks/cn/>
+  - @Nice <https://www.ibm.com/developerworks/cn/>
 
     - <https://www.ibm.com/developerworks/learn/java/index.html>
     - <https://www.ibm.com/developerworks/cn/java/>

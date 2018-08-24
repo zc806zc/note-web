@@ -24,7 +24,7 @@
   - Avalon组件库 <https://github.com/RubyLouvre/avalon.oniui>
   - 基于 avalon2 的 SPA 脚手架
 
-    - (NICE) 由vue脚手架修改过来，适合vue开发者使用，采用类vue的单文件组件书写，异步、嵌套路由 <https://github.com/hmhao/avalon2-webpack2-spa>
+    - @NICE 由vue脚手架修改过来，适合vue开发者使用，采用类vue的单文件组件书写，异步、嵌套路由 <https://github.com/hmhao/avalon2-webpack2-spa>
     - <https://segmentfault.com/a/1190000009625441>
     - @deprecated <https://github.com/xxapp/ane>
 

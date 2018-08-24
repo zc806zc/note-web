@@ -9,7 +9,7 @@
 
   - <https://createjs.com/demos/easeljs/draganddrop>
 
-- phaser(NICE)
+- phaser@NICE
 
   - <https://github.com/photonstorm/phaser>
 

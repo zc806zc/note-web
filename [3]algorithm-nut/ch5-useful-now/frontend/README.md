@@ -1,6 +1,6 @@
 # 前端算法
 
-- (NICE) https://github.com/trekhleb/javascript-algorithms
+- @NICE https://github.com/trekhleb/javascript-algorithms
     - https://github.com/trekhleb/javascript-algorithms/blob/master/README.zh-CN.md
 - Pretty, common and useful algorithms with modern JS and beautiful tests <https://github.com/jiayihu/pretty-algorithms>
 

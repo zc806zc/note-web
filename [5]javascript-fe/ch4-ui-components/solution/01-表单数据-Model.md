@@ -235,7 +235,7 @@ function praise(num, obj) {
 
     - 省市区面板点击
 
-      - (NICE) <http://www.jq22.com/jquery-info7095>
+      - @NICE <http://www.jq22.com/jquery-info7095>
       - 仿京东 <http://www.jq22.com/jquery-info9397>
       - 较全面 <http://www.jq22.com/jquery-info13655>
 
