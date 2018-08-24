@@ -2,6 +2,9 @@
 
 - 技能谱图 <https://github.com/TeamStuQ/skill-map/blob/master/data/map-DevLang-Java.md>
 
+![JAVA之父](http://www.yiibai.com/uploads/images/201702/2802/686140245_35550.jpg)
+
+
 # Core Java
 
 - Basic Language Characteristics 语法特征
@@ -340,5 +343,3 @@
 
 - Android
 - JavaME 机顶盒、移动电话和PDA之类嵌入式消费电子设备提供的Java语言平台
-
-![](http://www.yiibai.com/uploads/images/201702/2802/686140245_35550.jpg)
