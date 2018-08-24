@@ -32,6 +32,12 @@
 - 手机端框架：Jingle
 - 动态页签：Jerichotab
 
+# jqueryWidgets @NICE
+
+- 一个功能完整的框架,可参考其各种组件
+- 也提供Angular React
+- https://www.jqwidgets.com/jquery-widgets-documentation/
+
 # jeesite
 
 - 技术栈参考

@@ -20,6 +20,14 @@
 
 - Spring 调度工具Quartz cron 表达式的格式 <http://blog.csdn.net/limenghua9112/article/details/45242239>
 
+```xml
+<dependency>
+    <groupId>org.quartz-scheduler</groupId>
+    <artifactId>quartz</artifactId>
+    <version>${quartz.version}</version>
+</dependency>
+```
+
 # 实例
 
 - SimpleTrigger

@@ -53,6 +53,11 @@
 
 - https://svelte.technology/
 
+# aura 
+
+- 一个事件驱动、可扩展的JS架构
+- https://github.com/aurajs/aura
+
 # Riot
 
 - 基于组件的开发模型, 小巧
