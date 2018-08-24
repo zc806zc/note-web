@@ -73,6 +73,7 @@ function slide(range, conSlide, obj) {
 
 - URI.js <https://github.com/medialize/URI.js/>
 - domurl https://github.com/Mikhus/domurl
+- nanoid 唯一ID生成 @NICE https://github.com/ai/nanoid
 
 --------------------------------------------------------------------------------
 
