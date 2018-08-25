@@ -2,22 +2,13 @@
 
 - 码云
   
-  - 貌似国内gitee比github上要容易找Java开源项目
+  - 国内，gitee比github要活跃些
   - JAVA排行 https://gitee.com/explore/starred?lang=Java
   - GVP项目 https://gitee.com/gvp
-- 开源项目 <https://juejin.im/post/5a9c8b93518825557a2e6f89>
-- 权限管理系统 <https://github.com/wuyouzhuguli/FEBS>
-- bootdo <https://gitee.com/lcg0124/bootdo>
-- roncoo-pay <https://gitee.com/roncoocom/roncoo-pay>
-- 前后端分离的人力资源管理系统 SpringBoot+Vue <https://github.com/lenve/vhr>
-- 快速搭建企业后台管理系统 <https://github.com/hs-web/hsweb-framework>
-- any-video (springboot + semantic UI) <https://github.com/ChinaSilence/any-video>
-- https://gitee.com/mingSoft/MCMS
-- renren-security https://gitee.com/renrenio/renren-security
-- renren-fast
-  - https://gitee.com/renrenio/renren-fast
-  - 前端 https://github.com/daxiongYang/renren-fast-vue
-- 权限脚手架 https://gitee.com/wangzhixuan/spring-shiro-training
+
+- Spring boot开源项目 <https://juejin.im/post/5a9c8b93518825557a2e6f89>
+- Spring Cloud 开源软件都有哪些？ https://juejin.im/post/5b68e3335188251b1d47830c
+- awesome-spring-cloud https://github.com/ityouknow/awesome-spring-cloud
 
 # Spring boot 学习项目
 
@@ -28,7 +19,7 @@
 - Spring Boot 2精髓：从构建小系统到架构分布式大系统 <http://www.broadview.com.cn/book/4931>
 - springboot 深入实践图书源码 <https://github.com/chenfromsz?tab=repositories>
 - spring boot学习目录 <https://www.jianshu.com/p/9a08417e4e84>
-- spring-boot-all <https://github.com/leelance/spring-boot-all>
+- spring-boot-all 用parent同级管理 <https://github.com/leelance/spring-boot-all>
 - <https://github.com/dyc87112/SpringBoot-Learning>
 - 其他
 
@@ -37,6 +28,12 @@
 
 ![](https://upload-images.jianshu.io/upload_images/8069210-b2aacf9a3d7dae47.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/342)
 - 从0到1构建分布式秒杀系统，脱离案例讲架构都是耍流氓 https://gitee.com/52itstyle/spring-boot-seckill
+
+
+# Spring Cloud 学习项目
+
+- SpringCloud-Learning https://gitee.com/didispace/SpringCloud-Learning
+- spring-cloud-examples 学习案例 https://github.com/ityouknow/spring-cloud-examples
 
 # 脚手架
 
@@ -65,7 +62,7 @@
   - https://gitee.com/thinkgem/jeesite4 
     - Spring Boot、Spring MVC、Apache Shiro、MyBatis、Beetl、Bootstrap、AdminLTE
 
-# SSH
+# SSH 
 
 - Spring Boot + Hibernate + MySQL + Bootstrap4 <https://github.com/Raysmond/SpringBlog>
 - 使用SpringMVC+Spring+Hibernate开发人员信息管理功能 <https://www.imooc.com/video/9338>
@@ -74,7 +71,18 @@
   - <https://www.imooc.com/video/12474>
   - <https://www.imooc.com/video/12461>
 
-# 电商 | 小程序
+# 管理系统
+
+- spring-shiro-training 权限脚手架 https://gitee.com/wangzhixuan/spring-shiro-training
+- 权限管理系统 <https://github.com/wuyouzhuguli/FEBS>
+- 快速搭建企业后台管理系统 <https://github.com/hs-web/hsweb-framework>
+- renren-security https://gitee.com/renrenio/renren-security
+- renren-fast
+  - https://gitee.com/renrenio/renren-fast
+  - 前端 https://github.com/daxiongYang/renren-fast-vue
+
+
+# 电商 | 小程序 | 支付
 
 - 商城生成静态页
 - 商城 @NICE <https://github.com/linlinjava/litemall>
@@ -82,11 +90,14 @@
 - springboot mybatis mysql后台商城 h5 小程序 <https://gitee.com/JiaGou-XiaoGe/webappchat>
 - 猫宁Morning公益商城 https://gitee.com/morning-pro/Morning
 - 商城 包括前端，后端和h5应用，小程序 https://gitee.com/catshen/zscat_sw
+- roncoo-pay <https://gitee.com/roncoocom/roncoo-pay>
 
 # 博客
 
+- bootdo 面向学习 <https://gitee.com/lcg0124/bootdo>
 - 云收藏 <https://github.com/cloudfavorites/favorites-web>
 - jfinal_cms https://gitee.com/jflyfox/jfinal_cms
+- MCMS https://gitee.com/mingSoft/MCMS
 - mblog 用jpa https://gitee.com/mtons/mblog
 - 博客 Vue + Spring Boot <https://github.com/lenve/VBlog>
 - solo <https://github.com/b3log/solo>
@@ -96,7 +107,7 @@
   - <https://www.imooc.com/video/16538>
   - <http://blog.csdn.net/codejas/article/details/79341919>
   - <https://github.com/coderjas/springboot-study>
-
+- 前后端分离的人力资源管理系统 SpringBoot+Vue @deprectaed <https://github.com/lenve/vhr>
 
 # Java微信公众号开发
 
@@ -107,9 +118,12 @@
 
   - 基于SpringBoot的微信公众号快速开发框架，注解方式处理全部逻辑，重新定义公众号开发
 
-# 秒杀
+# 其他
 
 - 秒杀、抢购解决方案 https://gitee.com/1028125449/miaosha
+- any-video  <https://github.com/ChinaSilence/any-video>
+  - springboot + semantic UI
+  - 利用网络爬虫技术，实时解析互联网资源，可对所有资源分类收藏
 
 # 接口文档管理
 
@@ -122,13 +136,8 @@
 - Spring Boot使用Redis提升天气预报应用的并发访问能力 <http://www.imooc.com/article/23435>
 - 不明觉厉 https://github.com/LKG/heartwork
 
-
 # Spring Cloud
 
-- Spring Cloud 开源软件都有哪些？ https://juejin.im/post/5b68e3335188251b1d47830c
-- awesome-spring-cloud https://github.com/ityouknow/awesome-spring-cloud
-- SpringCloud-Learning https://gitee.com/didispace/SpringCloud-Learning
-- spring-cloud-examples 学习案例 https://github.com/ityouknow/spring-cloud-examples
 - pig  <https://github.com/pig4cloud/pig>
   - 基于Spring Cloud、oAuth2.0开发基于Vue前后分离的开发平台
 - ace-security @NICE https://gitee.com/minull/ace-security
