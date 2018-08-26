@@ -2,7 +2,7 @@
 
 - 码云
   
-  - 国内，gitee比github要活跃些
+  - 国内，gitee上Java项目比github要活跃些
   - JAVA排行 https://gitee.com/explore/starred?lang=Java
   - GVP项目 https://gitee.com/gvp
 
@@ -12,22 +12,23 @@
 
 # Spring boot 学习项目
 
-- SpringBootBucket <https://github.com/yidao620c/SpringBootBucket>
-- spring-boot-api-project-seed <https://github.com/lihengming/spring-boot-api-project-seed>
-- spring-boot 项目实践总结 <https://github.com/timebusker/spring-boot>
-- springboot-learning-example <https://github.com/JeffLi1993/springboot-learning-example>
-- Spring Boot 2精髓：从构建小系统到架构分布式大系统 <http://www.broadview.com.cn/book/4931>
-- springboot 深入实践图书源码 <https://github.com/chenfromsz?tab=repositories>
 - spring boot学习目录 <https://www.jianshu.com/p/9a08417e4e84>
-- spring-boot-all 用parent同级管理 <https://github.com/leelance/spring-boot-all>
-- <https://github.com/dyc87112/SpringBoot-Learning>
+- springboot-learning-example 泥瓦匠 <https://github.com/JeffLi1993/springboot-learning-example>
+- SpringBoot-Learning 翟永超 <https://github.com/dyc87112/SpringBoot-Learning>
+- spring-boot 项目实践总结 <https://github.com/timebusker/spring-boot>
+- SpringBootBucket <https://github.com/yidao620c/SpringBootBucket>
+- 重拾后端之Spring Boot <https://juejin.im/post/5953bc2c5188250d8d141362>
 - 其他
 
-  - 重拾后端之Spring Boot <https://juejin.im/post/5953bc2c5188250d8d141362>
+  - 从0到1构建分布式秒杀系统，脱离案例讲架构都是耍流氓 https://gitee.com/52itstyle/spring-boot-seckill
+  - spring-boot-api-project-seed 入门小项目 <https://github.com/lihengming/spring-boot-api-project-seed>
+
+  - Spring Boot 2精髓：从构建小系统到架构分布式大系统 <http://www.broadview.com.cn/book/4931>
+  - springboot 深入实践图书源码 <https://github.com/chenfromsz?tab=repositories>
   - springboot-socks <https://github.com/yizhiwazi/springboot-socks>
+  - spring-boot-all @deprecatde 用parent同级管理 <https://github.com/leelance/spring-boot-all>
 
 ![](https://upload-images.jianshu.io/upload_images/8069210-b2aacf9a3d7dae47.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/342)
-- 从0到1构建分布式秒杀系统，脱离案例讲架构都是耍流氓 https://gitee.com/52itstyle/spring-boot-seckill
 
 
 # Spring Cloud 学习项目
