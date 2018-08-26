@@ -6,4 +6,11 @@
 
 # ActiveMQ
 
+# 框架
+
+- zbus
+    - Small fast MQ and RPC
+    - ZBUS = MQ + RPC
+    - https://gitee.com/rushmore/zbus
+
 

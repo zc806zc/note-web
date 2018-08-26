@@ -62,7 +62,11 @@
   - https://gitee.com/thinkgem/jeesite
   - https://gitee.com/thinkgem/jeesite4 
     - Spring Boot、Spring MVC、Apache Shiro、MyBatis、Beetl、Bootstrap、AdminLTE
+- tiny 
+  - https://gitee.com/tinyframework/tiny    
+  - 值得拥有的企业级j2ee应用开发框架套件
 - slife spring boot 搭建的一个企业级快速开发脚手架 https://gitee.com/jamen/slife
+- springrain spring一站式开发的范例 https://gitee.com/chunanyong/springrain
 
 # Spring Cloud
 
@@ -91,8 +95,7 @@
   - <https://www.imooc.com/video/12474>
   - <https://www.imooc.com/video/12461>
 
-
-# 管理系统 | 权限
+# 管理系统 | 权限 | 综合
 
 - bootshiro https://gitee.com/tomsun28/bootshiro
 - spring-shiro-training 权限脚手架 https://gitee.com/wangzhixuan/spring-shiro-training
@@ -105,6 +108,36 @@
   - 前端 https://github.com/daxiongYang/renren-fast-vue
 - eova 最简单的快速开发平台 基于jfinal https://gitee.com/eova/eova
 - JFlow 表单引擎+流程引擎+权限控制 https://gitee.com/opencc/JFlow
+- SpringBlade 
+  - https://gitee.com/smallc/SpringBlade
+  - 基于Spring+SpringMVC+Beetl+Beetlsql+Shiro的开发框架
+- tms
+  - https://gitee.com/xiweicheng/tms 
+  - 类似slack barrychat的团队协作沟通&博文wiki&国际化翻译管理的web管理系统
+- ukefu 优客服 
+  - https://gitee.com/beimigame/ukefu
+  - 一个多渠道融合的客户支持服务平台，包含WebIM，微信，电话，邮件，短信等接入渠
+- JSH_ERP 
+  - 为中小企业提供开源好用的ERP软件
+  - 专注进销存+财务功能
+  - https://gitee.com/jishenghua/JSH_ERP
+
+# 博客 | CMS 
+
+- bootdo 面向学习 <https://gitee.com/lcg0124/bootdo>
+- 云收藏 <https://github.com/cloudfavorites/favorites-web>
+- jfinal_cms https://gitee.com/jflyfox/jfinal_cms
+- MCMS 基于SSM https://gitee.com/mingSoft/MCMS
+- mblog 用jpa https://gitee.com/mtons/mblog
+- 博客 Vue + Spring Boot <https://github.com/lenve/VBlog>
+- solo <https://github.com/b3log/solo>
+- Java博客系统 Docker+SpringBoot+Mybatis+thymeleaf <https://github.com/ZHENFENG13/My-Blog>
+- 搭建微信小程序 商城 spring boot + mybatis
+
+  - <https://www.imooc.com/video/16538>
+  - <http://blog.csdn.net/codejas/article/details/79341919>
+  - <https://github.com/coderjas/springboot-study>
+- 前后端分离的人力资源管理系统 SpringBoot+Vue @deprectaed <https://github.com/lenve/vhr>
 
 # 商城电商 | 支付
 
@@ -130,6 +163,7 @@
 - FastBootWeixin <https://github.com/FastBootWeixin/FastBootWeixin>
 
   - 基于SpringBoot的微信公众号快速开发框架，注解方式处理全部逻辑，重新定义公众号开发
+- wemall 微信商城云平台 https://gitee.com/einsqing/wemall  
 - jfinal-weixin https://gitee.com/jfinal/jfinal-weixin  
 - wxmp 
   - 微信公众号的web管理工具 
@@ -139,26 +173,13 @@
   - <https://www.imooc.com/video/7231>
   - 进阶 <https://www.imooc.com/video/7789>
 
-# 博客
-
-- bootdo 面向学习 <https://gitee.com/lcg0124/bootdo>
-- 云收藏 <https://github.com/cloudfavorites/favorites-web>
-- jfinal_cms https://gitee.com/jflyfox/jfinal_cms
-- MCMS 基于SSM https://gitee.com/mingSoft/MCMS
-- mblog 用jpa https://gitee.com/mtons/mblog
-- 博客 Vue + Spring Boot <https://github.com/lenve/VBlog>
-- solo <https://github.com/b3log/solo>
-- Java博客系统 Docker+SpringBoot+Mybatis+thymeleaf <https://github.com/ZHENFENG13/My-Blog>
-- 搭建微信小程序 商城 spring boot + mybatis
-
-  - <https://www.imooc.com/video/16538>
-  - <http://blog.csdn.net/codejas/article/details/79341919>
-  - <https://github.com/coderjas/springboot-study>
-- 前后端分离的人力资源管理系统 SpringBoot+Vue @deprectaed <https://github.com/lenve/vhr>
 
 # 接口文档
 
 - CrapApi 免费开源API接口管理系统 https://gitee.com/CrapApi/CrapApi
+- xxl-api 
+  - 一个强大易用的API管理平台，提供API的"管理"、"文档"、"Mock"和"测试"等功能 
+  - https://gitee.com/xuxueli0323/xxl-api
 
 # 缓存
 
@@ -174,6 +195,11 @@
 
 - earth-frost 分布式任务调度，只依赖redis的实现版本 https://gitee.com/justlive1/earth-frost
 - elastic-job 一个分布式调度解决方案 https://gitee.com/elasticjob/elastic-job
+- xxl-job https://gitee.com/xuxueli0323/xxl-job
+
+# 分布式配置管理平台
+
+- xxl-conf https://gitee.com/xuxueli0323/xxl-conf 
 
 # 网络
 
@@ -199,4 +225,7 @@
   - 一套基于mina或netty框架下的推送系统
 - websocket技术实时输出系统日志 <https://gitee.com/kailing/boot-websocket-log>
 - Spring Boot使用Redis提升天气预报应用的并发访问能力 <http://www.imooc.com/article/23435>
+- tx-lcn
+  - LCN 分布式事务框架 ，兼容 dubbo、springcloud、motan 框架，支持各种关系型数据库 
+  - https://gitee.com/wangliang1991/tx-lcn
 - 不明觉厉 https://github.com/LKG/heartwork
