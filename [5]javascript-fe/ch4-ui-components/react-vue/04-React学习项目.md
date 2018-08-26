@@ -16,7 +16,7 @@
 
 - react-admin <https://github.com/yezihaohao/react-admin>
 - react+redux+webpack+ES6+antd的SPA的后台管理框架demo <https://github.com/duxianwei520/react>
-- (推荐)<https://github.com/zuiidea/antd-admin>
+- @NICE<https://github.com/zuiidea/antd-admin>
 - admin-on-rest <https://github.com/marmelab/admin-on-rest>
 
   - 原来废弃 <https://github.com/marmelab/ng-admin-react>

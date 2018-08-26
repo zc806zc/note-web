@@ -56,86 +56,13 @@
   - Spring Boot + Angular projects
   - <https://github.com/jhipster/generator-jhipster>
 
-- springboot-plus(推荐) springboot + layui <https://gitee.com/xiandafu/springboot-plus>
-- lenosp(推荐) <https://gitee.com/bweird/lenosp>
+- springboot-plus@NICE springboot + layui <https://gitee.com/xiandafu/springboot-plus>
+- lenosp @NICE <https://gitee.com/bweird/lenosp>
 - jeesite 
   - https://gitee.com/thinkgem/jeesite
   - https://gitee.com/thinkgem/jeesite4 
     - Spring Boot、Spring MVC、Apache Shiro、MyBatis、Beetl、Bootstrap、AdminLTE
-
-# SSH 
-
-- Spring Boot + Hibernate + MySQL + Bootstrap4 <https://github.com/Raysmond/SpringBlog>
-- 使用SpringMVC+Spring+Hibernate开发人员信息管理功能 <https://www.imooc.com/video/9338>
-- 学生信息管理系统 <https://www.imooc.com/video/9020>
-- 员工管理系统
-  - <https://www.imooc.com/video/12474>
-  - <https://www.imooc.com/video/12461>
-
-# 管理系统
-
-- spring-shiro-training 权限脚手架 https://gitee.com/wangzhixuan/spring-shiro-training
-- 权限管理系统 <https://github.com/wuyouzhuguli/FEBS>
-- 快速搭建企业后台管理系统 <https://github.com/hs-web/hsweb-framework>
-- renren-security https://gitee.com/renrenio/renren-security
-- renren-fast
-  - https://gitee.com/renrenio/renren-fast
-  - 前端 https://github.com/daxiongYang/renren-fast-vue
-
-
-# 电商 | 小程序 | 支付
-
-- 商城生成静态页
-- 商城 @NICE <https://github.com/linlinjava/litemall>
-- platform 微信小程序商城 https://gitee.com/fuyang_lipengjun/platform
-- springboot mybatis mysql后台商城 h5 小程序 <https://gitee.com/JiaGou-XiaoGe/webappchat>
-- 猫宁Morning公益商城 https://gitee.com/morning-pro/Morning
-- 商城 包括前端，后端和h5应用，小程序 https://gitee.com/catshen/zscat_sw
-- roncoo-pay <https://gitee.com/roncoocom/roncoo-pay>
-
-# 博客
-
-- bootdo 面向学习 <https://gitee.com/lcg0124/bootdo>
-- 云收藏 <https://github.com/cloudfavorites/favorites-web>
-- jfinal_cms https://gitee.com/jflyfox/jfinal_cms
-- MCMS https://gitee.com/mingSoft/MCMS
-- mblog 用jpa https://gitee.com/mtons/mblog
-- 博客 Vue + Spring Boot <https://github.com/lenve/VBlog>
-- solo <https://github.com/b3log/solo>
-- Java博客系统 Docker+SpringBoot+Mybatis+thymeleaf <https://github.com/ZHENFENG13/My-Blog>
-- 搭建微信小程序 商城 spring boot + mybatis
-
-  - <https://www.imooc.com/video/16538>
-  - <http://blog.csdn.net/codejas/article/details/79341919>
-  - <https://github.com/coderjas/springboot-study>
-- 前后端分离的人力资源管理系统 SpringBoot+Vue @deprectaed <https://github.com/lenve/vhr>
-
-# Java微信公众号开发
-
-- jeewx 一款开源的微信管家平台 https://gitee.com/jeecg/jeewx
-- <https://www.imooc.com/video/7231>
-- 进阶 <https://www.imooc.com/video/7789>
-- FastBootWeixin <https://github.com/FastBootWeixin/FastBootWeixin>
-
-  - 基于SpringBoot的微信公众号快速开发框架，注解方式处理全部逻辑，重新定义公众号开发
-
-# 其他
-
-- 秒杀、抢购解决方案 https://gitee.com/1028125449/miaosha
-- any-video  <https://github.com/ChinaSilence/any-video>
-  - springboot + semantic UI
-  - 利用网络爬虫技术，实时解析互联网资源，可对所有资源分类收藏
-
-# 接口文档管理
-
-- CrapApi 免费开源API接口管理系统 https://gitee.com/CrapApi/CrapApi
-
-# 其他
-
-- 支付服务 <https://gitee.com/52itstyle/spring-boot-pay>
-- websocket技术实时输出系统日志 <https://gitee.com/kailing/boot-websocket-log>
-- Spring Boot使用Redis提升天气预报应用的并发访问能力 <http://www.imooc.com/article/23435>
-- 不明觉厉 https://github.com/LKG/heartwork
+- slife spring boot 搭建的一个企业级快速开发脚手架 https://gitee.com/jamen/slife
 
 # Spring Cloud
 
@@ -150,4 +77,126 @@
 - xxpay-master 支付 https://gitee.com/jmdhappy/xxpay-master
 - spring-boot-cloud https://github.com/zhangxd1989/spring-boot-cloud
 - FCat https://gitee.com/xfdm/FCat
-  - Angular4+SpringCloud
+  - Angular4 + SpringCloud
+- open-capacity-platform 
+  - https://gitee.com/owenwangwen/open-capacity-platform
+  - 仿百度能力开放平台的spring cloud 微服务框架 
+
+# SSH 
+
+- Spring Boot + Hibernate + MySQL + Bootstrap4 <https://github.com/Raysmond/SpringBlog>
+- 使用SpringMVC+Spring+Hibernate开发人员信息管理功能 <https://www.imooc.com/video/9338>
+- 学生信息管理系统 <https://www.imooc.com/video/9020>
+- 员工管理系统
+  - <https://www.imooc.com/video/12474>
+  - <https://www.imooc.com/video/12461>
+
+
+# 管理系统 | 权限
+
+- bootshiro https://gitee.com/tomsun28/bootshiro
+- spring-shiro-training 权限脚手架 https://gitee.com/wangzhixuan/spring-shiro-training
+- FEBS 权限管理系统 <https://github.com/wuyouzhuguli/FEBS>
+- hsweb-framework 快速搭建企业后台管理系统 <https://github.com/hs-web/hsweb-framework>
+- RuoYi 基于SpringBoot2.0的权限管理系统 https://gitee.com/y_project/RuoYi
+- renren-security https://gitee.com/renrenio/renren-security
+- renren-fast
+  - https://gitee.com/renrenio/renren-fast
+  - 前端 https://github.com/daxiongYang/renren-fast-vue
+- eova 最简单的快速开发平台 基于jfinal https://gitee.com/eova/eova
+- JFlow 表单引擎+流程引擎+权限控制 https://gitee.com/opencc/JFlow
+
+# 商城电商 | 支付
+
+- 商城生成静态页
+- 商城 @NICE <https://github.com/linlinjava/litemall>
+- platform 微信小程序商城 https://gitee.com/fuyang_lipengjun/platform
+- roncoo-pay 龙果支付系统 <https://gitee.com/roncoocom/roncoo-pay>
+- springboot mybatis mysql后台商城 h5 小程序 <https://gitee.com/JiaGou-XiaoGe/webappchat>
+- spring-boot-pay 支付服务 <https://gitee.com/52itstyle/spring-boot-pay>
+- 猫宁Morning公益商城 https://gitee.com/morning-pro/Morning
+- 商城 包括前端，后端和h5应用，小程序 https://gitee.com/catshen/zscat_sw
+- 秒杀、抢购解决方案 https://gitee.com/1028125449/miaosha
+- fastpay 集成聚合支付和资金清结算于一体 https://gitee.com/robertleepeak/fastpay
+- IJPay 
+  - https://gitee.com/javen205/IJPay
+  - 封装了微信支付、支付宝支付、银联支付常用的支付方式以及各种常用的接口 
+  - 无框架依赖 
+
+# 微信 | 公众号
+
+- fastweixin 极其方便的实现微信公众平台服务端开发 https://gitee.com/pyinjava/fastweixin
+- jeewx 一款开源的微信管家平台 https://gitee.com/jeecg/jeewx
+- FastBootWeixin <https://github.com/FastBootWeixin/FastBootWeixin>
+
+  - 基于SpringBoot的微信公众号快速开发框架，注解方式处理全部逻辑，重新定义公众号开发
+- jfinal-weixin https://gitee.com/jfinal/jfinal-weixin  
+- wxmp 
+  - 微信公众号的web管理工具 
+  - springmvc+layui
+  - https://gitee.com/qingfengtaizi/wxmp
+- 其他
+  - <https://www.imooc.com/video/7231>
+  - 进阶 <https://www.imooc.com/video/7789>
+
+# 博客
+
+- bootdo 面向学习 <https://gitee.com/lcg0124/bootdo>
+- 云收藏 <https://github.com/cloudfavorites/favorites-web>
+- jfinal_cms https://gitee.com/jflyfox/jfinal_cms
+- MCMS 基于SSM https://gitee.com/mingSoft/MCMS
+- mblog 用jpa https://gitee.com/mtons/mblog
+- 博客 Vue + Spring Boot <https://github.com/lenve/VBlog>
+- solo <https://github.com/b3log/solo>
+- Java博客系统 Docker+SpringBoot+Mybatis+thymeleaf <https://github.com/ZHENFENG13/My-Blog>
+- 搭建微信小程序 商城 spring boot + mybatis
+
+  - <https://www.imooc.com/video/16538>
+  - <http://blog.csdn.net/codejas/article/details/79341919>
+  - <https://github.com/coderjas/springboot-study>
+- 前后端分离的人力资源管理系统 SpringBoot+Vue @deprectaed <https://github.com/lenve/vhr>
+
+# 接口文档
+
+- CrapApi 免费开源API接口管理系统 https://gitee.com/CrapApi/CrapApi
+
+# 缓存
+
+- J2Cache  两级缓存框架，可以让应用支持两级缓存框架 ehcache(Caffeine) + redis  https://gitee.com/ld/J2Cache
+- jeesuite-libs https://gitee.com/vakinge/jeesuite-libs
+
+# 中间件
+
+- kisso 基于 Cookie 的 SSO 中间件 https://gitee.com/baomidou/kisso
+- sharding-sphere 一套开源的分布式数据库中间件解决方案组成的生态圈 https://gitee.com/Sharding-Sphere/sharding-sphere
+
+# 分布式任务调度
+
+- earth-frost 分布式任务调度，只依赖redis的实现版本 https://gitee.com/justlive1/earth-frost
+- elastic-job 一个分布式调度解决方案 https://gitee.com/elasticjob/elastic-job
+
+# 网络
+
+- t-io 基于aio(nio2)的网络编程框架 https://gitee.com/tywo45/t-io
+
+# 其他
+
+- neural 
+  - https://gitee.com/yu120/neural
+  - 微服务架构中高并发和高可用的神经组织利刃，提供了分布式限流、降级、熔断、重试和隔离的容错特性。并同时提供了SPI、过滤器、JWT、插件机制。此外还提供了很多小的黑科技(如：IP黑白名单、UUID加强版、Snowflake和大并发时间戳获取等)
+  
+- EasyReport 
+  - https://gitee.com/xianrendzw/EasyReport
+  - 一个简单易用的Web报表工具,它的主要功能是把SQL语句查询出的行列结构转换成HTML表格(Table)，并支持表格的跨行(RowSpan)与跨列(ColSpan)。同时它还支持报表Excel导出、图表显示及固定表头与左边列的功能
+
+- sky-walking 国内知名APM项目 https://gitee.com/OpenSkywalking/sky-walking
+
+- any-video  <https://github.com/ChinaSilence/any-video>
+  - springboot + semantic UI
+  - 利用网络爬虫技术，实时解析互联网资源，可对所有资源分类收藏
+- cim 
+  - https://gitee.com/farsunset/cim 
+  - 一套基于mina或netty框架下的推送系统
+- websocket技术实时输出系统日志 <https://gitee.com/kailing/boot-websocket-log>
+- Spring Boot使用Redis提升天气预报应用的并发访问能力 <http://www.imooc.com/article/23435>
+- 不明觉厉 https://github.com/LKG/heartwork

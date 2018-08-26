@@ -227,7 +227,7 @@ function praise(num, obj) {
 
 - 省市下拉框联动
 
-  - (推荐) 传统类型 <http://www.jq22.com/jquery-info8054>
+  - @NICE 传统类型 <http://www.jq22.com/jquery-info8054>
   - 同一下拉框内三次点击 <http://www.jq22.com/jquery-info16612>
   - 原生JS
 
@@ -388,7 +388,7 @@ new Date().Format("yyyy-MM-dd E HH:mm:ss")
 
 # 上传
 
-- uppy(推荐) <https://github.com/transloadit/uppy>
+- uppy@NICE <https://github.com/transloadit/uppy>
 
   - The next open source file uploader for web browsers
 
@@ -724,6 +724,7 @@ rows.sort(function(a,b){
 - draft-js @NICE  基于React <https://github.com/facebook/draft-js>
 - quill 图片坑 <https://github.com/quilljs/quill>
 - 国内 ueditor | wangeditor
+    - neditor 基于Ueditor优化 https://gitee.com/notadd/neditor
 - x-editable jquery考虑 <https://github.com/vitalets/x-editable>
 - medium-editor 原生JS IE兼容 <https://github.com/yabwe/medium-editor>
 - stackedit <https://github.com/benweet/stackedit>

@@ -40,7 +40,7 @@ charset 与 pageEncoding建议都改成UTF-8
 还有在编辑器上的显示编码
 ```
 
-- IDEA(推荐)
+- IDEA@NICE
 
   - 使用IntelliJ IDEA开发JavaWeb项目 <http://youthlin.com/20151128.html>
   - Idea导出war <http://blog.csdn.net/thehide/article/details/52042487>

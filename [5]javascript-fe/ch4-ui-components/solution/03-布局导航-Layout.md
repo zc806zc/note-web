@@ -357,7 +357,7 @@ function autoHeight() {
 
 - 推荐
   - (首选) slick -> the last carousel you'll ever need <https://github.com/kenwheeler/slick>
-  - (推荐) superslide <http://www.SuperSlide2.com/>
+  - @NICE superslide <http://www.SuperSlide2.com/>
   - fancybox
 - 轻量级
 
