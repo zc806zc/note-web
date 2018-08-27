@@ -1,8 +1,12 @@
-# JSP开发环境搭建
+# JDK
 
 - JDK环境变量配置 <http://jingyan.baidu.com/article/6dad5075d1dc40a123e36ea3.html>
+
+# JSP
+
+- JSP开发的工具下载与环境搭建 <http://www.jianshu.com/p/5b022371de26>
 - 云盘下载 密码vipr <http://pan.baidu.com/s/1o7pUJOm>
-- <http://www.jianshu.com/p/5b022371de26>
+
 
 ```java
 // 准备环境
@@ -60,11 +64,23 @@ Atom的autocomplete-jsp插件
 ![](/static/img/other/idea-refresh978.png) ![](/static/img/other/auto453.png)![](/static/img/other/webroot-add899.png)![](/static/img/other/classes-path785.png)![](/static/img/other/artifacts-setting432.png)
 
 
-# Tomcat配置
+# 常用IDE
 
-- tomcat配置时  
-  - 
-The CATALINA_HOME environment variable is not defined correctly https://blog.csdn.net/liminled/article/details/18086655
+- IntelliJ IDEA
+- NetBeans | Eclipse
+
+  - eclipse color theme <http://download.csdn.net/download/knockheart/6690825>
+
+# Eclipse
+
+- 忽略node_modules https://blog.csdn.net/yzf913214/article/details/72872523
+
+# Android Studio
+
+# Tomcat
+
+- The CATALINA_HOME environment variable is not defined correctly 
+  - https://blog.csdn.net/liminled/article/details/18086655
 
 ```js
 CATALINA_HOME  
@@ -78,18 +94,6 @@ C:\Java\apache-tomcat-7.0.34\bin\
 shell>startup   
 ```
 
-# Java IDE
-
-- IntelliJ IDEA
-- NetBeans | Eclipse
-
-  - eclipse color theme <http://download.csdn.net/download/knockheart/6690825>
-
-# eclipse
-
-- 忽略node_modules https://blog.csdn.net/yzf913214/article/details/72872523
-
-# Android Studio
 
 # MySQL
 
@@ -101,3 +105,9 @@ shell>startup
 - 运行 bin/activemq.bat
 - 打开浏览器 http://localhost:8161/admin/ 
 - 用户名: admin 密码: admin
+
+# ZooKeeper
+
+- http://archive.apache.org/dist/zookeeper/
+- 配置文件修改 zoo_sample.cfg -> zoo.cfg 
+- bin下面双击 zkServer.cmd

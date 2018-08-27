@@ -21,7 +21,6 @@
 
   - springboot-socks 偏基础 <https://github.com/yizhiwazi/springboot-socks>
   - Spring Boot 2精髓：从构建小系统到架构分布式大系统 <http://www.broadview.com.cn/book/4931>
-  - 从0到1构建分布式秒杀系统，脱离案例讲架构都是耍流氓 https://gitee.com/52itstyle/spring-boot-seckill
   - SpringBootBucket 基于springboot1 <https://github.com/yidao620c/SpringBootBucket>
   - spring-boot-api-project-seed 入门小项目 <https://github.com/lihengming/spring-boot-api-project-seed>
   - springboot 深入实践图书源码 <https://github.com/chenfromsz?tab=repositories>
@@ -150,6 +149,7 @@
 - 猫宁Morning公益商城 https://gitee.com/morning-pro/Morning
 - 商城 包括前端，后端和h5应用，小程序 https://gitee.com/catshen/zscat_sw
 - 秒杀、抢购解决方案 https://gitee.com/1028125449/miaosha
+- 从0到1构建分布式秒杀系统，脱离案例讲架构都是耍流氓 https://gitee.com/52itstyle/spring-boot-seckill
 - fastpay 集成聚合支付和资金清结算于一体 https://gitee.com/robertleepeak/fastpay
 - IJPay 
   - https://gitee.com/javen205/IJPay
