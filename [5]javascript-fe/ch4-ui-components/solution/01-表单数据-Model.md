@@ -91,7 +91,11 @@ function slide(range, conSlide, obj) {
   - <http://www.jq22.com/webqd114>
 
 
-# 表单统一与优化
+# 表单 | 样式统一与优化
+
+- 复杂表单
+    - 输入的格式化
+    - dropdown等交互联动
 
 - 表单美化 <https://www.imooc.com/learn/42>
 
@@ -383,6 +387,7 @@ new Date().Format("yyyy-MM-dd E HH:mm:ss")
 
 # 权限 |  CURD
 
+- 权限颗粒度
 
 --------------------------------------------------------------------------------
 
@@ -521,7 +526,7 @@ function xiaolong(json) {
 
 --------------------------------------------------------------------------------
 
-# 表单字段解析 | 表单提交 | ajax处理
+# 表单 | 字段解析 | ajax提交处理
 
 - 使用serialize() serializeArray()
 - LayUI -> 封装了方法会返回表单字段,但也不是很好用

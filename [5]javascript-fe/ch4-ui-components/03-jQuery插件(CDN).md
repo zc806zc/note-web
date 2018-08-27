@@ -34,8 +34,11 @@
 - 手机端框架：Jingle
 - 动态页签：Jerichotab
 
-# jqueryWidgets @NICE
-
+# jqueryWidgets
+ 
+- @NICE
+- $
+- 参考思路与结构
 - 一个功能完整的框架,可参考其各种组件
 - 也提供Angular React
 - https://www.jqwidgets.com/jquery-widgets-documentation/
