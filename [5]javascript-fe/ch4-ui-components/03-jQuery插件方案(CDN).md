@@ -3,6 +3,8 @@
 - awesome-jquery <https://github.com/petk/awesome-jquery>
 - jq22 http://www.jq22.com/
 - jquerycards https://www.jquerycards.com/
+- jquery扩展 https://gitee.com/explore/starred/jquery-plugins
+- bootstrap扩展 https://gitee.com/explore/starred/bootstrap-plugins
 
 # 常用CDN
 

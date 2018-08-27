@@ -4,6 +4,7 @@
 - 印记中文 推荐组件生态 https://docschina.org
 
 - React组件 <https://www.imooc.com/video/16514>
+- React扩展组件 https://gitee.com/explore/starred/react-extensions
 
 # 框架
 

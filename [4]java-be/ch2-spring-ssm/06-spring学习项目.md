@@ -96,6 +96,7 @@
 
 # 管理系统 | 权限 | 综合
 
+- 后台管理框架 https://gitee.com/explore/starred/back-stage-management
 - bootshiro https://gitee.com/tomsun28/bootshiro
 - spring-shiro-training 权限脚手架 https://gitee.com/wangzhixuan/spring-shiro-training
 - FEBS 权限管理系统 <https://github.com/wuyouzhuguli/FEBS>
