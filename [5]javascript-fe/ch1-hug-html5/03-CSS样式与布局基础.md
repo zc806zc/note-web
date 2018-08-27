@@ -39,10 +39,11 @@ const nav = document.querySelector("[rel='js-site-navigation']")
 ```
 
 - css常见样式命名思想 <https://juejin.im/post/5a79545a5188257a7924875d>
-- React拾遗：从10种现在流行的 CSS 解决方案谈谈我的最爱
-  - https://juejin.im/post/5b39e63ae51d4562aa017c81
-- BEM
+- 命名习惯和方式 https://github.com/jobbole/awesome-css-cn#%E5%91%BD%E5%90%8D%E4%B9%A0%E6%83%AF%E5%92%8C%E6%96%B9%E5%BC%8F
+- React拾遗：从10种现在流行的 CSS 解决方案谈谈我的最爱 @NICE https://juejin.im/post/5b39e63ae51d4562aa017c81
+- BEM @NICE
   - https://github.com/sturobson/BEM-resources
+  - https://en.bem.info/methodology/quick-start/
 
 ```shell
 <nav class="nav">
@@ -76,6 +77,34 @@ const nav = document.querySelector("[rel='js-site-navigation']")
 
 - Atomic 原子
   - tailwindcss https://tailwindcss.com/docs/installation
+
+- SUIT CSS
+
+```html
+<div class="u-cf">
+  <a class="u-floatLeft" href="{{url}}">
+    <img class="u-block" src="{{src}}" alt="">
+  </a>
+  <p class="u-sizeFill u-textBreak">
+    …
+  </p>
+</div>
+
+<article class="Tweet is-expanded">
+  <header class="Tweet-header">
+    <img class="Tweet-avatar" src="{{src}}" alt="{{alt}}">
+    …
+  </header>
+  <div class="Tweet-bodyText">
+    …
+  </div>
+</article>
+
+<style>
+.Tweet { /* … */ }
+.Tweet.is-expanded { /* … */ }
+</style>
+```
 
 # CSS权重
 
