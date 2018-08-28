@@ -145,7 +145,7 @@
 - roncoo-pay 龙果支付系统 <https://gitee.com/roncoocom/roncoo-pay>
 - springboot mybatis mysql后台商城 h5 小程序 <https://gitee.com/JiaGou-XiaoGe/webappchat>
 - spring-boot-pay 支付服务 <https://gitee.com/52itstyle/spring-boot-pay>
-- 猫宁Morning公益商城 https://gitee.com/morning-pro/Morning
+- 猫宁Morning 基于SSM框架的公益B2C网上商城 https://gitee.com/morning-pro/Morning
 - 商城 包括前端，后端和h5应用，小程序 https://gitee.com/catshen/zscat_sw
 - 秒杀、抢购解决方案 https://gitee.com/1028125449/miaosha
 - 从0到1构建分布式秒杀系统，脱离案例讲架构都是耍流氓 https://gitee.com/52itstyle/spring-boot-seckill
