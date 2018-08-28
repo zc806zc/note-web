@@ -47,8 +47,7 @@
   - <https://www.imooc.com/video/16386>
   - Spring Boot + mybatis-plus + Swagger + shiro + springMVC
   - guns <https://gitee.com/naan1993/guns>
-  - <https://github.com/abel533/guns>
-  - 基于SpringBoot的后台管理系统 <https://juejin.im/post/5a9cfc6851882555677e0666>
+  - fork from guns <https://github.com/abel533/guns>
 
 - generator-jhipster
 
@@ -233,3 +232,4 @@
   - LCN 分布式事务框架 ，兼容 dubbo、springcloud、motan 框架，支持各种关系型数据库 
   - https://gitee.com/wangliang1991/tx-lcn
 - 不明觉厉 https://github.com/LKG/heartwork
+- 邮件发送服务 https://gitee.com/52itstyle/spring-boot-mail
