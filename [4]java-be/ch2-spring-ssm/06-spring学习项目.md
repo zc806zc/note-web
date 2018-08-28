@@ -121,28 +121,26 @@
   - 为中小企业提供开源好用的ERP软件
   - 专注进销存+财务功能
   - https://gitee.com/jishenghua/JSH_ERP
+- clouddo 基于springcloud和vue后台管理系统 https://gitee.com/lcg0124/clouddo
 
 # 博客 | CMS 
 
 - bootdo 面向学习 <https://gitee.com/lcg0124/bootdo>
+- mblog 用jpa https://gitee.com/mtons/mblog
 - 云收藏 <https://github.com/cloudfavorites/favorites-web>
 - jfinal_cms https://gitee.com/jflyfox/jfinal_cms
 - MCMS 基于SSM https://gitee.com/mingSoft/MCMS
-- mblog 用jpa https://gitee.com/mtons/mblog
-- 博客 Vue + Spring Boot <https://github.com/lenve/VBlog>
 - solo <https://github.com/b3log/solo>
 - Java博客系统 Docker+SpringBoot+Mybatis+thymeleaf <https://github.com/ZHENFENG13/My-Blog>
-- 搭建微信小程序 商城 spring boot + mybatis
-
-  - <https://www.imooc.com/video/16538>
-  - <http://blog.csdn.net/codejas/article/details/79341919>
-  - <https://github.com/coderjas/springboot-study>
+- 博客 Vue + Spring Boot <https://github.com/lenve/VBlog>
 - 前后端分离的人力资源管理系统 SpringBoot+Vue @deprectaed <https://github.com/lenve/vhr>
 
 # 商城电商 | 支付
 
 - 商城生成静态页
 - 商城 @NICE <https://github.com/linlinjava/litemall>
+  - litemall = Spring Boot后端 + Vue管理员前端 + 微信小程序用户前端
+  -  又一个小商城
 - platform 微信小程序商城 https://gitee.com/fuyang_lipengjun/platform
 - roncoo-pay 龙果支付系统 <https://gitee.com/roncoocom/roncoo-pay>
 - springboot mybatis mysql后台商城 h5 小程序 <https://gitee.com/JiaGou-XiaoGe/webappchat>
@@ -156,6 +154,11 @@
   - https://gitee.com/javen205/IJPay
   - 封装了微信支付、支付宝支付、银联支付常用的支付方式以及各种常用的接口 
   - 无框架依赖 
+- 搭建微信小程序 商城 spring boot + mybatis
+
+  - <https://www.imooc.com/video/16538>
+  - <http://blog.csdn.net/codejas/article/details/79341919>
+  - <https://github.com/coderjas/springboot-study>
 
 # 微信 | 公众号
 
