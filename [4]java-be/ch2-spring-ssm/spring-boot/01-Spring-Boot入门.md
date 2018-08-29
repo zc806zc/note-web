@@ -93,11 +93,7 @@ web
   - security
 ```
 
-- 热部署 spring-boot-devtools
 
-  - @NICE <https://www.cnblogs.com/bingshu/p/6876030.html>
-  - <http://blog.csdn.net/isea533/article/details/70495714>
-  - jRabel  
 
 - 注意
   - ctrl + F9 刷新重构一下
@@ -106,6 +102,43 @@ web
   - 删除父项目的src
   - Mark As Source Root
 
+# 热部署 
+
+- spring-boot-devtools
+- 或者jRabel  
+- SpringBoot通过配置devtools实现热部署 https://jingyan.baidu.com/article/870c6fc367b4d7b03fe4beba.html
+- @NICE spring boot 之热部署 <https://www.cnblogs.com/bingshu/p/6876030.html>
+- Spring DevTools 介绍 <http://blog.csdn.net/isea533/article/details/70495714>
+
+
+```xml
+<dependency>  
+  <groupId>org.springframework.boot</groupId>  
+  <artifactId>spring-boot-devtools</artifactId>
+
+  <!-- here -->
+  <optional>true</optional>  
+</dependency>
+
+<plugin>  
+    <groupId>org.springframework.boot</groupId>  
+    <artifactId>spring-boot-maven-plugin</artifactId>  
+
+    <!-- here -->
+    <configuration>  
+        <fork>true</fork>
+        <addResources>true</addResources>  
+    </configuration>  
+</plugin> 
+
+<!-- 
+  IDEA设置
+  File->Setting->Build,…->Compiler  =>  project automatically
+  ctrl+shift+a Registry => compiler.automake.allow.when.app.running 
+-->
+```
+
+  
 # 界面设计
 
 - <https://www.tianmaying.com/tutorial/using-thymeleaf>

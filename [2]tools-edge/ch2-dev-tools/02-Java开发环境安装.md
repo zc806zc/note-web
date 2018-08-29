@@ -106,6 +106,20 @@ shell>startup
 - 打开浏览器 http://localhost:8161/admin/ 
 - 用户名: admin 密码: admin
 
+# RabbitMQ
+
+- rabbitMQ windows 安装 入门 https://www.cnblogs.com/junrong624/p/4121656.html
+- windows下 安装 rabbitMQ 及操作常用命令 https://www.cnblogs.com/ericli-ericli/p/5902270.html
+
+```js
+// 监听端口是5672
+rabbitmq-plugins.bat enable rabbitmq_management
+
+// 管理员身份打开
+net start RabbitMQ
+net stop RabbitMQ && net start RabbitMQ
+```
+
 # ZooKeeper
 
 - http://archive.apache.org/dist/zookeeper/
