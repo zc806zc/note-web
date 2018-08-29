@@ -159,31 +159,26 @@ DragDrop.prototype.mouseMove = function(e, obj) {
 
 # 滚动条
 
-- jquery.slimScroll | jquery.nicescroll
-
+- jquery.slimScroll https://github.com/rochal/jQuery-slimScroll
+- jquery.nicescroll
 - scrollama
 
   - <https://github.com/russellgoldenberg/scrollama>
   - Scrollytelling with IntersectionObserver
 
-- 自定义实现
+- animatescroll.js <http://plugins.compzets.com/animatescroll/>
+
+- 放手机里的滚屏实现
+- 栗子
 
   - jQuery实现自定义滚动条 <https://www.imooc.com/learn/675>
   - <http://www.jq22.com/webqd2618>
   - <http://www.jq22.com/webqd1910>
 
-  - 滚动条
-
-- animatescroll.js <http://plugins.compzets.com/animatescroll/>
 
 ```javascript
 <a onclick="$('.detail').animatescroll({padding:71});">Screens</a>
 ```
-
-- 放手机里的滚屏实现
-
-  - !important是CSS1就定义的语法，作用是提高指定样式规则的应用优先权 但最好不要用
-  - background-size: cover; 把背景图像扩展至足够大，以使背景图像完全覆盖背景区域。
 
 --------------------------------------------------------------------------------
 

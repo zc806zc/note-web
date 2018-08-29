@@ -1,3 +1,136 @@
+# 按钮
+
+- loading按钮(提交按钮)
+- 查询按钮(是否是最新搜索结果)
+
+- btn-css-generator <http://www.bestcssbuttongenerator.com/#/8>
+- 防止表单重复提交的loading
+- 悬浮
+
+  - <http://www.jq22.com/webqd1687>
+  - <http://www.jq22.com/webqd1688>
+  - <http://www.jq22.com/webqd114>
+
+
+# 表单 | 样式模拟统一
+
+- 复杂表单
+
+    - 输入的格式化
+    - dropdown等交互联动
+
+- 表单美化 <https://www.imooc.com/learn/42>
+
+
+# 通用输入
+
+- 密码框 zxcvbn <https://github.com/dropbox/zxcvbn>
+
+# 单选复选框 | Radio | Checkbox
+
+- icheck https://github.com/fronteed/icheck
+- jquery-labelauty
+- 栗子
+    - <http://www.jq22.com/webqd2718>
+
+```html
+<span class="radio_box">
+ <input type="radio" id="radio_1" name="radio" checked="">
+ <label for="radio_1"></label>
+ <em>选项1</em>
+</span>
+```
+
+# 自动完成 | autocomplete
+
+- typeahead.js <https://github.com/twitter/typeahead.js>
+- Fuse <https://github.com/krisk/Fuse>
+- At.js <https://github.com/ichord/At.js>
+- bootstrap-typeahead https://github.com/bassjobsen/Bootstrap-3-Typeahead
+- awesomplete <https://github.com/LeaVerou/awesomplete>
+
+# 星级评分 | 投票率
+
+- 策略模式实现星级评分 <https://www.imooc.com/video/15115>
+- <http://www.jq22.com/webqd3035>
+- CSS实现 <http://www.jq22.com/webqd1144>
+
+```javascript
+function praise(num, obj) {
+    obj.prevAll().attr('class', 'xx-star');
+    obj.attr('class', 'xx-star');
+    obj.nextAll().attr('class', 'xx-star2');
+    $(".display-star").html(num + '星');
+}
+```
+
+# 关注 | 点赞
+
+- <http://www.jq22.com/webqd2408>
+
+- 单向关注有效性，不要因为开了多个页面多次关注而状态发生toggle，也就是说关注到的是 unstar -> star的这种状态
+
+# 拾色器
+
+- colorify.js http://colorify.rocks
+- 兼容性好 <http://www.jq22.com/jquery-info367>
+- colors <https://github.com/mrmrs/colors>
+- color-thief
+
+  - <https://github.com/lokesh/color-thief>
+  - 利用 javascript 和 canvas 抓取一张图片中的主要颜色
+
+# 穿梭框
+
+# 下拉框 | 选择框
+
+- 论如何实现一个完美的Select组件 https://juejin.im/post/5b02b960f265da0b9e655e61
+    - 一个相对定位的Selection + 一个绝对定位的DropdownMenu
+    - Selection与页面滚动
+
+- niceSelect
+- select2
+- chosen <https://github.com/harvesthq/chosen>
+- selectize-js <https://www.awesomes.cn/repo/selectize/selectize-js>
+- jquery.sumoselect
+
+- A jQuery Single/Multi Select plugin which can be used on almost any device
+
+- Superfish
+
+- It is a jQuery plugin that adds usability enhancements to existing multi-level drop-down menus.
+
+- 栗子
+    - 模拟下拉框 <http://www.jq22.com/webqd2375> 
+    - 可多选 <http://www.jq22.com/webqd933>
+    - 简单自动义 <http://www.jq22.com/webqd1696>
+    - 可编辑下拉框 <http://www.jq22.com/webqd1511>
+    - 标签 <http://www.jq22.com/webqd462>
+
+```javascript
+// 外面嵌套一层
+<div class="select">
+  <select name="slct" id="slct">
+    <option>Choose an option</option>
+    <option value="1">Pure CSS</option>
+  </select>
+</div>
+```
+
+# 云标签
+
+- <http://www.jq22.com/webqd1921>
+
+# 标签输入框
+
+- jquery-tags-input
+
+  - <http://xoxco.com/projects/code/tagsinput/>
+
+- bootstrap-tagsinput <https://github.com/bootstrap-tagsinput/bootstrap-tagsinput>
+
+--------------------------------------------------------------------------------
+
 # 登录注册
 
 - 登录
@@ -69,143 +202,12 @@ function slide(range, conSlide, obj) {
 
 --------------------------------------------------------------------------------
 
+
 # URL操作库
 
 - URI.js <https://github.com/medialize/URI.js/>
 - domurl https://github.com/Mikhus/domurl
 - nanoid 唯一ID生成 @NICE https://github.com/ai/nanoid
-
---------------------------------------------------------------------------------
-
-# 按钮
-
-- loading按钮(提交按钮)
-- 查询按钮(是否是最新搜索结果)
-
-- btn-css-generator <http://www.bestcssbuttongenerator.com/#/8>
-- 防止表单重复提交的loading
-- 悬浮
-
-  - <http://www.jq22.com/webqd1687>
-  - <http://www.jq22.com/webqd1688>
-  - <http://www.jq22.com/webqd114>
-
-
-# 表单 | 样式统一与优化
-
-- 复杂表单
-    - 输入的格式化
-    - dropdown等交互联动
-
-- 表单美化 <https://www.imooc.com/learn/42>
-
-
-# 通用输入
-
-- 密码框 zxcvbn <https://github.com/dropbox/zxcvbn>
-
-# 单选复选框优化
-
-- <http://www.jq22.com/webqd2718>
-- jquery-labelauty
-
-```html
-<span class="radio_box">
- <input type="radio" id="radio_1" name="radio" checked="">
- <label for="radio_1"></label>
- <em>选项1</em>
-</span>
-```
-
-# 自动完成 | autocomplete
-
-- typeahead.js <https://github.com/twitter/typeahead.js>
-- Fuse <https://github.com/krisk/Fuse>
-- At.js <https://github.com/ichord/At.js>
-- bootstrap-typeahead https://github.com/bassjobsen/Bootstrap-3-Typeahead
-- awesomplete <https://github.com/LeaVerou/awesomplete>
-
-# 星级评分 | 投票率
-
-- 策略模式实现星级评分 <https://www.imooc.com/video/15115>
-- <http://www.jq22.com/webqd3035>
-- CSS实现 <http://www.jq22.com/webqd1144>
-
-```javascript
-function praise(num, obj) {
-    obj.prevAll().attr('class', 'xx-star');
-    obj.attr('class', 'xx-star');
-    obj.nextAll().attr('class', 'xx-star2');
-    $(".display-star").html(num + '星');
-}
-```
-
-# 关注 | 点赞
-
-- <http://www.jq22.com/webqd2408>
-
-- 单向关注有效性，不要因为开了多个页面多次关注而状态发生toggle，也就是说关注到的是 unstar -> star的这种状态
-
-# 拾色器
-
-- colorify.js http://colorify.rocks
-- 兼容性好 <http://www.jq22.com/jquery-info367>
-- colors <https://github.com/mrmrs/colors>
-- color-thief
-
-  - <https://github.com/lokesh/color-thief>
-  - 利用 javascript 和 canvas 抓取一张图片中的主要颜色
-
-# 穿梭框
-
-# 下拉框 | 选择框
-
-- 论如何实现一个完美的Select组件 https://juejin.im/post/5b02b960f265da0b9e655e61
-    - 一个相对定位的Selection + 一个绝对定位的DropdownMenu
-    - Selection与页面滚动
-- 插件
-
-  - niceSelect
-  - select2
-  - chosen <https://github.com/harvesthq/chosen>
-  - selectize-js <https://www.awesomes.cn/repo/selectize/selectize-js>
-  - jquery.sumoselect
-
-    - A jQuery Single/Multi Select plugin which can be used on almost any device
-
-  - Superfish
-
-    - It is a jQuery plugin that adds usability enhancements to existing multi-level drop-down menus.
-
-- 模拟下拉框 <http://www.jq22.com/webqd2375> | 可多选 <http://www.jq22.com/webqd933>
-
-- 简单自动义 <http://www.jq22.com/webqd1696>
-
-- 可编辑下拉框 <http://www.jq22.com/webqd1511>
-
-- 标签 <http://www.jq22.com/webqd462>
-
-```javascript
-// 外面嵌套一层
-<div class="select">
-  <select name="slct" id="slct">
-    <option>Choose an option</option>
-    <option value="1">Pure CSS</option>
-  </select>
-</div>
-```
-
-# 云标签
-
-- <http://www.jq22.com/webqd1921>
-
-# 标签输入框
-
-- jquery-tags-input
-
-  - <http://xoxco.com/projects/code/tagsinput/>
-
-- bootstrap-tagsinput <https://github.com/bootstrap-tagsinput/bootstrap-tagsinput>
 
 --------------------------------------------------------------------------------
 
@@ -393,28 +395,25 @@ new Date().Format("yyyy-MM-dd E HH:mm:ss")
 
 # 上传
 
-- uppy@NICE <https://github.com/transloadit/uppy>
-
+- uppy@NICE 
+  - <https://github.com/transloadit/uppy>
   - The next open source file uploader for web browsers
-
-- jQuery-File-Upload | fex webuploader(兼容性好)
-
-  - <https://github.com/blueimp/jQuery-File-Upload>
-  - <https://blueimp.github.io/jQuery-File-Upload/>
-  - <http://fex.baidu.com/webuploader/>
-
+- jQuery-File-Upload
+    - 兼容性好
+    - <https://github.com/blueimp/jQuery-File-Upload>
+    - <https://blueimp.github.io/jQuery-File-Upload/>
+- fine-uploader
+  - <https://github.com/FineUploader/fine-uploader>
+- fex webuploader
+    - 兼容性好 IE6+
+    - https://github.com/fex-team/webuploader
+    - <http://fex.baidu.com/webuploader/>
 - dropzone
-
   - <https://github.com/enyo/dropzone>
-
 - Uploadify
 
-- fine-uploader
-
-  - <https://github.com/FineUploader/fine-uploader>
-
-- 本地input选择图片实时显示
-
+- 栗子
+  - 本地input选择图片实时显示
   - createObjectURL <http://www.jq22.com/webqd2884>
   - FileReader <http://www.jq22.com/webqd2885>
   - 转base64显示 <http://www.jq22.com/webqd2806>
@@ -614,19 +613,20 @@ var queryString = $('#myFormId .specialFields').fieldSerialize();
   - https://www.ag-grid.com/
   - 原生版本 https://www.ag-grid.com/best-javascript-data-grid/
   - vue版本 https://www.ag-grid.com/best-vuejs-data-grid/
+
+- dataTables @NICE 
+- bootstrap-table @NICE
+- layui table 
+  - 设计上上有独到之处，但是不够灵活和强大
+  - 使用原因是相信layui生态
+- jqGrid 
+  - https://github.com/tonytomov/jqGrid
+  - https://github.com/rstaib/jquery-bootgrid
+- jsgrid <https://github.com/tabalinas/jsgrid>
 - handsontable($) 
     - 支持modern
     - <https://github.com/handsontable/handsontable>
     - <https://handsontable.com/>
-- jqGrid 
-  - https://github.com/tonytomov/jqGrid
-  - https://github.com/rstaib/jquery-bootgrid
-
-- jsgrid <https://github.com/tabalinas/jsgrid>
-- dataTables @NICE 
-- bootstrap-table <https://github.com/wenzhixin/bootstrap-table>
-- layui table 
-  - 设计上上有独到之处，但是不够灵活和强大
 
 - 最好看的表格 
   - <https://colorlib.com/wp/css3-table-templates/>
@@ -636,6 +636,10 @@ var queryString = $('#myFormId .specialFields').fieldSerialize();
 
     - CSS简单实现 <http://www.jq22.com/jquery-info6700>
     - 好看一点的样式 <http://www.jq22.com/jquery-info1372>
+
+# bootstrap系列表格
+
+- bootstrap-table <https://github.com/wenzhixin/bootstrap-table>
 
 # 表格扩展功能
 
@@ -705,15 +709,14 @@ rows.sort(function(a,b){
 
 # 进度条
 
-- 进度条
 
-    - nprogress <https://github.com/rstacruz/nprogress>
-    - pace https://github.com/HubSpot/pace
+- nprogress <https://github.com/rstacruz/nprogress>
+- pace https://github.com/HubSpot/pace
 
 - 栗子
   - <http://www.jq22.com/webqd1913>
   - css3进度条 <http://www.jq22.com/webqd1062>
-- 超链接悬浮上去时, 打开新窗口图标提示
+
 
 # 富文本编辑器
 
