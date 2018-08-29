@@ -16,3 +16,7 @@
 
 - guava
 - hutool Java工具包 https://gitee.com/loolly/hutool
+
+# 模块划分
+
+- core/common
