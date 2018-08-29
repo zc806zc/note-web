@@ -126,6 +126,7 @@
 
 - bootdo 面向学习 <https://gitee.com/lcg0124/bootdo>
 - mblog 用jpa https://gitee.com/mtons/mblog
+- Halo 可能是最好的Java博客系统 https://github.com/ruibaby/halo
 - 云收藏 <https://github.com/cloudfavorites/favorites-web>
 - jfinal_cms https://gitee.com/jflyfox/jfinal_cms
 - MCMS 基于SSM https://gitee.com/mingSoft/MCMS

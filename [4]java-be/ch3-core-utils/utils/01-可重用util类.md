@@ -14,4 +14,5 @@
 
 # 开源
 
+- guava
 - hutool Java工具包 https://gitee.com/loolly/hutool
