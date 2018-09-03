@@ -244,4 +244,11 @@
 
 <!--mixitup-->
 <script src="https://cdn.bootcss.com/mixitup/3.2.2/mixitup.min.js"></script>
+
+<!-- fancybox -->
+<link href="https://cdn.bootcss.com/fancybox/3.3.5/jquery.fancybox.min.css" rel="stylesheet">
+<script src="https://cdn.bootcss.com/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+
+<!-- smooth scroll -->
+<script src="https://cdn.bootcss.com/smooth-scroll/14.2.0/smooth-scroll.min.js"></script>
 ```
