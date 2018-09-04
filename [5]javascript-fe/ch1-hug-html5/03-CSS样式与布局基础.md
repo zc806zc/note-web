@@ -1,5 +1,6 @@
 # CSS
 
+- awesome-css-cn <https://github.com/jobbole/awesome-css-cn>
 - CSS速查表 <http://www.css88.com/book/css/>
 - CSS查漏补缺 <https://segmentfault.com/a/1190000006242814>
 - 12个HTML和CSS必须知道的重点难点问题 <https://juejin.im/post/5a954add6fb9a06348538c0d>
