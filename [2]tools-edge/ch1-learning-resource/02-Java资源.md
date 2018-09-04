@@ -18,7 +18,7 @@
   - 讨论 <https://www.zhihu.com/question/50203775/answer/119850003>
   - 网站推荐  <http://www.siteboxs.com/siteBox/tag/tname/java.html>
   - 学习Java应该关注哪些网站？ <https://www.zhihu.com/question/23496750>
-
+  
 - 中国十大社区 https://juejin.im/post/5b417a12e51d451962728acf
   - CSDN www.csdn.net/
   - 博客园 www.cnblogs.com/
@@ -69,8 +69,8 @@
 
 # 博客专家
 
+- 100个高质量Java开发者博客 http://www.importnew.com/7469.html
 - Jboss团队 <http://in.relation.to/>
-- AdamBien https://twitter.com/AdamBien/
 - Tim Yang <https://timyang.net/>
 - 张开涛 <http://www.iteye.com/blogs/subjects/kaitao-springmvc>
 - 翟永超
@@ -87,6 +87,24 @@
   - 骆昊 <http://blog.csdn.net/jackfrued>
 
   - 灰狐 <http://www.huihoo.com/>
+
+```
+Adam Bien 
+https://twitter.com/AdamBien/
+http://www.adam-bien.com/roller/abien/
+
+Antonio Goncalves
+https://antoniogoncalves.org/
+
+Henrik Warne
+https://henrikwarne.com/
+
+Lars Vogel
+http://www.vogella.com/
+
+Peter Verhas
+https://javax0.wordpress.com/
+```
 
 # 文档
 
