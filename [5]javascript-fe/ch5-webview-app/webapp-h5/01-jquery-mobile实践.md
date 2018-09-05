@@ -1,14 +1,14 @@
 # jQuery Mobile
 
 - touch-friendly
-- [官网示例](http://demos.jquerymobile.com/1.4.5/)
-- [JQM Gallery](https://jqmgallery.com/)
-- [源码下载](https://github.com/cfjedimaster/jQuery-Mobile-Book)
+- 官网示例 http://demos.jquerymobile.com/1.4.5/
+- JQM Gallery https://jqmgallery.com/
+- 源码 https://github.com/cfjedimaster/jQuery-Mobile-Book
 
 - 页面 页眉页脚与工具栏、列表
 
   - 搜索过滤
-  - 创建[酒店简易app](http://qmen.space/jqm-hotel-simple-app/)
+  - 创建 酒店简易app http://qmen.space/jqm-hotel-simple-app/
 
 - 表单、模态对话框及微件
 
