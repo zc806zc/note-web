@@ -331,8 +331,9 @@ overflow: hidden; // 触发生成BFC,使浮动元素也参与计算
 
 # flex | flexbox
 
-- <http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool>
-- <http://www.ruanyifeng.com/blog/2015/07/flex-examples.html>
+- 阮一峰
+  - <http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html>
+  - <http://www.ruanyifeng.com/blog/2015/07/flex-examples.html>
 
 # Grid
 
