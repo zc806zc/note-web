@@ -6,3 +6,8 @@
 
 - <https://wasm.bootcss.com/>
 - WebAssembly 实践：如何写代码 <https://juejin.im/entry/5a93663af265da4e7527b7d0>
+
+# 栗子
+
+- https://github.com/rwv/chinese-dos-games
+- https://github.com/felixrieseberg/windows95
