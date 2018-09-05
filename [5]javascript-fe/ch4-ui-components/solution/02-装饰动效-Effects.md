@@ -18,30 +18,22 @@
 
   - 大量象形文字 <https://github.com/ryanoasis/nerd-fonts>
 
---------------------------------------------------------------------------------
-
-# 链接
-
-- 超链接悬浮上去时, 打开新窗口图标提示
-
-# 文章
-
-- mocka <https://github.com/Chalarangelo/mocka>
-
-  - Simple, elegant content placeholder
-
-# 舒服的阅读配色
-
-- 易佰教程等教程类
-- kindle
 
 # 加载等待
 
 - 效果集
 
   - 小人转圈圈 NICE <https://codepen.io/flashingmoose/pen/vNQELw>
-  
-# 打印优化
+
+- 加载
+
+  - <https://codepen.io/collection/jifIK/>
+  - <https://github.com/tobiasahlin/SpinKit>
+
+
+# 文章 | 阅读 
+
+- 超链接悬浮上去时, 打开新窗口图标提示
 
 - typo.css <https://github.com/sofish/typo.css>
 
@@ -52,10 +44,15 @@
 /* put this class into your main.css file with "display:none;" */
 ```
 
+- 舒服的阅读配色
+
+  - 易佰教程等教程类网站
+  - kindle配色
+
 # 文本截断
 
-- css
-- js <http://www.jq22.com/webqd2751>
+- css实现
+- js实现 <http://www.jq22.com/webqd2751>
 - 插件 <https://dollarshaveclub.github.io/shave/>
 
 ```javascript
@@ -73,111 +70,9 @@ p {
 }
 ```
 
---------------------------------------------------------------------------------
+# 高亮
 
-# 动画
-
-- lottie-web https://github.com/airbnb/lottie-web
-- animate.css | A+
-- Effeckt <https://github.com/h5bp/Effeckt.css>
-- mojs
-
-  - <https://github.com/legomushroom/mojs>
-  - motion graphics toolbelt for the web 
-
-- popmotion 
-  - <https://github.com/Popmotion/popmotion>
-  - Create unique animations and interactions with tweens, physics and input tracking.
-- jquery.easing <https://github.com/gdsmith/jquery.easing>
-- Hover.css @NICE <https://github.com/IanLunn/Hover>
-- quicksand (jQuery plugin. Reorder and filter items with a nice shuffling animation.)
-
-- 网站
-
-  - jq22
-  - 17sucai <http://www.17sucai.com/>
-  - microjs <http://microjs.com/>
-
-- 75款动效工具
-
-  - <http://www.uisdc.com/75-web-animation-tools-1>
-  - anjis 
-    - <http://anijs.github.io/>
-    - https://github.com/anijs/anijs/
-
-- 栗子
-  - 一组简单可爱的css动效 <https://github.com/jonsuh/hamburgers>
-
-- 页面滚动
-
-  - wow
-  - aos <https://github.com/michalsnik/aos>
-
-- 粒子效果
-  - 使用create.js制造粒子效果
-  - particles.js https://github.com/VincentGarreau/particles.js
-
---------------------------------------------------------------------------------
-
-# 交互
-
-- interact.js
-
-  - <https://github.com/taye/interact.js>
-  - <http://www.jq22.com/yanshi17203>
-
-- 图片响应模式
-
-  - 3D倾斜响应 <http://www.jq22.com/webqd2763>
-  - 放大(传统首选)
-  - 抖动 <http://www.jq22.com/webqd3242>
-  - 模仿小米 图片hover的阴影效果 <http://www.jq22.com/webqd1367>
-
-```less
-// 放大
-.pic-box {
-    width: 200px;
-    height:200px;
-    overflow: hidden; // 超出隐藏
-
-    img {
-        width: 100%;
-        transition: transform 1.6s; // 动画过渡
-
-        &:hover{
-          transform: scale(2.0);
-        }
-    }
-}
-
-// 抖动
-body{
-    padding:30px;
-}
-img:hover {
-    -webkit-animation:sucaijiayuan 1s .1s ease both;
-    -moz-animation:tada 1s .1s ease both;
-}
-@-webkit-keyframes sucaijiayuan {
-    0% {
-         -webkit-transform:scale(1)
-  }
-  10%,20% {
-         -webkit-transform:scale(0.8) rotate(-2deg)
-  }
-   30%,50%,70%,90% {
-        -webkit-transform:scale(1.1) rotate(2deg)
-  }
-  40%,60%,80% {
-         -webkit-transform:scale(1.1) rotate(-2deg)
-  }
-  100% {
-          -webkit-transform:scale(1) rotate(0)
-  }
-}
-```
-
---------------------------------------------------------------------------------
+- highlight.js https://github.com/isagalaev/highlight.js
 
 # 色彩方案
 
@@ -191,8 +86,6 @@ img:hover {
 - 渐变背景色
 
 - 换肤
-
-# 色彩
 
 - 右下角角标选中/标记
 
@@ -245,13 +138,55 @@ span:nth-child(2) {
 }
 ```
 
---------------------------------------------------------------------------------
+# 动画
 
-# 特效
+- 75款动效工具 <http://www.uisdc.com/75-web-animation-tools-1>
+- lottie-web https://github.com/airbnb/lottie-web
+- animate.css | A+
+- Effeckt <https://github.com/h5bp/Effeckt.css>
+- mojs
 
-- odometer https://github.com/HubSpot/odometer
+  - <https://github.com/legomushroom/mojs>
+  - motion graphics toolbelt for the web 
+
+- popmotion 
+  - <https://github.com/Popmotion/popmotion>
+  - Create unique animations and interactions with tweens, physics and input tracking.
+- jquery.easing <https://github.com/gdsmith/jquery.easing>
+- Hover.css @NICE <https://github.com/IanLunn/Hover>
+- quicksand (jQuery plugin. Reorder and filter items with a nice shuffling animation.)
+- magic https://github.com/miniMAC/magic
+
+- anjis 
+  - <http://anijs.github.io/>
+  - https://github.com/anijs/anijs/
+
+- 页面滚动
+
+  - wow
+  - aos <https://github.com/michalsnik/aos>
+
+# 交互 | 手势
+
+- hammer.js https://github.com/hammerjs/hammer.js
+- interact.js
+
+  - <https://github.com/taye/interact.js>
+  - <http://www.jq22.com/yanshi17203>
+
+
+
+# 特效集
+
+- 栗子
+  - 一组简单可爱的css动效 <https://github.com/jonsuh/hamburgers>
+
+- 粒子效果
+  - 使用create.js制造粒子效果
+  - particles.js https://github.com/VincentGarreau/particles.js
+
 - 数字滚动显示 | 倒计时
-
+  - odometer @NICE 数字滚动  https://github.com/HubSpot/odometer
   - countUp.js https://github.com/inorganik/countUp.js
   - <http://www.jq22.com/webqd2739>
   - <http://www.jq22.com/webqd1652>
@@ -330,7 +265,8 @@ $("ul>li").hover(function() {
   - 鼠标跟随 <http://www.jq22.com/webqd2430> | 鼠标蛇 <http://www.jq22.com/webqd2385>
   - 鼠标替换
 
-- CSS3-3D立方体 <http://www.html5tricks.com/demo/css3-3d-cube-rotate/index.html>
+- 3D立方体 
+  - <http://www.html5tricks.com/demo/css3-3d-cube-rotate/index.html>
 
 - 打字动画
 
@@ -365,20 +301,58 @@ function show() {
 
 - 纸张效果 <http://www.zhangxinxu.com/wordpress/2011/02/几种纯csscss3下的纸张效果展示/>
 - 锯齿效果 <http://www.softwhy.com/forum.php?mod=viewthread&tid=19089>
-- 加载
-
-  - <https://codepen.io/collection/jifIK/>
-  - <https://github.com/tobiasahlin/SpinKit>
-
-- 动画效果
-
-```javascript
-默认情况下，所有 HTML 元素的位置都是静态的，并且无法移动。如需对位置进行操作，记得首先把元素的 CSS position 属性设置为 relative、fixed 或 absolute。
-```
 
 - 图片炸裂 <http://www.jq22.com/webqd3028>
+- 图片响应模式
 
-# 悬停时 鼓动别人做出选择
+  - 3D倾斜响应 <http://www.jq22.com/webqd2763>
+  - 放大(传统首选)
+  - 抖动 <http://www.jq22.com/webqd3242>
+  - 模仿小米 图片hover的阴影效果 <http://www.jq22.com/webqd1367>
+
+```less
+// 放大
+.pic-box {
+    width: 200px;
+    height:200px;
+    overflow: hidden; // 超出隐藏
+
+    img {
+        width: 100%;
+        transition: transform 1.6s; // 动画过渡
+
+        &:hover{
+          transform: scale(2.0);
+        }
+    }
+}
+
+// 抖动
+body{
+    padding:30px;
+}
+img:hover {
+    -webkit-animation:sucaijiayuan 1s .1s ease both;
+    -moz-animation:tada 1s .1s ease both;
+}
+@-webkit-keyframes sucaijiayuan {
+    0% {
+         -webkit-transform:scale(1)
+  }
+  10%,20% {
+         -webkit-transform:scale(0.8) rotate(-2deg)
+  }
+   30%,50%,70%,90% {
+        -webkit-transform:scale(1.1) rotate(2deg)
+  }
+  40%,60%,80% {
+         -webkit-transform:scale(1.1) rotate(-2deg)
+  }
+  100% {
+          -webkit-transform:scale(1) rotate(0)
+  }
+}
+```
 
 - 卡片的弹起 <https://haobtc.com/>
 
@@ -406,11 +380,3 @@ transition: 0.15s ease-in-out;
 ```
 
 ![](http://img.blog.csdn.net/20160624145302114)
-
-# 高亮
-
-- highlight.js https://github.com/isagalaev/highlight.js
-
-# 手势
-
-- hammer.js https://github.com/hammerjs/hammer.js

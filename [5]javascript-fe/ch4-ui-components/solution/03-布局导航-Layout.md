@@ -10,10 +10,8 @@
   - <https://github.com/haltu/muuri>
   - Responsive, sortable, filterable and draggable grid layouts
 
-- neat
-
-  - <https://github.com/thoughtbot/neat>
-
+- neat 栅格系统 <https://github.com/thoughtbot/neat>
+- jeet: 最先进的Sass栅格系统 https://github.com/mojotech/jeet
 - isotope($)
 
   - https://github.com/metafizzy/isotope
@@ -27,7 +25,9 @@
 
 # 占位元素
 
-...
+- mocka 文章占位 <https://github.com/Chalarangelo/mocka>
+
+  -  Simple, elegant content placeholder
 
 --------------------------------------------------------------------------------
 
