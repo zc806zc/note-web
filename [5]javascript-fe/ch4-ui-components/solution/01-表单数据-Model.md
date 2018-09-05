@@ -727,6 +727,7 @@ rows.sort(function(a,b){
 
 
 - 经典 ckeditor | kindeditor
+- tinymce
 - ace <https://github.com/ajaxorg/ace>
 - editor https://github.com/ory/editor
 - draft-js @NICE  基于React <https://github.com/facebook/draft-js>

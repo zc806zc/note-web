@@ -1,3 +1,7 @@
+# 奇技淫巧
+ 
+- 大话后端开发的奇淫技巧大集合 https://juejin.im/post/5b07c69f6fb9a07ac560916a
+
 # 你真的会写Java吗
 
 - 一个3、4年的JAVAer讲黑科技 
@@ -32,12 +36,31 @@
 
 - 一个可以通过简单的注解形式来帮助我们简化消除一些必须有但显得很臃肿的Java代码的工具
 - 注解文档 <https://projectlombok.org/features/all>
-- IDEA要安装lombok插件
+- Lombok使用 https://blog.csdn.net/motui/article/details/79012846 
+  - IDEA要安装lombok插件
 
 ```xml
+@Setter
+@Getter
+@Data
+@Log(这是一个泛型注解，具体有很多种形式)
+@AllArgsConstructor
+@NoArgsConstructor
+@EqualsAndHashCode
+@NonNull
+@Cleanup
+@ToString
+@RequiredArgsConstructor
+@Value
+@SneakyThrows
+@Synchronized
+
+<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
 <dependency>
     <groupId>org.projectlombok</groupId>
     <artifactId>lombok</artifactId>
+    <version>1.16.18</version>
+    <scope>provided</scope>
 </dependency>
 ```
 
