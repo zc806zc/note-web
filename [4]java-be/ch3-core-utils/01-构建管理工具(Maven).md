@@ -6,6 +6,7 @@
 # Maven
 
 - <https://juejin.im/post/5a4a5e2bf265da4322418d7f>
+- 搜索maven https://search.maven.org/
 
 ```java
 Maven的主要好处是它的生命周期。虽然接连的多个项目生命周期相同，这是以灵活性为代价的
