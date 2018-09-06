@@ -8,8 +8,8 @@
 
 - Spring实战
 
-  - <https://github.com/habuma/SpringInActionExamples->
-  - 有博主改进 <https://github.com/guoxiaoxu/SpringInActionPractice>
+  - <https://github.com/habuma/SpringInActionExamples>
+    - 有博主改进 <https://github.com/guoxiaoxu/SpringInActionPractice>
   - <https://juejin.im/post/5a8bef5c6fb9a06350151fa3>
 
 # Spring生态圈
@@ -23,3 +23,17 @@
 - Spring Data JPA
 - Spring Data Mongo DB
 - Spring Data Redis
+
+# 基础
+
+```
+servlet-api-x.y.z.jar
+commons-logging-x.y.z.jar
+spring-aop-x.y.z.jar
+spring-beans-x.y.z.jar
+spring-context-x.y.z.jar
+spring-core-x.y.z.jar
+spring-expression-x.y.z.jar
+spring-webmvc-x.y.z.jar
+spring-web-x.y.z.jar
+```
