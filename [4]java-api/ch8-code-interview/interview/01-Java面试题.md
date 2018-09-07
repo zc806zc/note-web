@@ -1,11 +1,11 @@
 # 面试
 
 - Java-Guide @NICE https://github.com/Snailclimb/Java-Guide
-- itmian4 <http://www.itmian4.com/>
-- <https://github.com/kdn251/interviews>
-- https://github.com/crossoverJie/Java-Interview
+- 各公司算法题 代码 <https://github.com/kdn251/interviews>
 - Java Core Sprout : basic, concurrent, algorithm https://github.com/crossoverJie/JCSprout
+  - https://github.com/crossoverJie/Java-Interview
 - Interview-questions <https://github.com/HuangQinJian/Interview-questions>
+- itmian4 @deprecated <http://www.itmian4.com/>
 
 # Java面试题
 

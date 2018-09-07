@@ -61,6 +61,14 @@ order by ...
 # 引擎
 
 - innodb
+
+```
+在根据主索引搜索时，直接找到key所在的节点即可取出数据；
+在根据辅助索引查找时，则需要先取出主键的值，在走一遍主索引。 
+因此，在设计表的时候，不建议使用过长的字段作为主键，
+也不建议使用非单调的字段作为主键，这样会造成主索引频繁分裂
+```
+
 - myisam
 - mysql 中 myisam innodb 的区别有哪些？ <https://www.zhihu.com/question/20596402>
 
@@ -230,3 +238,18 @@ mysql -uroot -p -e "d:\log\log.txt" // 多次执行合并
 ```
 
 - 使用MySQL扩展
+
+# 查询缓存
+
+```shell
+# 开启查询缓存
+query_cache_type=1
+query_cache_size=600000
+
+set global  query_cache_type=1;
+set global  query_cache_size=600000;
+
+select sql_no_cache count(*) from usr;
+
+如果这些表（数据或结构）发生变化，那么和这张表相关的所有缓存数据都将失效。
+```

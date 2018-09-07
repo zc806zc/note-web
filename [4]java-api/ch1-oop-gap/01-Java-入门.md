@@ -4,6 +4,7 @@
 - JAVA学习的方法和过程-知乎 <https://www.zhihu.com/question/29581524/answer/44872235>
 - 博客分享 <https://juejin.im/post/586603be1b69e60063d08b7a>
 - Java 后端自学之路 <https://juejin.im/entry/5a7a9a13f265da4e865a578c>
+- http://www.runoob.com/java/java-tutorial.html
 
 ![](https://user-gold-cdn.xitu.io/2018/2/7/1616ee9f71973a2e?imageslim)
 
@@ -88,7 +89,30 @@ public class Car extends Vehicle {
   - Map | Dictionary | Hashtable | Properties
   - BitSet
 
-- Java 集合框架 <http://www.runoob.com/java/java-collections.html>
+- Java 集合框架 
+  - <http://www.runoob.com/java/java-collections.html>
+  - https://juejin.im/post/5a2f80a3f265da430406962a
+
+```java
+Collection
+
+Map 
+Map.Entry 
+SortedMap
+
+Set
+SortedSet
+
+// 抽象类
+在抽象类层面都没有涉及具体的数据结构和算法，
+只对操作这些数据结构的方法做了基本实现
+
+// 历史遗留
+Vetor,Stack,Hashtable,Properties
+
+HashMap 
+ArrayList
+```
 
 ![](http://www.runoob.com/wp-content/uploads/2014/01/java-coll.png)
 
