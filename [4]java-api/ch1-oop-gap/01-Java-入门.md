@@ -82,39 +82,7 @@ public class Car extends Vehicle {
 
 # 数据类型
 
-- 数据类型 <http://www.yiibai.com/java_data_type/>
-- Java 数据结构 <http://www.runoob.com/java/java-data-structures.html>
-
-  - ArrayList | Vector | Stack(后进先出的栈)
-  - Map | Dictionary | Hashtable | Properties
-  - BitSet
-
-- Java 集合框架 
-  - <http://www.runoob.com/java/java-collections.html>
-  - https://juejin.im/post/5a2f80a3f265da430406962a
-
-```java
-Collection
-
-Map 
-Map.Entry 
-SortedMap
-
-Set
-SortedSet
-
-// 抽象类
-在抽象类层面都没有涉及具体的数据结构和算法，
-只对操作这些数据结构的方法做了基本实现
-
-// 历史遗留
-Vetor,Stack,Hashtable,Properties
-
-HashMap 
-ArrayList
-```
-
-![](http://www.runoob.com/wp-content/uploads/2014/01/java-coll.png)
+- --> interview
 
 # 数据结构
 
