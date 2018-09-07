@@ -79,3 +79,8 @@ Web模块
 
 - 不依赖于servlet实现
 - https://gitee.com/actframework/actframework
+
+# latke
+
+- 一个类似 Spring 但以 JSON 为主的 Java Web 框架
+- https://github.com/b3log/latke

@@ -65,6 +65,18 @@ order by ...
 - mysql 中 myisam innodb 的区别有哪些？ <https://www.zhihu.com/question/20596402>
 
 - MyISAM和InnoDB详解 <http://blog.csdn.net/shuaijunlan/article/details/51519702>
+- MySQL常见的两种存储引擎：MyISAM与InnoDB的爱恨情仇 https://juejin.im/post/5b1685bef265da6e5c3c1c34
+
+```
+MyISAM更适合读密集的表，而InnoDB更适合写密集的的表
+
+一般来说，如果需要事务支持，并且有较高的并发读取频率
+(MyISAM的表锁的粒度太大，所以当该表写并发量较高时，要等待的查询就会很多了)，
+InnoDB是不错的选择。
+
+如果你的数据量很大（MyISAM支持压缩特性可以减少磁盘的空间占用），
+而且不需要支持事务时，MyISAM是最好的选择。
+```
 
 # 联结
 
