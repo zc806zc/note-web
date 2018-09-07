@@ -116,6 +116,13 @@ ArrayList
 
 ![](http://www.runoob.com/wp-content/uploads/2014/01/java-coll.png)
 
+# 数据结构
+
+- 链表和数组链表
+- 散列表和散列集
+- 数集和映像
+- 枚举和属性集
+
 # 流程控制
 
 # 异常
