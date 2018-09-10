@@ -1,6 +1,7 @@
 # 教程 && 资源
 
 - awesome-java <https://github.com/akullpp/awesome-java>
+- technology-talk https://github.com/aalansehaiyang/technology-talk
 - Java资源大全中文版 <https://github.com/jobbole/awesome-java-cn>
 - howtodoinjava <https://howtodoinjava.com/>
 - Java综合讨论 <http://www.iteye.com/forums/tag_good/Java%E7%BB%BC%E5%90%88>

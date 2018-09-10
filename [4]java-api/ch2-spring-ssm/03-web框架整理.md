@@ -84,3 +84,8 @@ Web模块
 
 - 一个类似 Spring 但以 JSON 为主的 Java Web 框架
 - https://github.com/b3log/latke
+
+# 小型
+
+- cicada https://github.com/TogetherOS/cicada   
+    - Fast lightweight HTTP service framework
