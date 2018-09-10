@@ -318,7 +318,7 @@ components/
 
 - vue多页面开发和打包的正确姿势 
   - https://juejin.im/post/5a8e3f00f265da4e747fc700
-  - https://github.com/Faithree/multiple-vue-amazing
+  - multiple-vue-amazing https://github.com/Faithree/multiple-vue-amazing
 
 - vue-multi-page <https://github.com/jarvan4dev/vue-multi-page>
 

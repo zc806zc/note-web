@@ -46,6 +46,11 @@
   - <https://juejin.im/entry/5a33290ef265da431876c832>
   - <https://juejin.im/post/5a2cf50651882510b27550ba>
 
+
+# 鉴权方式
+
+- 前后端常见的几种鉴权方式 https://juejin.im/entry/5aeffcf66fb9a07acd4da653
+
 # RPC
 
 - 面向动作
