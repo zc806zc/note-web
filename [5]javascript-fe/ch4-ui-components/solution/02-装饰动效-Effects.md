@@ -270,6 +270,7 @@ $("ul>li").hover(function() {
 
 - 打字动画
 
+  - typed.js https://github.com/mattboldt/typed.js
   - TheaterJS NICE 模仿人类行为 https://github.com/Zhouzi/TheaterJS
   - typetype <https://github.com/iamdanfox/typetype>
   - 简单 <http://www.jq22.com/webqd2098>

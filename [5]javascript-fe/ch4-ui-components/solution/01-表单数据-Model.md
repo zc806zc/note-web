@@ -220,6 +220,7 @@ function slide(range, conSlide, obj) {
 - date-fns <https://github.com/date-fns/date-fns>
 - bootstrap-datepicker <https://github.com/uxsolutions/bootstrap-datepicker>
 - bootstrap-datetimepicker<https://github.com/Eonasdan/bootstrap-datetimepicker>
+- tui.calendar @NICE IE9+ https://github.com/nhnent/tui.calendar
 - 日历一览 <http://www.jq22.com/webqd2183>
 - fullcalender | my97
 - 农历 <https://github.com/zzyss86/LunarCalendar>
@@ -737,12 +738,14 @@ rows.sort(function(a,b){
 - x-editable jquery考虑 <https://github.com/vitalets/x-editable>
 - medium-editor 原生JS IE兼容 <https://github.com/yabwe/medium-editor>
 - stackedit <https://github.com/benweet/stackedit>
+- mavonEditor https://github.com/hinesboy/mavonEditor
 - 次选
 
   - summernote <https://github.com/summernote/summernote>
   - wysiwyg <https://github.com/mindmup/bootstrap-wysiwyg/>
   - sqire
   - pell
+
 
  # Markdown编辑器 | MD 
 

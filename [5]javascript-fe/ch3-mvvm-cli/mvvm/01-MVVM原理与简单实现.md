@@ -1,5 +1,6 @@
 # MVVM
 
+- 模拟 Vue 手写一个 MVVM https://juejin.im/post/5b578682f265da0f504a5c6d
 - 剖析 Vue.js 内部运行机制 https://juejin.im/book/5a36661851882538e2259c0f
 - 面试题：你能写一个Vue的双向数据绑定吗？ https://github.com/louzhedong/blog
 - 不好意思！耽误你的十分钟，让MVVM原理还给你 <https://juejin.im/post/5abdd6f6f265da23793c4458>

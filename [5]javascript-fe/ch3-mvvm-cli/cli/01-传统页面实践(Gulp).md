@@ -1,5 +1,6 @@
 # gulp
 
+- gulp资料收集 https://github.com/Platform-CUF/use-gulp
 - 定位 ：兼容IE 不复杂的项目
 
 # 一些优化
