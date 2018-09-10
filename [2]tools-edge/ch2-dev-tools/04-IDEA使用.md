@@ -43,10 +43,14 @@ Ctrl+Shift+F9
 - 自带的rest client
 - Java程序员必备的Intellij插件 https://juejin.im/entry/5aea80346fb9a07ab9794f06
   - FindBugs
-  - GenerateAllSetter
-  - MyBatisCodeHelperPro
   - Maven Helper 用于分析jar包冲突
   - check-style 代码质量
+  - Background Image Plus 背景图片
+  - grep-console
+  
+- 其他
+  - GenerateAllSetter
+  - MyBatisCodeHelperPro $
 
 # 导入Eclipse
 
