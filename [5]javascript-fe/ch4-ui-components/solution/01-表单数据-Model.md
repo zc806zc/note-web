@@ -252,20 +252,25 @@ function slide(range, conSlide, obj) {
 
 # 分页
 
-- 简单分页 <http://www.jq22.com/webqd1246>
-- paginationjs 基于jquery https://github.com/superRaytin/paginationjs
-- twbs-pagination https://github.com/josecebe/twbs-pagination
-- am-page 基于amazeUI https://github.com/lscho/am-page
-- 与数据表格关联的分页删除数据时注意加载最适合的一页，因为可能删除了所在页的最后一条数据
-
-- 客户端分页 -> 数量较少，全部加载，前端控制显示
-    - http://www.jq22.com/jquery-info13734
-    - 带页码跳转 http://www.jq22.com/jquery-info17447
-    - 自渲染分页 丑看原理 http://www.jq22.com/jquery-info13810
+- 注意
+    - 删除数据时注意加载最适合的一页，可能删除了所在页的唯一一条数据
 - 与数据表格的结合
     
     - 滚动条
     - 水平拉伸 与 省略号
+
+- paginationjs 基于jquery https://github.com/superRaytin/paginationjs
+- twbs-pagination https://github.com/josecebe/twbs-pagination
+- am-page 基于amazeUI https://github.com/lscho/am-page
+
+- 客户端分页 
+    - 数量较少，全部加载，前端控制显示
+    - http://www.jq22.com/jquery-info13734
+    - 带页码跳转 http://www.jq22.com/jquery-info17447
+    - 自渲染分页 丑看原理 http://www.jq22.com/jquery-info13810
+
+- 栗子
+    - 简单分页 <http://www.jq22.com/webqd1246>
 
 # 时间轴
 
