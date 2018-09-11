@@ -68,45 +68,6 @@
   - 实验楼 <https://www.shiyanlou.com/courses/>
 
 
-# 博客专家
-
-- 100个高质量Java开发者博客 http://www.importnew.com/7469.html
-- Jboss团队 <http://in.relation.to/>
-- Tim Yang <https://timyang.net/>
-- 张开涛 <http://www.iteye.com/blogs/subjects/kaitao-springmvc>
-- 翟永超
-- chenssy <http://blog.csdn.net/chenssy>
-- 杜琪 <https://www.jianshu.com/u/28d7875c78df>
-- 纯洁的微笑 
-- mkyong <http://www.mkyong.com/>
-- 其他
-
-  - 孤傲苍狼 <http://www.cnblogs.com/xdp-gacl/category/574705.html>
-  - 书海陶然 <https://www.jianshu.com/u/657c611b2e07>
-  - 海子 看初学基础 <http://www.cnblogs.com/dolphin0520/>
-  - 曹胜欢 <http://blog.csdn.net/csh624366188/>
-  - 骆昊 <http://blog.csdn.net/jackfrued>
-
-  - 灰狐 <http://www.huihoo.com/>
-
-```
-Adam Bien 
-https://twitter.com/AdamBien/
-http://www.adam-bien.com/roller/abien/
-
-Antonio Goncalves
-https://antoniogoncalves.org/
-
-Henrik Warne
-https://henrikwarne.com/
-
-Lars Vogel
-http://www.vogella.com/
-
-Peter Verhas
-https://javax0.wordpress.com/
-```
-
 # 文档
 
 - SE文档 <http://www.oracle.com/technetwork/cn/java/javase/documentation/api-jsp-136079-zhs.html>
