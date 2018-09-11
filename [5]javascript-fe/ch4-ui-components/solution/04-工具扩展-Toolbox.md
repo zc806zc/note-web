@@ -84,6 +84,9 @@
   - <https://github.com/videojs/video.js>
   - open source HTML5 & Flash video player
 
+- jplayer https://github.com/jplayer/jPlayer
+    - 兼容 IE8+ 
+
 - flv.js
 
   - <https://github.com/Bilibili/flv.js>
@@ -93,7 +96,10 @@
   - <https://github.com/sampotts/plyr>
 
 - DPlayer 
+  - 一个很好看的弹幕视频播放
   - https://github.com/MoePlayer/DPlayer
+
+
 
 # 音频
 

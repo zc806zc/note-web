@@ -715,7 +715,6 @@ rows.sort(function(a,b){
 
 # 进度条
 
-
 - nprogress <https://github.com/rstacruz/nprogress>
 - pace https://github.com/HubSpot/pace
 
@@ -744,6 +743,7 @@ rows.sort(function(a,b){
 - medium-editor 原生JS IE兼容 <https://github.com/yabwe/medium-editor>
 - stackedit <https://github.com/benweet/stackedit>
 - mavonEditor https://github.com/hinesboy/mavonEditor
+- slate 一个完全可定制的用于创建富文本编辑器的框架 https://github.com/ianstormtaylor/slate
 - 次选
 
   - summernote <https://github.com/summernote/summernote>
