@@ -6,6 +6,7 @@
   - <http://www.ityouknow.com/>
   - <https://juejin.im/user/57280c611532bc0062874823>
 - 基于SpringBoot的后台管理系统 <https://juejin.im/post/5a9cfc6851882555677e0666>
+- 给你一份Spring Boot知识清单 https://juejin.im/entry/5b94cf495188255c3a2d26f8  
 
 # 定制启动banner
 

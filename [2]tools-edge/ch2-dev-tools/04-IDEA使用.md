@@ -161,3 +161,17 @@ Build project automatically
 
 - 超集 
 - 如果同时也要写后台用IDEA
+
+# 问题
+
+```
+https://bbs.csdn.net/topics/391836701
+
+过去这么久了。都没有满意答案嘛，换了新公司遇到了这个问题，浪费了好多时间，个人总结的原因是：
+如果项目在Myeclipse或者eclipse里面跑起没问题，idea遇到编译错误，多半是编译问题，这里引用大佬的一句话，Eclipse编译代码时，使用的是自带的JDT（Java Development Tools），而Maven默认使用的是JAVA_HONE中的javac，而javac相对JDT的检查机制来说，更加的严格，所以导致Eclipse可以编译通过，而用Maven编译会报错的结果。我们的idea编译默认是Javac。这就是为什么Myeclipse跑起没问题了。
+解决办法如下：
+
+在idea找到File | Settings | Build, Execution, Deployment | Compiler | Java Compiler，右侧的Use compiler项中把Javac 改成Eclipse
+
+
+```
