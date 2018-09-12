@@ -4,33 +4,51 @@
 
 # 你真的会写Java吗
 
-- 一个3、4年的JAVAer讲黑科技 
-- <https://juejin.im/entry/59ae07d9f265da249600f0ec>
-- https://github.com/lrwinx
-- (IDE?)eclipse -> IDEA
-- com.xxx.domain -> com.xxx.entity
-- 使用lombok
-  - 尽管可以右键快速生成，但那生成的都是无营养的代码
-  - 链式操作
+- 你真的会写Java吗 <https://juejin.im/entry/59ae07d9f265da249600f0ec>
+  - https://github.com/lrwinx
+  - (IDE?)eclipse -> IDEA
+  - com.xxx.domain -> com.xxx.entity
+  - 使用lombok
+    - 尽管可以右键快速生成，但那生成的都是无营养的代码
+    - 链式操作
+  - DTO转化的时候一直使用set进行属性赋值时, 使用浅拷贝方法?
+  - 设计模式: 所有的模式并不是凭空想象出来的，都是基于重构
+  - 业务驱动技术 > 技术驱动业务
+  - 结对编程
 
-- DTO转化的时候一直使用set进行属性赋值时, 使用BeanUtils.copyProperties浅拷贝方法
+    - 多看成熟框架的源码
+    - 多回头看自己的代码
+    - 勤于重构
 
-- 设计模式: 所有的模式并不是凭空想象出来的，都是基于重构
-- 业务驱动技术 > 技术驱动业务
-- 结对编程
+  - UML就是你说话的语言
 
-  - 多看成熟框架的源码
-  - 多回头看自己的代码
-  - 勤于重构
+    - 类图
+    - 时序图
 
-- UML就是你说话的语言
+  - clean code
 
-  - 类图
-  - 时序图
+    - 聊聊clean code <https://tech.meituan.com/clean-code.html>
 
-- clean code
+```java
+// lombok实现链式
+@Accessors(chain = true)
 
-  - 聊聊clean code <https://tech.meituan.com/clean-code.html>
+// BeanUtils.copyProperties
+public interface DTOConvert<S,T> {
+    T convert(S s);
+}
+
+public class UserInputDTOConvert implements DTOConvert {
+  @Override
+  public User convert(UserInputDTO userInputDTO) {
+    User user = new User();
+    BeanUtils.copyProperties(userInputDTO,user);
+    return user;
+  }
+}
+
+User user = new UserInputDTOConvert().convert(userInputDTO);
+```
 
 # lombok
 
