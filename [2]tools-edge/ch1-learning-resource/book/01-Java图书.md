@@ -45,6 +45,6 @@
 - 踩坑
 
 ```
-一步一步学Spring Boot2 ： 细碎不深入
+一步一步学Spring Boot2 ： 细碎不深入，偏基础 @deprecated
 
 ```

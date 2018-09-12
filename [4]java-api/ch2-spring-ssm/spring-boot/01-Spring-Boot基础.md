@@ -10,11 +10,11 @@
 
 # 定制启动banner
 
-  - <https://juejin.im/post/5a9ff0576fb9a028d4442330>
-  - 图片->ASCII http://picascii.com/
-  - 字母->ASCII http://network-science.de/ascii/
-  - http://www.ascii-art-generator.org/
-  - ...
+- <https://juejin.im/post/5a9ff0576fb9a028d4442330>
+- 图片->ASCII http://picascii.com/
+- 字母->ASCII http://network-science.de/ascii/
+- http://www.ascii-art-generator.org/
+- ...
 
 # Spring Boot配置
 
@@ -83,12 +83,28 @@ th:value="${movie.createDate} ? ${#dates.format(movie.createDate, 'yyyy-MM-dd')}
 - 并发事务导致的问题
     
     - 脏读
-    - 幻读
+    - 幻读 ：T1 -> T2插入数据 -> T1发现原本不存在的记录
     - 不可重复读
 
 # 过滤器和监听器
 
+- Filter -> URL级别的权限访问控制 过滤敏感词汇 压缩详细信息
+    - Filters -> FilterChain
+    - doFilter()
+
+```java
+@ServletCommponentScan
+```
+
+- Listener -> 统计在线人数和在线用户
+
+```java
+@WebListener
+```
+
 # 全局异常处理和Retry重试
+
+# 应用监控
 
 # 分布式文件系统
 
