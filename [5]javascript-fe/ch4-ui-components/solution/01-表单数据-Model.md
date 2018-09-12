@@ -215,6 +215,7 @@ function slide(range, conSlide, obj) {
 
 - moment.js
 - day.js moment.js的轻量替换
+- spacetime 轻量级时区库 https://github.com/spencermountain/spacetime
 - flatpickr <https://github.com/chmln/flatpickr>
 - 时间日期处理 <https://github.com/datejs/Datejs>
 - date-fns <https://github.com/date-fns/date-fns>

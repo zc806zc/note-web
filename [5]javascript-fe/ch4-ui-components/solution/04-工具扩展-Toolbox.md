@@ -105,6 +105,7 @@
 
 - howler <https://github.com/goldfire/howler.js>
 - APlayer https://github.com/MoePlayer/APlayer
+- tone.js 交互式音频框架 https://github.com/Tonejs/Tone.js
 
 --------------------------------------------------------------------------------
 

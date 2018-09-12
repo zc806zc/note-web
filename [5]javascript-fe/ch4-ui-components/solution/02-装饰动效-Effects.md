@@ -31,7 +31,7 @@
   - <https://github.com/tobiasahlin/SpinKit>
 
 
-# 文章 | 阅读 
+# 文章 | 阅读体验 
 
 - 超链接悬浮上去时, 打开新窗口图标提示
 
@@ -165,6 +165,8 @@ span:nth-child(2) {
 
   - wow
   - aos <https://github.com/michalsnik/aos>
+
+- Rythm.js 页面跳舞 https://github.com/Okazari/Rythm.js
 
 # 交互 | 手势
 
