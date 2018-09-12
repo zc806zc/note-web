@@ -11,7 +11,8 @@
 
 - 使用工具
 
-  - Atom + Atom beautify(格式化)
+  - vscode
+  - Atom + Atom beautify(格式化) @deprecated 卡顿
   - 辅助chrome插件
 
     - 目录 octotree / insight.io
@@ -19,10 +20,10 @@
 
 - 直接记录的原因
 
-  - github pages -> 人懒 | 经常修改文件
+  - github pages -> 人懒 | 经常修改文件和结构
   - gitbook -> 生成的文件结构混乱 | web拖拽交互可能丢失文件 | 国内网络
   - 看云 -> 空间限制
-  - 语雀 -> $?
+  - 语雀 -> $?,体验较好,例如思维导图，但是不知道怎么大规模调整目录结构
 
 - 其他奥义
 

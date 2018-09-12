@@ -8,6 +8,7 @@
 - HTML5 不基于 SGML，因此不需要对DTD进行引用，但是需要doctype来规范浏览器的行为
 - 网站 
   - html5tricks https://www.html5tricks.com/
+
 # HTML5.2
 
 - <https://bitsofco.de/whats-new-in-html-5-2>
@@ -138,6 +139,12 @@ details summary {display: auto; }
 details[open] * {display: auto; }
 // <menu><menuitem> // 类似右键菜单 支持不好
 ```
+
+- 语义化建议
+
+  - 尽可能少的使用无语义的标签div和span
+  - 既可以使用div或者p时，尽量用p, 因为p在默认情况下有上下间距，对兼容特殊终端有利
+  - 
 
 # HTML校验
 

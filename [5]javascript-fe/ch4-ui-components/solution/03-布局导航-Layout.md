@@ -150,9 +150,7 @@ DragDrop.prototype.mouseMove = function(e, obj) {
 }
 ```
 
-# 浏览器调整
-
-# 可调大小面板
+# 可调大小面板 | 浏览器调整
 
 - <https://www.imooc.com/learn/193>
 
@@ -169,13 +167,12 @@ DragDrop.prototype.mouseMove = function(e, obj) {
 
 - animatescroll.js <http://plugins.compzets.com/animatescroll/>
 
-- 放手机里的滚屏实现
 - 栗子
 
   - jQuery实现自定义滚动条 <https://www.imooc.com/learn/675>
   - <http://www.jq22.com/webqd2618>
   - <http://www.jq22.com/webqd1910>
-
+  - 放手机里的滚屏实现
 
 ```javascript
 <a onclick="$('.detail').animatescroll({padding:71});">Screens</a>
