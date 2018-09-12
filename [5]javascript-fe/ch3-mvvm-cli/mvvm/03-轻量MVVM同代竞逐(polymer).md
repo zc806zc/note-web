@@ -60,6 +60,49 @@ var Hello = {
 m.mount(root, Hello)
 ```
 
+# Riot
+
+- 基于组件的开发模型, 小巧
+- <https://github.com/riot/riot> Simple and elegant component-based UI library
+
+```jsx
+<todo>
+  <h3>TODO</h3>
+
+  <ul>
+    <li each={ item, i in items }>{ item }</li>
+  </ul>
+
+  <form onsubmit={ handleSubmit }>
+    <input ref="input">
+    <button>Add #{ items.length + 1 }</button>
+  </form>
+
+  this.items = []
+
+  handleSubmit(e) {
+    e.preventDefault()
+    var input = this.refs.input
+    this.items.push(input.value)
+    input.value = ''
+  }
+</todo>
+
+<!-- 挂载 -->
+<todo></todo>
+<script>riot.mount('todo')</script>
+
+riot.mount('todo', {
+    title: 'I want to behave!',
+    items: [
+    { title: 'Avoid excessive caffeine', done: true },
+    { title: 'Hidden item',  hidden: true },
+    { title: 'Be less provocative'  },
+    { title: 'Be nice to people' }
+    ]
+})
+```
+
 # moon
 
 - IE9+
@@ -195,11 +238,6 @@ function countStore (state, emitter) {
 
 - 一个事件驱动、可扩展的JS架构
 - https://github.com/aurajs/aura
-
-# Riot
-
-- 基于组件的开发模型, 小巧
-- <https://github.com/riot/riot> Simple and elegant component-based UI library
 
 
 
