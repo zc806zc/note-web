@@ -41,6 +41,11 @@ Ctrl+Shift+F9
 # IDEA常用插件
 
 - 自带的rest client
+
+```
+ctrl+shift+A -> test restful web service
+```
+
 - Java程序员必备的Intellij插件 https://juejin.im/entry/5aea80346fb9a07ab9794f06
   - FindBugs
   - Maven Helper 用于分析jar包冲突
