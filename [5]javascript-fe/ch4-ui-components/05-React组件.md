@@ -65,3 +65,7 @@
 # Canvas
 
 - react-canvas https://github.com/Flipboard/react-canvas
+
+# 拖拽
+
+- react-draggable https://github.com/mzabriskie/react-draggable

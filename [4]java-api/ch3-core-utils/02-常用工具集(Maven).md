@@ -295,6 +295,11 @@
     <artifactId>spring-boot-starter-aop</artifactId>
     <version>${spring.boot.version}</version>
 </dependency>
+<!-- log4j2 -->
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-log4j2</artifactId>
+</dependency>
 
 <!-- 校验 -->
 <dependency>
