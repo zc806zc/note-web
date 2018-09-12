@@ -76,6 +76,7 @@ ctrl+shift+A -> test restful web service
 
 # 常见问题
 
+- 首先确定java7 java8版本
 - IDEA 内存溢出问题
 
 ```
@@ -86,6 +87,7 @@ http://blog.csdn.net/fyqcdbdx/article/details/46788915
 - 找不到符号 -> utf-8统一编码
 - 忽略node_modules https://www.cnblogs.com/chengwb/p/6183440.html
 
+
 # 使用正则表达式进行搜索替换
 
 ```html
@@ -93,24 +95,52 @@ tppabs="h[^"]*"
 /\*tpa=.*\*/
 ```
 
-# 热部署
+# 热部署 
 
-- 节约生命，使用热部署
 - <https://www.imooc.com/video/16066>
-
-- jRebel 热部署插件
-
 - twitter激活
 - <https://zeroturnaround.com/software/jrebel/quickstart/intellij/>
-
 - SpringBoot项目使用JRebel热部署 <http://blog.csdn.net/qq_31230915/article/details/78069148>
-
 - <https://www.cnblogs.com/yjmyzz/p/use-devtools-of-spring-boot-framework.html>
 
 ```shell
 IDEA设置 默认项一定要勾上此项，否则无效
 Build project automatically
 ```
+
+- spring-boot-devtools
+- 或者jRabel  
+- SpringBoot通过配置devtools实现热部署 https://jingyan.baidu.com/article/870c6fc367b4d7b03fe4beba.html
+- @NICE spring boot 之热部署 <https://www.cnblogs.com/bingshu/p/6876030.html>
+- Spring DevTools 介绍 <http://blog.csdn.net/isea533/article/details/70495714>
+
+```xml
+<dependency>  
+  <groupId>org.springframework.boot</groupId>  
+  <artifactId>spring-boot-devtools</artifactId>
+
+  <!-- here -->
+  <optional>true</optional>  
+</dependency>
+
+<plugin>  
+    <groupId>org.springframework.boot</groupId>  
+    <artifactId>spring-boot-maven-plugin</artifactId>  
+
+    <!-- here -->
+    <configuration>  
+        <fork>true</fork>
+        <addResources>true</addResources>  
+    </configuration>  
+</plugin> 
+
+<!-- 
+  IDEA设置
+  File->Setting->Build,…->Compiler  =>  project automatically
+  ctrl+shift+a Registry => compiler.automake.allow.when.app.running 
+-->
+```
+
 
 # 常用快捷键
 
