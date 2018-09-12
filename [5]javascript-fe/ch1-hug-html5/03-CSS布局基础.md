@@ -112,16 +112,13 @@ const nav = document.querySelector("[rel='js-site-navigation']")
 - id声明会覆盖class
 - class中的排序不重要,表中的顺序很重要
 
-# 盒模型
+# 盒模型与BFC
 
 - display + position + float
-
-# BFC
-
-- Block formatting context 块级格式化上下文
-- 它决定了元素如何对其内容进行定位,以及与其他元素的关系和相互作用，处于不同BFC中的元素是不会互相干扰的
-
-- BFC与IFC <https://segmentfault.com/a/1190000012993668>
+- DIV + CSS 多个div嵌套 -> 结构考量 + 性能考量
+- BFC : Block formatting context 块级格式化上下文
+  - 它决定了元素如何对其内容进行定位,以及与其他元素的关系和相互作用，处于不同BFC中的元素是不会互相干扰的
+  - BFC与IFC <https://segmentfault.com/a/1190000012993668>
 
 - 哪些元素会生成BFC
 
@@ -151,10 +148,6 @@ const nav = document.querySelector("[rel='js-site-navigation']")
 - overflow:hidden
 - 父级div也浮动，需要定义宽度
 - br + clear:both
-
-# div + css
-
-- 多个div嵌套 -> 结构考量 + 性能考量 
 
 # 常用布局
 
@@ -235,7 +228,7 @@ overflow: hidden; // 触发生成BFC,使浮动元素也参与计算
 - hotcss 移动端布局方案探究 https://github.com/imochen/hotcss
 - 淘宝、网易移动端 px 转换 rem 原理，Vue-cli 实现 px 转换 rem https://juejin.im/post/5afba3c5f265da0b9e653b6c
 
-# 居中
+# 居中若干
 
 - 这15种CSS居中的方式，你都用过哪几种？ https://juejin.im/entry/5aead956f265da0ba76f9488
   - 利用“精灵元素” -> 在父容器内放一个100%高度的伪元素，让文本和伪元素垂直对齐，从而达到垂直居中的目的
@@ -261,23 +254,6 @@ overflow: hidden; // 触发生成BFC,使浮动元素也参与计算
     width: 20rem;
 }
 ```
-
-# 样式控制 | 节流与去抖
-
-- <https://juejin.im/post/5a813b4a5188257a6854d26e>
-
-- 自适应内部元素
-
-- 精确控制表格列宽
-
-  - CSS计算好 100%
-  - JS算法
-
-- 根据兄弟元素的数量来设置样式
-
-- 满幅的背景 定宽的内容
-
-- 紧贴底部的页脚
 
 # 响应式布局
 
@@ -340,6 +316,24 @@ overflow: hidden; // 触发生成BFC,使浮动元素也参与计算
 # Grid
 
 - 网格布局
+
+# 样式控制 | 节流与去抖
+
+- <https://juejin.im/post/5a813b4a5188257a6854d26e>
+
+- 自适应内部元素
+
+- 精确控制表格列宽
+
+  - CSS计算好 100%
+  - JS算法
+
+- 根据兄弟元素的数量来设置样式
+
+- 满幅的背景 定宽的内容
+
+- 紧贴底部的页脚
+
 
 # 预处理与后处理语言
 
@@ -407,12 +401,18 @@ SCSS 是 Sass 3 引入新的语法，
 
 # 封装样式库
 
-- 百度开源 基于less的mixin <https://github.com/ecomfe/est>
-- sassCore 实用scss库 
-  - sandal https://github.com/marvin1023/sandal
-  - <https://github.com/marvin1023/sassCore>
 - 编写自己的代码库 https://juejin.im/post/5a0c18196fb9a045023b2ddf
-- CSS集
+
+- 低级css | 助手类
+
+  - basscss
+  - tychyons
+  - 百度开源 基于less的mixin <https://github.com/ecomfe/est>
+  - sassCore 实用scss库 
+    - sandal https://github.com/marvin1023/sandal
+    - <https://github.com/marvin1023/sassCore>
+
+- 常用CSS
 
   - 月报常用CSS <https://github.com/jsfront/src/blob/master/css.md>
   - CSS常用Mixin封装 <https://juejin.im/post/5a31f53f51882555cc41deda>
