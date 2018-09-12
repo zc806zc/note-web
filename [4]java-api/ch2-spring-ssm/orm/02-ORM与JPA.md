@@ -1,6 +1,26 @@
+# ORM
+
+- Ebean：支持快速数据访问和编码的ORM框架。官网
+- EclipseLink：支持许多持久化标准，JPA、JAXB、JCA和SDO。
+- Hibernate
+- MyBatis：带有存储过程或者SQL语句的耦合对象（Couples object）
+- OrmLite：轻量级开发包，免除了其它ORM产品中的复杂性和开销
+- Nutz：另一个SSH。官网，Github，论坛
+- JFinal：JAVA WEB + ORM框架。官网，Github
+- Apache OpenJPA: 实现了 EJB 3.0 中的 JPA 标准,为开发者提供功能强大、使用简单的持久化数据管理框架。
+
 # JPA
 
 - https://www.w3cschool.cn/java/jpa-entitymanager.html
+
+- 实现
+    - hibernate
+    - EclipseLink
+    - OpenJPA
+
+- 子类
+    - ExpandJpaRepository -> JpaRepository -> PagingAndSortingRepository -> CrudRepository -> Repository
+
 - Spring Data JPA中常用的注解详解 https://www.jianshu.com/p/1b759ef26ff3
 
 ```java
@@ -21,6 +41,8 @@ public enum GenerationType {
 @Embeddable
 
 @ElementCollection
+
+@NoRespositoryBean 此接口不是一个Repository Bean
 ```
 
 - 配置
@@ -36,6 +58,23 @@ spring.jpa.hibernate.ddl-auto=create
 spring.jpa.database-platform=org.hibernate.dialect.MySQL5InnoDBDialect
 ```
 
+- 建议 
+
+    - 使用jpa要放弃hibernate的关系映射部分，保持开发的简洁和灵活性
+
+# 实践
+
+- Spring Boot：MyBatis项目通过JPA实现自动创建数据表 https://www.jianshu.com/p/6378f2c0fe9c
+
+```java
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.hibernate.naming.physical-strategy=org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+testCompile("org.springframework.boot:spring-boot-starter-data-jpa")
+compile 'org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final'
+```
+ 
 - 联合主键
 
 ```java
@@ -60,19 +99,7 @@ public class RoleUserDO  {
 List<UserDO> findUsersByRole(@Param("roleId") Long roleId);
 ```
 
-# 实践
+# 关于接口增删改查的增强
 
-- Spring Boot：MyBatis项目通过JPA实现自动创建数据表 https://www.jianshu.com/p/6378f2c0fe9c
-
-```java
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
-spring.jpa.hibernate.naming.physical-strategy=org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-
-testCompile("org.springframework.boot:spring-boot-starter-data-jpa")
-compile 'org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final'
-```
- 
-- 建议 
-
-    - 使用jpa要放弃hibernate的关系映射部分，保持开发的简洁和灵活性
+- tkmybatis的连缀语法
+- 自定义封装

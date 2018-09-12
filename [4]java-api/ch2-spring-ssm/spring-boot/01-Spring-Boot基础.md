@@ -22,6 +22,9 @@
 - JDK要求1.8以上的版本，Tomcat必须是8.0以上的版本
 - spring boot内置了tomcat等不需要单独配置
 - 打包成jar
+- properties优先级高于yml
+- @SpringBootApplication = @EnableAutoConfiguration + @ComponentScan + @SpringBootConfiguration
+- spring-boot-starter-parent 使用以后常用的包可以省略version
 
 ```xml
 <build>
@@ -70,12 +73,18 @@ th:value="${movie.createDate} ? ${#dates.format(movie.createDate, 'yyyy-MM-dd')}
 
 # 事务支持
 
-- 
+- 类级别事务 | 方法级事务 -> NullPointException
 
 ```
 @EnableTransactionManagement
 @Transactional
 ```
+
+- 并发事务导致的问题
+    
+    - 脏读
+    - 幻读
+    - 不可重复读
 
 # 过滤器和监听器
 
