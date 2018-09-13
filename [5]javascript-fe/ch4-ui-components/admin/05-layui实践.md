@@ -10,6 +10,11 @@
 - CDN
     - https://layui.hcwl520.com.cn/
 
+```html
+<link rel="stylesheet" type="text/css" href="http://layui.hcwl520.com.cn/layui/css/layui.css?v=201801090202" />
+<script src="http://layui.hcwl520.com.cn/layui/layui.js?v=201801090202"></script>
+```
+
 # layuiAdmin
 
 - http://www.layui.com/admin
