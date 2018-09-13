@@ -5,13 +5,18 @@
 - 经典工具库
 
   - underscore
+    - 兼容IE8+需要 compat版本
     - https://github.com/jashkenas/underscore/
     - 文档 http://www.css88.com/doc/underscore/
   - lodash 
     - <https://github.com/lodash/lodash>
     - 文档 http://www.css88.com/doc/lodash/
-  - ramda <https://github.com/ramda/ramda>
-  - licia 史上最全 <https://github.com/liriliri/licia>
+  - ramda 
+    - <https://github.com/ramda/ramda>
+    - 文档 http://ramda.cn/docs/#
+  - licia 史上最全 
+    - <https://github.com/liriliri/licia>
+    - doc https://eustia.liriliri.io/module.html
 
 - 30-seconds-of-code
 
@@ -108,10 +113,5 @@ class样式操作 // jquery
 
 - eventproxy https://github.com/JacksonTian/eventproxy 
   - 移除被广为诟病的深度callback嵌套问题
-  - 
 
 > An implementation of task/event based asynchronous pattern
-
-```js
-
-```

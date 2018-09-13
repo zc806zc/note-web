@@ -93,6 +93,10 @@
   - <https://www.imooc.com/video/12474>
   - <https://www.imooc.com/video/12461>
 
+# SSM
+
+- Spring+SpringMVC+Mybatis+easyUI后台管理系统 https://github.com/ZHENFENG13/perfect-ssm
+
 # 管理系统 | 权限 | 综合
 
 - 后台管理框架 https://gitee.com/explore/starred/back-stage-management
