@@ -1,13 +1,11 @@
 # Redis
 
-- 教程
+- 教程 <http://www.yiibai.com/redis/>
+- Redis从入门到实践 <https://juejin.im/post/5a912b3f5188257a5c608729>
+- Redis 深度历险：核心原理与应用实践 https://juejin.im/book/5afc2e5f6fb9a07a9b362527
 
-  - <http://www.yiibai.com/redis/>
-  - Redis从入门到实践 <https://juejin.im/post/5a912b3f5188257a5c608729>
-
-- 安装
-
-  - <https://github.com/MSOpenTech/redis/releases>
+- 安装 <https://github.com/MSOpenTech/redis/releases>
+  - redisClient http://www.uzzf.com/soft/78115.html
 
 ```javascript
 // win
@@ -59,7 +57,7 @@ dbfilename dump.rdb // 指定本地数据库名
 
 - 基础
 
-```javascript
+```js
 key-value存储系统
 日志型
 
@@ -85,7 +83,11 @@ jpg图片或者序列化的对象
 特别适合存储对象
 HMSET user:1 username runoob password runoob points 200
 HGETALL user:1
+```
 
+- 操作
+
+```js
 // List（列表）
 简单的字符串列表，按照插入顺序排序
 127.0.0.1:6379> lpush luo java
@@ -130,7 +132,3 @@ redis 127.0.0.1:6379> ZRANGEBYSCORE runoob 0 1000
 2) "mongodb"
 3) "rabitmq"
 ```
-
-# 分布式缓存Redis使用心得
-
-- [http://mp.weixin.qq.com/s?__biz=MzI4NTA1MDEwNg==∣=402299559&idx=2&sn=f67df90675783b8e5cc1403b9cb26bfb&scene=0&from=groupmessage&isappinstalled=0](http://mp.weixin.qq.com/s?__biz=MzI4NTA1MDEwNg==&mid=402299559&idx=2&sn=f67df90675783b8e5cc1403b9cb26bfb&scene=0&from=groupmessage&isappinstalled=0)
