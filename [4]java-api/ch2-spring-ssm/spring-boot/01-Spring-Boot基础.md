@@ -104,7 +104,36 @@ th:value="${movie.createDate} ? ${#dates.format(movie.createDate, 'yyyy-MM-dd')}
 
 # 全局异常处理和Retry重试
 
+- EmbeddedServletContainerCustomizer 自定义错误页面
+- @ControllerAdvice(basePackages={"com.example.demo"})
+- @ExceptionHandler
+
+- Retry重试机制
+
+```java
+// 首先全局
+@EnableRetry
+
+@Override
+@Retryable(value= {BusinessException.class},maxAttempts = 5,backoff = @Backoff(delay = 5000,multiplier = 2))
+public AyUser findByNameAndPasswordRetry(String name, String password) {
+    System.out.println("[findByNameAndPasswordRetry] 方法失败重试了！");
+    throw new BusinessException();
+}
+```
+
 # 应用监控
+
+```py
+# 指定访问这些监控方法的端口
+management.port
+# 指定地址，比如只能通过本机监控，可以设置 management.address = 127.0.0.1
+management.address=127.0.0.1
+# 敏感信息访问限制，
+endpoints.bean.sensitive=false
+# 设置关闭安全限制
+anagement.security.enabled=false
+```
 
 # 分布式文件系统
 
