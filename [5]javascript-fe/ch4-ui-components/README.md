@@ -155,5 +155,5 @@
 
 # 参考
 
-- 肯定会有重叠，按照功能划分
-- ant design > uikit > bulma
+- 组件划分会有重叠，按照侧重点分类
+- 参考: ant design > uikit > bulma
