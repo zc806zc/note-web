@@ -231,7 +231,7 @@ $(function() {
 
 --------------------------------------------------------------------------------
 
-# 弹框 | 相册 | 图片预览
+# 弹框 | 相册 | 图片预览 | gallery
 
 - 弹框设计
 
@@ -256,9 +256,13 @@ $(function() {
 
 - 图片预览
   - viewer.js IE8+ 滚轮放大缩小 
+    - 原生 | jquery的版本
     - https://github.com/fengyuanchen/viewer
     - http://www.jq22.com/jquery-info6536
-    
+  - lightGallery 
+    - 基于jquery
+    - https://github.com/sachinchoolur/lightGallery
+
 - 其他
   - lhgdialog
   - izimodal <https://github.com/dolce/iziModal>
@@ -269,7 +273,6 @@ $(function() {
   - jQuery弹出窗口可移动、缩放 <http://www.jq22.com/webqd3029>
   - JS简单 <http://www.jq22.com/webqd2525>
   - <http://www.jq22.com/webqd2001>
-
 
 # 提示标签 | Tooltip
 
