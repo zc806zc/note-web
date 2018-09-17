@@ -4,6 +4,10 @@
 - 下载 https://www.mongodb.com/download-center#community
 - 系统服务方式运行 https://docs.mongodb.com/manual/reference/configuration-options
 - 安装教程 <http://www.runoob.com/mongodb/mongodb-window-install.html>
+- 可视化客户端
+
+    - mongodbmanager https://www.mongodbmanager.com/download
+    - Robo3T https://robomongo.org/download
 
 - windows安装
     - 配置环境变量!!
@@ -163,7 +167,3 @@ JSON / XML
 缓存
 规模
 ```
-
-# 可视化客户端
-
-- mongodbmanager https://www.mongodbmanager.com/download
