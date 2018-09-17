@@ -21,11 +21,13 @@
 
 # 加载等待
 
+- loaders.css https://github.com/ConnorAtherton/loaders.css
+- load-awesome https://github.com/danielcardoso/load-awesome
 - 效果集
 
   - 小人转圈圈 NICE <https://codepen.io/flashingmoose/pen/vNQELw>
 
-- 加载
+- 栗子
 
   - <https://codepen.io/collection/jifIK/>
   - <https://github.com/tobiasahlin/SpinKit>
