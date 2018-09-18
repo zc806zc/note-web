@@ -1,30 +1,20 @@
+# 资源
+
+- React 开源项目合集整理 <https://juejin.im/entry/5819987ca22b9d0067a32ab4>
+
 # React学习项目
 
 - 一个 react + redux 的完整项目 和 个人总结 NICE <https://github.com/bailicangdu/react-pxq>
 
-# 资源
+# React后台管理系统
 
-- React 开源项目合集整理 <https://juejin.im/entry/5819987ca22b9d0067a32ab4>
+--> 
 
 # CMS
 
 - relax <https://github.com/relax/relax>
 
   - New generation CMS on top of React, Redux and GraphQL
-
-# React后台管理系统
-
-- react-admin <https://github.com/yezihaohao/react-admin>
-- react+redux+webpack+ES6+antd的SPA的后台管理框架demo <https://github.com/duxianwei520/react>
-- @NICE<https://github.com/zuiidea/antd-admin>
-- admin-on-rest <https://github.com/marmelab/admin-on-rest>
-
-  - 原来废弃 <https://github.com/marmelab/ng-admin-react>
-
-- 基于antd <https://github.com/jiangxy/react-antd-admin>
-
-- <https://github.com/react-redux-antd-es6/react>
-- <https://github.com/start-react/sb-admin-react>
 
 # React 音乐播放器
 

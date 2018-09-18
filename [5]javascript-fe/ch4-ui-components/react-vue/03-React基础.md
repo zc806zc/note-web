@@ -1,7 +1,6 @@
 # React资源
 
 - awesome-react https://github.com/enaqx/awesome-react
-- Ant Design 实战教程 https://www.yuque.com/ant-design/course 
 - react-redux-links <https://github.com/markerikson/react-redux-links>
 - react-boilerplate https://github.com/react-boilerplate/react-boilerplate
 
