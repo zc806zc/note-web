@@ -9,7 +9,6 @@
   - <http://cssicon.space/#/>
   - svg4everybody <https://github.com/jonathantneal/svg4everybody>
   - feather <https://github.com/feathericons/feather>
-
   - Snap.svg
 
     - <https://github.com/adobe-webplatform/Snap.svg>
@@ -18,6 +17,12 @@
 
   - 大量象形文字 <https://github.com/ryanoasis/nerd-fonts>
 
+# CSS图标
+
+- icono 
+  - One tag One icon, no font or svg, Pure CSS
+  - https://github.com/saeedalipoor/icono
+  - http://git.io/icono
 
 # 加载等待
 
