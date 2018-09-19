@@ -5,41 +5,19 @@
 - 老板让我十分钟上手nx-admin https://juejin.im/post/5b43226c51882519ad616c2a        
     - nx-admin https://github.com/mgbq/nx-admin
 
-# 权限登录
+# 展望
 
-- vue权限路由实现方式总结 https://juejin.im/post/5b5bfd5b6fb9a04fdd7d687a
-- vuejs2-authentication-tutorial https://auth0.com/blog/vuejs2-authentication-tutorial/
-  - https://github.com/manojkumar3692/Vuejs-Authentication
-- Vue-Access-Control https://github.com/tower1229/Vue-Access-Control
-- token存到cookie -> 用token拉取user_info与role -> 路由(router.addRoutes) -> vuex渲染侧边
-- 页面刷新， vuex的数据也会丢失，要重复上述操作
-- token有效期： session与后台刷新
-- 前后端权限控制 当然都要做 但不提倡后台吐出这个菜单(维护)
-- 按钮级别权限控制
-    - 颗粒度
-    - 先考虑页面设计是否合理
+- Vue 2017 现状与展望 https://mp.weixin.qq.com/s?__biz=MzUxMzcxMzE5Ng==&mid=2247485584&amp;idx=1&amp;sn=fee6a5d251e8a582bf72a4313e99176e&source=41#wechat_redirect
+  - 函数式组件改进  不再需要显示式 props
+  - vue-cli 3.0 -> PWA by default
+  - 异步组件改进 -> Loading / Error / Timeout Fallback
 
-```js
-this.$store.dispatch('LoginByUsername', this.loginForm).then(() => {
-  this.$router.push({ path: '/' }); //登录成功之后重定向到首页
-}).catch(err => {
-  this.$message.error(err); //登录失败提示错误
-});
+![异步组件](http://mmbiz.qpic.cn/mmbiz_jpg/uMh5nccSicmILu2WJsqjtN2Na5pGqlOGBlnb7MyCdyT5tNXf5bFlLqWNibtAxdI6J0a4sEpQDIJ0nUWCkZ3BJGibg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1)  
 
-LoginByUsername({ commit }, userInfo) {
-  const username = userInfo.username.trim()
-  return new Promise((resolve, reject) => {
-    loginByUsername(username, userInfo.password).then(response => {
-      const data = response.data
-      Cookies.set('Token', response.data.token) //登录成功后将token存储在cookie之中
-      commit('SET_TOKEN', data.token)
-      resolve()
-    }).catch(error => {
-      reject(error)
-    });
-  });
-}
-```
+# 实战
+
+- 手摸手 https://juejin.im/post/593121aa0ce4630057f70d35
+
 
 # 目录结构
 
@@ -76,9 +54,42 @@ LoginByUsername({ commit }, userInfo) {
 └── package.json               // package.json
 ```
 
-# 实战
 
-- 手摸手 https://juejin.im/post/593121aa0ce4630057f70d35
+# 权限登录
+
+- vue权限路由实现方式总结 https://juejin.im/post/5b5bfd5b6fb9a04fdd7d687a
+- vuejs2-authentication-tutorial https://auth0.com/blog/vuejs2-authentication-tutorial/
+  - https://github.com/manojkumar3692/Vuejs-Authentication
+- Vue-Access-Control https://github.com/tower1229/Vue-Access-Control
+- token存到cookie -> 用token拉取user_info与role -> 路由(router.addRoutes) -> vuex渲染侧边
+- 页面刷新， vuex的数据也会丢失，要重复上述操作
+- token有效期： session与后台刷新
+- 前后端权限控制 当然都要做 但不提倡后台吐出这个菜单(维护)
+- 按钮级别权限控制
+    - 颗粒度
+    - 先考虑页面设计是否合理
+
+```js
+this.$store.dispatch('LoginByUsername', this.loginForm).then(() => {
+  this.$router.push({ path: '/' }); //登录成功之后重定向到首页
+}).catch(err => {
+  this.$message.error(err); //登录失败提示错误
+});
+
+LoginByUsername({ commit }, userInfo) {
+  const username = userInfo.username.trim()
+  return new Promise((resolve, reject) => {
+    loginByUsername(username, userInfo.password).then(response => {
+      const data = response.data
+      Cookies.set('Token', response.data.token) //登录成功后将token存储在cookie之中
+      commit('SET_TOKEN', data.token)
+      resolve()
+    }).catch(error => {
+      reject(error)
+    });
+  });
+}
+```
 
 # 框架使用
 
@@ -377,7 +388,7 @@ components/
 
 - Vue 服务端渲染 https://juejin.im/post/5a9ca40b6fb9a028b77a4aac
 
-# 骨架屏
+# 骨架屏注入
 
 - vue-content-placeholders https://github.com/michalsnik/vue-content-placeholders
 - https://github.com/jrainlau/vue-skeleton
@@ -386,16 +397,16 @@ components/
 
   - Vue SPA 首屏加载优化实践 <https://juejin.im/post/5a291092518825293b50366d>
 
+# 容器组件
+
+- 致敬 React: 为 Vue 引入容器组件和展示组件 https://juejin.im/post/5ae9a5545188256709610635
+
 # PWA
 
 - vue-storefront https://github.com/DivanteLtd/vue-storefront
 - 栗子
   - https://github.com/nightzing/pwa-vue-template
   - 当vue遇到pwa--vue+pwa移动端适配解决方案模板案例 https://juejin.im/post/5af264296fb9a07aa54248f9
-
-# 容器组件
-
-- 致敬 React: 为 Vue 引入容器组件和展示组件 https://juejin.im/post/5ae9a5545188256709610635
 
 # 增删改查 | CRUD
 
