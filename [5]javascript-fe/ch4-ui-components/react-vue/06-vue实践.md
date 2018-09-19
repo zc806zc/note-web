@@ -410,5 +410,4 @@ components/
 
 # 增删改查 | CRUD
 
-- avue https://github.com/nmxiaowei/avue
-  - 一个类似 EasyUI 的 Vue 后台管理面板方案
+- avue
