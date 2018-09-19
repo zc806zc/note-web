@@ -4,42 +4,46 @@
 
   - https://cn.vuejs.org/
   - guide <https://vuefe.cn/v2/guide/>
-  - cookbook @NICE https://cn.vuejs.org/v2/cookbook/
-    - ScrollMagic 自定义滚动指令替代方案 https://github.com/janpaepke/ScrollMagic
-    - Vuetron 调试工具之一
-    - vscode调试配置
-    - fetch API https://developers.google.com/web/updates/2015/03/introduction-to-fetch
-    - 内存泄漏
-      - beforeDestroy
-      - keep-alive -> deactivated
-      - v-if
-  - examples https://cn.vuejs.org/v2/examples/
+  - 基本示例 https://cn.vuejs.org/v2/examples/
 
 - Vue API 
   - https://cn.vuejs.org/v2/api/
   - <https://vuejs-tips.github.io/cheatsheet/>
 
-- 入门
-
-  - 小凡 <https://github.com/bhnddowinf/vuejs2-learn>
-  - Vue学习看这篇就够 略碎 <https://juejin.im/entry/5a54b747518825734216c3df>
-  - 前端每周清单半年盘点之 Vue.js <https://juejin.im/post/59928d55518825486f1e8369>
-  - vue入门到放弃 参考推荐的学习顺序 <https://juejin.im/post/59aa1248518825392656a86a>
-  - vuejs心法和技法 <http://www.cnblogs.com/kidsitcn/p/5409994.html>
-  - 你应该要知道的Vue.js https://juejin.im/post/5ab2ff496fb9a028c06ab78f
-    - @deprecated <https://github.com/bhnddowinf/vuejs-learn>
-
 ```html
+<!-- 生产使用 -->
 <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 <!-- 这个带提示 -->
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 ```
 
+# 资源
+
+- 小凡 <https://github.com/bhnddowinf/vuejs2-learn>
+- Vue学习看这篇就够 略碎 <https://juejin.im/entry/5a54b747518825734216c3df>
+- 前端每周清单半年盘点之 Vue.js <https://juejin.im/post/59928d55518825486f1e8369>
+- vue入门到放弃 参考推荐的学习顺序 <https://juejin.im/post/59aa1248518825392656a86a>
+- vuejs心法和技法 <http://www.cnblogs.com/kidsitcn/p/5409994.html>
+- 你应该要知道的Vue.js https://juejin.im/post/5ab2ff496fb9a028c06ab78f
+  - @deprecated <https://github.com/bhnddowinf/vuejs-learn>
+
+# Vue cookbook 
+
+- @NICE https://cn.vuejs.org/v2/cookbook/
+- ScrollMagic 自定义滚动指令替代方案 https://github.com/janpaepke/ScrollMagic
+- Vuetron 调试工具之一
+- vscode调试配置
+- fetch API https://developers.google.com/web/updates/2015/03/introduction-to-fetch
+- 内存泄漏处理
+  - beforeDestroy
+  - keep-alive -> deactivated
+  - v-if
+
 # 开发环境
 
-- vue-cli插件
+- vscode插件
 
-  - vue
+  - vetur
   - vue sytnax hightlight
 
 - 性能优化
@@ -48,22 +52,17 @@
 
 - IDEA
 
-  - gitignore | Vue相关插件
-  - language设为ECMA6
+  - gitignore 
+  - Vue相关插件
+  - language记得设为ECMA6
 
-# Vue语法
+# Vue基本语法
 
 - 语法
 
-  - 修饰符 
-  - 按键
-  - 缩写 v-on v-bind
-  - 暴露
-  - https://css-tricks.com/using-filters-vue-js/
+  - 使用filter https://css-tricks.com/using-filters-vue-js/
 
 ```html
-<!-- 修饰符 -->
-
 <!-- 阻止浏览器默认行为 可串联 -->
 <form v-on:submit.prevent="onSubmit"></form> 
   
