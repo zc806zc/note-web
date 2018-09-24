@@ -207,4 +207,5 @@ Google正在为大网页做标记
 
 - 前端要完！人工智能已经能实现自动编写 HTML 和 CSS [http://mp.weixin.qq.com/s?__biz=MzI0ODcxODk5OA==∣=2247493505&idx=1&sn=3891159186eb170af20ffc8029110664&chksm=e99ed478dee95d6e8bc44e73a45345178f80d5ed2c3704b9b3abb4eade3e605e8ddfd87fa180&mpshare=1&scene=23&srcid=0225FlJMEvY6qAcBj2LXDfoc#rd](http://mp.weixin.qq.com/s?__biz=MzI0ODcxODk5OA==&mid=2247493505&idx=1&sn=3891159186eb170af20ffc8029110664&chksm=e99ed478dee95d6e8bc44e73a45345178f80d5ed2c3704b9b3abb4eade3e605e8ddfd87fa180&mpshare=1&scene=23&srcid=0225FlJMEvY6qAcBj2LXDfoc#rd)
 
-- https://github.com/Microsoft/ailab
+- ailab https://github.com/Microsoft/ailab
+- 静态页自动生成 https://github.com/emilwallner/Screenshot-to-code-in-Keras
