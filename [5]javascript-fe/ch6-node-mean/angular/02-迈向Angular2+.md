@@ -1,9 +1,6 @@
 # Angular2+
 
 - NiceFish 大漠穷秋 <https://gitee.com/mumu-osc/NiceFish>
-- ngx-admin
-
-  - <https://github.com/akveo/ngx-admin>
 
 - [Code-download](https://github.com/mgechev/switching-to-angular2) | [angular2文档](https://angular.io/docs/ts/latest/quickstart.html)
 
