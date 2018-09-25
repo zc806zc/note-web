@@ -37,11 +37,22 @@
 
 # 脚手架
 
+- pig  <https://github.com/pig4cloud/pig>
+  - 基于Spring Cloud、oAuth2.0开发基于Vue前后分离的开发平台
 - zheng <https://github.com/shuzheng/zheng>
 
   - 基于Spring+SpringMVC+Mybatis分布式敏捷开发系统架构
+- paascloud-master https://github.com/paascloud/paascloud-master
+  - spring cloud + vue + oAuth2.0
+  - 模拟商城
+  
 - iBase4J <https://gitee.com/iBase4J/iBase4J>
 - jfinal https://gitee.com/jfinal/jfinal
+- eova 
+  - 最简单的快速开发平台 基于jfinal 
+  - https://gitee.com/eova/eova
+  - 文档 https://www.kancloud.cn/eova/eova
+
 - Guns
 
   - <https://www.imooc.com/video/16386>
@@ -68,13 +79,9 @@
 
 # Spring Cloud
 
-- pig  <https://github.com/pig4cloud/pig>
-  - 基于Spring Cloud、oAuth2.0开发基于Vue前后分离的开发平台
+
 - ace-security @NICE https://gitee.com/minull/ace-security
 - PiggyMetrics 简单的个人财务系统 https://github.com/sqshq/PiggyMetrics
-- paascloud-master https://github.com/paascloud/paascloud-master
-  - spring cloud + vue + oAuth2.0
-  - 模拟商城
 - spring-cloud-rest-tcc 熔断监控 https://github.com/prontera/spring-cloud-rest-tcc  
 - xxpay-master 支付 https://gitee.com/jmdhappy/xxpay-master
 - spring-boot-cloud https://github.com/zhangxd1989/spring-boot-cloud
@@ -99,7 +106,7 @@
 
 # 管理系统 | 权限 | 综合
 
-- 后台管理框架 https://gitee.com/explore/starred/back-stage-management
+- back-stage-management  后台管理框架 https://gitee.com/explore/starred/back-stage-management
 - bootshiro https://gitee.com/tomsun28/bootshiro
 - spring-shiro-training 权限脚手架 https://gitee.com/wangzhixuan/spring-shiro-training
 - FEBS 权限管理系统 <https://github.com/wuyouzhuguli/FEBS>
@@ -109,7 +116,6 @@
 - renren-fast
   - https://gitee.com/renrenio/renren-fast
   - 前端 https://github.com/daxiongYang/renren-fast-vue
-- eova 最简单的快速开发平台 基于jfinal https://gitee.com/eova/eova
 - JFlow 表单引擎+流程引擎+权限控制 https://gitee.com/opencc/JFlow
 - SpringBlade 
   - https://gitee.com/smallc/SpringBlade
