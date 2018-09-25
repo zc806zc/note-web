@@ -46,8 +46,8 @@
 
   - <https://www.imooc.com/video/16386>
   - Spring Boot + mybatis-plus + Swagger + shiro + springMVC
-  - guns <https://gitee.com/naan1993/guns>
-  - fork from guns <https://github.com/abel533/guns>
+  - guns https://gitee.com/stylefeng/guns
+  - fork版 <https://github.com/abel533/guns>
 
 - generator-jhipster
 
