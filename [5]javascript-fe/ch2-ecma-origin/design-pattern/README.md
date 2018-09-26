@@ -1,3 +1,15 @@
+# 资源
+
+- react-in-patterns React开发中的设计模式 https://github.com/krasimir/react-in-patterns
+- 《JavaScript设计模式》
+- 《精通JavaScript开发 - 设计模式部分》
+
+# 学习项目
+
+- JavaScript设计模式与开发实践 曾探 2015-05
+
+  - HTML5街头霸王 <https://github.com/AlloyTeam/StreetFighter>
+
 # 设计模式
 
 > 如果你手中有一把锤子...
@@ -51,16 +63,3 @@
 - 单一职责原则
 - 最少知识原则
 - 开放-封闭原则
-
-# 资源
-
-- react-in-patterns React开发中的设计模式 https://github.com/krasimir/react-in-patterns
-
-# 项目
-
-- JavaScript设计模式与开发实践 曾探 2015-05
-
-  - HTML5街头霸王 <https://github.com/AlloyTeam/StreetFighter>
-
-- JavaScript设计模式
-- 精通JavaScript开发 - 设计模式部分
