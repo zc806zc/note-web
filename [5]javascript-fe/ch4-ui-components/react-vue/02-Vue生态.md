@@ -7,13 +7,9 @@
 - 富文本编辑器Ueditor如何在Vue中使用？ <https://www.jianshu.com/p/8c43636c6c47>
 - 用webpack（2.x语法）手动搭建Vue项目 <https://www.jianshu.com/p/a87dee15e6c3>
 - 全面解析vue-cli生成的项目中使用其他库（js库、css库）<https://www.jianshu.com/p/a2fc286cb8ab>
-
-# 实战学习项目
-
-- 基于 vue2 + vuex 构建一个具有 45 个页面的大型单页面应用 NICE <https://github.com/bailicangdu/vue2-elm>
 - Vue和Node.js实践 包含Vue写的天气APP <https://github.com/huang303513/NodejsVuePractice>
 - vue-cnode <https://github.com/xjh22222228/vue-cnode>
-- 使用vue2.0实现购物车和地址选配功能 <https://www.imooc.com/video/14039>
+- 使用vue2.0实现购物车和地址选配功能 @deprecated :视频 <https://www.imooc.com/video/14039>
 - 今日头条 <https://github.com/cd-dongzi/vue-project>
 - 基于vue的简单流程图开发
 
@@ -26,27 +22,42 @@
 
 - ->> 后台模板
 
-# 典型H5
+# 手机H5
 
-- 饿了么 vue2-elm h5 https://github.com/bailicangdu/vue2-elm
+- vue2-elm @NICE
+  - 手机仿饿了么 
+  - https://github.com/bailicangdu/vue2-elm
 
-# 社区聊天
+# 商城外卖
 
-- vueblog https://github.com/wmui/vueblog
-- 基于vue.js重写Cnodejs.org社区的webapp <https://github.com/shinygang/Vue-cnodejs>
-- 仿TIM <https://github.com/beautifulBoys/vue-socket.io>
+- vue2-elem ->>
 
+
+# 社区聊天 | Chat | socket | Blog 
+
+- 仿TIM 
+  - <https://github.com/beautifulBoys/vue-socket.io>
   - node：8.0 + express: 4.1 + mongoose: 4.1 + nodemon: 1.1 + socket.io: 2.0
-
-- Vue全家桶+Socket.io+Express/Koa2打造一个智能聊天室 <https://github.com/microzz/vue-chat>
-
+- vueblog 
+  - 用到nuxt实现ssr 后台是koa
+  - https://github.com/wmui/vueblog
+- vue-chat
+  - Vue全家桶+Socket.io+Express/Koa2打造一个智能聊天室 
+  - flex弹性布局
+  - <https://github.com/microzz/vue-chat>
   - 作者博客 <https://microzz.com/>
+- websocket_chat 
+  - 仿微信 websocket聊天室 
+  - <https://github.com/secreter/websocket_chat>
+- x-chat 
+  - 聊天 基于webSocket
+  - <https://github.com/ermu592275254/x-chat>  
+  - 后台 https://github.com/ermu592275254/chat-socket
+- Vue-cnodejs @deprecated @old
+  - 基于vue.js重写Cnodejs.org社区的webapp
+  - <https://github.com/shinygang/Vue-cnodejs>  
+- 聊天 @deprecated 仿PC微信 界面面板可参考 <https://github.com/Coffcer/vue-chat>
 
-- websocket聊天室 <https://github.com/secreter/websocket_chat>
-
-- 聊天 简单 稍微参考下界面 <https://github.com/Coffcer/vue-chat>
-
-- 聊天 包含前后端 <https://github.com/ermu592275254/x-chat>
 
 # 音乐播放器
 

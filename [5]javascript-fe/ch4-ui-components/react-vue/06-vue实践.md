@@ -1,7 +1,9 @@
 # 教程
 
 - 手摸手，带你用vue撸后台 @NICE https://juejin.im/post/59097cd7a22b9d0065fb61d2
+    - 手摸手 https://juejin.im/post/593121aa0ce4630057f70d35
     - 权限登录 https://juejin.im/post/591aa14f570c35006961acac
+
 - 老板让我十分钟上手nx-admin https://juejin.im/post/5b43226c51882519ad616c2a        
     - nx-admin https://github.com/mgbq/nx-admin
 
@@ -14,12 +16,7 @@
 
 ![异步组件](http://mmbiz.qpic.cn/mmbiz_jpg/uMh5nccSicmILu2WJsqjtN2Na5pGqlOGBlnb7MyCdyT5tNXf5bFlLqWNibtAxdI6J0a4sEpQDIJ0nUWCkZ3BJGibg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1)  
 
-# 实战
-
-- 手摸手 https://juejin.im/post/593121aa0ce4630057f70d35
-
-
-# 目录结构
+# 结构
 
 - 参考自 vue-element-admin <https://github.com/PanJiaChen/vue-element-admin>
 
@@ -410,4 +407,4 @@ components/
 
 # 增删改查 | CRUD
 
-- avue
+->>

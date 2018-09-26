@@ -530,6 +530,19 @@ const store = new Vuex.Store({
 
 # 注意点 | 常识 | 细节深入
 
+- 关于赋值 -> 赋值给对象，而不是N对个变量
+
+```html
+<h1 class="detail-title">{{ article.title }}</h1>
+<div class="detail-meta">
+  <span>
+    {{ article.createdAt | formatDate('yyyy-MM-dd') }}
+    <span class="meta-division">/</span> {{ article.updatedAt | formatDate('yyyy-MM-dd') }}
+  <span class="meta-division">/</span> {{ article.views }}次浏览
+  </span>
+</div>
+```
+
 - 所有的 DOM 操作都由 Vue 来处理 $ref
 - Vue的钩子函数[路由导航守卫、keep-alive、生命周期钩子] https://juejin.im/post/5b41bdef6fb9a04fe63765f1
 - Vue 为了使得 DOM 元素得到最大范围的重用而实现了一些智能的、启发式的方法，所以用一个含有相同元素的数组去替换原来的数组是非常高效的操作

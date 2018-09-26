@@ -35,10 +35,12 @@
 
 ```
 ->> 其他地方写过了
-@deprecated 过时 不推荐
+@deprecated 不推荐
+@old 过时
 @nice
 -> 逻辑
 : 解释一波
+一般空格比逗号更好
 ```
 
 ![](/static/img/index/xiong.gif)
