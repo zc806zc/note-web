@@ -768,7 +768,7 @@ rows.sort(function(a,b){
 - zTree https://github.com/zTree/zTree_v3
     - 文档 http://www.treejs.cn/v3/main.php#_zTreeInfo
     - 兼容IE6+
-    - 样式优化 http://www.jq22.com/jquery-info15563
+- zTree的bootstrap风格样式 http://www.jq22.com/jquery-info15563
 
 # 数据结构 | 格式校验
 
