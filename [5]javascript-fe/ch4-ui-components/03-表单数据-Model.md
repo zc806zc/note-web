@@ -217,11 +217,14 @@ function slide(range, conSlide, obj) {
 # 时间日期
 
 - moment.js @deprecated
+- You-Dont-Need-Momentjs https://github.com/you-dont-need/You-Dont-Need-Momentjs
 - day.js ：moment.js的轻量替换
 - spacetime 轻量级时区库 https://github.com/spencermountain/spacetime
 - flatpickr <https://github.com/chmln/flatpickr>
 - 时间日期处理 <https://github.com/datejs/Datejs>
-- date-fns <https://github.com/date-fns/date-fns>
+- date-fns
+    - Modern JavaScript date utility library 
+    - <https://github.com/date-fns/date-fns>
 - bootstrap-datepicker <https://github.com/uxsolutions/bootstrap-datepicker>
 - bootstrap-datetimepicker<https://github.com/Eonasdan/bootstrap-datetimepicker>
 - tui.calendar @NICE IE9+ https://github.com/nhnent/tui.calendar
