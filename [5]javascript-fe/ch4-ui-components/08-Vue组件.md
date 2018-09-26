@@ -150,6 +150,7 @@ be the most lightweight
 
 # 表格
 
+- vue-bigdata-table https://github.com/lison16/vue-bigdata-table
 - vue-data-tables 基于element UI @NICE https://github.com/njleonzhang/vue-data-tables
 - vuetable-2 https://github.com/ratiw/vuetable-2
 - vue-tables-2 https://github.com/matfish2/vue-tables-2
