@@ -65,6 +65,60 @@ drop database `itcast`;
 order by ...
 ```
 
+# 基本操作
+
+```sql
+-- 修改密码
+set password for root@localhost = password('123456');
+
+-- 查看数据库
+show databases like ''
+
+-- 查看数据库的创建语句
+show create database mvcdemo
+
+-- 更新数据库(字符集和校对集)
+alter database mvcdemo charset gbk
+
+-- 删除数据库
+drop database mvcdemo
+
+-- 查看有结构的表的创建语句
+show create table student\G
+
+-- 查看表的结构
+desc student/describe student/show columns from student
+
+-- 修改字段(将学号字段变成固定长度且放在第二位)
+alter table my_student modify number char(10) after id
+
+-- 重命名字段
+alter table my_student change gender sex varchar(10)
+
+-- 删除表
+drop table my_student
+
+-- 删除数据
+delete from my_student
+```
+
+- 配置信息
+
+```sql
+-- 用来显示授权用户的安全权限
+SHOW GRANTS
+
+-- 查看数据库服务器支持哪一些字符集
+show character set
+
+-- 查看数据库默认使用的对外数据处理的字符集
+show variables like 'character_set%'
+
+-- 删除外键
+alter table my_foreign drop foreign key
+```
+
+
 # 引擎
 
 - innodb
@@ -78,12 +132,12 @@ order by ...
 
 - myisam
 - mysql 中 myisam innodb 的区别有哪些？ <https://www.zhihu.com/question/20596402>
-
 - MyISAM和InnoDB详解 <http://blog.csdn.net/shuaijunlan/article/details/51519702>
 - MySQL常见的两种存储引擎：MyISAM与InnoDB的爱恨情仇 https://juejin.im/post/5b1685bef265da6e5c3c1c34
 
 ```
-MyISAM更适合读密集的表，而InnoDB更适合写密集的的表
+MyISAM更适合读密集的表(支持全文本搜索，性能极高)
+而InnoDB更适合写密集的的表
 
 一般来说，如果需要事务支持，并且有较高的并发读取频率
 (MyISAM的表锁的粒度太大，所以当该表写并发量较高时，要等待的查询就会很多了)，
