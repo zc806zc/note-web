@@ -1,6 +1,8 @@
 # Java编程规范
 
-- 阿里巴巴Java开发手册 <https://yq.aliyun.com/articles/69327?utm_campaign=javac&utm_medium=images&utm_source=renyimen&utm_content=m_10068>
+- 阿里巴巴Java开发手册 
+    - 文档与插件 https://github.com/alibaba/p3c
+    - <https://yq.aliyun.com/articles/69327?utm_campaign=javac&utm_medium=images&utm_source=renyimen&utm_content=m_10068>
 
 # 格式
 
