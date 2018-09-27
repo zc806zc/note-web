@@ -37,29 +37,31 @@
 
 --------------------------------------------------------------------------------
 
-# 放大镜 | 截图
+# 放大镜 | zoom
+
+- Magnifier IE8+ https://github.com/mark-rolich/Magnifier.js
+- jfMagnify <https://github.com/fonstok/jfMagnify>
+- jquery.etalage.min.js https://github.com/flintdigital/jquery-plugin-gallery-etalage
+- jquery.panzoom 
+    - IE9+ 利用CSS3
+    - https://github.com/timmywil/jquery.panzoom
+- 栗子
+  - <http://www.jq22.com/webqd643>
+
+# 截图
 
 - jcrop <http://www.bootcdn.cn/jquery-jcrop/>
 - smartcrop <https://github.com/jwagner/smartcrop.js>
 - html2canvas <https://github.com/niklasvh/html2canvas>
 
-- jfMagnify <https://github.com/fonstok/jfMagnify>
-
-- jquery.etalage.min.js
-
-- 精简版JS <http://www.jq22.com/webqd2110>
-
-- 裁剪
+- 栗子
 
   - <http://www.shearphoto.com/>
+  - 精简版JS <http://www.jq22.com/webqd2110>
 
 - img2css <https://github.com/javierbyte/img2css>
 
   - 图片转css
-
-- 其他
-
-  - <http://www.jq22.com/webqd643>
 
 --------------------------------------------------------------------------------
 
@@ -98,8 +100,6 @@
 - DPlayer 
   - 一个很好看的弹幕视频播放
   - https://github.com/MoePlayer/DPlayer
-
-
 
 # 音频
 
