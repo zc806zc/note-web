@@ -1,28 +1,31 @@
 # MySQL
 
-- 学习资源
+- MariaDB
 
-  - MySQL总结 <http://novoland.github.io/%E6%95%B0%E6%8D%AE%E5%BA%93/2014/07/26/MySQL%E6%80%BB%E7%BB%93.html>
-  - <https://github.com/jobbole/awesome-mysql-cn>
+# 学习资源
 
-- 图形化工具
+- MySQL总结 <http://novoland.github.io/%E6%95%B0%E6%8D%AE%E5%BA%93/2014/07/26/MySQL%E6%80%BB%E7%BB%93.html>
+- awesome-mysql-cn <https://github.com/jobbole/awesome-mysql-cn>
 
-  - heidiSQL 但界面一般 <https://www.heidisql.com/download.php>
-  - navicat($)
-  - phpMyAdmin PHP开发
+# 图形化工具
 
-- MySQL/MariaDB常用命令
+- navicat($) @NICE
+- phpMyAdmin PHP开发 
+- heidiSQL @deprecated 界面一般 <https://www.heidisql.com/download.php>
 
-  - 常用函数
-  - 常用命令
+# 数据类型
+
+# 常用函数
+
+# MySQL基本命令
 
 ```sql
 -- 进入数据库
-mysql (-h localhost) -u root -p // 访问数据库,回车输命令
+-- 访问数据库,回车输命令
+mysql (-h localhost) -u root -p
 
 -- 设置编码
 set names gbk;
--- 仅本次访问有效
 
 -- 退出
 exit quit
@@ -40,9 +43,11 @@ create table `news` (
 --  查询
 show databases;
 show tables;
-desc `student`; // 查看已经创建的表结构
+-- 查看已经创建的表结构
+desc `student`; 
 select * from `news` \G
-show create table `student`\G // 查看建表的sql
+-- 查看建表的sql
+show create table `student`\G 
 
 -- 插入
 insert into `news` (`title`, `content`, `addtime`) values
@@ -50,7 +55,9 @@ insert into `news` (`title`, `content`, `addtime`) values
 
 -- 删改
 update `student` set `name` = '赵六'， `gender` = '女' where `id` = 2;
-delete from `student` where `id`=2; // 注意不会填补空缺的id
+
+-- 注意不会填补空缺的id
+delete from `student` where `id`=2;
 drop table `student`;
 drop database `itcast`;
 
@@ -144,6 +151,10 @@ select * from `student` where match(`favorite`) against ('play*' in BOOLEAN MODE
 使不同的用户看到不同的数据
 ```
 
+# 触发器
+
+- 一张表中只能最多有6个触发器
+
 # 函数和存储过程
 
 - 函数
@@ -184,7 +195,7 @@ revoke select on school.student from bear@'localhost'
 dropp user kitty;
 ```
 
-# 备份和恢复
+# 备份和恢复 | 主从同步
 
 - 主从复制 <http://www.cnblogs.com/superfat/p/5267449.html>
 
@@ -237,7 +248,22 @@ mysql -uroot -p -e "d:\log\log.txt" // 多次执行合并
 定时备份数据 // 每天夜间或每周的某个时间
 ```
 
-- 使用MySQL扩展
+- 主从
+
+  - Relay log
+  - 子服务器上会创建一个SQL Thread线程专门完成这一步
+
+```sql
+-- 在主库上配置一个从库的账号用于登录实现主从同步
+grant replication slave on *.* to 'beautifulsoup'@'192.168.33.14' identified by 'password';
+flush privileges;
+
+-- 在从库上配置主库连接的信息
+change master to master_host='192.168.33.13',master_port=3306,master_user='beautifulsoup',master_password='password',master_log_file='master-bin.000001',master_log_pos=0;
+start slave;
+```
+
+# MySQL扩展
 
 # 查询缓存
 

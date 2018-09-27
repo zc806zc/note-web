@@ -6,10 +6,54 @@
 
 # 数据库配置
 
-- 修改密码
+- 基本
 
 ```sql
+-- 修改密码
 set password for root@localhost = password('123456');
+
+-- 查看数据库
+show databases like ''
+
+-- 查看数据库的创建语句
+show create database mvcdemo
+
+-- 更新数据库(字符集和校对集)
+alter database mvcdemo charset gbk
+
+-- 删除数据库
+drop database mvcdemo
+
+-- 查看有结构的表的创建语句
+show create table student\G
+
+-- 查看表的结构
+desc student/describe student/show columns from student
+
+-- 修改字段(将学号字段变成固定长度且放在第二位)
+alter table my_student modify number char(10) after id
+
+-- 重命名字段
+alter table my_student change gender sex varchar(10)
+
+-- 删除表
+drop table my_student
+
+-- 删除数据
+delete from my_student
+```
+
+- 配置信息
+
+```sql
+-- 查看数据库服务器支持哪一些字符集
+show character set
+
+-- 查看数据库默认使用的对外数据处理的字符集
+show variables like 'character_set%'
+
+-- 删除外键
+alter table my_foreign drop foreign key
 ```
 
 # 操作
@@ -29,6 +73,9 @@ from_unixtime ??
 update table_name 
 set content = REPLACE(content, 'aaa', 'bbb') 
 where (content like '%aaa%')
+
+-- 获取表中某字段包含某字符串的数据
+SELECT * FROM `表名` WHERE LOCATE('关键字', 字段名)
 
 -- 获取字段中的前4位
 SELECT SUBSTRING(字段名,1,4) FROM 表名
@@ -62,8 +109,6 @@ delete from 表名 别名 where (别名.字段1,别名.字段2) in
 and 主键ID not in 
 (select min(主键ID) from 表名 group by 字段1,字段2 having count(*)>1)
 
--- 获取表中某字段包含某字符串的数据
-SELECT * FROM `表名` WHERE LOCATE('关键字', 字段名)
 ```
 
 - 业务
