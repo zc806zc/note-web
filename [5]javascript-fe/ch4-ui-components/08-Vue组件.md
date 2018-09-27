@@ -106,6 +106,11 @@ be the most lightweight
 - vue-lottie 基于 Bodymovin 的 Vue 动画效果库 https://github.com/chenqingspring/vue-lottie
 - vue-touch-ripple 点击元素泛起的涟漪效果 https://github.com/surmon-china/vue-touch-ripple
 
+# 加载
+
+- vue-spinner https://github.com/greyby/vue-spinner
+- vue-loading-spinner @NICE：栗子较多 https://github.com/nguyenvanduocit/vue-loading-spinner
+
 # 表单
 
 - 行政规划数据 <https://github.com/modood/Administrative-divisions-of-China>

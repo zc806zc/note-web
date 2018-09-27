@@ -98,8 +98,3 @@ public class RoleUserDO  {
 @Query("SELECT U FROM UserDO U ,RoleUserDO RU WHERE U.id = RU.userId AND RU.roleId = :roleId")
 List<UserDO> findUsersByRole(@Param("roleId") Long roleId);
 ```
-
-# 关于接口增删改查的增强
-
-- tkmybatis的连缀语法
-- 自定义封装
