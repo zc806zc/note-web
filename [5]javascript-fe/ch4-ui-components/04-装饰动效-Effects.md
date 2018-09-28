@@ -20,6 +20,7 @@
 # CSS图标
 
 - icono 
+
   - One tag One icon, no font or svg, Pure CSS
   - https://github.com/saeedalipoor/icono
   - http://git.io/icono
@@ -28,13 +29,11 @@
 
 - loaders.css https://github.com/ConnorAtherton/loaders.css
 - load-awesome https://github.com/danielcardoso/load-awesome
-- 效果集
-
-  - 小人转圈圈 NICE <https://codepen.io/flashingmoose/pen/vNQELw>
-
+- Tim Holman加载集 <http://codepen.io/collection/HtAne/>
+- codepen集合 <https://codepen.io/collection/jifIK/>
 - 栗子
 
-  - <https://codepen.io/collection/jifIK/>
+  - 小人转圈圈 @NICE <https://codepen.io/flashingmoose/pen/vNQELw>
   - <https://github.com/tobiasahlin/SpinKit>
 
 
@@ -177,7 +176,10 @@ span:nth-child(2) {
 
 # 交互 | 手势
 
-- hammer.js https://github.com/hammerjs/hammer.js
+- hammer.js 
+
+    - https://github.com/hammerjs/hammer.js
+
 - interact.js
 
   - <https://github.com/taye/interact.js>
