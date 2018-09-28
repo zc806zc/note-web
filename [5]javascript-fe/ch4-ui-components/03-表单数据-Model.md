@@ -211,6 +211,7 @@ function slide(range, conSlide, obj) {
 # 字符串解析 
 
 - nanoid 唯一ID生成 @NICE https://github.com/ai/nanoid
+- base64 https://github.com/dankogai/js-base64
 
 --------------------------------------------------------------------------------
 

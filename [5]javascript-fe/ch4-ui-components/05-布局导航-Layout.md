@@ -26,6 +26,7 @@
 
 # 占位元素
 
+- holder 图片占位 https://github.com/imsky/holder
 - mocka 文章占位 <https://github.com/Chalarangelo/mocka>
 
   -  Simple, elegant content placeholder

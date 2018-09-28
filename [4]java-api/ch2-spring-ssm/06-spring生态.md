@@ -109,16 +109,16 @@
 
 # 管理系统 | 权限 | 综合
 
+- renren-security @NICE https://gitee.com/renrenio/renren-security
+- renren-fast
+  - https://gitee.com/renrenio/renren-fast
+  - 前端 https://github.com/daxiongYang/renren-fast-vue
 - back-stage-management  后台管理框架 https://gitee.com/explore/starred/back-stage-management
 - bootshiro https://gitee.com/tomsun28/bootshiro
 - spring-shiro-training 权限脚手架 https://gitee.com/wangzhixuan/spring-shiro-training
 - FEBS 权限管理系统 <https://github.com/wuyouzhuguli/FEBS>
 - hsweb-framework 快速搭建企业后台管理系统 <https://github.com/hs-web/hsweb-framework>
 - RuoYi 基于SpringBoot2.0的权限管理系统 https://gitee.com/y_project/RuoYi
-- renren-security https://gitee.com/renrenio/renren-security
-- renren-fast
-  - https://gitee.com/renrenio/renren-fast
-  - 前端 https://github.com/daxiongYang/renren-fast-vue
 - JFlow 表单引擎+流程引擎+权限控制 https://gitee.com/opencc/JFlow
 - SpringBlade 
   - https://gitee.com/smallc/SpringBlade
@@ -154,7 +154,7 @@
 - 商城 @NICE <https://github.com/linlinjava/litemall>
   - litemall = Spring Boot后端 + Vue管理员前端 + 微信小程序用户前端
   -  又一个小商城
-- platform 微信小程序商城 https://gitee.com/fuyang_lipengjun/platform
+- platform-wechat-mall 微信小程序商城 https://gitee.com/fuyang_lipengjun/platform
 - roncoo-pay 龙果支付系统 <https://gitee.com/roncoocom/roncoo-pay>
 - springboot mybatis mysql后台商城 h5 小程序 <https://gitee.com/JiaGou-XiaoGe/webappchat>
 - spring-boot-pay 支付服务 <https://gitee.com/52itstyle/spring-boot-pay>
