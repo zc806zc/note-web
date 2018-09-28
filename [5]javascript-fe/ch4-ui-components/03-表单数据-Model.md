@@ -632,6 +632,10 @@ var queryString = $('#myFormId .specialFields').fieldSerialize();
 - layui table 
   - 设计上上有独到之处，但是不够灵活和强大
   - 使用原因是相信layui生态
+- jtable
+    - 基于jquery 
+    - 增删改查 + AJAX
+    - https://github.com/hikalkan/jtable  
 - jqGrid 
   - https://github.com/tonytomov/jqGrid
   - https://github.com/rstaib/jquery-bootgrid
