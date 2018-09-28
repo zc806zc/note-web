@@ -27,7 +27,7 @@
 
   - <https://files.alicdn.com/tpsservice/7e2064ca2064086ca511fc4d8b6b351b.pdf>
   
-# 栗子
+# 学习项目
 
 - A progressive Web application with Vue JS, Webpack & Material Design https://blog.sicara.com/a-progressive-web-application-with-vue-js-webpack-material-design-part-1-c243e2e6e402
     - https://github.com/charlesBochet/cropchat
