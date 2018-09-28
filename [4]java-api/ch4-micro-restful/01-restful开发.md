@@ -50,6 +50,30 @@
 # 鉴权方式
 
 - 前后端常见的几种鉴权方式 https://juejin.im/entry/5aeffcf66fb9a07acd4da653
+- HTTP Basic Authentication
+
+```
+用户输入用户名和密码后，
+将用户名及密码以BASE64加密方式加密，
+并将密文放入前一条请求信息中，
+则客户端发送的第一条请求信息则变成如下内容
+```
+
+- session-cookie
+
+![](https://user-gold-cdn.xitu.io/2018/5/7/16339744aec16ef2?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+
+- Token 验证 -> JWT(JSON WEB TOKEN)
+- OAuth(开放授权)
+
+```
+允许用户授权第三方网站访问他们存储在另外的服务提供者上的信息，
+而不需要将用户名和密码提供给第三方网站或分享他们数据的所有内容
+
+pwd -> code -> Access Token
+资源服务器验证凭证（Access Token）通过后，
+将第三方应用请求的资源返回
+```
 
 # RPC
 

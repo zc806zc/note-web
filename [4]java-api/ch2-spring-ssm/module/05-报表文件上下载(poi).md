@@ -1,8 +1,3 @@
-# EXCEL导入导出
-
-- easypoi POI 工具类,Excel的快速导入导出 https://gitee.com/lemur/easypoi
-- https://www.imooc.com/video/7123
-
 # jsxl
 
 ```xml
@@ -21,6 +16,11 @@
 # POI
 
 - <http://www.yiibai.com/apache_poi/>
+
+# EXCEL导入导出
+
+- easypoi POI 工具类,Excel的快速导入导出 https://gitee.com/lemur/easypoi
+- https://www.imooc.com/video/7123
 
 # 文件预览
 
