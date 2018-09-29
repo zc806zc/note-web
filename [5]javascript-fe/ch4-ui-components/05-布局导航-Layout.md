@@ -179,6 +179,10 @@ DragDrop.prototype.mouseMove = function(e, obj) {
 <a onclick="$('.detail').animatescroll({padding:71});">Screens</a>
 ```
 
+- 滚动
+
+- iscroll https://github.com/cubiq/iscroll
+
 --------------------------------------------------------------------------------
 
 # 页面导航
@@ -356,13 +360,18 @@ function autoHeight() {
   - (首选) slick -> the last carousel you'll ever need <https://github.com/kenwheeler/slick>
   - @NICE superslide <http://www.SuperSlide2.com/>
   - fancybox
+  - Nivo-Slider 最好的jquery轮播 https://github.com/Codeinwp/Nivo-Slider-jQuery
+  - bxslider-4
+  - OwlCarousel2 https://github.com/OwlCarousel2/OwlCarousel2
+
 - 轻量级
 
   - unslider
   - siema <https://github.com/pawelgrzybek/siema>
   
 - 兼容性
-  - myfocus(jquery) 
+
+  - myfocus(jquery) 焦点图
 
 - 其他
   - Camera slideshow <https://www.pixedelic.com/plugins/camera/>
@@ -371,8 +380,7 @@ function autoHeight() {
     - The Most Awesome jQuery Image Slider
   - FlexSlider 2
     - The best responsive slider. Period.
-  - bxslider-4
-    - Responsive jQuery content slider
+
 
 - 栗子
   - 切割轮播图 <http://www.jq22.com/webqd2833>

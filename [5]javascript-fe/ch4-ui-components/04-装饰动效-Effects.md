@@ -76,9 +76,19 @@ p {
 }
 ```
 
-# 高亮
+# 代码高亮
 
+- <https://asvd.github.io/microlight/>
 - highlight.js https://github.com/isagalaev/highlight.js
+
+# 代码编辑器
+
+- codemirror
+- carbon https://github.com/dawnlabs/carbon
+
+```
+Create and share beautiful images of your source code
+```
 
 # 色彩方案
 
@@ -171,6 +181,7 @@ span:nth-child(2) {
 
   - wow
   - aos <https://github.com/michalsnik/aos>
+  - scrollreveal ->>
 
 - Rythm.js 页面跳舞 https://github.com/Okazari/Rythm.js
 

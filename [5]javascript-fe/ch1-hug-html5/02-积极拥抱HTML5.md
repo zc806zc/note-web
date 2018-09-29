@@ -288,7 +288,7 @@ designMode // 编辑页面
 - videojs.com 换肤定制 | Handbrake 转码
 - 视频完全方案 HTML5 + Flash + link
 - 视频自适应 <https://alistapart.com/article/creating-intrinsic-ratios-for-video>
-- <https://github.com/Chimeejs/chimee>
+- chimee ->>
 - Captionator.js // 适时抓取文本
 
 ```javascript

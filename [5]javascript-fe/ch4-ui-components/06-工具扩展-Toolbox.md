@@ -42,6 +42,7 @@
 - jquery.panzoom 
     - IE9+ 利用CSS3
     - https://github.com/timmywil/jquery.panzoom
+- jqzoom
 - 栗子
   - <http://www.jq22.com/webqd643>
 
@@ -75,6 +76,8 @@
 
 # 视频
 
+- 多青：dogeek.net/
+- chimee <https://github.com/Chimeejs/chimee>
 - video.js
 
   - <https://github.com/videojs/video.js>
@@ -191,19 +194,6 @@ function MoveBox(obj) {
 - CSS代码格式化 <http://www.jq22.com/webqd2886>
 
 - 正则表达式
-
-# 代码高亮
-
-- <https://asvd.github.io/microlight/>
-
-# 代码编辑器
-
-- codemirror
-- carbon https://github.com/dawnlabs/carbon
-
-```
-Create and share beautiful images of your source code
-```
 
 
 # 选座位
@@ -363,6 +353,9 @@ function stopFun() {
 
 # 弹幕 | 字幕
 
+- DanmuPlayer Html5弹幕视频播放器插件 https://github.com/chiruom/DanmuPlayer
+- jquery.danmu.js https://github.com/chiruom/jquery.danmu.js
+- scroxt 弹幕字体滚动 https://github.com/chenjianfang/scroxt
 - <http://www.jq22.com/webqd2447>
 - 原生弹幕 <http://www.jq22.com/webqd3046>
 - 垂直字幕|中奖名单
