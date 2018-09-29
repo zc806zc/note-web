@@ -162,6 +162,7 @@ span:nth-child(2) {
 - Effeckt <https://github.com/h5bp/Effeckt.css>
 - mojs
 
+  - 创建任何复杂的动态图形和 Web 动画库
   - <https://github.com/legomushroom/mojs>
   - motion graphics toolbelt for the web 
 

@@ -208,9 +208,10 @@ function slide(range, conSlide, obj) {
 - URI.js <https://github.com/medialize/URI.js/>
 - domurl https://github.com/Mikhus/domurl
 
-# 字符串解析 
+# 字符串解析 | 随机数
 
 - nanoid 唯一ID生成 @NICE https://github.com/ai/nanoid
+- chancejs 生成随机数 https://github.com/chancejs/chancejs
 - base64 https://github.com/dankogai/js-base64
 
 --------------------------------------------------------------------------------

@@ -65,6 +65,8 @@ Ajax的核心： XMLHttpRequest
 ```
 
 - async: false
+- 防止重复发送 Ajax 请求的解决方案 http://www.hollischuang.com/archives/931
+    - 利用jquery ajaxPrefilter中断请求
 
 # Promise
 

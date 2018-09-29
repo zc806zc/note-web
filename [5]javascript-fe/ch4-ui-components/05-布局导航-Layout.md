@@ -20,6 +20,8 @@
 
 - 懒加载
   - lozad.js 现代浏览器 https://github.com/ApoorvSaxena/lozad.js
+  - lazy.js https://github.com/dtao/lazy.js
+  
 - 瀑布流 <https://www.imooc.com/learn/101>
 - 图片预加载 <https://www.imooc.com/video/14430>
 - 图片瀑布流 <http://www.jq22.com/webqd2082>
