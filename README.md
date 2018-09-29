@@ -38,6 +38,7 @@
 @deprecated 不推荐
 @old 过时
 @nice
+@attention
 -> 逻辑
 : 解释一波
 一般空格比逗号更好
