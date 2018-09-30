@@ -114,11 +114,11 @@
 - guava
 
 ```xml
-<!-- Google核心库  -->
+<!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
 <dependency>
     <groupId>com.google.guava</groupId>
     <artifactId>guava</artifactId>
-    <version>${google.guava.version}</version>
+    <version>26.0-jre</version>
 </dependency>
 ```
 

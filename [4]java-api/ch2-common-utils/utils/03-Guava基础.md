@@ -2,7 +2,8 @@
 
 - 教程 https://www.yiibai.com/guava
 - https://github.com/google/guava
-- 文档 https://google.github.io/guava/releases/snapshot-jre/api/docs/
+- 文档 @deprecated：丑 https://google.github.io/guava/releases/snapshot-jre/api/docs/
+- guava快速入门 https://blog.csdn.net/dgeek/article/details/76221746
 - 包含谷歌很多项目正在使用的很多核心库
 
 ```java
