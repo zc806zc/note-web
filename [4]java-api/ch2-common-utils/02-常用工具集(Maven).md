@@ -371,8 +371,6 @@
     <artifactId>shiro-ehcache</artifactId>
     <version>${shiro.version}</version>
 </dependency>
-
-
 ```
 
 # 持久 | ORM
