@@ -245,5 +245,4 @@
 - tx-lcn
   - LCN 分布式事务框架 ，兼容 dubbo、springcloud、motan 框架，支持各种关系型数据库 
   - https://gitee.com/wangliang1991/tx-lcn
-- 不明觉厉 https://github.com/LKG/heartwork
 - 邮件发送服务 https://gitee.com/52itstyle/spring-boot-mail
