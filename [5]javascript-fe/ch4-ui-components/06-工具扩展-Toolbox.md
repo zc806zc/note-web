@@ -73,7 +73,6 @@
 
 - Leaflet <https://github.com/Leaflet/Leaflet>
 
-
 # 视频
 
 - 多青：dogeek.net/
@@ -85,7 +84,7 @@
 
 - jplayer https://github.com/jplayer/jPlayer
     - 兼容 IE8+ 
-
+- ckplayer
 - flv.js
 
   - <https://github.com/Bilibili/flv.js>
@@ -97,6 +96,7 @@
 - DPlayer 
   - 一个很好看的弹幕视频播放
   - https://github.com/MoePlayer/DPlayer
+
 
 # 音频
 

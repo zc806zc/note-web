@@ -285,6 +285,7 @@ $(function() {
 
 - popper.js <https://github.com/FezVrasta/popper.js>
 - tipsy IE兼容 https://github.com/jaz303/tipsy
+- Notyf
 
 # 对话框和灯箱 | Swiper | 幻灯片
 

@@ -624,39 +624,42 @@ var queryString = $('#myFormId .specialFields').fieldSerialize();
 # 数据表格
 
 - 数据表格排行 <https://jspreadsheets.com/>
-- ag-grid THE BEST HTML5 GRID IN THE WORLD 
+- ag-grid 
+  - THE BEST HTML5 GRID IN THE WORLD 
   - https://www.ag-grid.com/
   - 原生版本 https://www.ag-grid.com/best-javascript-data-grid/
   - vue版本 https://www.ag-grid.com/best-vuejs-data-grid/
-
 - dataTables @NICE 
-- bootstrap-table @NICE
-- layui table 
-  - 设计上上有独到之处，但是不够灵活和强大
-  - 使用原因是相信layui生态
-- jtable
-    - 基于jquery 
-    - 增删改查 + AJAX
-    - https://github.com/hikalkan/jtable  
-- jqGrid 
-  - https://github.com/tonytomov/jqGrid
-  - https://github.com/rstaib/jquery-bootgrid
-- jsgrid <https://github.com/tabalinas/jsgrid>
+- bootstrap-table @NICE ->>
 - handsontable($) 
     - 支持modern
     - <https://github.com/handsontable/handsontable>
     - <https://handsontable.com/>
+- layui table 带滚动条
+- jqGrid @NICE https://github.com/tonytomov/jqGrid
+- jsgrid @NICE <https://github.com/tabalinas/jsgrid>
+- jtable
+    - 基于jquery 
+    - 增删改查 + AJAX
+    - https://github.com/hikalkan/jtable  
+- jquery-bootgrid https://github.com/rstaib/jquery-bootgrid
 
-- 最好看的表格 
-  - <https://colorlib.com/wp/css3-table-templates/>
-  - Crisp table <http://codepen.io/stursby/pen/HdiJh>
-  - heavy table <http://codepen.io/victordarras/pen/hJHAm?editors=0110>
-  - HTML5响应式表格
+# 表格样式优化
 
-    - CSS简单实现 <http://www.jq22.com/jquery-info6700>
-    - 好看一点的样式 <http://www.jq22.com/jquery-info1372>
+- 最好看的表格 <https://colorlib.com/wp/css3-table-templates/>
+- Crisp table <http://codepen.io/stursby/pen/HdiJh>
+- heavy table <http://codepen.io/victordarras/pen/hJHAm?editors=0110>
+- HTML5响应式表格
 
-# bootstrap系列表格
+- CSS简单实现 <http://www.jq22.com/jquery-info6700>
+- 好看一点的样式 <http://www.jq22.com/jquery-info1372>
+
+# 树状表格
+
+- tui.grid @NICE 支持IE8+|行内编辑 https://github.com/nhnent/tui.grid
+- treegrid
+
+# bootstrap表格
 
 - bootstrap-table <https://github.com/wenzhixin/bootstrap-table>
 
