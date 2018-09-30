@@ -239,23 +239,30 @@ function slide(range, conSlide, obj) {
 
 --------------------------------------------------------------------------------
 
-# 联动
+# 省市区 | 联动
+
+```
+1. 联动应该和内容分开
+```
 
 - 省市下拉框联动
 
   - @NICE 传统类型 <http://www.jq22.com/jquery-info8054>
   - 同一下拉框内三次点击 <http://www.jq22.com/jquery-info16612>
-  - 原生JS
+  - <http://www.jq22.com/jquery-info448>
 
-    - 0_27_12拼接 <http://www.jq22.com/jquery-info448>
+- 面板点击
 
-    - 省市区面板点击
+    - @NICE
+        - https://github.com/tshi0912/city-picker 
+        - <http://www.jq22.com/jquery-info7095>
 
-      - @NICE <http://www.jq22.com/jquery-info7095>
-      - 仿京东 <http://www.jq22.com/jquery-info9397>
-      - 较全面 <http://www.jq22.com/jquery-info13655>
+    - 仿京东 <http://www.jq22.com/jquery-info9397>
+    - 较全面 <http://www.jq22.com/jquery-info13655>
 
-    - 字母点击 移动端 <http://www.jq22.com/webqd2257>
+- 字母点击 移动端 
+    - <http://www.jq22.com/webqd2257>
+
 
 --------------------------------------------------------------------------------
 
