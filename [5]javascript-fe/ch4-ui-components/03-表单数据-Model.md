@@ -491,7 +491,7 @@ $('tr td').on('click', function() {
 
 # 搜索
 
-- list.js <https://github.com/javve/list.js>
+- list.js @NICE <https://github.com/javve/list.js>
 
 > The perfect library for adding search, sort, filters and flexibility to tables, lists and various HTML elements. Built to be invisible and work on existing HTML.
 
@@ -643,6 +643,7 @@ var queryString = $('#myFormId .specialFields').fieldSerialize();
     - 增删改查 + AJAX
     - https://github.com/hikalkan/jtable  
 - jquery-bootgrid https://github.com/rstaib/jquery-bootgrid
+- jquery-dynatable https://github.com/alfajango/jquery-dynatable
 
 # 表格样式优化
 
@@ -658,6 +659,10 @@ var queryString = $('#myFormId .specialFields').fieldSerialize();
 
 - tui.grid @NICE 支持IE8+|行内编辑 https://github.com/nhnent/tui.grid
 - treegrid
+
+# 大数据表格
+
+- Clusterize.js https://github.com/NeXTs/Clusterize.js
 
 # bootstrap表格
 

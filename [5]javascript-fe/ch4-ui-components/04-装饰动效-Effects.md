@@ -154,6 +154,13 @@ span:nth-child(2) {
 }
 ```
 
+# jquery的轻量替代 
+
+- nanoJS https://github.com/vladocar/nanoJS/
+- cash https://github.com/kenwheeler/cash
+- bliss IE9+ https://github.com/leaverou/bliss/
+- umbrella IE11+ https://github.com/franciscop/umbrella
+
 # 动画
 
 - 75款动效工具 <http://www.uisdc.com/75-web-animation-tools-1>
@@ -188,10 +195,11 @@ span:nth-child(2) {
 
 # 交互 | 手势
 
+
 - hammer.js 
 
     - https://github.com/hammerjs/hammer.js
-
+- AlloyFinger https://github.com/AlloyTeam/AlloyFinger
 - interact.js
 
   - <https://github.com/taye/interact.js>

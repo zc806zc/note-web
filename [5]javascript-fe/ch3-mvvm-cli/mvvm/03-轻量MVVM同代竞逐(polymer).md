@@ -248,3 +248,6 @@ function countStore (state, emitter) {
 
 - https://github.com/ractivejs/ractive
 
+# svelte
+
+- https://github.com/sveltejs/svelte 

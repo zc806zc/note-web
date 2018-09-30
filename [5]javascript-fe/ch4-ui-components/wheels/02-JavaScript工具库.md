@@ -17,6 +17,8 @@
   - licia 史上最全 
     - <https://github.com/liriliri/licia>
     - doc https://eustia.liriliri.io/module.html
+  - lazy.js https://github.com/dtao/lazy.js
+  - Sugar https://github.com/andrewplummer/Sugar
 
 - 30-seconds-of-code
 
