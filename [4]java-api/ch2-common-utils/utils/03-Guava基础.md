@@ -1,12 +1,16 @@
 # Guava
 
+- 教程 https://www.yiibai.com/guava
+- https://github.com/google/guava
+- 文档 https://google.github.io/guava/releases/snapshot-jre/api/docs/
 - 包含谷歌很多项目正在使用的很多核心库
 
 ```java
 集合，缓存，支持原语，并发性，常见注解，字符串处理，I/O和验证的实用方法
 ```
 
-- 安装 <http://www.yiibai.com/guava/guava_environment.html>
+# 基础
+
 - optional 包含非空对象的不可变对象
 - Preconditions 提供静态方法来检查方法或构造函数，被调用是否给定适当的参数
 - Ordering(排序) 多类型排序功能
@@ -29,8 +33,10 @@
 
   - 基于内存的LoadingCache
 
-    <k，v>
-    </k，v>
+```java
+<k，v>
+</k，v>
+```
 
 - 字符串工具
 
