@@ -7,6 +7,11 @@
 - 苦瓜书盘 <https://kgbook.com>
 - 掌上书苑 <https://www.cnepub.com/>
 
+
+# 图书推荐
+
+- 知乎上有哪些关于书籍推荐的好问答？@nice  https://www.zhihu.com/question/20732514
+
 # 书读完了
 
 - @金克木
@@ -18,9 +23,6 @@
 
 - 豆瓣图书 https://book.douban.com/annual/2017 
 
-# 图书推荐
-
-- 知乎上有哪些关于书籍推荐的好问答？ https://www.zhihu.com/question/20732514
 
 # 分类
 
