@@ -154,7 +154,7 @@ span:nth-child(2) {
 }
 ```
 
-# jquery的轻量替代 
+# DOM | jquery的轻量替代 | jquery-like 
 
 - nanoJS https://github.com/vladocar/nanoJS/
 - cash https://github.com/kenwheeler/cash
