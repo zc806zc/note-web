@@ -567,3 +567,13 @@ vm.userProfile = Object.assign({}, vm.userProfile, {
   - deep: true
 - Vue nextTick 机制
   - https://juejin.im/post/5ae3f0956fb9a07ac90cf43e  
+
+  
+# 展望
+
+- Vue 2017 现状与展望 https://mp.weixin.qq.com/s?__biz=MzUxMzcxMzE5Ng==&mid=2247485584&amp;idx=1&amp;sn=fee6a5d251e8a582bf72a4313e99176e&source=41#wechat_redirect
+  - 函数式组件改进  不再需要显示式 props
+  - vue-cli 3.0 -> PWA by default
+  - 异步组件改进 -> Loading / Error / Timeout Fallback
+
+![异步组件](http://mmbiz.qpic.cn/mmbiz_jpg/uMh5nccSicmILu2WJsqjtN2Na5pGqlOGBlnb7MyCdyT5tNXf5bFlLqWNibtAxdI6J0a4sEpQDIJ0nUWCkZ3BJGibg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1)  

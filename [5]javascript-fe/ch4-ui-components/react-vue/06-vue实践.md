@@ -1,20 +1,9 @@
 # 教程
 
-- 手摸手，带你用vue撸后台 @NICE https://juejin.im/post/59097cd7a22b9d0065fb61d2
-    - 手摸手 https://juejin.im/post/593121aa0ce4630057f70d35
+- 手摸手，带你用vue撸后台 @NICE 
+    - https://panjiachen.github.io/vue-element-admin-site/
+    - 系列 https://juejin.im/post/59097cd7a22b9d0065fb61d2
     - 权限登录 https://juejin.im/post/591aa14f570c35006961acac
-
-- 老板让我十分钟上手nx-admin https://juejin.im/post/5b43226c51882519ad616c2a        
-    - nx-admin https://github.com/mgbq/nx-admin
-
-# 展望
-
-- Vue 2017 现状与展望 https://mp.weixin.qq.com/s?__biz=MzUxMzcxMzE5Ng==&mid=2247485584&amp;idx=1&amp;sn=fee6a5d251e8a582bf72a4313e99176e&source=41#wechat_redirect
-  - 函数式组件改进  不再需要显示式 props
-  - vue-cli 3.0 -> PWA by default
-  - 异步组件改进 -> Loading / Error / Timeout Fallback
-
-![异步组件](http://mmbiz.qpic.cn/mmbiz_jpg/uMh5nccSicmILu2WJsqjtN2Na5pGqlOGBlnb7MyCdyT5tNXf5bFlLqWNibtAxdI6J0a4sEpQDIJ0nUWCkZ3BJGibg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1)  
 
 # 结构
 
