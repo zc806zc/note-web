@@ -226,9 +226,7 @@ overflow: hidden; // 触发生成BFC,使浮动元素也参与计算
 
 # 移动端布局
 
-- 移动端布局方案探究 <https://juejin.im/post/5a8c12935188257a6049a0a4>
-- hotcss 移动端布局方案探究 https://github.com/imochen/hotcss
-- 淘宝、网易移动端 px 转换 rem 原理，Vue-cli 实现 px 转换 rem https://juejin.im/post/5afba3c5f265da0b9e653b6c
+->>
 
 # 居中若干
 
