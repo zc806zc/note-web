@@ -61,13 +61,15 @@ const Article = () => import('@/components/Article') // 利用promise
 - 手摸手，带你用合理的姿势使用webpack4 
     - https://juejin.im/post/5b56909a518825195f499806
     - 在webpack 3的基础上升级
-    - 最大化利用 long term caching
+    - 最大化利用 long term caching持久化缓存
     - 优化分包策略
+
+
+![](https://user-gold-cdn.xitu.io/2018/8/7/16513e81dfa85cbc?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
 
 ![](https://user-gold-cdn.xitu.io/2018/8/7/16513e5b6a73ac96?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
 
 ```js
-
 // 升级node 
 npm install webpack-cli -D -g
 
@@ -106,11 +108,17 @@ UI 组件库
 // 支持HTTP/2
 webpack4.15.0 新增的 maxSize
 
-// Long term caching
+// Long term caching 持久化缓存
+// 针对 html 文件：
+不开启缓存，把 html 放到自己的服务器上，关闭服务器的缓存
+// 针对静态的 js，css，图片等文件：
+开启 cdn 和缓存，将静态资源上传到 cdn 服务商，我们可以对资源开启长期缓存，
+因为每个资源的路径都是独一无二的，所以不会导致资源被覆盖，保证线上用户访问的稳定性。
 
+每次发布更新的时候，先将静态资源(js, css, img) 传到 cdn 服务上，然后再上传 html 文件，
+这样既保证了老用户能否正常访问，又能让新用户看到新的页面
 ```
 
-![](https://user-gold-cdn.xitu.io/2018/8/7/16513e81dfa85cbc?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
 
 - 打包速度优化 https://github.com/xitu/gold-miner/blob/master/TODO/keep-webpack-fast-a-field-guide-for-better-build-performance.md
 - webpack4-用之初体验，一起敲它十一遍 https://juejin.im/post/5adea0106fb9a07a9d6ff6de
