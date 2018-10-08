@@ -1,6 +1,4 @@
-# webpack源码分析
-
-- https://github.com/lihongxun945/diving-into-webpack/blob/master/6-process-pipe-line.md
+> 愿世间再无 webpack 配置工程师
 
 # webpack优化
 
@@ -58,11 +56,12 @@ const Article = () => import('@/components/Article') // 利用promise
 
 - awesome-webpack-4 https://github.com/valentinogagliardi/awesome-webpack-4
 - 官网配置栗子 https://github.com/webpack/webpack/tree/master/examples
-- 手摸手，带你用合理的姿势使用webpack4 
+- 手摸手，带你用合理的姿势使用webpack4
     - https://juejin.im/post/5b56909a518825195f499806
     - 在webpack 3的基础上升级
     - 最大化利用 long term caching持久化缓存
     - 优化分包策略
+    - Caching https://webpack.js.org/guides/caching/
 
 
 ![](https://user-gold-cdn.xitu.io/2018/8/7/16513e81dfa85cbc?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
@@ -117,8 +116,27 @@ webpack4.15.0 新增的 maxSize
 
 每次发布更新的时候，先将静态资源(js, css, img) 传到 cdn 服务上，然后再上传 html 文件，
 这样既保证了老用户能否正常访问，又能让新用户看到新的页面
+
+// 优化
+打包生成的 runtime.js非常的小 => 内嵌到html
+script-ext-html-webpack-plugin
+
+
+不要使用一个自增的 id
+HashedModuleIdsPlugin
+
+// webpack records
+用于存储跨多次构建(across multiple builds)的模块标识符」的数据片段
+等于每次构建都是基于上次构建的基础上进行的。
+
 ```
 
 
 - 打包速度优化 https://github.com/xitu/gold-miner/blob/master/TODO/keep-webpack-fast-a-field-guide-for-better-build-performance.md
 - webpack4-用之初体验，一起敲它十一遍 https://juejin.im/post/5adea0106fb9a07a9d6ff6de
+
+
+# webpack源码分析
+
+- webpack 源码解析系列 https://github.com/lihongxun945/diving-into-webpack 
+    - https://github.com/lihongxun945/diving-into-webpack/blob/master/6-process-pipe-line.md

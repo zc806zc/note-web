@@ -8,7 +8,7 @@
 ```java
 // 入门
 《Head First Java》
-《Java 核心技术》两卷
+《Java 核心技术》 第10版 两卷
 
 // 进阶  
 《Java 编程思想(第4版)》  
