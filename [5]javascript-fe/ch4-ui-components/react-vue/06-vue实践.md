@@ -1,9 +1,19 @@
 # 教程
 
-- 手摸手，带你用vue撸后台 @NICE 
-    - https://panjiachen.github.io/vue-element-admin-site/
+- 手摸手，带你用vue撸后台 @NICE
+    - 文档 @nice：收益颇多 https://panjiachen.github.io/vue-element-admin-site/
     - 系列 https://juejin.im/post/59097cd7a22b9d0065fb61d2
     - 权限登录 https://juejin.im/post/591aa14f570c35006961acac
+    - 路由懒加载 (热更新慢) https://panjiachen.github.io/vue-element-admin-site/zh/guide/advanced/lazy-loading.html#%E8%B7%AF%E7%94%B1%E6%87%92%E5%8A%A0%E8%BD%BD
+    - Autoprefixer只会对通过 vue-loader 引入的样式才会有有作用 @fixed：新版本已解决
+    - 请记住拆分组件最大的好处不是公用而是可维护性！！！
+
+```html
+<!-- 当你子组件使用了 scoped 但在父组件又想修改子组件的样式可以 通过 >>> 来实现 -->
+<style scoped>
+.a >>> .b { /* ... */ }
+</style>
+```
 
 # 结构
 
@@ -105,6 +115,8 @@ LoginByUsername({ commit }, userInfo) {
 ```
 
 # 换肤
+
+- vue-element-admin换肤方案 https://panjiachen.github.io/vue-element-admin-site/zh/guide/advanced/theme.html#%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98
 
 # 侧边栏
 

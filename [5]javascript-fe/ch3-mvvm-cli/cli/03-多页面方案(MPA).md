@@ -6,8 +6,12 @@
 
   - <https://github.com/zhaotoday/webpack-multi-page>
 
-- vue-cli-multi-page@NICE <https://github.com/bluefox1688/vue-cli-multi-page>
+# 脚手架
 
+- 基于webpack4多页面 
+  - https://github.com/wallstreetcn/webpack-and-spa-guide/blob/master/examples/mpa/webpack.config.js
+
+- vue-cli-multi-page@NICE <https://github.com/bluefox1688/vue-cli-multi-page>
 - Vue或React多页应用脚手架 <https://github.com/MeCKodo/vue-multipage>
 
   - <https://www.imooc.com/article/12697>
