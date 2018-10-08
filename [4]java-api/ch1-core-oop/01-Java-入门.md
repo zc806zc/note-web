@@ -1,12 +1,17 @@
 # Java入门学习
 
 - LearningNotes <https://github.com/francistao/LearningNotes>
-- JAVA学习的方法和过程-知乎 <https://www.zhihu.com/question/29581524/answer/44872235>
-- 博客分享 <https://juejin.im/post/586603be1b69e60063d08b7a>
+- JAVA学习的方法和过程-知乎 @nice <https://www.zhihu.com/question/29581524/answer/44872235>
+- brianway https://github.com/brianway @nice
+  - 2016 总结：一个应届生的互联网名企逐梦记 <https://juejin.im/post/586603be1b69e60063d08b7a>
+  -  Java 学习笔记 https://github.com/brianway/java-learning
 - Java 后端自学之路 <https://juejin.im/entry/5a7a9a13f265da4e865a578c>
-- http://www.runoob.com/java/java-tutorial.html
 
 ![](https://user-gold-cdn.xitu.io/2018/2/7/1616ee9f71973a2e?imageslim)
+
+# 教程
+
+- 教程 http://www.runoob.com/java/java-tutorial.html
 
 # Java知识点
 
