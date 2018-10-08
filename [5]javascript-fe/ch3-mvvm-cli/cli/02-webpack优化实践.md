@@ -14,10 +14,6 @@
     - https://www.jianshu.com/p/63eacd66eb50du
     - https://github.com/rt-zhangxuefei/vue-project-multipages-template
 
-- happypack 
-    - https://github.com/amireh/happypack
-    - https://juejin.im/post/5a922e776fb9a06337575031
-
 - 优化
 
     - NICE webpack打包优化探索 https://mp.weixin.qq.com/s/SzD22kTnYYfQShQwRaAGWA
@@ -51,16 +47,70 @@
 const Article = () => import('@/components/Article') // 利用promise
 ```
 
+# 并行执行
+
+- parallel-webpack
+- happypack
+    - https://github.com/amireh/happypack
+    - 组件库webpack构建速度优化经验总结 https://juejin.im/post/5a922e776fb9a06337575031
+
 # webpack4
 
 - awesome-webpack-4 https://github.com/valentinogagliardi/awesome-webpack-4
+- 官网配置栗子 https://github.com/webpack/webpack/tree/master/examples
 - 手摸手，带你用合理的姿势使用webpack4 
     - https://juejin.im/post/5b56909a518825195f499806
     - 在webpack 3的基础上升级
     - 最大化利用 long term caching
+    - 优化分包策略
+
+![](https://user-gold-cdn.xitu.io/2018/8/7/16513e5b6a73ac96?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
 
 ```js
 
+// 升级node 
+npm install webpack-cli -D -g
+
+反正把devDependencies的依赖都升级一下，总归不会有错
+babel-preset-esxxxx -> babel-preset-env
+
+// mini-css-extract-plugin
+与 extract-text-webpack-plugin 区别
+将 css 独立拆包最大的好处就是 js 和 css 的改动，不会影响对方。
+
+// 压缩优化
+optimization: {
+  minimizer: [new OptimizeCSSAssetsPlugin()];
+}
+
+// 打包速度
+普遍能提高 20%~30%的打包速度
+speed-measure-webpack-plugin
+
+// 代码分割策略
+新的 chunk 是否被共享或者是来自 node_modules 的模块
+新的 chunk 体积在压缩之前是否大于 30kb
+按需加载 chunk 的并发请求数量小于等于 5 个
+页面初始加载时的并发请求数量小于等于 3 个
+
+
+为了共用这 1.5kb 的代码，却要额外花费一次 http 请求的时间损耗，得不偿失
+
+
+基础类库 chunk-libs : nprogress、js-cookie、clipboard
+UI 组件库
+自定义组件/函数 chunk-commons
+低频组件 : 富文本编辑器、js-xlsx前端 excel 处理库
+业务代码
+
+// 支持HTTP/2
+webpack4.15.0 新增的 maxSize
+
+// Long term caching
+
 ```
 
+![](https://user-gold-cdn.xitu.io/2018/8/7/16513e81dfa85cbc?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+
+- 打包速度优化 https://github.com/xitu/gold-miner/blob/master/TODO/keep-webpack-fast-a-field-guide-for-better-build-performance.md
 - webpack4-用之初体验，一起敲它十一遍 https://juejin.im/post/5adea0106fb9a07a9d6ff6de

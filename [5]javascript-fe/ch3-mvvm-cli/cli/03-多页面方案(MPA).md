@@ -8,8 +8,9 @@
 
 # 脚手架
 
-- 基于webpack4多页面 
-  - https://github.com/wallstreetcn/webpack-and-spa-guide/blob/master/examples/mpa/webpack.config.js
+- Webpack 4 和单页应用入门
+
+  - 多页面 https://github.com/wallstreetcn/webpack-and-spa-guide/blob/master/examples/mpa/webpack.config.js
 
 - vue-cli-multi-page@NICE <https://github.com/bluefox1688/vue-cli-multi-page>
 - Vue或React多页应用脚手架 <https://github.com/MeCKodo/vue-multipage>
