@@ -9,7 +9,8 @@
 # 动画
 
 - 要做动效？这75款动效工具让你无所不能 <http://www.uisdc.com/75-web-animation-tools-1>
-- lottie-web @nice https://github.com/airbnb/lottie-web
+- 跨平台
+  - lottie-web @nice https://github.com/airbnb/lottie-web
 - css主导动画
   - animate.css @nice https://github.com/daneden/animate.css
   - A+ https://github.com/bendc/animateplus  
