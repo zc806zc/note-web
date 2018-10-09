@@ -108,9 +108,10 @@ be the most lightweight
 
 # 手势 
 
+- AlloyFinger @nice
+  - vue指令栗子 https://github.com/AlloyTeam/AlloyFinger/blob/master/vue/alloy_finger.vue.js
 - vue2-hammer https://github.com/bsdfzzzy/vue2-hammer
-- vue-touch https://github.com/vuejs/vue-touch @deprecated:仅支持vue1
-
+- vue-touch @deprecated:仅支持vue1 https://github.com/vuejs/vue-touch 
 
 # 加载
 

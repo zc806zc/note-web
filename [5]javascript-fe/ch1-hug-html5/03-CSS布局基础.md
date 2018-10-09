@@ -3,10 +3,19 @@
 - awesome-css-cn <https://github.com/jobbole/awesome-css-cn>
 - CSS速查表 <http://www.css88.com/book/css/>
 - CSS查漏补缺 <https://segmentfault.com/a/1190000006242814>
+- You-need-to-know-css@NICE <https://github.com/l-hammer/You-need-to-know-css>
+  - CSS Tricks for web developer
+  - <https://l-hammer.github.io/You-need-to-know-css/>
+- you don't need js
+  - <https://github.com/you-dont-need/You-Dont-Need-JavaScript>
+
+
 - 12个HTML和CSS必须知道的重点难点问题 <https://juejin.im/post/5a954add6fb9a06348538c0d>
 
   - height line-height
   - position: relative absolute
+- 你以为 CSS 只是个简单的布局 https://juejin.im/post/5a446d19f265da43052eebcc
+- iCSS@NICE 谈谈一些有趣的 CSS 话题 https://github.com/chokcoco/iCSS   
 - 负值之美(将一个元素的margin设置为负值，元素将会变大) <http://www.cnblogs.com/jscode/archive/2012/08/28/2660078.html>
 - 伪类与伪元素
 
@@ -17,6 +26,53 @@
   - 梯形标签页 <http://dabblet.com/gist/1345dc9399dc8e794502>
 
 ![](/static/img/css/css-books.jpg)
+
+# CSS3
+
+> 限制住自己的不是技术而是想象力
+
+- CSS3: 把下一代CSS试验性地拆分成一组组独立的标准模块，并且是还在试验和反馈的循环
+
+- 查看兼容现状 
+  - <http://tinyurl.com/css3-stages>
+  - CSS contents and browser compatibility <http://www.quirksmode.org/css/contents.html>
+  - caniuse.com | CSS3 Click Chart
+  - Modernizr 检测支持情况
+  - -prefix-free自动添加前缀 @deprecated <http://leaverou.github.io/prefixfree>
+
+- 移动性能 - 标准反模式
+
+- 字体格式 [css3-font-face](http://www.w3cplus.com/content/css3-font-face)
+
+  - eot // 嵌入式字体，微软家的
+  - svg // W3C制定的开放标准的图形格式
+  - ttf
+  - woff // Web开发字体格式
+
+```javascript
+// 字体link引用
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,
+200italic,300italic,400italic,600italic,700italic,900italic
+|Roboto+Condensed:300italic,400italic,700italic,400,300,700'
+rel='stylesheet' type='text/css'>
+
+// icon (@font-face)
+@font-face {
+    font-family: <YourFontName>;
+    src: <source> [<format>][,<source> [<format>]]*;
+    [font-weight: <weight>];
+    [font-style: <style>];
+}
+```
+
+- Web字体
+
+  - Font Squirrel <http://www.fontsquirrel.com> 推荐Callographic,Novelty,Retro
+  - Webfont Generator
+
+  - Google Fonts <http://www.google.com/fonts>
+
+  - 还面临的问题 打印优化问题 + 版权问题
 
 # CSS资源
 
