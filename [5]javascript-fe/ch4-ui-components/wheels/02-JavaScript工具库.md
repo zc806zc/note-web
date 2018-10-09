@@ -1,6 +1,9 @@
-# 工具类
+# 资源
 
-> 在这些库变成你的拐杖之时，你也会随之“残废” -- DOM Scripting, 2nd
+- 30-seconds-of-code
+
+  - <https://github.com/Chalarangelo/30-seconds-of-code#flatten-array>
+  - <http://www.css88.com/30-seconds-of-code/#call>
 
 - 经典工具库
 
@@ -20,14 +23,16 @@
   - lazy.js https://github.com/dtao/lazy.js
   - Sugar https://github.com/andrewplummer/Sugar
 
-- 30-seconds-of-code
 
-  - <https://github.com/Chalarangelo/30-seconds-of-code#flatten-array>
-  - <http://www.css88.com/30-seconds-of-code/#call>
+# 工具类
+
+> 在这些库变成你的拐杖之时，你也会随之“残废” -- DOM Scripting, 2nd
+
 
 - 编写自己的代码库
 
-  - 可以考虑用typescript
+  - 可以考虑用typescript @nice
+  - 8102年如何写一个现代的JavaScript库 https://juejin.im/post/5bbafd78f265da0ad947e6ba
   - 打造自己的JavaScript武器库 <https://juejin.im/post/5a091afe6fb9a044ff30f402>
   - 仓库 ec-do
 
@@ -35,77 +40,84 @@
     - <https://github.com/chenhuiYj/ec-do>
 
   - 尝试造了个工具类库，名为 Diana
-
     - <http://muyunyun.cn/posts/4490810f/>
     - diana <https://github.com/MuYunyun/diana>
-  - 7种方法实现数组去重 https://juejin.im/post/5aed6110518825671b026bed
-    - [...new Set(arr)]
-    - Array.from(new Set(arr))
-    - 利用对象属性
-    - 排序->相邻元素
-    - indexOf x 2
-    - 循环
 
-- 常用片段
-
-  - 48 个 JavaScript 代码片段 <http://codebay.cn/post/7452.html>
-  - 常用片段 <http://www.css88.com/archives/5180>
-
-  - 简单收集 <https://github.com/jsfront/src/blob/master/js.md>
-
-  - ES6常用片段 <http://www.css88.com/archives/8748>
-  - overwrite some javascript methods <https://github.com/xuqiang521/overwrite>
+- 7种方法实现数组去重 https://juejin.im/post/5aed6110518825671b026bed
+  - [...new Set(arr)]
+  - Array.from(new Set(arr))
+  - 利用对象属性
+  - 排序->相邻元素
+  - indexOf x 2
+  - 循环
 
 ```javascript
-字符串操作 格式化|替换|大小写转换|去空格
+/**
+ * 推荐列表
+ */
 
-数组操作 最值
-  steamroller 数组扁平化
+// 字符串操作 
+格式化|替换|大小写转换|去空格
 
-对象操作
+// 数组操作 
+最值
+steamroller 数组扁平化
 
-url
-  getUrlPrmt
+// 对象操作
 
-统计
+// url
+getUrlPrmt
 
-检测数据类型
-  isType
+// 统计
 
-浏览器信息
-  browserInfo
+// 检测数据类型
+isType
 
-随机数
+// 浏览器信息
+browserInfo
 
-表单校验
+// 随机数
 
-货币金额
-  ecDo.upDigit(10.5)
-  result："人民币壹拾元伍角"
+// 表单校验
 
-Ajax
+// 货币金额
+ecDo.upDigit(10.5)
+result："人民币壹拾元伍角"
 
-函数节流
-  delayFn
-  var count=0;
-  function fn1(){
-      count++;
-      console.log(count)
-  }
-  //每100ms连续触发的调用，后一个调用会把前一个调用的等待处理掉，但每隔200ms至少执行一次
-  document.onmousemove=delayFn(fn1,100,200)
+// Ajax
 
-Cookie
-    setCookie
-    getCookie
+// 函数节流
+delayFn
+var count=0;
+function fn1(){
+    count++;
+    console.log(count)
+}
+//每100ms连续触发的调用，后一个调用会把前一个调用的等待处理掉，但每隔200ms至少执行一次
+document.onmousemove=delayFn(fn1,100,200)
 
-class样式操作 // jquery
-关键字高亮
-  findKey
-  Reg = new RegExp(regStr, "g");
-  content = content.replace(/<\/?[^>]*>/g, '')
-  return content.replace(Reg, "<" + el + ">$1</" + el + ">");
+// Cookie
+setCookie
+getCookie
+
+// class样式操作 
+jquery
+
+// 关键字高亮
+findKey
+Reg = new RegExp(regStr, "g");
+content = content.replace(/<\/?[^>]*>/g, '')
+return content.replace(Reg, "<" + el + ">$1</" + el + ">");
 ```
+
+# 常用片段
+
+- 48 个 JavaScript 代码片段 <http://codebay.cn/post/7452.html>
+- 常用片段 <http://www.css88.com/archives/5180>
+- 简单收集 <https://github.com/jsfront/src/blob/master/js.md>
+- ES6常用片段 <http://www.css88.com/archives/8748>
+- overwrite some javascript methods <https://github.com/xuqiang521/overwrite>
+
 
 # 事件库封装
 
