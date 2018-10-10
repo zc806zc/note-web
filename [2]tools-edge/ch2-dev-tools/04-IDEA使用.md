@@ -77,10 +77,9 @@ ctrl+shift+A -> test restful web service
 # 常见问题
 
 - 首先确定java7 java8版本
-- IDEA 内存溢出问题
+- IDEA 内存溢出问题 http://blog.csdn.net/fyqcdbdx/article/details/46788915
 
 ```
-http://blog.csdn.net/fyqcdbdx/article/details/46788915
 -server -XX:PermSize=128M -XX:MaxPermSize=256m
 ```
 

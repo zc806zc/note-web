@@ -1,6 +1,7 @@
 # 前端基础
 
 - 全景展望 <https://www.jianshu.com/p/6dca1f992507>
+- 我如何零基础转行成为一个自信的前端 @nice https://juejin.im/post/5bb9aed1e51d451a3f4c3923
 - HTML 入门容易 重点在于语义与结构
 - CSS 组合和继承 表现有关，所以是核心之一
 - 编程，主要还是JavaScript
