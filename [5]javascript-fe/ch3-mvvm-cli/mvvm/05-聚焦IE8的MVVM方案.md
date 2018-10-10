@@ -66,11 +66,13 @@
 - ligerUI @deprecated http://www.ligerui.com/
 - flow-ui <http://flow-ui.refined-x.com/>
 
-# 栗子
+# 脚手架 | boilerplate | template
 
-- https://github.com/HeavenSky/webpack-frames
+- webpack-frames
+    - webpack 1,3,4 ie8 react vue 主流框架搭建汇总 
+    - https://github.com/HeavenSky/webpack-frames
 
-# 支持IE8
+# 支持IE8措施
 
 - 包含了一些对IE8的处理 https://github.com/zhaotoday/webpack-multi-page
 - 让Webpack+Babel支持IE8 https://www.maizhiying.me/posts/2017/03/01/webpack-babel-ie8-support.html
@@ -99,7 +101,9 @@ require("babel-polyfill")
 </script>
 ```
 
-# 参考
+# 参考 | 评论
+
+> 寻找兼容IE8的方法不如换家公司，真解！！
 
 - 支持ie8的mvvm框架比较 <https://www.zhihu.com/question/52069420>
 - 如何评价百度新造的 MVVM 轮子 San <https://www.zhihu.com/question/65498751/answer/294265707>
