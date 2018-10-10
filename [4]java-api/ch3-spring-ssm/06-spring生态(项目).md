@@ -44,7 +44,6 @@
 - ace-security @NICE 国内首个基于Spring Cloud微服务化开发平台 https://gitee.com/minull/ace-security
 - PiggyMetrics 简单的个人财务系统 https://github.com/sqshq/PiggyMetrics
 - spring-cloud-rest-tcc 熔断监控 https://github.com/prontera/spring-cloud-rest-tcc  
-- xxpay-master 支付 https://gitee.com/jmdhappy/xxpay-master
 - spring-boot-cloud https://github.com/zhangxd1989/spring-boot-cloud
 - FCat https://gitee.com/xfdm/FCat
   - Angular4 + SpringCloud
@@ -65,7 +64,7 @@
 
 - Spring+SpringMVC+Mybatis+easyUI后台管理系统 https://github.com/ZHENFENG13/perfect-ssm
 
-# 管理系统 | 权限 | 综合
+# 后台管理系统 | 权限 | 综合
 
 - renren-security @NICE https://gitee.com/renrenio/renren-security
 - renren-fast
@@ -76,7 +75,9 @@
 - spring-shiro-training 权限脚手架 https://gitee.com/wangzhixuan/spring-shiro-training
 - FEBS 权限管理系统 <https://github.com/wuyouzhuguli/FEBS>
 - hsweb-framework 快速搭建企业后台管理系统 <https://github.com/hs-web/hsweb-framework>
-- RuoYi 基于SpringBoot2.0的权限管理系统 https://gitee.com/y_project/RuoYi
+- RuoYi @nice 
+    - 基于SpringBoot2.0的权限管理系统 
+    - https://gitee.com/y_project/RuoYi
 - JFlow 表单引擎+流程引擎+权限控制 https://gitee.com/opencc/JFlow
 - SpringBlade 
   - https://gitee.com/smallc/SpringBlade
@@ -106,46 +107,72 @@
 - 博客 Vue + Spring Boot <https://github.com/lenve/VBlog>
 - 前后端分离的人力资源管理系统 SpringBoot+Vue @deprectaed <https://github.com/lenve/vhr>
 
-# 商城电商 | 支付
+# 商城电商
 
 - 商城生成静态页
 - 商城 @NICE <https://github.com/linlinjava/litemall>
   - litemall = Spring Boot后端 + Vue管理员前端 + 微信小程序用户前端
   -  又一个小商城
 - platform-wechat-mall 微信小程序商城 https://gitee.com/fuyang_lipengjun/platform
-- roncoo-pay 龙果支付系统 <https://gitee.com/roncoocom/roncoo-pay>
 - springboot mybatis mysql后台商城 h5 小程序 <https://gitee.com/JiaGou-XiaoGe/webappchat>
-- spring-boot-pay 支付服务 <https://gitee.com/52itstyle/spring-boot-pay>
 - 猫宁Morning 基于SSM框架的公益B2C网上商城 https://gitee.com/morning-pro/Morning
 - 商城 包括前端，后端和h5应用，小程序 https://gitee.com/catshen/zscat_sw
+- xbin-store
+    - https://gitee.com/binu/xbin-store
+    - 模仿国内知名B2C网站,实现的一个分布式B2C商城
+
+# 商城实战 | 并发
+
 - 秒杀、抢购解决方案 https://gitee.com/1028125449/miaosha
 - 从0到1构建分布式秒杀系统，脱离案例讲架构都是耍流氓 https://gitee.com/52itstyle/spring-boot-seckill
-- fastpay 集成聚合支付和资金清结算于一体 https://gitee.com/robertleepeak/fastpay
-- IJPay 
-  - https://gitee.com/javen205/IJPay
-  - 封装了微信支付、支付宝支付、银联支付常用的支付方式以及各种常用的接口 
-  - 无框架依赖 
 - 搭建微信小程序 商城 spring boot + mybatis
 
   - <https://www.imooc.com/video/16538>
   - <http://blog.csdn.net/codejas/article/details/79341919>
   - <https://github.com/coderjas/springboot-study>
 
+# 支付
+
+- xxpay-master
+    - spring-cloud、dubbo、spring-boot三个架构版本
+    - https://gitee.com/jmdhappy/xxpay-master
+- roncoo-pay 
+    - 龙果支付系统 
+    - <https://gitee.com/roncoocom/roncoo-pay>
+- spring-boot-pay 
+    - 支付服务 
+    - <https://gitee.com/52itstyle/spring-boot-pay>
+- fastpay 
+    - 集成聚合支付和资金清结算于一体 
+    - https://gitee.com/robertleepeak/fastpay
+- IJPay 
+  - https://gitee.com/javen205/IJPay
+  - 封装了微信支付、支付宝支付、银联支付常用的支付方式以及各种常用的接口 
+  - 无框架依赖 
+
 # 微信 | 公众号
 
-- fastweixin 极其方便的实现微信公众平台服务端开发 https://gitee.com/pyinjava/fastweixin
-- jeewx 一款开源的微信管家平台 https://gitee.com/jeecg/jeewx
-- FastBootWeixin <https://github.com/FastBootWeixin/FastBootWeixin>
-
+- fastweixin 
+    - 极其方便的实现微信公众平台服务端开发 
+    - https://gitee.com/pyinjava/fastweixin
+- jeewx 
+    - 一款开源的微信管家平台 
+    - https://gitee.com/jeecg/jeewx
+- FastBootWeixin 
+    - <https://github.com/FastBootWeixin/FastBootWeixin>
   - 基于SpringBoot的微信公众号快速开发框架，注解方式处理全部逻辑，重新定义公众号开发
-- wemall 微信商城云平台 https://gitee.com/einsqing/wemall  
-- jfinal-weixin https://gitee.com/jfinal/jfinal-weixin  
+- wemall 
+    - 微信商城云平台 
+    - https://gitee.com/einsqing/wemall  
+- jfinal-weixin 
+    - https://gitee.com/jfinal/jfinal-weixin  
 - wxmp 
   - 微信公众号的web管理工具 
   - springmvc+layui
   - https://gitee.com/qingfengtaizi/wxmp
+
 - 其他
-  - <https://www.imooc.com/video/7231>
+  - 微信公众号开发 <https://www.imooc.com/video/7231>
   - 进阶 <https://www.imooc.com/video/7789>
 
 
@@ -180,6 +207,12 @@
 
 - t-io 基于aio(nio2)的网络编程框架 https://gitee.com/tywo45/t-io
 
+# 推送
+
+- cim 
+  - https://gitee.com/farsunset/cim 
+  - 一套基于mina或netty框架下的推送系统
+
 # 其他
 
 - neural 
@@ -195,9 +228,7 @@
 - any-video  <https://github.com/ChinaSilence/any-video>
   - springboot + semantic UI
   - 利用网络爬虫技术，实时解析互联网资源，可对所有资源分类收藏
-- cim 
-  - https://gitee.com/farsunset/cim 
-  - 一套基于mina或netty框架下的推送系统
+
 - websocket技术实时输出系统日志 <https://gitee.com/kailing/boot-websocket-log>
 - Spring Boot使用Redis提升天气预报应用的并发访问能力 <http://www.imooc.com/article/23435>
 - tx-lcn

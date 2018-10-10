@@ -50,12 +50,19 @@ public class UserInputDTOConvert implements DTOConvert {
 User user = new UserInputDTOConvert().convert(userInputDTO);
 ```
 
-# lombok
 
-- 一个可以通过简单的注解形式来帮助我们简化消除一些必须有但显得很臃肿的Java代码的工具
-- 注解文档 <https://projectlombok.org/features/all>
-- Lombok使用 https://blog.csdn.net/motui/article/details/79012846 
-  - IDEA要安装lombok插件
+
+
+
+
+# 代码生成
+
+- lombok
+
+  - 一个可以通过简单的注解形式来帮助我们简化消除一些必须有但显得很臃肿的Java代码的工具
+  - 注解文档 <https://projectlombok.org/features/all>
+  - Lombok使用 https://blog.csdn.net/motui/article/details/79012846 
+    - IDEA要安装lombok插件
 
 ```xml
 @Setter
@@ -82,11 +89,11 @@ User user = new UserInputDTOConvert().convert(userInputDTO);
 </dependency>
 ```
 
-# TKmybatis
 
-- mapper自动生成
-- 极其方便的使用Mybatis单表的增删改查 https://gitee.com/free/Mapper
-- mybatis-generator和TKmybatis的结合使用 <https://www.cnblogs.com/Jason-Xiang/p/6547152.html>
+- TKmybatis
+
+  - mapper自动生成
+  - mybatis-generator和TKmybatis的结合使用 <https://www.cnblogs.com/Jason-Xiang/p/6547152.html>
 
 ```xml
 <dependency>
@@ -102,7 +109,24 @@ User user = new UserInputDTOConvert().convert(userInputDTO);
 </dependency>
 ```
 
-# 页面自动生成
+-  Mapper
+    
+    - 极其方便的使用Mybatis单表的增删改查 
+    - https://gitee.com/free/Mapper
 
-- 生成简单的模板
-- 生产增删改查的脚本
+
+
+# 模板快速建站
+
+- jeecg 
+  - https://gitee.com/jeecg/jeecg 
+  - 一款基于代码生成器的J2EE快速开发平台
+
+- wangmarket 
+  - https://gitee.com/mail_osc/wangmarket
+  - 选好模版一键导入 最快出网站
+
+- 页面自动生成
+
+  - 生成简单的模板
+  - 生产增删改查的脚本

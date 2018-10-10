@@ -32,6 +32,8 @@
 - vaadin
 - Pippo 小型、高度模块化的类Sinatra框架  http://www.pippo.ro/
 - Ninja Java全栈Web开发框架。非常稳固、快速和高效  http://www.ninjaframework.org/
+- coody-icop 国产分布式IOC框架 https://gitee.com/coodyer/coody-icop
+- smart-framework 轻量级 Java Web 框架 https://gitee.com/huangyong/smart-framework
 
 # play
 
