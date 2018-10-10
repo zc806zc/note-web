@@ -23,7 +23,7 @@
   - <http://avalonjs.coding.me/> 资源多看教程
   - Avalon组件库 <https://github.com/RubyLouvre/avalon.oniui>
   - 基于 avalon2 的 SPA 脚手架
-
+    - https://github.com/Levan-Du/avalon-spa-app
     - @NICE 由vue脚手架修改过来，适合vue开发者使用，采用类vue的单文件组件书写，异步、嵌套路由 <https://github.com/hmhao/avalon2-webpack2-spa>
     - <https://segmentfault.com/a/1190000009625441>
     - @deprecated <https://github.com/xxapp/ane>
@@ -69,6 +69,35 @@
 # 栗子
 
 - https://github.com/HeavenSky/webpack-frames
+
+# 支持IE8
+
+- 包含了一些对IE8的处理 https://github.com/zhaotoday/webpack-multi-page
+- 让Webpack+Babel支持IE8 https://www.maizhiying.me/posts/2017/03/01/webpack-babel-ie8-support.html
+- https://www.yukapril.com/2017/08/05/webpack-uglifyjs-ie8.html
+    - es3ify-webpack-plugin
+    - uglifyjs-webpack-plugin
+
+```html
+<!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/es5-shim/4.5.10/es5-shim.min.js"></script>
+    <script src="https://cdn.bootcss.com/es5-shim/4.5.10/es5-sham.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+    <script src="https://cdn.bootcss.com/nwmatcher/1.4.2/nwmatcher-base.js"></script>
+<![endif]-->
+
+<script >
+require("babel-polyfill")
+</script>
+```
 
 # 参考
 
