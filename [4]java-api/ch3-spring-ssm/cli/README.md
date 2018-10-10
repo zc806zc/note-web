@@ -1,14 +1,11 @@
 # README 
 
+- ->> GVP <https://gitee.com/gvp>
+- java项目码云排行 https://gitee.com/explore/starred?lang=Java
 
 # 脚手架
 
-- pig  <https://github.com/pig4cloud/pig>
-  - 基于Spring Cloud、oAuth2.0开发
-  - 基于Vue前后分离的开发平台
-  - 文档($ 已购) https://www.kancloud.cn/lengleng/pig-guide
-
-
+- pig 
 - paascloud-master 
 - Guns  
 - iBase4J 

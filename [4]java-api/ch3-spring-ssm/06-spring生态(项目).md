@@ -41,8 +41,7 @@
 
 # Spring Cloud
 
-
-- ace-security @NICE https://gitee.com/minull/ace-security
+- ace-security @NICE 国内首个基于Spring Cloud微服务化开发平台 https://gitee.com/minull/ace-security
 - PiggyMetrics 简单的个人财务系统 https://github.com/sqshq/PiggyMetrics
 - spring-cloud-rest-tcc 熔断监控 https://github.com/prontera/spring-cloud-rest-tcc  
 - xxpay-master 支付 https://gitee.com/jmdhappy/xxpay-master
