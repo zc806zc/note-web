@@ -1,5 +1,7 @@
 # MySQL常用命令
 
+
+
 - MySQL命令，一篇文章替你全部搞定 @NICE https://juejin.im/post/5ae55861f265da0ba062ec71
 - Mysql常用SQL语句集锦 <https://juejin.im/post/584e7b298d6d81005456eb53>
 - MySQL常用操作和主从配置 偏基础 <https://juejin.im/post/5a8e53675188257a71687e1f>
@@ -67,3 +69,9 @@ and 主键ID not in
  
     - 连续范围
     - 签到
+
+# 面试
+
+- 互联网公司面试必问的mysql题目
+    - https://juejin.im/post/5baafdccf265da0af93b05e4
+    - https://juejin.im/post/5ba1f32ee51d450e805b43f2
