@@ -6,9 +6,16 @@
 - 如何评价百度新造的 MVVM 轮子 San <https://www.zhihu.com/question/65498751/answer/294265707>
 - 如果要兼容IE8，前端用什么框架最好？ https://www.zhihu.com/question/268725034
 
-# webpack配置
+# 脚手架配置 | gulp| webpack
 
-- Shimming https://webpack.js.org/guides/shimming/
+- Webpack Shimming https://webpack.js.org/guides/shimming/
+
+```
+有些脚手架
+开发时不一定兼容IE8+
+因为IE8很难搞定开发时热更新
+要看打包结果是否兼容IE8+
+```
 
 # IE8-MV* 兼容方案
 
@@ -67,11 +74,13 @@ import 'fetch-polyfill2'; //fetch 实现
   - 兼容IE8措施 https://github.com/xcatliu/react-ie8
   - https://github.com/HeavenSky/react-antd-ie8
   - https://github.com/jaychsu/react-ie8-boilerplate
+  - https://github.com/brickspert/react-family-ie8 开发时热更新，打包时才兼容IE8
 
 - regular <https://github.com/regularjs/regular>
 
   - regular-ui <https://github.com/regular-ui/regular-ui>
-  - 后台管理系统前端开发方案，采用es6 + regular + gulp技术 @deprecated <https://github.com/xuyanquan/es6-regular-gulp>
+  - 后台管理系统前端开发方案，采用es6 + regular + gulp技术 ?? <https://github.com/xuyanquan/es6-regular-gulp>
+  - https://github.com/regularjs/example ??
 
 - NervJS @deprecated
 
