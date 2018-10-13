@@ -134,9 +134,3 @@ HashedModuleIdsPlugin
 
 - 打包速度优化 https://github.com/xitu/gold-miner/blob/master/TODO/keep-webpack-fast-a-field-guide-for-better-build-performance.md
 - webpack4-用之初体验，一起敲它十一遍 https://juejin.im/post/5adea0106fb9a07a9d6ff6de
-
-
-# webpack源码分析
-
-- webpack 源码解析系列 https://github.com/lihongxun945/diving-into-webpack 
-    - https://github.com/lihongxun945/diving-into-webpack/blob/master/6-process-pipe-line.md
