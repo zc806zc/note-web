@@ -12,24 +12,27 @@
 
 # IE8-MV* 兼容方案
 
-- san <https://github.com/baidu/san>
+- san 
 
-  - 百度
+  - <https://github.com/baidu/san>
+  - 百度出品
   - interlliJ idea 不识别文件类型 <https://blog.csdn.net/aaashen/article/details/46740817>
   - 借用Vue|HTML IDEA插件语法高亮下先
 
 ![](https://pic4.zhimg.com/80/v2-3ad18522a77e7e759c969efd6b130c7d_hd.jpg)
 
-- anu.js <https://rubylouvre.github.io/anu/>
-
+- anu.js 
+  - <https://rubylouvre.github.io/anu/>
   - 兼容IE8的React(anu)开发脚手架 <https://gitee.com/menhal/React_IE8_boilerplate>
-  - 如何让React(anujs)跑在IE8上 https://zhuanlan.zhihu.com/p/39103023
-  - https://github.com/RubyLouvre/anu-ie8-example
-  - https://github.com/yunpengGit/anu-antd-axios-echarts-ie8
-  - https://github.com/Levan-Du/anu-cli
   - https://gitee.com/menhal/React_IE8_boilerplate
   - https://github.com/magicapple/anujs-webpack4-ie7-8
-  - https://github.com/RubyLouvre/create-anu-app
+  - 脚手架 @deprecated o(╥﹏╥)o 没成功
+    - https://github.com/Levan-Du/anu-cli
+    - https://github.com/RubyLouvre/create-anu-app 
+    - https://github.com/yunpengGit/anu-antd-axios-echarts-ie8 chrome可以没试通IE8
+  - 如何让React(anujs)跑在IE8上 @deprecated 暂时跑不起来
+    - https://zhuanlan.zhihu.com/p/39103023
+    - https://github.com/RubyLouvre/anu-ie8-example
 
 ```js
 // https://github.com/RubyLouvre/anu-ie8-example/blob/master/src/index.js
@@ -43,17 +46,23 @@ import 'bluebird'; //性能超高的Promise实现
 import 'fetch-polyfill2'; //fetch 实现
 ```
 
-- avalon <https://github.com/RubyLouvre/avalon>
-
-  - 被弃前奏??估计要凉透,如果兼容IE7还是要恬不知耻的考虑一下
-  - <http://avalonjs.coding.me/> 资源多看教程
-  - Avalon组件库 <https://github.com/RubyLouvre/avalon.oniui>
-  - 基于 avalon2 的 SPA 脚手架
+- avalon 
+  - <https://github.com/RubyLouvre/avalon>
+  - 被弃前奏??
+  - 如果要兼容IE7还是要恬不知耻的考虑一下
+  - 教程 <http://avalonjs.coding.me/> 
+  - oniui Avalon组件库 <https://github.com/RubyLouvre/avalon.oniui>
+  - ane @deprecated
+    - <https://github.com/xxapp/ane>
+    - 发布基于 Avalon2 的 UI 组件库与 SPA 脚手架 <https://segmentfault.com/a/1190000009625441>
+  - 脚手架
+    - avalon2-webpack2-spa @nice
+        - 由vue脚手架修改过来
+        - 采用类vue的单文件组件书写，异步、嵌套路由  
+        - https://github.com/hmhao/avalon2-webpack2-spa
+    - webpack-avalon2-SPA-seed https://github.com/crazyliuzc/webpack-avalon2-SPA-seed
     - https://github.com/Levan-Du/avalon-spa-app
-    - @NICE 由vue脚手架修改过来，适合vue开发者使用，采用类vue的单文件组件书写，异步、嵌套路由 <https://github.com/hmhao/avalon2-webpack2-spa>
-    - <https://segmentfault.com/a/1190000009625441>
-    - @deprecated <https://github.com/xxapp/ane>
-
+ 
 - react0.14.x
   - 兼容IE8措施 https://github.com/xcatliu/react-ie8
   - https://github.com/HeavenSky/react-antd-ie8
@@ -62,7 +71,7 @@ import 'fetch-polyfill2'; //fetch 实现
 - regular <https://github.com/regularjs/regular>
 
   - regular-ui <https://github.com/regular-ui/regular-ui>
-  - 后台管理系统前端开发方案，采用es6 + regular + gulp技术 <https://github.com/xuyanquan/es6-regular-gulp>
+  - 后台管理系统前端开发方案，采用es6 + regular + gulp技术 @deprecated <https://github.com/xuyanquan/es6-regular-gulp>
 
 - NervJS @deprecated
 
