@@ -12,3 +12,7 @@
 
   - <https://juejin.im/post/5aa09bccf265da239376a292>
   - <https://github.com/FengShangWuQi/chrome-Daily-Front-End-news>
+
+- creating-basic-chrome-extension 
+    - https://www.thepolyglotdeveloper.com/2018/09/creating-basic-chrome-extension/
+    - 阮一峰改进版 https://github.com/ruanyf/chrome-extension-demo

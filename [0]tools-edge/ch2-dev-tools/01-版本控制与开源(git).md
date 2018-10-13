@@ -131,6 +131,10 @@ ssh-add ~/.ssh/id_rsa
 ssh -T git@github.com
 ```
 
+# 一些插件
+
+- github-corners github右上角标 https://github.com/tholman/github-corners
+
 # 开源
 
 - 零起点的开源社区贡献指南 <https://juejin.im/post/59f98a196fb9a045132a03ed>

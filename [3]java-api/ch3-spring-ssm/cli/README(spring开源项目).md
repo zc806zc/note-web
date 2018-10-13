@@ -2,6 +2,7 @@
 
 - ->> GVP <https://gitee.com/gvp>
 - java项目码云排行 https://gitee.com/explore/starred?lang=Java
+- 不可或缺的 Java 8 开源项目 https://zhuanlan.zhihu.com/p/33479098
 
 # 脚手架
 
