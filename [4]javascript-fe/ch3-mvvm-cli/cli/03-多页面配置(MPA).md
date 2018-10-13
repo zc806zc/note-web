@@ -1,3 +1,7 @@
+# README
+
+- 未整理...
+
 # Webpack-MPA
 
 - 基于 Webpack 开发和构建多页面站点 
@@ -33,9 +37,15 @@
 
 - webpack-multiple-page-boilerplate <https://github.com/b5156/webpack-multiple-page-boilerplate>
 
+# 通用脚手架
+
+- webpack-seed https://github.com/Array-Huang/webpack-seed
+
 # Vue的多页面脚手架
 
 - vue-cli-multi-page @nice <https://github.com/bluefox1688/vue-cli-multi-page>
+- vue-cli-multipage-bootstrap https://github.com/zhoou/vue-cli-multipage-bootstrap
+- A vue template for multipage project https://github.com/brandonxiang/mpa
 - Vue或React多页应用脚手架 <https://github.com/MeCKodo/vue-multipage>
 
   - <https://www.imooc.com/article/12697>
@@ -63,7 +73,9 @@
 - Webapck+Vue多页面商城模板 
     - https://juejin.im/post/5a2257a2f265da432a7b6532
     - https://github.com/czero1995/webpack-store
-    
+- https://github.com/Fi2zz/webpack-multipages-template
+- https://github.com/chen1218chen/vue-cli-multi-page
+
 # React的MPA脚手架
 
 - create-react-app修改为多页面支持 https://juejin.im/post/5afcd2bd51882542c832f155
