@@ -1,3 +1,15 @@
+# README
+
+> 寻找兼容IE8的方法不如换家公司，真解！！
+
+- 支持ie8的mvvm框架比较 <https://www.zhihu.com/question/52069420>
+- 如何评价百度新造的 MVVM 轮子 San <https://www.zhihu.com/question/65498751/answer/294265707>
+- 如果要兼容IE8，前端用什么框架最好？ https://www.zhihu.com/question/268725034
+
+# webpack配置
+
+- Shimming https://webpack.js.org/guides/shimming/
+
 # IE8-MV* 兼容方案
 
 - san <https://github.com/baidu/san>
@@ -11,11 +23,25 @@
 - anu.js <https://rubylouvre.github.io/anu/>
 
   - 兼容IE8的React(anu)开发脚手架 <https://gitee.com/menhal/React_IE8_boilerplate>
+  - 如何让React(anujs)跑在IE8上 https://zhuanlan.zhihu.com/p/39103023
+  - https://github.com/RubyLouvre/anu-ie8-example
   - https://github.com/yunpengGit/anu-antd-axios-echarts-ie8
   - https://github.com/Levan-Du/anu-cli
   - https://gitee.com/menhal/React_IE8_boilerplate
   - https://github.com/magicapple/anujs-webpack4-ie7-8
   - https://github.com/RubyLouvre/create-anu-app
+
+```js
+// https://github.com/RubyLouvre/anu-ie8-example/blob/master/src/index.js
+import 'es5-shim'; //IE8 ^4.5.10
+import 'object-create-ie8';//IE8, 我写的库，这样就不用加上es5-sham
+import 'object-defineproperty-ie8';//IE8， 我写的库
+import 'console-polyfill';//IE8下，如果你不打开开发者工具，window下是没有console这个对象的，
+//只有打开了F12才会有这个方法
+import 'json3';  //比IE8的JSON好用
+import 'bluebird'; //性能超高的Promise实现
+import 'fetch-polyfill2'; //fetch 实现
+```
 
 - avalon <https://github.com/RubyLouvre/avalon>
 
@@ -28,7 +54,7 @@
     - <https://segmentfault.com/a/1190000009625441>
     - @deprecated <https://github.com/xxapp/ane>
 
-- 早期版本react0.x
+- react0.14.x
   - 兼容IE8措施 https://github.com/xcatliu/react-ie8
   - https://github.com/HeavenSky/react-antd-ie8
   - https://github.com/jaychsu/react-ie8-boilerplate
@@ -38,9 +64,11 @@
   - regular-ui <https://github.com/regular-ui/regular-ui>
   - 后台管理系统前端开发方案，采用es6 + regular + gulp技术 <https://github.com/xuyanquan/es6-regular-gulp>
 
-- NervJS <https://github.com/NervJS/nerv>
+- NervJS @deprecated
 
-  - 试了半天不知到怎么兼容到IE8+,但文档写着一句  A blazing fast React alternative, compatible with IE8 and React 16
+  - <https://github.com/NervJS/nerv>
+  - A blazing fast React alternative, compatible with IE8 and React 16
+  - 试了半天不知到怎么兼容到IE8+,但文档写着一句 
   - <https://nervjs.github.io/docs/>
   - 文档同框架搭建 <https://github.com/NervJS/nerv-website>
   - 脚手架 <https://github.com/NervJS/nerv-webpack-boilerplate>
@@ -50,7 +78,9 @@
 
 - knockoutjs @deprecated
 
-- angular1 @deprecated (更迭快,学习门槛高，用过时的总会心理不平衡)
+- angular1 @deprecated 
+  - angular更迭快,用过时的总会心理不平衡 
+  - 相对学习门槛高
   - ng-seed https://github.com/jm-team/ng-seed
 
 - 网易Nec + Nej @deprecated
@@ -58,13 +88,7 @@
   - <http://nej.netease.com/>
   - 快速入门 <http://nej.netease.com/course/quickStart>
 
-# 基于jquery的兼容 IE8+
 
-- lulu @NICE 眼下黑 https://github.com/yued-fe/lulu
-- LayUI 但官方写着IE9+, 悬了
-- ZUI https://gitee.com/wwccss/zui
-- ligerUI @deprecated http://www.ligerui.com/
-- flow-ui <http://flow-ui.refined-x.com/>
 
 # 脚手架 | boilerplate | template
 
@@ -101,9 +125,5 @@ require("babel-polyfill")
 </script>
 ```
 
-# 参考 | 评论
 
-> 寻找兼容IE8的方法不如换家公司，真解！！
 
-- 支持ie8的mvvm框架比较 <https://www.zhihu.com/question/52069420>
-- 如何评价百度新造的 MVVM 轮子 San <https://www.zhihu.com/question/65498751/answer/294265707>
