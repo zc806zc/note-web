@@ -74,7 +74,7 @@ import 'fetch-polyfill2'; //fetch 实现
   - 兼容IE8措施 https://github.com/xcatliu/react-ie8
   - https://github.com/HeavenSky/react-antd-ie8
   - https://github.com/jaychsu/react-ie8-boilerplate
-  - https://github.com/brickspert/react-family-ie8 开发时热更新，打包时才兼容IE8
+  - react-family-ie8 https://github.com/brickspert/react-family-ie8 开发时热更新，打包时才兼容IE8
 
 - regular <https://github.com/regularjs/regular>
 

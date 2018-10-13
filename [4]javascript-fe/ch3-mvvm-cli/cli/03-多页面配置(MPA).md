@@ -54,7 +54,8 @@
 # 基于React的多页面解决方案
 
 - create-react-app修改为多页面支持 https://juejin.im/post/5afcd2bd51882542c832f155
- 
+- 多页面解决方案 @deprecated <https://github.com/MeCKodo/react-multipage> 
+
 # 其他
 
 - vue单页面，多路由，前进刷新，后退不刷新 https://segmentfault.com/a/1190000012083511    
