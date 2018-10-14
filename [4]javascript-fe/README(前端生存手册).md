@@ -28,7 +28,6 @@
 
 # 翻墙VPN
 
-- <https://juejin.im/post/5a8d02f45188257a61324533>
 - 怎样使用 VPN 才是合法的
 
 ```javascript
@@ -46,9 +45,10 @@
 因而私自架设网络“翻墙”工具属违法行为。
 ```
 
-- 如何在 VPS 上搭建梯子
+- 如何在 VPS 上搭建梯子 @old
 
   - <https://juejin.im/post/58d8d3cd61ff4b006cd5d83a>
+  - <https://juejin.im/post/5a8d02f45188257a61324533>
 
 # 版本控制工具
 
@@ -58,9 +58,10 @@
 
 # 学习路线
 
-- <https://ke.jikexueyuan.com/zhiye/web/>
-- 刷教程
-- 学习小组
+- WEB大前端工程师学习路线 <https://ke.jikexueyuan.com/zhiye/web/>
+- 前端学习资源 ->>
+- 刷教程()
+- 与人建立学习小组
 - 模仿一个静态网站
 
   - 京东(电商)
@@ -81,13 +82,15 @@
   - Paas Saas ...
   - Web3.0 <https://www.zhihu.com/question/19911163>
 
-# 开写静态页
+# 开写静态页 
 
-- HTML5和CSS3扁平化风格博客 <https://www.imooc.com/learn/445>
-- CSS3扁平化博客之文章页及常用组件 <https://www.imooc.com/learn/598>
-- 网页简单布局之结构与表现原则 <https://www.imooc.com/learn/20>
-- 手把手教你实现电商网站开发 <https://www.imooc.com/learn/100>
-- 用less写个新浪微博 <https://www.imooc.com/learn/61>
+- mooc @deprecated
+
+  - HTML5和CSS3扁平化风格博客 <https://www.imooc.com/learn/445>
+  - CSS3扁平化博客之文章页及常用组件 <https://www.imooc.com/learn/598>
+  - 网页简单布局之结构与表现原则 <https://www.imooc.com/learn/20>
+  - 手把手教你实现电商网站开发 <https://www.imooc.com/learn/100>
+  - 用less写个新浪微博 <https://www.imooc.com/learn/61>
 
 # 做好心理准备
 
@@ -105,12 +108,12 @@
 
 # JavaScript疲劳
 
-- JavaScript疲劳之所以存在是因为 Web 平台发展太快了，但你并不需要掌握所有东西
-
 > 当我们使用我们不需要的工具来解决根本就不存在的问题的时候，JavaScript 疲劳就出现了
 
+
+- JavaScript疲劳之所以存在是因为 Web 平台发展太快了，但你并不需要掌握所有东西
 - 如何在疲劳的JS世界中持续学习 https://juejin.im/post/5ae97bd05188256719521ae0
-  - 关注大牛
+  - 关注大牛 ->>
     - Addy Osmani
     - Lea Verou
     - Evan You
@@ -123,6 +126,8 @@
   - 资讯 ->> 资源章     
 
 # 如何防止被累死
+
+> 人们不再拥有不使用新技术的自由 -《论工业社会及其未来》卡辛斯基
 
 - 如何跟上前端开发的最新前沿 @NICE 整张网站显示 https://uptodate.frontendrescue.org/zh/
 - 如何跟上时代脚步 <https://juejin.im/post/58e59a0aa0bb9f006906aea1>
@@ -150,7 +155,6 @@
 这样能够知道不同的措施效果到底是怎么样的。 - Airbnb 女博士朱赟
 ```
 
-> 人们不再拥有不使用新技术的自由 -《论工业社会及其未来》卡辛斯基
 
 # 网站的肥胖症危机
 
