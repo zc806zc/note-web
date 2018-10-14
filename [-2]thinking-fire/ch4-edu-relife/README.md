@@ -95,10 +95,4 @@
 所言不多于所知。@nice
 ```
 
-- 23 岁到 35 岁该如何实现资产增值？如何不陷入结婚生孩子买房的恶性循环中？ https://www.zhihu.com/question/23444019
-- 二十多岁该做什么，将来才不后悔？https://www.zhihu.com/question/20151457
-
-```
-
-```
 - TED 哪个演讲最打动你？ https://www.zhihu.com/question/19957581

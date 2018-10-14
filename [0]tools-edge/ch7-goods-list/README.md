@@ -1,3 +1,5 @@
+> 武装到生活的牙齿
+
 # README 
 
 - 哪些东西买了之后，会让人因生活质量和幸福感提升而感觉相见恨晚？ https://www.zhihu.com/question/20840874
@@ -86,8 +88,10 @@ VG软膏(皮肤病克星，万能的处方药膏)
 
 - 淘宝上有哪些很显格调和品味的东西？ https://www.zhihu.com/question/23933357
 - 有点贵但很值得买的商品有哪些？ https://www.zhihu.com/question/23136740
+- 淘宝网有哪些鲜为人知的使用技巧和功能？ https://www.zhihu.com/question/21377595
 
 ```
 ```
 
 - 有哪些不为外行所知的好产品或好品牌？ https://www.zhihu.com/question/20228439
+- 哪些国产的小众品牌，你愿以个人信誉推荐？ https://www.zhihu.com/question/20309783
