@@ -7,7 +7,8 @@
 - 推荐列表
 
   - <https://github.com/guoxiaoxu/Guo-Software-Tools>
-
+- iPad 上有哪些实用得令人惊艳的 App？ https://www.zhihu.com/question/22678622
+- 有哪些工具或者软件堪称神器？ https://www.zhihu.com/question/20772002
 - 其他
 
   - 少数派 <https://sspai.com/>

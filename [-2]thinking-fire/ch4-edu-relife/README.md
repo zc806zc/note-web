@@ -2,6 +2,7 @@
 
 - 你有什么相见恨晚的知识想推荐给年轻人？ https://www.zhihu.com/question/22238159
    - 十条黄金省时技巧小贴士 http://open.163.com/movie/2013/4/8/N/M92TH8Q7U_M92THAT8N.html
+- 有哪些一天内就能掌握却受用终身的技能？https://www.zhihu.com/question/24180556
 
 ```js
 // https://www.zhihu.com/people/ze.ran/activities
@@ -96,3 +97,8 @@
 
 - 23 岁到 35 岁该如何实现资产增值？如何不陷入结婚生孩子买房的恶性循环中？ https://www.zhihu.com/question/23444019
 - 二十多岁该做什么，将来才不后悔？https://www.zhihu.com/question/20151457
+
+```
+
+```
+- TED 哪个演讲最打动你？ https://www.zhihu.com/question/19957581

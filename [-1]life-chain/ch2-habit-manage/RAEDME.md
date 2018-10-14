@@ -105,3 +105,4 @@ Feeling：感受 + Fact：事实 + Compare：对比
 ![伊恩鞋带系法](https://pic3.zhimg.com/80/36e8e67dc28db1bba7e4607bcb2de5d2_hd.jpg)
 
 - 要怎样努力，才能成为很厉害的人？https://www.zhihu.com/question/22921426 
+- 做哪些事情可以提升生活品质？https://www.zhihu.com/question/22347626
