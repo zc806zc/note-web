@@ -82,3 +82,17 @@
 如果你犹豫要不要买一件东西只是因为它比较贵，那就买下来。
 如果你想买一件东西只是因为它非常便宜划算那就不要买。
 ```
+
+- 有哪些简洁的人生建议？https://www.zhihu.com/question/19869956
+    - @太平天师 https://www.zhihu.com/people/pydison/activities
+
+```js
+永远留住30%的神秘 @nice
+那30%会不断被用掉，也就意味着我们需要不断的去学习，积累，制造新的能力和学识
+
+维护不在场的人。@nice
+所言不多于所知。@nice
+```
+
+- 23 岁到 35 岁该如何实现资产增值？如何不陷入结婚生孩子买房的恶性循环中？ https://www.zhihu.com/question/23444019
+- 二十多岁该做什么，将来才不后悔？https://www.zhihu.com/question/20151457

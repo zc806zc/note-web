@@ -76,3 +76,18 @@ VG软膏(皮肤病克星，万能的处方药膏)
 1688网站
 亚马逊全球购
 ```
+
+- 有哪些 100 元以下，很少见但高大上的物件？https://www.zhihu.com/question/23054572
+- 有哪些 1000 元以下，很少见但高大上的东西？ https://www.zhihu.com/question/23043155
+- 有哪些「百元货」可以有效提高生活质量？ https://www.zhihu.com/question/22618603
+
+```
+```
+
+- 淘宝上有哪些很显格调和品味的东西？ https://www.zhihu.com/question/23933357
+- 有点贵但很值得买的商品有哪些？ https://www.zhihu.com/question/23136740
+
+```
+```
+
+- 有哪些不为外行所知的好产品或好品牌？ https://www.zhihu.com/question/20228439

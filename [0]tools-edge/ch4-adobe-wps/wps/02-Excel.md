@@ -1,5 +1,7 @@
 # EXCEL
 
+- Excel 有哪些可能需要熟练掌握而很多人不会的技能？ https://www.zhihu.com/question/21758700
+
 # 高级图表制作
 
 - 瀑布图
