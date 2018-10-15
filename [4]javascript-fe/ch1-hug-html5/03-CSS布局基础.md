@@ -353,11 +353,49 @@ img#son{
 
 - 两列布局
 
-```html
+```jsx
 <body>
-  <div id="fl w-20">左列定宽</div>
-  <div id="ml-20">右列自适应</div>
+  <div class="fl w-20">左列定宽</div>
+  <div class="ml-20">右列自适应</div>
 </body>
+
+// fix版 why??
+<body>
+  <div class="fr">左列定宽</div>
+  <div class="fr -ml-20 fix">
+      <div class="ml-20">右列自适应</div>
+  </div>
+</body>
+
+<body>
+  <div class="fl">左列定宽</div>
+  <div class="fr overflow-hidden">右列自适应</div>
+</body>
+
+// 表格布局 @deprecated
+<body class="table">
+    <div class="table-cell">左列定宽</div>
+    <div class="table-cell">右列自适应</div>
+</body>
+
+<body>
+  <div class="relative">
+      <div class="absolute" style="top:0;left: 0;">左列定宽</div>
+      <div class="absolute" style="top:0;left: 20px;">右列自适应</div>
+  </div>
+</body>
+
+<div class="flex">
+    <div class="w-20">左列定宽</div>
+    <div id="right" style="flex:1;">右列自适应</div>
+</div>
+
+<div class="grid" style="grid-template-columns: 100px auto; ">
+    <div id="left">左列定宽</div>
+    <div id="right">右列自适应</div>
+</div>
+
+
 ```
 
 # 响应式布局
