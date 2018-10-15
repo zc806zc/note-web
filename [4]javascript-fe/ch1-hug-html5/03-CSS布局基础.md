@@ -9,7 +9,6 @@
 - you don't need js
   - <https://github.com/you-dont-need/You-Dont-Need-JavaScript>
 
-
 - 12个HTML和CSS必须知道的重点难点问题 <https://juejin.im/post/5a954add6fb9a06348538c0d>
 
   - height line-height
@@ -196,8 +195,8 @@ const nav = document.querySelector("[rel='js-site-navigation']")
 
 # 清除浮动
 
-- <http://www.cnblogs.com/dolphinX/p/3508869.html>
-- <https://rainylog.com/post/what-methods-of-clearfix-can-i-use/>
+- CSS清浮动处理 <http://www.cnblogs.com/dolphinX/p/3508869.html>
+- 清除浮动的方法 <https://rainylog.com/post/what-methods-of-clearfix-can-i-use/>
 - 父级div定义height
 - clear:both
 - clearfix:after 和 zoom
@@ -212,50 +211,6 @@ const nav = document.querySelector("[rel='js-site-navigation']")
 - 各种常见布局实现+知名网站实例分析 @nice <https://juejin.im/post/5aa252ac518825558001d5de>
 - CSS布局解决方案（终结版） <https://juejin.im/entry/5aa0afd1f265da239c7aec81>
 - 企业网站综合布局实战 @old:video <https://www.imooc.com/learn/147>
-- 圣杯与双飞翼
-
-  - 圣杯 中间栏为两边腾开位置
-  - 双飞翼布局反之
-
-  - <https://juejin.im/post/5a09570c6fb9a045167caf21>
-
-```html
-<!-- 流体 -->
-<div class="container">
-    <div class="left"></div>
-    <div class="right"></div>
-    <div class="main"></div>
-</div>
-
-<!-- 圣杯 -->
-<div class="container">
-    <div class="main"></div>
-    <div class="left"></div>
-    <div class="right"></div>
-</div>
-
-<!-- 双飞翼 -->
-<div class="content">
-    <div class="main"></div>
-</div>
-<div class="left"></div>
-<div class="right"></div>
-```
-
-- 自适应布局
-
-  - <https://juejin.im/post/5a22d0086fb9a0451a7631ee>
-  - 使用IE盒模型box-sizing: border-box
-  - 垂直自适应 <https://www.cnblogs.com/qingkong/p/4448945.html>
-
-- 响应式布局
-
-```javascript
-counter-reset: 属性创建或者重置一个或多个计数器；
-counter-increment: 属性递增一个或多个计数器值；
-content: 与:before 及:after 伪元素配合使用，来插入生成内容。
-```
-
 - 关于各种布局的选择
 
   - 在浏览器支持的情况下，页面的大框架推荐用grid布局。
@@ -359,6 +314,13 @@ img#son{
   <div class="ml-20">右列自适应</div>
 </body>
 
+<body>
+<div class="pl-20">
+    <div class="fl -ml-20">左列自适应</div>
+    <div class="fr">右列定宽</div>
+</div>
+</body>
+
 // fix版 why??
 <body>
   <div class="fr">左列定宽</div>
@@ -367,17 +329,32 @@ img#son{
   </div>
 </body>
 
+// overflow-hidden -> bfc
 <body>
   <div class="fl">左列定宽</div>
   <div class="fr overflow-hidden">右列自适应</div>
 </body>
 
-// 表格布局 @deprecated
-<body class="table">
-    <div class="table-cell">左列定宽</div>
+// 一列不定 一列自适应
+<body>
+  <div class="fl mr-10">左列定宽</div>
+  <div class="overflow-hidden">右列自适应</div>
+</body>
+
+<body>
+  <div class="overflow-hidden">左列定宽</div>
+  <div class="fr ml-10">右列自适应</div>
+</body>
+
+
+
+// 表格布局 @deprecated 自动分配
+<body class="l-table">
+    <div class="table-cell w-20">左列定宽</div>
     <div class="table-cell">右列自适应</div>
 </body>
 
+// 绝对布局
 <body>
   <div class="relative">
       <div class="absolute" style="top:0;left: 0;">左列定宽</div>
@@ -385,17 +362,175 @@ img#son{
   </div>
 </body>
 
+<body>
+  <div class="relative">
+      <div class="absolute" style="top:0;left: 0;right:20px;">左列定宽</div>
+      <div class="absolute" style="top:0;right:0;">右列自适应</div>
+  </div>
+</body>
+
+// flex
 <div class="flex">
     <div class="w-20">左列定宽</div>
-    <div id="right" style="flex:1;">右列自适应</div>
+    <div style="flex:1;">右列自适应</div>
 </div>
 
+// grid
 <div class="grid" style="grid-template-columns: 100px auto; ">
     <div id="left">左列定宽</div>
     <div id="right">右列自适应</div>
 </div>
 
+<body>
+<div id="parent" style="grid-template-columns: auto 1fr;">
+    <div class="mr-10">左列不定宽</div>
+    <div>右列自适应</div>
+</div>
+</body>
+```
 
+- 三列布局
+
+```jsx
+<body>
+<div class="min-w-310">
+    <div class="fl w-100 mr-10">左列定宽</div>
+    <div class="fl w-200">中间定宽</div>
+    <div class="ml-320">右列自适应</div>
+</div>
+</body>
+
+<body>
+<div class="min-w-310">
+    <div class="fl w-100 mr-10">左列定宽</div>
+    <div class="fl w-200">中间定宽</div>
+    <div class="overflow-hidden">右列自适应</div>
+</div>
+</body>
+
+// 表格布局
+<body>
+<div class="l-table" style="margin: -10px 0;border-spacing: 10px;">
+    <div class="table-cell w-100">左列定宽</div>
+    <div class="table-cell w-200">中间定宽</div>
+    <div class="table-cell">右列自适应</div>
+</div>
+</body>
+
+// flex
+<body>
+<div class="flex">
+    <div class="w-100 mr-10">左列定宽</div>
+    <div class="w-100 mr-10">中间定宽</div>
+    <div style="flex:1;">右列自适应</div>
+</div>
+</body>
+
+// Grid
+<body>
+<div class="grid" style="grid-template-columns: 100px 200px auto;">
+    <div class="mr-10">左列定宽</div>
+    <div class="mr-10">中间定宽</div>
+    <div>右列自适应</div>
+</div>
+</body>
+
+// 绝对布局
+<body>
+<div class="relative">
+    <div id="left" class="absolute" style="top:0;left:0;">左列定宽</div>
+    <div id="center" class="ml-100 mr-100">中间自适应</div>
+    <div id="right" class="absolute" style="top:0;right:0;">右列定宽</div>
+</div>
+</body>
+```
+
+- 圣杯与双飞翼
+
+  - 圣杯布局 中间栏为两边腾开位置, 双飞翼布局则反之
+  - 聊聊为什么淘宝要提出「双飞翼」布局 <https://juejin.im/post/5a09570c6fb9a045167caf21>
+
+```html
+<!-- 流体 -->
+<div class="container">
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="main"></div>
+</div>
+
+<!-- 圣杯 -->
+<div class="container">
+    <div class="main"></div>
+    <div class="left"></div>
+    <div class="right"></div>
+</div>
+
+<!-- 双飞翼 -->
+<div id="header"></div>
+<div>
+  <div id="center" class="fl border-box">
+      <div id="center-box" style="margin: 0 220px 0 120px"></div>
+  </div>
+  <div id="left" class="relative fl -ml-100"></div>
+  <div id="right" class="relative fl -ml-200"></div>
+</div> 
+<div id="footer"></div>
+```
+
+- 自适应布局
+
+  - <https://juejin.im/post/5a22d0086fb9a0451a7631ee>
+  - 使用IE盒模型box-sizing: border-box
+  - 垂直自适应 <https://www.cnblogs.com/qingkong/p/4448945.html>
+
+- 响应式布局
+
+```javascript
+counter-reset: 属性创建或者重置一个或多个计数器；
+counter-increment: 属性递增一个或多个计数器值；
+content: 与:before 及:after 伪元素配合使用，来插入生成内容。
+```
+
+- 多列布局
+
+```jsx
+<body>
+<div id="parent">
+    <div class="column">1 <p>我是文字我是文字我输文字我是文字我是文字</p></div>
+    <div class="column">2 <p>我是文字我是文字我输文字我是文字我是文字</p></div>
+    <div class="column">3 <p>我是文字我是文字我输文字我是文字我是文字</p></div>
+    <div class="column">4 <p>我是文字我是文字我输文字我是文字我是文字</p></div>
+    <div class="column">5 <p>我是文字我是文字我输文字我是文字我是文字</p></div>
+    <div class="column">6 <p>我是文字我是文字我输文字我是文字我是文字</p></div>
+</div>
+</body>
+
+#parent {
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);  /*6就是列数*/
+}
+```
+
+- 全屏布局
+
+```jsx
+<body>
+<div id="parent">
+    <div id="top" class="absolute h-100" style="top:0;left:0;right:0;">top</div>
+    <div id="left" class="absolute w-200" style="top:100px;left:0;bottom:50px;">left</div>
+    <div id="right" class="absolute overflow-auto" style="left:200px;right:0;top:100px;">right</div>
+    <div id="bottom" class="absolute h-50" style="left:0;right:0;bottom:0;">bottom</div>
+</div>
+</body>
+
+<style>
+html, body, #parent {height: 100%;overflow: hidden;}
+</style>
+
+// flex
+
+// Grid
 ```
 
 # 响应式布局
@@ -427,6 +562,36 @@ img#son{
   m: '960px',
   l: '1200px',
   xl: '1600px'
+}
+```
+
+- 栅格布局
+
+```less
+/*生成栅格系统*/
+@media screen and (max-width: 768px){
+  .generate-columns(12);     /*此处设置生成列数*/
+  .generate-columns(@n, @i: 1) when (@i <= @n) {
+    .column-xs-@{i} {
+      width: (@i * 100% / @n);
+    }
+    .generate-columns(@n, (@i+1));
+  }
+}
+@media screen and (min-width: 768px){
+  .generate-columns(12);    /*此处设置生成列数*/
+  .generate-columns(@n, @i: 1) when (@i <= @n) {
+    .column-sm-@{i} {
+      width: (@i * 100% / @n);
+    }
+    .generate-columns(@n, (@i+1));
+  }
+}
+div[class^="column-xs-"]{
+	float: left;
+}
+div[class^="column-sm-"]{
+	float: left;
 }
 ```
 
@@ -541,6 +706,7 @@ SCSS 是 Sass 3 引入新的语法，
 # POSTCSS
 
 - <https://www.postcss.com.cn/>
+- webpack + autoprefix
 
 # 封装样式库
 
