@@ -209,9 +209,9 @@ const nav = document.querySelector("[rel='js-site-navigation']")
 
 > 在可以不兼容IE的情况下 慎用浮动，血的教训！！！
 
-- 各种常见布局实现+知名网站实例分析 <https://juejin.im/post/5aa252ac518825558001d5de>
+- 各种常见布局实现+知名网站实例分析 @nice <https://juejin.im/post/5aa252ac518825558001d5de>
 - CSS布局解决方案（终结版） <https://juejin.im/entry/5aa0afd1f265da239c7aec81>
-- 企业网站综合布局实战 <https://www.imooc.com/learn/147>
+- 企业网站综合布局实战 @old:video <https://www.imooc.com/learn/147>
 - 圣杯与双飞翼
 
   - 圣杯 中间栏为两边腾开位置
@@ -282,14 +282,13 @@ overflow: hidden; // 触发生成BFC,使浮动元素也参与计算
 
 # 移动端布局
 
-->>
+适配 ->>
 
 # 居中若干
 
 - 这15种CSS居中的方式，你都用过哪几种？ https://juejin.im/entry/5aead956f265da0ba76f9488
   - 利用“精灵元素” -> 在父容器内放一个100%高度的伪元素，让文本和伪元素垂直对齐，从而达到垂直居中的目的
   - http://www.42du.cn/run/64
-- 垂直居中 <https://www.w3.org/Style/Examples/007/center>
 - 兼容IE8 https://liyongleihf2006.github.io/center-box/
 
 ```css
@@ -309,6 +308,56 @@ overflow: hidden; // 触发生成BFC,使浮动元素也参与计算
     vertical-align: middle;
     width: 20rem;
 }
+```
+
+- 绝对定位 relative > absolute
+- 水平居中方法
+  - .tc + inline-block (子元素宽度不能超父元素宽度)
+  - .container
+  - 绝对定位 left50% + margin-left/tramsformX 
+  - flex
+
+- 垂直居中 
+  - 垂直居中 <https://www.w3.org/Style/Examples/007/center>
+  - height + line-height 公用水平中垂线 (单行，多行自己计算)
+  - tabel-cell (IE8+)
+  - 绝对定位 top50% + margin-top/tramsformY 
+  - top: 0 + bottom: 0 无限延伸占满空间并平分 (ie8+)
+  - flex
+  
+```less
+#parent{
+    height: 150px;
+    line-height: 150px;
+    font-size: 0; // 消除幽灵空白节点的bug
+}
+// 默认是基线对齐，改为middle
+img#son{
+  vertical-align: middle;
+}
+```  
+
+- 水平垂直居中
+
+```js
+// 如果是button 
+居中元素改成行内或行内块级即可
+
+// 视窗居中 IE9+
+#son{
+	/*0如果去掉，则会多出滚动条并且上下都是50vh的margin。如果去掉就给body加上overflow:hidden;*/
+    margin: 50vh auto 0;  
+    transform: translateY(-50%);
+}
+```
+
+- 两列布局
+
+```html
+<body>
+  <div id="fl w-20">左列定宽</div>
+  <div id="ml-20">右列自适应</div>
+</body>
 ```
 
 # 响应式布局
