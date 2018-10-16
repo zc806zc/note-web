@@ -1,6 +1,7 @@
 # Java8
 
 - java8-tutorial <https://github.com/winterbe/java8-tutorial>
+- learn-java8 https://github.com/biezhi/learn-java8
 - 初版发布于2014年3月18日
 - 新功能
 
