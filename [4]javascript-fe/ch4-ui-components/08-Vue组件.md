@@ -105,6 +105,7 @@ be the most lightweight
 - 视频背景 https://github.com/pespantelis/vue-videobg
 - vue-lottie 基于 Bodymovin 的 Vue 动画效果库 https://github.com/chenqingspring/vue-lottie
 - vue-touch-ripple 点击元素泛起的涟漪效果 https://github.com/surmon-china/vue-touch-ripple
+- 数字滚动 vue-countTo https://github.com/PanJiaChen/vue-countTo
 
 # 手势 
 
