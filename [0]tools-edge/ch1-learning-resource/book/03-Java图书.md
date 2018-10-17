@@ -1,9 +1,9 @@
 # 书单
 
-- <https://juejin.im/post/58f37ffd61ff4b0058f9a10c>
+- Java后端2017书单推荐 <https://juejin.im/post/58f37ffd61ff4b0058f9a10c>
 - 源码圈 365 胖友 <https://juejin.im/post/59c2f3e16fb9a00a600f6a5c>
-- <http://droidyue.com/blog/2014/11/30/java-programmer-must-read-these-9-books>
-- <https://www.zhihu.com/question/19848946?rf=19752221>
+- Java程序员必读的9本书 <http://droidyue.com/blog/2014/11/30/java-programmer-must-read-these-9-books>
+- 哪本书适合推荐给 Java 初学者？ <https://www.zhihu.com/question/19848946?rf=19752221>
 
 ```java
 // 入门
@@ -39,6 +39,8 @@
 《Spring实战 第4版》 (适合入门)
 《Spring技术内幕》
 ```
+
+
 
 # 关于Spring Boot与Cloud的书
 

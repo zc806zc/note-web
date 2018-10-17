@@ -1,10 +1,12 @@
 # Vue组件推荐
 
-- awesome-vue <https://github.com/vuejs/awesome-vue>
+- awesome-vue 
+  - <https://github.com/vuejs/awesome-vue>
   - 组件 https://github.com/vuejs/awesome-vue#components--libraries
-- VUE组件 https://www.awesomes.cn/subject/vue  
+- awesome.cn VUE组件 https://www.awesomes.cn/subject/vue 
 - Vue组件 国外 https://vuejsexamples.com/
-- 组件方案 中文 已不活跃 <https://github.com/opendigg/awesome-github-vue>
+- vue-ui 组件库资源 https://www.yuque.com/collection/collection/vue-ui
+- 组件方案 中文 @deprecated <https://github.com/opendigg/awesome-github-vue>
 - Vue优选 https://curated.vuejs.org/
 
 ---
@@ -26,12 +28,18 @@ be the most lightweight
 
   - element https://github.com/ElemeFE/element
   - iview 提供了iview-cli桌面工具，可视化生成 https://github.com/iview/iview
-  - Vue版ant-design https://github.com/vueComponent/ant-design
+  - Vue版ant-design 
+    - @old https://github.com/vueComponent/ant-design
+    - https://github.com/vueComponent/ant-design-vue
   - vue-beauty 基于 ant design 的漂亮的 vue 组件库 https://www.awesomes.cn/repo/FE-Driver/vue-beauty
   - antue
   - bootstrap-vue https://github.com/bootstrap-vue/bootstrap-vue
   - vue-blu UI Component Library Base on Vue.js(2.x) and Bulma https://github.com/chenz24/vue-blu
-  - vue的官方UI 这个可能是灯下黑 https://github.com/vuejs/ui/
+  - buefy 
+    - 基于bulma IE10+ 
+    - https://github.com/buefy/buefy/
+    - https://buefy.github.io/
+  - vue的官方UI 灯下黑 但其实也不好看😄 https://github.com/vuejs/ui/
   - atui https://github.com/aliqin/atui
     - 参考antd
     - 兼容IE9+
@@ -61,8 +69,11 @@ be the most lightweight
     - 支持三大框架  
   - KeenUI 中国人看来是丑的 但很轻量 https://github.com/JosephusPaye/Keen-UI
   - vue-ydui https://github.com/ydcss/vue-ydui
-  - museUI 
+  - museUI https://github.com/museui/muse-ui
   - XCUI @deprecated fis3技术栈 百度外卖 https://github.com/wmfe/xcui 
+  - vonic @old https://github.com/wangdahoo/vonic
+  - vum @old https://github.com/vum-team/vum
+  - vue-carbon @old https://github.com/myronliu347/vue-carbon
 
 - 跨三端
 
