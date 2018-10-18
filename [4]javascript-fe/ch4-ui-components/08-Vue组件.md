@@ -111,6 +111,8 @@ be the most lightweight
 
 # 弹框
 
+- vue-js-modal https://github.com/euvl/vue-js-modal
+
 # 装饰 | 动画
 
 - 视频背景 https://github.com/pespantelis/vue-videobg
