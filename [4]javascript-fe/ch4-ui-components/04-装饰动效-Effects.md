@@ -17,6 +17,7 @@
   - Effeckt.css <https://github.com/h5bp/Effeckt.css>
 
 - JS主导动画
+  - Velocity.js
   - jquery.easing <https://github.com/gdsmith/jquery.easing>
   - quicksand (jQuery plugin. Reorder and filter items with a nice shuffling animation.)  
   - mojs

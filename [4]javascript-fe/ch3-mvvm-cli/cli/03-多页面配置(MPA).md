@@ -45,6 +45,7 @@
 
 # Vue的多页面脚手架
 
+- vue-element-ui-scaffold-webpack4 https://github.com/hzsrc/vue-element-ui-scaffold-webpack4
 - vue-cli-multi-page @nice <https://github.com/bluefox1688/vue-cli-multi-page>
 - vue-cli-multipage-bootstrap https://github.com/zhoou/vue-cli-multipage-bootstrap
 - A vue template for multipage project https://github.com/brandonxiang/mpa
