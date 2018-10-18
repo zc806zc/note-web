@@ -29,6 +29,10 @@
 - slife spring boot 搭建的一个企业级快速开发脚手架 https://gitee.com/jamen/slife
 - springrain spring一站式开发的范例 https://gitee.com/chunanyong/springrain
 
+# 其他脚手架
+
+- liugh-parent  https://github.com/qq53182347/liugh-parent 
+
 # 开源项目
 
 - 码云

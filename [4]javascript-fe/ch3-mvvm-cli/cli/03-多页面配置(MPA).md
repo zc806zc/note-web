@@ -40,12 +40,28 @@
 # 通用脚手架
 
 - webpack-seed https://github.com/Array-Huang/webpack-seed
+- WebpackTemplate https://github.com/BryanAdamss/WebpackTemplate
+- multipage-webpack-scaffolding https://github.com/JesseZhao1990/multipage-webpack-scaffolding
 
 # Vue的多页面脚手架
 
 - vue-cli-multi-page @nice <https://github.com/bluefox1688/vue-cli-multi-page>
 - vue-cli-multipage-bootstrap https://github.com/zhoou/vue-cli-multipage-bootstrap
 - A vue template for multipage project https://github.com/brandonxiang/mpa
+- vue-mpa-cli https://github.com/ecitlm/vue-mpa-cli
+
+```js
+function getEntries (path) {
+  let entries = {}
+  glob.sync(path).forEach(entry => {
+    if (/(views\/(?:.+[^.html]))/.test(entry)) {
+      entries[RegExp.$1.slice(0, RegExp.$1.lastIndexOf('/'))] = entry
+    }
+  })
+  return entries
+}
+```
+
 - Vue或React多页应用脚手架 <https://github.com/MeCKodo/vue-multipage>
 
   - <https://www.imooc.com/article/12697>
