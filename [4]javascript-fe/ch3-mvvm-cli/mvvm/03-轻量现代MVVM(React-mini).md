@@ -11,11 +11,17 @@
 - inferno
 - preact 
 - omi  
+- umi
 - mithril 
 - svelte
 - aura
 - choo
 - ractive
+
+# react-like
+
+- preact
+- umi
 
 # 小型MVVM实现
 
@@ -233,6 +239,11 @@ function countStore (state, emitter) {
 - Omi === Preact + Scoped CSS + Store System + Native Support in 3kb javascript.
 - https://github.com/Tencent/omi
 
+# umi
+
+- https://github.com/umijs/umi
+- Pluggable enterprise-level react application framework.
+
 # svelte
 
 - https://svelte.technology/
@@ -241,9 +252,6 @@ function countStore (state, emitter) {
 
 - 一个事件驱动、可扩展的JS架构
 - https://github.com/aurajs/aura
-
-
-
 
 # ractive
 
