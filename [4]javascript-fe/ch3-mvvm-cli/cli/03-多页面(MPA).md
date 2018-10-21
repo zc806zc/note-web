@@ -7,6 +7,7 @@
 - webpack-seed https://github.com/Array-Huang/webpack-seed
 - WebpackTemplate https://github.com/BryanAdamss/WebpackTemplate
 - multipage-webpack-scaffolding https://github.com/JesseZhao1990/multipage-webpack-scaffolding
+- webpack-multi-page @deprecated 结构略复杂 原生无框架的 兼容IE8+ <https://github.com/zhaotoday/webpack-multi-page>
 
 # Vue的多页面脚手架
 
@@ -77,8 +78,8 @@ function getEntries (path) {
 - Webapck+Vue多页面商城模板 
     - https://juejin.im/post/5a2257a2f265da432a7b6532
     - https://github.com/czero1995/webpack-store
-- https://github.com/Fi2zz/webpack-multipages-template
-- https://github.com/chen1218chen/vue-cli-multi-page
+- https://github.com/Fi2zz/webpack-multipages-template 单页多页皆可 @deprecated
+- https://github.com/chen1218chen/vue-cli-multi-page @deprecated
 
 # React的MPA脚手架
 
@@ -88,9 +89,8 @@ function getEntries (path) {
 
 # MPA思路
 
-- 基于 Webpack 开发和构建多页面站点 
-   - <https://juejin.im/post/5a9358d76fb9a0633c662f17>
-   - <https://github.com/zhaotoday/webpack-multi-page>
+- 基于 Webpack 开发和构建多页面站点  <https://juejin.im/post/5a9358d76fb9a0633c662f17>
+
 
 - webpack多页应用架构系列 https://segmentfault.com/a/1190000006843916
 - 非默认需要配置entries  https://github.com/Monine/webpack-multi-page

@@ -52,6 +52,10 @@ const Article = () => import('@/components/Article') // 利用promise
     - https://github.com/amireh/happypack
     - 组件库webpack构建速度优化经验总结 https://juejin.im/post/5a922e776fb9a06337575031
 
+# 插件
+
+- html-webpack-inline-source-plugin
+
 # webpack4
 
 - awesome-webpack-4 https://github.com/valentinogagliardi/awesome-webpack-4
