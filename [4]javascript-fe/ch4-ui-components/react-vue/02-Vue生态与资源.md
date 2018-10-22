@@ -63,7 +63,8 @@
 # 音乐播放器
 
 - koel NICE https://github.com/phanan/koel
-- Vue全家桶打造自适应 web 音乐播放器 https://juejin.im/post/5afcdc73518825428630b216
+- Vue全家桶打造自适应 web 音乐播放器 
+  - https://juejin.im/post/5afcdc73518825428630b216
   - https://github.com/maomao1996/Vue-mmPlayer
 - 网易云音乐API <https://api.imjad.cn/cloudmusic.md>
 - 网易云
@@ -77,3 +78,7 @@
 - vue-hackernews-2.0 https://github.com/vuejs/vue-hackernews-2.0
 - 追书神器 接口 <https://github.com/xiadd/zhuishushenqi>
 - 仿知乎日报 不维护 <https://github.com/hilongjw/vue-zhihu-daily>
+
+# 天气
+
+- weatherVue
