@@ -1,23 +1,27 @@
-# JS基础
+> JavaScript不是世界上最好的语言,但又怎样！！
 
-- 博客/资源
+# JavaScript基础
+
+- 博客 | 教程
 
   - 廖雪峰 <https://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000>
   - JS深入系列 <https://juejin.im/post/59278e312f301e006c2e1510>
   - 提升 <http://www.cnblogs.com/jikey/p/3613082.html>
-  - <http://www.htmleaf.com/ziliaoku/qianduanjiaocheng/>
-  - js-stack-from-scratch <https://github.com/verekia/js-stack-from-scratch>
+  - jquery之家教程 <http://www.htmleaf.com/ziliaoku/qianduanjiaocheng/>
+
+- 系列 @nice
+
   - mostly-adequate-guide<https://github.com/MostlyAdequate/mostly-adequate-guide>
   - You-Dont-Know-JS <https://github.com/getify/You-Dont-Know-JS>
   - jstips <https://github.com/loverajoel/jstips>
   - JavaScript30 <https://github.com/wesbos/JavaScript30>
-  - 其他
+  - 33-js-concepts https://github.com/leonardomso/33-js-concepts
 
+- 路线
+
+    - js-stack-from-scratch <https://github.com/verekia/js-stack-from-scratch>
+    - 思维导图 <https://github.com/lidaguang1989/javascript-knowhow>
     - 从2.4万篇文章中挑出的最棒的 JavaScript 学习指南 <https://juejin.im/entry/5a69db996fb9a01caa20bb23>
-
-- 思维导图 <https://github.com/lidaguang1989/javascript-knowhow>
-
-> JavaScript语言不是世界上最好的,但这些致力于改善JavaScript的程序员是！！
 
 # 语言
 

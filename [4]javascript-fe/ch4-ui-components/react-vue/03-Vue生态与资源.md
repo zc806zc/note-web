@@ -66,11 +66,12 @@
 - 网易云音乐API 
     - <https://api.imjad.cn/cloudmusic.md>
     
-- 高仿网易云 @NICE <https://github.com/javaSwing/NeteaseCloudWebApp>
+- 高仿网易云 @NICE 
+    - <https://github.com/javaSwing/NeteaseCloudWebApp>
+    - https://github.com/javaSwing/MusicAPI
 - vue-music-webapp https://github.com/CaiJinyc/vue-music-webapp
-- vue-163-music 包含服务端 @old <https://github.com/ShanaMaid/vue-163-music>
 - koel @NICE 可惜PHP https://github.com/phanan/koel
-- vue-aplayer https://github.com/SevenOutman/vue-aplayer
+- vue-163-music 包含服务端 @old <https://github.com/ShanaMaid/vue-163-music>
 - vue-163-music 老版本金属风的网易云 https://github.com/SGAMERyu/vue-163-music
 - 网易云 @old <https://github.com/microzz/vue-music-player>
 
