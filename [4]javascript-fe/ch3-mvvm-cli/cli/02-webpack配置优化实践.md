@@ -147,3 +147,10 @@ HashedModuleIdsPlugin
 
 - 打包速度优化 https://github.com/xitu/gold-miner/blob/master/TODO/keep-webpack-fast-a-field-guide-for-better-build-performance.md
 - webpack4-用之初体验，一起敲它十一遍 https://juejin.im/post/5adea0106fb9a07a9d6ff6de
+
+# webpack4小结
+
+```
+其实所谓的“零配置”根本不靠谱
+一旦项目复杂 约定就不如配置
+```
