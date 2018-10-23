@@ -1,6 +1,33 @@
 # README
 
-- 未整理...
+- 基于 Webpack 开发和构建多页面站点  <https://juejin.im/post/5a9358d76fb9a0633c662f17>
+- webpack多页应用架构系列 https://segmentfault.com/a/1190000006843916
+- 非默认需要配置entries  https://github.com/Monine/webpack-multi-page
+- webpack增量打包多页应用 若干思考 
+    - https://juejin.im/post/5a63f082f265da3e303c95cc 
+    - [使用webpack重构koa2多页应用](http://www.guofengxian.com/2017/08/08/%E4%BD%BF%E7%94%A8webpack%E9%87%8D%E6%9E%84koa2%E5%A4%9A%E9%A1%B5%E5%BA%94%E7%94%A8/#more) 
+- webpack不适合多页面应用？你写的插件还不够多 https://www.jianshu.com/p/f6a2a47d084d
+- 从无到有，学习 webpack 的多页面配置 
+    - https://juejin.im/entry/58e73a7661ff4b006b40d023
+    - https://github.com/Heyff12/webpack-pages  
+- 讲思路 搭建一个多页面的无依赖的工程化项目
+    - https://juejin.im/post/59f338695188255f5c513fb1
+    - https://github.com/wuomzfx/pure-webpage
+- 用webpack搭建多页面项目 @deprecated https://juejin.im/post/5a0c13b3518825329314154d    
+- 中小型多页面应用整合webpack终极方案 https://juejin.im/post/5a1b9a6ef265da432a7b4d0d    
+- 思路 @deprecated http://hawkzz.com/blog/blog/1514542087911  
+- 一个简单易用的webpack4多页面脚手架配置加学习 @deprecated
+    - https://juejin.im/post/5ad0a7f7518825482e394f41
+    - https://github.com/673800357/webpack4-multpage-learn
+
+- Webpack 4 和单页应用入门 多页面 https://github.com/wallstreetcn/webpack-and-spa-guide/blob/master/examples/mpa
+- vue单页面，多路由，前进刷新，后退不刷新 
+    - https://segmentfault.com/a/1190000012083511
+    - https://github.com/bingyang519/vueGoBack
+- 公共部分提取 
+    - https://github.com/czero1995/webpack-common  
+    - https://juejin.im/post/5a35f6845188253865094365
+
 
 # 通用脚手架
 
@@ -8,6 +35,11 @@
 - WebpackTemplate https://github.com/BryanAdamss/WebpackTemplate
 - multipage-webpack-scaffolding https://github.com/JesseZhao1990/multipage-webpack-scaffolding
 - webpack-multi-page @deprecated 结构略复杂 原生无框架的 兼容IE8+ <https://github.com/zhaotoday/webpack-multi-page>
+- webpack-multiple-page-boilerplate <https://github.com/b5156/webpack-multiple-page-boilerplate>
+- 多页面Webpack脚手架 @deprecated https://github.com/HeavenBin/WebpackTemplate
+- webpack-study @deprecated
+    - https://github.com/qq20004604/webpack-study  
+    - 综合案例是多页面的解决方案，可以稍微参考一下思路    
 
 # Vue的多页面脚手架
 
@@ -54,14 +86,17 @@ function getEntries (path) {
 }
 ```
 
-- Vue或React多页应用脚手架 <https://github.com/MeCKodo/vue-multipage>
+- Vue或React多页应用脚手架 
 
+  - <https://github.com/MeCKodo/vue-multipage>
   - <https://www.imooc.com/article/12697>
+  
 - vue多页面开发和打包的正确姿势 
+
     - https://juejin.im/post/5a8e3f00f265da4e747fc700
     - https://github.com/Faithree/multiple-vue-amazing
     - vue多页面打包优化,主要讲打包上线的优化 
-    
+
 - 基于vue-cli的多页面应用脚手架
     - https://github.com/JayZangwill/vue-multipage
     - https://github.com/breezefeng/vue-cli-multipage
@@ -90,42 +125,3 @@ function getEntries (path) {
 - 多页面解决方案 @deprecated <https://github.com/MeCKodo/react-multipage> 
 - 前端人人 基于react的多页面 @NICE https://www.jianshu.com/u/d6102adf76ac
 
-# MPA思路
-
-- 基于 Webpack 开发和构建多页面站点  <https://juejin.im/post/5a9358d76fb9a0633c662f17>
-
-
-- webpack多页应用架构系列 https://segmentfault.com/a/1190000006843916
-- 非默认需要配置entries  https://github.com/Monine/webpack-multi-page
-- webpack增量打包多页应用 若干思考 
-    - https://juejin.im/post/5a63f082f265da3e303c95cc 
-    - [使用webpack重构koa2多页应用](http://www.guofengxian.com/2017/08/08/%E4%BD%BF%E7%94%A8webpack%E9%87%8D%E6%9E%84koa2%E5%A4%9A%E9%A1%B5%E5%BA%94%E7%94%A8/#more) 
-- webpack不适合多页面应用？你写的插件还不够多 https://www.jianshu.com/p/f6a2a47d084d
-- 从无到有，学习 webpack 的多页面配置 
-    - https://juejin.im/entry/58e73a7661ff4b006b40d023
-    - https://github.com/Heyff12/webpack-pages  
-- 讲思路 搭建一个多页面的无依赖的工程化项目
-    - https://juejin.im/post/59f338695188255f5c513fb1
-    - https://github.com/wuomzfx/pure-webpage
-- 用webpack搭建多页面项目 @deprecated https://juejin.im/post/5a0c13b3518825329314154d    
-- 中小型多页面应用整合webpack终极方案 https://juejin.im/post/5a1b9a6ef265da432a7b4d0d    
-- 思路 @deprecated http://hawkzz.com/blog/blog/1514542087911  
-- 一个简单易用的webpack4多页面脚手架配置加学习 @deprecated
-    - https://juejin.im/post/5ad0a7f7518825482e394f41
-    - https://github.com/673800357/webpack4-multpage-learn
-- 多页面Webpack脚手架 @deprecated https://github.com/HeavenBin/WebpackTemplate
-- webpack-study @deprecated
-    - https://github.com/qq20004604/webpack-study  
-    - 综合案例是多页面的解决方案，可以稍微参考一下思路
-- Webpack 4 和单页应用入门
-
-  - 多页面 https://github.com/wallstreetcn/webpack-and-spa-guide/blob/master/examples/mpa
-
-- webpack-multiple-page-boilerplate <https://github.com/b5156/webpack-multiple-page-boilerplate>
-
-# 其他
-
-- vue单页面，多路由，前进刷新，后退不刷新 https://segmentfault.com/a/1190000012083511    
-    - https://github.com/bingyang519/vueGoBack
-- 参考公共部分提取 https://github.com/czero1995/webpack-common  
-    - https://juejin.im/post/5a35f6845188253865094365
