@@ -50,20 +50,6 @@
 └── package.json               // package.json
 ```
 
-# 手机 | webapp | h5
-
-- vue-打造webapp项目的脚手架 
-  - https://www.jianshu.com/p/00b2bd13b075 
-  - 模板 https://github.com/sapida/temp-project-vue
-  - vue-scroller
-  - flexible.js
-
-```js
-// vue-scroller
-import VueScroller from 'vue-scroller'
-Vue.use(VueScroller)
-```
-
 # 权限登录
 
 - vue权限路由实现方式总结 https://juejin.im/post/5b5bfd5b6fb9a04fdd7d687a

@@ -9,3 +9,15 @@
     - vux
     - rem工具类适配
     - https://github.com/mahoneming/vue-project-cli 
+
+- vue-打造webapp项目的脚手架 
+  - https://www.jianshu.com/p/00b2bd13b075 
+  - 模板 https://github.com/sapida/temp-project-vue
+  - vue-scroller
+  - flexible.js
+
+```js
+// vue-scroller
+import VueScroller from 'vue-scroller'
+Vue.use(VueScroller)
+```
