@@ -64,14 +64,18 @@
 
 - Vue全家桶打造自适应 web 音乐播放器 
   - https://juejin.im/post/5afcdc73518825428630b216
-  - https://github.com/maomao1996/Vue-mmPlayer
-- 网易云音乐API <https://api.imjad.cn/cloudmusic.md>
-- koel @NICE PHP https://github.com/phanan/koel
-- 网易云
+  - Vue-mmPlayer https://github.com/maomao1996/Vue-mmPlayer
 
-  - 高仿 <https://github.com/javaSwing/NeteaseCloudWebApp>
-  - 网易云 维护较差 <https://github.com/microzz/vue-music-player>
-  - 包含服务端 <https://github.com/ShanaMaid/vue-163-music>
+- 网易云音乐API 
+    - <https://api.imjad.cn/cloudmusic.md>
+    
+- 高仿网易云 @NICE <https://github.com/javaSwing/NeteaseCloudWebApp>
+- vue-music-webapp https://github.com/CaiJinyc/vue-music-webapp
+- vue-163-music 包含服务端 @old <https://github.com/ShanaMaid/vue-163-music>
+- koel @NICE 可惜PHP https://github.com/phanan/koel
+- vue-aplayer https://github.com/SevenOutman/vue-aplayer
+- vue-163-music 老版本金属风的网易云 https://github.com/SGAMERyu/vue-163-music
+- 网易云 @old <https://github.com/microzz/vue-music-player>
 
 # 阅读咨询
 
