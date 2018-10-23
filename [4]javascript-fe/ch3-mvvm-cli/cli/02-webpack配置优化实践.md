@@ -55,6 +55,15 @@ const Article = () => import('@/components/Article') // 利用promise
 # 插件
 
 - html-webpack-inline-source-plugin
+- write-file-webpack-plugin
+    - webpack 热更新时输出文件 https://segmentfault.com/q/1010000014962454/a-1020000014983460
+
+```js
+new WriteFilePlugin({
+    test: /static|templates/,
+    useHashIndex: false
+})
+```
 
 # webpack4
 
