@@ -31,6 +31,9 @@ function getEntry(globPath) {
 	});
 	return entries;
 }
+
+// 替换名字 方式1
+pathname = pathDir ? pathname.replace(new RegExp('^' + pathDir), '') : pathname;
 ```
 
 - vue-element-ui-scaffold-webpack4 https://github.com/hzsrc/vue-element-ui-scaffold-webpack4
