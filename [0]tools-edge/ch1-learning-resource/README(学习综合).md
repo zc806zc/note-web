@@ -41,6 +41,7 @@
 
 # 学习库
 
+- free-programming-books-zh_CN @NICE <https://github.com/justjavac/free-programming-books-zh_CN> 
 - CS-Notes @nice Computer Science Learning Notes https://github.com/CyC2018/CS-Notes
 - learn-anything https://github.com/learn-anything/learn-anything
 - be-a-professional-programmer <https://github.com/stanzhai/be-a-professional-programmer>
