@@ -50,11 +50,6 @@ public class UserInputDTOConvert implements DTOConvert {
 User user = new UserInputDTOConvert().convert(userInputDTO);
 ```
 
-
-
-
-
-
 # 代码生成
 
 - lombok
@@ -88,33 +83,6 @@ User user = new UserInputDTOConvert().convert(userInputDTO);
     <scope>provided</scope>
 </dependency>
 ```
-
-
-- TKmybatis
-
-  - mapper自动生成
-  - mybatis-generator和TKmybatis的结合使用 <https://www.cnblogs.com/Jason-Xiang/p/6547152.html>
-
-```xml
-<dependency>
-    <groupId>tk.mybatis</groupId>
-    <artifactId>mapper-spring-boot-starter</artifactId>
-    <version>2.0.3-beta1</version>
-</dependency>
-
-<dependency>
-    <groupId>tk.mybatis</groupId>
-    <artifactId>mapper</artifactId>
-    <version>4.0.0</version>
-</dependency>
-```
-
--  Mapper
-    
-    - 极其方便的使用Mybatis单表的增删改查 
-    - https://gitee.com/free/Mapper
-
-
 
 # 模板快速建站
 

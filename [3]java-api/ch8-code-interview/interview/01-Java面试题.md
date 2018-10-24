@@ -1,12 +1,18 @@
 # 面试
 
+- Back-End-Developer-Interview-Questions https://github.com/arialdomartini/Back-End-Developer-Interview-Questions
 - Java-Guide @NICE https://github.com/Snailclimb/Java-Guide
+- The-Art-Of-Programming-By-July 编程之法：面试和算法心得 https://github.com/julycoding/The-Art-Of-Programming-By-July
 - 各公司算法题 代码 <https://github.com/kdn251/interviews>
 - Java Core Sprout : basic, concurrent, algorithm 
   - https://github.com/crossoverJie/JCSprout
   - https://github.com/crossoverJie/Java-Interview
 - Interview-questions <https://github.com/HuangQinJian/Interview-questions>
 - itmian4 @deprecated <http://www.itmian4.com/>
+
+# offer
+
+- awesome-offer https://github.com/lietoumai/awesome-offer
 
 # Java面试题
 

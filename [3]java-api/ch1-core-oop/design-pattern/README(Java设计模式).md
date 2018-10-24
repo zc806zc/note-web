@@ -1,5 +1,6 @@
 # java设计模式
 
+- awesome-scalability 高扩展,高可用,高性能等的设计模式 https://github.com/binhnguyennus/awesome-scalability
 - java-design-patterns <https://github.com/iluwatar/java-design-patterns>
 - java-design-patterns-in-stories <https://www.programcreek.com/java-design-patterns-in-stories/>
 

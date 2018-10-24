@@ -1,6 +1,7 @@
 # 基础
 
 - 数据类型 <http://www.yiibai.com/java_data_type/>
+- JCFInternals 深入理解Java集合框架 https://github.com/CarpenterLee/JCFInternals
 - Java 数据结构 <http://www.runoob.com/java/java-data-structures.html>
 
   - ArrayList | Vector | Stack(后进先出的栈)

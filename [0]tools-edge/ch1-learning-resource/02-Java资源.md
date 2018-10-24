@@ -23,6 +23,16 @@
 
 - 博客
 
+    - Tim Yang https://timyang.net/
+    - https://martinfowler.com/
+    - 许令波的Issue https://github.com/xulingbo/xulingbo.github.io/issues/
+    - martinfowler https://martinfowler.com/
+    - 伪架构师 https://blog.fleeto.us/
+    - 阿里中间件团队博客 http://jm.taobao.org/
+    - 今日头条技术博客  https://techblog.toutiao.com/
+    - 左耳朵耗子的酷壳 https://coolshell.cn/
+    - 美团点评技术团队 https://tech.meituan.com/
+    - TiDB博客 https://pingcap.com/blog-cn/    
     - 芋道源码 —— 纯源码解析博客 @nice 
         - https://github.com/YunaiV/Blog
         - http://www.iocoder.cn/
@@ -37,8 +47,8 @@
   - 博之阅 <http://www.bozhiyue.com/index.html>
   - segmentfault <https://segmentfault.com/t/java>
   - infoq @nice <http://www.infoq.com/cn/> 
-  - 伯乐在线 <http://top.jobbole.com/tag/java/?sort=latest>
-  - 并发编程 <http://ifeve.com/java-7-concurrency-cookbook/>
+  - 伯乐在线 @nice <http://top.jobbole.com/tag/java/?sort=latest>
+  - 并发编程网 @nice <http://ifeve.com/java-7-concurrency-cookbook/>
   - programcreek <https://www.programcreek.com/>
   - ...
 
@@ -67,12 +77,10 @@
 
 - SE文档 <http://www.oracle.com/technetwork/cn/java/javase/documentation/api-jsp-136079-zhs.html>
 - oracle <http://www.oracle.com/technetwork/java/index.html>
-- IBM
-
-  - @Nice <https://www.ibm.com/developerworks/cn/>
-
+- IBM @Nice 
+    - <https://www.ibm.com/developerworks/cn/>
     - <https://www.ibm.com/developerworks/learn/java/index.html>
-    - <https://www.ibm.com/developerworks/cn/java/>
+    - java <https://www.ibm.com/developerworks/cn/java/>
 
 # 社区
 

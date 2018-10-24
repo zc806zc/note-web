@@ -41,6 +41,7 @@
 
 # 学习库
 
+- CS-Notes @nice Computer Science Learning Notes https://github.com/CyC2018/CS-Notes
 - learn-anything https://github.com/learn-anything/learn-anything
 - be-a-professional-programmer <https://github.com/stanzhai/be-a-professional-programmer>
 - 伯乐在线 @nice <https://github.com/jobbole>

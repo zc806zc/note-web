@@ -26,6 +26,7 @@
 
 # VPN
 
+- shadowsocks https://github.com/shadowsocks
 - (@deprecated)Junos Pulse
 - ...
 
