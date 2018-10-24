@@ -34,7 +34,6 @@
 
   -  Simple, elegant content placeholder
 
---------------------------------------------------------------------------------
 
 # 全屏背景 | 视差
 
@@ -64,7 +63,6 @@
   - <https://github.com/liferay/senna.js/>
   - A blazing-fast Single Page Application engine
 
---------------------------------------------------------------------------------
 
 # 拖拽
 
@@ -156,12 +154,11 @@ DragDrop.prototype.mouseMove = function(e, obj) {
 
 # 可调大小面板 | 浏览器调整
 
-- <https://www.imooc.com/learn/193>
-
---------------------------------------------------------------------------------
+- 可调大小面板实现 <https://www.imooc.com/learn/193>
 
 # 滚动条
 
+- iscroll https://github.com/cubiq/iscroll
 - jquery.slimScroll https://github.com/rochal/jQuery-slimScroll
 - jquery.nicescroll
 - scrollama
@@ -178,15 +175,6 @@ DragDrop.prototype.mouseMove = function(e, obj) {
   - <http://www.jq22.com/webqd1910>
   - 放手机里的滚屏实现
 
-```javascript
-<a onclick="$('.detail').animatescroll({padding:71});">Screens</a>
-```
-
-- 滚动
-
-- iscroll https://github.com/cubiq/iscroll
-
---------------------------------------------------------------------------------
 
 # 页面导航
 
@@ -237,7 +225,6 @@ $(function() {
   });
 ```
 
---------------------------------------------------------------------------------
 
 # 弹框 | 相册 | 图片预览 | gallery
 
@@ -327,7 +314,6 @@ function autoHeight() {
 }
 ```
 
---------------------------------------------------------------------------------
 
 # 下拉菜单
 
@@ -352,7 +338,6 @@ function autoHeight() {
 - 无延迟菜单
   - JS实现京东无延迟菜单效果 <https://www.imooc.com/video/14777>
 
---------------------------------------------------------------------------------
 
 # 轮播 | 焦点图
 

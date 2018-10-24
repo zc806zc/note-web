@@ -129,7 +129,6 @@ function praise(num, obj) {
 
 - bootstrap-tagsinput <https://github.com/bootstrap-tagsinput/bootstrap-tagsinput>
 
---------------------------------------------------------------------------------
 
 # 登录注册
 
@@ -200,7 +199,6 @@ function slide(range, conSlide, obj) {
  }
 ```
 
---------------------------------------------------------------------------------
 
 
 # URL操作库
@@ -214,7 +212,6 @@ function slide(range, conSlide, obj) {
 - chancejs 生成随机数 https://github.com/chancejs/chancejs
 - base64 https://github.com/dankogai/js-base64
 
---------------------------------------------------------------------------------
 
 # 时间日期
 
@@ -237,7 +234,6 @@ function slide(range, conSlide, obj) {
 - pickadate.js <https://github.com/amsul/pickadate.js>
 - DatePicker开发 <https://www.imooc.com/video/14520>
 
---------------------------------------------------------------------------------
 
 # 省市区 | 联动
 
@@ -262,9 +258,6 @@ function slide(range, conSlide, obj) {
 
 - 字母点击 移动端 
     - <http://www.jq22.com/webqd2257>
-
-
---------------------------------------------------------------------------------
 
 # 分页
 
@@ -292,7 +285,6 @@ function slide(range, conSlide, obj) {
 
 - TimelineJS <https://github.com/NUKnightLab/TimelineJS>
 
---------------------------------------------------------------------------------
 
 # 模板引擎 | 渲染引擎
 
@@ -323,7 +315,6 @@ var daochu = (function() {
 })()
 ```
 
---------------------------------------------------------------------------------
 
 # 传输数据格式
 
@@ -339,7 +330,6 @@ var daochu = (function() {
     - <http://www.jq22.com/webqd3030>
     - <http://www.jq22.com/webqd1708>
 
---------------------------------------------------------------------------------
 
 # 加密处理
 
@@ -350,7 +340,6 @@ var daochu = (function() {
 
 > A JavaScript / Python / PHP cryptocurrency trading library with support for more than 90 bitcoin/altcoin exchanges
 
---------------------------------------------------------------------------------
 
 # 时间
 
@@ -407,13 +396,11 @@ Date.prototype.Format = function(fmt) {
 new Date().Format("yyyy-MM-dd E HH:mm:ss")
 ```
 
---------------------------------------------------------------------------------
 
 # 权限 |  CURD
 
 - 权限颗粒度
 
---------------------------------------------------------------------------------
 
 # 上传
 
@@ -467,7 +454,6 @@ if (window.FileReader) {
 }
 ```
 
---------------------------------------------------------------------------------
 
 # 行内编辑
 
@@ -494,7 +480,6 @@ $('tr td').on('click', function() {
 })
 ```
 
---------------------------------------------------------------------------------
 
 # 搜索
 
@@ -545,7 +530,6 @@ function xiaolong(json) {
 }
 ```
 
---------------------------------------------------------------------------------
 
 # 表单 | 字段解析 | ajax提交处理
 
@@ -697,7 +681,6 @@ var queryString = $('#myFormId .specialFields').fieldSerialize();
 - 移动端
   - stacktable.js 小屏幕排列  https://github.com/johnpolacek/stacktable.js/
 
---------------------------------------------------------------------------------
 
 # 筛选排序
 
@@ -734,13 +717,11 @@ rows.sort(function(a,b){
 });
 ```
 
---------------------------------------------------------------------------------
 
 # 图表
 
 - ->> 可视化
 
---------------------------------------------------------------------------------
 
 # 进度条
 
@@ -778,7 +759,7 @@ rows.sort(function(a,b){
   - summernote <https://github.com/summernote/summernote>
   - wysiwyg <https://github.com/mindmup/bootstrap-wysiwyg/>
   - sqire
-  - pell
+  - pell 超轻量的 WYSIWYG 文本编辑器
 
 
  # Markdown编辑器 | MD 

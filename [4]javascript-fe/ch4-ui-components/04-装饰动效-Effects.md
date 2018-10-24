@@ -12,6 +12,7 @@
 - 跨平台
   - lottie-web @nice https://github.com/airbnb/lottie-web
 - css主导动画
+
   - animate.css @nice https://github.com/daneden/animate.css
   - A+ https://github.com/bendc/animateplus  
   - Effeckt.css <https://github.com/h5bp/Effeckt.css>
@@ -63,6 +64,7 @@
   - <https://aotu.io/notes/2017/01/22/snapsvg/index.html>
 
 - 大量象形文字 <https://github.com/ryanoasis/nerd-fonts>
+- titanic 动画是基于 JS 的, 导出svg图标 https://github.com/icons8/titanic
 
 # SVG技术
 
