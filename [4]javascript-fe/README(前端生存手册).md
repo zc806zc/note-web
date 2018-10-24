@@ -108,6 +108,8 @@
 
 # 网站的肥胖症危机
 
+> 前端套路深，不要瞎折腾
+
 - <https://vimeo.com/147806338>
 
 ```javascript
@@ -136,7 +138,6 @@ Google正在为大网页做标记
 # JavaScript疲劳
 
 > 当我们使用我们不需要的工具来解决根本就不存在的问题的时候，JavaScript 疲劳就出现了
-
 
 - JavaScript疲劳之所以存在是因为 Web 平台发展太快了，但你并不需要掌握所有东西
 - 如何在疲劳的JS世界中持续学习 https://juejin.im/post/5ae97bd05188256719521ae0
