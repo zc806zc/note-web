@@ -25,8 +25,10 @@
 - 图片预加载 <https://www.imooc.com/video/14430>
 - 图片瀑布流 <http://www.jq22.com/webqd2082>
 
-# 占位元素
+# 占位元素 | 防抖
 
+- fitty 文字适应容器大小 https://github.com/rikschennink/fitty
+- bricks.js 砖石布局 https://github.com/callmecavs/bricks.js
 - holder 图片占位 https://github.com/imsky/holder
 - mocka 文章占位 <https://github.com/Chalarangelo/mocka>
 
