@@ -1,3 +1,7 @@
+# README
+
+- 分享个人习惯的命名方式 https://juejin.im/post/5b6ad6b0e51d4519171766e2
+
 # Airbnb JavaScript Style Guide
 
 - 拷贝数组时，使用 Array#slice

@@ -1,6 +1,7 @@
 # Ngnix
 
 - nginx从入门到实践 <https://juejin.im/post/5a2600bdf265da432b4aaaba>
+- Nginx与前端开发 https://juejin.im/post/5bacbd395188255c8d0fd4b2
 
 # Apache
 

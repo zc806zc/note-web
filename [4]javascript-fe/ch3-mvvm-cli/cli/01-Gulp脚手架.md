@@ -45,6 +45,19 @@ gulp.task('watchLessCompile', function () {
 - tmtworkflow
 - generator-sapling-pc IE8+ https://github.com/sapling-team/generator-sapling-pc
 
+# 移除node_modules
+
+```shell
+#  rimraf
+npm install rimraf -g
+rimraf node_modules
+
+# windows
+rmdir /s/q your_app_dir
+
+# Linux
+rm -f /node_modules
+```
 
 # 一些优化
 
