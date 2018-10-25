@@ -347,6 +347,7 @@ function autoHeight() {
 > 轮播图: 获取1% 的用户点击却占用了页面一半甚至更多的位置
 
 - 推荐
+
   - (首选) slick -> the last carousel you'll ever need <https://github.com/kenwheeler/slick>
   - @NICE superslide <http://www.SuperSlide2.com/>
   - fancybox
@@ -363,7 +364,12 @@ function autoHeight() {
 
   - myfocus(jquery) 焦点图
 
+- 垂直滚动
+
+  - ticker https://github.com/richhollis/vticker
+
 - 其他
+
   - Camera slideshow <https://www.pixedelic.com/plugins/camera/>
   - jquery.flexisel.js
   - Nivo Slider
@@ -375,6 +381,7 @@ function autoHeight() {
 - 栗子
   - 切割轮播图 <http://www.jq22.com/webqd2833>
   - 全屏垂直滚动 <http://www.jq22.com/webqd1991>
+  - 新闻提示垂直轮播 http://www.jq22.com/jquery-info5847
   - CSS3轮播 <http://www.jq22.com/webqd2427>
   - 渐隐效果仿dribble <http://www.jq22.com/webqd2023>
 
