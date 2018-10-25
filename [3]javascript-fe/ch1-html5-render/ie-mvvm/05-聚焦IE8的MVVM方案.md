@@ -8,8 +8,7 @@
 
 ![](https://pic4.zhimg.com/80/v2-3ad18522a77e7e759c969efd6b130c7d_hd.jpg)
 
-
-# 脚手架配置 
+# 支持IE8的措施
 
 - Webpack Shimming https://webpack.js.org/guides/shimming/
 
@@ -19,8 +18,6 @@
 因为IE8很难搞定开发时热更新
 要看打包结果是否兼容IE8+
 ```
-
-# 支持IE8措施
 
 - (React)兼容IE8措施 @nice https://github.com/xcatliu/react-ie8
 - 包含了一些对IE8的处理 https://github.com/zhaotoday/webpack-multi-page
