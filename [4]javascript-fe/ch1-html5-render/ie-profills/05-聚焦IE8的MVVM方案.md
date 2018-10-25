@@ -6,6 +6,9 @@
 - 如何评价百度新造的 MVVM 轮子 San <https://www.zhihu.com/question/65498751/answer/294265707>
 - 如果要兼容IE8，前端用什么框架最好？ https://www.zhihu.com/question/268725034
 
+![](https://pic4.zhimg.com/80/v2-3ad18522a77e7e759c969efd6b130c7d_hd.jpg)
+
+
 # 脚手架配置 | gulp| webpack
 
 - Webpack Shimming https://webpack.js.org/guides/shimming/
@@ -53,15 +56,6 @@ require("babel-polyfill")
 
 # IE8-MV* 兼容方案
 
-- san 
-
-  - <https://github.com/baidu/san>
-  - 百度出品
-  - interlliJ idea 不识别文件类型 <https://blog.csdn.net/aaashen/article/details/46740817>
-  - 借用Vue|HTML IDEA插件语法高亮下先
-
-![](https://pic4.zhimg.com/80/v2-3ad18522a77e7e759c969efd6b130c7d_hd.jpg)
-
 - anu.js 
   - <https://rubylouvre.github.io/anu/>
   - 兼容IE8的React(anu)开发脚手架 <https://gitee.com/menhal/React_IE8_boilerplate>
@@ -91,22 +85,14 @@ import 'bluebird'; //性能超高的Promise实现
 import 'fetch-polyfill2'; //fetch 实现
 ```
 
-- avalon 
-  - <https://github.com/RubyLouvre/avalon>
-  - 被弃前奏??
-  - 如果要兼容IE7还是要恬不知耻的考虑一下
-  - 教程 <http://avalonjs.coding.me/> 
-  - oniui Avalon组件库 <https://github.com/RubyLouvre/avalon.oniui>
-  - ane @deprecated
-    - <https://github.com/xxapp/ane>
-    - 发布基于 Avalon2 的 UI 组件库与 SPA 脚手架 <https://segmentfault.com/a/1190000009625441>
-  - 脚手架
-    - avalon2-webpack2-spa @nice
-        - 由vue脚手架修改过来
-        - 采用类vue的单文件组件书写，异步、嵌套路由  
-        - https://github.com/hmhao/avalon2-webpack2-spa
-    - webpack-avalon2-SPA-seed https://github.com/crazyliuzc/webpack-avalon2-SPA-seed
-    - https://github.com/Levan-Du/avalon-spa-app
+- san 
+
+  - 百度出品 类Vue体验
+  - <https://github.com/baidu/san>
+  - interlliJ idea 不识别文件类型 <https://blog.csdn.net/aaashen/article/details/46740817>
+  - 借用Vue|HTML IDEA插件语法高亮下先
+  - SanFrameWork-IE8 https://github.com/QingHuanMoon/SanFrameWork-IE8
+  - https://github.com/fengyaogit123/san-ie8
  
 - react0.14.x
 
@@ -130,12 +116,6 @@ import 'fetch-polyfill2'; //fetch 实现
     - react-app-ie8 https://github.com/womendi/react-app-ie8
     - react-redux-support-ie8 https://github.com/zhoulijie/react-redux-support-ie8
 
-- regular <https://github.com/regularjs/regular>
-
-  - regular-ui <https://github.com/regular-ui/regular-ui>
-  - 后台管理系统前端开发方案，采用es6 + regular + gulp技术 ?? <https://github.com/xuyanquan/es6-regular-gulp>
-  - https://github.com/regularjs/example ??
-
 - NervJS @deprecated
 
   - <https://github.com/NervJS/nerv>
@@ -149,7 +129,30 @@ import 'fetch-polyfill2'; //fetch 实现
   - 脚手架 <https://github.com/NervJS/nerv-webpack-boilerplate>
   - nerv-ie8-boilerplate https://github.com/saltyshiomix/nerv-ie8-boilerplate
   - <https://github.com/NervJS/nerv-redux-todomvc>
-  - 性能不错
+
+- regular <https://github.com/regularjs/regular>
+
+  - regular-ui <https://github.com/regular-ui/regular-ui>
+  - 后台管理系统前端开发方案，采用es6 + regular + gulp技术 ?? <https://github.com/xuyanquan/es6-regular-gulp>
+  - https://github.com/regularjs/example ??
+
+- avalon @deprecated
+
+  - <https://github.com/RubyLouvre/avalon>
+  - 被弃前奏??
+  - 如果要兼容IE7还是要恬不知耻的考虑一下
+  - 教程 <http://avalonjs.coding.me/> 
+  - oniui Avalon组件库 <https://github.com/RubyLouvre/avalon.oniui>
+  - ane @deprecated
+    - <https://github.com/xxapp/ane>
+    - 发布基于 Avalon2 的 UI 组件库与 SPA 脚手架 <https://segmentfault.com/a/1190000009625441>
+  - 脚手架
+    - avalon2-webpack2-spa @nice
+        - 由vue脚手架修改过来
+        - 采用类vue的单文件组件书写，异步、嵌套路由  
+        - https://github.com/hmhao/avalon2-webpack2-spa
+    - webpack-avalon2-SPA-seed https://github.com/crazyliuzc/webpack-avalon2-SPA-seed
+    - https://github.com/Levan-Du/avalon-spa-app
 
 - knockoutjs @deprecated
 
