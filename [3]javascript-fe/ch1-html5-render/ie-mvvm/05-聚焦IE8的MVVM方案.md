@@ -9,7 +9,7 @@
 ![](https://pic4.zhimg.com/80/v2-3ad18522a77e7e759c969efd6b130c7d_hd.jpg)
 
 
-# 脚手架配置 | gulp| webpack
+# 脚手架配置 
 
 - Webpack Shimming https://webpack.js.org/guides/shimming/
 
@@ -19,11 +19,6 @@
 因为IE8很难搞定开发时热更新
 要看打包结果是否兼容IE8+
 ```
-
-- multipage-start-kit https://github.com/HuaRongSAO/multipage-start-kit
-- webpack-frames
-    - webpack 1,3,4 ie8 react vue 主流框架搭建汇总 
-    - https://github.com/HeavenSky/webpack-frames
 
 # 支持IE8措施
 
@@ -157,6 +152,9 @@ UI还是采用bootstrap等
 - 虽然过时了，但是很多人都会react 
 - 脚手架
     - react-antd-ie8 https://github.com/HeavenSky/react-antd-ie8
+    - webpack-frames
+        - webpack 1,3,4 ie8 react vue 主流框架搭建汇总 
+        - https://github.com/HeavenSky/webpack-frames
     - react-redux-antd-ie8 https://github.com/bertFu/react-redux-antd-ie8
     - react-ie8-boilerplate https://github.com/jaychsu/react-ie8-boilerplate
     - react-family-ie8 https://github.com/brickspert/react-family-ie8 开发时热更新，打包时才兼容IE8

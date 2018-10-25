@@ -40,6 +40,7 @@
 - webpack-study @deprecated
     - https://github.com/qq20004604/webpack-study  
     - 综合案例是多页面的解决方案，可以稍微参考一下思路    
+- multipage-start-kit https://github.com/HuaRongSAO/multipage-start-kit
 
 # Vue的多页面脚手架
 
