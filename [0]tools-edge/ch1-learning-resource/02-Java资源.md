@@ -12,7 +12,26 @@
   - hellojavacases微信 <http://hellojava.info/>
   - codefollower <https://github.com/codefollower>
 
-# 网站|博客
+
+# 博客
+
+- Tim Yang https://timyang.net/
+- https://martinfowler.com/
+- 许令波的Issue https://github.com/xulingbo/xulingbo.github.io/issues/
+- martinfowler https://martinfowler.com/
+- 伪架构师 https://blog.fleeto.us/
+- 阿里中间件团队博客 http://jm.taobao.org/
+- 今日头条技术博客  https://techblog.toutiao.com/
+- 左耳朵耗子的酷壳 https://coolshell.cn/
+- 美团点评技术团队 https://tech.meituan.com/
+- TiDB博客 https://pingcap.com/blog-cn/    
+- 芋道源码 —— 纯源码解析博客 @nice 
+    - https://github.com/YunaiV/Blog
+    - http://www.iocoder.cn/
+    
+- 码云blog https://blog.gitee.com/
+
+# 网站 | 社区
 
 - 讨论推荐
 
@@ -21,25 +40,7 @@
   - 网站推荐  <http://www.siteboxs.com/siteBox/tag/tname/java.html>
   - 学习Java应该关注哪些网站？ <https://www.zhihu.com/question/23496750>
 
-- 博客
-
-    - Tim Yang https://timyang.net/
-    - https://martinfowler.com/
-    - 许令波的Issue https://github.com/xulingbo/xulingbo.github.io/issues/
-    - martinfowler https://martinfowler.com/
-    - 伪架构师 https://blog.fleeto.us/
-    - 阿里中间件团队博客 http://jm.taobao.org/
-    - 今日头条技术博客  https://techblog.toutiao.com/
-    - 左耳朵耗子的酷壳 https://coolshell.cn/
-    - 美团点评技术团队 https://tech.meituan.com/
-    - TiDB博客 https://pingcap.com/blog-cn/    
-    - 芋道源码 —— 纯源码解析博客 @nice 
-        - https://github.com/YunaiV/Blog
-        - http://www.iocoder.cn/
-        
-    - 码云blog https://blog.gitee.com/
-
-- 经典Java
+- 经典
 
   - importnew @NICE <http://www.importnew.com/>
   - cmsblogs <http://cmsblogs.com/>
@@ -51,14 +52,10 @@
   - 并发编程网 @nice <http://ifeve.com/java-7-concurrency-cookbook/>
   - programcreek <https://www.programcreek.com/>
   - ...
+  
+- 国内
 
-- 国外
-
-  - <https://jaxenter.com/>
-
-- 其他
-
-  - 易佰 <http://www.yiibai.com/spring/>
+  - 易佰教程 <http://www.yiibai.com/spring/>
   - 程序园 <http://www.voidcn.com/course>
   - 编程学习网 <http://www.phpxs.com/>
   - cjsdn <http://www.cjsdn.net/index.html>
@@ -72,20 +69,15 @@
   - 泡在网上的日子 <http://jcodecraeer.com/>
   - 实验楼 <https://www.shiyanlou.com/courses/>
 
+- 国外
 
-# 文档
-
-- SE文档 <http://www.oracle.com/technetwork/cn/java/javase/documentation/api-jsp-136079-zhs.html>
-- oracle <http://www.oracle.com/technetwork/java/index.html>
-- IBM @Nice 
-    - <https://www.ibm.com/developerworks/cn/>
-    - <https://www.ibm.com/developerworks/learn/java/index.html>
-    - java <https://www.ibm.com/developerworks/cn/java/>
+  - <https://jaxenter.com/>
 
 # 社区
 
 - 阿里云 云栖社区 @nice <https://yq.aliyun.com/>
 - 疯狂Java联盟 <http://www.crazyit.org/forum.php>
+
 - 中国十大社区 https://juejin.im/post/5b417a12e51d451962728acf
   - CSDN www.csdn.net/
   - 博客园 www.cnblogs.com/
@@ -100,6 +92,15 @@
   - 掘金 juejin.im
   - 开发者头条 toutiao.io/
   - GitChat https://gitbook.cn/
+
+# 文档
+
+- SE文档 <http://www.oracle.com/technetwork/cn/java/javase/documentation/api-jsp-136079-zhs.html>
+- oracle <http://www.oracle.com/technetwork/java/index.html>
+- IBM @Nice 
+    - <https://www.ibm.com/developerworks/cn/>
+    - <https://www.ibm.com/developerworks/learn/java/index.html>
+    - java <https://www.ibm.com/developerworks/cn/java/>
 
 # 性能
 
@@ -116,10 +117,6 @@
 - 淘宝SVN <http://code.taobao.org/>
 - sourceforge <https://sourceforge.net/>
 - grepcode <http://grepcode.com/>
-
-# 在线工具
-
-- 开源中国 <http://tool.oschina.net/>
 
 # 服务器
 
