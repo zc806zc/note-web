@@ -31,8 +31,12 @@
 - anu.js 
   - <https://rubylouvre.github.io/anu/>
   - 兼容IE8的React(anu)开发脚手架 <https://gitee.com/menhal/React_IE8_boilerplate>
-  - https://gitee.com/menhal/React_IE8_boilerplate
-  - https://github.com/magicapple/anujs-webpack4-ie7-8
+  - react-ssr-ie8-startup https://github.com/nasawz/react-ssr-ie8-startup
+  - anu-starter-kit https://github.com/L-Chris/anu-starter-kit
+  - react-ie8-cli https://github.com/tanggd7/react-ie8-cli
+  - react-webpack-boilerplate https://github.com/sitorhy/react-webpack-boilerplate
+  - React_IE8_boilerplate https://gitee.com/menhal/React_IE8_boilerplate
+  - anujs-webpack4-ie7-8 https://github.com/magicapple/anujs-webpack4-ie7-8
   - 脚手架 @deprecated o(╥﹏╥)o 没成功
     - https://github.com/Levan-Du/anu-cli
     - https://github.com/RubyLouvre/create-anu-app 
@@ -71,10 +75,24 @@ import 'fetch-polyfill2'; //fetch 实现
     - https://github.com/Levan-Du/avalon-spa-app
  
 - react0.14.x
+
   - 兼容IE8措施 https://github.com/xcatliu/react-ie8
-  - https://github.com/HeavenSky/react-antd-ie8
-  - https://github.com/jaychsu/react-ie8-boilerplate
+  - react-antd-ie8 https://github.com/HeavenSky/react-antd-ie8
+  - react-redux-antd-ie8 https://github.com/bertFu/react-redux-antd-ie8
+  - react-ie8-boilerplate https://github.com/jaychsu/react-ie8-boilerplate
   - react-family-ie8 https://github.com/brickspert/react-family-ie8 开发时热更新，打包时才兼容IE8
+  - 其他
+    - peas_front https://github.com/youka2012/peas_front
+    - react-ie8-webpack3-example https://github.com/dunhuang/react-ie8-webpack3-example
+    - react-ie8-bootstrap https://github.com/fddfdfdfdf/react-ie8-bootstrap
+    - react-adminlte-ie8-test https://github.com/cshenger/react-adminlte-ie8-test
+    - react-boilerplate-ie8 https://github.com/localSummer/react-boilerplate-ie8
+    - reactwithie8 https://github.com/sampsonli/reactwithie8
+    - https://github.com/MrJoe0929/React-antd-IE8
+    - https://github.com/hjx5309/reactIe8
+    - web-react-ie8-antd-cool https://github.com/webgameone/web-react-ie8-antd-cool
+    - react-app-ie8 https://github.com/womendi/react-app-ie8
+    - react-redux-support-ie8 https://github.com/zhoulijie/react-redux-support-ie8
 
 - regular <https://github.com/regularjs/regular>
 
@@ -86,8 +104,11 @@ import 'fetch-polyfill2'; //fetch 实现
 
   - <https://github.com/NervJS/nerv>
   - A blazing fast React alternative, compatible with IE8 and React 16
-  - 试了半天不知到怎么兼容到IE8+,但文档写着一句 
-  - <https://nervjs.github.io/docs/>
+  - 试了半天不知到怎么兼容到IE8+....
+  - 文档 <https://nervjs.github.io/docs/>
+  - nervjs-ie8 https://github.com/womendi/nervjs-ie8
+  - nerv-ie8-boilerplate https://github.com/saltyshiomix/nerv-ie8-boilerplate
+  - https://github.com/zhans1993/Nerv-ie8
   - 文档同框架搭建 <https://github.com/NervJS/nerv-website>
   - 脚手架 <https://github.com/NervJS/nerv-webpack-boilerplate>
   - nerv-ie8-boilerplate https://github.com/saltyshiomix/nerv-ie8-boilerplate
@@ -110,6 +131,8 @@ import 'fetch-polyfill2'; //fetch 实现
 
 # 脚手架 | boilerplate | template
 
+- ai-react-template https://github.com/AI-UNICOM/ai-react-template
+- multipage-start-kit https://github.com/HuaRongSAO/multipage-start-kit
 - webpack-frames
     - webpack 1,3,4 ie8 react vue 主流框架搭建汇总 
     - https://github.com/HeavenSky/webpack-frames
