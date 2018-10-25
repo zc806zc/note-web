@@ -1,5 +1,6 @@
 # DOM | jquery的轻量替代 | jquery-like 
 
+- jslite
 - nanoJS https://github.com/vladocar/nanoJS/
 - cash https://github.com/kenwheeler/cash
 - bliss IE9+ https://github.com/leaverou/bliss/

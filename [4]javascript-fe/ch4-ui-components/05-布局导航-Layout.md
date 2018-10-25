@@ -182,13 +182,14 @@ DragDrop.prototype.mouseMove = function(e, obj) {
 
 # 元素定位 | 返回顶部 | 锚点跳转
 
-- 页脚置底 <http://liaokeyu.com/%E6%8A%80%E6%9C%AF/2017/01/06/%E8%AF%91-CSS%E4%BA%94%E7%A7%8D%E6%96%B9%E5%BC%8F%E5%AE%9E%E7%8E%B0Footer%E7%BD%AE%E5%BA%95.html>
-- 固定在浏览器顶部 <http://www.jq22.com/webqd2646>
-- 返回顶部
+- jquery.scrollTo https://github.com/flesler/jquery.scrollTo
+- jumpto 
+    - create a smooth jump to sub navigational menu in one JS call
+    - <http://www.jq22.com/webqd2804>
 
-  - jumpto (create a smooth jump to sub navigational menu in one JS call)
-
-  - <http://www.jq22.com/webqd2804>
+- 栗子
+    - 页脚置底 <http://liaokeyu.com/%E6%8A%80%E6%9C%AF/2017/01/06/%E8%AF%91-CSS%E4%BA%94%E7%A7%8D%E6%96%B9%E5%BC%8F%E5%AE%9E%E7%8E%B0Footer%E7%BD%AE%E5%BA%95.html>
+    - 固定在浏览器顶部 <http://www.jq22.com/webqd2646>
 
 ```javascript
 $(function() {
