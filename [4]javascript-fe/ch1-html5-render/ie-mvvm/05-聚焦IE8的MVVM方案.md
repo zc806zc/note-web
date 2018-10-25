@@ -57,8 +57,8 @@ require("babel-polyfill")
 # IE8-MV* 兼容方案
 
 - anu.js 
+
   - <https://rubylouvre.github.io/anu/>
-  - 兼容IE8的React(anu)开发脚手架 <https://gitee.com/menhal/React_IE8_boilerplate>
   - react-ssr-ie8-startup https://github.com/nasawz/react-ssr-ie8-startup
   - anu-starter-kit https://github.com/L-Chris/anu-starter-kit
   - react-ie8-cli https://github.com/tanggd7/react-ie8-cli
@@ -69,16 +69,17 @@ require("babel-polyfill")
     - https://github.com/Levan-Du/anu-cli
     - https://github.com/RubyLouvre/create-anu-app 
     - https://github.com/yunpengGit/anu-antd-axios-echarts-ie8 chrome可以没试通IE8
-  - 如何让React(anujs)跑在IE8上 @deprecated 暂时跑不起来
+
+  - 如何让React(anujs)跑在IE8上 @deprecated 暂时跑不起来,缺少点东西
     - https://zhuanlan.zhihu.com/p/39103023
     - https://github.com/RubyLouvre/anu-ie8-example
 
 ```js
 // https://github.com/RubyLouvre/anu-ie8-example/blob/master/src/index.js
 import 'es5-shim'; //IE8 ^4.5.10
-import 'object-create-ie8';//IE8, 我写的库，这样就不用加上es5-sham
-import 'object-defineproperty-ie8';//IE8， 我写的库
-import 'console-polyfill';//IE8下，如果你不打开开发者工具，window下是没有console这个对象的，
+import 'object-create-ie8';//这样就不用加上es5-sham
+import 'object-defineproperty-ie8';
+import 'console-polyfill';
 //只有打开了F12才会有这个方法
 import 'json3';  //比IE8的JSON好用
 import 'bluebird'; //性能超高的Promise实现
@@ -92,10 +93,10 @@ import 'fetch-polyfill2'; //fetch 实现
   - interlliJ idea 不识别文件类型 <https://blog.csdn.net/aaashen/article/details/46740817>
   - 借用Vue|HTML IDEA插件语法高亮下先
   - SanFrameWork-IE8 https://github.com/QingHuanMoon/SanFrameWork-IE8
-  - https://github.com/fengyaogit123/san-ie8
- 
+
 - react0.14.x
 
+  - 虽然过时了，但是很多人都会react 
   - 兼容IE8措施 https://github.com/xcatliu/react-ie8
   - react-antd-ie8 https://github.com/HeavenSky/react-antd-ie8
   - react-redux-antd-ie8 https://github.com/bertFu/react-redux-antd-ie8
