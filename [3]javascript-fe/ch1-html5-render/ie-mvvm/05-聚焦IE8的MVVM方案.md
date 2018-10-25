@@ -27,6 +27,7 @@
 
 # 支持IE8措施
 
+- (React)兼容IE8措施 @nice https://github.com/xcatliu/react-ie8
 - 包含了一些对IE8的处理 https://github.com/zhaotoday/webpack-multi-page
 - 让Webpack+Babel支持IE8 https://www.maizhiying.me/posts/2017/03/01/webpack-babel-ie8-support.html
 - https://www.yukapril.com/2017/08/05/webpack-uglifyjs-ie8.html
@@ -37,11 +38,9 @@
 <!--[if lt IE 9]>
     <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
-
-<!--[if lt IE 9]>
     <script src="https://cdn.bootcss.com/es5-shim/4.5.10/es5-shim.min.js"></script>
     <script src="https://cdn.bootcss.com/es5-shim/4.5.10/es5-sham.min.js"></script>
+    <script src="http://cdn.bootcss.com/console-polyfill/0.3.0/index.min.js"></script>
 <![endif]-->
 
 <!--[if lt IE 9]>
@@ -56,23 +55,70 @@ require("babel-polyfill")
 
 # IE8-MV* 兼容方案
 
-- anu.js 
+- anujs @nice
+- sanjs @nice
+- react0.14.x @nice
+- nerv.js 
+- regular
 
-  - <https://rubylouvre.github.io/anu/>
-  - react-ssr-ie8-startup https://github.com/nasawz/react-ssr-ie8-startup
-  - anu-starter-kit https://github.com/L-Chris/anu-starter-kit
-  - react-ie8-cli https://github.com/tanggd7/react-ie8-cli
-  - react-webpack-boilerplate https://github.com/sitorhy/react-webpack-boilerplate
-  - React_IE8_boilerplate https://gitee.com/menhal/React_IE8_boilerplate
-  - anujs-webpack4-ie7-8 https://github.com/magicapple/anujs-webpack4-ie7-8
-  - 脚手架 @deprecated o(╥﹏╥)o 没成功
+  - 网易
+  - <https://github.com/regularjs/regular>
+  - 组件库regular-ui <https://github.com/regular-ui/regular-ui>
+  - 后台管理系统前端开发方案，采用es6 + regular + gulp技术 ?? <https://github.com/xuyanquan/es6-regular-gulp>
+  - https://github.com/regularjs/example ??
+
+- avalon @deprecated
+
+  - <https://github.com/RubyLouvre/avalon>
+  - anu发布，估计被弃前奏??
+  - 但是如果要兼容IE7还是要恬不知耻的用 =》 如果有人叫我兼容IE7，一定离职！！
+  - 教程 <http://avalonjs.coding.me/> 
+  - 组件库
+    - oniui Avalon组件库 <https://github.com/RubyLouvre/avalon.oniui>
+    - ane @deprecated
+        - <https://github.com/xxapp/ane>
+  - 脚手架
+    - avalon2-webpack2-spa @nice
+        - 由vue脚手架修改过来
+        - 采用类vue的单文件组件书写，异步、嵌套路由  
+        - https://github.com/hmhao/avalon2-webpack2-spa
+    - webpack-avalon2-SPA-seed https://github.com/crazyliuzc/webpack-avalon2-SPA-seed
+    - avalon-spa-app https://github.com/Levan-Du/avalon-spa-app
+    - 发布基于 Avalon2 的 UI 组件库与 SPA 脚手架 <https://segmentfault.com/a/1190000009625441>
+
+- angular1 @deprecated 
+
+  - angular更迭快,用过时的总会心理不平衡 
+  - 相对学习门槛高
+  - ng-seed https://github.com/jm-team/ng-seed
+
+- knockoutjs @deprecated:真不好用
+
+- 网易Nec + Nej @deprecated
+  - 参考一下理念
+  - <http://nej.netease.com/>
+  - 快速入门 <http://nej.netease.com/course/quickStart>
+
+
+# anu.js 
+
+- <https://rubylouvre.github.io/anu/>
+
+- 如何让React(anujs)跑在IE8上 @deprecated 暂时跑不起来,缺少点东西
+    - https://zhuanlan.zhihu.com/p/39103023
+    - https://github.com/RubyLouvre/anu-ie8-example
+
+- 脚手架
+    - react-ssr-ie8-startup https://github.com/nasawz/react-ssr-ie8-startup
+    - anu-starter-kit https://github.com/L-Chris/anu-starter-kit
+    - react-ie8-cli https://github.com/tanggd7/react-ie8-cli
+    - react-webpack-boilerplate https://github.com/sitorhy/react-webpack-boilerplate
+    - React_IE8_boilerplate https://gitee.com/menhal/React_IE8_boilerplate
+    - anujs-webpack4-ie7-8 https://github.com/magicapple/anujs-webpack4-ie7-8
+- @deprecated o(╥﹏╥)o 没成功
     - https://github.com/Levan-Du/anu-cli
     - https://github.com/RubyLouvre/create-anu-app 
     - https://github.com/yunpengGit/anu-antd-axios-echarts-ie8 chrome可以没试通IE8
-
-  - 如何让React(anujs)跑在IE8上 @deprecated 暂时跑不起来,缺少点东西
-    - https://zhuanlan.zhihu.com/p/39103023
-    - https://github.com/RubyLouvre/anu-ie8-example
 
 ```js
 // https://github.com/RubyLouvre/anu-ie8-example/blob/master/src/index.js
@@ -86,24 +132,36 @@ import 'bluebird'; //性能超高的Promise实现
 import 'fetch-polyfill2'; //fetch 实现
 ```
 
-- san 
+# san 
 
-  - 百度出品 类Vue体验
-  - <https://github.com/baidu/san>
-  - interlliJ idea 不识别文件类型 <https://blog.csdn.net/aaashen/article/details/46740817>
-  - 借用Vue|HTML IDEA插件语法高亮下先
+- 百度出品 类Vue体验
+- <https://github.com/baidu/san>
+- interlliJ idea 不识别文件类型 <https://blog.csdn.net/aaashen/article/details/46740817>
+- 借用Vue|HTML IDEA插件语法高亮下先
+
+```
+为了兼容 IE8, 
+可能需要放弃 ES6的 export 和 import 语法,
+使用es5中的module.exports 和 require 语法
+
+UI还是采用bootstrap等
+可能也是cdn引入的
+```
+
+- san的脚手架
+
   - SanFrameWork-IE8 https://github.com/QingHuanMoon/SanFrameWork-IE8
 
-- react0.14.x
+# react0.14.x
 
-  - 虽然过时了，但是很多人都会react 
-  - 兼容IE8措施 https://github.com/xcatliu/react-ie8
-  - react-antd-ie8 https://github.com/HeavenSky/react-antd-ie8
-  - react-redux-antd-ie8 https://github.com/bertFu/react-redux-antd-ie8
-  - react-ie8-boilerplate https://github.com/jaychsu/react-ie8-boilerplate
-  - react-family-ie8 https://github.com/brickspert/react-family-ie8 开发时热更新，打包时才兼容IE8
-  - 其他
-  
+- 虽然过时了，但是很多人都会react 
+- 脚手架
+    - react-antd-ie8 https://github.com/HeavenSky/react-antd-ie8
+    - react-redux-antd-ie8 https://github.com/bertFu/react-redux-antd-ie8
+    - react-ie8-boilerplate https://github.com/jaychsu/react-ie8-boilerplate
+    - react-family-ie8 https://github.com/brickspert/react-family-ie8 开发时热更新，打包时才兼容IE8
+- 其他
+
     - ai-react-template https://github.com/AI-UNICOM/ai-react-template
     - peas_front https://github.com/youka2012/peas_front
     - react-ie8-webpack3-example https://github.com/dunhuang/react-ie8-webpack3-example
@@ -117,58 +175,18 @@ import 'fetch-polyfill2'; //fetch 实现
     - react-app-ie8 https://github.com/womendi/react-app-ie8
     - react-redux-support-ie8 https://github.com/zhoulijie/react-redux-support-ie8
 
-- NervJS @deprecated
+# NervJS 
 
-  - <https://github.com/NervJS/nerv>
-  - A blazing fast React alternative, compatible with IE8 and React 16
-  - 试了半天不知到怎么兼容到IE8+....
-  - 文档 <https://nervjs.github.io/docs/>
-  - nervjs-ie8 https://github.com/womendi/nervjs-ie8
-  - nerv-ie8-boilerplate https://github.com/saltyshiomix/nerv-ie8-boilerplate
-  - https://github.com/zhans1993/Nerv-ie8
-  - 文档同框架搭建 <https://github.com/NervJS/nerv-website>
-  - 脚手架 <https://github.com/NervJS/nerv-webpack-boilerplate>
-  - nerv-ie8-boilerplate https://github.com/saltyshiomix/nerv-ie8-boilerplate
-  - <https://github.com/NervJS/nerv-redux-todomvc>
+- 试了半天不知到怎么兼容到IE8+....
+- <https://github.com/NervJS/nerv>
+- A blazing fast React alternative, compatible with IE8 and React 16
+- 文档 <https://nervjs.github.io/docs/>
+- 脚手架
 
-- regular <https://github.com/regularjs/regular>
-
-  - regular-ui <https://github.com/regular-ui/regular-ui>
-  - 后台管理系统前端开发方案，采用es6 + regular + gulp技术 ?? <https://github.com/xuyanquan/es6-regular-gulp>
-  - https://github.com/regularjs/example ??
-
-- avalon @deprecated
-
-  - <https://github.com/RubyLouvre/avalon>
-  - 被弃前奏??
-  - 如果要兼容IE7还是要恬不知耻的考虑一下
-  - 教程 <http://avalonjs.coding.me/> 
-  - oniui Avalon组件库 <https://github.com/RubyLouvre/avalon.oniui>
-  - ane @deprecated
-    - <https://github.com/xxapp/ane>
-    - 发布基于 Avalon2 的 UI 组件库与 SPA 脚手架 <https://segmentfault.com/a/1190000009625441>
-  - 脚手架
-    - avalon2-webpack2-spa @nice
-        - 由vue脚手架修改过来
-        - 采用类vue的单文件组件书写，异步、嵌套路由  
-        - https://github.com/hmhao/avalon2-webpack2-spa
-    - webpack-avalon2-SPA-seed https://github.com/crazyliuzc/webpack-avalon2-SPA-seed
-    - https://github.com/Levan-Du/avalon-spa-app
-
-- knockoutjs @deprecated
-
-- angular1 @deprecated 
-  - angular更迭快,用过时的总会心理不平衡 
-  - 相对学习门槛高
-  - ng-seed https://github.com/jm-team/ng-seed
-
-- 网易Nec + Nej @deprecated
-  - 参考一下理念
-  - <http://nej.netease.com/>
-  - 快速入门 <http://nej.netease.com/course/quickStart>
-
-
-
-
-
-
+    - nervjs-ie8 https://github.com/womendi/nervjs-ie8
+    - nerv-ie8-boilerplate https://github.com/saltyshiomix/nerv-ie8-boilerplate
+    - https://github.com/zhans1993/Nerv-ie8
+    - nerv文档同框架搭建 <https://github.com/NervJS/nerv-website>
+    - 脚手架 <https://github.com/NervJS/nerv-webpack-boilerplate>
+    - nerv-ie8-boilerplate https://github.com/saltyshiomix/nerv-ie8-boilerplate
+    - nerv-redux-todomvc <https://github.com/NervJS/nerv-redux-todomvc>
