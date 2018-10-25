@@ -17,6 +17,40 @@
 要看打包结果是否兼容IE8+
 ```
 
+- multipage-start-kit https://github.com/HuaRongSAO/multipage-start-kit
+- webpack-frames
+    - webpack 1,3,4 ie8 react vue 主流框架搭建汇总 
+    - https://github.com/HeavenSky/webpack-frames
+
+# 支持IE8措施
+
+- 包含了一些对IE8的处理 https://github.com/zhaotoday/webpack-multi-page
+- 让Webpack+Babel支持IE8 https://www.maizhiying.me/posts/2017/03/01/webpack-babel-ie8-support.html
+- https://www.yukapril.com/2017/08/05/webpack-uglifyjs-ie8.html
+    - es3ify-webpack-plugin
+    - uglifyjs-webpack-plugin
+
+```html
+<!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/es5-shim/4.5.10/es5-shim.min.js"></script>
+    <script src="https://cdn.bootcss.com/es5-shim/4.5.10/es5-sham.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+    <script src="https://cdn.bootcss.com/nwmatcher/1.4.2/nwmatcher-base.js"></script>
+<![endif]-->
+
+<script >
+require("babel-polyfill")
+</script>
+```
+
 # IE8-MV* 兼容方案
 
 - san 
@@ -82,6 +116,8 @@ import 'fetch-polyfill2'; //fetch 实现
   - react-ie8-boilerplate https://github.com/jaychsu/react-ie8-boilerplate
   - react-family-ie8 https://github.com/brickspert/react-family-ie8 开发时热更新，打包时才兼容IE8
   - 其他
+  
+    - ai-react-template https://github.com/AI-UNICOM/ai-react-template
     - peas_front https://github.com/youka2012/peas_front
     - react-ie8-webpack3-example https://github.com/dunhuang/react-ie8-webpack3-example
     - react-ie8-bootstrap https://github.com/fddfdfdfdf/react-ie8-bootstrap
@@ -129,42 +165,6 @@ import 'fetch-polyfill2'; //fetch 实现
 
 
 
-# 脚手架 | boilerplate | template
-
-- ai-react-template https://github.com/AI-UNICOM/ai-react-template
-- multipage-start-kit https://github.com/HuaRongSAO/multipage-start-kit
-- webpack-frames
-    - webpack 1,3,4 ie8 react vue 主流框架搭建汇总 
-    - https://github.com/HeavenSky/webpack-frames
-
-# 支持IE8措施
-
-- 包含了一些对IE8的处理 https://github.com/zhaotoday/webpack-multi-page
-- 让Webpack+Babel支持IE8 https://www.maizhiying.me/posts/2017/03/01/webpack-babel-ie8-support.html
-- https://www.yukapril.com/2017/08/05/webpack-uglifyjs-ie8.html
-    - es3ify-webpack-plugin
-    - uglifyjs-webpack-plugin
-
-```html
-<!--[if lt IE 9]>
-    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
-
-<!--[if lt IE 9]>
-    <script src="https://cdn.bootcss.com/es5-shim/4.5.10/es5-shim.min.js"></script>
-    <script src="https://cdn.bootcss.com/es5-shim/4.5.10/es5-sham.min.js"></script>
-<![endif]-->
-
-<!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
-    <script src="https://cdn.bootcss.com/nwmatcher/1.4.2/nwmatcher-base.js"></script>
-<![endif]-->
-
-<script >
-require("babel-polyfill")
-</script>
-```
 
 
 
