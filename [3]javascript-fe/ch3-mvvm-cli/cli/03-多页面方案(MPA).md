@@ -100,6 +100,20 @@ pathname = pathDir ? pathname.replace(new RegExp('^' + pathDir), '') : pathname;
     - https://segmentfault.com/a/1190000012083511
     - https://github.com/bingyang519/vueGoBack
 
+```jsx
+// 小结目前做法与观点
+// https://github.com/natural-fe/natural-cli
+pages拿出src，放在最外面
+
+vue -> san.js，这样可以兼容一波IE8+,
+但目前的考虑是仅提供若干个用户需要的页面
+不是整个系统，没事干嘛兼容
+
+所谓多页面是诡计，其实就是N个弱鸡单页面...
+
+期待vue-cli的pages
+```
+
 # Vue的多页面脚手架
 
 - vue-multiplePages-useCdn @nice 
