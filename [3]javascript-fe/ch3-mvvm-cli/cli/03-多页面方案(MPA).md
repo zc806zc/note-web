@@ -44,6 +44,7 @@
 
 # Vue的多页面脚手架
 
+- vue-multiplePages-useCdn https://github.com/Jerry12138/vue-multiplePages-useCdn 
 - webpack4-vue-more-page-cli https://github.com/libin1991/webpack4-vue-more-page-cli
 
 ```js

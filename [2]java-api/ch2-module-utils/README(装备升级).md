@@ -1,7 +1,3 @@
-# 奇技淫巧
- 
-- 大话后端开发的奇淫技巧大集合 https://juejin.im/post/5b07c69f6fb9a07ac560916a
-
 # 你真的会写Java吗
 
 - 你真的会写Java吗 <https://juejin.im/entry/59ae07d9f265da249600f0ec>
@@ -83,18 +79,3 @@ User user = new UserInputDTOConvert().convert(userInputDTO);
     <scope>provided</scope>
 </dependency>
 ```
-
-# 模板快速建站
-
-- jeecg 
-  - https://gitee.com/jeecg/jeecg 
-  - 一款基于代码生成器的J2EE快速开发平台
-
-- wangmarket 
-  - https://gitee.com/mail_osc/wangmarket
-  - 选好模版一键导入 最快出网站
-
-- 页面自动生成
-
-  - 生成简单的模板
-  - 生产增删改查的脚本
