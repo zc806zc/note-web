@@ -74,6 +74,9 @@ pathname = pathDir ? pathname.replace(new RegExp('^' + pathDir), '') : pathname;
 
 # Vue多页面基础
 
+- vue-cli 提供了pages 
+    - [vie-cli pages](https://cli.vuejs.org/zh/guide/html-and-static-assets.html#%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%A4%9A%E9%A1%B5%E5%BA%94%E7%94%A8)
+
 - Vue或React多页应用脚手架 
 
   - <https://github.com/MeCKodo/vue-multipage>
@@ -110,29 +113,30 @@ pathname = pathDir ? pathname.replace(new RegExp('^' + pathDir), '') : pathname;
     - <https://github.com/bluefox1688/vue-cli-multi-page>
     - webpack3 
     - vux的配置不错
-
 - vue-cli-multipage-bootstrap 
     - https://github.com/zhoou/vue-cli-multipage-bootstrap
+    - 使用bootstrap
 
-- A vue template for multipage project https://github.com/brandonxiang/mpa
-- vue-mpa-cli https://github.com/ecitlm/vue-mpa-cli
-- vue-multiple-pages @nice 
-    - https://github.com/Plortinus/vue-multiple-pages
-    - https://github.com/wlx200510/vue-multiple-pages-cli
+- 其他(供参考)
 
-- 其他
-    
-    - webpack4-vue-more-page-cli https://github.com/libin1991/webpack4-vue-more-page-cli
+    - vue-mpa-cli 正则匹配的入口 可以嵌套 https://github.com/ecitlm/vue-mpa-cli
+    - webpack4-vue-more-page-cli 有部署，webpack4没配好 https://github.com/libin1991/webpack4-vue-more-page-cli
     - 基于vue-cli的多页面应用脚手架
+        - 中规中距的写法
         - https://github.com/JayZangwill/vue-multipage
         - https://github.com/breezefeng/vue-cli-multipage
-    - vue-multiple-page https://github.com/Mrminfive/vue-multiple-page
-
     - Webapck+Vue多页面商城模板 
+        - 结构太扁平了，有点揪心 应该还行
         - https://juejin.im/post/5a2257a2f265da432a7b6532
-        - https://github.com/czero1995/webpack-store
+        - https://github.com/czero1995/webpack-store    
+    - vue-multiple-page 看不懂，算了 https://github.com/Mrminfive/vue-multiple-page
+    - vue-multiple-pages 
+        - 定制了Vue-cli3的模板 配置少 @nice  https://github.com/Plortinus/vue-multiple-pages
+        - https://github.com/wlx200510/vue-multiple-pages-cli    
     - webpack-multipages-template https://github.com/Fi2zz/webpack-multipages-template 单页多页皆可 @deprecated
     - vue-cli-multi-page https://github.com/chen1218chen/vue-cli-multi-page @deprecated
+    - A vue template for multipage project @deprecated https://github.com/brandonxiang/mpa
+
 
 # React的多页面基础
 
