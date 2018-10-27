@@ -1,5 +1,11 @@
-# 基础功能
+# README
 
+- 没整理...
+- 
+
+# 实践
+
+- VueStudyDemos <https://github.com/violetjack/VueStudyDemos>
 - 分享手淘过年项目中采用到的前端技术 <https://juejin.im/entry/5a9d07b76fb9a028cb2d2032>
 - 实现基本的登录退出功能 基础 <https://github.com/lzxb/vue2-demo>
 - 富文本编辑器Ueditor如何在Vue中使用？ <https://www.jianshu.com/p/8c43636c6c47>
@@ -11,17 +17,64 @@
   - <https://juejin.im/post/59e719746fb9a044fa18f2f2>
   - <https://github.com/leer0911/vue-FlowChart>
 
-# TODO | 入门
+# TODO | TODOLIST | 入门
 
-- VueStudyDemos <https://github.com/violetjack/VueStudyDemos>
 - todo-list <https://github.com/Konata9/EasyTodoList>
 
-# 后台管理系统
 
-- ->> 后台模板
+# Vue脚手架
+
+- vue-enterprise-boilerplate @nice https://github.com/chrisvfritz/vue-enterprise-boilerplate
+- vue-boilerplate-template @nice 
+  - https://github.com/nicejade/vue-boilerplate-template
+  - 示例 https://github.com/nicejade/awesome-vue-cli3-example
+  - 支持Pwa webpack4
+- vue-typescript-starter https://github.com/ws456999/vue-typescript-starter
+- vue-webpack-config https://github.com/zdliuccit/vue-webpack-config
+- egg-vue-webpack-boilerplate https://github.com/easy-team/egg-vue-webpack-boilerplate
+- vue-typescript-admin-template https://github.com/Armour/vue-typescript-admin-template
+
+
+# Vue模板
+
+> 几乎都是IE10+兼容性
+
+- vue-element-admin <https://github.com/PanJiaChen/vue-element-admin>
+  - 基于element UI写的后台解决方案
+  - 简化版本 vueAdmin-template https://github.com/PanJiaChen/vueAdmin-template
+- iview-admin https://github.com/iview/iview-admin  
+- D2Admin @NICE 
+    - 界面好看死了
+    - https://github.com/FairyEver
+    - https://github.com/d2-projects/d2-admin-start-kit
+    - https://github.com/d2-projects/d2-admin   
+- nx-admin 
+  - https://github.com/mgbq/nx-admin
+  - 老板让我十分钟上手nx-admin https://juejin.im/post/5b43226c51882519ad616c2a
+  
+- vue-admin 结合bulma https://github.com/vue-bulma/vue-admin
+- vue-material https://github.com/vuematerial/vue-material
+- vuestic-admin 但好丑啊 https://github.com/epicmaxco/vuestic-admin
+- vue-light-bootstrap-dashboard https://github.com/creativetimofficial/vue-light-bootstrap-dashboard
+- adminify 基于Vuetify material https://github.com/topfullstack/adminify
+- goldfish go语言有关的UI？ https://github.com/Caiyeon/goldfish
+- sls-admin-vue <https://github.com/sls-admin/sls-admin-vue> 
+- framework-admin 基于Vue.js的单页面管理系统前端 https://gitee.com/backflow/framework-admin
+- vue2-admin-lte https://github.com/devjin0617/vue2-admin-lte
+- vue-adminLte-vue-router @old adminlte 静态资源require https://github.com/liujians/vue-adminLte-vue-router
+- vms https://github.com/ericjjj/vms
+- https://github.com/zhaotoday/iview @deprecated
+  - 一直没试通代码, 希望能兼容IE9+   
+  - 基于 vue-cli + iView 的 Vue js 后台管理系统，简洁易扩展 
+  - https://github.com/zhaotoday/less.js 需要运行一下服务端koa环境
+- VueThink 后台是ThinkPHP5 @deprecated <https://github.com/honraytech/VueThink>
+- 毕设时抄的模板 @deprecated <https://github.com/taylorchen709/vue-admin>
+- vue-manage-system @deprecated https://github.com/lin-xin/vue-manage-system
 
 # 博客 | 社区
 
+- tamiat https://github.com/tamiat/tamiat
+- mmf-blog-vue2 https://github.com/lincenying/mmf-blog-vue2
 - 使用react、vue和koa开发的前后端分离的个人博客系统 <https://github.com/mvpzx/elapse> 
 - vue-cnode <https://github.com/xjh22222228/vue-cnode>
 
@@ -81,13 +134,28 @@
 
 # 阅读咨询
 
-- vue-hackernews-2.0 https://github.com/vuejs/vue-hackernews-2.0
+- vue-wordpress-pwa 
+    - PWA的实现 滚去学习 
+    - https://github.com/bstavroulakis/vue-wordpress-pwa
+- vue-hackernews-2.0 @NICE 
+    - https://github.com/vuejs/vue-hackernews-2.0
 - 追书神器 接口 
     - <https://github.com/xiadd/zhuishushenqi>
 - 仿知乎日报 @old <https://github.com/hilongjw/vue-zhihu-daily>
 - 今日头条 <https://github.com/cd-dongzi/vue-project>
 
+# 学习
+
+- web-learn https://github.com/freearhey/web-learn
+
+# 文件上传
+
+- mm 文件管理系统 https://github.com/iutbay/mm
 
 # 天气
 
 - Vue和Node.js实践 包含Vue写的天气APP @old <https://github.com/huang303513/NodejsVuePractice>
+
+# 游戏
+
+- javascript-guessing-game https://github.com/samiheikki/javascript-guessing-game

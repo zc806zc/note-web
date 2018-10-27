@@ -303,7 +303,7 @@ watch: {
 
 # PWA
 
-- vue-storefront https://github.com/DivanteLtd/vue-storefront
+- vue-storefront PWA https://github.com/DivanteLtd/vue-storefront
 - 栗子
   - https://github.com/nightzing/pwa-vue-template
   - 当vue遇到pwa--vue+pwa移动端适配解决方案模板案例 https://juejin.im/post/5af264296fb9a07aa54248f9

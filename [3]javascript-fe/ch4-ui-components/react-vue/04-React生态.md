@@ -6,9 +6,36 @@
 
 - 一个 react + redux 的完整项目 和 个人总结 NICE <https://github.com/bailicangdu/react-pxq>
 
-# React后台管理系统
+# React后台模板
 
---> 
+- Ant Design Pro https://github.com/ant-design/ant-design-pro
+- react-admin 
+  - material-ui
+  - https://github.com/marmelab/react-admin
+- react-admin <https://github.com/yezihaohao/react-admin>
+- antd-admin @NICE <https://github.com/zuiidea/antd-admin>
+- sb-admin-react <https://github.com/start-react/sb-admin-react>
+- 3YAdmin https://github.com/wjkang/3YAdmin
+- 其他
+  - admin-on-rest <https://github.com/marmelab/admin-on-rest>
+  - 原来废弃 <https://github.com/marmelab/ng-admin-react>
+  - SPA的后台管理框架demo <https://github.com/duxianwei520/react>
+  - 基于antd <https://github.com/jiangxy/react-antd-admin>
+  - <https://github.com/react-redux-antd-es6/react>
+
+# React脚手架
+
+- create-react-app
+- react-boilerplate https://github.com/react-boilerplate/react-boilerplate
+- react-boilerplate-pro https://github.com/AlanWei/react-boilerplate-pro
+- react-intl https://github.com/yahoo/react-intl
+- dva IE9+ <https://github.com/dvajs/dva>
+- react-latest-framework https://github.com/react-love/react-latest-framework
+- react-family <https://github.com/brickspert/react-family>
+- react-starter-kit 开发架子 <https://github.com/kriasoft/react-starter-kit>
+- react-redux-universal-hot-example https://github.com/erikras/react-redux-universal-hot-example
+- react-redux-starter-kit https://github.com/davezuko/react-redux-starter-kit
+
 
 # CMS
 
