@@ -1,7 +1,7 @@
 # README
 
 - 没整理...
-- 
+- open-source vue官方整理的开源项目 乱糟糟不想看 https://github.com/vuejs/awesome-vue#open-source
 
 # 实践
 

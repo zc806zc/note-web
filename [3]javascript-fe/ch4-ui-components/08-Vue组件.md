@@ -89,8 +89,7 @@ be the most lightweight
 - heyui https://github.com/heyui/heyui
 - aurora https://github.com/MeiliFE/aurora
 - VUI <https://github.com/Brickies/vui>
-
----
+- v-lulu 加油！ https://github.com/dzjwan521/v-lulu
 
 # 布局
 
@@ -127,6 +126,10 @@ be the most lightweight
 - vue2-hammer https://github.com/bsdfzzzy/vue2-hammer
 - vue-touch @deprecated:仅支持vue1 https://github.com/vuejs/vue-touch 
 
+# 拖拽
+
+- vue-js-grid 比较顺滑 https://github.com/euvl/vue-js-grid
+
 # 加载
 
 - vue-spinner https://github.com/greyby/vue-spinner
@@ -140,7 +143,7 @@ be the most lightweight
 - vue-core-image-upload 图片裁剪与上传 @NICE https://github.com/Vanthink-UED/vue-core-image-upload
 - vue-rate 评分 https://github.com/SinanMtl/vue-rate
 
-# 表单校验 
+# 表单校验
 
 - vee-validate https://github.com/baianat/vee-validate 
 - vuelidate https://github.com/monterail/vuelidate
@@ -176,6 +179,7 @@ be the most lightweight
 
 # 表格
 
+- vue-easytable @nice 支持单元格编辑 https://github.com/huangshuwei/vue-easytable
 - vue-bigdata-table https://github.com/lison16/vue-bigdata-table
 - vue-data-tables 基于element UI @NICE https://github.com/njleonzhang/vue-data-tables
 - vuetable-2 https://github.com/ratiw/vuetable-2
@@ -183,6 +187,7 @@ be the most lightweight
 - vue-table-component https://github.com/spatie/vue-table-component
 - vue2-datatable https://github.com/OneWayTech/vue2-datatable
 - vue-good-table https://github.com/xaksis/vue-good-table
+- vue-handsontable-official 强大 @$ https://github.com/handsontable/vue-handsontable-official
 
 # 分页
 
