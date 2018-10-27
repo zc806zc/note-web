@@ -74,13 +74,26 @@ pathname = pathDir ? pathname.replace(new RegExp('^' + pathDir), '') : pathname;
 
 # Vue多页面基础
 
-- vue-cli 提供了pages 
+```jsx
+// 目前做法与观点
+pages拿出src，放在最外面
+入口文件与视图文件放一起，别分目录折腾了
+
+vue -> san.js，这样可以兼容一波IE8+,
+但目前的考虑是仅提供若干个用户需要的页面
+不是整个系统，没事干嘛兼容
+
+生成文件路口的方法大都仅仅是目录文件遍历一下
+还没找到拆分若干路由视图到某几张页面的智能方法
+
+目前所谓的多页面是诡计，其实就是N个弱鸡单页面组合...
+但是共用部分的依赖可以优化
+```
+
+- vue-cli 3 提供了pages选项 
+
     - [vie-cli pages](https://cli.vuejs.org/zh/guide/html-and-static-assets.html#%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%A4%9A%E9%A1%B5%E5%BA%94%E7%94%A8)
-
-- Vue或React多页应用脚手架 
-
-  - <https://github.com/MeCKodo/vue-multipage>
-  - <https://www.imooc.com/article/12697>
+    - 但不是很好用的样子，估计还是要一番配置的
   
 - vue多页面开发和打包的正确姿势 
 
@@ -99,20 +112,6 @@ pathname = pathDir ? pathname.replace(new RegExp('^' + pathDir), '') : pathname;
 - vue单页面，多路由，前进刷新，后退不刷新 
     - https://segmentfault.com/a/1190000012083511
     - https://github.com/bingyang519/vueGoBack
-
-```jsx
-// 小结目前做法与观点
-// https://github.com/natural-fe/natural-cli
-pages拿出src，放在最外面
-
-vue -> san.js，这样可以兼容一波IE8+,
-但目前的考虑是仅提供若干个用户需要的页面
-不是整个系统，没事干嘛兼容
-
-所谓多页面是诡计，其实就是N个弱鸡单页面...
-
-期待vue-cli的pages
-```
 
 # Vue的多页面脚手架
 

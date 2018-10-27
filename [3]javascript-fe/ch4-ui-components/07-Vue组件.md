@@ -202,6 +202,7 @@ be the most lightweight
 - vue-area-linkage 基于 Element UI 的省市区街道联动选择组件 https://github.com/dwqs/vue-area-linkage
 
 - selectmenu https://github.com/terryz/v-selectmenu 
+- vue-multiselect https://github.com/shentao/vue-multiselect
 
 # 右键菜单
 
@@ -277,7 +278,6 @@ be the most lightweight
 # 分页
 
 - vue-paginate https://github.com/TahaSh/vue-paginate
-- vue-multiselect https://github.com/shentao/vue-multiselect
 
 # 本地存储
 
