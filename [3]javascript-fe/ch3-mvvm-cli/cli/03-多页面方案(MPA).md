@@ -115,20 +115,22 @@ vue -> san.js，这样可以兼容一波IE8+,
 
 # Vue的多页面脚手架
 
-- vue-multiplePages-useCdn @nice 
-    - https://github.com/Jerry12138/vue-multiplePages-useCdn 
-    - CDN注入配置 与 上传阿里云/七牛云的配置 
+
 - vue-element-ui-scaffold-webpack4 @nice 
     - https://github.com/hzsrc/vue-element-ui-scaffold-webpack4
     - libs丰富，参考
+    - 用js生成入口，html用模板 
     - router和入口单独放在文件夹下
-- vue-cli-multi-page @nice 
-    - <https://github.com/bluefox1688/vue-cli-multi-page>
-    - webpack3 
-    - vux的配置不错
 - vue-cli-multipage-bootstrap 
     - https://github.com/zhoou/vue-cli-multipage-bootstrap
     - 使用bootstrap
+- vue-cli-multi-page @nice 
+    - <https://github.com/bluefox1688/vue-cli-multi-page>
+    - webpack3 
+    - vux的配置不错    
+- vue-multiplePages-useCdn @nice 
+    - https://github.com/Jerry12138/vue-multiplePages-useCdn 
+    - CDN注入配置 与 上传阿里云/七牛云的配置 
 
 - 其他(供参考)
 
