@@ -54,13 +54,17 @@
   
 - vue-admin 结合bulma https://github.com/vue-bulma/vue-admin
 - vue-material https://github.com/vuematerial/vue-material
+- rest-admin 基于bootstrap4 https://github.com/wxs77577/rest-admin
 - vuestic-admin 但好丑啊 https://github.com/epicmaxco/vuestic-admin
 - vue-light-bootstrap-dashboard https://github.com/creativetimofficial/vue-light-bootstrap-dashboard
 - adminify 基于Vuetify material https://github.com/topfullstack/adminify
 - goldfish go语言有关的UI？ https://github.com/Caiyeon/goldfish
 - sls-admin-vue <https://github.com/sls-admin/sls-admin-vue> 
+- vue-material-admin https://github.com/tookit/vue-material-admin
+- element-vue-admin https://github.com/TonyLuo/element-vue-admin
 - framework-admin 基于Vue.js的单页面管理系统前端 https://gitee.com/backflow/framework-admin
 - vue2-admin-lte https://github.com/devjin0617/vue2-admin-lte
+- shards-dashboard-vue 多主题 https://github.com/DesignRevision/shards-dashboard-vue
 - vue-adminLte-vue-router @old adminlte 静态资源require https://github.com/liujians/vue-adminLte-vue-router
 - vms https://github.com/ericjjj/vms
 - https://github.com/zhaotoday/iview @deprecated

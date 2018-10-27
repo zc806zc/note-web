@@ -55,7 +55,7 @@
 - vue权限路由实现方式总结 https://juejin.im/post/5b5bfd5b6fb9a04fdd7d687a
 - vuejs2-authentication-tutorial https://auth0.com/blog/vuejs2-authentication-tutorial/
   - https://github.com/manojkumar3692/Vuejs-Authentication
-- Vue-Access-Control https://github.com/tower1229/Vue-Access-Control
+- Vue-Access-Control @nice https://github.com/tower1229/Vue-Access-Control
 - token存到cookie -> 用token拉取user_info与role -> 路由(router.addRoutes) -> vuex渲染侧边
 - 页面刷新， vuex的数据也会丢失，要重复上述操作
 - token有效期： session与后台刷新

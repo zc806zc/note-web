@@ -24,123 +24,176 @@ Yet it is one of the oldest and most complete frameworks here.
 be the most lightweight
 ```
 
-- 后台管理系统
+- PC后台
 
-  - element https://github.com/ElemeFE/element
-  - iview 提供了iview-cli桌面工具，可视化生成 https://github.com/iview/iview
-  - Vue版ant-design 
+  - element @nice 用户多所以坑多 https://github.com/ElemeFE/element
+  - iview @nice
+    - 提供了iview-cli桌面工具，可视化生成 
+    - https://github.com/iview/iview
+  - ant-design-vue
+    - Vue版ant-design 
     - @old https://github.com/vueComponent/ant-design
     - https://github.com/vueComponent/ant-design-vue
-  - vue-beauty 基于 ant design 的漂亮的 vue 组件库 https://www.awesomes.cn/repo/FE-Driver/vue-beauty
-  - antue
-  - bootstrap-vue https://github.com/bootstrap-vue/bootstrap-vue
-  - vue-blu UI Component Library Base on Vue.js(2.x) and Bulma https://github.com/chenz24/vue-blu
-  - buefy 
+  - vue-beauty 
+    - 基于 ant design 的漂亮的 vue 组件库 
+    - https://www.awesomes.cn/repo/FE-Driver/vue-beauty
+  - antue 
+  - bootstrap-vue @nice https://github.com/bootstrap-vue/bootstrap-vue
+  - vue-blu 
+    - UI Component Library Base on Vue.js(2.x) and Bulma 
+    - https://github.com/chenz24/vue-blu
+  - buefy @nice 
     - 基于bulma IE10+ 
     - https://github.com/buefy/buefy/
     - https://buefy.github.io/
-  - vue的官方UI 灯下黑 但其实也不好看😄 https://github.com/vuejs/ui/
-  - atui https://github.com/aliqin/atui
-    - 参考antd
-    - 兼容IE9+
-    - 这个名字好多人抢啊~~
-  - at-ui  https://github.com/AT-UI/at-ui
-    - 一款基于 Vue.js 2.0 的前端 UI 组件库，主要用于快速开发 PC 网站产品
+  - vueface 支持多主题 https://github.com/sudheerj/vueface  
+  - vue的官方UI 
+    - 灯下黑 但其实也不好看😄 
+    - https://github.com/vuejs/ui/
+  - atui 
+    - https://github.com/aliqin/atui
+    - 参考antd 兼容IE9+
+    - 这个名字好多人抢哦~~
+  - at-ui  
+    - https://github.com/AT-UI/at-ui
     - 好看 功能并不算全 没人关注
+  - balmjs  material风格 https://github.com/balmjs/ui-vue  
   
 - 移动端
 
-  - vux https://github.com/airyland/vux
+  - vux @nice
+    - https://github.com/airyland/vux
     - 按需加载 
     - 定位是微信的内嵌页面
-  - mintUI
+    - 作者态度感觉很消极
+  - mintUI @old
     - http://mint-ui.github.io/#!/en 
     - 按需加载 CSS3处理动效 
     - 但是组件偏少 可能要自己造轮子
-  - Framework7-Vue https://github.com/framework7io/Framework7-Vue 
+    - 学习参考结构组织
+  - Framework7-Vue 
+    - https://github.com/framework7io/Framework7-Vue 
     - 老牌UI
-    - 路由有坑 慎重！ 
-  - vant 
-    - 有赞商城 @NICE
+    - 路由有坑  
+  - vant @nice
+    - 有赞商城 
     - <https://github.com/youzan/vant>
-  - mand-mobile https://github.com/didi/mand-mobile  
+
+  - cube-ui @nice https://github.com/didi/cube-ui 
+  - mand-mobile 
+    - https://github.com/didi/mand-mobile  
   - OnsenUI 
     - https://github.com/OnsenUI/OnsenUI
-    - 支持三大框架  
-  - KeenUI 中国人看来是丑的 但很轻量 https://github.com/JosephusPaye/Keen-UI
+    - 有提供支持三大框架  
+  - KeenUI 
+    - 中国人看来是丑的 
+    - 很轻量 老牌UI 
+    - https://github.com/JosephusPaye/Keen-UI
   - vue-ydui https://github.com/ydcss/vue-ydui
-  - museUI https://github.com/museui/muse-ui
   - XCUI @deprecated fis3技术栈 百度外卖 https://github.com/wmfe/xcui 
   - vonic @old https://github.com/wangdahoo/vonic
   - vum @old https://github.com/vum-team/vum
   - vue-carbon @old https://github.com/myronliu347/vue-carbon
 
-- 跨三端
+- 强调跨端
 
-  - quasar <https://github.com/quasarframework/quasar>
-
-    - 利用 Vue，通过一套代码搞定响应式网站、PWA、hybrid 移动应用以及 Electron app
-
-  - Vuetify <https://github.com/vuetifyjs/vuetify>
-  - muse UI https://github.com/museui/muse-ui
+  - quasar @nice
+    - <https://github.com/quasarframework/quasar>
+    - 跨端
+    - 一套代码搞定响应式网站、PWA、hybrid 移动应用以及 Electron app
+  - Vuetify 
+    - <https://github.com/vuetifyjs/vuetify>
+  - muse UI 
+    - https://github.com/museui/muse-ui
 
 # Vue小型组件库
 
-- heyui https://github.com/heyui/heyui
+- heyui 一位小姐姐的UI? https://github.com/heyui/heyui
 - aurora https://github.com/MeiliFE/aurora
 - VUI <https://github.com/Brickies/vui>
-- v-lulu 加油！ https://github.com/dzjwan521/v-lulu
+- v-lulu 基于lulu-ui 支持IE9就好了 期待！ https://github.com/dzjwan521/v-lulu
 
-# 布局
+# 布局 | 网格栅格 | 抽屉 | 树布局 
 
 - vue-grid-layout https://github.com/jbaysolutions/vue-grid-layout
-- vue-drawer-layout 类Android侧滑菜单 <https://github.com/hjl19911127/vue-drawer-layout/>
+- vue-drawer-layout 类Android侧滑菜单 @nice <https://github.com/hjl19911127/vue-drawer-layout/>
+
+# 瀑布流
+
+# 导航 | accordion | 侧滑菜单
+
+- vue-burger-menu @nice 侧滑菜单 https://github.com/mbj36/vue-burger-menu
+- vue-accordion https://github.com/zeratulmdq/vue-accordion
 
 # 滚动条
 
+- el-scrollbar elementui不公开的组件
 - perfect-scrollbar https://github.com/utatti/perfect-scrollbar
 - gemini-scrollbar https://github.com/noeldelgado/gemini-scrollbar
 - better-scroll https://github.com/ustbhuangyi/better-scroll
 - vue-happy-scroll https://github.com/happy-js/vue-happy-scroll
 
-# 幻灯片 | 轮播
+# 幻灯片slider | slick | 轮播swiper | 走马灯carousel
 
 - eagle.js https://github.com/zulko/eagle.js
-- vue-awesome-swiper https://github.com/surmon-china/vue-awesome-swiper
+- vue-awesome-swiper @nice https://github.com/surmon-china/vue-awesome-swiper
+- vue-tiny-slider @nice 原生 IE8+ https://github.com/viktorlarsson/vue-tiny-slider
+- vue-easy-slider https://github.com/shhdgit/vue-easy-slider
+- vue-slick https://github.com/staskjs/vue-slick
+- vue-flux @nice 切换动画多 https://github.com/deulos/vue-flux
 
-# 弹框
+- vue-carousel-3d @nice 3D 支持触屏 https://github.com/wlada/vue-carousel-3d
+- vue-carousel 弹性适应 https://github.com/SSENSE/vue-carousel
+- vue-coverflow @nice 遮挡3D 拿来显示产品logo 带阴影 https://github.com/OrangeXC/vue-coverflow
+- vue-flickity 走马灯 https://github.com/drewjbartlett/vue-flickity
+- vue-agile https://github.com/lukaszflorczak/vue-agile
+
+- vue-swimlane 垂直字幕滚动 https://github.com/mubaidr/vue-swimlane
+
+# 弹框dialog | layer | modal | panel| messagebox | 通知badge | tooltip | 图片预览gallery
 
 - vue-js-modal https://github.com/euvl/vue-js-modal
+- sweet-modal-vue 最甜弹框? https://github.com/adeptoas/sweet-modal-vue
+- v-dialogs https://github.com/TerryZ/v-dialogs
+- vodal 带动画显示弹框 https://github.com/chenjiahan/vodal
+- vue2-simplert sweetalert既视感 https://github.com/mazipan/vue2-simplert
+- vue-dialog-drag 可拖拽弹框 https://github.com/emiliorizzo/vue-dialog-drag
+- vuejs-dialog 轻量 https://github.com/Godofbrowser/vuejs-dialog
+- vue-window windows风格弹框 https://github.com/michitaro/vue-window
 
-# 装饰 | 动画
+- v-tooltip https://github.com/Akryum/v-tooltip
 
-- 视频背景 https://github.com/pespantelis/vue-videobg
-- vue-lottie 基于 Bodymovin 的 Vue 动画效果库 https://github.com/chenqingspring/vue-lottie
-- vue-touch-ripple 点击元素泛起的涟漪效果 https://github.com/surmon-china/vue-touch-ripple
-- 数字滚动 vue-countTo https://github.com/PanJiaChen/vue-countTo
+- vue-notifications https://github.com/se-panfilov/vue-notifications
+- vue-directive-tooltip 指令实现 https://github.com/hekigan/vue-directive-tooltip
 
-# 手势 
+```jsx
+<span v-tooltip="'my text'">some text</span>
+```
 
-- AlloyFinger @nice
-  - vue指令栗子 https://github.com/AlloyTeam/AlloyFinger/blob/master/vue/alloy_finger.vue.js
-- vue2-hammer https://github.com/bsdfzzzy/vue2-hammer
-- vue-touch @deprecated:仅支持vue1 https://github.com/vuejs/vue-touch 
+- v-viewer 图片预览 https://github.com/mirari/v-viewer
+- v-img 图片预览 https://github.com/crowdbotics/v-img
 
-# 拖拽
 
-- vue-js-grid 比较顺滑 https://github.com/euvl/vue-js-grid
 
-# 加载
-
-- vue-spinner https://github.com/greyby/vue-spinner
-- vue-loading-spinner @NICE：栗子较多 https://github.com/nguyenvanduocit/vue-loading-spinner
-
-# 表单
+# 按钮 | 表单 | 单选多选 | 下拉 | 选择器 | 时间日期 
 
 - 行政规划数据 <https://github.com/modood/Administrative-divisions-of-China>
 - v-distpicker 一个灵活的，高可用的 vue 省市区选择插件(中国) https://github.com/jcc/v-distpicker
 - vue-area-linkage 基于 Element UI 的省市区街道联动选择组件 https://github.com/dwqs/vue-area-linkage
+
+- selectmenu https://github.com/terryz/v-selectmenu 
+
+# 计数器
+
+- vue-numeric-input https://github.com/JayeshLab/vue-numeric-input
+- v-minusplusinput https://github.com/manjufy/v-minusplusinput
+
+# 上传
+
 - vue-core-image-upload 图片裁剪与上传 @NICE https://github.com/Vanthink-UED/vue-core-image-upload
+
+# 评分 | 关注 | 爱心
+
 - vue-rate 评分 https://github.com/SinanMtl/vue-rate
 
 # 表单校验
@@ -157,7 +210,10 @@ be the most lightweight
 - smeditor 基于 Vue.js 2.0+ 石墨文档样式的富文本编辑器 https://github.com/GeekPark/smeditor
 - marked https://github.com/markedjs/marked
 
-# 时间日历
+# 树状图
+
+
+# 时间日历 | 选择器
 
 - vue-datepicker @NICE https://github.com/hilongjw/vue-datepicker
 - vue-timeago https://github.com/egoist/vue-timeago
@@ -200,13 +256,12 @@ be the most lightweight
 
 # 图表
 
-- Vue.js wrapper for Chart.js https://github.com/apertureless/vue-chartjs
+- vue-chartjs https://github.com/apertureless/vue-chartjs
 - v-charts https://github.com/elemefe/v-charts
 - vue-echarts @deprecated ECharts component for Vue.js. https://github.com/ecomfe/vue-echarts
 - d3vue https://github.com/ignoreintuition/d3vue
 - g2-vue https://github.com/fireyy/g2-vue
-- 无依赖
-  - 简单柱状图 https://github.com/DeviaVir/vue-bar
+- vue-bar 简单柱状图示例 无依赖 https://github.com/DeviaVir/vue-bar
 
 # 地图
 
@@ -215,7 +270,10 @@ be the most lightweight
 
 # 字体图标
 
-- vue-awesome https://github.com/Justineo/vue-awesome 
+- vue-awesome @nice https://github.com/Justineo/vue-awesome 
+- vue-fontawesome https://github.com/FortAwesome/vue-fontawesome
+- vue-material-design-icons https://gitlab.com/robcresswell/vue-material-design-icons
+- vue-ionicons https://github.com/mazipan/vue-ionicons
 
 # 多媒体
 
@@ -229,10 +287,6 @@ be the most lightweight
 
 - vue-pdf https://github.com/FranckFreiburger/vue-pdf
 
-# 动画特效
-
-- vue2-animate https://github.com/asika32764/vue2-animate
-
 # 截图
 
 - vue-cropper https://github.com/xyxiao001/vue-cropper
@@ -244,3 +298,49 @@ be the most lightweight
 - vue-gl https://github.com/vue-gl/vue-gl
 - https://github.com/fritx/vue-threejs
 - https://github.com/imudin/vue-vr
+
+# 进度条 | 加载 | spinner
+
+- vue-progressbar 顶部进度条 https://github.com/hilongjw/vue-progressbar
+- vue-radial-progress @nice 
+  - 拿来当圆形的倒计时
+  - https://github.com/wyzant-dev/vue-radial-progress 
+  - https://wyzant-dev.github.io/vue-radial-progress/
+- svg-progress-bar
+  -  https://github.com/chenxuan0000/svg-progress-bar  
+  -  svg实现 圆形倒计时
+- vue-wait @nice https://github.com/f/vue-wait  
+- epic-spinners @ncie 花式转圈圈 https://github.com/epicmaxco/epic-spinners
+- vue-promise-btn 按钮带进度条 https://github.com/STUkh/vue-promise-btn
+- vue-progress-path @design logo显示作进度条 https://github.com/Akryum/vue-progress-path
+- vue-simple-spinner 转圈圈 https://github.com/dzwillia/vue-simple-spinner
+- vue-spinner https://github.com/greyby/vue-spinner
+- vue-loading-spinner @NICE：栗子较多 https://github.com/nguyenvanduocit/vue-loading-spinner
+
+# 手势 | 点击 | 移动端
+
+- AlloyFinger @nice
+  - vue指令栗子 https://github.com/AlloyTeam/AlloyFinger/blob/master/vue/alloy_finger.vue.js
+- vue2-hammer https://github.com/bsdfzzzy/vue2-hammer
+- vue-touch @deprecated:仅支持vue1 https://github.com/vuejs/vue-touch 
+
+# 拖拽
+
+- vue-js-grid 比较顺滑 https://github.com/euvl/vue-js-grid
+
+
+# 装饰 | 动画 | 视差
+
+- 视频背景 https://github.com/pespantelis/vue-videobg
+
+- vue-lottie 基于 Bodymovin 的 Vue 动画效果库 https://github.com/chenqingspring/vue-lottie
+
+- vue-touch-ripple 点击元素泛起的涟漪效果 https://github.com/surmon-china/vue-touch-ripple
+- vue-countTo 数字滚动  https://github.com/PanJiaChen/vue-countTo
+
+- vue-parallax https://github.com/apertureless/vue-parallax
+- vue-mouse-parallax https://github.com/Aminerman/vue-mouse-parallax
+
+# 动画特效
+
+- vue2-animate https://github.com/asika32764/vue2-animate
