@@ -33,6 +33,9 @@
 
 # 聊天 | Chat | socket | Blog 
 
+- vueSocketChatroom 
+    - https://github.com/Chanran/vueSocketChatroom
+    - 内容相对完整
 - 仿TIM 
   - <https://github.com/beautifulBoys/vue-socket.io>
   - node：8.0 + express: 4.1 + mongoose: 4.1 + nodemon: 1.1 + socket.io: 2.0
@@ -59,9 +62,10 @@
 
 # 音乐播放器
 
-- Vue全家桶打造自适应 web 音乐播放器 
+- Vue全家桶打造自适应 web 音乐播放器 @nice
   - https://juejin.im/post/5afcdc73518825428630b216
   - Vue-mmPlayer https://github.com/maomao1996/Vue-mmPlayer
+  - 作者很淘气...
 
 - 网易云音乐API 
     - <https://api.imjad.cn/cloudmusic.md>
