@@ -40,6 +40,7 @@ be the most lightweight
     - https://www.awesomes.cn/repo/FE-Driver/vue-beauty
   - antue 
   - bootstrap-vue @nice https://github.com/bootstrap-vue/bootstrap-vue
+  - uiv 基于bootstrap3 IE9+ https://github.com/wxsms/uiv
   - vue-blu 
     - UI Component Library Base on Vue.js(2.x) and Bulma 
     - https://github.com/chenz24/vue-blu
@@ -194,7 +195,7 @@ be the most lightweight
 
 
 
-# 按钮 | 表单 | 单选多选 | 下拉 | 选择器 | 时间日期 
+# 按钮 | 表单 | 单选多选 | 下拉 
 
 - 表单组件 https://github.com/vuejs/awesome-vue#form
 - 行政规划数据 <https://github.com/modood/Administrative-divisions-of-China>
