@@ -6,8 +6,8 @@
   - 组件 https://github.com/vuejs/awesome-vue#components--libraries
 - awesome.cn VUE组件 https://www.awesomes.cn/subject/vue 
 - Vue组件 国外 https://vuejsexamples.com/
+- Vue组件方案 @deprecated <https://github.com/opendigg/awesome-github-vue>
 - vue-ui 组件库资源 https://www.yuque.com/collection/collection/vue-ui
-- 组件方案 中文 @deprecated <https://github.com/opendigg/awesome-github-vue>
 - Vue优选 https://curated.vuejs.org/
 
 ---
