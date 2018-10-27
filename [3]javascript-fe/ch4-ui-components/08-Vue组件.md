@@ -1,6 +1,7 @@
 # Vue组件推荐
 
 - awesome-vue 
+  - 没整理，不论良莠，跟垃圾堆里捡漏一样，虚假繁荣...
   - <https://github.com/vuejs/awesome-vue>
   - 组件 https://github.com/vuejs/awesome-vue#components--libraries
 - awesome.cn VUE组件 https://www.awesomes.cn/subject/vue 
@@ -115,17 +116,35 @@ be the most lightweight
 
 # 布局 | 网格栅格 | 抽屉 | 树布局 
 
+- 官方布局 https://github.com/vuejs/awesome-vue#ui-layout
 - vue-grid-layout https://github.com/jbaysolutions/vue-grid-layout
 - vue-drawer-layout 类Android侧滑菜单 @nice <https://github.com/hjl19911127/vue-drawer-layout/>
 
+# 全屏
+
+- vue-fullscreen 将任意元素进行全屏切换 https://github.com/mirari/vue-fullscreen
+- vue-fullpage.js https://github.com/alvarotrigo/vue-fullpage.js
+
 # 瀑布流
+
+- vue-waterfall https://github.com/MopTym/vue-waterfall
+- Vue.Isotope https://github.com/David-Desmaisons/Vue.Isotope
+- vue-masonry https://github.com/shershen08/vue-masonry
 
 # 导航 | accordion | 侧滑菜单
 
 - vue-burger-menu @nice 侧滑菜单 https://github.com/mbj36/vue-burger-menu
 - vue-accordion https://github.com/zeratulmdq/vue-accordion
 
-# 滚动条
+# 页面导航
+
+- vue-tour https://github.com/pulsardev/vue-tour
+
+# 滚动条 | 滚动 
+
+- 官方滚动 https://github.com/vuejs/awesome-vue#scroll
+- 无限滚动 https://github.com/vuejs/awesome-vue#infinite-scroll
+- vue-virtual-scroller https://github.com/Akryum/vue-virtual-scroller
 
 - el-scrollbar elementui不公开的组件
 - perfect-scrollbar https://github.com/utatti/perfect-scrollbar
@@ -177,11 +196,17 @@ be the most lightweight
 
 # 按钮 | 表单 | 单选多选 | 下拉 | 选择器 | 时间日期 
 
+- 表单组件 https://github.com/vuejs/awesome-vue#form
 - 行政规划数据 <https://github.com/modood/Administrative-divisions-of-China>
 - v-distpicker 一个灵活的，高可用的 vue 省市区选择插件(中国) https://github.com/jcc/v-distpicker
 - vue-area-linkage 基于 Element UI 的省市区街道联动选择组件 https://github.com/dwqs/vue-area-linkage
 
 - selectmenu https://github.com/terryz/v-selectmenu 
+
+# 右键菜单
+
+- vue-context-menu https://github.com/vmaimone/vue-context-menu
+- vue-menu https://github.com/michitaro/vue-menu
 
 # 计数器
 
@@ -190,6 +215,7 @@ be the most lightweight
 
 # 上传
 
+- 上传组件 https://github.com/vuejs/awesome-vue#file-upload
 - vue-core-image-upload 图片裁剪与上传 @NICE https://github.com/Vanthink-UED/vue-core-image-upload
 
 # 评分 | 关注 | 爱心
@@ -203,6 +229,8 @@ be the most lightweight
 
 # 富文本 | Markdown编辑器
 
+- 富文本组件 https://github.com/vuejs/awesome-vue#rich-text-editing
+- markdown组件 https://github.com/vuejs/awesome-vue#markdown
 - tinymce @NICE https://github.com/tinymce/tinymce
 - ckeditor https://github.com/galetahub/ckeditor
 - vue-quill-editor https://github.com/surmon-china/vue-quill-editor
@@ -210,11 +238,10 @@ be the most lightweight
 - smeditor 基于 Vue.js 2.0+ 石墨文档样式的富文本编辑器 https://github.com/GeekPark/smeditor
 - marked https://github.com/markedjs/marked
 
-# 树状图
-
-
 # 时间日历 | 选择器
 
+- 日历组件 https://github.com/vuejs/awesome-vue#calendar
+- 时间工具库 https://github.com/vuejs/awesome-vue#time
 - vue-datepicker @NICE https://github.com/hilongjw/vue-datepicker
 - vue-timeago https://github.com/egoist/vue-timeago
 - vuejs-countdown 日时分秒-倒计时 https://github.com/getanwar/vuejs-countdown
@@ -227,11 +254,13 @@ be the most lightweight
 - vue-lunar-calendar 农历 https://github.com/KimWooHyun/vue-lunar-calendar
 - vue-simple-calendar https://github.com/richardtallent/vue-simple-calendar
 
-# 树与树状图
+# 树 | 树状图
 
+- https://github.com/vuejs/awesome-vue#tree
 - vue-draggable-tree 可拖拽树 <https://github.com/ltaoo/vue-draggable-tree>
 - bosket 针对多个前端框架的树形列表组件 https://github.com/elbywan/bosket
 - 基于vue.js实现树形表格的封装 https://juejin.im/post/5b568730f265da0fa1222a4c
+- https://github.com/David-Desmaisons/Vue.D3.tree
 
 # 表格
 
@@ -252,10 +281,37 @@ be the most lightweight
 
 # 本地存储
 
-- Dexie.js  Indexdb https://github.com/dfahlander/Dexie.js
+- Dexie.js  @nice 基于Indexdb https://github.com/dfahlander/Dexie.js
+- vue-local-storage https://github.com/pinguinjkeke/vue-local-storage
+- vue-pouch https://github.com/djshitcoin/vue-pouch
+- vue-warehouse 基于store.js https://github.com/bazzite/vue-warehouse
+- vuejs-storage 
+  - https://github.com/maple3142/vuejs-storage
+  - localStorage/sessionStorage
+- vue-universal-cookies https://github.com/S64/vue-universal-cookies
+
+# Socket.io | Web Socket 
+
+- Vue-Socket.io @nice https://github.com/MetinSeylan/Vue-Socket.io
+- vue-websocket https://github.com/icebob/vue-websocket
+- vue-native-websocket 
+  - https://github.com/nathantsoi/vue-native-websocket
+  - native websocket with vuex integration
+- vue-socket.io-extended 
+  - https://github.com/probil/vue-socket.io-extended
+  - Socket.io bindings for Vue.js and Vuex
+
+# Web Worker
+
+- vue-worker https://github.com/israelss/vue-worker
+
+# 错误日志 | 埋点
+
+- vue-log-worker https://gitlab.com/schoolmouv-open-source/vue-log-worker
 
 # 图表
 
+- 图表组件 https://github.com/vuejs/awesome-vue#charts
 - vue-chartjs https://github.com/apertureless/vue-chartjs
 - v-charts https://github.com/elemefe/v-charts
 - vue-echarts @deprecated ECharts component for Vue.js. https://github.com/ecomfe/vue-echarts
@@ -265,6 +321,7 @@ be the most lightweight
 
 # 地图
 
+- 地图组件 https://github.com/vuejs/awesome-vue#map
 - vue-amap 高德地图 https://github.com/ElemeFE/vue-amap
 - vue-baidu-map 百度地图 https://github.com/Dafrok/vue-baidu-map 
 
@@ -277,6 +334,7 @@ be the most lightweight
 
 # 多媒体
 
+- 音频视频 https://github.com/vuejs/awesome-vue#audio--video
 - vue-aplayer 配置简便的 Vue 2.x 音乐播放器组件 https://github.com/SevenOutman/vue-aplayer
 
 # 二维码
@@ -291,13 +349,31 @@ be the most lightweight
 
 - vue-cropper https://github.com/xyxiao001/vue-cropper
 
+# 打印
+
+- vue-html-to-paper https://github.com/mycure-inc/vue-html-to-paper
+
+# canvas
+
+- vue-canvas-effect Canvas动效库 IE9+ https://github.com/chenxuan0000/vue-canvas-effect
+- vue-konva https://github.com/konvajs/vue-konva
+- vue-html2canvas https://github.com/mycure-inc/vue-html2canvas
+
+# 分享 | 评论 
+
+- vue-comment-grid https://github.com/TugayYaldiz/vue-comment-grid
+
+# 国际化
+
+- vue-i18n https://github.com/kazupon/vue-i18n
+
 # 3d模型 | webGL
 
 - vue-3d-model <https://github.com/hujiulong/vue-3d-model>
 - vue-pano https://github.com/ChiChou/vue-pano
 - vue-gl https://github.com/vue-gl/vue-gl
-- https://github.com/fritx/vue-threejs
-- https://github.com/imudin/vue-vr
+- vue-threejs https://github.com/fritx/vue-threejs
+- vue-vr https://github.com/imudin/vue-vr
 
 # 进度条 | 加载 | spinner
 
@@ -324,10 +400,14 @@ be the most lightweight
 - vue2-hammer https://github.com/bsdfzzzy/vue2-hammer
 - vue-touch @deprecated:仅支持vue1 https://github.com/vuejs/vue-touch 
 
+# 事件
+
+- 自定义事件 https://github.com/vuejs/awesome-vue#custom-events
+- https://github.com/vuejs/awesome-vue#event-handling
+
 # 拖拽
 
 - vue-js-grid 比较顺滑 https://github.com/euvl/vue-js-grid
-
 
 # 装饰 | 动画 | 视差
 
@@ -344,3 +424,69 @@ be the most lightweight
 # 动画特效
 
 - vue2-animate https://github.com/asika32764/vue2-animate
+
+# 懒加载
+
+- vue-lazyload @nice https://github.com/hilongjw/vue-lazyload
+
+# HTTP请求
+
+- 官方http-requests https://github.com/vuejs/awesome-vue#http-requests
+- vue-resource https://github.com/pagekit/vue-resource
+- vue-api-query @nice
+  - Elegant and simple way to build requests for REST API
+  - https://github.com/robsontenorio/vue-api-query
+
+```js
+let posts = await Post
+  .where('status', 'ACTIVE')
+  .include('user', 'category')
+  .append('likes')
+  .orderBy('-created_at', 'category_id')  
+  .get()
+```
+
+- vue-async-computed https://github.com/foxbenjaminfox/vue-async-computed
+- vue-jsonp https://github.com/LancerComet/vue-jsonp
+
+# 链接预览
+
+- link-prevue https://github.com/nivaldomartinez/link-prevue
+
+# GraphQL
+
+- vue-apollo @nice https://github.com/Akryum/vue-apollo
+- vue-relay https://github.com/ntkme/vue-relay
+- plugin-graphql https://github.com/vuex-orm/plugin-graphql
+
+# CSS命名
+
+- vue-bem-cn https://github.com/c01nd01r/vue-bem-cn
+
+```html
+<script>
+  export default {
+    name: 'ui-button', // set block name
+    props: ['size', 'look', 'type', 'icon'],
+  }
+</script>
+
+<template>
+  <button :class="b({ size, look })" :type="type">
+    <span :class="b('text', { look })">
+      <i v-if="icon" :class="b('icon', { icon })"> 👍 </i>
+      <slot></slot>
+    </span>
+  </button>
+</template>
+```
+
+- pieces https://github.com/NxtChg/pieces
+
+# 过滤器
+
+- https://github.com/vuejs/awesome-vue#filters
+
+# 工具类
+
+- https://github.com/vuejs/awesome-vue#vuex-utilities

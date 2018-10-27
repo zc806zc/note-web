@@ -22,18 +22,30 @@
 - todo-list <https://github.com/Konata9/EasyTodoList>
 
 
-# Vue脚手架
+# Vue脚手架 | Scaffold | boilerplate | seed | template
 
+- 官方提供的脚手架 https://github.com/vuejs/awesome-vue#scaffold
+- vue-2-boilerplate 中大型SPA https://github.com/petervmeijgaard/vue-2-boilerplate
 - vue-enterprise-boilerplate @nice https://github.com/chrisvfritz/vue-enterprise-boilerplate
+- vue-starter https://github.com/devCrossNet/vue-starter
 - vue-boilerplate-template @nice 
   - https://github.com/nicejade/vue-boilerplate-template
   - 示例 https://github.com/nicejade/awesome-vue-cli3-example
   - 支持Pwa webpack4
-- vue-typescript-starter https://github.com/ws456999/vue-typescript-starter
 - vue-webpack-config https://github.com/zdliuccit/vue-webpack-config
 - egg-vue-webpack-boilerplate https://github.com/easy-team/egg-vue-webpack-boilerplate
-- vue-typescript-admin-template https://github.com/Armour/vue-typescript-admin-template
+- vuejs-wordpress-theme-starter https://github.com/EvanAgee/vuejs-wordpress-theme-starter 
+- vuecharged-template https://github.com/mrboomer/vuecharged-template
+- wemake-vue-template https://github.com/wemake-services/wemake-vue-template
 
+# 后台
+
+- huncwot https://github.com/zaiste/huncwot
+- vue-django https://github.com/NdagiStanley/vue-django
+
+# 使用Typescript
+
+->>
 
 # Vue模板
 
@@ -74,6 +86,10 @@
 - VueThink 后台是ThinkPHP5 @deprecated <https://github.com/honraytech/VueThink>
 - 毕设时抄的模板 @deprecated <https://github.com/taylorchen709/vue-admin>
 - vue-manage-system @deprecated https://github.com/lin-xin/vue-manage-system
+
+# Chrome插件
+
+- vue-webpack-chrome-extension-template https://github.com/ALiangLiang/vue-webpack-chrome-extension-template
 
 # 博客 | 社区
 

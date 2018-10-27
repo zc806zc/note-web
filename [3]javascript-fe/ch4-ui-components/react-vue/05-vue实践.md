@@ -216,6 +216,11 @@ watch: {
 - Vue-TS-Boilerplate https://github.com/thundernet8/Vue-TS-Boilerplate
 - https://alexjoverm.github.io/2017/06/28/Integrate-TypeScript-in-your-Vue-project/
   - allowSyntheticDefaultImports 
+- vue-typescript https://github.com/MMF-FE/vue-typescript
+- vue-typescript-starter https://github.com/ws456999/vue-typescript-starter
+- vue-webpack-typescript https://github.com/ducksoupdev/vue-webpack-typescript
+- vue-typescript-admin-template https://github.com/Armour/vue-typescript-admin-template
+- vue-ts-amd https://github.com/Micene09/vue-ts-amd
 
 # 原理解析
 
