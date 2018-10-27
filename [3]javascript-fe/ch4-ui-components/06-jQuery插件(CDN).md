@@ -8,12 +8,12 @@
 
 # 常用CDN
 
+- staticfile @nice https://www.staticfile.org/
 - http://cdn.code.baidu.com/
 - http://www.bootcdn.cn/
-- https://www.staticfile.org/
 - ...
 
-# 万金油方案
+# 万金油方案 | IE兼容
 
 - jquery1.x -> 最终版本1.12.4 
 - bootstrap
@@ -34,16 +34,12 @@
 - 手机端框架：Jingle
 - 动态页签：Jerichotab
 
-# jqueryWidgets($)
- 
+# jqueryWidgets
+
+- @$ 
 - https://www.jqwidgets.com/jquery-widgets-documentation/
 - 参考思路与结构，这是一个功能完整的前端UI框架
-- 也提供了Angular React版本
-
-# jeesite
-
-- 技术栈参考
-- jeesite  <https://gitee.com/thinkgem/jeesite>
+- 提供了Angular React版本
 
 # jQuery相关
 
@@ -85,7 +81,6 @@
 <script src="https://cdn.bootcss.com/jquery.tipsy/1.0.3/jquery.tipsy.min.js"></script>
 ```
 
----
 
 
 # 常用样式
