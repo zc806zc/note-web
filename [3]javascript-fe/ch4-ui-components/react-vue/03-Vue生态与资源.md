@@ -30,21 +30,28 @@
 # Vue脚手架 | Scaffold | boilerplate | seed | template
 
 - 官方提供的脚手架 https://github.com/vuejs/awesome-vue#scaffold
-- vue-2-boilerplate 中大型SPA https://github.com/petervmeijgaard/vue-2-boilerplate
 - vue-enterprise-boilerplate @nice https://github.com/chrisvfritz/vue-enterprise-boilerplate
-- vue-starter https://github.com/devCrossNet/vue-starter
+- vue-starter @nice https://github.com/devCrossNet/vue-starter
 - vue-boilerplate-template @nice 
   - https://github.com/nicejade/vue-boilerplate-template
   - 示例 https://github.com/nicejade/awesome-vue-cli3-example
   - 支持Pwa webpack4
-- vue-webpack-config https://github.com/zdliuccit/vue-webpack-config
-- egg-vue-webpack-boilerplate https://github.com/easy-team/egg-vue-webpack-boilerplate
-- vuejs-wordpress-theme-starter https://github.com/EvanAgee/vuejs-wordpress-theme-starter 
-- vuecharged-template https://github.com/mrboomer/vuecharged-template
-- wemake-vue-template https://github.com/wemake-services/wemake-vue-template
-- spa-starter-kit @old https://github.com/codecasts/spa-starter-kit
+- vue-2-boilerplate 中大型SPA https://github.com/petervmeijgaard/vue-2-boilerplate
+- egg-vue-webpack-boilerplate 
+    - 基于Egg  多页面和单页面 服务端渲染同构 
+    - https://github.com/easy-team/egg-vue-webpack-boilerplate
+- vuejs-wordpress-theme-starter 
+    - wordpress主题
+    - https://github.com/EvanAgee/vuejs-wordpress-theme-starter 
+- wemake-vue-template 
+    - nuxt渲染 + 测试流程
+    - https://github.com/wemake-services/wemake-vue-template
+- 其他
+    - vuecharged-template https://github.com/mrboomer/vuecharged-template
+    - vue-webpack-config koa2+服务端渲染 https://github.com/zdliuccit/vue-webpack-config
+    - spa-starter-kit @old https://github.com/codecasts/spa-starter-kit
 
-# 后台
+# 结合后台 | Node.js | python
 
 - huncwot https://github.com/zaiste/huncwot
 - vue-django https://github.com/NdagiStanley/vue-django
@@ -58,15 +65,18 @@
 
 > 几乎都是IE10+兼容性
 
-- vue-element-admin <https://github.com/PanJiaChen/vue-element-admin>
+- vue-element-admin @nice 
+  - <https://github.com/PanJiaChen/vue-element-admin>
   - 基于element UI写的后台解决方案
   - 简化版本 vueAdmin-template https://github.com/PanJiaChen/vueAdmin-template
 - iview-admin https://github.com/iview/iview-admin  
 - D2Admin @NICE 
-    - 界面好看死了
-    - https://github.com/FairyEver
+    - 基于element 目前看到最好看的
+    - 但是对于导航有点击/悬浮犹豫症，不喜欢
+    - @FairyEver https://github.com/FairyEver
+    - https://github.com/d2-projects/d2-admin
     - https://github.com/d2-projects/d2-admin-start-kit
-    - https://github.com/d2-projects/d2-admin   
+
 - nx-admin 
   - https://github.com/mgbq/nx-admin
   - 老板让我十分钟上手nx-admin https://juejin.im/post/5b43226c51882519ad616c2a
@@ -87,15 +97,19 @@
 - framework-admin 基于Vue.js的单页面管理系统前端 https://gitee.com/backflow/framework-admin
 - vue2-admin-lte https://github.com/devjin0617/vue2-admin-lte
 - shards-dashboard-vue 多主题 https://github.com/DesignRevision/shards-dashboard-vue
-- vue-adminLte-vue-router @old adminlte 静态资源require https://github.com/liujians/vue-adminLte-vue-router
-- vms https://github.com/ericjjj/vms
-- https://github.com/zhaotoday/iview @deprecated
-  - 一直没试通代码, 希望能兼容IE9+   
-  - 基于 vue-cli + iView 的 Vue js 后台管理系统，简洁易扩展 
-  - https://github.com/zhaotoday/less.js 需要运行一下服务端koa环境
-- VueThink 后台是ThinkPHP5 @deprecated <https://github.com/honraytech/VueThink>
-- 毕设时抄的模板 @deprecated <https://github.com/taylorchen709/vue-admin>
-- vue-manage-system  https://github.com/lin-xin/vue-manage-system
+
+- 其他
+
+    - vue-adminLte-vue-router @old adminlte 静态资源require引用 https://github.com/liujians/vue-adminLte-vue-router
+    - zhaotoday/iview @deprecated
+        - https://github.com/zhaotoday/iview
+        - 一直没试通代码, 希望能兼容IE9+   
+        - 基于 vue-cli + iView 的 Vue js 后台管理系统，简洁易扩展 
+        - https://github.com/zhaotoday/less.js 需要运行一下服务端koa环境
+    - vms @old https://github.com/ericjjj/vms
+    - VueThink 后台是ThinkPHP5 @deprecated <https://github.com/honraytech/VueThink>
+    - 毕设时抄的模板 @deprecated <https://github.com/taylorchen709/vue-admin>
+    - vue-manage-system  https://github.com/lin-xin/vue-manage-system
 
 # Chrome插件
 
