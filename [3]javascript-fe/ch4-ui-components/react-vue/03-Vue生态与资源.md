@@ -136,6 +136,9 @@
   - 手机仿饿了么 
   - https://github.com/bailicangdu/vue2-elm
 - VueDemo_Sell_Eleme https://github.com/SimonZhangITer/VueDemo_Sell_Eleme
+- vue-mall https://github.com/yucccc/vue-mall
+- Mall-Vue https://github.com/PowerDos/Mall-Vue
+- vue-shopping-mall https://github.com/hj624608494/vue-shopping-mall
 
 # 有趣
 

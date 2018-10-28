@@ -293,6 +293,13 @@ watch: {
 
 - Vue 服务端渲染 https://juejin.im/post/5a9ca40b6fb9a028b77a4aac
 
+# 服务端渲染脚手架
+
+- vue-clicli 
+  - https://github.com/acgzone/vue-clicli 
+  - 用户登陆状态下，纯 spa，未登录状态下，首屏 ssr
+  - 配合 cdn
+  
 # 骨架屏注入
 
 - vue-content-placeholders https://github.com/michalsnik/vue-content-placeholders
