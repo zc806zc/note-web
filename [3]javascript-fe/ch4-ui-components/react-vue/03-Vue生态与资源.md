@@ -56,12 +56,13 @@
 - huncwot https://github.com/zaiste/huncwot
 - vue-django https://github.com/NdagiStanley/vue-django
 - vuedo laravel写的博客 https://github.com/Vuedo/vuedo
+- goldfish go语言有关的UI？ https://github.com/Caiyeon/goldfish
 
 # 使用Typescript
 
 ->>
 
-# Vue模板
+# 后台管理系统模板 | Admin | Dashboard
 
 > 几乎都是IE10+兼容性
 
@@ -69,47 +70,59 @@
   - <https://github.com/PanJiaChen/vue-element-admin>
   - 基于element UI写的后台解决方案
   - 简化版本 vueAdmin-template https://github.com/PanJiaChen/vueAdmin-template
-- iview-admin https://github.com/iview/iview-admin  
+- iview-admin @nice 
+    - https://github.com/iview/iview-admin  
 - D2Admin @NICE 
     - 基于element 目前看到最好看的
     - 但是对于导航有点击/悬浮犹豫症，不喜欢
     - @FairyEver https://github.com/FairyEver
     - https://github.com/d2-projects/d2-admin
     - https://github.com/d2-projects/d2-admin-start-kit
-
-- nx-admin 
-  - https://github.com/mgbq/nx-admin
-  - 老板让我十分钟上手nx-admin https://juejin.im/post/5b43226c51882519ad616c2a
-  
-- vue-admin 结合bulma https://github.com/vue-bulma/vue-admin
 - vue-material https://github.com/vuematerial/vue-material
-- rest-admin 基于bootstrap4 https://github.com/wxs77577/rest-admin
-- vuestic-admin 但好丑啊 https://github.com/epicmaxco/vuestic-admin
-- vue2-manage 
-    - https://github.com/bailicangdu/vue2-manage
-    - 后台 https://github.com/bailicangdu/node-elm
-- vue-light-bootstrap-dashboard https://github.com/creativetimofficial/vue-light-bootstrap-dashboard
-- adminify 基于Vuetify material https://github.com/topfullstack/adminify
-- goldfish go语言有关的UI？ https://github.com/Caiyeon/goldfish
-- sls-admin-vue <https://github.com/sls-admin/sls-admin-vue> 
 - vue-material-admin https://github.com/tookit/vue-material-admin
-- element-vue-admin https://github.com/TonyLuo/element-vue-admin
-- framework-admin 基于Vue.js的单页面管理系统前端 https://gitee.com/backflow/framework-admin
-- vue2-admin-lte https://github.com/devjin0617/vue2-admin-lte
-- shards-dashboard-vue 多主题 https://github.com/DesignRevision/shards-dashboard-vue
+- rest-admin 基于bootstrap4 https://github.com/wxs77577/rest-admin
 
 - 其他
 
+    - vue-admin @old 结合bulma https://github.com/vue-bulma/vue-admin
+    - vuestic-admin @nice 但丑拒... https://github.com/epicmaxco/vuestic-admin
+    - shards-dashboard-vue 
+        - 多主题 并不精致
+        - https://github.com/DesignRevision/shards-dashboard-vue
+    - vue2-admin-lte 
+        - adminlte相对较好的 @nice
+        - 导航没设计好 体验不好
+        - 韩语版没中文的 模板改过来需要耗费点时间 -> 懒
+        - https://github.com/devjin0617/vue2-admin-lte
+    - sls-admin-vue 
+        - 前端element 好看但布局在抖 需要加砖石布局
+        - PHP作为后台
+        - 文档 https://doc.vue.slsadmin.org/#/
+        - <https://github.com/sls-admin/sls-admin-vue> 
+    - nx-admin
+        - https://github.com/mgbq/nx-admin
+        - 老板让我十分钟上手nx-admin https://juejin.im/post/5b43226c51882519ad616c2a
+    - adminify 基于Vuetify material https://github.com/topfullstack/adminify
+    - vue-light-bootstrap-dashboard https://github.com/creativetimofficial/vue-light-bootstrap-dashboard
+    - vue2-manage 
+        - https://github.com/bailicangdu/vue2-manage
+        - 后台 https://github.com/bailicangdu/node-elm
     - vue-adminLte-vue-router @old adminlte 静态资源require引用 https://github.com/liujians/vue-adminLte-vue-router
     - zhaotoday/iview @deprecated
         - https://github.com/zhaotoday/iview
-        - 一直没试通代码, 希望能兼容IE9+   
+        - 一直没试通代码, 希望能兼容IE9+
+        - iview升级了...
         - 基于 vue-cli + iView 的 Vue js 后台管理系统，简洁易扩展 
         - https://github.com/zhaotoday/less.js 需要运行一下服务端koa环境
     - vms @old https://github.com/ericjjj/vms
     - VueThink 后台是ThinkPHP5 @deprecated <https://github.com/honraytech/VueThink>
-    - 毕设时抄的模板 @deprecated <https://github.com/taylorchen709/vue-admin>
-    - vue-manage-system  https://github.com/lin-xin/vue-manage-system
+    - 毕业设计时抄的模板 @old 怀念 <https://github.com/taylorchen709/vue-admin>
+    - vue-manage-system  
+        - 色调有点灰 些许诡异
+        - https://github.com/lin-xin/vue-manage-system
+    - element-vue-admin @deprecated https://github.com/TonyLuo/element-vue-admin
+    - framework-admin 基于Vue.js的单页面管理系统前端 https://gitee.com/backflow/framework-admin
+
 
 # Chrome插件
 
