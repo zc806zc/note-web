@@ -73,8 +73,10 @@
 - iview-admin @nice 
     - https://github.com/iview/iview-admin  
 - D2Admin @NICE 
-    - 基于element 目前看到最好看的
-    - 但是对于导航有点击/悬浮犹豫症，不喜欢
+    - 基于element 
+    - 目前看到最好看的
+    - 对于导航有 点击/悬浮 犹豫症
+    - 提供了d2-crud
     - @FairyEver https://github.com/FairyEver
     - https://github.com/d2-projects/d2-admin
     - https://github.com/d2-projects/d2-admin-start-kit
