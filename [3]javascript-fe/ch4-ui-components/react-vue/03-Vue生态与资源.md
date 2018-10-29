@@ -23,7 +23,10 @@
 - vue-todos https://github.com/liangxiaojuan/vue-todos
 - todo-list <https://github.com/Konata9/EasyTodoList>
 - notepad 记事本 https://github.com/lin-xin/notepad
-- vue-memo 记事本 @nice https://github.com/youknowznm/vue-memo
+- vue-memo 记事本 
+    - @old @nice
+    - 基于vue1 
+    - https://github.com/youknowznm/vue-memo
 - simply-calculator-vuejs 计算器 https://github.com/CaiYiLiang/simply-calculator-vuejs
 - v-notes https://github.com/IgorHalfeld/v-notes
 
@@ -88,10 +91,10 @@
 
     - vue-admin @old 结合bulma https://github.com/vue-bulma/vue-admin
     - vuestic-admin @nice 但丑拒... https://github.com/epicmaxco/vuestic-admin
-    - shards-dashboard-vue 
+    - shards-dashboard-vue
         - 多主题 并不精致
         - https://github.com/DesignRevision/shards-dashboard-vue
-    - vue2-admin-lte 
+    - vue2-admin-lte
         - adminlte相对较好的 @nice
         - 导航没设计好 体验不好
         - 韩语版没中文的 模板改过来需要耗费点时间 -> 懒
