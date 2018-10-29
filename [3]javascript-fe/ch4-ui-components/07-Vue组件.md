@@ -156,8 +156,15 @@ be the most lightweight
 # 幻灯片slider | slick | 轮播swiper | 走马灯carousel
 
 - eagle.js https://github.com/zulko/eagle.js
-- vue-awesome-swiper @nice https://github.com/surmon-china/vue-awesome-swiper
-- vue-tiny-slider @nice 原生 IE8+ https://github.com/viktorlarsson/vue-tiny-slider
+- vue-awesome-swiper @nice 
+  - 轮播里最强悍的
+  - 配置很多
+  - 3D切换效果
+  - 文档 https://www.swiper.com.cn/api/index2.html
+  - https://github.com/surmon-china/vue-awesome-swiper
+- vue-tiny-slider @nice 
+  - 原生 IE8+ 
+  - https://github.com/viktorlarsson/vue-tiny-slider
 - vue-easy-slider https://github.com/shhdgit/vue-easy-slider
 - vue-slick https://github.com/staskjs/vue-slick
 - vue-flux @nice 切换动画多 https://github.com/deulos/vue-flux
