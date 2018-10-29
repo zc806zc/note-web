@@ -20,15 +20,20 @@
 
 # TODO-LIST | 记事本 | 计算器
 
+- EasyTodoList @nice
+    - pouchDb存储 + echarts统计  
+    - <https://github.com/Konata9/EasyTodoList>
 - vue-todos https://github.com/liangxiaojuan/vue-todos
-- todo-list <https://github.com/Konata9/EasyTodoList>
 - notepad 记事本 https://github.com/lin-xin/notepad
 - vue-memo 记事本 
     - @old @nice
     - 基于vue1 
     - https://github.com/youknowznm/vue-memo
-- simply-calculator-vuejs 计算器 https://github.com/CaiYiLiang/simply-calculator-vuejs
-- v-notes https://github.com/IgorHalfeld/v-notes
+- simply-calculator-vuejs 
+    - 计算器 
+    - https://github.com/CaiYiLiang/simply-calculator-vuejs
+- 其他
+    -  v-notes 略简单 https://github.com/IgorHalfeld/v-notes
 
 # Vue脚手架 | Scaffold | boilerplate | seed | template
 
