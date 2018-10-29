@@ -161,14 +161,27 @@
 
 # 咨询 | 阅读
 
-- vue-cnode <https://github.com/xjh22222228/vue-cnode>
 - vue-hackernews-2.0 @NICE 
     - https://github.com/vuejs/vue-hackernews-2.0
-- 仿知乎日报 @old <https://github.com/hilongjw/vue-zhihu-daily>
-- zhihudaily-vue 知乎日报web版 https://github.com/yatessss/zhihudaily-vue
-- zhihu-daily-vue https://github.com/moonou/zhihu-daily-vue
+- ZhihuDailyPurify @nice 
+    - 更纯净的知乎日报
+    - https://github.com/izzyleung/ZhihuDailyPurify
 - 今日头条 <https://github.com/cd-dongzi/vue-project>
-- vue-nReader https://github.com/zimplexing/vue-nReader
+- vue-cnode <https://github.com/xjh22222228/vue-cnode>
+- vue-nReader @nice 
+    - 阅读webapp
+    - 接口 https://github.com/zimplexing/vue-nReader/blob/master/doc/zhuishushenqi.md 
+    - https://github.com/zimplexing/vue-nReader
+
+- 其他
+
+    - 仿知乎日报 @old <https://github.com/hilongjw/vue-zhihu-daily>
+    - zhihu-daily-vue https://github.com/moonou/zhihu-daily-vue
+    - zhihudaily-vue @old 知乎日报web版 https://github.com/yatessss/zhihudaily-vue 
+    - Vue-cnodejs @deprecated @old
+        - 基于vue.js重写Cnodejs.org社区的webapp
+        - <https://github.com/shinygang/Vue-cnodejs> 
+
 
 # 商城 | 外卖
 
@@ -182,11 +195,14 @@
 
 # 有趣
 
-- bilibili-vue @nice koa后台 https://github.com/lybenson/bilibili-vue
 - vue-Meizi 图片 https://github.com/liangxiaojuan/vue-Meizi
 - xyy-vue 大学生交友 https://github.com/hzzly/xyy-vue
 - beauty 服务端渲染 @old https://github.com/beauty-enjoy/beauty
 - vue-bushishiren 不是诗人 https://github.com/nswbmw/vue-bushishiren
+- bilibili-vue 
+    - koa后台 
+    - 接口获取图片好像有问题 
+    - https://github.com/lybenson/bilibili-vue
 
 # 聊天 | Chat | socket | Blog 
 
@@ -214,11 +230,9 @@
   - 聊天 基于webSocket
   - <https://github.com/ermu592275254/x-chat>  
   - 后台 https://github.com/ermu592275254/chat-socket
-- Vue-cnodejs @deprecated @old
-  - 基于vue.js重写Cnodejs.org社区的webapp
-  - <https://github.com/shinygang/Vue-cnodejs>  
-- 聊天 @deprecated 仿PC微信 界面面板可参考 <https://github.com/Coffcer/vue-chat>
-
+ 
+- 其他
+    - 聊天 @deprecated 仿PC微信 界面面板可参考 <https://github.com/Coffcer/vue-chat>
 
 # 音乐 | 播放器
 
