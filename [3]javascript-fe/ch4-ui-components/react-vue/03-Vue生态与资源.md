@@ -1,7 +1,10 @@
 # README
 
-- 没整理...
-- open-source vue官方整理的开源项目 乱糟糟不想看 https://github.com/vuejs/awesome-vue#open-source
+> 如果一个类似项目别人写过，一定要从别人那里参考
+
+- vue官方整理的开源项目 
+    - 乱糟糟... 
+    - https://github.com/vuejs/awesome-vue#open-source
 
 # 入门实践 
 
@@ -10,13 +13,16 @@
 - vue2-demo 实现基本的登录退出功能 基础 @nice <https://github.com/lzxb/vue2-demo>
 - vue-axios-github  实现登录拦截、登出、拦截器等功能 https://github.com/superman66/vue-axios-github
 - 富文本编辑器Ueditor如何在Vue中使用？ <https://www.jianshu.com/p/8c43636c6c47>
-- 用webpack（2.x语法）手动搭建Vue项目 <https://www.jianshu.com/p/a87dee15e6c3>
 - 全面解析vue-cli生成的项目中使用其他库（js库、css库）<https://www.jianshu.com/p/a2fc286cb8ab>
 - 使用vue2.0实现购物车和地址选配功能 @deprecated :视频 <https://www.imooc.com/video/14039>
 - 基于vue的简单流程图开发
 
   - <https://juejin.im/post/59e719746fb9a044fa18f2f2>
   - <https://github.com/leer0911/vue-FlowChart>
+
+- 其他
+    - 用webpack（2.x语法）手动搭建Vue项目 <https://www.jianshu.com/p/a87dee15e6c3>
+
 
 # Vue脚手架 | Scaffold | boilerplate | seed | template
 
@@ -237,26 +243,36 @@
 # 音乐 | 播放器
 
 - 网易云音乐API 
-
     - <https://api.imjad.cn/cloudmusic.md>
+    - NeteaseCloudMusicApi @nice https://github.com/Binaryify/NeteaseCloudMusicApi
 
 - Vue全家桶打造自适应 web 音乐播放器 @nice
   - https://juejin.im/post/5afcdc73518825428630b216
   - Vue-mmPlayer https://github.com/maomao1996/Vue-mmPlayer
   - 作者很淘气...
 
+- vue-music 
+    - rx.js
+    - https://github.com/Sioxas/vue-music    
+- vue-qqmusic 
+    - 高仿QQMusic 
+    - mint-ui
+    - https://github.com/Panda-Hope/vue-qqmusic
+- vue-music-webapp @nice 
+    - 文件结构很好
+    - https://github.com/CaiJinyc/vue-music-webapp
+    
 - NeteaseCloudWebApp @NICE 
     - 高仿网易云  
     - <https://github.com/javaSwing/NeteaseCloudWebApp>
     - .net的API后台 https://github.com/javaSwing/MusicAPI
-- vue-music https://github.com/Sioxas/vue-music    
-- vue-qqmusic https://github.com/Panda-Hope/vue-qqmusic
-- vue-music-webapp https://github.com/CaiJinyc/vue-music-webapp
-- vue-demo-kugou https://github.com/lavyun/vue-demo-kugou
-- koel @NICE PHP提供的服务 https://github.com/phanan/koel
-- vue-163-music 包含服务端 @old <https://github.com/ShanaMaid/vue-163-music>
-- vue-163-music 老版本金属风的网易云 https://github.com/SGAMERyu/vue-163-music
-- 网易云 @old <https://github.com/microzz/vue-music-player>
+
+- 其他
+    - vue-demo-kugou 酷狗 mint-ui https://github.com/lavyun/vue-demo-kugou
+    - koel @NICE PHP提供的服务 https://github.com/phanan/koel
+    - vue-163-music 包含服务端 @old <https://github.com/ShanaMaid/vue-163-music>
+    - vue-163-music 老版本金属风的网易云 https://github.com/SGAMERyu/vue-163-music
+    - 网易云 @old <https://github.com/microzz/vue-music-player>
 
 # 电影
 
@@ -267,7 +283,7 @@
 
 - web-learn https://github.com/freearhey/web-learn
 
-# 文件上传
+# 关键管理 | 文件上传
 
 - mm 文件管理系统 https://github.com/iutbay/mm
 
