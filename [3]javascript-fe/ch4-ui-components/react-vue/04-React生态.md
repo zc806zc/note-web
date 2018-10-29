@@ -60,3 +60,9 @@
 - <https://juejin.im/post/5a490d8051882511793e8a5f>
 - <https://github.com/KieSun/Chat-Buy-React>
 - 邮件 <https://github.com/ianobermiller/nuclearmail>
+
+# 阅读
+
+- 追书神器 @nice 
+    - 接口 https://novel.juhe.im/
+    - <https://github.com/xiadd/zhuishushenqi>

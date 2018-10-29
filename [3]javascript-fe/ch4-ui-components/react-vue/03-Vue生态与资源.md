@@ -18,23 +18,6 @@
   - <https://juejin.im/post/59e719746fb9a044fa18f2f2>
   - <https://github.com/leer0911/vue-FlowChart>
 
-# TODO-LIST | 记事本 | 计算器
-
-- EasyTodoList @nice
-    - pouchDb存储 + echarts统计  
-    - <https://github.com/Konata9/EasyTodoList>
-- vue-todos https://github.com/liangxiaojuan/vue-todos
-- notepad 记事本 https://github.com/lin-xin/notepad
-- vue-memo 记事本 
-    - @old @nice
-    - 基于vue1 
-    - https://github.com/youknowznm/vue-memo
-- simply-calculator-vuejs 
-    - 计算器 
-    - https://github.com/CaiYiLiang/simply-calculator-vuejs
-- 其他
-    -  v-notes 略简单 https://github.com/IgorHalfeld/v-notes
-
 # Vue脚手架 | Scaffold | boilerplate | seed | template
 
 - 官方提供的脚手架 https://github.com/vuejs/awesome-vue#scaffold
@@ -138,25 +121,47 @@
 
 - vue-webpack-chrome-extension-template https://github.com/ALiangLiang/vue-webpack-chrome-extension-template
 
+# TODO-LIST | 记事本 | 计算器
+
+- EasyTodoList @nice
+    - pouchDb存储 + echarts统计  
+    - <https://github.com/Konata9/EasyTodoList>
+- vue-todos https://github.com/liangxiaojuan/vue-todos
+- notepad 记事本 https://github.com/lin-xin/notepad
+- vue-memo 记事本 
+    - @old @nice
+    - 基于vue1 
+    - https://github.com/youknowznm/vue-memo
+- simply-calculator-vuejs 
+    - 计算器 
+    - https://github.com/CaiYiLiang/simply-calculator-vuejs
+- 其他
+    -  v-notes 略简单 https://github.com/IgorHalfeld/v-notes
+
 # 博客 | 社区 
 
-- https://github.com/ericjjj/douban
-- pagekit https://github.com/pagekit/pagekit
-- tamiat https://github.com/tamiat/tamiat
-- mmf-blog-vue2 https://github.com/lincenying/mmf-blog-vue2
-- elapse 使用react、vue和koa开发的前后端分离的个人博客系统 <https://github.com/mvpzx/elapse> 
+- douban @old https://github.com/jeneser/douban
+- vue2.x-douban https://github.com/superman66/vue2.x-douban
+- douban @nice
+    - 服务端渲染
+    - https://github.com/ericjjj/douban
+- mmf-blog-vue2 @nice 
+    - 此外提供了spa ssr react版本
+    - https://github.com/lincenying/mmf-blog-vue2
+- elapse @nice 
+    - 使用react、vue和koa开发的前后端分离的个人博客系统 
+    - <https://github.com/mvpzx/elapse> 
 - vue-wordpress-pwa 
     - PWA的实现 滚去学习 
     - https://github.com/bstavroulakis/vue-wordpress-pwa
-
-- vue-leancloud-blog @old https://github.com/jiangjiu/vue-leancloud-blog
+- 其他
+    - tamiat https://github.com/tamiat/tamiat
+    - pagekit PHP后台 https://github.com/pagekit/pagekit
+    - vue-leancloud-blog @old https://github.com/jiangjiu/vue-leancloud-blog
 
 # 咨询 | 阅读
 
 - vue-cnode <https://github.com/xjh22222228/vue-cnode>
-- vue2.x-douban https://github.com/superman66/vue2.x-douban
-- douban 服务端渲染 https://github.com/ericjjj/douban
-- douban @old https://github.com/jeneser/douban
 - vue-hackernews-2.0 @NICE 
     - https://github.com/vuejs/vue-hackernews-2.0
 - 仿知乎日报 @old <https://github.com/hilongjw/vue-zhihu-daily>
@@ -164,8 +169,6 @@
 - zhihu-daily-vue https://github.com/moonou/zhihu-daily-vue
 - 今日头条 <https://github.com/cd-dongzi/vue-project>
 - vue-nReader https://github.com/zimplexing/vue-nReader
-- 追书神器 接口 
-    - <https://github.com/xiadd/zhuishushenqi>
 
 # 商城 | 外卖
 
