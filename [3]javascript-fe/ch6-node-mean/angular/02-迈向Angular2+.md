@@ -249,8 +249,3 @@ fax 引用了 input 元素，并将value传递给事件句柄
 // 输入输出属性
 // 模板表达式操作符
 ```
-
-# Aurelia
-
-- Angular 2.0的开发者之一创建了新的框架Aurelia
-- <https://www.zhihu.com/question/28735192?sort=created>

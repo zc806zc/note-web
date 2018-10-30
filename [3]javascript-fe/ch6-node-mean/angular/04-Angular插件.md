@@ -1,6 +1,8 @@
 # Angular
 
 - Angular扩展 https://gitee.com/explore/starred/angular-extensions
+- awesome-angular-components https://github.com/brillout/awesome-angular-components
+- https://github.com/gianarb/awesome-angularjs
 
 # 指令集
 
