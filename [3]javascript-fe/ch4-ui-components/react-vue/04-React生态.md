@@ -17,6 +17,7 @@
 - antd-admin @NICE <https://github.com/zuiidea/antd-admin>
 - sb-admin-react <https://github.com/start-react/sb-admin-react>
 - 3YAdmin https://github.com/wjkang/3YAdmin
+- dva-admin https://github.com/pmg1989/dva-admin
 - 其他
   - admin-on-rest <https://github.com/marmelab/admin-on-rest>
   - 原来废弃 <https://github.com/marmelab/ng-admin-react>

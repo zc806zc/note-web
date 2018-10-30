@@ -84,7 +84,17 @@
     - Vue 版 Ant Design Pro 
     - 使用Typescript
     - https://github.com/qidaizhe11/element-pro
-
+- ant-design-pro-vue https://github.com/sendya/ant-design-pro-vue
+- vue2-element-touzi-admin @nice 
+    - 金融后台
+    - 基于elementui
+    - https://github.com/wdlhao/vue2-element-touzi-admin
+- CoPilot 基于adminlte https://github.com/misterGF/CoPilot
+- vue-framework-wz 
+    - xy轴布局
+    - iview 略丑
+    - https://github.com/herozhou/vue-framework-wz
+    
 - 其他
 
     - vue-admin @old 结合bulma https://github.com/vue-bulma/vue-admin
