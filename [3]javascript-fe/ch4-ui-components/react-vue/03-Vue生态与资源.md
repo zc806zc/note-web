@@ -182,6 +182,7 @@
     - 阅读webapp
     - 接口 https://github.com/zimplexing/vue-nReader/blob/master/doc/zhuishushenqi.md 
     - https://github.com/zimplexing/vue-nReader
+- ReadMore @old https://github.com/XNAL/ReadMore
 
 - 其他
 
