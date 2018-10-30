@@ -80,6 +80,10 @@
 - vue-material https://github.com/vuematerial/vue-material
 - vue-material-admin https://github.com/tookit/vue-material-admin
 - rest-admin 基于bootstrap4 https://github.com/wxs77577/rest-admin
+- element-pro 
+    - Vue 版 Ant Design Pro 
+    - 使用Typescript
+    - https://github.com/qidaizhe11/element-pro
 
 - 其他
 
