@@ -13,13 +13,18 @@
 - react-admin 
   - material-ui
   - https://github.com/marmelab/react-admin
-- react-admin <https://github.com/yezihaohao/react-admin>
+- react-admin @nice
+    - <https://github.com/yezihaohao/react-admin>
 - antd-admin @NICE <https://github.com/zuiidea/antd-admin>
 - sb-admin-react <https://github.com/start-react/sb-admin-react>
 - 3YAdmin https://github.com/wjkang/3YAdmin
 - dva-admin https://github.com/pmg1989/dva-admin
+- reactSPA https://github.com/MuYunyun/reactSPA
+- rsuite-management-system https://github.com/rsuite/rsuite-management-system
 - 其他
-  - admin-on-rest <https://github.com/marmelab/admin-on-rest>
+  - react-material-admin-template @old https://github.com/rafaelhz/react-material-admin-template
+  - react-antd https://github.com/sosout/react-antd 
+  - admin-on-rest @deprecated <https://github.com/marmelab/admin-on-rest>
   - 原来废弃 <https://github.com/marmelab/ng-admin-react>
   - SPA的后台管理框架demo <https://github.com/duxianwei520/react>
   - 基于antd <https://github.com/jiangxy/react-antd-admin>
