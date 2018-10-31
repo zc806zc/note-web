@@ -246,6 +246,7 @@ be the most lightweight
 - vue2-editor 基于quill https://github.com/davidroyer/vue2-editor
 - smeditor 基于 Vue.js 2.0+ 石墨文档样式的富文本编辑器 https://github.com/GeekPark/smeditor
 - marked https://github.com/markedjs/marked
+- tiptap https://github.com/heyscrumpy/tiptap
 
 # 时间日历 | 选择器
 
