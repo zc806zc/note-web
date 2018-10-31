@@ -37,19 +37,30 @@ ArrayList
 
 # 集合框架
 
-- Java集合框架常见面试题总结https://github.com/Snailclimb/JavaGuide/blob/master/Java%E7%9B%B8%E5%85%B3/Java%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93.md
+- [Java集合框架常见面试题总结](https://github.com/Snailclimb/JavaGuide/blob/master/Java%E7%9B%B8%E5%85%B3/Java%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93.md)
 
-- 这几道Java集合框架面试题几乎必问https://github.com/Snailclimb/JavaGuide/blob/master/Java%E7%9B%B8%E5%85%B3/%E8%BF%99%E5%87%A0%E9%81%93Java%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6%E9%9D%A2%E8%AF%95%E9%A2%98%E5%87%A0%E4%B9%8E%E5%BF%85%E9%97%AE.md
+- [这几道Java集合框架面试题几乎必问](https://github.com/Snailclimb/JavaGuide/blob/master/Java%E7%9B%B8%E5%85%B3/%E8%BF%99%E5%87%A0%E9%81%93Java%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6%E9%9D%A2%E8%AF%95%E9%A2%98%E5%87%A0%E4%B9%8E%E5%BF%85%E9%97%AE.md)
 
 - List，Set,Map区别
+
+```jsx
+List 有序
+Set 唯一
+Map k-v
+```
+
 - Arraylist 与 LinkedList 
 
-```
-Arraylist底层使用的是数组（存读数据效率高，插入删除特定位置效率低），
-LinkedList底层使用的是双向循环链表数据结构（插入，删除效率特别高）
+```jsx
+Arraylist底层使用的是数组
+存读数据效率高，插入删除特定位置效率低
+
+LinkedList 底层使用的是双向循环链表数据结构
+插入，删除效率特别高
 
 经常需要插入删除元素时建议选用LinkedList.
-一般程序只用Arraylist就够用了 Arraylist是使用最多的集合类。
+一般程序只用Arraylist就够用了 
+Arraylist是使用最多的集合类。
 ```
 
 - ArrayList 与 Vector 
@@ -58,11 +69,17 @@ LinkedList底层使用的是双向循环链表数据结构（插入，删除效�
 Vector类的所有方法都是同步的
 ```
 
+- HashMap和ConcurrentHashMap
 - HashMap 和 Hashtable 
 
 ```
-HashMap是非线程安全的，HashTable是线程安全的
+HashMap是非线程安全的
+HashTable是线程安全的
+
+HashTable中put进的键值只要有一个null，直接抛出NullPointerException
 ```
+
+- HashSet和HashMap
 
 # 源码分析 
 
