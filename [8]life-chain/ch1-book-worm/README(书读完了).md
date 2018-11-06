@@ -1,11 +1,6 @@
 # 电子书资源
 
-- 龙轩导航 <http://ilxdh.com/>
-- 鸠摩搜书
-- 小书屋
-- 走读派 <http://www.zoudupai.com/>
-- 苦瓜书盘 <https://kgbook.com>
-- 掌上书苑 <https://www.cnepub.com/>
+->>
 
 
 # 图书推荐
