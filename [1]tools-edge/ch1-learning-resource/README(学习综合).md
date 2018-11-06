@@ -9,8 +9,8 @@
 
 # 电子书
 
-- <http://www.lefashn.com/other/resource.htm>
-- <http://goalkicker.com/>
+- lefashn <http://www.lefashn.com/other/resource.htm>
+- goalkicker <http://goalkicker.com/>
 
 # 图书
 
@@ -18,11 +18,12 @@
 
 # 编程学习
 
-- w3c 注意王w3c有多个
+- w3c 
+    - 注意w3c有多个...
     - https://www.w3cschool.cn/ 
     - http://www.w3school.com.cn/
     
-# 开源
+# 开源组织 | 公司
 
 - apache https://github.com/apache
 - 腾讯 <https://github.com/Tencent>
@@ -34,8 +35,9 @@
 
 # AWESOME
 
-- https://github.com/sindresorhus
-- <https://github.com/sindresorhus/awesome>
+- sindresorhus 
+    - https://github.com/sindresorhus
+    - <https://github.com/sindresorhus/awesome>
 - awesome-awesomeness https://github.com/bayandin/awesome-awesomeness
 - AWESOME专题 <https://github.com/topics/awesome>
 
@@ -56,20 +58,6 @@
 - PacktPublishing <https://github.com/PacktPublishing>
 - 开源中国GVP <https://gitee.com/gvp>
 - 各种语言开源项目 <https://github.com/lk-geimfari/awesomo>
-
-# 前端团队
-
-- AlloyTeam https://github.com/AlloyTeam
-- 饿了吗前端 https://github.com/ElemeFE
-- 有赞 https://github.com/youzan
-- 百度前端 <https://github.com/ecomfe>
-- NervJS https://github.com/NervJS
-- fex-team https://github.com/fex-team
-- 阅文前端 https://github.com/yued-fe
-
-# 后台社区
-
-- ???
 
 # 仓库
 
