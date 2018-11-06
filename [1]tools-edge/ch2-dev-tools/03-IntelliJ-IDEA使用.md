@@ -186,6 +186,14 @@ Build project automatically
 
 # 常见问题
 
+- Error:java: Internal compiler error: java.lang.Exception: java.lang.NoClassDefFoundError解决 
+    - https://www.cnblogs.com/jpfss/p/9126186.html
+
+```
+IDEA中File-->settings-->Bulid Execution Deloyment-->Complier-->Java Complier中的
+user complier有原来的Eclipse改为javac即可
+```
+
 - 首先确定java7 java8版本
 - 修改IntelliJ IDEA中Maven项目的默认JDK版本 https://blog.csdn.net/geekun/article/details/51325510
 - IDEA 内存溢出问题 http://blog.csdn.net/fyqcdbdx/article/details/46788915

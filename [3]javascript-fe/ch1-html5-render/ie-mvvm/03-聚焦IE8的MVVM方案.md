@@ -103,10 +103,12 @@ require("babel-polyfill")
 - 脚手架
     - react-ssr-ie8-startup https://github.com/nasawz/react-ssr-ie8-startup
     - anu-starter-kit https://github.com/L-Chris/anu-starter-kit
+    - anujs-webpack4-ie7-8 @nice 
+        - 简单示例 可以跑通
+        - https://github.com/magicapple/anujs-webpack4-ie7-8    
     - react-ie8-cli https://github.com/tanggd7/react-ie8-cli
     - react-webpack-boilerplate https://github.com/sitorhy/react-webpack-boilerplate
     - React_IE8_boilerplate https://gitee.com/menhal/React_IE8_boilerplate
-    - anujs-webpack4-ie7-8 https://github.com/magicapple/anujs-webpack4-ie7-8
 - @deprecated o(╥﹏╥)o 没成功
     - https://github.com/Levan-Du/anu-cli
     - https://github.com/RubyLouvre/create-anu-app 
