@@ -3,27 +3,27 @@
 - 26个令人印象深刻的纯CSS构建的Web项目 <https://www.jianshu.com/p/b321d1095106>
 - CSS的3D部分很难，很多人低估
 
-- 怪圈
+- 怪圈 | 尴尬
 
 ```js
 // 大漠 https://www.zhihu.com/question/284049279/answer/435101054
 玩得转，或者玩得6666的动画的前端不多，
 就算是放低身段，懂动画的同学也并不多，何况做动画了。
 
-懂图形学的，又有点看不上
+懂图形学的，又有点看不上...
 ```
 
 # CSS3画法
 
 - CSS3代码生成演示 http://www.css88.com/tool/css3Preview/Box-Shadow.html
 
-# 前端DEMO
+# 前端DEMO | 栗子
 
-- codepen
+- codepen @nice
 - jsfiddle
-- sandbox
-- jq22
-- https://tympanus.net/codrops/
+- codesandbox @nice https://codesandbox.io/
+- jq22 
+- codrops https://tympanus.net/codrops/
 - 17sucai <http://www.17sucai.com/>
 - microjs <http://microjs.com/>
 

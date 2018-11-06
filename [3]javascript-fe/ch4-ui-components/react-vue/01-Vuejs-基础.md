@@ -348,7 +348,6 @@ it('updates the rendered message when vm.message updates', done => {
 
 > Props向下传递，事件向上传递！！
 
-- 父子组件之间传值 <https://juejin.im/post/59ec95006fb9a0451c398b1a>
 - 单向数据流
   - 单向下行绑定 ：父级 prop 的更新会向下流动到子组件中，但是反过来则不行
   - 对于一个数组或对象类型的 prop 来说，在子组件中改变这个对象或数组本身将会影响到父组件的状态
@@ -431,6 +430,11 @@ post: {
 
 v-once 低开销
 ```
+
+# 组件通信
+
+- 父子组件之间传值 <https://juejin.im/post/59ec95006fb9a0451c398b1a>
+- vue组件通信全揭秘 @nice https://juejin.im/post/5bd97e7c6fb9a022852a71cf
 
 # Vue Router | 路由
 

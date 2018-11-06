@@ -73,3 +73,5 @@ const round = (n, decimals = 0) => Number(`${Math.round(`${n}e${decimals}`)}e-${
 round(1.345, 2) 				// 1.35
 round(1.345, 1) 				// 1.3
 ```
+
+- 一些使 JavaScript 更加简洁的小技巧 http://www.css88.com/archives/9868
