@@ -4,9 +4,10 @@
 
   - 主要原因 IE8+(官方说IE9+)
   - layer等优秀组件
-  - 组件差不多能闭环，不够强倚靠jquery生态
-  - 社区比较活跃
+  - 组件(+社区扩展)能闭环
+  - 社区相对活跃
 
+- 年度精华 http://fly.layui.com/jie/30227/
 - CDN
     - https://layui.hcwl520.com.cn/
 
@@ -15,34 +16,86 @@
 <script src="http://layui.hcwl520.com.cn/layui/layui.js?v=201801090202"></script>
 ```
 
+# 二次开发项目 | 模板
+
+- 案例 http://fly.layui.com/case/2018/
+- 关于前端文件组织(模块化)
+
+  - <https://github.com/layui/fly>
+  - <https://github.com/BrotherMa/layuiCMS>
+  - <https://gitee.com/xmmxjy/layuiAdmin>
+  - ...
+- jqadmin <https://gitee.com/jqcool/jqadmin>
+- 一个轻量，简约，包含丰富模块化前端框架 ，帮您快速构建网站  https://gitee.com/bambi008/Simple
+
 # layuiAdmin
 
 - http://www.layui.com/admin
-- IE8+ | 手机全屏响应式 | SPA  | $
-- 追加的内容
-    - ie8+ router
-    - 单页面的刷新按钮
+- IE8+ 
+- ie8+ router | SPA
+- 手机全屏响应式 | 、
+-   | $
+- 单页面的刷新按钮
 
-# 使用前要考虑的不足 | 发现的一些BUG
+# 不足
 
-- 表格和树不够强
-    - 表格行内编辑还不支持填充数据与动态更新
-- 表格不完全支持resize, f12以后分页会消失(估计已解决)
-- 弹框不支持滚动条，目前提供的参数是 是否屏蔽浏览器滚动条
-- 表格组件数据格式封装过于死板
-- 自成一家的模块化系统有点尴尬
-- 模板渲染引擎也有点尴尬
-- 校验规则变来变去的...
-- 表格行内编辑在IE浏览器的窗口切换时,onblur的时候不能相应时间 -> 暂时处理 编辑框自行生成然后监听
+- 如果要使用其他插件（ztree），还是要外部引用jquery @attention
+- 表格和树不够强 -> 表格行内(单元格)编辑不支持填充数据与动态更新
+- 模块化与渲染引擎小众, 有点尴尬
+- 校验规则变动... @ignore
+- 表格组件数据格式封装过于死板 @recovered 2.4版本后已强化了这些功能
 
-# 自己的一些坚持
+# 发现的一些小BUG
+
+- 弹框内部不支持滚动条，目前提供了是否屏蔽浏览器滚动条
+- 表格不完全支持resize, f12以后分页会消失 @recovered
+- 表格行内编辑在IE浏览器的窗口切换时,onblur的时候不能监听到change事件 -> 暂时处理 编辑框自行生成然后监听
+
+```jsx
+//单元格编辑
+// https://github.com/sentsin/layui/blob/master/src/lay/modules/table.js
+that.layBody.on('change', '.'+ELEM_EDIT, function(){
+    var othis = $(this)
+        ,value = this.value
+        ,field = othis.parent().data('field')
+        ,index = othis.parents('tr').eq(0).data('index')
+        ,data = table.cache[that.key][index];
+    
+    ...
+
+}).on('blur', '.'+ELEM_EDIT, function(){
+    var templet
+        ,value = this.value
+        ,othis = $(this)
+        ,field = othis.parent().data('field')
+        ,index = othis.parents('tr').eq(0).data('index')
+        ,data = table.cache[that.key][index];
+
+    that.eachCols(function(i, item){
+        if(item.field == field && item.templet){
+            templet = item.templet;
+        }
+    });
+
+    //  @fix 给IE触发一下change事件
+    if (othis.length) { othis.change(); }
+
+    othis.siblings(ELEM_CELL).html(
+            templet ? laytpl(this.value).render(data) : this.value
+        );
+        othis.parent().data('content', this.value);
+        othis.remove();
+
+});
+```
+
+# 坚持的规范
 
 - 不用iframe
-- 复杂表头也用js渲染 官方的栗子是html + js，这样视图和渲染分尸很不喜欢
+- 即使是复杂表头也要全部js渲染 -> 官方的栗子是html(表头) + js(数据)
 
-# 开发细节 | 开发优化
+# 开发细节与优化
 
-- 年度精华 http://fly.layui.com/jie/30227/
 - LayUI实际开发过程的细节点总结 http://fly.layui.com/jie/24673/
 
 # 入坑问题
@@ -149,22 +202,7 @@ layui.define(['jquery', 'jquery_cookie'], function (exports) {
 
 - 省市区三级联动 
 
-# 二次开发项目 | 模板
-
-- 案例 http://fly.layui.com/case/2018/
-- 关于前端文件组织(模块化)
-
-  - <https://github.com/layui/fly>
-  - <https://github.com/BrotherMa/layuiCMS>
-  - <https://gitee.com/xmmxjy/layuiAdmin>
-  - ...
-- jqadmin <https://gitee.com/jqcool/jqadmin>
-- 一个轻量，简约，包含丰富模块化前端框架 ，帮您快速构建网站  https://gitee.com/bambi008/Simple
-
----
-
-
-# 写弹框
+# 写弹框 @deprecated
 
 ```javascript
 /*------------------------------------------------*/
@@ -285,7 +323,7 @@ var layerCheckPassed = {
 };
 ```
 
-# layer写弹框
+# layer写弹框 @deprecated
 
 - HTML
 
