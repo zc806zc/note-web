@@ -1,10 +1,10 @@
 # gulp
 
 - gulp资料收集 https://github.com/Platform-CUF/use-gulp
-- 定位 ：兼容IE 不复杂的项目
-
+- gulp 自动化构建组件集合 https://blog.csdn.net/liuyuqin1991/article/details/78606125
+- 基于 gulp 的前端自动化构建方案总结 https://www.jianshu.com/p/3e0c16b2e7ef
+- 使用Gulp构建前端自动化方案 https://www.cnblogs.com/zhangyuezhen/p/7896047.html
 - gulp常用插件 <http://pinkyjie.com/2015/08/02/commonly-used-gulp-plugins-part-1/>
-
 - gulp前端自动化构建 <https://www.imooc.com/video/16174>
 
 ```javascript
@@ -43,7 +43,11 @@ gulp.task('watchLessCompile', function () {
 # 脚手架
 
 - tmtworkflow
-- generator-sapling-pc IE8+ https://github.com/sapling-team/generator-sapling-pc
+- generator-gulper https://github.com/leaky/generator-gulper
+- gulp-template https://github.com/mjzhang1993/gulp-template
+- generator-sapling-pc @deprecated
+    - IE8+ 
+    - https://github.com/sapling-team/generator-sapling-pc
 
 # 移除node_modules
 
