@@ -2,12 +2,12 @@
 
 - 优点
 
-  - 主要原因 IE8+(官方说IE9+)
-  - layer等优秀组件
-  - 组件(+社区扩展)能闭环
-  - 社区相对活跃
+  - 兼容性IE8+ (官方IE9+)
+  - layer弹框组件
+  - 组件(+ 社区扩展)能实现闭环
+  - 社区相对比较活跃
 
-- 年度精华 http://fly.layui.com/jie/30227/
+
 - CDN
     - https://layui.hcwl520.com.cn/
 
@@ -16,26 +16,19 @@
 <script src="http://layui.hcwl520.com.cn/layui/layui.js?v=201801090202"></script>
 ```
 
-# 二次开发项目 | 模板
+# 模板
 
-- 案例 http://fly.layui.com/case/2018/
-- 关于前端文件组织(模块化)
+- 年度精华 http://fly.layui.com/jie/30227/
+- layuiAdmin @nice
 
-  - <https://github.com/layui/fly>
-  - <https://github.com/BrotherMa/layuiCMS>
-  - <https://gitee.com/xmmxjy/layuiAdmin>
-  - ...
+    - http://www.layui.com/admin
+    - ie8+ router -> SPA
+    - 手机 + 全屏响应式
+    - 收费 $
+    - 单页面有刷新按钮
 - jqadmin <https://gitee.com/jqcool/jqadmin>
 - 一个轻量，简约，包含丰富模块化前端框架 ，帮您快速构建网站  https://gitee.com/bambi008/Simple
 
-# layuiAdmin
-
-- http://www.layui.com/admin
-- IE8+ 
-- ie8+ router | SPA
-- 手机全屏响应式 | 、
--   | $
-- 单页面的刷新按钮
 
 # 不足
 
@@ -89,14 +82,18 @@ that.layBody.on('change', '.'+ELEM_EDIT, function(){
 });
 ```
 
-# 坚持的规范
+# 坚持的规范 | 开发细节与优化
 
 - 不用iframe
 - 即使是复杂表头也要全部js渲染 -> 官方的栗子是html(表头) + js(数据)
+- 关于前端文件组织与模块化
 
-# 开发细节与优化
+  - <https://github.com/layui/fly>
+  - <https://github.com/BrotherMa/layuiCMS>
+  - <https://gitee.com/xmmxjy/layuiAdmin>
+  - ... 
 
-- LayUI实际开发过程的细节点总结 http://fly.layui.com/jie/24673/
+- LayUI实际开发过程的细节点总结 @nice http://fly.layui.com/jie/24673/
 
 # 入坑问题
 
@@ -104,31 +101,7 @@ that.layBody.on('change', '.'+ELEM_EDIT, function(){
 - 动态追加的表单元素不生效 -> form.render
 - 页面一打开就执行layer.open/alert/msg时，为何有时大有时小 -> 放入 layer.ready
 
-# 一些操作
-
-- 弹框回车关闭
-
-```js
-layer.open({
-  title: '回车关闭测试'
-  ,content: '我是内容'
-  ,btn: ['确认','关闭']
-  ,success: function(layero, index){
-    this.enterEsc = function(event){
-      if(event.keyCode === 13){
-        layer.close(index);
-        return false; //阻止系统默认回车事件
-      }
-    };
-    $(document).on('keydown', this.enterEsc);	//监听键盘事件，关闭层
-  }
-  ,end: function(){
-    $(document).off('keydown', this.enterEsc);	//解除键盘关闭事件
-  }
-});
-```
-
-# 第三方组件
+# 使用第三方组件
 
 - layui 封装第三方组件 http://fly.layui.com/jie/5080/
 
@@ -201,6 +174,30 @@ layui.define(['jquery', 'jquery_cookie'], function (exports) {
     - 扩展 layui 的 autocomplete 插件 http://fly.layui.com/jie/24072/
 
 - 省市区三级联动 
+
+# 一些操作
+
+- 弹框回车关闭
+
+```js
+layer.open({
+  title: '回车关闭测试'
+  ,content: '我是内容'
+  ,btn: ['确认','关闭']
+  ,success: function(layero, index){
+    this.enterEsc = function(event){
+      if(event.keyCode === 13){
+        layer.close(index);
+        return false; //阻止系统默认回车事件
+      }
+    };
+    $(document).on('keydown', this.enterEsc);	//监听键盘事件，关闭层
+  }
+  ,end: function(){
+    $(document).off('keydown', this.enterEsc);	//解除键盘关闭事件
+  }
+});
+```
 
 # 写弹框 @deprecated
 
