@@ -191,7 +191,17 @@ Build project automatically
 
 ```
 IDEA中File-->settings-->Bulid Execution Deloyment-->Complier-->Java Complier中的
-user complier有原来的Eclipse改为javac即可
+user complier由原来的Eclipse改为javac即可
+```
+
+- Unable to open debugger port(127.0.0.1:60157):java.net.SocketException"socket closed
+    - https://blog.csdn.net/quanbugu/article/details/80180041
+    - 修改端口号
+    - 或者shell 杀死进程
+
+```shell
+netstat -aon|findstr “1099”
+taskkill -f -pid 15380
 ```
 
 - 首先确定java7 java8版本
