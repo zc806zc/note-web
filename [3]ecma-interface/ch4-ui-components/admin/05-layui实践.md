@@ -37,15 +37,23 @@
 - 模块化与渲染引擎小众, 有点尴尬
 
 ```jsx
-// 模块化貌似没有处理循环引用
-// 解决方案是 直接这样暴力地调用
+// 1. 模块化貌似没有处理循环引用
+解决方法是 直接这样暴力地调用
+
+// layui.moduleX = layui.moduleX || {}
 if (layui.moduleX) {
     layui.moduleX.function
 }
+
+// 2.按需加载
+尽管作者不推荐
+但是不同权限身份的页面如果加载的模块不同呢?
+该用就用!!
+Layui内部有做模块cache处理
 ```
 
-- 校验规则变动... @ignore
 - 表格组件数据格式封装过于死板 @recovered 2.4版本后已强化了这些功能
+- 校验规则变动过几次... @ignore
 
 # 发现的一些小BUG
 
@@ -91,10 +99,11 @@ that.layBody.on('change', '.'+ELEM_EDIT, function(){
 });
 ```
 
-# 坚持的规范 | 开发细节与优化
+# 建议编程规范 | 开发细节与优化
 
-- 不用iframe
-- 即使是复杂表头也要全部js渲染 -> 官方的栗子是html(表头) + js(数据)
+- LayUI实际开发过程的细节点总结 @nice http://fly.layui.com/jie/24673/
+- 条件允许，坚持不用iframe
+- 即使是复杂表头也要全部使用js方法渲染 <-> 而官方的复杂表头栗子是html(表头) + js(数据)
 - 关于前端文件组织与模块化
 
   - <https://github.com/layui/fly>
@@ -102,13 +111,11 @@ that.layBody.on('change', '.'+ELEM_EDIT, function(){
   - <https://gitee.com/xmmxjy/layuiAdmin>
   - ... 
 
-- LayUI实际开发过程的细节点总结 @nice http://fly.layui.com/jie/24673/
-
 # 入坑问题
 
 - 为什么表单不显示 -> 依赖于form组件
 - 动态追加的表单元素不生效 -> form.render
-- 页面一打开就执行layer.open/alert/msg时，为何有时大有时小 -> 放入 layer.ready
+- 页面一打开就执行layer.open/alert/msg时，为何有时大有时小 -> 使用layer.ready
 
 # 使用第三方组件
 
