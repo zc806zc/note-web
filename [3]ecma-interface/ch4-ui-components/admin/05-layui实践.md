@@ -218,6 +218,17 @@ layui.define(['jquery', 'jquery_cookie'], function (exports) {
 
 # 一些操作
 
+- webpack里使用layui @deprecated
+- 数据表格更行
+
+```js
+obj.update({
+    fieldA: 'A'
+})
+
+// 来自外部的批量操作怎么办??
+```
+
 - 弹框回车关闭
 
 ```js
@@ -240,7 +251,7 @@ layer.open({
 });
 ```
 
-# 写弹框 @deprecated
+- 写弹框 @deprecated
 
 ```javascript
 /*------------------------------------------------*/
@@ -361,9 +372,7 @@ var layerCheckPassed = {
 };
 ```
 
-# layer写弹框 @deprecated
-
-- HTML
+- layer写弹框 @deprecated
 
 ```html
 <script id="tmpl_report_time" type="text/html">
@@ -417,11 +426,8 @@ var layerCheckPassed = {
     </div>
 
 </script>
-```
 
-- JS
-
-```javascript
+<script>
 /**
  * 上报时间编辑弹框
  * ===================
@@ -563,4 +569,5 @@ var layerReportTimeExtend = {
     }
 };
 $.extend(layerReportTime.prototype, layerReportTimeExtend); // 扩展弹框方法
+</script>
 ```
