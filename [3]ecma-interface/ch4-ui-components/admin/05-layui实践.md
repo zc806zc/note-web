@@ -50,6 +50,10 @@ if (layui.moduleX) {
 但是不同权限身份的页面如果加载的模块不同呢?
 该用就用!!
 Layui内部有做模块cache处理
+
+layui.use('moduleX', function(moduleX){
+    moduleX.ready();
+});
 ```
 
 - 表格组件数据格式封装过于死板 @recovered 2.4版本后已强化了这些功能
@@ -133,6 +137,7 @@ cols = [
 
 # 入坑问题
 
+- 数据表格模板的字段 templet，而不是template 
 - 为什么表单不显示 -> 依赖于form组件
 - 动态追加的表单元素不生效 -> form.render
 - 页面一打开就执行layer.open/alert/msg时，为何有时大有时小 -> 使用layer.ready
