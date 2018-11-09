@@ -99,11 +99,31 @@ that.layBody.on('change', '.'+ELEM_EDIT, function(){
 });
 ```
 
-# 建议编程规范 | 开发细节与优化
+# 编程规范 | 细节优化
 
 - LayUI实际开发过程的细节点总结 @nice http://fly.layui.com/jie/24673/
 - 条件允许，坚持不用iframe
 - 即使是复杂表头也要全部使用js方法渲染 <-> 而官方的复杂表头栗子是html(表头) + js(数据)
+
+```jsx
+// 复杂表头渲染处理的真棒，居然这样都可以
+// 就是有点绕....
+cols = [
+    [
+        // {checkbox: true, rowspan: 2, title: '序号', fixed: 'left'},
+        { field: 'explain', title: '情况说明', width: 120, rowspan: 2 },
+        // @attention 这里不要写field 占一行
+        { title: '操作', colspan: 2, rowspan: 1, fixed: 'right' }
+    ],
+
+    [
+        { field: 'attachment_info', title: '附件信息', width: 80, fixed: 'right' },
+        { field: 'attachment_operate', title: '附件操作', width: 80, fixed: 'right', toolbar: '#toolbar_layer_fillin' }
+    ]
+];
+
+```
+
 - 关于前端文件组织与模块化
 
   - <https://github.com/layui/fly>
