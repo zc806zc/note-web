@@ -204,7 +204,7 @@ const nav = document.querySelector("[rel='js-site-navigation']")
 - 父级div也浮动，需要定义宽度
 - br + clear:both
 
-# 常用布局
+# CSS布局
 
 > 在可以不兼容IE的情况下 慎用浮动，血的教训！！！
 
@@ -305,6 +305,8 @@ img#son{
     transform: translateY(-50%);
 }
 ```
+
+# 常用布局
 
 - 两列布局
 
@@ -611,9 +613,9 @@ div[class^="column-sm-"]{
 
 # 响应式布局再思考
 
-- 响应式布局是有成本的，而且大多数时候不需要
-- 不见得比固定布局更好,有些方面绝对还是传统布局好
-
+- 响应式布局是有成本的
+- 而且大多数时候不需要
+- 不见得比固定布局优越, 有些方面还是需要传统布局
 
 # flex | flexbox
 
@@ -645,10 +647,12 @@ div[class^="column-sm-"]{
 
 # 预处理与后处理语言
 
-- postcss -> css in js
-- sass | less
+> 但并不想多出一门CSS层面的编程语言
 
-> 并不想多出一门CSS层面的编程语言
+- css -> sass|less -> postcss -> css in js
+
+- postcss <https://www.postcss.com.cn/>
+- webpack + autoprefix
 
 # Sass方案
 
@@ -673,7 +677,6 @@ SCSS 是 Sass 3 引入新的语法，
 
 # CSS模块化
 
-- Less、SASS -> PostCSS -> CSS in JS
 - styled-components
 
   - <https://www.styled-components.com/>
@@ -682,8 +685,13 @@ SCSS 是 Sass 3 引入新的语法，
 
   - emotion <https://github.com/emotion-js/emotion>
 
-- web components <http://css-tricks.com/modular-future-web-components//>
 
+# web components
+
+- webcomponents-the-right-way https://github.com/mateusortiz/webcomponents-the-right-way
+- web components 
+
+  - modular-future-web-components <http://css-tricks.com/modular-future-web-components/>
   - <https://github.com/ruanyf/css-modules-demos> 示例
   - <https://github.com/css-modules/css-modules/blob/master/docs/get-started.md>
   - <https://github.com/ruanyf/webpack-demos> (webpack教程)
@@ -698,15 +706,6 @@ SCSS 是 Sass 3 引入新的语法，
   color: red;
 }
 ```
-
-# web components
-
-- webcomponents-the-right-way https://github.com/mateusortiz/webcomponents-the-right-way
-
-# POSTCSS
-
-- <https://www.postcss.com.cn/>
-- webpack + autoprefix
 
 # 封装样式库
 
