@@ -141,6 +141,9 @@ cols = [
 - 为什么表单不显示 -> 依赖于form组件
 - 动态追加的表单元素不生效 -> form.render
 - 页面一打开就执行layer.open/alert/msg时，为何有时大有时小 -> 使用layer.ready
+- 弹框的关闭按钮消失
+
+    - 可能是`<script>`下嵌套了`<script>`...
 
 # 使用第三方组件
 
