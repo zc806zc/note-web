@@ -2,6 +2,12 @@
 
 - Java多线程编程实战指南（核心篇）图书源码 <https://github.com/Viscent/javamtia>
 
+# Java多线程编程
+
+- 高洪岩
+- 图书源码 <http://www.hzcourse.com/web/refbook/detail/6053/208>
+- 链接：<http://pan.baidu.com/s/1mginA9E> 密码：62i3
+
 # Java线程
 
 - 线程的生命周期
