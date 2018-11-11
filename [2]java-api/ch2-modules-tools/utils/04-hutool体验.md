@@ -5,7 +5,7 @@
 
 # 常用 
 
-- 输出 Console.log @NICE
+- 输出 Console.log @NICE 带模板
 - 克隆
 
 ```java
