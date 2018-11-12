@@ -1,3 +1,7 @@
+# README
+
+- 技能谱图 <https://github.com/TeamStuQ/skill-map/blob/master/data/map-DevLang-Java.md>
+
 # Core Java
 
 - Basic Language Characteristics 语法特征

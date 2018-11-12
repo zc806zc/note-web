@@ -37,8 +37,3 @@ Java集合类的基本接口是Collection接口。
 
 - 打印异常 logger.error(e.getStackTrace()[0].getMethodName(), e);
 - Enumeration
-
-# shiro
-
-- realm 
-    - Spring-shiro源码陶冶-AuthorizingRealm用户认证以及授权 https://www.cnblogs.com/question-sky/p/6806419.html

@@ -11,8 +11,6 @@
 
 - <http://www.cnblogs.com/xiekeli/p/5607107.html>
 
----
-
 # Spring Security
 
 - <http://www.yiibai.com/spring-security/>
@@ -20,7 +18,7 @@
 # Shiro
 
 - https://github.com/apache/shiro
-- <http://www.yiibai.com/shiro/>
+- 教程 <http://www.yiibai.com/shiro/>
 
   - 认证
   - 授权
@@ -28,6 +26,10 @@
   - 加密
 
 ![](http://www.yiibai.com/uploads/images/201703/1403/660170344_46272.png)
+
+- realm 
+
+    - Spring-shiro源码陶冶-AuthorizingRealm用户认证以及授权 https://www.cnblogs.com/question-sky/p/6806419.html
 
 # Bouncy Castle
 
@@ -50,21 +52,11 @@
 - 一个针对Java应用进行安全和身份认证管理的大型项目
 - https://github.com/picketlink/picketlink
 
----
+# 场景
 
-# 权限管理
-
-- <https://www.imooc.com/video/11413>
-- <https://www.imooc.com/video/11427>
-
-# 验证码
-
-- <https://www.imooc.com/video/5776>
-
-# 邮箱验证
-
-- <https://www.imooc.com/video/14263>
-
-# 微信授权登录
-
-- <https://www.imooc.com/video/14024>
+- 权限管理
+    - <https://www.imooc.com/video/11413>
+    - <https://www.imooc.com/video/11427>
+- 验证码 <https://www.imooc.com/video/5776>
+- 邮箱验证 <https://www.imooc.com/video/14263>
+- 微信授权登录 <https://www.imooc.com/video/14024>
