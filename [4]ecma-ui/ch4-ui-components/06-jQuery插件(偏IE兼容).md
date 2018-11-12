@@ -34,14 +34,7 @@
 - 手机端框架：Jingle
 - 动态页签：Jerichotab
 
-# jqueryWidgets
-
-- @$ 
-- https://www.jqwidgets.com/jquery-widgets-documentation/
-- 参考思路与结构，这是一个功能完整的前端UI框架
-- 提供了Angular React版本
-
-# jQuery相关
+# jQuery全家桶
 
 ```html
 <!-- jquery -->
@@ -80,8 +73,6 @@
 <!-- tooltip -->
 <script src="https://cdn.bootcss.com/jquery.tipsy/1.0.3/jquery.tipsy.min.js"></script>
 ```
-
-
 
 # 常用样式
 
@@ -155,9 +146,11 @@
 <script src="https://cdn.bootcss.com/dynamics.js/1.1.5/dynamics.min.js"></script>
 ```
 
-# 轮播 幻灯片
+# 布局 
 
 ```html
+<!-- 轮播 | 幻灯片 -->
+
 <!-- slick -->
 <link href="https://cdn.bootcss.com/slick-carousel/1.8.1/slick.min.css" rel="stylesheet">
 <script src="https://cdn.bootcss.com/slick-carousel/1.8.1/slick.min.js"></script>
@@ -170,11 +163,7 @@
 <link rel="stylesheet" href="https://cdn.staticfile.org/unslider/2.0.3/css/unslider-dots.css">
 <link rel="stylesheet" href="https://cdn.staticfile.org/unslider/2.0.3/css/unslider.css">
 <script src="https://cdn.staticfile.org/unslider/2.0.3/js/unslider-min.js"></script>
-```
 
-# 弹框
-
-```html
 <!--magnific-popup-->
 <link href="https://cdn.bootcss.com/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet">
 <script src="https://cdn.bootcss.com/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
@@ -204,6 +193,11 @@
 <script src="https://cdn.bootcss.com/handlebars.js/4.0.11/handlebars.min.js"></script>
 ```
 
+```jsx
+// handlebars使用
+
+```
+
 # 地图
 
 ```html
@@ -224,13 +218,9 @@
 # 工具
 
 ```html
-
+<!-- loadsh -->
 <script src="https://cdn.bootcss.com/lodash-compat/3.10.2/lodash.min.js"></script>
-```
 
-# 其他
-
-```html
 <!--smoothscroll-->
 <script src="https://cdn.bootcss.com/smoothscroll/1.4.6/SmoothScroll.min.js"></script>
 

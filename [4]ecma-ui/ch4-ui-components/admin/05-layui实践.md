@@ -106,6 +106,13 @@ that.layBody.on('change', '.'+ELEM_EDIT, function(){
 - 表格是横向拉伸的，不支持换行
 
 ```jsx
+// 表头边距
+.fix-multi-cols {
+  .layui-table[lay-skin=row] th {
+    border-width: 1px!important;
+  }  
+}
+
 tbody {
 
     // 特殊处理 允许换行
