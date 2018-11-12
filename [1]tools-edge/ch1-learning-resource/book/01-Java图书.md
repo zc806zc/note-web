@@ -7,7 +7,7 @@
 
 ```java
 // 入门
-《Head First Java》
+《Head First Java》 第2版
 《Java 核心技术》 第10版 两卷
 《Java8 实战》
 

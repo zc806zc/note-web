@@ -235,8 +235,9 @@ function countStore (state, emitter) {
 
 - https://github.com/developit/preact
 
-# omi
+# omi 
 
+- @nice
 - Omi === Preact + Scoped CSS + Store System + Native Support in 3kb javascript.
 - https://github.com/Tencent/omi
 
