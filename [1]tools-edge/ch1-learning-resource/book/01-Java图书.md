@@ -12,8 +12,8 @@
 《Java8 实战》
 
 // 进阶  
-《Java 编程思想(第4版)》  
-《Effective Java 中文版(第2版)》  
+《Java 编程思想》 第4版 
+《Effective Java 中文版》 第3版  
 
 // J2EE  
 《分布式 Java 应用：基础与实践》  
@@ -42,7 +42,7 @@
 《Maven实战》
 
 // 设计模式
-《Head First 设计模式》 
+《Head First 设计模式》
 
 // 虚拟机
 《深入理解 Java 虚拟机 第2版》
