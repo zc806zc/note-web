@@ -59,7 +59,7 @@ layui.use('moduleX', function(moduleX){
 - 表格组件数据格式封装过于死板 @recovered 2.4版本后已强化了这些功能
 - 校验规则变动过几次... @ignore
 
-# 发现的一些小BUG
+# 一些小BUG | 缺陷 | 暂时解决方法 
 
 - 弹框内部不支持滚动条，目前提供了是否屏蔽浏览器滚动条
 - 表格不完全支持resize, f12以后分页会消失 @recovered
@@ -103,6 +103,21 @@ that.layBody.on('change', '.'+ELEM_EDIT, function(){
 });
 ```
 
+- 表格是横向拉伸的，不支持换行
+
+```jsx
+tbody {
+
+    // 特殊处理 允许换行
+    // http://fly.layui.com/jie/13750/
+    .layui-table-cell {
+        height: auto;
+        line-height: 20px;
+        white-space: normal;
+    }
+}
+```
+
 # 编程规范 | 细节优化
 
 - LayUI实际开发过程的细节点总结 @nice http://fly.layui.com/jie/24673/
@@ -116,8 +131,10 @@ cols = [
     [
         // {checkbox: true, rowspan: 2, title: '序号', fixed: 'left'},
         { field: 'explain', title: '情况说明', width: 120, rowspan: 2 },
-        // @attention 这里不要写field 占一行
-        { title: '操作', colspan: 2, rowspan: 1, fixed: 'right' }
+        // @attention 这里不要写field 
+        // 占一行
+        // 不写fixed 
+        { title: '操作', colspan: 2, rowspan: 1 }
     ],
 
     [
