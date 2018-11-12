@@ -115,7 +115,29 @@ tbody {
         line-height: 20px;
         white-space: normal;
     }
+
+    tr {
+
+      .layui-table-cell:nth-child(1)
+      , .layui-table-cell:nth-child(2)
+      {
+        white-space: nowrap;
+      }
+
+    }
 }
+
+fixJsHeight: function () {
+    var $parent = $('#layer_fill_in')
+    var $fixedL = $parent.find('.layui-table-fixed-l tbody')
+    var $fixedR = $parent.find('.layui-table-fixed-r tbody')
+
+    var $fixedLTr = $fixedL.find('tr')
+    var $fixedRTr = $fixedR.find('tr')
+    $fixedLTr.each(function (index, item) {
+        $(item).find('td').height($fixedRTr.eq(index).find('td').height())
+    })
+},
 ```
 
 # 编程规范 | 细节优化
