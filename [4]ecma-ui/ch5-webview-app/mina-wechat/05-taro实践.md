@@ -10,6 +10,7 @@ npm install -g taro-ui
 
 - 文档 https://nervjs.github.io/taro/docs/README.html
 
-```
+```jsx
 以 React15 为基础
+
 ```
