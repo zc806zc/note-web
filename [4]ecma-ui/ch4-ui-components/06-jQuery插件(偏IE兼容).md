@@ -1,4 +1,4 @@
-# jquery组件方案
+# README | jquery插件
 
 - awesome-jquery <https://github.com/petk/awesome-jquery>
 - jq22 http://www.jq22.com/
@@ -77,7 +77,7 @@
 <script src="https://cdn.bootcss.com/jquery.tipsy/1.0.3/jquery.tipsy.min.js"></script>
 ```
 
-# 常用样式 | bootstrap系列
+# 常用样式 | bootstrap
 
 ```html
 <!-- 重置 -->
