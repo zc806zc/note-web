@@ -25,6 +25,12 @@
 
 - react-native-elements https://github.com/react-native-training/react-native-elements
 
+# 打包发布
+
+- expo 
+    - Building Standalone Apps
+    - https://docs.expo.io/versions/latest/distribution/building-standalone-apps
+
 # React Native学习项目
 
 - Examples for React Naive Book <https://github.com/huzidaha/react-naive-book-examples>

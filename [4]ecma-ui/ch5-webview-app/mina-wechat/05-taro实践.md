@@ -1,6 +1,10 @@
 # README
 
-- Taro 多端开发实现原理与项目实战 https://juejin.im/book/5b73a131f265da28065fb1cd
+- awesome-taro https://github.com/NervJS/awesome-taro
+- Taro 多端开发实现原理与项目实战 @nice 
+  - https://juejin.im/book/5b73a131f265da28065fb1cd
+  - taro实现原理 @nice
+  - 商城实践细节
 
 # taro 
 
@@ -8,6 +12,7 @@
 - Web(h5) + App(React Native、Weex) + 小程序(weapp + alipay + swan)
 - 以 React15 为基础
 - 由于微信小程序的限制，React 中某些写法和特性在 Taro 中还未能实现
+- 适配处理 ：开发时使用px和百分比 -> Taro在小程序中转成 rpx ，在 H5中转成 rem 
 
 ```shell
 # 安装
@@ -27,6 +32,27 @@ $ npx taro build --type weapp...
 ```
 
 - 文档 https://nervjs.github.io/taro/docs/README.html
+
+# Taro 设计思想及架构
+
+- 编译原理
+
+```
+一个对输入的源代码进行语法分析，
+语法树构建，
+随后对语法树进行转换操作再解析生成目标代码的过程
+```
+
+![](https://user-gold-cdn.xitu.io/2018/10/8/16651824b8ac59a4?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+
+- cli原理
+
+  - lerna 多模块管理
+  - 用到的核心库 
+    - commander.js + shell.js + ...
+    - ->> https://juejin.im/book/5b73a131f265da28065fb1cd/section/5b74ec07e51d4566633b2930
+
+![](https://user-gold-cdn.xitu.io/2018/10/8/16651547b6ddebe1?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
 
 # UI 
 
@@ -162,6 +188,72 @@ class Index extends Component {
     - 小程序端不要在组件中打印传入的函数
     - 小程序端不要在组件中打印 this.props.children => 语法糖
 
+# 微信小程序开发填坑
+
+- 页面栈只有 10 层, 防止溢出
+
+```jsx
+// 处理微信跳转超过10层
+function jumpUrl (url, options = {} ) {
+  const pages = Taro.getCurrentPages()
+  let method = options.method || 'navigateTo'
+  if (url && typeof url === 'string') {
+    if (method === 'navigateTo' && pages.length >= PAGE_LEVEL_LIMIT - 3) {
+      method = 'redirectTo'
+    }
+
+    if (method === 'navigateToByForce') {
+      method = 'navigateTo'
+    }
+
+    if (method === 'navigateTo' && pages.length == PAGE_LEVEL_LIMIT) {
+      method = 'redirectTo'
+    }
+
+    Taro[method]({
+      url
+    })
+  }
+}
+```
+
+- 页面内容有缓存(闪烁) -> 每次在onHide 生命周期中清理一下当前页面的数据
+- 页面不会自动刷新 -> 每次都onShow周期拉数据
+- 不能随时地监听页面滚动事件 ??
+- 小程序与 WebView 之间不能随意通信
+  - 小程序不支持本地存储
+  - 可以选择在 URL 里携带信息 ??
+- 某些组件(map、canvas、video、textarea)总是会在最上层 -> cover-view 组件来包裹浮层  
+- decodeURIComponent
+
+```jsx
+// 这是首页 js
+Page({
+  onLoad: function(options) {
+    // options 中的 scene 需要使用 decodeURIComponent 才能获取到生成二维码时传入的 scene
+    var scene = decodeURIComponent(options.scene)
+  }
+})
+```
+
+- 有弹出层时，难以禁止底部页面滚动
+
+```jsx
+在最外层使用 scroll-view 组件包裹，
+然后有弹出层时，
+将 scroll-y 属性设置为 false 从而禁止页面滚动
+```
+
+# 使用redux
+
+```shell
+npm install --save redux @tarojs/redux redux-logger
+```
+
 # 实践
 
-- TODO示例 多端解决方案 https://github.com/NervJS/taro-todo
+- taro-msparis 时装衣橱 @nice https://github.com/EasyTuan/taro-msparis
+- todo-list taro实验性demo https://github.com/NervJS/taro-todo
+- taro-v2ex https://github.com/NervJS/taro-v2ex
+- taro-zhihu-sample https://github.com/NervJS/taro-zhihu-sample
+- taro-dva 仿知乎 https://github.com/zuoge85/taro-dva
