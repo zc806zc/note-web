@@ -75,3 +75,8 @@ Weex 提供了非常丰富的系统功能 API，包括弹出存储、网络、�
 # Weex实战项目
 
 - 网易严选 App https://github.com/zwwill/yanxuan-weex-demo
+
+# rax
+
+- Weex内置
+- https://github.com/alibaba/rax
