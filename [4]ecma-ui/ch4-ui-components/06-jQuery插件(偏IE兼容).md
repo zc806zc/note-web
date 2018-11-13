@@ -6,33 +6,36 @@
 - jquery扩展 https://gitee.com/explore/starred/jquery-plugins
 - bootstrap扩展 https://gitee.com/explore/starred/bootstrap-plugins
 
-# 常用CDN
+# CDN
 
 - staticfile @nice https://www.staticfile.org/
-- http://cdn.code.baidu.com/
-- http://www.bootcdn.cn/
+- bootcdn http://www.bootcdn.cn/
+- 百度 http://cdn.code.baidu.com/
 - ...
 
 # 万金油方案 | IE兼容
 
-- jquery1.x -> 最终版本1.12.4 
-- bootstrap
+> 参考jeesite/jfinal/guns使用的前端插件
+
+- jquery1.x -> 使用最终版本1.12.4 
+- bootstrap-ie8
 - require.js(IE6+)/sea.js(IE6+)
-- underscore | loadsh3.x compat(IE8+) -> 注意有些方法可能没有
+- underscore.js/loadsh3.x compat(IE8+) -> 注意有些方法可能没有
 - handlebar(IE6+)/artTemplates(IE8+)
-    - handlebar的一些用法——个人使用总结 https://www.cnblogs.com/yldf55/p/5147996.html
-- layer(IE6+)/artDialog(IE6+)/magnific-popup
-- zeroclipboard(IE8+) | clipbord.js(IE9+)
-- JQuery Validation Plugin 1.11
-- 富文本在线编辑：CKEditor
-- 在线文件管理：CKFinder
-- 数据表格：jqGrid https://github.com/tonytomov/jqGrid
-- 对话框：jQuery jBox
-- 下拉选择框：jQuery Select2
-- 树结构控件：jQuery zTree
-- 日期控件： My97DatePicker
-- 手机端框架：Jingle
-- 动态页签：Jerichotab
+- layer(IE6+)/artDialog(IE6+)/magnific-popup/jQuery jBox 
+- zeroclipboard(IE8+)/clipbord.js(IE9+)
+- jquery-validation 1.11
+- fine-upload/webuploader
+- CKEditor/wangEditor 
+- iCheck
+- CKFinder 在线文件管理
+- jqGrid/bootstrap-table
+- slimScroll
+- Select2/chosen
+- Jerichotab 动态页签
+- zTree
+- My97DatePicker
+- Jingle 手机端框架
 
 # jQuery全家桶
 
@@ -74,7 +77,7 @@
 <script src="https://cdn.bootcss.com/jquery.tipsy/1.0.3/jquery.tipsy.min.js"></script>
 ```
 
-# 常用样式
+# 常用样式 | bootstrap系列
 
 ```html
 <!-- 重置 -->
@@ -89,12 +92,7 @@
 
 <!-- pure.css -->
 <link href="https://cdn.bootcss.com/pure/1.0.0/pure-min.css" rel="stylesheet">
-```
 
-
-# bootstrap系列
-
-```html
 <!--bootstrap-->
 <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -193,14 +191,85 @@
 <script src="https://cdn.bootcss.com/handlebars.js/4.0.11/handlebars.min.js"></script>
 ```
 
+- handlebar的一些用法——个人使用总结 https://www.cnblogs.com/yldf55/p/5147996.html 
+
 ```jsx
 // handlebars使用
 
+// 注册等于 支持3个数
+Handlebars.registerHelper('if_eq', function (v1, v2, options) {
+    if (v1 == v2) { return options.fn(this); }
+    return options.inverse(this);
+});
+
+// Handklebars下拉框赋值
+// https://stackoverflow.com/questions/13046401/how-to-set-selected-select-option-in-handlebars-template
+Handlebars.registerHelper('select', function (value, options) {
+    var $el = $('<select />').html(options.fn(this));
+    $el.find('[value="' + value + '"]').attr({ 'selected': 'selected' });
+    return $el.html();
+});
+Handlebars.registerHelper('radio', function (value, options) {
+    var $el = $('<div />').html(options.fn(this));
+    $el.find('[value="' + value + '"]').attr({ 'checked': 'checked' });
+    return $el.html();
+});
+
+// 分割选项
+Handlebars.registerHelper('split', function (value, options) {
+    var value = value || '';
+    var arr = value.split('$');
+    return arr;
+});
+
+// 是否包含
+Handlebars.registerHelper('contains', function (v1, v2, options) {
+    if(v1.indexOf(v2) >= 0 ) {
+        return options.fn(this);
+    } else {
+        return options.inverse(this);
+    }
+});
+
+// 序号加一
+Handlebars.registerHelper("addOne", function (index, options) {
+    return parseInt(index) + 1;
+});
+
+// 取数组值
+Handlebars.registerHelper("arrayKey", function (arr, index, options) {
+    return arr[index];
+});
+
+// 选项对应
+Handlebars.registerHelper("optionCheck", function (judgeType, submitAnswer, index, options) {
+    var arr = ['A','B','C','D','E','F','G'];
+
+    if (submitAnswer) {
+        // 多选题
+        if (judgeType == 'contains') {
+            if (submitAnswer.indexOf(arr[index])>=0) {
+                return options.fn(this);
+            }
+        } else if (judgeType == 'is') {
+            // 单选题 | 判断题
+            if (arr[index] == submitAnswer) {
+                return options.fn(this);
+            }
+        }
+    }
+
+    return options.inverse(this);
+});
+
+
 ```
 
-# 地图
+# 工具
 
-```html
+- 地图
+
+```jsx
 <!-- jquery.vmap -->
 <link href="https://cdn.bootcss.com/jqvmap/1.5.1/jqvmap.min.css" rel="stylesheet">
 
@@ -215,7 +284,7 @@
 <script src="https://cdn.bootcss.com/jqvmap/1.5.1/maps/jquery.vmap.usa.js"></script>
 ```
 
-# 工具
+- 其他
 
 ```html
 <!-- loadsh -->
