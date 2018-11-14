@@ -43,8 +43,12 @@ gulp.task('watchLessCompile', function () {
 # 脚手架
 
 - tmtworkflow
+- natural-cli-gulp 自己瞎写的 https://github.com/natural-fe/natural-cli-gulp
 - generator-gulper https://github.com/leaky/generator-gulper
 - gulp-template https://github.com/mjzhang1993/gulp-template
+- gulp-demo
+    - ejs 有区分配置文件
+    - https://github.com/EasyTuan/gulp-demo
 - generator-sapling-pc @deprecated
     - IE8+ 
     - https://github.com/sapling-team/generator-sapling-pc

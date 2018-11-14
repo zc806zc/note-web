@@ -185,10 +185,4 @@ webkit-touch-callout: none;
 
 - 一个RSS阅读器应用程序
 
-# Zepto.js
 
-- <https://github.com/madrobby/zepto>
-
-# mui
-
-# zepto.js

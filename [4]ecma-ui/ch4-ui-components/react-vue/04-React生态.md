@@ -10,7 +10,7 @@
 
 - Ant Design Pro @nice 
     - https://github.com/ant-design/ant-design-pro
-- react-admin 
+- react-admin @nice
   - material-ui
   - https://github.com/marmelab/react-admin
 - react-admin @nice
@@ -32,17 +32,22 @@
 
 # React脚手架
 
-- create-react-app
+- create-react-app @nice
 - react-boilerplate https://github.com/react-boilerplate/react-boilerplate
-- react-boilerplate-pro https://github.com/AlanWei/react-boilerplate-pro
+- react-boilerplate-pro @nice https://github.com/AlanWei/react-boilerplate-pro
 - react-intl https://github.com/yahoo/react-intl
-- dva IE9+ <https://github.com/dvajs/dva>
 - react-latest-framework https://github.com/react-love/react-latest-framework
-- react-family <https://github.com/brickspert/react-family>
+- react-family 
+    - IE8+ react0.x
+    - <https://github.com/brickspert/react-family>
 - react-starter-kit 开发架子 <https://github.com/kriasoft/react-starter-kit>
 - react-redux-universal-hot-example https://github.com/erikras/react-redux-universal-hot-example
 - react-redux-starter-kit https://github.com/davezuko/react-redux-starter-kit
 
+# dva
+
+- IE9+ 
+- <https://github.com/dvajs/dva>
 
 # CMS
 
