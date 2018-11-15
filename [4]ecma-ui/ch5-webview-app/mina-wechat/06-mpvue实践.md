@@ -4,20 +4,35 @@
 
 # mpvue
 
-- 美团点评
+- @from 美团点评
 - <https://github.com/Meituan-Dianping/mpvue>
+
+# UI
+
+- 基于 mpvue 框架重写 weui https://github.com/KuangPF/mpvue-weui
+- mpvue-zanui https://github.com/armyja/mpvue-zanui
+- mpvue-vant https://github.com/xxxsimons/mpvue-vant
+
+# 组件
+
+...
+
+# 脚手架
+
+- mpvue-cli 基于官方优化 https://github.com/ivanlee93/mpvue-cli
+- mpvue-quickstart 官方脚手架 https://github.com/mpvue/mpvue-quickstart
+- F-loat 基于官方优化 https://github.com/F-loat/mpvue-quickstart
 
 # mpvue项目
 
-- 基于 mpvue 框架重写 weui https://github.com/KuangPF/mpvue-weui
 - 基于mpvue的网易严选商城 @nice
   - https://github.com/heyushuo/mpvue-shop
   - https://github.com/heyushuo/mpvue-shop-node
+- 没朋友外卖 https://github.com/WsmDyj/mpvue 
 - cnode社区 https://github.com/jaxQin/mpvue-cnode 
 - IT之家 https://github.com/F-loat/ithome-lite 
 - 微信小程序商城 https://github.com/yllg/mpvue-xbyjShop
 - 聊天机器人 https://github.com/zz570557024/vue-mpvue-ChatRobot
-- 没朋友外卖 https://github.com/WsmDyj/mpvue
 - 仿网易云音乐 
   - https://github.com/lucaswww/my-project
   - mpvue微信小程序-仿网易云音乐 https://juejin.im/post/5b88a6f36fb9a019f1801b8d
@@ -26,24 +41,15 @@
   - https://github.com/QinZhen001/didi  
 - 简易商城小程序全栈开发(mpvue+koa+mongodb) 
   - @deprecated 未提供sql？？？
-  - https://juejin.im/post/5b548ce8e51d45191d79f8a6 
+  - https://juejin.im/post/5b548ce8e51d45191d79f8a6
   - https://github.com/Mosasa/wx-mpvue
   - onload与onshow的却别
   - mpvue不支持用object的形式传style
 
 - 其他
-  - 外卖 https://github.com/xiaotiandada/takeaway
+  
+  - 外卖 @deprecated https://github.com/xiaotiandada/takeaway
   - 阅读器 https://github.com/joinnew/chage_way  
-    
-```html
-<!-- “v-for嵌套”陷阱 -->
-<swiper-item v-for="(items,index) in swiperList" :key="index">
-    <!-- 内循环再加上另一个索引 -->
-    <div v-for="(item,i) in items" class="swiper-info" :key="i" @click="choose" >
-        <image :src="item.url"  class="swiper-image" :style="styleObject"/>
-    </div>
-</swiper-item>
-```
 
 # mpvue踩坑
 
@@ -59,4 +65,16 @@
   
 ```
 别人的主页 -> 我的关注 -> 主页
+```
+
+- v-for嵌套
+
+```html
+<!-- “v-for嵌套”陷阱 -->
+<swiper-item v-for="(items,index) in swiperList" :key="index">
+    <!-- 内循环再加上另一个索引 -->
+    <div v-for="(item,i) in items" class="swiper-info" :key="i" @click="choose" >
+        <image :src="item.url"  class="swiper-image" :style="styleObject"/>
+    </div>
+</swiper-item>
 ```
