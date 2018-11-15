@@ -20,15 +20,15 @@
   - How to pass the Node.js interview of ElemeFE
 
 ```shell
-// node.js安装
-// ubuntu wire error或许可以解决
+# node.js安装
+# // ubuntu wire error或许可以解决
 Installing nodejs-legacy 
 node filename.js
 
-// 从源码编译安装 
+# // 从源码编译安装 
 curl http://npmjs.org/install.sh | sh
 
-// 安装彩虹模块 - demo
+# // 安装彩虹模块 - demo
 require('colors');
 console.log('smashing node'.rainbow);
 
@@ -36,23 +36,42 @@ npm help json // 查看属性文档
 npm search realtime
 npm view socket.io
 
-// 常见命令
+# // 常见命令
 npm init
 npm install -g express
 npm install yuidocjs --save // 将自动保存到package.json
-// npm install jshint --save-dev
+# // npm install jshint --save-dev
 npm publish
 npm update
 npm uninstall
 
-// socket.io演示如下
+# // socket.io演示如下
 socket.emit()
 io.emit("new-data-on-server","Message Text")
 socket.broadcast.emit("new-data-on-server","Message Text")
 
-// Node REPL
+# // Node REPL
 node
 Object.keys(global) // 忘记某个API的用法 可以用来验证
+```
+
+# 开发环境
+
+```shell
+# cpm 淘宝镜像
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+```
+
+# nvm
+
+- nvm介绍及使用 https://www.jianshu.com/p/d0e0935b150a
+- nvm下载 https://github.com/coreybutler/nvm-windows/releases
+
+```shell
+nvm install v8.9.0
+nvm use v8.9.0
+
+nvm current
 ```
 
 

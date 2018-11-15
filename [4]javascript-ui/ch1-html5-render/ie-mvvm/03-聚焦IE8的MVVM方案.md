@@ -53,7 +53,7 @@ require("babel-polyfill")
 - nerv.js 
 - regular
 
-  - 网易
+  - @from 网易
   - <https://github.com/regularjs/regular>
   - 组件库regular-ui <https://github.com/regular-ui/regular-ui>
   - 后台管理系统前端开发方案，采用es6 + regular + gulp技术 ?? <https://github.com/xuyanquan/es6-regular-gulp>
@@ -128,7 +128,8 @@ import 'fetch-polyfill2'; //fetch 实现
 
 # san 
 
-- 百度出品 类Vue体验
+- 百度出品 
+- 类Vue的开发体验
 - <https://github.com/baidu/san>
 - interlliJ idea 不识别文件类型 <https://blog.csdn.net/aaashen/article/details/46740817>
 - 借用Vue|HTML IDEA插件语法高亮下先
@@ -142,21 +143,28 @@ UI还是采用bootstrap等
 可能也是cdn引入的
 ```
 
-- san的脚手架
+- 脚手架
 
   - SanFrameWork-IE8 https://github.com/QingHuanMoon/SanFrameWork-IE8
 
 # react0.14.x
 
-- 虽然过时了，但是很多人都会react 
+- 虽然过时了，但很多人都会react,学习成本低 
 - 脚手架
-    - react-antd-ie8 https://github.com/HeavenSky/react-antd-ie8
-    - webpack-frames
-        - webpack 1,3,4 ie8 react vue 主流框架搭建汇总 
-        - https://github.com/HeavenSky/webpack-frames
+    - react-antd-ie8
+        - antd
+        - https://github.com/HeavenSky/react-antd-ie8
+        - webpack-frames 更多 https://github.com/HeavenSky/webpack-frames 
+
     - react-redux-antd-ie8 https://github.com/bertFu/react-redux-antd-ie8
     - react-ie8-boilerplate https://github.com/jaychsu/react-ie8-boilerplate
-    - react-family-ie8 https://github.com/brickspert/react-family-ie8 开发时热更新，打包时才兼容IE8
+    - react-family-ie8 
+
+        - https://github.com/brickspert/react-family-ie8 
+        - 开发时要热更新，打包代码才能兼容IE8
+        - 没有UI(antd)
+        - IE8报栈溢出的错误
+
 - 其他
 
     - ai-react-template https://github.com/AI-UNICOM/ai-react-template
@@ -174,9 +182,10 @@ UI还是采用bootstrap等
 
 # NervJS 
 
-- 试了半天不知到怎么兼容到IE8+....
-- <https://github.com/NervJS/nerv>
+- 至今找不到兼容到IE8+的例子....
+- @from 京东
 - A blazing fast React alternative, compatible with IE8 and React 16
+- <https://github.com/NervJS/nerv>
 - 文档 <https://nervjs.github.io/docs/>
 - 脚手架
 
